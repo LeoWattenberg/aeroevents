@@ -1,0 +1,347 @@
+---
+import type { CalendarDataset, OccurrenceView } from "./calendar-types";
+import { calendarToday, capitalize, dateLabel, occurrenceLastDate } from "./format";
+import CalendarFilters from "./CalendarFilters.astro";
+import EventCard from "./EventCard.astro";
+import MonthCalendar from "./MonthCalendar.astro";
+
+interface Props {
+  dataset: CalendarDataset;
+}
+
+const { dataset } = Astro.props;
+const today = calendarToday(dataset.generatedAt);
+const initialMonth = today.slice(0, 7);
+const eventsById = new Map(dataset.events.map((event) => [event.id, event]));
+const organizersById = new Map(dataset.organizers.map((organizer) => [organizer.id, organizer]));
+const categoriesById = new Map(dataset.categories.map((category) => [category.id, category]));
+const activeOrganizerIds = new Set(dataset.events.map((event) => event.organizerId));
+const filterOrganizers = dataset.organizers.filter((organizer) => activeOrganizerIds.has(organizer.id));
+const occurrences = dataset.events
+  .flatMap((event) => event.occurrences)
+  .filter((occurrence) => occurrenceLastDate(occurrence) >= today)
+  .sort((a, b) => a.start.localeCompare(b.start));
+
+const occurrencesByDate = new Map<string, OccurrenceView[]>();
+for (const occurrence of occurrences) {
+  const list = occurrencesByDate.get(occurrence.date) ?? [];
+  list.push(occurrence);
+  occurrencesByDate.set(occurrence.date, list);
+}
+
+const tomorrowDate = (() => {
+  const date = new Date(`${today}T12:00:00Z`);
+  date.setUTCDate(date.getUTCDate() + 1);
+  return date.toISOString().slice(0, 10);
+})();
+const agendaHeading = (date: string) => {
+  if (date === today) return "I dag";
+  if (date === tomorrowDate) return "I morgen";
+  return capitalize(dateLabel(date));
+};
+---
+
+<div class="calendar" data-calendar data-initial-month={initialMonth}>
+  <CalendarFilters organizers={filterOrganizers} categories={dataset.categories} />
+
+  <div class="results-heading">
+    <p data-result-count aria-live="polite">
+      {occurrences.length === 1 ? "1 arrangement" : `${occurrences.length} arrangementer`}
+    </p>
+    <p class="source-note">Tider vises i dansk tid</p>
+  </div>
+
+  <section class="agenda-view" data-agenda-view aria-label="Kommende arrangementer">
+    {occurrencesByDate.size > 0 ? (
+      Array.from(occurrencesByDate.entries()).map(([date, dateOccurrences]) => (
+        <section class="agenda-day" data-agenda-day={date}>
+          <header>
+            <h2>{agendaHeading(date)}</h2>
+            {(date === today || date === tomorrowDate) && <p>{capitalize(dateLabel(date))}</p>}
+          </header>
+          <div>
+            {dateOccurrences.map((occurrence) => {
+              const event = eventsById.get(occurrence.eventId);
+              if (!event) return null;
+              return (
+                <EventCard
+                  event={event}
+                  occurrence={occurrence}
+                  organizer={organizersById.get(event.organizerId)}
+                  categories={event.categoryIds.flatMap((id) => categoriesById.get(id) ?? [])}
+                  kind="agenda"
+                />
+              );
+            })}
+          </div>
+        </section>
+      ))
+    ) : (
+      <div class="empty-state static-empty">
+        <p class="eyebrow">Kalenderen er stille lige nu</p>
+        <h2>Der er endnu ingen kommende arrangementer</h2>
+        <p>Har du noget, der skal med? Send det gerne til redaktionen.</p>
+      </div>
+    )}
+  </section>
+
+  <MonthCalendar
+    events={dataset.events}
+    occurrences={occurrences}
+    organizers={dataset.organizers}
+    categories={dataset.categories}
+    initialMonth={initialMonth}
+  />
+
+  <div class="empty-state" data-filter-empty hidden>
+    <p class="eyebrow">Ingen træffere</p>
+    <h2>Prøv at gøre søgningen lidt bredere</h2>
+    <p>Fjern et filter, vælg en anden periode, eller <a href="./" data-filter-reset>nulstil alle filtre</a>.</p>
+  </div>
+</div>
+
+<script>
+  const calendar = document.querySelector<HTMLElement>("[data-calendar]");
+
+  if (calendar) {
+    const form = calendar.querySelector<HTMLFormElement>("[data-filter-form]");
+    const agenda = calendar.querySelector<HTMLElement>("[data-agenda-view]");
+    const monthView = calendar.querySelector<HTMLElement>("[data-month-view]");
+    const empty = calendar.querySelector<HTMLElement>("[data-filter-empty]");
+    const resultCount = calendar.querySelector<HTMLElement>("[data-result-count]");
+    const monthTitle = calendar.querySelector<HTMLElement>("[data-month-title]");
+    const previous = calendar.querySelector<HTMLButtonElement>("[data-month-previous]");
+    const next = calendar.querySelector<HTMLButtonElement>("[data-month-next]");
+    const panels = Array.from(calendar.querySelectorAll<HTMLElement>("[data-month-panel]"));
+    const availableMonths = panels.map((panel) => panel.dataset.monthPanel ?? "").filter(Boolean);
+    const initialMonth = calendar.dataset.initialMonth ?? availableMonths[0] ?? "";
+    let currentView: "agenda" | "maaned" = "agenda";
+    let currentMonth = initialMonth;
+
+    const fields = {
+      query: form?.elements.namedItem("q") as HTMLInputElement | null,
+      organizer: form?.elements.namedItem("arrangoer") as HTMLSelectElement | null,
+      category: form?.elements.namedItem("kategori") as HTMLSelectElement | null,
+      from: form?.elements.namedItem("fra") as HTMLInputElement | null,
+      to: form?.elements.namedItem("til") as HTMLInputElement | null,
+    };
+
+    const normalized = (value: string) =>
+      value
+        .normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLocaleLowerCase("da-DK")
+        .replaceAll("æ", "ae")
+        .replaceAll("ø", "o")
+        .replaceAll("å", "aa")
+        .trim();
+
+    const readUrl = () => {
+      const params = new URLSearchParams(window.location.search);
+      if (fields.query) fields.query.value = params.get("q") ?? "";
+      if (fields.organizer) fields.organizer.value = params.get("arrangoer") ?? "";
+      if (fields.category) fields.category.value = params.get("kategori") ?? "";
+      if (fields.from) fields.from.value = params.get("fra") ?? "";
+      if (fields.to) fields.to.value = params.get("til") ?? "";
+      currentView = params.get("visning") === "maaned" ? "maaned" : "agenda";
+      const requestedMonth = params.get("maaned");
+      currentMonth = requestedMonth && availableMonths.includes(requestedMonth) ? requestedMonth : initialMonth;
+      const dateDetails = form?.querySelector<HTMLDetailsElement>(".date-filter");
+      if (dateDetails && (fields.from?.value || fields.to?.value)) dateDetails.open = true;
+    };
+
+    const writeUrl = () => {
+      const url = new URL(window.location.href);
+      const values: Array<[string, string]> = [
+        ["q", fields.query?.value.trim() ?? ""],
+        ["arrangoer", fields.organizer?.value ?? ""],
+        ["kategori", fields.category?.value ?? ""],
+        ["fra", fields.from?.value ?? ""],
+        ["til", fields.to?.value ?? ""],
+        ["visning", currentView === "maaned" ? "maaned" : ""],
+        ["maaned", currentView === "maaned" && currentMonth !== initialMonth ? currentMonth : ""],
+      ];
+      for (const [name, value] of values) value ? url.searchParams.set(name, value) : url.searchParams.delete(name);
+      window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+    };
+
+    const updateMonth = () => {
+      const index = availableMonths.indexOf(currentMonth);
+      for (const panel of panels) panel.hidden = panel.dataset.monthPanel !== currentMonth;
+      if (monthTitle && currentMonth) {
+        const label = new Intl.DateTimeFormat("da-DK", { month: "long", year: "numeric", timeZone: "UTC" })
+          .format(new Date(`${currentMonth}-01T12:00:00Z`));
+        monthTitle.textContent = label.charAt(0).toLocaleUpperCase("da-DK") + label.slice(1);
+      }
+      if (previous) previous.disabled = index <= 0;
+      if (next) next.disabled = index < 0 || index >= availableMonths.length - 1;
+    };
+
+    const apply = (updateUrl = true) => {
+      const query = normalized(fields.query?.value ?? "");
+      const organizer = fields.organizer?.value ?? "";
+      const category = fields.category?.value ?? "";
+      const from = fields.from?.value ?? "";
+      const to = fields.to?.value ?? "";
+      const items = Array.from(calendar.querySelectorAll<HTMLElement>("[data-calendar-item]"));
+
+      for (const item of items) {
+        const matches =
+          (!query || normalized(item.dataset.search ?? "").includes(query)) &&
+          (!organizer || item.dataset.organizer === organizer) &&
+          (!category || (item.dataset.categories ?? "").includes(`|${category}|`)) &&
+          (!from || (item.dataset.endDate ?? item.dataset.date ?? "") >= from) &&
+          (!to || (item.dataset.date ?? "") <= to);
+        item.hidden = !matches;
+      }
+
+      const agendaItems = items.filter((item) => item.dataset.calendarKind === "agenda");
+      const agendaVisible = agendaItems.filter((item) => !item.hidden).length;
+      const monthVisible = items.filter(
+        (item) => item.dataset.calendarKind === "month" &&
+          item.dataset.date?.startsWith(currentMonth) &&
+          !item.hidden,
+      ).length;
+      const visible = currentView === "maaned" ? monthVisible : agendaVisible;
+      for (const day of calendar.querySelectorAll<HTMLElement>("[data-agenda-day]")) {
+        day.hidden = !Array.from(day.querySelectorAll<HTMLElement>("[data-calendar-item]")).some((item) => !item.hidden);
+      }
+      for (const day of calendar.querySelectorAll<HTMLElement>("[data-month-day]")) {
+        const dayItems = Array.from(day.querySelectorAll<HTMLElement>("[data-calendar-item]"));
+        day.classList.toggle("filtered-empty", dayItems.length > 0 && dayItems.every((item) => item.hidden));
+      }
+
+      if (resultCount) resultCount.textContent = visible === 1 ? "1 arrangement" : `${visible} arrangementer`;
+      if (empty) empty.hidden = visible !== 0;
+      if (agenda) agenda.hidden = currentView !== "agenda" || visible === 0;
+      if (monthView) monthView.hidden = currentView !== "maaned";
+      for (const button of calendar.querySelectorAll<HTMLButtonElement>("[data-view-button]")) {
+        button.setAttribute("aria-pressed", String(button.dataset.viewButton === currentView));
+      }
+      updateMonth();
+      if (updateUrl) writeUrl();
+    };
+
+    readUrl();
+    apply(false);
+
+    form?.addEventListener("submit", (event) => {
+      event.preventDefault();
+      apply();
+    });
+    form?.addEventListener("change", () => apply());
+    let searchTimer = 0;
+    fields.query?.addEventListener("input", () => {
+      window.clearTimeout(searchTimer);
+      searchTimer = window.setTimeout(() => apply(), 140);
+    });
+    for (const button of calendar.querySelectorAll<HTMLButtonElement>("[data-view-button]")) {
+      button.addEventListener("click", () => {
+        currentView = button.dataset.viewButton === "maaned" ? "maaned" : "agenda";
+        apply();
+      });
+    }
+    previous?.addEventListener("click", () => {
+      const index = availableMonths.indexOf(currentMonth);
+      const target = availableMonths[index - 1];
+      if (target) currentMonth = target;
+      apply();
+    });
+    next?.addEventListener("click", () => {
+      const index = availableMonths.indexOf(currentMonth);
+      const target = availableMonths[index + 1];
+      if (target) currentMonth = target;
+      apply();
+    });
+    for (const reset of calendar.querySelectorAll<HTMLAnchorElement>("[data-filter-reset]")) {
+      reset.addEventListener("click", (event) => {
+        event.preventDefault();
+        form?.reset();
+        currentView = "agenda";
+        currentMonth = initialMonth;
+        apply();
+      });
+    }
+    window.addEventListener("popstate", () => {
+      readUrl();
+      apply(false);
+    });
+  }
+</script>
+
+<style>
+  .results-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 2.6rem 0 0.75rem;
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .results-heading p {
+    margin: 0;
+  }
+
+  [data-result-count] {
+    font-family: var(--serif);
+    font-size: 1.6rem;
+    font-weight: 650;
+  }
+
+  .source-note {
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .agenda-day {
+    display: grid;
+    grid-template-columns: minmax(8rem, 0.28fr) minmax(0, 1fr);
+    gap: clamp(1rem, 4vw, 3.25rem);
+    padding-top: 2.4rem;
+  }
+
+  .agenda-day > header {
+    padding-top: 0.15rem;
+  }
+
+  .agenda-day > header h2 {
+    margin-bottom: 0.25rem;
+    font-size: clamp(1.45rem, 3vw, 2rem);
+  }
+
+  .agenda-day > header p {
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .empty-state {
+    margin-top: 2.5rem;
+    padding: clamp(2rem, 6vw, 5rem);
+    border: 1px dashed #adb5ac;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  .empty-state h2 {
+    margin-bottom: 0.65rem;
+  }
+
+  .empty-state p:last-child {
+    margin-bottom: 0;
+    color: var(--muted);
+  }
+
+  @media (max-width: 46rem) {
+    .agenda-day {
+      display: block;
+    }
+
+    .agenda-day > header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+  }
+</style>

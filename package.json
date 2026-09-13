@@ -1,0 +1,40 @@
+{
+  "name": "aeroevents",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "tsx scripts/build-data.ts && astro dev",
+    "start": "npm run dev",
+    "prebuild": "tsx scripts/build-data.ts",
+    "build": "astro build",
+    "preview": "astro preview",
+    "check": "npm run data:build && astro check",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "data:build": "tsx scripts/build-data.ts",
+    "data:validate": "tsx scripts/aeroevents.ts validate",
+    "events": "tsx scripts/aeroevents.ts"
+  },
+  "dependencies": {
+    "@astrojs/sitemap": "^3.6.0",
+    "astro": "^7.3.2",
+    "cheerio": "^1.2.0",
+    "luxon": "^3.7.2",
+    "rrule": "^2.8.1",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.6",
+    "@playwright/test": "^1.63.0",
+    "@types/luxon": "^3.7.1",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.3",
+    "vitest": "^5.0.0"
+  }
+}

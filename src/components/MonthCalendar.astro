@@ -1,0 +1,188 @@
+---
+import type { CalendarEventView, CategoryView, OccurrenceView, OrganizerView } from "./calendar-types";
+import { capitalize } from "./format";
+import EventCard from "./EventCard.astro";
+
+interface Props {
+  events: CalendarEventView[];
+  occurrences: OccurrenceView[];
+  organizers: OrganizerView[];
+  categories: CategoryView[];
+  initialMonth: string;
+}
+
+const { events, occurrences, organizers, categories, initialMonth } = Astro.props;
+const eventById = new Map(events.map((event) => [event.id, event]));
+const organizerById = new Map(organizers.map((organizer) => [organizer.id, organizer]));
+const categoryById = new Map(categories.map((category) => [category.id, category]));
+
+const initialParts = initialMonth.split("-").map(Number);
+const initialYear = initialParts[0] ?? new Date().getUTCFullYear();
+const initialMonthNumber = initialParts[1] ?? 1;
+const months = Array.from({ length: 13 }, (_, offset) => {
+  const first = new Date(Date.UTC(initialYear, initialMonthNumber - 1 + offset, 1));
+  const year = first.getUTCFullYear();
+  const month = first.getUTCMonth() + 1;
+  const key = `${year}-${String(month).padStart(2, "0")}`;
+  const length = new Date(Date.UTC(year, month, 0)).getUTCDate();
+  const leading = (first.getUTCDay() + 6) % 7;
+  const cells = [
+    ...Array.from({ length: leading }, () => null),
+    ...Array.from({ length }, (_, index) => index + 1),
+  ];
+  while (cells.length % 7) cells.push(null);
+  return { key, year, month, cells };
+});
+
+const monthName = (key: string) =>
+  capitalize(
+    new Intl.DateTimeFormat("da-DK", { month: "long", year: "numeric", timeZone: "UTC" }).format(
+      new Date(`${key}-01T12:00:00Z`),
+    ),
+  );
+---
+
+<section class="month-view" data-month-view hidden aria-labelledby="month-title">
+  <div class="month-navigation">
+    <button type="button" data-month-previous aria-label="Vis forrige måned">←</button>
+    <h2 id="month-title" data-month-title>{monthName(initialMonth)}</h2>
+    <button type="button" data-month-next aria-label="Vis næste måned">→</button>
+  </div>
+
+  {months.map((month) => (
+    <div class="month-panel" data-month-panel={month.key} hidden={month.key !== initialMonth}>
+      <div class="weekdays" aria-hidden="true">
+        {['Man', 'Tir', 'Ons', 'Tor', 'Fre', 'Lør', 'Søn'].map((day) => <span>{day}</span>)}
+      </div>
+      <div class="month-grid">
+        {month.cells.map((day) => {
+          if (!day) return <div class="month-day outside" aria-hidden="true"></div>;
+          const date = `${month.key}-${String(day).padStart(2, "0")}`;
+          const dayOccurrences = occurrences.filter((occurrence) => occurrence.date === date);
+          return (
+            <section class:list={["month-day", { "has-events": dayOccurrences.length > 0 }]} data-month-day={date}>
+              <h3><span class="visually-hidden">{monthName(month.key)} </span>{day}</h3>
+              <div class="month-events">
+                {dayOccurrences.map((occurrence) => {
+                  const event = eventById.get(occurrence.eventId);
+                  if (!event) return null;
+                  return (
+                    <EventCard
+                      event={event}
+                      occurrence={occurrence}
+                      organizer={organizerById.get(event.organizerId)}
+                      categories={event.categoryIds.flatMap((id) => categoryById.get(id) ?? [])}
+                      compact
+                      kind="month"
+                    />
+                  );
+                })}
+              </div>
+            </section>
+          );
+        })}
+      </div>
+    </div>
+  ))}
+</section>
+
+<style>
+  .month-view {
+    margin-top: 2rem;
+  }
+
+  .month-navigation {
+    display: grid;
+    grid-template-columns: 2.8rem 1fr 2.8rem;
+    align-items: center;
+    margin-bottom: 1.1rem;
+  }
+
+  .month-navigation h2 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .month-navigation button {
+    width: 2.8rem;
+    height: 2.8rem;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    color: var(--sea);
+    background: var(--paper-strong);
+    font-size: 1.2rem;
+  }
+
+  .month-navigation button:hover:not(:disabled) {
+    color: #fff;
+    background: var(--sea);
+  }
+
+  .month-navigation button:disabled {
+    cursor: default;
+    opacity: 0.32;
+  }
+
+  .weekdays,
+  .month-grid {
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+
+  .weekdays {
+    color: var(--muted);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .weekdays span {
+    padding: 0.5rem;
+  }
+
+  .month-grid {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 0.8rem;
+    background: var(--line);
+    gap: 1px;
+  }
+
+  .month-day {
+    min-width: 0;
+    min-height: 9.5rem;
+    padding: 0.5rem;
+    background: var(--paper-strong);
+  }
+
+  .month-day.outside {
+    background: #efecdf;
+  }
+
+  .month-day h3 {
+    margin: 0 0 0.45rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    text-align: right;
+  }
+
+  .month-day.has-events h3 {
+    color: var(--sea);
+    font-weight: 700;
+  }
+
+  @media (max-width: 49rem) {
+    .month-grid,
+    .weekdays {
+      min-width: 48rem;
+    }
+
+    .month-panel {
+      overflow-x: auto;
+      padding-bottom: 0.5rem;
+    }
+  }
+</style>

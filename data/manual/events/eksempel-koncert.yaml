@@ -1,0 +1,27 @@
+id: eksempel-koncert
+title: "Eksempel: koncert i forsamlingshuset"
+description: En kladde, som viser felterne for et enkeltstående kulturarrangement.
+organizerId: eksempel-musikforening
+categoryIds: [musik-kultur]
+location:
+  name: Eksempelsted
+  city: Ærøskøbing
+attendance:
+  kind: public
+status: scheduled
+publication: draft
+price: 100 kr.
+booking:
+  required: true
+  soldOut: false
+  details: Billetter bestilles hos arrangøren.
+schedule:
+  kind: explicit
+  dates:
+    - id: foerste-koncert
+      kind: timed
+      date: "2026-10-03"
+      startTime: "19:30"
+      endTime: "21:30"
+source:
+  sourceId: manual

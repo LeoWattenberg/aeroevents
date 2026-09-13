@@ -1,0 +1,123 @@
+---
+import { sitePath } from "../../components/paths";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getOrganizers, getPublishedEvents } from "../../lib/catalog";
+
+const [organizers, events] = await Promise.all([getOrganizers(), getPublishedEvents()]);
+const publishedOrganizerIds = new Set(events.map((event) => event.organizerId));
+const visibleOrganizers = organizers
+  .filter((organizer) => publishedOrganizerIds.has(organizer.id))
+  .sort((a, b) => a.name.localeCompare(b.name, "da-DK"));
+---
+
+<BaseLayout
+  title="Arrangører"
+  description="Find foreninger, institutioner og andre arrangører bag begivenheder på Ærø."
+  canonicalPath="/arrangoerer/"
+>
+  <header class="page-header page-width">
+    <p class="eyebrow">Mennesker og steder bag kalenderen</p>
+    <h1>Arrangører</h1>
+    <p class="lead">Find kommende arrangementer fra foreninger, institutioner og fællesskaber på Ærø.</p>
+  </header>
+
+  <section class="organizer-list page-width" aria-label="Alle arrangører">
+    {visibleOrganizers.length ? visibleOrganizers.map((organizer) => {
+      const eventCount = events.filter((event) => event.organizerId === organizer.id).length;
+      return (
+        <article>
+          <p class="count">{eventCount === 1 ? "1 arrangement" : `${eventCount} arrangementer`}</p>
+          <h2><a href={sitePath(`/arrangoerer/${organizer.id}/`)}>{organizer.name}</a></h2>
+          {organizer.description && <p>{organizer.description}</p>}
+          <span class="arrow" aria-hidden="true">↗</span>
+        </article>
+      );
+    }) : (
+      <div class="empty card">
+        <h2>Ingen arrangører endnu</h2>
+        <p>Arrangører vises her, så snart deres første arrangement er offentliggjort.</p>
+      </div>
+    )}
+  </section>
+</BaseLayout>
+
+<style>
+  .page-header {
+    padding-block: clamp(3.5rem, 8vw, 7rem);
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .page-header h1 {
+    margin-bottom: 1rem;
+  }
+
+  .organizer-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    margin-top: 2rem;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 0.8rem;
+    background: var(--line);
+  }
+
+  article {
+    position: relative;
+    min-height: 14rem;
+    padding: clamp(1.5rem, 4vw, 2.5rem);
+    background: var(--paper-strong);
+  }
+
+  article:hover {
+    background: var(--sea-light);
+  }
+
+  article h2 {
+    margin: 1.7rem 2rem 0.65rem 0;
+    font-size: clamp(1.7rem, 3vw, 2.4rem);
+  }
+
+  article h2 a {
+    text-decoration: none;
+  }
+
+  article h2 a::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+  }
+
+  article p:not(.count) {
+    max-width: 30rem;
+    margin-bottom: 0;
+    color: var(--muted);
+  }
+
+  .count {
+    color: var(--sun);
+    font-size: 0.69rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--sun);
+    font-size: 1.3rem;
+  }
+
+  .empty {
+    grid-column: 1 / -1;
+    padding: 3rem;
+  }
+
+  @media (max-width: 42rem) {
+    .organizer-list {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

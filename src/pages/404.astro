@@ -1,0 +1,24 @@
+---
+import { sitePath } from "../components/paths";
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Siden blev ikke fundet">
+  <section class="not-found page-width">
+    <p class="eyebrow">404 · Ikke fundet</p>
+    <h1>Her var der<br />ikke noget</h1>
+    <p class="lead">Arrangementet eller siden kan være flyttet. Kalenderen viser alt det, vi har lige nu.</p>
+    <a class="button" href={sitePath("/")}>Gå til kalenderen</a>
+  </section>
+</BaseLayout>
+
+<style>
+  .not-found {
+    max-width: 64rem;
+    padding-block: clamp(5rem, 12vw, 10rem);
+  }
+
+  .not-found .lead {
+    margin-bottom: 2rem;
+  }
+</style>

@@ -1,0 +1,249 @@
+---
+import type {
+  CalendarEventView,
+  CategoryView,
+  OccurrenceView,
+  OrganizerView,
+} from "./calendar-types";
+import { attendanceLabel, occurrenceLastDate, occurrenceTimeLabel, statusLabel } from "./format";
+import { sitePath } from "./paths";
+
+interface Props {
+  event: CalendarEventView;
+  occurrence: OccurrenceView;
+  organizer?: OrganizerView | undefined;
+  categories?: CategoryView[] | undefined;
+  compact?: boolean | undefined;
+  kind?: "agenda" | "month" | undefined;
+}
+
+const { event, occurrence, organizer, categories = [], compact = false, kind = "agenda" } = Astro.props;
+const effectiveStatus = occurrence.status && occurrence.status !== "scheduled" ? occurrence.status : event.status;
+const eventStatus = statusLabel(effectiveStatus);
+const attendance = attendanceLabel(event.attendance);
+const location = occurrence.location ?? event.location;
+const searchText = [
+  event.title,
+  event.description,
+  organizer?.name,
+  location?.name,
+  location?.city,
+  ...categories.map((category) => category.name),
+]
+  .filter(Boolean)
+  .join(" ")
+  .toLocaleLowerCase("da-DK");
+const categoryKey = `|${event.categoryIds.join("|")}|`;
+const dateTime = occurrence.allDay || occurrence.timeUnknown ? occurrence.date : occurrence.start;
+---
+
+<article
+  class:list={["event-card", { compact, cancelled: effectiveStatus === "cancelled" }]}
+  data-calendar-item
+  data-event-id={event.id}
+  data-organizer={event.organizerId}
+  data-categories={categoryKey}
+  data-date={occurrence.date}
+  data-end-date={occurrenceLastDate(occurrence)}
+  data-search={searchText}
+  data-calendar-kind={kind}
+>
+  <div class="event-time">
+    <time datetime={dateTime}>{occurrenceTimeLabel(occurrence)}</time>
+    {occurrence.originalStart && <span class="moved">Flyttet</span>}
+  </div>
+  <div class="event-body">
+    <div class="badges">
+      {eventStatus && <span class:list={["badge", "status", effectiveStatus]}>{eventStatus}</span>}
+      {attendance && <span class="badge attendance">{attendance}</span>}
+      {categories.slice(0, compact ? 1 : 2).map((category) => <span class="badge">{category.name}</span>)}
+    </div>
+    <h3><a href={sitePath(`/begivenheder/${encodeURIComponent(event.id)}/`)}>{event.title}</a></h3>
+    <p class="event-meta">
+      {organizer && <span>{organizer.name}</span>}
+      {organizer && location?.name && <span aria-hidden="true"> · </span>}
+      {location?.name && <span>{location.name}</span>}
+    </p>
+    {!compact && event.description && <p class="event-description">{event.description}</p>}
+  </div>
+  <span class="event-arrow" aria-hidden="true">↗</span>
+</article>
+
+<style>
+  .event-card {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(7.25rem, 0.25fr) minmax(0, 1fr) auto;
+    gap: clamp(1rem, 3vw, 2.25rem);
+    align-items: start;
+    padding: 1.5rem 1.4rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .event-card:last-child {
+    border-bottom: 1px solid var(--line);
+  }
+
+  .event-card:hover {
+    background: rgb(255 253 247 / 65%);
+  }
+
+  .event-time {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.4rem;
+    color: var(--sea);
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
+  .moved {
+    color: var(--sun);
+    font-size: 0.72rem;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  h3 {
+    margin: 0.3rem 0 0.35rem;
+    font-size: clamp(1.35rem, 2.5vw, 1.85rem);
+  }
+
+  h3 a {
+    text-decoration: none;
+  }
+
+  h3 a::after {
+    position: absolute;
+    inset: 0;
+    content: "";
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .badge {
+    display: inline-block;
+    padding: 0.18rem 0.48rem;
+    border: 1px solid #c9cec8;
+    border-radius: 99rem;
+    color: #52605d;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    line-height: 1.4;
+    text-transform: uppercase;
+  }
+
+  .badge.attendance {
+    border-color: #d39878;
+    color: #8c3e20;
+    background: var(--sun-light);
+  }
+
+  .badge.status {
+    border-color: var(--sun);
+    color: #873213;
+  }
+
+  .badge.sold-out,
+  .badge.cancelled {
+    color: #fff;
+    background: #9b382d;
+    border-color: #9b382d;
+  }
+
+  .event-meta,
+  .event-description {
+    margin-bottom: 0;
+    color: var(--muted);
+  }
+
+  .event-description {
+    display: -webkit-box;
+    max-width: 48rem;
+    margin-top: 0.7rem;
+    overflow: hidden;
+    font-size: 0.92rem;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+
+  .event-arrow {
+    color: var(--sun);
+    font-size: 1.3rem;
+  }
+
+  .event-card.cancelled h3,
+  .event-card.cancelled .event-meta {
+    opacity: 0.72;
+  }
+
+  .event-card.cancelled h3 {
+    text-decoration: line-through;
+  }
+
+  .event-card.compact {
+    display: block;
+    padding: 0.65rem;
+    border: 0;
+    border-radius: 0.4rem;
+    background: var(--sea-light);
+  }
+
+  .event-card.compact + .event-card.compact {
+    margin-top: 0.35rem;
+  }
+
+  .event-card.compact .event-meta,
+  .event-card.compact .event-arrow,
+  .event-card.compact .badge.attendance,
+  .event-card.compact .badge.status {
+    display: none;
+  }
+
+  .event-card.compact .event-time {
+    display: block;
+    margin-bottom: 0.15rem;
+    font-size: 0.64rem;
+  }
+
+  .event-card.compact h3 {
+    margin: 0.2rem 0 0;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 700;
+    line-height: 1.28;
+  }
+
+  .event-card.compact .badge {
+    padding: 0;
+    border: 0;
+    color: var(--sea);
+    font-size: 0.59rem;
+  }
+
+  @media (max-width: 40rem) {
+    .event-card:not(.compact) {
+      grid-template-columns: 1fr auto;
+      gap: 0.8rem;
+      padding-inline: 0;
+    }
+
+    .event-card:not(.compact) .event-time {
+      grid-column: 1 / -1;
+    }
+
+    .event-card:not(.compact) .event-body {
+      grid-column: 1;
+    }
+
+    .event-card:not(.compact) .event-arrow {
+      grid-column: 2;
+    }
+  }
+</style>

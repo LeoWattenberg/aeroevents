@@ -1,0 +1,33 @@
+- id: manual
+  name: Manuel indtastning
+  publication: review
+  enabled: true
+- id: aeroe-kommune
+  name: Ærø Kommunes mødeplan
+  url: https://www.aeroekommune.dk/politik-og-indflydelse/moedeplaner
+  organizerId: aeroe-kommune
+  categoryIds: [politik-kommune]
+  publication: automatic
+  enabled: true
+- id: aeroe-kirkeliv
+  name: Ærø Kirkelivs kalender
+  url: https://www.xn--rkirkeliv-f3a3r.dk/kalender--aktiviteter/gudstjenester
+  organizerId: aeroe-kirkeliv
+  categoryIds: [kirke]
+  publication: automatic
+  enabled: true
+  notes: Kun almindelige gudstjenester publiceres automatisk i første version.
+- id: aeroe-bibliotek
+  name: Ærø Folkebiblioteks arrangementer
+  url: https://www.arrebib.dk/arrangementer
+  organizerId: aeroe-folkebibliotek
+  categoryIds: [musik-kultur]
+  publication: automatic
+  enabled: true
+- id: facebook
+  name: Offentlige Facebook-kilder
+  organizerId: aeroe-kalenderen
+  categoryIds: [andet]
+  publication: review
+  enabled: false
+  notes: Aktiveres kilde for kilde efter kontrol af adgang og vilkår.

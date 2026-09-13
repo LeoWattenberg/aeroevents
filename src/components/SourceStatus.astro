@@ -1,0 +1,77 @@
+---
+import type { CalendarDataset } from "./calendar-types";
+
+interface Props {
+  dataset: CalendarDataset;
+}
+
+const { dataset } = Astro.props;
+const format = new Intl.DateTimeFormat("da-DK", {
+  dateStyle: "medium",
+  timeStyle: "short",
+  timeZone: "Europe/Copenhagen",
+});
+const sources = (dataset.sourceVerifications ?? []).filter((source) => source.verifiedAt);
+---
+
+{sources.length > 0 && (
+  <details class="source-status">
+    <summary>Hvornår er kilderne senest kontrolleret?</summary>
+    <div>
+      <ul>
+        {sources.map((source) => (
+          <li>
+            <span>{source.name}</span>
+            <time datetime={source.verifiedAt}>{format.format(new Date(source.verifiedAt!))}</time>
+          </li>
+        ))}
+      </ul>
+      {dataset.generatedAt && (
+        <p>Hjemmesiden blev bygget <time datetime={dataset.generatedAt}>{format.format(new Date(dataset.generatedAt))}</time>.</p>
+      )}
+    </div>
+  </details>
+)}
+
+<style>
+  .source-status {
+    max-width: 42rem;
+    margin: 3rem auto 0;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+
+  summary {
+    cursor: pointer;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 0.18em;
+  }
+
+  .source-status > div {
+    margin-top: 0.75rem;
+    padding: 1rem;
+    border: 1px solid var(--line);
+    border-radius: 0.6rem;
+    background: var(--paper-strong);
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.3rem 0;
+  }
+
+  p {
+    margin: 0.75rem 0 0;
+    padding-top: 0.75rem;
+    border-top: 1px solid var(--line);
+  }
+</style>

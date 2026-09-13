@@ -1,0 +1,18 @@
+- id: aeroe-kommune
+  name: Ærø Kommune
+  url: https://www.aeroekommune.dk/
+- id: aeroe-kirkeliv
+  name: Ærø Kirkeliv
+  url: https://www.xn--rkirkeliv-f3a3r.dk/
+- id: aeroe-folkebibliotek
+  name: Ærø Folkebibliotek
+  url: https://www.arrebib.dk/
+- id: aeroe-kalenderen
+  name: Ærø Kalenderen
+  description: Redaktionelle og manuelt indsendte arrangementer
+- id: eksempel-musikforening
+  name: "Eksempel: lokal musikforening"
+  description: Demonstrationsarrangør; kladdeevents vises ikke på hjemmesiden
+- id: eksempel-faellesskab
+  name: "Eksempel: lokalt fællesskab"
+  description: Demonstrationsarrangør; kladdeevents vises ikke på hjemmesiden

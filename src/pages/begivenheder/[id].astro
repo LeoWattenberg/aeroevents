@@ -1,0 +1,339 @@
+---
+import type { CalendarDataset, CalendarEventView, CategoryView, OrganizerView } from "../../components/calendar-types";
+import { toCalendarDataset } from "../../components/catalog-adapter";
+import {
+  attendanceLabel,
+  calendarToday,
+  capitalize,
+  dateLabel,
+  occurrenceLastDate,
+  occurrenceTimeLabel,
+  statusLabel,
+} from "../../components/format";
+import { sitePath } from "../../components/paths";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  getBuildMetadata,
+  getCategories,
+  getOccurrences,
+  getOrganizers,
+  getPublishedEvents,
+  getSources,
+} from "../../lib/catalog";
+
+interface Props {
+  event: CalendarEventView;
+  organizer?: OrganizerView;
+  categories: CategoryView[];
+  dataset: CalendarDataset;
+}
+
+export async function getStaticPaths() {
+  const [events, occurrences, organizers, categories, sources, metadata] = await Promise.all([
+    getPublishedEvents(),
+    getOccurrences(),
+    getOrganizers(),
+    getCategories(),
+    getSources(),
+    getBuildMetadata(),
+  ]);
+  const dataset = toCalendarDataset(events, occurrences, organizers, categories, sources, metadata);
+  const organizerById = new Map(dataset.organizers.map((organizer) => [organizer.id, organizer]));
+  const categoryById = new Map(dataset.categories.map((category) => [category.id, category]));
+  return dataset.events.map((event) => ({
+    params: { id: event.id },
+    props: {
+      event,
+      organizer: organizerById.get(event.organizerId),
+      categories: event.categoryIds.flatMap((id) => categoryById.get(id) ?? []),
+      dataset,
+    },
+  }));
+}
+
+const { event, organizer, categories, dataset } = Astro.props;
+const today = calendarToday(dataset.generatedAt);
+const upcoming = event.occurrences.filter((occurrence) => occurrenceLastDate(occurrence) >= today);
+const visibleOccurrences = upcoming.length ? upcoming : event.occurrences.slice(-1);
+const firstOccurrenceIsOngoing = Boolean(
+  visibleOccurrences[0] &&
+  visibleOccurrences[0].date < today &&
+  occurrenceLastDate(visibleOccurrences[0]) >= today,
+);
+const effectiveStatus = statusLabel(event.status);
+const attendance = attendanceLabel(event.attendance);
+const primaryLocation = visibleOccurrences[0]?.location ?? event.location;
+const sourceTime = event.source?.verifiedAt
+  ? new Intl.DateTimeFormat("da-DK", { dateStyle: "medium", timeStyle: "short", timeZone: "Europe/Copenhagen" })
+      .format(new Date(event.source.verifiedAt))
+  : undefined;
+---
+
+<BaseLayout title={event.title} description={event.description || `${event.title} på Ærø`} canonicalPath={`/begivenheder/${event.id}/`}>
+  <article class="event-page page-width">
+    <a class="back-link" href={sitePath("/")}>← Tilbage til kalenderen</a>
+
+    <header class="event-header">
+      <div class="event-title">
+        <div class="badges">
+          {effectiveStatus && <span class:list={["badge", "status", event.status]}>{effectiveStatus}</span>}
+          {attendance && <span class="badge attendance">{attendance}</span>}
+          {categories.map((category) => <span class="badge">{category.name}</span>)}
+        </div>
+        <h1>{event.title}</h1>
+        {organizer && (
+          <p class="byline">Arrangeret af <a href={sitePath(`/arrangoerer/${organizer.id}/`)}>{organizer.name}</a></p>
+        )}
+      </div>
+
+      {visibleOccurrences[0] && (
+        <div class="date-card">
+          <p class="eyebrow">{firstOccurrenceIsOngoing ? "I gang nu" : "Næste tidspunkt"}</p>
+          <p class="date">{capitalize(dateLabel(visibleOccurrences[0].date))}</p>
+          <p class="time">{occurrenceTimeLabel(visibleOccurrences[0])}</p>
+          {visibleOccurrences[0].status !== "scheduled" && (
+            <strong>{statusLabel(visibleOccurrences[0].status)}</strong>
+          )}
+        </div>
+      )}
+    </header>
+
+    <div class="event-grid">
+      <div class="event-main prose">
+        {event.description ? <p class="description">{event.description}</p> : <p>Arrangøren har ikke tilføjet en beskrivelse.</p>}
+
+        {visibleOccurrences.length > 1 && (
+          <section class="occurrences" aria-labelledby="dates-heading">
+            <h2 id="dates-heading">Kommende tidspunkter</h2>
+            <ol>
+              {visibleOccurrences.map((occurrence) => (
+                <li>
+                  <time datetime={occurrence.start}>
+                    <strong>{capitalize(dateLabel(occurrence.date))}</strong>
+                    <span>{occurrenceTimeLabel(occurrence)}</span>
+                  </time>
+                  {occurrence.status !== "scheduled" && <span class="occurrence-status">{statusLabel(occurrence.status)}</span>}
+                  {occurrence.location && occurrence.location.name !== event.location?.name && <span>{occurrence.location.name}</span>}
+                </li>
+              ))}
+            </ol>
+          </section>
+        )}
+      </div>
+
+      <aside aria-label="Praktiske oplysninger">
+        {primaryLocation && (
+          <section>
+            <h2>Sted</h2>
+            <p>
+              <strong>{primaryLocation.name}</strong><br />
+              {primaryLocation.address && <>{primaryLocation.address}<br /></>}
+              {(primaryLocation.postalCode || primaryLocation.city) && <>{primaryLocation.postalCode} {primaryLocation.city}</>}
+            </p>
+            {primaryLocation.url && <a href={primaryLocation.url}>Læs om stedet ↗</a>}
+          </section>
+        )}
+
+        {(event.price || event.bookingRequired || event.bookingDetails || event.bookingUrl) && (
+          <section>
+            <h2>Pris og tilmelding</h2>
+            {event.price && <p><strong>{event.price}</strong></p>}
+            {event.bookingRequired && <p><strong>Tilmelding eller billet er nødvendig.</strong></p>}
+            {event.bookingDetails && <p>{event.bookingDetails}</p>}
+            {event.bookingUrl && <a class="button" href={event.bookingUrl}>Tilmeld eller bestil</a>}
+          </section>
+        )}
+
+        {(attendance || event.attendanceDetails) && (
+          <section>
+            <h2>Hvem kan deltage?</h2>
+            {attendance && <p><strong>{attendance}</strong></p>}
+            {event.attendanceDetails && <p>{event.attendanceDetails}</p>}
+          </section>
+        )}
+
+        {event.source && (
+          <section class="source">
+            <h2>Kilde</h2>
+            <p>
+              {event.source.url ? <a href={event.source.url}>{event.source.name} ↗</a> : event.source.name}
+              {sourceTime && <><br /><small>Kontrolleret {sourceTime}</small></>}
+            </p>
+            <p><small>Kontrollér altid den oprindelige kilde ved ændringer i sidste øjeblik.</small></p>
+          </section>
+        )}
+      </aside>
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .event-page {
+    padding-top: 2.2rem;
+  }
+
+  .back-link {
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  .event-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(14rem, 21rem);
+    gap: clamp(2rem, 8vw, 7rem);
+    align-items: end;
+    padding-block: clamp(3rem, 7vw, 6rem);
+    border-bottom: 1px solid var(--line);
+  }
+
+  .badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: 1rem;
+  }
+
+  .badge {
+    padding: 0.25rem 0.58rem;
+    border: 1px solid #bec5bf;
+    border-radius: 99rem;
+    color: #4b5b57;
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+  }
+
+  .badge.attendance {
+    border-color: #d39878;
+    color: #873b20;
+    background: var(--sun-light);
+  }
+
+  .badge.status {
+    color: #fff;
+    background: #9b382d;
+    border-color: #9b382d;
+  }
+
+  h1 {
+    max-width: 55rem;
+    margin-bottom: 1rem;
+    font-size: clamp(2.7rem, 7vw, 5rem);
+  }
+
+  .byline {
+    margin: 0;
+    color: var(--muted);
+  }
+
+  .byline a {
+    color: var(--sea);
+    font-weight: 700;
+  }
+
+  .date-card {
+    padding: 1.35rem;
+    border-top: 3px solid var(--sea);
+    background: var(--sea-light);
+  }
+
+  .date-card .eyebrow {
+    margin-top: 0;
+  }
+
+  .date-card .date {
+    margin-bottom: 0.2rem;
+    font-family: var(--serif);
+    font-size: 1.45rem;
+    font-weight: 650;
+  }
+
+  .date-card .time {
+    margin-bottom: 0;
+    color: var(--sea);
+    font-weight: 700;
+  }
+
+  .event-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1.6fr) minmax(16rem, 0.7fr);
+    gap: clamp(3rem, 9vw, 8rem);
+    padding-top: clamp(3rem, 6vw, 5rem);
+  }
+
+  .description {
+    white-space: pre-line;
+    font-size: 1.12rem;
+  }
+
+  .event-main h2 {
+    margin-top: 3.5rem;
+    font-size: 1.8rem;
+  }
+
+  .occurrences ol {
+    padding: 0;
+    border-top: 1px solid var(--line);
+    list-style: none;
+  }
+
+  .occurrences li {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    padding: 0.8rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  .occurrences time {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .occurrence-status {
+    color: #9b382d;
+    font-weight: 700;
+  }
+
+  aside section {
+    padding: 1.4rem 0;
+    border-top: 1px solid var(--line);
+  }
+
+  aside h2 {
+    margin-bottom: 0.65rem;
+    font-family: var(--sans);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  aside p {
+    color: #43514e;
+  }
+
+  aside .button {
+    font-size: 0.8rem;
+  }
+
+  aside .source small {
+    color: var(--muted);
+  }
+
+  @media (max-width: 48rem) {
+    .event-header,
+    .event-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .event-header {
+      padding-block: 3rem;
+    }
+  }
+</style>

@@ -1,0 +1,193 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const email = import.meta.env.PUBLIC_SUBMISSION_EMAIL || "kalender@example.dk";
+const subject = encodeURIComponent("Arrangement til Det sker på Ærø");
+const body = encodeURIComponent(`Titel:
+
+Dato og tidspunkt:
+
+Sted:
+
+Arrangør:
+
+Beskrivelse:
+
+Pris og tilmelding:
+
+Link til mere information:`);
+const mailto = `mailto:${email}?subject=${subject}&body=${body}`;
+---
+
+<BaseLayout
+  title="Indsend et arrangement"
+  description="Send et arrangement til Det sker på Ærø."
+  canonicalPath="/indsend/"
+>
+  <header class="submit-header page-width">
+    <div>
+      <p class="eyebrow">Få det med i kalenderen</p>
+      <h1>Indsend et arrangement</h1>
+      <p class="lead">Skriv til os, hvis du arrangerer noget på Ærø, som andre må høre om.</p>
+    </div>
+    <aside>
+      <p>Send oplysningerne til</p>
+      <a href={mailto}>{email}</a>
+      <small>Indsendelser bliver læst og godkendt, før de kommer i kalenderen.</small>
+    </aside>
+  </header>
+
+  <section class="submit-content page-width">
+    <div class="checklist">
+      <p class="eyebrow">Huskeliste</p>
+      <h2>Det skal vi bruge</h2>
+      <ol>
+        <li><span>01</span><div><strong>Titel og beskrivelse</strong><p>Fortæl kort og konkret, hvad der skal ske.</p></div></li>
+        <li><span>02</span><div><strong>Dato og tid</strong><p>Skriv start og eventuelt sluttid. Ved gentagelser: beskriv rytme og slutdato.</p></div></li>
+        <li><span>03</span><div><strong>Sted</strong><p>Navn, adresse og by. Skriv også, hvis stedet kan ændre sig.</p></div></li>
+        <li><span>04</span><div><strong>Arrangør og kontakt</strong><p>Navn samt et link, en mailadresse eller et telefonnummer.</p></div></li>
+        <li><span>05</span><div><strong>Adgang</strong><p>Pris, tilmelding, billetlink og om arrangementet kun er for medlemmer.</p></div></li>
+        <li><span>06</span><div><strong>Kilde</strong><p>Vedlæg et offentligt link, hvis arrangementet allerede er annonceret.</p></div></li>
+      </ol>
+    </div>
+
+    <div class="send-box">
+      <p class="eyebrow">Klar?</p>
+      <h2>Åbn en færdig mailskabelon</h2>
+      <p>Skabelonen har felter til de vigtigste oplysninger. Du må gerne vedhæfte en plakat eller et billede som supplement.</p>
+      <a class="button" href={mailto}>Skriv om et arrangement</a>
+      <p class="email-fallback">Hvis knappen ikke virker: <a href={`mailto:${email}`}>{email}</a></p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .submit-header {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(15rem, 22rem);
+    gap: clamp(3rem, 9vw, 8rem);
+    align-items: end;
+    padding-block: clamp(3.5rem, 8vw, 7rem);
+    border-bottom: 2px solid var(--ink);
+  }
+
+  .submit-header h1 {
+    max-width: 52rem;
+  }
+
+  .submit-header aside {
+    padding: 1.4rem;
+    border-top: 3px solid var(--sun);
+    background: var(--sun-light);
+  }
+
+  .submit-header aside p {
+    margin-bottom: 0.25rem;
+    color: #6e4938;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .submit-header aside a {
+    display: block;
+    margin-bottom: 1.3rem;
+    overflow-wrap: anywhere;
+    color: #753719;
+    font-family: var(--serif);
+    font-size: 1.35rem;
+    font-weight: 650;
+  }
+
+  .submit-header aside small {
+    display: block;
+    color: #6e4938;
+  }
+
+  .submit-content {
+    display: grid;
+    grid-template-columns: minmax(0, 1.4fr) minmax(17rem, 0.75fr);
+    gap: clamp(3rem, 9vw, 8rem);
+    padding-top: clamp(3rem, 7vw, 6rem);
+  }
+
+  .checklist .eyebrow,
+  .send-box .eyebrow {
+    margin-top: 0;
+  }
+
+  ol {
+    margin: 2rem 0 0;
+    padding: 0;
+    border-top: 1px solid var(--line);
+    list-style: none;
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr;
+    gap: 1rem;
+    padding: 1.15rem 0;
+    border-bottom: 1px solid var(--line);
+  }
+
+  li > span {
+    color: var(--sun);
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  li strong {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+  }
+
+  li p {
+    margin: 0.25rem 0 0;
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+
+  .send-box {
+    align-self: start;
+    padding: 1.7rem;
+    border-radius: 0.8rem;
+    color: #e9f1ec;
+    background: var(--sea);
+  }
+
+  .send-box .eyebrow {
+    color: #f3a07b;
+  }
+
+  .send-box h2 {
+    font-size: 2rem;
+  }
+
+  .send-box > p:not(.eyebrow) {
+    color: #c7d8d1;
+  }
+
+  .send-box .button {
+    border-color: #fff;
+    color: var(--sea);
+    background: #fff;
+  }
+
+  .email-fallback {
+    margin: 1.2rem 0 0;
+    font-size: 0.75rem;
+  }
+
+  .email-fallback a {
+    color: #fff;
+  }
+
+  @media (max-width: 48rem) {
+    .submit-header,
+    .submit-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+</style>

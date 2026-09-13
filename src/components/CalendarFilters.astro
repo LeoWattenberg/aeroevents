@@ -1,0 +1,296 @@
+---
+import type { CategoryView, OrganizerView } from "./calendar-types";
+import { sitePath } from "./paths";
+
+interface Props {
+  organizers: OrganizerView[];
+  categories: CategoryView[];
+}
+
+const { organizers, categories } = Astro.props;
+---
+
+<section class="filter-panel" aria-labelledby="filter-heading">
+  <div class="filter-heading-row">
+    <div>
+      <p class="filter-kicker">Find det, du leder efter</p>
+      <h2 id="filter-heading">Filtrér kalenderen</h2>
+    </div>
+    <div class="view-switch" role="group" aria-label="Vælg kalendervisning">
+      <button type="button" data-view-button="agenda" aria-pressed="true">
+        <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M4 5h12M4 10h12M4 15h12" /></svg>
+        Liste
+      </button>
+      <button type="button" data-view-button="maaned" aria-pressed="false">
+        <svg aria-hidden="true" viewBox="0 0 20 20"><path d="M3 5.5h14v12H3zM3 9h14M7 3v5M13 3v5" /></svg>
+        Måned
+      </button>
+    </div>
+  </div>
+
+  <form class="filters" action={sitePath("/")} method="get" data-filter-form>
+    <label class="search-field">
+      <span>Søg</span>
+      <span class="input-wrap">
+        <svg aria-hidden="true" viewBox="0 0 20 20"><circle cx="8.5" cy="8.5" r="5.5" /><path d="m13 13 4 4" /></svg>
+        <input type="search" name="q" autocomplete="off" placeholder="Fx koncert, Marstal eller strik" />
+      </span>
+    </label>
+
+    <label>
+      <span>Arrangør</span>
+      <select name="arrangoer">
+        <option value="">Alle arrangører</option>
+        {organizers.map((organizer) => <option value={organizer.id}>{organizer.name}</option>)}
+      </select>
+    </label>
+
+    <label>
+      <span>Kategori</span>
+      <select name="kategori">
+        <option value="">Alle kategorier</option>
+        {categories.map((category) => <option value={category.id}>{category.name}</option>)}
+      </select>
+    </label>
+
+    <details class="date-filter">
+      <summary>Vælg datoer</summary>
+      <div class="date-fields">
+        <label>
+          <span>Fra og med</span>
+          <input type="date" name="fra" />
+        </label>
+        <label>
+          <span>Til og med</span>
+          <input type="date" name="til" />
+        </label>
+      </div>
+    </details>
+
+    <button class="apply" type="submit">Vis arrangementer</button>
+    <a class="reset" href={sitePath("/")} data-filter-reset>Nulstil</a>
+  </form>
+
+  <noscript>
+    <p class="no-script">Hele kalenderen står nedenfor. Brug din browsers tekstsøgning for at finde et bestemt arrangement.</p>
+  </noscript>
+</section>
+
+<style>
+  .filter-panel {
+    position: relative;
+    z-index: 2;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid var(--line);
+    border-radius: 1rem;
+    background: var(--paper-strong);
+    box-shadow: var(--shadow);
+  }
+
+  .filter-heading-row {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.35rem;
+  }
+
+  .filter-kicker {
+    margin-bottom: 0.15rem;
+    color: var(--sun);
+    font-size: 0.68rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin: 0;
+    font-family: var(--sans);
+    font-size: 1.05rem;
+    font-weight: 700;
+  }
+
+  .view-switch {
+    display: flex;
+    padding: 0.22rem;
+    border: 1px solid var(--line);
+    border-radius: 99rem;
+    background: var(--paper);
+  }
+
+  .view-switch button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.38rem 0.7rem;
+    border: 0;
+    border-radius: 99rem;
+    color: #53615d;
+    background: transparent;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .view-switch button[aria-pressed="true"] {
+    color: #fff;
+    background: var(--sea);
+  }
+
+  .view-switch svg,
+  .input-wrap svg {
+    width: 1rem;
+    fill: none;
+    stroke: currentcolor;
+    stroke-width: 1.7;
+  }
+
+  .filters {
+    display: grid;
+    grid-template-columns: minmax(12rem, 1.5fr) repeat(2, minmax(10rem, 1fr)) auto auto;
+    gap: 0.75rem;
+    align-items: end;
+  }
+
+  .filters label > span:first-child,
+  .date-fields label > span:first-child {
+    display: block;
+    margin: 0 0 0.35rem 0.15rem;
+    color: #52605d;
+    font-size: 0.69rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  input,
+  select,
+  .date-filter summary {
+    width: 100%;
+    min-height: 2.85rem;
+    border: 1px solid #c8cbc1;
+    border-radius: 0.45rem;
+    color: var(--ink);
+    background: #fff;
+  }
+
+  input,
+  select {
+    padding: 0.65rem 0.75rem;
+  }
+
+  .input-wrap {
+    position: relative;
+    display: block;
+  }
+
+  .input-wrap svg {
+    position: absolute;
+    top: 0.88rem;
+    left: 0.8rem;
+    pointer-events: none;
+  }
+
+  .input-wrap input {
+    padding-left: 2.3rem;
+  }
+
+  .date-filter {
+    position: relative;
+  }
+
+  .date-filter summary {
+    display: flex;
+    min-width: 7rem;
+    align-items: center;
+    padding: 0.6rem 0.75rem;
+    font-size: 0.82rem;
+    font-weight: 700;
+    list-style: none;
+  }
+
+  .date-filter summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .date-filter summary::after {
+    margin-left: auto;
+    content: "+";
+  }
+
+  .date-filter[open] summary::after {
+    content: "−";
+  }
+
+  .date-fields {
+    position: absolute;
+    z-index: 10;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    display: grid;
+    width: min(22rem, 80vw);
+    grid-template-columns: 1fr 1fr;
+    gap: 0.75rem;
+    padding: 1rem;
+    border: 1px solid var(--line);
+    border-radius: 0.65rem;
+    background: #fff;
+    box-shadow: var(--shadow);
+  }
+
+  .apply {
+    min-height: 2.85rem;
+    padding: 0.6rem 1rem;
+    border: 1px solid var(--sea);
+    border-radius: 0.45rem;
+    color: #fff;
+    background: var(--sea);
+    font-size: 0.82rem;
+    font-weight: 700;
+  }
+
+  .apply:hover {
+    color: var(--sea);
+    background: transparent;
+  }
+
+  .reset {
+    align-self: center;
+    color: var(--muted);
+    font-size: 0.75rem;
+  }
+
+  .no-script {
+    margin: 1rem 0 0;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 65rem) {
+    .filters {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .search-field {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 38rem) {
+    .filter-heading-row {
+      align-items: start;
+      flex-direction: column;
+    }
+
+    .filters {
+      display: flex;
+      align-items: stretch;
+      flex-direction: column;
+    }
+
+    .date-fields {
+      right: auto;
+      left: 0;
+    }
+  }
+</style>

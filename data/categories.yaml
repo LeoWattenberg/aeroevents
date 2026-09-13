@@ -1,0 +1,32 @@
+- id: musik-kultur
+  name: Musik og kultur
+  color: "#a44432"
+  description: Koncerter, teater, foredrag, film og udstillinger
+- id: forening-faellesskab
+  name: Foreninger og fællesskab
+  color: "#77652e"
+  description: Lokale foreninger, klubber og fælles aktiviteter
+- id: sport-motion
+  name: Sport og motion
+  color: "#35715d"
+  description: Idræt, gåture og bevægelse
+- id: boern-familie
+  name: Børn og familie
+  color: "#b45b74"
+  description: Arrangementer for børn og familier
+- id: natur
+  name: Natur
+  color: "#52723d"
+  description: Ture og oplevelser i naturen
+- id: kirke
+  name: Kirke
+  color: "#6c5b88"
+  description: Gudstjenester og kirkelige arrangementer
+- id: politik-kommune
+  name: Politik og kommune
+  color: "#37668b"
+  description: Offentlige møder og lokalpolitik
+- id: andet
+  name: Andet
+  color: "#656b70"
+  description: Arrangementer, som ikke passer i de øvrige kategorier

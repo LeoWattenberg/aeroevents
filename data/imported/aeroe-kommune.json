@@ -1,0 +1,97 @@
+{
+  "sourceId": "aeroe-kommune",
+  "verifiedAt": "2026-09-13T20:51:14.761Z",
+  "events": [
+    {
+      "id": "aeroe-kommune-kommunalbestyrelsen-2026",
+      "title": "Kommunalbestyrelsesmøder 2026",
+      "description": "Offentligt annoncerede møder i Kommunalbestyrelsen på Ærø.",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommunalbestyrelsen-2026-01-1",
+            "date": "2026-01-21",
+            "kind": "timed",
+            "startTime": "19:00"
+          },
+          {
+            "id": "kommunalbestyrelsen-2026-02-1",
+            "date": "2026-02-18",
+            "kind": "timed",
+            "startTime": "19:00"
+          },
+          {
+            "id": "kommunalbestyrelsen-2026-03-1",
+            "date": "2026-03-18",
+            "kind": "timed",
+            "startTime": "19:00"
+          },
+          {
+            "id": "kommunalbestyrelsen-2026-04-1",
+            "date": "2026-04-22",
+            "kind": "timed",
+            "startTime": "19:00"
+          },
+          {
+            "id": "kommunalbestyrelsen-2026-05-1",
+            "date": "2026-05-20",
+            "kind": "timed",
+            "startTime": "19:00"
+          },
+          {
+            "id": "kommunalbestyrelsen-2026-06-1",
+            "date": "2026-06-17",
+            "kind": "timed",
+            "startTime": "19:00"
+          },
+          {
+            "id": "kommunalbestyrelsen-2026-08-1",
+            "date": "2026-08-19",
+            "kind": "timed",
+            "startTime": "19:00"
+          },
+          {
+            "id": "kommunalbestyrelsen-2026-09-1",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "19:00"
+          },
+          {
+            "id": "kommunalbestyrelsen-2026-10-1",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "19:00"
+          },
+          {
+            "id": "kommunalbestyrelsen-2026-11-1",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "19:00"
+          },
+          {
+            "id": "kommunalbestyrelsen-2026-12-1",
+            "date": "2026-12-16",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune",
+        "externalId": "kommunalbestyrelsen-2026",
+        "url": "https://www.aeroekommune.dk/politik-og-indflydelse/moedeplaner",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    }
+  ]
+}

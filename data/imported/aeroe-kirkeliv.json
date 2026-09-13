@@ -1,0 +1,1821 @@
+{
+  "sourceId": "aeroe-kirkeliv",
+  "verifiedAt": "2026-09-13T20:51:14.761Z",
+  "events": [
+    {
+      "id": "aeroe-kirkeliv-53896617",
+      "title": "Høstgudstjeneste - Generationer på tværs i Ærøskøbing Kirke",
+      "description": "Onsdag den 16. september kl. 10.15 i Ærøskøbing Kirke\nHØSTGUDSTJENESTE – GENERATIONER PÅ TVÆRS\nPå...",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896617",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "10:15"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896617",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/hostgudstjeneste-generationer-pa-tvaers-i-aeroskobing-kirke-53896617",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53637562",
+      "title": "Gudstjeneste Marstal",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Marstal Kirke",
+        "address": "Kongensgade 35",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53637562",
+            "date": "2026-09-20",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53637562",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53637562",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53637574",
+      "title": "Gudstjeneste Ærøskøbing",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53637574",
+            "date": "2026-09-20",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53637574",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53637574",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53637604",
+      "title": "Høstgudstjeneste Søby",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Langebro 2a, 5985 Søby",
+        "address": "Langebro 2A",
+        "postalCode": "5985",
+        "city": "Søby Ærø"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53637604",
+            "date": "2026-09-20",
+            "kind": "timed",
+            "startTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53637604",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/hostgudstjeneste-soby-53637604",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53637674",
+      "title": "Gudstjeneste Bregninge",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Bregninge Kirke",
+        "address": "Vester Bregninge 15",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53637674",
+            "date": "2026-09-20",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53637674",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-bregninge-53637674",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-47569411",
+      "title": "Gudstjeneste Marstal",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Marstal Kirke",
+        "address": "Kongensgade 35",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-47569411",
+            "date": "2026-09-27",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "47569411",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/onske-gudstjeneste-bdc-47569411",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53637800",
+      "title": "Gudstjeneste Ærøskøbing",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53637800",
+            "date": "2026-09-27",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53637800",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53637800",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53650191",
+      "title": "Høstgudstjeneste Bregninge",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Bregninge Kirke",
+        "address": "Vester Bregninge 15",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53650191",
+            "date": "2026-09-27",
+            "kind": "timed",
+            "startTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53650191",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/hostgudstjeneste-bregninge-53650191",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53650202",
+      "title": "Gudstjeneste Ommel m. altergang",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ommel Kirke",
+        "address": "Kirkevejen 63",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53650202",
+            "date": "2026-09-27",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53650202",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-ommel-m-altergang-53650202",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53650389",
+      "title": "Gudstjeneste Marstal",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Marstal Kirke",
+        "address": "Kongensgade 35",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53650389",
+            "date": "2026-10-04",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53650389",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53650389",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53655580",
+      "title": "Gudstjeneste Tranderup",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Tranderup kirke",
+        "address": "Tranderupvej 49",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53655580",
+            "date": "2026-10-04",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53655580",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-tranderup-53655580",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53655548",
+      "title": "Gudstjeneste Rise",
+      "description": "Rikke følger Borghild som kirketjener.",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Rise kirke",
+        "address": "St. Rise Landevej 9",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53655548",
+            "date": "2026-10-04",
+            "kind": "timed",
+            "startTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53655548",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-rise-53655548",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53650486",
+      "title": "Musikgudstjeneste Ærøskøbing m. fejring af Pouls 25-års jubilæum",
+      "description": "Søndag den 4. oktober kl. 16.00 i Ærøskøbing Kirke\nMUSIKGUDSTJENESTE\nDenne søndag vil Østersøkore...",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53650486",
+            "date": "2026-10-04",
+            "kind": "timed",
+            "startTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53650486",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53650486",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896726",
+      "title": "Opstartsgudstjeneste for konfirmander i Ærøskøbing Kirke",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896726",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896726",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/opstartsgudstjeneste-for-konfirmander-i-aeroskobing-kirke-53896726",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53655730",
+      "title": "Gudstjeneste Marstal",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Marstal Kirke",
+        "address": "Kongensgade 35",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53655730",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53655730",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53655730",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53655755",
+      "title": "Gudstjeneste Bregninge",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Bregninge Kirke",
+        "address": "Vester Bregninge 15",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53655755",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53655755",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-bregninge-53655755",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53655741",
+      "title": "Gudstjeneste Ærøskøbing",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53655741",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53655741",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53655741",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53655767",
+      "title": "Gudstjeneste Ommel m. kirkekaffe",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ommel Kirke",
+        "address": "Kirkevejen 63",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53655767",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53655767",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-ommel-m-kirkekaffe-53655767",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53656368",
+      "title": "Gudstjeneste Marstal",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Marstal Kirke",
+        "address": "Kongensgade 35",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53656368",
+            "date": "2026-10-18",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53656368",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53656368",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53656383",
+      "title": "Gudstjeneste Ærøskøbing",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53656383",
+            "date": "2026-10-18",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53656383",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53656383",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53656415",
+      "title": "Gudstjeneste Søby",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Langebro 2a, 5985 Søby",
+        "address": "Langebro 2A",
+        "postalCode": "5985",
+        "city": "Søby Ærø"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53656415",
+            "date": "2026-10-18",
+            "kind": "timed",
+            "startTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53656415",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-soby-53656415",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53656433",
+      "title": "Gudstjeneste Tranderup m. altergang",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Tranderup kirke",
+        "address": "Tranderupvej 49",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53656433",
+            "date": "2026-10-18",
+            "kind": "timed",
+            "startTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53656433",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-tranderup-m-altergang-53656433",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53656478",
+      "title": "Gudstjeneste Rise",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Rise kirke",
+        "address": "St. Rise Landevej 9",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53656478",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53656478",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-rise-53656478",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53895919",
+      "title": "Gudstjeneste Bregninge",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Bregninge Kirke",
+        "address": "Vester Bregninge 15",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53895919",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53895919",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-bregninge-53895919",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53656468",
+      "title": "Gudstjeneste Ærøskøbing m. kirkekaffe",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53656468",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53656468",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-m-kirkekaffe-53656468",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53656456",
+      "title": "Gudstjeneste Marstal",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Marstal Kirke",
+        "address": "Kongensgade 35",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53656456",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53656456",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53656456",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896019",
+      "title": "Allehelgengudstjeneste Bregninge",
+      "description": "Søndag den 1. november i alle øens kirker\nALLEHELGENS DAG\nAlle helgen falder altid den første søn...",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Bregninge Kirke",
+        "address": "Vester Bregninge 15",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896019",
+            "date": "2026-11-01",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896019",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-bregninge-53896019",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896025",
+      "title": "Allehelgengudstjeneste Tranderup",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Tranderup kirke",
+        "address": "Tranderupvej 49",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896025",
+            "date": "2026-11-01",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896025",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-tranderup-53896025",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896018",
+      "title": "Allehelgengudstjeneste Søby",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Langebro 2a, 5985 Søby",
+        "address": "Langebro 2A",
+        "postalCode": "5985",
+        "city": "Søby Ærø"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896018",
+            "date": "2026-11-01",
+            "kind": "timed",
+            "startTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896018",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-soby-53896018",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-44621476",
+      "title": "Allehelgengudstjeneste Marstal",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Marstal Kirke",
+        "address": "Kongensgade 35",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-44621476",
+            "date": "2026-11-01",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endDate": "2026-11-01",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "44621476",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/alle-helgen-44621476",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53895984",
+      "title": "Allehelgengudstjeneste Ærøskøbing",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53895984",
+            "date": "2026-11-01",
+            "kind": "timed",
+            "startTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53895984",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-aeroskobing-53895984",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53895996",
+      "title": "Allehelgengudstjeneste Rise",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Rise kirke",
+        "address": "St. Rise Landevej 9",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53895996",
+            "date": "2026-11-01",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53895996",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-rise-53895996",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896021",
+      "title": "Allehelgengudstjeneste Ommel",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ommel Kirke",
+        "address": "Kirkevejen 63",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896021",
+            "date": "2026-11-01",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896021",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-ommel-53896021",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896742",
+      "title": "Aftenandagt: Tid til ro - et pusterum i din hverdag / Rise Kirke",
+      "description": "Torsdag den 5. november i Rise kirke kl. 19.00\nTID TIL RO – ET PUSTERUM I DIN HVERDAG\nTo aftener ...",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Rise kirke",
+        "address": "St. Rise Landevej 9",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896742",
+            "date": "2026-11-05",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896742",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/aftenandagt-tid-til-ro-et-pusterum-i-din-hverdag-rise-kirke-53896742",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896103",
+      "title": "Gudstjeneste Marstal",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Marstal Kirke",
+        "address": "Kongensgade 35",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896103",
+            "date": "2026-11-08",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896103",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53896103",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896106",
+      "title": "Gudstjeneste Ærøskøbing",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896106",
+            "date": "2026-11-08",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896106",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53896106",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896109",
+      "title": "Gudstjeneste Rise",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Rise kirke",
+        "address": "St. Rise Landevej 9",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896109",
+            "date": "2026-11-08",
+            "kind": "timed",
+            "startTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896109",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-rise-53896109",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896116",
+      "title": "Gudstjeneste Tranderup",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Tranderup kirke",
+        "address": "Tranderupvej 49",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896116",
+            "date": "2026-11-08",
+            "kind": "timed",
+            "startTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896116",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-tranderup-53896116",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896121",
+      "title": "Gudstjeneste Marstal",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Marstal Kirke",
+        "address": "Kongensgade 35",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896121",
+            "date": "2026-11-15",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896121",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53896121",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896132",
+      "title": "Gudstjeneste Ærøskøbing",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896132",
+            "date": "2026-11-15",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896132",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53896132",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896134",
+      "title": "Gudstjeneste Søby",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Langebro 2a, 5985 Søby",
+        "address": "Langebro 2A",
+        "postalCode": "5985",
+        "city": "Søby Ærø"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896134",
+            "date": "2026-11-15",
+            "kind": "timed",
+            "startTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896134",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-soby-53896134",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896136",
+      "title": "Gudstjeneste Bregninge",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Bregninge Kirke",
+        "address": "Vester Bregninge 15",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896136",
+            "date": "2026-11-15",
+            "kind": "timed",
+            "startTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896136",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-bregninge-53896136",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-56044462",
+      "title": "Aftenandagt: Tid til til - Et pusterum i din hverdag / Rise",
+      "description": "Torsdag den 19. november i Rise kirke kl. 19.00\nTID TIL RO – ET PUSTERUM I DIN HVERDAG\nTo aftener...",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Rise kirke",
+        "address": "St. Rise Landevej 9",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-56044462",
+            "date": "2026-11-19",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "56044462",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/aftenandagt-tid-til-til-et-pusterum-i-din-hverdag-rise-56044462",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896158",
+      "title": "Gudstjeneste Rise",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Rise kirke",
+        "address": "St. Rise Landevej 9",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896158",
+            "date": "2026-11-22",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896158",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-rise-53896158",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896162",
+      "title": "Gudstjeneste Bregninge",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Bregninge Kirke",
+        "address": "Vester Bregninge 15",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896162",
+            "date": "2026-11-22",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896162",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-bregninge-53896162",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896145",
+      "title": "Gudstjeneste Ærøskøbing",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896145",
+            "date": "2026-11-22",
+            "kind": "timed",
+            "startTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896145",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53896145",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896182",
+      "title": "Adventsgudstjeneste Marstal",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Marstal Kirke",
+        "address": "Kongensgade 35",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896182",
+            "date": "2026-11-29",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896182",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/adventsgudstjeneste-marstal-53896182",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896192",
+      "title": "Adventsgudstjeneste Ærøskøbing",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke",
+        "address": "Kirkestræde 5",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896192",
+            "date": "2026-11-29",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896192",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/adventsgudstjeneste-aeroskobing-53896192",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    },
+    {
+      "id": "aeroe-kirkeliv-53896198",
+      "title": "Adventsgudstjeneste Tranderup",
+      "description": "",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "kirke"
+      ],
+      "location": {
+        "name": "Tranderup kirke",
+        "address": "Tranderupvej 49",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "churchdesk-53896198",
+            "date": "2026-11-29",
+            "kind": "timed",
+            "startTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kirkeliv",
+        "externalId": "53896198",
+        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/adventsgudstjeneste-tranderup-53896198",
+        "verifiedAt": "2026-09-13T20:51:14.761Z"
+      }
+    }
+  ]
+}

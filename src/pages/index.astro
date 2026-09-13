@@ -1,0 +1,127 @@
+---
+import CalendarExplorer from "../components/CalendarExplorer.astro";
+import SourceStatus from "../components/SourceStatus.astro";
+import { toCalendarDataset } from "../components/catalog-adapter";
+import { sitePath } from "../components/paths";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import {
+  getBuildMetadata,
+  getCategories,
+  getOccurrences,
+  getOrganizers,
+  getPublishedEvents,
+  getSources,
+} from "../lib/catalog";
+
+const [events, occurrences, organizers, categories, sources, metadata] = await Promise.all([
+  getPublishedEvents(),
+  getOccurrences(),
+  getOrganizers(),
+  getCategories(),
+  getSources(),
+  getBuildMetadata(),
+]);
+const dataset = toCalendarDataset(events, occurrences, organizers, categories, sources, metadata);
+---
+
+<BaseLayout title="Det sker på Ærø" canonicalPath="/">
+  <section class="hero page-width">
+    <div class="hero-copy">
+      <p class="eyebrow">Hele øens kalender</p>
+      <h1>Hvad sker der<br /><em>på Ærø?</em></h1>
+      <p class="lead">Find koncerter, fællesskaber, møder, gudstjenester og alt det andet, vi kan mødes om.</p>
+    </div>
+    <div class="hero-note">
+      <span class="note-number">01</span>
+      <p>Mangler der noget?</p>
+      <a href={sitePath("/indsend/")}>Få et arrangement med <span aria-hidden="true">→</span></a>
+    </div>
+    <svg class="hero-wave" aria-hidden="true" viewBox="0 0 800 100" preserveAspectRatio="none">
+      <path d="M0 58c95-50 135-50 230 0s135 50 230 0 135-50 230 0 135 50 230 0" />
+    </svg>
+  </section>
+
+  <section class="calendar-wrap page-width">
+    <CalendarExplorer dataset={dataset} />
+    <SourceStatus dataset={dataset} />
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    position: relative;
+    display: grid;
+    min-height: 27rem;
+    grid-template-columns: minmax(0, 1fr) 15rem;
+    gap: 3rem;
+    align-items: center;
+    padding-block: clamp(3rem, 8vw, 6rem) 5rem;
+    overflow: hidden;
+  }
+
+  .hero-copy {
+    position: relative;
+    z-index: 1;
+  }
+
+  h1 em {
+    color: var(--sea);
+    font-weight: inherit;
+  }
+
+  .hero-note {
+    position: relative;
+    z-index: 1;
+    padding: 1.25rem;
+    border-top: 1px solid var(--ink);
+    border-bottom: 1px solid var(--ink);
+  }
+
+  .note-number {
+    display: block;
+    margin-bottom: 2.5rem;
+    color: var(--sun);
+    font-size: 0.7rem;
+    font-weight: 700;
+  }
+
+  .hero-note p {
+    margin-bottom: 0.25rem;
+    font-family: var(--serif);
+    font-size: 1.25rem;
+  }
+
+  .hero-note a {
+    color: var(--sea);
+    font-size: 0.78rem;
+    font-weight: 700;
+  }
+
+  .hero-wave {
+    position: absolute;
+    right: -12rem;
+    bottom: 0;
+    width: min(62rem, 90vw);
+    height: 8rem;
+    fill: none;
+    stroke: rgb(23 78 74 / 13%);
+    stroke-width: 25;
+  }
+
+  .calendar-wrap {
+    position: relative;
+    margin-top: -1rem;
+  }
+
+  @media (max-width: 42rem) {
+    .hero {
+      display: block;
+      min-height: auto;
+      padding-bottom: 4rem;
+    }
+
+    .hero-note {
+      display: none;
+    }
+  }
+</style>

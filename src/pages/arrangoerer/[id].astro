@@ -1,0 +1,158 @@
+---
+import EventCard from "../../components/EventCard.astro";
+import type { CalendarDataset, OrganizerView } from "../../components/calendar-types";
+import { toCalendarDataset } from "../../components/catalog-adapter";
+import { calendarToday, occurrenceLastDate } from "../../components/format";
+import { sitePath } from "../../components/paths";
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import {
+  getBuildMetadata,
+  getCategories,
+  getOccurrences,
+  getOrganizers,
+  getPublishedEvents,
+  getSources,
+} from "../../lib/catalog";
+
+interface Props {
+  organizer: OrganizerView;
+  dataset: CalendarDataset;
+}
+
+export async function getStaticPaths() {
+  const [events, occurrences, organizers, categories, sources, metadata] = await Promise.all([
+    getPublishedEvents(),
+    getOccurrences(),
+    getOrganizers(),
+    getCategories(),
+    getSources(),
+    getBuildMetadata(),
+  ]);
+  const dataset = toCalendarDataset(events, occurrences, organizers, categories, sources, metadata);
+  const usedOrganizerIds = new Set(dataset.events.map((event) => event.organizerId));
+  return dataset.organizers.filter((organizer) => usedOrganizerIds.has(organizer.id)).map((organizer) => ({
+    params: { id: organizer.id },
+    props: { organizer, dataset },
+  }));
+}
+
+const { organizer, dataset } = Astro.props;
+const today = calendarToday(dataset.generatedAt);
+const categoryById = new Map(dataset.categories.map((category) => [category.id, category]));
+const entries = dataset.events
+  .filter((event) => event.organizerId === organizer.id)
+  .flatMap((event) => event.occurrences.map((occurrence) => ({ event, occurrence })))
+  .filter(({ occurrence }) => occurrenceLastDate(occurrence) >= today)
+  .sort((a, b) => a.occurrence.start.localeCompare(b.occurrence.start));
+---
+
+<BaseLayout
+  title={organizer.name}
+  description={organizer.description || `Kommende arrangementer fra ${organizer.name} på Ærø.`}
+  canonicalPath={`/arrangoerer/${organizer.id}/`}
+>
+  <header class="organizer-header page-width">
+    <a class="back-link" href={sitePath("/arrangoerer/")}>← Alle arrangører</a>
+    <div>
+      <p class="eyebrow">Arrangør</p>
+      <h1>{organizer.name}</h1>
+      {organizer.description && <p class="lead">{organizer.description}</p>}
+      <div class="contact-links">
+        {organizer.website && <a class="button secondary" href={organizer.website}>Besøg hjemmeside ↗</a>}
+        {organizer.email && <a href={`mailto:${organizer.email}`}>Skriv til arrangøren</a>}
+        {organizer.phone && <a href={`tel:${organizer.phone.replace(/\s/g, "")}`}>{organizer.phone}</a>}
+      </div>
+    </div>
+  </header>
+
+  <section class="events page-width" aria-labelledby="events-heading">
+    <div class="section-heading">
+      <h2 id="events-heading">Kommende arrangementer</h2>
+      {entries.length > 0 && (
+        <a href={sitePath(`/?arrangoer=${encodeURIComponent(organizer.id)}`)}>Se i kalenderen ↗</a>
+      )}
+    </div>
+    {entries.length ? entries.map(({ event, occurrence }) => (
+      <EventCard
+        event={event}
+        occurrence={occurrence}
+        organizer={organizer}
+        categories={event.categoryIds.flatMap((id) => categoryById.get(id) ?? [])}
+      />
+    )) : (
+      <div class="empty">
+        <p>Der er ingen kommende arrangementer fra denne arrangør lige nu.</p>
+      </div>
+    )}
+  </section>
+</BaseLayout>
+
+<style>
+  .organizer-header {
+    padding-top: 2.2rem;
+  }
+
+  .back-link {
+    color: var(--muted);
+    font-size: 0.82rem;
+    font-weight: 600;
+  }
+
+  .organizer-header > div {
+    max-width: 56rem;
+    padding-block: clamp(3rem, 7vw, 6rem);
+  }
+
+  h1 {
+    margin-bottom: 1.2rem;
+  }
+
+  .contact-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin-top: 2rem;
+  }
+
+  .contact-links > a:not(.button) {
+    color: var(--sea);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .events {
+    padding-top: 2.5rem;
+    border-top: 2px solid var(--ink);
+  }
+
+  .section-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .section-heading h2 {
+    margin: 0;
+  }
+
+  .section-heading a {
+    color: var(--sea);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .empty {
+    padding: 2rem;
+    border: 1px dashed #aeb6ad;
+    border-radius: 0.7rem;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  .empty p {
+    margin: 0;
+  }
+</style>
