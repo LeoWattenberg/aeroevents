@@ -53,7 +53,7 @@ npm run events -- publish
 
 Kø, rå fund, afvisninger og eventuelle afsenderoplysninger er private. De gemmes uden for repositoryet i `$AEROEVENTS_STATE_DIR`, ellers under `$XDG_STATE_HOME/aeroevents` eller `~/.local/state/aeroevents`. De bliver ikke læst af Astro-buildet.
 
-Facebook-integrationen er kun et redaktionelt hjælpemiddel. Offentlig synlighed garanterer ikke stabil eller tilladt automatisk adgang. `--fetch` forsøger den offentlige URL og rapporterer loginmure, blokering og parsefejl; den manuelle `--event`/`--details-file`-vej er fallback. Alle fund gemmes i den private kø, og intet publiceres uden godkendelse.
+Facebook-integrationen er kun et redaktionelt hjælpemiddel. Offentlig synlighed garanterer ikke stabil eller tilladt automatisk adgang. `--fetch` forsøger én konkret event-URL og rapporterer loginmure, blokering og parsefejl; den manuelle `--event`/`--details-file`-vej er fallback. Alle fund gemmes i den private kø, og intet publiceres uden godkendelse. En anonym browsertest fandt eventlinks på flere offentlige sider, men Facebooks `robots.txt` kræver udtrykkelig skriftlig tilladelse til automatiseret indsamling. Browserindsamling er derfor ikke aktiveret.
 
 ## Automatiske kilder
 
@@ -67,7 +67,7 @@ Hver adapter kræver et komplet og strukturelt gyldigt svar. Event-ID'er fra kil
 
 `data/sources.yaml` er den endelige autoritet for, om en kilde er aktiv, må publicere automatisk, og hvilke arrangør- og kategorireferencer den må bruge. Vellykkede HTTP-svar arkiveres privat med begrænsede filrettigheder, så en import kan efterprøves uden at lægge rådata i Git.
 
-Se [driftsvejledningen](docs/operations.md) for cronjob, sikker publicering, fejlhåndtering og GitHub Pages. [Datapolitikken](docs/data-policy.md) beskriver grænsen mellem private arbejdsdata og det, der må publiceres.
+Se [driftsvejledningen](docs/operations.md) for cronjob, sikker publicering, fejlhåndtering og GitHub Pages. [Datapolitikken](docs/data-policy.md) beskriver grænsen mellem private arbejdsdata og det, der må publiceres. [Kandidater til nye datakilder](docs/source-candidates.md) er en verificeret, prioriteret scraper-backlog med konkrete endpoints og publiceringsregler. [Facebook-kilder på Ærø](docs/facebook-sources.md) dokumenterer de testede eventfaner, adgangsgrænsen og fallbacken.
 
 ## GitHub Pages
 
