@@ -1,6 +1,6 @@
 # Offentlige Facebook-kilder på Ærø
 
-Status: undersøgt anonymt 13. september 2026. Facebook ændrer ofte markup og
+Status: undersøgt anonymt 13.-14. september 2026. Facebook ændrer ofte markup og
 adgangskrav, så listen er et øjebliksbillede og ikke et løfte om fortsat adgang.
 
 Facebooks egne regler skelner mellem offentlige og private begivenheder, men en
@@ -59,6 +59,9 @@ månedlig kontrol er nok; daglige kald giver ringe ekstra udbytte.
 
 | Kilde | Fund ved kontrollen | Regel |
 | --- | --- | --- |
+| [Det sker i Ommel](https://www.facebook.com/groups/871725845485563/events) | Offentlig gruppe, som den officielle Ommel Samvirke-side linker til. Den havde ca. 388 medlemmer og 58 opslag den seneste måned, men nul kommende eventkort. | Aktiv manuel opslag-discovery; Ommel Samvirkes egen webkalender er den egentlige eventkilde. |
+| [Aktivitetshuset i Søby, Ærø](https://www.facebook.com/groups/434434336369842/events) | Offentlig gruppe linket fra Søby Lokalråd, ca. 159 medlemmer og fire opslag den seneste måned, men nul kommende eventkort. | Manuel opslag-discovery; lokalrådets egen side vinder ved overlap. |
+| [Ærø Hotel](https://www.facebook.com/aeroehotel/events?locale=da_DK) | Den anonyme fane viste ét kort, "Mortens Aften", med stabilt event-ID `435373937183862`, men ingen dato der kunne verificeres sikkert uden login. | Kun manuel discovery; hotellets Wix-eventside er den direkte kilde. |
 | [ÆIK arrangerer](https://www.facebook.com/aeikarrangerer/events) | Otte kort, blandt andet Eventyrfest og fastelavn i 2026. | Overvåg årlige by- og familiearrangementer. |
 | [Rise SIF](https://www.facebook.com/RISESIF/events) | Otte kort med Risefest og Forårsfest 2026. | Brug Facebook til enkeltfester; Conventus er bedre til holdplaner. |
 | [Marstal Erhvervsforening](https://www.facebook.com/MarstalHandelsforening/events) | Fire kort med sommeraktiviteter i 2026. | Overvåg handelsstandsarrangementer. |
@@ -133,6 +136,10 @@ Kulturladen og Det Røde Pakhus havde ingen aktuelle kommende kort. Behold dem p
 en kvartalsvis observationsliste i stedet for at bruge daglige browserkald.
 Café Maris, KEFS Guesthouse, Maritim Dag Ærø og MIF's klubhusprofil kunne åbnes
 offentligt, men havde ingen eventfane.
+
+Ærø Sportsfiskerforenings gruppe er privat og kan derfor ikke bruges som
+anonym eventkilde. Foreningens tidligere domæne indeholder nu uvedkommende
+SEO-/casinoindhold; hverken gruppen eller domænet skal poll'es.
 
 ## Krav til en eventuel autoriseret browseradapter
 

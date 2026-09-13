@@ -1,6 +1,6 @@
 # Kandidater til nye datakilder
 
-Status: undersøgt 13. september 2026. URLs og tekniske detaljer skal kontrolleres
+Status: undersøgt 13.-14. september 2026. URLs og tekniske detaljer skal kontrolleres
 igen, når en adapter implementeres.
 
 Direkte kilder hos arrangøren eller den ansvarlige myndighed bør have forrang.
@@ -13,15 +13,17 @@ ID'er, datoer, aflysninger og tomme svar håndteres sikkert.
 | Prioritet | Kilde | Udbytte og format | Foreslået publicering |
 | --- | --- | --- | --- |
 | 1 | [Rise Skytte- & Idrætsforening](https://www.rise-sif.dk/) | Conventus har offentlige JSON-endpoints for ressourcer og bookinger. Kontrollen gav 580 daterede forekomster i 30 serier og enkeltaktiviteter frem til april 2027, blandt andet badminton, gymnastik, dans, yoga, pilates og spinning. Hver forekomst har `booking.id`, og serien har eget ID. | Automatisk for allowlistede hold og foreningsevents. Udelad navnløse eller generiske lokalebookinger, bevar medlems-/tilmeldingskrav, og gem aldrig deltagernes bookingdata. |
-| 2 | [Ærø Kommune: Det sker](https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker) | Officielle borgerarrangementer, blandt andet borgermøder og kommunale tilbud. Server-renderet liste og detaljesider med dato, tid, sted, pris og links. Detaljesiden har et stabilt `meta[name=pageid]`. | Automatisk efter dubletkontrol mod mødeplanen og biblioteket. |
-| 3 | [Ældre Sagen Ærø](https://www.aeldresagen.dk/lokalafdelinger/aeroe/aktiviteter-og-kurser?sortering=dato) | Ugentlig motion, spil, fællesspisning, caféer, møder og foredrag. Detalje-URL'en indeholder et stabilt numerisk aktivitets-ID og angiver adgang, gentagelse, næste dato, tid og mødested. | Automatisk; bevar medlems- og tilmeldingskrav. |
-| 4 | [Ærø Folkedanserforening](https://6165826142842.site123.me/) | Server-renderede eventkort med stabilt `data-unique-id` og detail-URL. Der var 24 kommende familie- og voksenarrangementer frem til marts 2027. Siden gengiver eventsektionen to gange. | Automatisk efter deduplikering på `data-unique-id`. Brug kun "kommende begivenheder"; send start=slut og andre tidsfejl til review. |
-| 5 | [Viften: Ture og begivenheder](https://www.viften.net/ture) | Kommunale fritidstilbud til børn og unge. Kortene linker til `/subjectclass/<guid>`; detaljen indeholder dato, alder/klassetrin, pris, frist og tilmeldingsstatus. | Automatisk med `boern-familie`; alderskrav skal stå i adgangsdetaljen. |
-| 6 | [Ærø Folkeuniversitet](https://fuko.dk/komite/aeroe-folkeuniversitet/) | Offentlige foredrag med dato, sted, pris og eksplicit `Aflyst`/`Afholdt`. Simpel HTML uden pagination; WordPress REST har ændringstidspunkter. | Automatisk. Brug den kanoniske kursus-URL som kilde-ID, da et kursus kan blive genoprettet med et nyt WordPress-ID. |
-| 7 | [Motorfabrikken Marstal](https://www.motorfabrikkenmarstal.com/kultur) | Den officielle kulturkalender sælger billetter gennem en struktureret Ticketbutler-kilde med stabilt numerisk ID og UUID, starttid, venue, pris, booking og `is_sold_out`. | Automatisk efter validering af tenant/hostname; den direkte kilde vinder over VisitÆrøs samlepost. |
-| 8 | [Ommel BK hos DBU Fyn](https://www.dbufyn.dk/resultater/klub/1464/kampprogram) | DBU's kampprogram har stabile match-ID'er, pulje, hold, status, dato, tid og stadion. To kommende hjemmekampe blev fundet. | Genbrug Marstal IF-parseren. Hent først den aktuelle puljeliste; et `pools=0`-indeks må ikke hardcodes. Publicér kun hjemmekampe på Ærø. |
-| 9 | [Marstal Navigationsskole](https://marnav.nemtilmeld.dk/) | NemTilmeld-detaljer har schema.org Event JSON-LD og stabile numeriske ID'er. Der var to kommende offentlige åbent-hus-arrangementer; begge var fuldt bookede med venteliste. | Automatisk for en snæver allowlist som `Åbent hus`; læs også synlig kapacitetsstatus. Send erhvervskurser til review eller udelad dem. |
-| 10 | [FirstAgenda](https://dagsordener.aeroekommune.dk/) | Autoritative rettelser til kommunale møder. Efter et anonymt cookie-kald til forsiden returnerer `GET /api/agenda/udvalgsliste` JSON med stabile møde-GUID'er, start/slut med offset, sted, publiceringstid og status. | Berig den eksisterende kommunekilde; opret ikke dubletter. Publicér automatisk for Kommunalbestyrelsen. |
+| 2 | [Danmarks Naturfredningsforening](https://arrangementer.dn.dk/) | Det offentlige søge-API kan filtreres direkte på Ærøs kommunekode `0492`. Kontrollen fandt tre kommende lokale arrangementer med stabilt numerisk ID, tid med offset, sted, pris, tilmelding, aflysning og arrangørafdeling. | Automatisk for offentlige resultater i kommune `0492`, efter dubletkontrol mod VisitÆrø og de lokale værter. |
+| 3 | [Ritual – Ærø hos Momoyoga](https://www.momoyoga.com/nurtureaeroe/schedule) | Den offentlige ugeplan har server-renderede data, numeriske lektions-ID'er, start/slut med korrekt København-offset, underviser, lokale, kapacitet, aflysning og et ICS-link pr. lektion. Kontrollen fandt 106 Flow Yoga-lektioner i de næste 12 måneder. | Automatisk for en allowlist af gruppehold. Udelad massage, ansigtsbehandlinger og andre individuelle tider. |
+| 4 | [Ærø Kommune: Det sker](https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker) | Officielle borgerarrangementer, blandt andet borgermøder og kommunale tilbud. Server-renderet liste og detaljesider med dato, tid, sted, pris og links. Detaljesiden har et stabilt `meta[name=pageid]`. | Automatisk efter dubletkontrol mod mødeplanen og biblioteket. |
+| 5 | [Ældre Sagen Ærø](https://www.aeldresagen.dk/lokalafdelinger/aeroe/aktiviteter-og-kurser?sortering=dato) | Ugentlig motion, spil, fællesspisning, caféer, møder og foredrag. Detalje-URL'en indeholder et stabilt numerisk aktivitets-ID og angiver adgang, gentagelse, næste dato, tid og mødested. | Automatisk; bevar medlems- og tilmeldingskrav. |
+| 6 | [Ærø Folkedanserforening](https://6165826142842.site123.me/) | Server-renderede eventkort med stabilt `data-unique-id` og detail-URL. Der var 24 kommende familie- og voksenarrangementer frem til marts 2027. Siden gengiver eventsektionen to gange. | Automatisk efter deduplikering på `data-unique-id`. Brug kun "kommende begivenheder"; send start=slut og andre tidsfejl til review. |
+| 7 | [Viften: Ture og begivenheder](https://www.viften.net/ture) | Kommunale fritidstilbud til børn og unge. Kortene linker til `/subjectclass/<guid>`; detaljen indeholder dato, alder/klassetrin, pris, frist og tilmeldingsstatus. | Automatisk med `boern-familie`; alderskrav skal stå i adgangsdetaljen. |
+| 8 | [Ærø Folkeuniversitet](https://fuko.dk/komite/aeroe-folkeuniversitet/) | Offentlige foredrag med dato, sted, pris og eksplicit `Aflyst`/`Afholdt`. Simpel HTML uden pagination; WordPress REST har ændringstidspunkter. | Automatisk. Brug den kanoniske kursus-URL som kilde-ID, da et kursus kan blive genoprettet med et nyt WordPress-ID. |
+| 9 | [Motorfabrikken Marstal](https://www.motorfabrikkenmarstal.com/kultur) | Den officielle kulturkalender sælger billetter gennem en struktureret Ticketbutler-kilde med stabilt numerisk ID og UUID, starttid, venue, pris, booking og `is_sold_out`. | Automatisk efter validering af tenant/hostname; den direkte kilde vinder over VisitÆrøs samlepost. |
+| 10 | [Ommel BK hos DBU Fyn](https://www.dbufyn.dk/resultater/klub/1464/kampprogram) | DBU's kampprogram har stabile match-ID'er, pulje, hold, status, dato, tid og stadion. To kommende hjemmekampe blev fundet. | Genbrug Marstal IF-parseren. Hent først den aktuelle puljeliste; et `pools=0`-indeks må ikke hardcodes. Publicér kun hjemmekampe på Ærø. |
+| 11 | [Marstal Navigationsskole](https://marnav.nemtilmeld.dk/) | NemTilmeld-detaljer har schema.org Event JSON-LD og stabile numeriske ID'er. Der var to kommende offentlige åbent-hus-arrangementer; begge var fuldt bookede med venteliste. | Automatisk for en snæver allowlist som `Åbent hus`; læs også synlig kapacitetsstatus. Send erhvervskurser til review eller udelad dem. |
+| 12 | [FirstAgenda](https://dagsordener.aeroekommune.dk/) | Autoritative rettelser til kommunale møder. Efter et anonymt cookie-kald til forsiden returnerer `GET /api/agenda/udvalgsliste` JSON med stabile møde-GUID'er, start/slut med offset, sted, publiceringstid og status. | Berig den eksisterende kommunekilde; opret ikke dubletter. Publicér automatisk for Kommunalbestyrelsen. |
 
 FirstAgenda bør kombineres med den eksisterende
 [årsplan](https://www.aeroekommune.dk/politik-og-indflydelse/moedeplaner):
@@ -36,6 +38,22 @@ lokalplanudvalg. De stående udvalgs møder er lukkede for offentligheden. De m�
 derfor ikke få adgangstypen `public`; udvid først modellen med en tydelig
 "lukket møde"-markering, eller hold dem ude af kalenderen. Direktionen skal
 altid udelades.
+
+DN's API ligger under
+`https://func-dn-events-production-003.azurewebsites.net/api`. Kommunelisten
+bekræfter `0492` som Ærø, og `GET /events/search` accepterer blandt andet
+`municipalityCodes`, `pageIndex`, `pageSize` og `eventTypeIds`. Hent detaljen
+med `GET /events/<id>`, hvor beskrivelse, offentlig/privat-markering,
+tilmeldingsdata, adresse, koordinater og lokalafdeling findes. Paginationen var
+0-indekseret, men `hasNextPage` var sand på den sidste ikke-tomme side; stop
+derfor også på et tomt svar og kontrollér det rapporterede sideantal.
+
+Momoyogas plan kan bladres med `?date=YYYY-MM-DD`. Hver forekomst linker til
+`/nurtureaeroe/lesson/<numerisk-id>/<slug>` og til en ICS-eksport med
+`TZID=Europe/Copenhagen`. ICS-filen mangler `UID`, så det numeriske lektions-ID
+skal være source-ID. De samme uger indeholdt 212 bookbare massage- og
+ansigtsbehandlingstider; adapteren skal derfor acceptere kendte holdnavne frem
+for blot at importere alt, der ligner en tidsbestilling.
 
 Motorfabrikkens Ticketbutler-tenant bruger endpoints under
 `https://checkoutapi.ticketbutler.io/api/`, blandt andet
@@ -63,6 +81,16 @@ fuldt booket/venteliste står uden for JSON-LD og skal derfor parses særskilt.
 
 | Kilde | Teknisk vej | Redaktionel regel |
 | --- | --- | --- |
+| [Ommel Samvirkes aktivitetskalender](https://www.ommelsamvirke.dk/aktivitetskalender) | Den anonyme Blazor-kalender viste 292 forekomster i 16 aktiviteter fra 14. september 2026 til 13. september 2027. Den samler otte lokale foreninger og har blandt andet gåture, gymnastik, dart, strik, petanque, IT-hjælp, fredagsbar, fællesspisning og møder. Detaljedialogen har tid, sted, kategori, beskrivelse, arrangør og kontakt. | Høj lokal værdi, men start i gennemsyn med en browser-fixture og en sammensat identitet, fordi DOM-ID'erne ændrer sig. Det offentlige [`calendar.ics`](https://www.ommelsamvirke.dk/calendar.ics) er defekt: alle 33 poster er samme test-gåtur og afspejler ikke webkalenderen. Brug det ikke som snapshot. |
+| [Søby Lokalråd](https://soebylokalraad.dk/11/en/node/12) | Drupal-siden og dens [RSS-feed](https://soebylokalraad.dk/11/en/rss.xml) har stabile node-GUID'er. Den løbende referatside indeholdt fire kommende lokale forekomster: to boguddelinger/åbent hus, et bestyrelsesmøde og Aktivitetshusets åbent hus. | Gennemsyn. RSS-datoen ændres ikke, når referatsiden opdateres, og node-ID'et dækker flere events; hent hele siden, brug content-digest og sammensatte event-ID'er. Bestyrelsesmødets adgang er ukendt. |
+| [Ærø Klatreklub](https://aekk.klub-modul.dk/default.aspx) | KlubModul-siden angiver fire gentagelser: børneklub og fri klatring mandag, fri klatring onsdag samt anden søndag i måneden. Den separate eventside og JSON-kilde er tomme. | Manuel gentagelse eller gennemsyn, indtil klubben bekræfter sæson og ferieundtagelser. De fire tekstblokke har ingen ID'er; brug sammensatte serienøgler og bevar medlemskrav. |
+| [Ærø Tennisklub](https://aeroetennisklub.dk/faste-aktiviteter/) | WordPress REST-side `22` blev ændret i maj 2026 og angiver fem ugentlige aktiviteter med klokkeslæt, målgruppe og enkelte kapacitetskrav. | Manuel gentagelse eller gennemsyn. Siden siger kun "i sæsonen" uden start/slut; indhent sæsongrænser og gæt ikke forekomster fra banebookinger. |
+| [Parkinsonforeningen: Klub Ærø](https://parkinson.dk/kredse/2823-fyn/om-os/) | Det aktuelle medlemsblad angiver første tirsdag hver måned kl. 15-16.30 i Rise Beboerhus. | Manuel gentagelse med udgave og regel som identitet. Kontrollér hver ny bladudgave og mærk målgruppe/medlemsadgang tydeligt. |
+| [Kunsthøjskolen på Ærø](https://www.kunstaeroe.dk/for-og-efter%C3%A5rskurser) | Cargo-siden indeholder gyldigt `window.__PRELOADED_STATE__` med stabile side-ID'er, `purl`, tekst, priser og tilmeldingslinks. Fire kommende kurser blev fundet fra 4. oktober til 7. november 2026; tre var udsolgt. | Automatisk efter fixture og et første gennemsyn. Skolen er den direkte kilde og vinder over Højskolerne.dk; bevar `UDSOLGT`. |
+| [Ærø Hotel: events](https://www.aeroehotel.dk/event-list) | Wix' `wix-warmup-data` har UUID, slug, tidszone, sted, publiceringstid, billetlink og ICS. En kommende koncert med Johnny Hansen stod to gange med samme tid, men to UUID'er og kun ét korrekt venue. Hotellet har desuden daterede [strikkeworkshops](https://www.aeroehotel.dk/smuttur-1-2) og [veteranbilstræf](https://www.aeroehotel.dk/smuttur-2-1-1). | Gennemsyn. Slå interne Wix-dubletter sammen; behandl hotelpakke-datoer som ankomst/ophold og gæt ikke et koncerttidspunkt. |
+| [Ærøskøbing Grand Prix](https://www.xn--rgrandprix-c6a1t.dk/) | Wix-siden havde fire eksplicitte dage 12.-15. oktober 2026 kl. 9-12 med alder, kapacitet, pris og tilmelding. Der er intet selvstændigt eventobjekt. | Gennemsyn og årlig import med `arrangør+år` som kilde-ID. Deduplikér mod VisitÆrøs GuideDanmark-post. |
+| [Beth Mohr: malekursus på Ærø](https://bethmohr.dk/shop/17-malekursus-paa-aeroe/) | Webshoppen har et offentligt produkt-endpoint på `/json/products`; det daterede kursus 21.-25. september 2026 har stabilt produkt-ID `215`, priser, varianter og lagerfelter. | Kun gennemsyn. Datoen står i titlen, kategoriens prosa modsiger varighed/pris, og lagerstatusfelterne er indbyrdes uenige. Udelad produkter uden faste datoer. |
+| [Yogaschule Flensburg: retreat hos Atma](https://www.yogaschule-flensburg.de/retreats) | Squarespace-siden og `?format=json` beskriver et udsolgt retreat 11.-13. juni 2027 med program, undervisere, pris, kapacitet og venteliste. | Kun gennemsyn. Brug sideankeret og startdatoen som sammensat ID, og kontrollér overlap mod Atmas egen kalender. |
 | [Ærø Rideklub](https://www.aeroerideklub.dk/events-1) | Squarespace-samlingen har `?format=json` med stabilt ID, slug, ændringstid, epoch-start/slut, tekst og sted. Hver detalje har desuden `?format=ical` med persistent `UID`. | Start i gennemsyn. Kilden blander offentlige stævner med arbejdsdage og medlemsaktiviteter, og mindst ét fremtidigt tidspunkt ser fejlindtastet ud. |
 | [Ærø Jazz Festival](https://www.aeroejazzfestival.dk/program-tidspunkter/) | WordPress-side `9188` kan hentes gennem `/wp-json/wp/v2/pages/9188`; programtabellen har dato, tid, kunstner, venue og adgang. Billetprodukter har stabile WooCommerce-ID'er. | Gennemsyn. Brug `festivalår+dato+tid+kunstner+venue` som ID; HTML kan indeholde udsolgte eller efterladte programrækker. Bevar både festivalen og de enkelte koncerter. |
 | [Ærø Bryggeri](https://aeroebryggeri.dk/events/) | Modern Events Calendar-poster findes via `/wp-json/wp/v2/mec-events?per_page=100` med stabile WordPress-ID'er, ændringstid og pagination. Læs synlig dato/tid og status fra detaljesiden. | Gennemsyn først. JSON-LD viste forkert tidszone og valuta ved kontrollen. Udelad almindelige åbningstider og fler-måneders butiksposter. |
@@ -92,6 +120,14 @@ redaktionelt gennemsyn.
   [GuideDanmark API](https://api.guidedanmark.org/swagger/index.html) kræver
   aftale og credentials. Brug derfor den offentlige side som gennemsøgt
   discovery, eller indgå en aftale før automatisk publicering.
+- [Søbygaards egen eventside](https://www.soebygaardaeroe.dk/soebygaard/oplevelser/events-og-markeder)
+  er et godt arrangør-afgrænset krydstjek. Den kommende høstmarkedsdetalje har
+  ID `gdk1139857`, men er samme GuideDanmark-post som hos VisitÆrø. Brug den
+  direkte side til berigelse og validering; deduplikér globalt på GDK-ID.
+- [Geopark Dage](https://www.geoparkoehavet.dk/geopark-dage) har et årligt
+  program for fire kommuner og linker videre til de enkelte GuideDanmark-poster.
+  Brug den som sæsonkontrol med krav om et sted på Ærø; den er ikke en ny
+  autoritativ eventkilde.
 - [Ærø Ugeavis](https://xn--rugeavis-i0a5p.dk/ugensavis/) linker hver uge til en
   offentlig PDF. `pdftotext -layout` kan finde mange små foreningsmøder og
   lokale opslag, som ikke findes andre steder. Layoutet er ustruktureret, så
@@ -131,9 +167,20 @@ redaktionelt gennemsyn.
 - [Sydfynskalenderen](https://sydfynskalenderen.dk/) har strukturerede data og
   ICS-ruter, men det komplette API krævede autorisation, og offentlig filtrering
   bruger reCAPTCHA. Bed om API-adgang frem for at omgå grænsen.
+- [AOF](https://aof.dk/aftenskole?query=%C3%86r%C3%B8) har et offentligt,
+  struktureret søge-endpoint på `/api/Search/NewSearch`, men søgninger på
+  Ærø, Marstal, Ærøskøbing og øens tre postnumre gav nul kurser. Kontrollér
+  kvartalsvist; en tom adapter giver ingen værdi nu.
+- [OpdagDanmarks Ærø-side](https://www.opdagdanmark.dk/guide/aeroe/begivenheder/)
+  har et offentligt WordPress-AJAX-feed, men det kommuneafgrænsede resultat var
+  tomt. Kilden er desuden en aggregator, så den forbliver på observationslisten.
 - [Sogn.dk for Ærøskøbing](https://sogn.dk/aeroeskoebing/kalender) overlapper
   den eksisterende ChurchDesk-import. Den er nyttig som manuel kontrol, men bør
   ikke publiceres som en ny kilde.
+- [Landbogaardens eventside](https://landbogaarden.dk/events/) kan hentes gennem
+  WordPress REST, men siden blev senest ændret i 2023 og viste gamle datoer.
+  Brug fortsat stedets Facebook-side til manuel discovery, indtil den direkte
+  kalender bliver vedligeholdt igen.
 - [Ærø Svømmeklubs eventoversigt](https://aero.klub-modul.dk/cms/EventOverview.aspx)
   har et offentligt KlubModul-endpoint på `/cms/include/api/json/events.aspx`
   med stabile event-ID'er og kapacitetsfelter, men listen var tom ved kontrollen.
@@ -159,6 +206,32 @@ redaktionelt gennemsyn.
 - [Kulturladens Memberlink](https://kulturladenaeroe.memberlink.dk/Activity/ActivityView)
   har et offentligt aktivitetsendpoint, men returnerede en tom liste. Kontrollér
   kvartalsvist frem for at aktivere en tom kilde.
+- [Ærø Litteraturfestival](https://www.xn--rlitteraturfestival-kxb39a.dk/)
+  har Squarespace-JSON, men 2026-festivalen sluttede 13. september, og programmet
+  mangler stabile sessions-ID'er. Kontrollér månedligt og importer næste årgang
+  manuelt eller til review.
+- [Foreningen Søbygaard hos SafeTicket](https://foreningen-soebygaard.safeticket.dk/)
+  har offentlig JSON med stabile numeriske event-ID'er, men nul kommende
+  arrangementer. Kontrollér ugentligt; den første nye post skal gennem review.
+- [Ærø Bryggeris Understory-oplevelse](https://aeroebryggeri.understory.io/experience/e0130170cacd730a032f49d8d01c695f)
+  har et stabilt oplevelses-ID og strukturerede loader-data, men ingen planlagte
+  sessioner. Bryggeriets egen eventkalender er mere nyttig nu.
+- [Klang Ærø](https://klangaeroe.info/) havde ingen kommende datoer; den
+  seneste viste koncert var 22. august 2026. Behold den som en lavfrekvent
+  sæsonkontrol.
+- [Ærø Buelaug](http://xn--rbuelaug-i0a5p.dk/) beskriver søndagsbueskydning
+  kl. cirka 13, afhængig af vejret, men siden blev senest ændret i 2021, og
+  HTTPS-certifikatet matcher ikke domænet. Opret ikke en automatisk gentagelse;
+  indhent en aktuel bekræftelse manuelt.
+- [Ærøske Motorveteraner](https://aeroe-motorveteraner.dk/medlemsorientering)
+  har et årligt program i server-renderet prosa, men ingen resterende 2026-datoer
+  efter kontroldatoen. Kontrollér siden årligt fra februar til maj og send
+  medlems- og ø-ture til review.
+- Ærø Sportsfiskerforenings tidligere domæne er overtaget af uvedkommende
+  SEO-/casinoindhold og må aldrig bruges som arrangørkilde. Facebook-gruppen er
+  privat. Et landsdækkende forbundsopslag og VisitDanmark var uenige om den
+  konkrete Havørredweekends startdato, så kun en direkte bekræftelse kan
+  publiceres.
 
 ## Krav til hver ny adapter
 
@@ -171,10 +244,11 @@ En adapter er klar til at blive aktiveret, når fixtures dækker:
 4. tomt, delvist og ændret HTML/API-svar uden tab af sidste gode snapshot, og
 5. dubletter mod de tre eksisterende kilder og mod andre poster i samme kørsel.
 
-Den mest effektive næste leverance er Rise SIF, Kommune `Det sker`, Ældre Sagen,
-Ærø Folkedanserforening og Viften. Derefter følger Folkeuniversitetet,
-Motorfabrikken, Ommel BK, Navigationsskolens offentlige arrangementer og
-FirstAgenda-berigelsen. Det giver tilbagevendende fællesskaber, børn/unge,
-officielle borgerarrangementer, sport, foredrag og koncerter uden at være
-afhængig af en aggregator. En Facebook-browser må kun aktiveres ved en
-autoriseret adgangsvej og bør aldrig blokere de direkte adapters.
+Den mest effektive næste leverance er Rise SIF, DN's kommune-API, Momoyogas
+allowlistede hold, Kommune `Det sker` og Ældre Sagen. Ommel Samvirke har det
+største nye lokalsamfundsudbytte, men skal begynde som browserbaseret reviewkilde,
+indtil kalenderens ejer retter ICS-feedet eller giver en stabil dataadgang.
+Derefter følger Folkedanserforeningen, Viften, Folkeuniversitetet,
+Motorfabrikken, Kunsthøjskolen, Ommel BK, Navigationsskolen og
+FirstAgenda-berigelsen. En Facebook-browser må kun aktiveres ved en autoriseret
+adgangsvej og bør aldrig blokere de direkte adapters.
