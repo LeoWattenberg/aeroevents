@@ -45,6 +45,7 @@ export function sourceDraftToEvent(draft: NormalizedEventDraft): EventRecord {
     title: draft.title,
     description: draft.description || "",
     organizerId: draft.organizerId,
+    ...(draft.organizerName ? { organizerName: draft.organizerName } : {}),
     categoryIds: draft.categoryIds,
     ...(draft.location?.name ? { location: draft.location } : {}),
     attendance:
@@ -103,7 +104,7 @@ export async function validateAllPublicData(root: string) {
 
 export async function assertEventReferences(root: string, event: EventRecord): Promise<void> {
   const repository = await loadRepository(root);
-  if (!repository.organizers.some((item) => item.id === event.organizerId)) {
+  if (!event.organizerName && !repository.organizers.some((item) => item.id === event.organizerId)) {
     throw new Error(`Ukendt arrangør: ${event.organizerId}`);
   }
   for (const categoryId of event.categoryIds) {

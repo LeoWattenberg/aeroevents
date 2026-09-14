@@ -1,0 +1,76 @@
+{
+  "sourceId": "ommel-bk",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "ommel-bk-633197",
+      "title": "Ommel BK – Skårup IF (3)",
+      "description": "Herrer S4, Efterår 2026 (11:11/9:9) · Pulje 2",
+      "organizerId": "ommel-bk",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Ommel Stadion",
+        "url": "https://www.dbufyn.dk/resultater/stadium/739"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-633197",
+            "date": "2026-09-27",
+            "kind": "timed",
+            "startTime": "13:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-bk",
+        "externalId": "633197",
+        "url": "https://www.dbufyn.dk/resultater/kamp/633197_501669/kampinfo",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-bk-633210",
+      "title": "Ommel BK – BK Stjernen af 1968",
+      "description": "Herrer S4, Efterår 2026 (11:11/9:9) · Pulje 2",
+      "organizerId": "ommel-bk",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Ommel Stadion",
+        "url": "https://www.dbufyn.dk/resultater/stadium/739"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-633210",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "13:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-bk",
+        "externalId": "633210",
+        "url": "https://www.dbufyn.dk/resultater/kamp/633210_501669/kampinfo",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    }
+  ]
+}

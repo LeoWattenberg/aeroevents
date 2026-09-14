@@ -115,6 +115,27 @@ describe("repository pipeline", () => {
     await expect(loadRepository(root)).rejects.toThrow("Ukendt kategori ukendt");
   });
 
+  it("accepts a named event organizer that is not the source calendar owner", async () => {
+    const root = await fixtureRoot();
+    await fs.writeFile(
+      path.join(root, "data/imported/trusted.json"),
+      JSON.stringify({
+        sourceId: "trusted",
+        verifiedAt: "2026-09-13T12:00:00Z",
+        events: [{
+          ...importedEvent,
+          organizerId: "linda-skjoennemand",
+          organizerName: "Linda Skjønnemand",
+        }],
+      }),
+    );
+
+    expect((await loadRepository(root)).events[0]).toMatchObject({
+      organizerId: "linda-skjoennemand",
+      organizerName: "Linda Skjønnemand",
+    });
+  });
+
   it("uses a fixed twelve-month expansion window", async () => {
     const root = await fixtureRoot();
     await fs.writeFile(path.join(root, "data/imported/trusted.json"), JSON.stringify({

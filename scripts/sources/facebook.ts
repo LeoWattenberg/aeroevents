@@ -4,7 +4,7 @@ import { DateTime } from "luxon";
 
 import { applyAutomaticCategoryRules } from "../../src/lib/category-rules.js";
 import { errorMessage, fetchText } from "./http";
-import { cleanText } from "./html";
+import { cleanText, slug } from "./html";
 import {
   normalizeFacebookPostText,
   parseFacebookAnnouncementText,
@@ -143,6 +143,15 @@ function textValue(value: unknown): string | undefined {
   return result || undefined;
 }
 
+function structuredName(value: unknown): string | undefined {
+  if (Array.isArray(value)) {
+    return value.map(structuredName).find((name) => name !== undefined);
+  }
+  if (typeof value === "string") return textValue(value);
+  if (!value || typeof value !== "object") return undefined;
+  return textValue((value as Record<string, unknown>).name);
+}
+
 function structuredEvents(value: unknown): Record<string, unknown>[] {
   if (Array.isArray(value)) return value.flatMap(structuredEvents);
   if (!value || typeof value !== "object") return [];
@@ -221,11 +230,17 @@ function structuredEventSourceUrl(value: unknown, requestedUrl: string): string 
 function announcementTextFromPage($: ReturnType<typeof load>): {
   text?: string;
   titleHint?: string;
+  organizerName?: string;
   publishedAt?: string;
   ambiguous: boolean;
   truncated: boolean;
 } {
-  const structured: Array<{ text: string; title?: string; publishedAt?: string }> = [];
+  const structured: Array<{
+    text: string;
+    title?: string;
+    organizerName?: string;
+    publishedAt?: string;
+  }> = [];
   $("script[type='application/ld+json']").each((_index, element) => {
     const raw = $(element).html();
     if (!raw) return;
@@ -236,6 +251,7 @@ function announcementTextFromPage($: ReturnType<typeof load>): {
         const candidate = {
           text,
           ...(textValue(post.headline) ? { title: textValue(post.headline)! } : {}),
+          ...(structuredName(post.author) ? { organizerName: structuredName(post.author)! } : {}),
           ...(typeof post.datePublished === "string" ? { publishedAt: post.datePublished } : {}),
         };
         if (
@@ -243,6 +259,7 @@ function announcementTextFromPage($: ReturnType<typeof load>): {
             (item) =>
               item.text === candidate.text &&
               item.title === candidate.title &&
+              item.organizerName === candidate.organizerName &&
               item.publishedAt === candidate.publishedAt,
           )
         ) {
@@ -287,14 +304,18 @@ function announcementTextFromPage($: ReturnType<typeof load>): {
       $("meta[name='description']").attr("content"),
   );
   const selected = structured[0]?.text ?? (messages.length === 1 ? messages[0] : undefined) ?? metaText;
-  const rawTitle =
-    structured[0]?.title ?? multilineText($("meta[property='og:title']").attr("content"));
+  const openGraphTitle = multilineText($("meta[property='og:title']").attr("content"));
+  const rawTitle = structured[0]?.title ?? openGraphTitle;
   const titleHint = rawTitle?.replace(/\s*[|\-]\s*Facebook\s*$/iu, "").trim();
+  const organizerName =
+    structured[0]?.organizerName ??
+    openGraphTitle?.match(/^(.*?)\s*[|\-]\s*Facebook\s*$/iu)?.[1]?.trim();
   const publishedAt =
     structured[0]?.publishedAt ?? publishedAtFromPage($, messageElements[0]);
   return {
     ...(selected ? { text: selected } : {}),
     ...(titleHint ? { titleHint } : {}),
+    ...(organizerName ? { organizerName } : {}),
     ...(publishedAt ? { publishedAt } : {}),
     ambiguous: structured.length > 1 || messages.length > 1,
     truncated:
@@ -311,6 +332,7 @@ export interface FacebookPostTextInput {
   publishedAt?: string;
   titleHint?: string;
   titleOverride?: string;
+  organizerName?: string;
 }
 
 export function parseFacebookPostText(
@@ -365,7 +387,8 @@ export function parseFacebookPostText(
     stableId: `${definition.id}-${id}`,
     title: parsed.title,
     description: normalizeFacebookPostText(input.text),
-    organizerId: definition.organizerId,
+    organizerId: input.organizerName ? slug(input.organizerName) : definition.organizerId,
+    ...(input.organizerName ? { organizerName: input.organizerName } : {}),
     categoryIds: [...definition.categoryIds],
     ...(parsed.locationName ? { location: { name: parsed.locationName } } : {}),
     occurrences: parsed.occurrences.map((occurrence, index) => ({
@@ -432,6 +455,7 @@ function draftFromFields(
     location?: EventLocationDraft;
     cancelled?: boolean;
     organizerId?: string;
+    organizerName?: string;
   },
   retrievedAt: string,
 ): NormalizedEventDraft {
@@ -452,7 +476,10 @@ function draftFromFields(
     stableId: `${definition.id}-${id}`,
     title: fields.title,
     ...(fields.description ? { description: fields.description } : {}),
-    organizerId: fields.organizerId ?? definition.organizerId,
+    organizerId:
+      fields.organizerId ??
+      (fields.organizerName ? slug(fields.organizerName) : definition.organizerId),
+    ...(fields.organizerName ? { organizerName: fields.organizerName } : {}),
     categoryIds: [...definition.categoryIds],
     ...(fields.location ? { location: fields.location } : {}),
     occurrences: [occurrence],
@@ -520,6 +547,9 @@ export function parseFacebookPublicPage(
             ? { description: textValue(event.description)! }
             : {}),
           ...(schemaLocation(event.location) ? { location: schemaLocation(event.location)! } : {}),
+          ...(structuredName(event.organizer)
+            ? { organizerName: structuredName(event.organizer)! }
+            : {}),
           cancelled: event.eventStatus === "https://schema.org/EventCancelled",
         },
         retrievedAt,
@@ -609,6 +639,7 @@ export function parseFacebookPublicPage(
         retrievedAt,
         ...(announcement.publishedAt ? { publishedAt: announcement.publishedAt } : {}),
         ...(announcement.titleHint ? { titleHint: announcement.titleHint } : {}),
+        ...(announcement.organizerName ? { organizerName: announcement.organizerName } : {}),
       });
       if (parsed.candidates.length > 0) {
         return {

@@ -32,6 +32,8 @@ describe("Facebook discovery source", () => {
     expect(result.candidates).toHaveLength(1);
     expect(result.candidates[0]).toMatchObject({
       sourceEventId: "123456789",
+      organizerId: "motorfabrikken-marstal",
+      organizerName: "Motorfabrikken Marstal",
       publication: "review",
       attendance: "unknown",
       occurrences: [{ date: "2026-07-10", startTime: "19:30" }],
@@ -132,6 +134,8 @@ describe("Facebook discovery source", () => {
       sourceEventId: "post-pfbid-example",
       stableId: "facebook-post-pfbid-example",
       title: "Fællesspisning i Ommel",
+      organizerId: "ommel-samvirke",
+      organizerName: "Ommel Samvirke",
       location: { name: "Ommel Forsamlingshus" },
       price: "75 kr.",
       publication: "review",

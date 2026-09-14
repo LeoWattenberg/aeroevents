@@ -171,7 +171,9 @@ export async function loadRepository(root = process.cwd()): Promise<RepositoryDa
   const categoryIds = new Set(categories.map((item) => item.id));
   const sourceIds = new Set(sources.map((item) => item.id));
   for (const event of byId.values()) {
-    if (!organizerIds.has(event.organizerId)) throw new Error(`${event.id}: Ukendt arrangør ${event.organizerId}`);
+    if (!event.organizerName && !organizerIds.has(event.organizerId)) {
+      throw new Error(`${event.id}: Ukendt arrangør ${event.organizerId}`);
+    }
     for (const categoryId of event.categoryIds) {
       if (!categoryIds.has(categoryId)) throw new Error(`${event.id}: Ukendt kategori ${categoryId}`);
     }

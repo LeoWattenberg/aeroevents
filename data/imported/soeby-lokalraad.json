@@ -1,0 +1,80 @@
+{
+  "sourceId": "soeby-lokalraad",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "soeby-lokalraad-node-12-2026-10-01-16-00",
+      "title": "Bestyrelsesmøde i Søby Lokalråd",
+      "description": "Næste møde aftalt til torsdag den 1. oktober 2026 kl. 16:00 i Aktivitetshuset forud for Åbent Hus arrangementet om lørdagen, samt de punkter, der ellers måtte være dukket op.",
+      "organizerId": "soeby-lokalraad",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Aktivitetshuset",
+        "city": "Søby"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Referatet oplyser ikke adgangsvilkår."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "node-12-2026-10-01-16-00-occurrence",
+            "date": "2026-10-01",
+            "status": "scheduled",
+            "kind": "timed",
+            "startTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "soeby-lokalraad",
+        "externalId": "node-12-2026-10-01-16-00",
+        "url": "https://soebylokalraad.dk/11/en/node/12",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    },
+    {
+      "id": "soeby-lokalraad-node-12-2026-10-03-13-30",
+      "title": "Åbent hus i Aktivitetshuset",
+      "description": "Ad 2) Aktivitetshuset. Mange borgere i Søby er formentlig ikke engang klar over, at de har et Aktivitetshus. Vi laver et Åbent Hus arrangement lørdag den 3. oktober kl 13:30 – 16:00, hvor der opfordres til at komme og se huset, drøfte dets muligheder og udviklingspotentiale. Dorrit laver udkast til invitation.",
+      "organizerId": "soeby-lokalraad",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Aktivitetshuset",
+        "city": "Søby"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "node-12-2026-10-03-13-30-occurrence",
+            "date": "2026-10-03",
+            "status": "scheduled",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "soeby-lokalraad",
+        "externalId": "node-12-2026-10-03-13-30",
+        "url": "https://soebylokalraad.dk/11/en/node/12",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    }
+  ]
+}

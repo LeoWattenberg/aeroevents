@@ -8,6 +8,7 @@ export function buildApprovalOverride(event: EventRecord, importedBase: EventRec
     "title",
     "description",
     "organizerId",
+    "organizerName",
     "categoryIds",
     "attendance",
     "status",

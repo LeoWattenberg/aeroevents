@@ -1,11 +1,27 @@
 ---
 import { sitePath } from "../../components/paths";
+import { toCalendarDataset } from "../../components/catalog-adapter";
 import BaseLayout from "../../layouts/BaseLayout.astro";
-import { getOrganizers, getPublishedEvents } from "../../lib/catalog";
+import {
+  getBuildMetadata,
+  getCategories,
+  getOccurrences,
+  getOrganizers,
+  getPublishedEvents,
+  getSources,
+} from "../../lib/catalog";
 
-const [organizers, events] = await Promise.all([getOrganizers(), getPublishedEvents()]);
-const publishedOrganizerIds = new Set(events.map((event) => event.organizerId));
-const visibleOrganizers = organizers
+const [events, occurrences, organizers, categories, sources, metadata] = await Promise.all([
+  getPublishedEvents(),
+  getOccurrences(),
+  getOrganizers(),
+  getCategories(),
+  getSources(),
+  getBuildMetadata(),
+]);
+const dataset = toCalendarDataset(events, occurrences, organizers, categories, sources, metadata);
+const publishedOrganizerIds = new Set(dataset.events.map((event) => event.organizerId));
+const visibleOrganizers = dataset.organizers
   .filter((organizer) => publishedOrganizerIds.has(organizer.id))
   .sort((a, b) => a.name.localeCompare(b.name, "da-DK"));
 ---
@@ -23,7 +39,7 @@ const visibleOrganizers = organizers
 
   <section class="organizer-list page-width" aria-label="Alle arrangører">
     {visibleOrganizers.length ? visibleOrganizers.map((organizer) => {
-      const eventCount = events.filter((event) => event.organizerId === organizer.id).length;
+      const eventCount = dataset.events.filter((event) => event.organizerId === organizer.id).length;
       return (
         <article>
           <p class="count">{eventCount === 1 ? "1 arrangement" : `${eventCount} arrangementer`}</p>

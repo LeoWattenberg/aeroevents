@@ -1,0 +1,90 @@
+{
+  "sourceId": "viften",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "viften-29c4da51dbc547608099eb011d23c72e",
+      "title": "Tur til ODENSE ZOO",
+      "description": "Junior- og Ungdomsklubben tager på tur til Odense Zoo Lørdag den 26/9\nAfgang Ærøskøbing kl. 8.30 (vi mødes ved færgen senest 8.00)\nJesper Bus kører os fra Svendborg til ZOO og tilbage igen.\nHjemkomst Ærøskøbing kl. 17.15\nHusk!\nPraktisk tøj efter vejret\nTaske med mad og drikkelse\nLommepenge efter aftale med mor/far\nGodt humør!\nPris: 200,-\n- inkluderer transport og indgang.\nSenest tilmelding mandag 14/9\nZoologiske hilsner fra Josephine, Rasmus og Mette",
+      "organizerId": "viften",
+      "categoryIds": [
+        "boern-familie"
+      ],
+      "attendance": {
+        "kind": "registration",
+        "details": "Turen er for alle børn og unge på Ærø i 4. - 10. klasse"
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "price": "200,- og det dækker transport og indgang til ZOO",
+      "booking": {
+        "required": true,
+        "soldOut": false,
+        "url": "https://www.viften.net/subjectclass/29c4da51dbc547608099eb011d23c72e#enrollment",
+        "details": "Tilmeldingsfrist 14. september 2026 kl. 23.59"
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "viften-29c4da51dbc547608099eb011d23c72e",
+            "date": "2026-09-26",
+            "kind": "timed",
+            "startTime": "08:00",
+            "endDate": "2026-09-26",
+            "endTime": "17:15"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "viften",
+        "externalId": "29c4da51dbc547608099eb011d23c72e",
+        "url": "https://www.viften.net/subjectclass/29c4da51dbc547608099eb011d23c72e",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    },
+    {
+      "id": "viften-44529c680154462ca130ff14235f51aa",
+      "title": "Shopping og Sushi i Svendborg",
+      "description": "Vi tager på en hyggelig All You Can Eat sushi tur med ungdomsklubben (6. - 10. klasse) d. 10. oktober.\nI Svendborg har vi to timers shopping, hvorefter vi skal spise All You Can Eat sushi.\nVi mødes ved færgen kl. 08:00, og vi er hjemme kl. 15:15.\nTuren koster 200 kr. og det dækker færge og Sushi. Sidste tilmelding er d. 30. september.\nVi glæder os til en dejlig dag sammen!\nHilsen Josefine og Signe\nPS. Husk tøj efter vejret.",
+      "organizerId": "viften",
+      "categoryIds": [
+        "boern-familie"
+      ],
+      "location": {
+        "name": "færgen",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Du skal gå på et af følgende klassetrin: 6. 7. 8. 9. 10."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "price": "200,-",
+      "booking": {
+        "required": true,
+        "soldOut": false,
+        "url": "https://www.viften.net/subjectclass/44529c680154462ca130ff14235f51aa#enrollment",
+        "details": "Tilmeldingsfrist 30. september 2026 kl. 23.59"
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "viften-44529c680154462ca130ff14235f51aa",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "08:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "viften",
+        "externalId": "44529c680154462ca130ff14235f51aa",
+        "url": "https://www.viften.net/subjectclass/44529c680154462ca130ff14235f51aa",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    }
+  ]
+}

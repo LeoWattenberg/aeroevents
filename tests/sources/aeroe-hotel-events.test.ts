@@ -52,13 +52,16 @@ describe("Ærø Hotel Wix Events source", () => {
       publication: "review",
       provenance: { sourceModifiedAt: "2026-05-13T22:07:57.000Z" },
     });
-    expect(parsed.candidates[0]!.reviewReasons.join(" ")).toContain("opholdsdatoer");
     expect(parsed.candidates[0]!.reviewReasons.join(" ")).toContain("ikke fastlagt");
-    expect(parsed.candidates[1]!.location).toEqual({
-      name: "Ærø Hotel",
-      address: "Egehovedvej 4",
-      postalCode: "5960",
-      city: "Marstal",
+    expect(parsed.candidates[1]).toMatchObject({
+      publication: "trusted",
+      reviewReasons: [],
+      location: {
+        name: "Ærø Hotel",
+        address: "Egehovedvej 4",
+        postalCode: "5960",
+        city: "Marstal",
+      },
     });
     expect(parsed.candidates[2]).toMatchObject({
       availability: "sold-out",
@@ -140,7 +143,30 @@ describe("Ærø Hotel Wix Events source", () => {
     expect(oversized.errors[0]).toContain("overstiger grænsen");
   });
 
-  it("returns only current events and keeps every candidate in review", async () => {
+  it("routes different-UUID semantic duplicates to review when more than one is trusted", async () => {
+    const fixtureHtml = await fixture("aeroe-hotel-events.html");
+    const duplicate = parseAeroeHotelEventsPage(
+      modifyWarmup(fixtureHtml, (events) => {
+        events.push({
+          ...structuredClone(events[1]!),
+          id: "11111111-1111-4111-8111-111111111111",
+          slug: "koncert-johnny-hansen-copy",
+        });
+      }),
+      NOW.toISOString(),
+    );
+    const matching = duplicate.candidates.filter((candidate) =>
+      candidate.title === "Koncert: Johnny Hansen" && candidate.publication === "review"
+    );
+
+    expect(matching).toHaveLength(3);
+    expect(matching.filter((candidate) =>
+      candidate.reviewReasons.includes("Flere strukturelt komplette Wix-poster har samme titel og tidspunkt.")
+    )).toHaveLength(2);
+    expect(duplicate.warnings.join(" ")).toContain("forskellige UUID'er");
+  });
+
+  it("returns only current events and trusts only unambiguous records", async () => {
     const result = await aeroeHotelEventsSource.collect({
       now: NOW,
       fetch: mappedFetch({ [SOURCE_URL]: await fixture("aeroe-hotel-events.html") }),
@@ -152,8 +178,12 @@ describe("Ærø Hotel Wix Events source", () => {
       "ed1de5fe-85ed-4ca4-9219-f9ecb19eb760",
       "a3408796-d514-413e-a85f-e29878626aa1",
     ]);
-    expect(result.candidates.every((candidate) => candidate.publication === "review")).toBe(true);
-    expect(result.candidates.every((candidate) => candidate.reviewReasons.length > 0)).toBe(true);
+    expect(result.candidates.map((candidate) => candidate.publication)).toEqual([
+      "review",
+      "trusted",
+    ]);
+    expect(result.candidates[0]!.reviewReasons.length).toBeGreaterThan(0);
+    expect(result.candidates[1]!.reviewReasons).toEqual([]);
     expect(result.warnings.some((warning) => warning.includes("9846b240"))).toBe(true);
   });
 });

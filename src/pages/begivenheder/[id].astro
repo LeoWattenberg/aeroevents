@@ -11,6 +11,8 @@ import {
   statusLabel,
 } from "../../components/format";
 import { sitePath } from "../../components/paths";
+import EventCalendarControl from "../../components/EventCalendarControl.astro";
+import EventNotificationControl from "../../components/EventNotificationControl.astro";
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import {
   getBuildMetadata,
@@ -122,6 +124,9 @@ const sourceTime = event.source?.verifiedAt
       </div>
 
       <aside aria-label="Praktiske oplysninger">
+        {event.occurrences.length > 0 && <EventCalendarControl eventId={event.id} />}
+        {upcoming.length > 0 && <EventNotificationControl event={event} occurrences={upcoming} />}
+
         {primaryLocation && (
           <section>
             <h2>Sted</h2>

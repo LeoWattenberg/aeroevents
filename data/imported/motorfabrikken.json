@@ -1,0 +1,50 @@
+{
+  "sourceId": "motorfabrikken",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "motorfabrikken-111001",
+      "title": "Sys Bjerre Intimkoncert",
+      "description": "En aften med SysSys Bjerre albumdebuterede i 2008 med ‘Gør Det Selv’, som gik nummer et på den danske albumhitliste og nomineret til en Danish Music Award i kategorien Bedste Danske Album. Ikke mindst på grund af landeplagen ‘Malene’, som stadig spilles flittigt den dag i dag, både i radioen og ude i øvelokalerne rundt omkring i landet. Hun har siden udgivet yderligere fire albums og har i snart to årtier fået danskerne til både at grine og fælde en tåre. Med det danske sprog som sit stærkeste kort, har hun indtaget landets radiostationer, de danske spillesteds- og festivalscener og endda også Højskolesangbogen. Sys Bjerres blik for menneskets særkender, vores vaner, og livene vi lever, har altid løbet som en spændstig tråd gennem hendes sange. For hun vil gerne tale med folk om livet, og som observatør, pirker hun til andre. Og hun tør også kigge på sig selv, altid med oprigtigheden og alvoren parat under humoren. Sys Bjerre spiller live med guitaristen Mads Reinhold.",
+      "organizerId": "motorfabrikken",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Motorfabrikken Marstal",
+        "address": "Havnegade 11",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Udsolgt; se billetsiden for eventuel venteliste."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "150 kr.",
+      "booking": {
+        "required": true,
+        "soldOut": true,
+        "url": "https://motorfabrikkenmarstal.ticketbutler.io/da/e/sys-bjerre-intimkoncert/"
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ticketbutler-c860b8771b224db9b79a77078b40ece9",
+            "date": "2026-11-06",
+            "kind": "timed",
+            "startTime": "20:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "motorfabrikken",
+        "externalId": "111001",
+        "url": "https://motorfabrikkenmarstal.ticketbutler.io/da/e/sys-bjerre-intimkoncert/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "sourceId": "aeroeskoebing-grand-prix",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "aeroeskoebing-grand-prix-2026",
+      "title": "Ærøskøbing Grand Prix 2026",
+      "description": "Dansk Sæbekasse Mesterskab 2026 I Efterårsferien (Uge 42) Mandag d 12. okt til torsdag d 15. okt fra kl. 09.00-12.00 ​",
+      "organizerId": "aeroeskoebing-grand-prix",
+      "categoryIds": [
+        "boern-familie",
+        "sport-motion"
+      ],
+      "attendance": {
+        "kind": "registration",
+        "details": "Tilmelding via arrangørens hjemmeside."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "booking": {
+        "required": true,
+        "soldOut": false,
+        "url": "https://www.xn--rgrandprix-c6a1t.dk/tilmelding",
+        "details": "Tilmeldingsside er linket fra kildens hovedmenu."
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "aeroeskoebing-grand-prix-2026-10-12",
+            "date": "2026-10-12",
+            "status": "scheduled",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "aeroeskoebing-grand-prix-2026-10-13",
+            "date": "2026-10-13",
+            "status": "scheduled",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "aeroeskoebing-grand-prix-2026-10-14",
+            "date": "2026-10-14",
+            "status": "scheduled",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "aeroeskoebing-grand-prix-2026-10-15",
+            "date": "2026-10-15",
+            "status": "scheduled",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroeskoebing-grand-prix",
+        "externalId": "aeroeskoebing-grand-prix-2026",
+        "url": "https://www.xn--rgrandprix-c6a1t.dk/",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    }
+  ]
+}

@@ -2,6 +2,7 @@
 import type { CalendarDataset, OccurrenceView } from "./calendar-types";
 import { calendarToday, capitalize, dateLabel, occurrenceLastDate } from "./format";
 import CalendarFilters from "./CalendarFilters.astro";
+import CategoryNotificationControl from "./CategoryNotificationControl.astro";
 import EventCard from "./EventCard.astro";
 import MonthCalendar from "./MonthCalendar.astro";
 
@@ -43,6 +44,7 @@ const agendaHeading = (date: string) => {
 
 <div class="calendar" data-calendar data-initial-month={initialMonth}>
   <CalendarFilters organizers={filterOrganizers} categories={dataset.categories} />
+  <CategoryNotificationControl categories={dataset.categories} events={dataset.events} today={today} />
 
   <div class="results-heading">
     <p data-result-count aria-live="polite">

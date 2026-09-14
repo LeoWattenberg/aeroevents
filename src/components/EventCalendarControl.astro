@@ -1,0 +1,62 @@
+---
+import { eventCalendarPath } from "../lib/ical";
+import { sitePath } from "./paths";
+
+interface Props {
+  eventId: string;
+}
+
+const { eventId } = Astro.props;
+const calendarUrl = sitePath(eventCalendarPath(eventId));
+---
+
+<section class="event-calendar-control" aria-labelledby="event-calendar-heading">
+  <h2 id="event-calendar-heading">Kalender</h2>
+  <p>Hent arrangementets tidspunkter som en kalenderfil.</p>
+  <a
+    class="button secondary"
+    href={calendarUrl}
+    download={`aeroevents-${eventId}.ics`}
+    type="text/calendar"
+  >
+    Føj til kalender
+  </a>
+  <p class="calendar-note">Filen er et øjebliksbillede og opdateres ikke automatisk.</p>
+</section>
+
+<style>
+  .event-calendar-control {
+    padding: 1.4rem;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--green);
+    border-radius: var(--radius);
+    background: var(--paper-strong);
+  }
+
+  h2 {
+    margin-bottom: 0.55rem;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .event-calendar-control > p {
+    margin-bottom: 1rem;
+    color: #43514e;
+    font-size: 0.88rem;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 0.78rem;
+  }
+
+  .event-calendar-control > .calendar-note {
+    margin: 0.55rem 0 0;
+    color: var(--muted);
+    font-size: 0.68rem;
+    line-height: 1.45;
+  }
+</style>

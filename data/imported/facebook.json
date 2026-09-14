@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-14T09:13:09.453Z",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -237,6 +237,44 @@
         "externalId": "post-pfbid0WLEjmTiA1KDAK1jLhuSrKsqahN1cKeqCosB9jnNDexGzCypyCUrkBJuvzQs75UJYl",
         "url": "https://www.facebook.com/julehyggeiaeroskobing/posts/har-du-lyst-til-at-deltage-med-en-bod-til-%C3%A5rets-julemarked-i-%C3%A6r%C3%B8sk%C3%B8bings-smukke-/1693891992661773/",
         "verifiedAt": "2026-09-14T09:13:09.453Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02utebc2qjs8xk6nmcuvpgbdofjeqawmfhtymkmmcyfungssbe8y-b6c7a820",
+      "title": "NY OPDATERING PÅ MANGLENDE NETFORBINDELSE PÅ ÆRØSKØBING BIBLIOTEK",
+      "description": "NY OPDATERING PÅ MANGLENDE NETFORBINDELSE PÅ ÆRØSKØBING BIBLIOTEK\nGrundet overgravet fiberkabel er Ærøskøbing bibliotek fortsat begrænset åbent og der vil være forsinkelser på reserverede bøger til Ærøskøbing.\nDet er IKKE muligt at benytte biblioteket:\nMandag 14/9 efter kl. 13\nTirsdag 15/9 efter kl. 14.30\nDer er fortsat adgang i de betjente åbningstider.\nVi beklager meget besværet.\nMarstal bibliotek er åbent som normalt",
+      "organizerId": "aeroe-folkebibliotek",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-120hjtm-1",
+            "date": "2026-09-14",
+            "kind": "timed",
+            "startTime": "13:00"
+          },
+          {
+            "id": "facebook-120hjtm-2",
+            "date": "2026-09-15",
+            "kind": "timed",
+            "startTime": "14:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02uTEBC2qjs8Xk6NmcuVPgBdoFjEQawmfHtYmKmMcYFUnGssBe8YzpgRgmHbgnEGJ8l",
+        "url": "https://www.facebook.com/arrebib/posts/-ny-opdatering-p%C3%A5-manglende-netforbindelse-p%C3%A5-%C3%A6r%C3%B8sk%C3%B8bing-bibliotekgrundet-overgr/1557089606446010/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
       }
     }
   ]

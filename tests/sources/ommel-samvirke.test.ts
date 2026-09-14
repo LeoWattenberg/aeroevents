@@ -64,7 +64,7 @@ describe("Ommel Samvirke source", () => {
     const gymnastics = parsed.candidates.find((candidate) => candidate.title === "Stolegymnastik");
     expect(gymnastics).toMatchObject({
       sourceId: "ommel-samvirke",
-      publication: "review",
+      publication: "trusted",
       attendance: "unknown",
       location: { name: "Beboerhuset" },
     });
@@ -75,8 +75,27 @@ describe("Ommel Samvirke source", () => {
       "2026-09-21",
     ]);
     expect(gymnastics?.occurrences[0]?.id).toContain("2026-09-14-1000");
-    expect(gymnastics?.reviewReasons.join(" ")).toContain("ingen stabil offentlig event-URL");
+    expect(gymnastics?.reviewReasons).toEqual([]);
     expect(JSON.stringify(parsed.candidates)).not.toMatch(/stol@example\.dk|61 74 15 54|Privat Person/u);
+  });
+
+  it("keeps price, signup, and status information in prose under review", async () => {
+    const html = (await fixture("ommel-samvirke-calendar.html")).replace(
+      "Kom og spil petanque i hyggeligt selskab.",
+      "Pris 20 kr. Tilmelding er nødvendig. Arrangementet er flyttet.",
+    );
+    const parsed = parseOmmelRenderedCalendar(
+      html,
+      SOURCE_URL,
+      NOW.toISOString(),
+      NOW,
+    );
+    const candidate = parsed.candidates.find((item) =>
+      item.description?.includes("Tilmelding er nødvendig")
+    );
+
+    expect(candidate?.publication).toBe("review");
+    expect(candidate?.reviewReasons.join(" ")).toMatch(/Pris|Tilmelding|statusændring/u);
   });
 
   it("does not collapse separate source activities merely because their titles match", async () => {

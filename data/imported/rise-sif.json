@@ -1,0 +1,4751 @@
+{
+  "sourceId": "rise-sif",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "rise-sif-booking-22133794",
+      "title": "Aktivitetsdag",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22133794",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "13:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "booking-22133794",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    },
+    {
+      "id": "rise-sif-booking-22133835",
+      "title": "Natminton Mesterskab",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22133835",
+            "date": "2026-11-20",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endDate": "2026-11-21",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "booking-22133835",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    },
+    {
+      "id": "rise-sif-booking-22133845",
+      "title": "Rise Mesterskab",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22133845",
+            "date": "2027-04-03",
+            "kind": "timed",
+            "startTime": "08:00",
+            "endDate": "2027-04-04",
+            "endTime": "18:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "booking-22133845",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    },
+    {
+      "id": "rise-sif-booking-22345043",
+      "title": "Aktivitetsdag",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Sal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22345043",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "booking-22345043",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-734689",
+      "title": "Yoga med Maria",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Sal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-21957983",
+            "date": "2026-09-29",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957984",
+            "date": "2026-10-06",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957985",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957986",
+            "date": "2026-10-20",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957987",
+            "date": "2026-10-27",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957988",
+            "date": "2026-11-03",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957989",
+            "date": "2026-11-10",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957990",
+            "date": "2026-11-17",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957991",
+            "date": "2026-11-24",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957992",
+            "date": "2026-12-01",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957993",
+            "date": "2026-12-08",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957994",
+            "date": "2026-12-15",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957995",
+            "date": "2026-12-22",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957996",
+            "date": "2026-12-29",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957997",
+            "date": "2027-01-05",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957998",
+            "date": "2027-01-12",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21957999",
+            "date": "2027-01-19",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21958000",
+            "date": "2027-01-26",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21958001",
+            "date": "2027-02-02",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21958002",
+            "date": "2027-02-09",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21958003",
+            "date": "2027-02-16",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21958004",
+            "date": "2027-02-23",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21958005",
+            "date": "2027-03-02",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21958006",
+            "date": "2027-03-09",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21958007",
+            "date": "2027-03-16",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21958008",
+            "date": "2027-03-23",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          },
+          {
+            "id": "booking-21958009",
+            "date": "2027-03-30",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-734689",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-734690",
+      "title": "Yoga med Maria",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Sal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-21958011",
+            "date": "2026-09-29",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958012",
+            "date": "2026-10-06",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958013",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958014",
+            "date": "2026-10-20",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958015",
+            "date": "2026-10-27",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958016",
+            "date": "2026-11-03",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958017",
+            "date": "2026-11-10",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958018",
+            "date": "2026-11-17",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958019",
+            "date": "2026-11-24",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958020",
+            "date": "2026-12-01",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958021",
+            "date": "2026-12-08",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958022",
+            "date": "2026-12-15",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958023",
+            "date": "2026-12-22",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958024",
+            "date": "2026-12-29",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958025",
+            "date": "2027-01-05",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958026",
+            "date": "2027-01-12",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958027",
+            "date": "2027-01-19",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958028",
+            "date": "2027-01-26",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958029",
+            "date": "2027-02-02",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958030",
+            "date": "2027-02-09",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958031",
+            "date": "2027-02-16",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958032",
+            "date": "2027-02-23",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958033",
+            "date": "2027-03-02",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958034",
+            "date": "2027-03-09",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958035",
+            "date": "2027-03-16",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958036",
+            "date": "2027-03-23",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-21958037",
+            "date": "2027-03-30",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-734690",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-738768",
+      "title": "Gymnastik - Glad og go' motion +50 26/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22108657",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108658",
+            "date": "2026-09-24",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108659",
+            "date": "2026-10-01",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108660",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108661",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108662",
+            "date": "2026-10-22",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108663",
+            "date": "2026-10-29",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108664",
+            "date": "2026-11-05",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108665",
+            "date": "2026-11-12",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108666",
+            "date": "2026-11-19",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108667",
+            "date": "2026-11-26",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108668",
+            "date": "2026-12-03",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108669",
+            "date": "2026-12-10",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108670",
+            "date": "2026-12-17",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108671",
+            "date": "2026-12-24",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108672",
+            "date": "2026-12-31",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108673",
+            "date": "2027-01-07",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108674",
+            "date": "2027-01-14",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108675",
+            "date": "2027-01-21",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108676",
+            "date": "2027-01-28",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108677",
+            "date": "2027-02-04",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108678",
+            "date": "2027-02-11",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108679",
+            "date": "2027-02-18",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108680",
+            "date": "2027-02-25",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108681",
+            "date": "2027-03-04",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108682",
+            "date": "2027-03-11",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          },
+          {
+            "id": "booking-22108683",
+            "date": "2027-03-18",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-738768",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-738773",
+      "title": "Gymnastik - Græshopperne 26/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22109039",
+            "date": "2026-09-15",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109040",
+            "date": "2026-09-22",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109041",
+            "date": "2026-09-29",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109042",
+            "date": "2026-10-06",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109043",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109044",
+            "date": "2026-10-20",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109045",
+            "date": "2026-10-27",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109046",
+            "date": "2026-11-03",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109047",
+            "date": "2026-11-10",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109048",
+            "date": "2026-11-17",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109049",
+            "date": "2026-11-24",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109050",
+            "date": "2026-12-01",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109051",
+            "date": "2026-12-08",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109052",
+            "date": "2026-12-15",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109053",
+            "date": "2026-12-22",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109054",
+            "date": "2026-12-29",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109055",
+            "date": "2027-01-05",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109056",
+            "date": "2027-01-12",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109057",
+            "date": "2027-01-19",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109058",
+            "date": "2027-01-26",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109059",
+            "date": "2027-02-02",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109060",
+            "date": "2027-02-09",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109061",
+            "date": "2027-02-16",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109062",
+            "date": "2027-02-23",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109063",
+            "date": "2027-03-02",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109064",
+            "date": "2027-03-09",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22109065",
+            "date": "2027-03-16",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-738773",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-738775",
+      "title": "Gymnastik - Popcornene 26/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22109113",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109114",
+            "date": "2026-09-23",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109115",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109116",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109117",
+            "date": "2026-10-14",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109118",
+            "date": "2026-10-21",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109119",
+            "date": "2026-10-28",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109120",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109121",
+            "date": "2026-11-11",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109122",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109123",
+            "date": "2026-11-25",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109124",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109125",
+            "date": "2026-12-09",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109126",
+            "date": "2026-12-16",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109127",
+            "date": "2026-12-23",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109128",
+            "date": "2026-12-30",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109129",
+            "date": "2027-01-06",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109130",
+            "date": "2027-01-13",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109131",
+            "date": "2027-01-20",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109132",
+            "date": "2027-01-27",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109133",
+            "date": "2027-02-03",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109134",
+            "date": "2027-02-10",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109135",
+            "date": "2027-02-17",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109136",
+            "date": "2027-02-24",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109137",
+            "date": "2027-03-03",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109138",
+            "date": "2027-03-10",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          },
+          {
+            "id": "booking-22109139",
+            "date": "2027-03-17",
+            "kind": "timed",
+            "startTime": "16:45",
+            "endTime": "17:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-738775",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-738778",
+      "title": "Gymnastik - RSI Dans 26/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22109256",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109257",
+            "date": "2026-09-23",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109258",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109259",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109260",
+            "date": "2026-10-14",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109261",
+            "date": "2026-10-21",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109262",
+            "date": "2026-10-28",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109263",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109264",
+            "date": "2026-11-11",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109265",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109266",
+            "date": "2026-11-25",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109267",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109268",
+            "date": "2026-12-09",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109269",
+            "date": "2026-12-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109270",
+            "date": "2026-12-23",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109271",
+            "date": "2026-12-30",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109272",
+            "date": "2027-01-06",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109273",
+            "date": "2027-01-13",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109274",
+            "date": "2027-01-20",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109275",
+            "date": "2027-01-27",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109276",
+            "date": "2027-02-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109277",
+            "date": "2027-02-10",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109278",
+            "date": "2027-02-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109279",
+            "date": "2027-02-24",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109280",
+            "date": "2027-03-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109281",
+            "date": "2027-03-10",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-738778",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-738782",
+      "title": "Gymnastik - RSI Spring 26/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22109341",
+            "date": "2026-09-15",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109342",
+            "date": "2026-09-22",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109343",
+            "date": "2026-09-29",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109344",
+            "date": "2026-10-06",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109345",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109346",
+            "date": "2026-10-20",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109347",
+            "date": "2026-10-27",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109348",
+            "date": "2026-11-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109349",
+            "date": "2026-11-10",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109350",
+            "date": "2026-11-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109351",
+            "date": "2026-11-24",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109352",
+            "date": "2026-12-01",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109353",
+            "date": "2026-12-08",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109354",
+            "date": "2026-12-15",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109355",
+            "date": "2026-12-22",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109356",
+            "date": "2026-12-29",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109357",
+            "date": "2027-01-05",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109358",
+            "date": "2027-01-12",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109359",
+            "date": "2027-01-19",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109360",
+            "date": "2027-01-26",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109361",
+            "date": "2027-02-02",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109362",
+            "date": "2027-02-09",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109363",
+            "date": "2027-02-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109364",
+            "date": "2027-02-23",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109365",
+            "date": "2027-03-02",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109366",
+            "date": "2027-03-09",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          },
+          {
+            "id": "booking-22109367",
+            "date": "2027-03-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-738782",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-738783",
+      "title": "Gymnastik - Spilopper 26/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22109371",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109372",
+            "date": "2026-09-23",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109373",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109374",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109375",
+            "date": "2026-10-14",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109376",
+            "date": "2026-10-21",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109377",
+            "date": "2026-10-28",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109378",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109379",
+            "date": "2026-11-11",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109380",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109381",
+            "date": "2026-11-25",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109382",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109383",
+            "date": "2026-12-09",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109384",
+            "date": "2026-12-16",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109385",
+            "date": "2026-12-23",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109386",
+            "date": "2026-12-30",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109387",
+            "date": "2027-01-06",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109388",
+            "date": "2027-01-13",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109389",
+            "date": "2027-01-20",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109390",
+            "date": "2027-01-27",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109391",
+            "date": "2027-02-03",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109392",
+            "date": "2027-02-10",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109393",
+            "date": "2027-02-17",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109394",
+            "date": "2027-02-24",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109395",
+            "date": "2027-03-03",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109396",
+            "date": "2027-03-10",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          },
+          {
+            "id": "booking-22109397",
+            "date": "2027-03-17",
+            "kind": "timed",
+            "startTime": "15:45",
+            "endTime": "16:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-738783",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-738785",
+      "title": "Gymnastik - Spirrevipperne 26/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22109536",
+            "date": "2026-09-15",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109537",
+            "date": "2026-09-22",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109538",
+            "date": "2026-09-29",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109539",
+            "date": "2026-10-06",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109540",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109541",
+            "date": "2026-10-20",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109542",
+            "date": "2026-10-27",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109543",
+            "date": "2026-11-03",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109544",
+            "date": "2026-11-10",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109545",
+            "date": "2026-11-17",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109546",
+            "date": "2026-11-24",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109547",
+            "date": "2026-12-01",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109548",
+            "date": "2026-12-08",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109549",
+            "date": "2026-12-15",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109550",
+            "date": "2026-12-22",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109551",
+            "date": "2026-12-29",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109552",
+            "date": "2027-01-05",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109553",
+            "date": "2027-01-12",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109554",
+            "date": "2027-01-19",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109555",
+            "date": "2027-01-26",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109556",
+            "date": "2027-02-02",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109557",
+            "date": "2027-02-09",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109558",
+            "date": "2027-02-16",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109559",
+            "date": "2027-02-23",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109560",
+            "date": "2027-03-02",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109561",
+            "date": "2027-03-09",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          },
+          {
+            "id": "booking-22109562",
+            "date": "2027-03-16",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "16:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-738785",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-738786",
+      "title": "Gymnastik - Tabata 26/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22109566",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109567",
+            "date": "2026-09-23",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109568",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109569",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109570",
+            "date": "2026-10-14",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109571",
+            "date": "2026-10-21",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109572",
+            "date": "2026-10-28",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109573",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109574",
+            "date": "2026-11-11",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109575",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109576",
+            "date": "2026-11-25",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109577",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109578",
+            "date": "2026-12-09",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109579",
+            "date": "2026-12-16",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109580",
+            "date": "2026-12-23",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109581",
+            "date": "2026-12-30",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109582",
+            "date": "2027-01-06",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109583",
+            "date": "2027-01-13",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109584",
+            "date": "2027-01-20",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109585",
+            "date": "2027-01-27",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109586",
+            "date": "2027-02-03",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109587",
+            "date": "2027-02-10",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109588",
+            "date": "2027-02-17",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109589",
+            "date": "2027-02-24",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109590",
+            "date": "2027-03-03",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109591",
+            "date": "2027-03-10",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22109592",
+            "date": "2027-03-17",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-738786",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-739505",
+      "title": "Gymnastik - Rytme/dans for voksne 18+ 26/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Sal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22137830",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137831",
+            "date": "2026-09-23",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137832",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137833",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137834",
+            "date": "2026-10-14",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137835",
+            "date": "2026-10-21",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137836",
+            "date": "2026-10-28",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137837",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137838",
+            "date": "2026-11-11",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137839",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137840",
+            "date": "2026-11-25",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137841",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137842",
+            "date": "2026-12-09",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137843",
+            "date": "2026-12-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137844",
+            "date": "2026-12-23",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137845",
+            "date": "2026-12-30",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137846",
+            "date": "2027-01-06",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137847",
+            "date": "2027-01-13",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137848",
+            "date": "2027-01-20",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137849",
+            "date": "2027-01-27",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137850",
+            "date": "2027-02-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137851",
+            "date": "2027-02-10",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137852",
+            "date": "2027-02-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137853",
+            "date": "2027-02-24",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137854",
+            "date": "2027-03-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137855",
+            "date": "2027-03-10",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22137856",
+            "date": "2027-03-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-739505",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-741067",
+      "title": "Pilates",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Sal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22196602",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22196603",
+            "date": "2026-09-24",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22196604",
+            "date": "2026-10-01",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22196605",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22196606",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22196607",
+            "date": "2026-10-22",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22196608",
+            "date": "2026-10-29",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22196609",
+            "date": "2026-11-05",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22196610",
+            "date": "2026-11-12",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22196611",
+            "date": "2026-11-19",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22196612",
+            "date": "2026-11-26",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-741067",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-741416",
+      "title": "Spinning",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Sal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22208255",
+            "date": "2026-09-28",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208256",
+            "date": "2026-10-05",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208258",
+            "date": "2026-10-19",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208259",
+            "date": "2026-10-26",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208260",
+            "date": "2026-11-02",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208261",
+            "date": "2026-11-09",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208262",
+            "date": "2026-11-16",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208263",
+            "date": "2026-11-23",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208264",
+            "date": "2026-11-30",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208265",
+            "date": "2026-12-07",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208266",
+            "date": "2026-12-14",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208269",
+            "date": "2027-01-04",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208270",
+            "date": "2027-01-11",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208271",
+            "date": "2027-01-18",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208272",
+            "date": "2027-01-25",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208273",
+            "date": "2027-02-01",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208274",
+            "date": "2027-02-08",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208276",
+            "date": "2027-02-22",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208277",
+            "date": "2027-03-01",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208278",
+            "date": "2027-03-08",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208279",
+            "date": "2027-03-15",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208280",
+            "date": "2027-03-22",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          },
+          {
+            "id": "booking-22208281",
+            "date": "2027-03-29",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "19:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-741416",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-741831",
+      "title": "Badminton - U9/U11, 2026/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22223905",
+            "date": "2026-09-14",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223906",
+            "date": "2026-09-21",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223907",
+            "date": "2026-09-28",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223908",
+            "date": "2026-10-05",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223909",
+            "date": "2026-10-12",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223910",
+            "date": "2026-10-19",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223911",
+            "date": "2026-10-26",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223912",
+            "date": "2026-11-02",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223913",
+            "date": "2026-11-09",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223914",
+            "date": "2026-11-16",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223915",
+            "date": "2026-11-23",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223916",
+            "date": "2026-11-30",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223917",
+            "date": "2026-12-07",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223918",
+            "date": "2026-12-14",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223919",
+            "date": "2026-12-21",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223920",
+            "date": "2026-12-28",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223921",
+            "date": "2027-01-04",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223922",
+            "date": "2027-01-11",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223923",
+            "date": "2027-01-18",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223924",
+            "date": "2027-01-25",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223925",
+            "date": "2027-02-01",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223926",
+            "date": "2027-02-08",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223927",
+            "date": "2027-02-15",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223928",
+            "date": "2027-02-22",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223929",
+            "date": "2027-03-01",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223930",
+            "date": "2027-03-08",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223931",
+            "date": "2027-03-15",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223932",
+            "date": "2027-03-22",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223933",
+            "date": "2027-03-29",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223934",
+            "date": "2027-04-05",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-741831",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-741832",
+      "title": "Badminton - U9/U11, 2026/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22223935",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223936",
+            "date": "2026-09-24",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223937",
+            "date": "2026-10-01",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223938",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223939",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223940",
+            "date": "2026-10-22",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223941",
+            "date": "2026-10-29",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223942",
+            "date": "2026-11-05",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223943",
+            "date": "2026-11-12",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223944",
+            "date": "2026-11-19",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223945",
+            "date": "2026-11-26",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223946",
+            "date": "2026-12-03",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223947",
+            "date": "2026-12-10",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223948",
+            "date": "2026-12-17",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223949",
+            "date": "2026-12-24",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223950",
+            "date": "2026-12-31",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223951",
+            "date": "2027-01-07",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223952",
+            "date": "2027-01-14",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223953",
+            "date": "2027-01-21",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223954",
+            "date": "2027-01-28",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223955",
+            "date": "2027-02-04",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223956",
+            "date": "2027-02-11",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223957",
+            "date": "2027-02-18",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223958",
+            "date": "2027-02-25",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223959",
+            "date": "2027-03-04",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223960",
+            "date": "2027-03-11",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223961",
+            "date": "2027-03-18",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223962",
+            "date": "2027-03-25",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223963",
+            "date": "2027-04-01",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "booking-22223964",
+            "date": "2027-04-08",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-741832",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-741833",
+      "title": "Badminton - U13 2026/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22223965",
+            "date": "2026-09-14",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223966",
+            "date": "2026-09-21",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223967",
+            "date": "2026-09-28",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223968",
+            "date": "2026-10-05",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223969",
+            "date": "2026-10-12",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223970",
+            "date": "2026-10-19",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223971",
+            "date": "2026-10-26",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223972",
+            "date": "2026-11-02",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223973",
+            "date": "2026-11-09",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223974",
+            "date": "2026-11-16",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223975",
+            "date": "2026-11-23",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223976",
+            "date": "2026-11-30",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223977",
+            "date": "2026-12-07",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223978",
+            "date": "2026-12-14",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223979",
+            "date": "2026-12-21",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223980",
+            "date": "2026-12-28",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223981",
+            "date": "2027-01-04",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223982",
+            "date": "2027-01-11",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223983",
+            "date": "2027-01-18",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223984",
+            "date": "2027-01-25",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223985",
+            "date": "2027-02-01",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223986",
+            "date": "2027-02-08",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223987",
+            "date": "2027-02-15",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223988",
+            "date": "2027-02-22",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223989",
+            "date": "2027-03-01",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223990",
+            "date": "2027-03-08",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223991",
+            "date": "2027-03-15",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223992",
+            "date": "2027-03-22",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223993",
+            "date": "2027-03-29",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223994",
+            "date": "2027-04-05",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-741833",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-741834",
+      "title": "Badminton - U13 2026/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22223995",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223996",
+            "date": "2026-09-24",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223997",
+            "date": "2026-10-01",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223998",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22223999",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224000",
+            "date": "2026-10-22",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224001",
+            "date": "2026-10-29",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224002",
+            "date": "2026-11-05",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224003",
+            "date": "2026-11-12",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224004",
+            "date": "2026-11-19",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224005",
+            "date": "2026-11-26",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224006",
+            "date": "2026-12-03",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224007",
+            "date": "2026-12-10",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224008",
+            "date": "2026-12-17",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224009",
+            "date": "2026-12-24",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224010",
+            "date": "2026-12-31",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224011",
+            "date": "2027-01-07",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224012",
+            "date": "2027-01-14",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224013",
+            "date": "2027-01-21",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224014",
+            "date": "2027-01-28",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224015",
+            "date": "2027-02-04",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224016",
+            "date": "2027-02-11",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224017",
+            "date": "2027-02-18",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224018",
+            "date": "2027-02-25",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224019",
+            "date": "2027-03-04",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224020",
+            "date": "2027-03-11",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224021",
+            "date": "2027-03-18",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224022",
+            "date": "2027-03-25",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224023",
+            "date": "2027-04-01",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "booking-22224024",
+            "date": "2027-04-08",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-741834",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-741836",
+      "title": "Badminton - U15, 2026/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22224060",
+            "date": "2026-09-14",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224061",
+            "date": "2026-09-21",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224062",
+            "date": "2026-09-28",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224063",
+            "date": "2026-10-05",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224064",
+            "date": "2026-10-12",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224065",
+            "date": "2026-10-19",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224066",
+            "date": "2026-10-26",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224067",
+            "date": "2026-11-02",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224068",
+            "date": "2026-11-09",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224069",
+            "date": "2026-11-16",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224070",
+            "date": "2026-11-23",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224071",
+            "date": "2026-11-30",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224072",
+            "date": "2026-12-07",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224073",
+            "date": "2026-12-14",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224074",
+            "date": "2026-12-21",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224075",
+            "date": "2026-12-28",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224076",
+            "date": "2027-01-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224077",
+            "date": "2027-01-11",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224078",
+            "date": "2027-01-18",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224079",
+            "date": "2027-01-25",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224080",
+            "date": "2027-02-01",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224081",
+            "date": "2027-02-08",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224082",
+            "date": "2027-02-15",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224083",
+            "date": "2027-02-22",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224084",
+            "date": "2027-03-01",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224085",
+            "date": "2027-03-08",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224086",
+            "date": "2027-03-15",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224087",
+            "date": "2027-03-22",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224088",
+            "date": "2027-03-29",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224089",
+            "date": "2027-04-05",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-741836",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-741837",
+      "title": "Badminton - U15, 2026/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22224090",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224091",
+            "date": "2026-09-24",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224092",
+            "date": "2026-10-01",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224093",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224094",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224095",
+            "date": "2026-10-22",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224096",
+            "date": "2026-10-29",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224097",
+            "date": "2026-11-05",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224098",
+            "date": "2026-11-12",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224099",
+            "date": "2026-11-19",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224100",
+            "date": "2026-11-26",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224101",
+            "date": "2026-12-03",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224102",
+            "date": "2026-12-10",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224103",
+            "date": "2026-12-17",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224104",
+            "date": "2026-12-24",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224105",
+            "date": "2026-12-31",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224106",
+            "date": "2027-01-07",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224107",
+            "date": "2027-01-14",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224108",
+            "date": "2027-01-21",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224109",
+            "date": "2027-01-28",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224110",
+            "date": "2027-02-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224111",
+            "date": "2027-02-11",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224112",
+            "date": "2027-02-18",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224113",
+            "date": "2027-02-25",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224114",
+            "date": "2027-03-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224115",
+            "date": "2027-03-11",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224116",
+            "date": "2027-03-18",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224117",
+            "date": "2027-03-25",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224118",
+            "date": "2027-04-01",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          },
+          {
+            "id": "booking-22224119",
+            "date": "2027-04-08",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-741837",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-741838",
+      "title": "Badminton - U17/U19, 2026/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22224120",
+            "date": "2026-09-14",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224121",
+            "date": "2026-09-21",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224122",
+            "date": "2026-09-28",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224123",
+            "date": "2026-10-05",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224124",
+            "date": "2026-10-12",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224125",
+            "date": "2026-10-19",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224126",
+            "date": "2026-10-26",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224127",
+            "date": "2026-11-02",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224128",
+            "date": "2026-11-09",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224129",
+            "date": "2026-11-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224130",
+            "date": "2026-11-23",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224131",
+            "date": "2026-11-30",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224132",
+            "date": "2026-12-07",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224133",
+            "date": "2026-12-14",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224134",
+            "date": "2026-12-21",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224135",
+            "date": "2026-12-28",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224136",
+            "date": "2027-01-04",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224137",
+            "date": "2027-01-11",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224138",
+            "date": "2027-01-18",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224139",
+            "date": "2027-01-25",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224140",
+            "date": "2027-02-01",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224141",
+            "date": "2027-02-08",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224142",
+            "date": "2027-02-15",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224143",
+            "date": "2027-02-22",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224144",
+            "date": "2027-03-01",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224145",
+            "date": "2027-03-08",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224146",
+            "date": "2027-03-15",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224147",
+            "date": "2027-03-22",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224148",
+            "date": "2027-03-29",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224149",
+            "date": "2027-04-05",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-741838",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "rise-sif-series-741839",
+      "title": "Badminton - U17/U19, 2026/27",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Foreningshold; kontakt foreningen om medlemskab og tilmelding."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22224150",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224151",
+            "date": "2026-09-24",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224152",
+            "date": "2026-10-01",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224153",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224154",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224155",
+            "date": "2026-10-22",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224156",
+            "date": "2026-10-29",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224157",
+            "date": "2026-11-05",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224158",
+            "date": "2026-11-12",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224159",
+            "date": "2026-11-19",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224160",
+            "date": "2026-11-26",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224161",
+            "date": "2026-12-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224162",
+            "date": "2026-12-10",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224163",
+            "date": "2026-12-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224164",
+            "date": "2026-12-24",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224165",
+            "date": "2026-12-31",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224166",
+            "date": "2027-01-07",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224167",
+            "date": "2027-01-14",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224168",
+            "date": "2027-01-21",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224169",
+            "date": "2027-01-28",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224170",
+            "date": "2027-02-04",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224171",
+            "date": "2027-02-11",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224172",
+            "date": "2027-02-18",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224173",
+            "date": "2027-02-25",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224174",
+            "date": "2027-03-04",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224175",
+            "date": "2027-03-11",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224176",
+            "date": "2027-03-18",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224177",
+            "date": "2027-03-25",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224178",
+            "date": "2027-04-01",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          },
+          {
+            "id": "booking-22224179",
+            "date": "2027-04-08",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "series-741839",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    }
+  ]
+}

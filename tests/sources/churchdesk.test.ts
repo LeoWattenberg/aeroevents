@@ -33,6 +33,8 @@ describe("Ærø Kirkeliv ChurchDesk source", () => {
     expect(result.candidates).toHaveLength(3);
     expect(result.candidates.find(({ sourceEventId }) => sourceEventId === "501")).toMatchObject({
       publication: "trusted",
+      organizerId: "linda-skjoennemand",
+      organizerName: "Linda Skjønnemand",
       occurrences: [{ date: "2026-10-04", startTime: "10:00" }],
     });
     expect(result.candidates.find(({ sourceEventId }) => sourceEventId === "502")).toMatchObject({

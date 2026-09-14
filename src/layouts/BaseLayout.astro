@@ -30,13 +30,19 @@ const canonical = Astro.site ? new URL(sitePath(canonicalPath), Astro.site) : un
     <meta name="description" content={description} />
     <meta name="theme-color" content="#315f45" />
     <link rel="icon" href={sitePath("/favicon.svg")} type="image/svg+xml" />
+    <link rel="manifest" href={sitePath("/manifest.webmanifest")} />
     {canonical && <link rel="canonical" href={canonical} />}
     <title>{pageTitle}</title>
     <script is:inline>
       document.documentElement.classList.add("has-js");
     </script>
   </head>
-  <body>
+  <body
+    data-notification-worker={sitePath("/notification-sw.js")}
+    data-notification-data={sitePath("/notification-data.json")}
+    data-notification-home={sitePath("/")}
+    data-notification-icon={sitePath("/favicon.svg")}
+  >
     <a class="skip-link" href="#indhold">Gå til indhold</a>
     <header class="site-header">
       <div class="header-inner page-width">
@@ -82,5 +88,8 @@ const canonical = Astro.site ? new URL(sitePath(canonicalPath), Astro.site) : un
         </nav>
       </div>
     </footer>
+    <script>
+      import "../scripts/browser-notifications";
+    </script>
   </body>
 </html>

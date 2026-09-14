@@ -21,6 +21,19 @@ const stringValue = (value: unknown): string | undefined =>
 const stringArray = (value: unknown): string[] =>
   Array.isArray(value) ? value.flatMap((item) => (stringValue(item) ? [String(item)] : [])) : [];
 
+const normalizedName = (value: string): string => value.toLocaleLowerCase("da-DK");
+
+const organizerSlug = (value: string): string =>
+  value
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/æ/gi, "ae")
+    .replace(/ø/gi, "oe")
+    .replace(/å/gi, "aa")
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "");
+
 function locationView(value: unknown): EventLocationView | undefined {
   if (typeof value === "string" && value.trim()) return { name: value.trim() };
   if (!isRecord(value)) return undefined;
@@ -132,12 +145,46 @@ export function toCalendarDataset(
     byEvent.set(occurrence.eventId, list);
   }
 
+  const organizers = Array.isArray(organizersInput)
+    ? organizersInput.flatMap((item) => {
+        const organizer = organizerView(item);
+        return organizer ? [organizer] : [];
+      })
+    : [];
+  const organizerById = new Map(organizers.map((organizer) => [organizer.id, organizer]));
+  const organizerByName = new Map(
+    organizers.map((organizer) => [normalizedName(organizer.name), organizer]),
+  );
+
+  const resolveOrganizerId = (value: UnknownRecord): string | undefined => {
+    const sourceOrganizerId = stringValue(value.organizerId);
+    const eventOrganizerName = stringValue(value.organizerName);
+    if (!sourceOrganizerId || !eventOrganizerName) return sourceOrganizerId;
+
+    const registeredByName = organizerByName.get(normalizedName(eventOrganizerName));
+    if (registeredByName) return registeredByName.id;
+
+    const registeredById = organizerById.get(sourceOrganizerId);
+    const generatedId =
+      !registeredById || registeredById.name === eventOrganizerName
+        ? sourceOrganizerId
+        : `arrangoer-${organizerSlug(eventOrganizerName)}`;
+    const existing = organizerById.get(generatedId);
+    if (!existing) {
+      const organizer = { id: generatedId, name: eventOrganizerName };
+      organizers.push(organizer);
+      organizerById.set(generatedId, organizer);
+      organizerByName.set(normalizedName(eventOrganizerName), organizer);
+    }
+    return generatedId;
+  };
+
   const events: CalendarEventView[] = Array.isArray(eventsInput)
     ? eventsInput.flatMap((value) => {
         if (!isRecord(value)) return [];
         const id = stringValue(value.id);
         const title = stringValue(value.title);
-        const organizerId = stringValue(value.organizerId);
+        const organizerId = resolveOrganizerId(value);
         if (!id || !title || !organizerId) return [];
         const ownOccurrences = byEvent.get(id) ?? [];
         ownOccurrences.sort((a, b) => a.start.localeCompare(b.start));
@@ -175,12 +222,6 @@ export function toCalendarDataset(
       })
     : [];
 
-  const organizers = Array.isArray(organizersInput)
-    ? organizersInput.flatMap((item) => {
-        const organizer = organizerView(item);
-        return organizer ? [organizer] : [];
-      })
-    : [];
   const categories = Array.isArray(categoriesInput)
     ? categoriesInput.flatMap((item) => {
         const category = categoryView(item);

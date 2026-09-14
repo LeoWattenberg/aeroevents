@@ -1,0 +1,96 @@
+{
+  "sourceId": "marnav",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "marnav-647",
+      "title": "Åbent hus den 16. januar 2027",
+      "description": "Du og din familie inviteres hermed til ÅBENT HUS på HF-Søfartsuddannelsen i Marstal, Ærø. Lørdag den 16. januar 2027. Vi giver et tilskud til rejsen på kr. 240,- pr. tilmeldt elev.",
+      "organizerId": "marnav",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Marstal Navigationsskole",
+        "address": "Ellenet 10",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Arrangementet er offentligt, men tilmelding kræves."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "booking": {
+        "required": true,
+        "soldOut": true,
+        "url": "https://marnav.nemtilmeld.dk/647/",
+        "details": "Udsolgt; venteliste er åben."
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "nemtilmeld-647",
+            "date": "2027-01-16",
+            "kind": "timed",
+            "startTime": "11:00",
+            "endTime": "15:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marnav",
+        "externalId": "647",
+        "url": "https://marnav.nemtilmeld.dk/647/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "marnav-648",
+      "title": "Åbent hus den 30. januar 2027",
+      "description": "Du og din familie inviteres hermed til ÅBENT HUS på HF-Søfartsuddannelsen i Marstal, Ærø. Lørdag den 30. januar 2027. Vi giver et tilskud til rejsen på kr. 240,- pr. tilmeldt elev.",
+      "organizerId": "marnav",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Marstal Navigationsskole",
+        "address": "Ellenet 10",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Arrangementet er offentligt, men tilmelding kræves."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "booking": {
+        "required": true,
+        "soldOut": true,
+        "url": "https://marnav.nemtilmeld.dk/648/",
+        "details": "Udsolgt; venteliste er åben."
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "nemtilmeld-648",
+            "date": "2027-01-30",
+            "kind": "timed",
+            "startTime": "11:00",
+            "endTime": "15:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marnav",
+        "externalId": "648",
+        "url": "https://marnav.nemtilmeld.dk/648/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    }
+  ]
+}

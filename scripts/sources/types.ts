@@ -75,6 +75,8 @@ export interface NormalizedEventDraft {
   title: string;
   description?: string;
   organizerId: string;
+  /** Per-event organizer label when the source owner is not the organizer. */
+  organizerName?: string;
   categoryIds: string[];
   location?: EventLocationDraft;
   occurrences: ExplicitOccurrenceDraft[];

@@ -116,17 +116,17 @@
   url: https://campusaeroe.dk/events/
   organizerId: campus-aeroe
   categoryIds: []
-  publication: review
+  publication: automatic
   enabled: true
-  notes: Kun poster med en dokumenteret offentlig målgruppe indsamles; alle fund kræver gennemsyn.
+  notes: Strukturelt valide poster i allowlistede offentlige kategorier publiceres automatisk; interne og skjulte poster udelades.
 - id: ommel-samvirke
   name: Ommel Samvirkes aktivitetskalender
   url: https://www.ommelsamvirke.dk/aktivitetskalender
   organizerId: ommel-samvirke
   categoryIds: [forening-faellesskab]
-  publication: review
+  publication: automatic
   enabled: true
-  notes: Den offentlige webkalender læses i en browser, fordi kalenderens ICS-feed er defekt. Alle fund kræver gennemsyn.
+  notes: Den offentlige webkalender læses i en browser, fordi kalenderens ICS-feed er defekt. Komplette, ensartede eventdialoger publiceres automatisk; uklare poster sendes til gennemsyn.
 - id: kunsthoejskolen-aeroe
   name: Kunsthøjskolen på Ærøs korte kurser
   url: https://www.kunstaeroe.dk/for-og-efter%C3%A5rskurser
@@ -147,9 +147,9 @@
   url: https://www.aeroehotel.dk/event-list
   organizerId: aeroe-hotel
   categoryIds: [musik-kultur]
-  publication: review
+  publication: automatic
   enabled: true
-  notes: Dubletter og mulige opholdsdatoer kontrolleres før publicering.
+  notes: Komplette Wix Events-poster publiceres automatisk. Uklare steder, registreringsforhold, statusser og mulige dubletter sendes til gennemsyn.
 - id: aeroeskoebing-grand-prix
   name: Ærøskøbing Grand Prix
   url: https://www.xn--rgrandprix-c6a1t.dk/

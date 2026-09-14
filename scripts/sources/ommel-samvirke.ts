@@ -217,6 +217,29 @@ function activityIdentity(parts: string[]): string {
   return createHash("sha256").update(canonical, "utf8").digest("hex").slice(0, 20);
 }
 
+function unstructuredDetailReasons(description: string | undefined): string[] {
+  if (!description) return ["Ommel Samvirke oplyser ikke en beskrivelse af aktiviteten"];
+  const reasons: string[] = [];
+  if (
+    /\b(?:pris|koster|betaling|kontant(?:er)?|mobilepay)\b|\b\d+[,.]?\d*\s*kr\.?\b/iu.test(
+      description,
+    )
+  ) {
+    reasons.push("Pris eller betaling fremgår kun af aktivitetens fritekst");
+  }
+  if (
+    /\b(?:tilmeld\w*|bestil\w*|reserv(?:er|ation)\w*|book(?:ing|e|es)?|venteliste)\b/iu.test(
+      description,
+    )
+  ) {
+    reasons.push("Tilmelding eller reservation fremgår kun af aktivitetens fritekst");
+  }
+  if (/\b(?:aflyst|udsat|udskudt|flyttet)\b/iu.test(description)) {
+    reasons.push("En mulig statusændring fremgår kun af aktivitetens fritekst");
+  }
+  return reasons;
+}
+
 function sameCandidateMetadata(
   left: NormalizedEventDraft,
   right: NormalizedEventDraft,
@@ -312,13 +335,8 @@ function parseCapturedDialog(
     timeUnknown: false,
   };
 
-  const reviewReasons = [
-    "Ommel Samvirke har ingen stabil offentlig event-URL; identiteten er afledt af kalenderens oprettelsesdato og aktivitetsdetaljer",
-    "Eventdialogen viser ikke årstal; årstallet er afledt af den viste kalendermåned",
-    "Offentlig adgang, pris, tilmelding og eventuelle ændringer skal bekræftes før publicering",
-  ];
+  const reviewReasons = unstructuredDetailReasons(description);
   if (!locationName) reviewReasons.push("Ommel Samvirke oplyser ikke et sted for aktiviteten");
-  if (!description) reviewReasons.push("Ommel Samvirke oplyser ikke en beskrivelse af aktiviteten");
 
   return {
     sourceId: definition.id,
@@ -334,7 +352,7 @@ function parseCapturedDialog(
     availability: "unknown",
     attendance: "unknown",
     attendanceDetails: "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes.",
-    publication: "review",
+    publication: reviewReasons.length > 0 ? "review" : "trusted",
     reviewReasons,
     provenance: {
       sourceId: definition.id,

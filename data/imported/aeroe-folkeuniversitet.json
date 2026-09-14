@@ -1,0 +1,195 @@
+{
+  "sourceId": "aeroe-folkeuniversitet",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "aeroe-folkeuniversitet-robotter-i-hjemmet-kan-de-erstatte-mennesker",
+      "title": "Robotter i hjemmet - kan de erstatte mennesker",
+      "description": "Robotudviklingen går stærkt. Er vi nødt til at satse på ”menneskelige” robotter i lyset af den demografiske udvikling? Hvad kan vi forvente os i hjemmet og hvad med den menneskelige kontakt? Hvordan forventes teknologien udviklet? Vil sundhedsplejen blive mere sikker, og hvordan med ansvarsfordeling? Bliver kosten mere ensformig eller netop mere varieret og raffineret i lyset af præferencer og sundhedskrav? Disse og flere andre robot-spørgsmål tages op.",
+      "organizerId": "aeroe-folkeuniversitet",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "VUC",
+        "address": "P.E. Pålssons Vej 1",
+        "city": "Marstal (sandsynligvis)"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "cancelled",
+      "publication": "draft",
+      "price": "100 kr. for voksne, skoleelever har gratis adgang.",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkeuniversitet-robotter-i-hjemmet-kan-de-erstatte-mennesker",
+            "date": "2026-09-07",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkeuniversitet",
+        "externalId": "robotter-i-hjemmet-kan-de-erstatte-mennesker",
+        "url": "https://fuko.dk/kurser/robotter-i-hjemmet-kan-de-erstatte-mennesker/",
+        "verifiedAt": "2026-09-14T11:15:54.384Z",
+        "modifiedAt": "2026-09-06T21:00:32.000Z"
+      }
+    },
+    {
+      "id": "aeroe-folkeuniversitet-maden-paa-bordet-levnedsmidler-mad-og-maaltider-e6c6b6ac",
+      "title": "Maden på bordet - Levnedsmidler, mad og måltider i kulturhistorisk perspektiv",
+      "description": "Med afsæt i et fælles måltid kommer Lisbeth Haastrup rundt om hvordan grøntsager, kød og kartofler gennem tiden er blevet tilberedt til madretter og hvordan de er blevet spist.\nKampen om maden omkring første verdenskrig og klimaudfordringerne i dag peger på mulige og nødvendige prioriteringer og forandringer i forsyning, fordeling, erstatning og madens og måltidernes betydning for både sundhed, ernæring, klima og ikke mindst kulturelle og sociale fællesskaber.\nI tilknytning til foredraget er det muligt at bestille en traditionel dansk menu på Ærøhus til rimelig pris.",
+      "organizerId": "aeroe-folkeuniversitet",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Hotel Ærøhus",
+        "address": "Vestergade 38",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "cancelled",
+      "publication": "published",
+      "price": "100 kr. for voksne, skoleelever har gratis adgang.",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkeuniversitet-maden-paa-bordet-levnedsmidler-mad-og-maaltider-i-kulturhistorisk-perspektiv",
+            "date": "2026-09-10",
+            "kind": "timed",
+            "startTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkeuniversitet",
+        "externalId": "maden-paa-bordet-levnedsmidler-mad-og-maaltider-i-kulturhistorisk-perspektiv",
+        "url": "https://fuko.dk/kurser/maden-paa-bordet-levnedsmidler-mad-og-maaltider-i-kulturhistorisk-perspektiv/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkeuniversitet-maden-paa-bordet-danske-maaltider-og-mad-i-kultu-ca8e9af2",
+      "title": "Maden på bordet – danske måltider og mad i kulturhistorisk perspektiv.",
+      "description": "Foredraget foregår i uge 37 – Folkeuniversiteternes Uge\nMaden på bordet – dansk mad og måltider i kulturhistorisk perspektiv:\nMed afsæt i et fælles måltid kommer Lisbeth Haastrup rundt om hvordan grøntsager, kød og kartofler gennem tiden er blevet tilberedt til madretter og hvordan de er blevet spist.\nKampen om maden omkring første verdenskrig og klimaudfordringerne i dag peger på mulige og nødvendige prioriteringer og forandringer i forsyning, fordeling, erstatning og madens og måltidernes betydning for både sundhed, ernæring, klima og ikke mindst kulturelle og sociale fællesskaber.\nUmiddelbart før foredraget serverer Janne på Hotel Ærøhus kl. 18 en klassisk dansk menu i et samarbejde med foredragsholderen. Tilmelding til måltiden inden d. 8.september telefon 62521003. Pris: xxx",
+      "organizerId": "aeroe-folkeuniversitet",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Hotel Ærøhus",
+        "address": "Vestergade 38",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "100 kr. for voksne, skoleelever har gratis adgang.",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkeuniversitet-maden-paa-bordet-danske-maaltider-og-mad-i-kulturhistorisk-perspektiv",
+            "date": "2026-09-10",
+            "kind": "timed",
+            "startTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkeuniversitet",
+        "externalId": "maden-paa-bordet-danske-maaltider-og-mad-i-kulturhistorisk-perspektiv",
+        "url": "https://fuko.dk/kurser/maden-paa-bordet-danske-maaltider-og-mad-i-kulturhistorisk-perspektiv/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkeuniversitet-hoejskolevaevning-og-kvindeliv-og-om-en-slags-so-d0e9e8fe",
+      "title": "Højskolevævning og kvindeliv - og om en slags søgning efter identitet og resonans",
+      "description": "Højskolevævning og kvindeliv – og om en slags længsel efter identitet og resonans\nHåndens arbejde tillægges igen stor værdi. Mange søger særlig enkle og bæredygtige løsninger, andre søger identifikation i andre tider og andre steder. Således også igennem højskolens lange historie, tæt forbundet med landbokulturen og hvor særlig revitaliseringen af traditionel håndvævning får afgørende betydning for både kvindebillede, hjemkultur og tekstil æstetik. Foredraget skildrer især vævningens betydning i miljøet omkring Askov højskole – både som materiel praksis og som kulturel fortælling.\nMette E. Havsteen-Mikkelsen, etnolog mag. art., tidl. leder af Ærø Museum og Vartov-arkivet. Foredraget tager afsæt i den prisbelønnede bog “Højskolevævning og kvindeliv i Askov” (2025).",
+      "organizerId": "aeroe-folkeuniversitet",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Ærø Museum",
+        "address": "Smedegade 22",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "cancelled",
+      "publication": "published",
+      "price": "100 kr. for voksne, skoleelever har gratis adgang.",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkeuniversitet-hoejskolevaevning-og-kvindeliv-og-om-en-slags-soegning-efter-identitet-og-resonans",
+            "date": "2026-10-22",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkeuniversitet",
+        "externalId": "hoejskolevaevning-og-kvindeliv-og-om-en-slags-soegning-efter-identitet-og-resonans",
+        "url": "https://fuko.dk/kurser/hoejskolevaevning-og-kvindeliv-og-om-en-slags-soegning-efter-identitet-og-resonans/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z",
+        "modifiedAt": "2026-09-14T11:01:39.000Z"
+      }
+    },
+    {
+      "id": "aeroe-folkeuniversitet-haandtering-af-landbrugets-udfordringer-med-kvae-e5a44fbc",
+      "title": "Håndtering af landbrugets udfordringer med kvælstof og pesticider",
+      "description": "De miljø- og sundhedsmæssige konsekvenser af landbrugets anvendelse af kvælstofgødninger og pesticider har været åbenbare i Danmark og resten af verden over adskillige årtier. I Danmark har der været gjort store indsatser for at løse udfordringerne. På det seneste gennem den Grønne Trepart. På mange områder er Danmark gået foran, og de resterende udfordringer er håndterbare, men håndteringen kræver en fælles forståelse for balancen mellem miljø, sundhed og fødevareforsyning. Foredraget vil opridse historien bag udfordringerne og italesætte hvordan vi kommer i mål med løsningerne.",
+      "organizerId": "aeroe-folkeuniversitet",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Rådhuset",
+        "address": "Statene",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "100 kr. for voksne, skoleelever har gratis adgang.",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkeuniversitet-haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider",
+            "date": "2026-11-12",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkeuniversitet",
+        "externalId": "haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider",
+        "url": "https://fuko.dk/kurser/haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider/",
+        "verifiedAt": "2026-09-14T11:55:45.875Z",
+        "modifiedAt": "2026-09-14T11:01:42.000Z"
+      }
+    }
+  ]
+}

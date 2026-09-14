@@ -1,0 +1,162 @@
+{
+  "sourceId": "aeroe-kommune-events",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "aeroe-kommune-events-ea5821ac-96a1-4805-9cc2-91ff1e24ab14",
+      "title": "Kommunalbestyrelsesmøde",
+      "description": "",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommune-event-ea5821ac-96a1-4805-9cc2-91ff1e24ab14",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endDate": "2026-09-16",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune-events",
+        "externalId": "ea5821ac-96a1-4805-9cc2-91ff1e24ab14",
+        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/kommunalbestyrelsesmoede",
+        "verifiedAt": "2026-09-14T11:15:54.384Z",
+        "modifiedAt": "2026-09-04T07:03:00.000Z"
+      }
+    },
+    {
+      "id": "aeroe-kommune-events-5ffa5468-d325-4884-a4f8-14666c60554f",
+      "title": "Sundhedsfestival TÆND FOR SØVNEN",
+      "description": "Fra 14. september-18. september 2026 inviterer Ærø Kommune sammen med Center for Søvn og Center for Digital Pædagogik til gratis sundhedsfestival, hvor vi sætter fokus på søvnens betydning for trivsel, læring, sundhed og fællesskab.Glæd dig til en uge med ny viden og oplevelser, der vil få dig til at se søvn i et nyt lys.Se hele programmet på www.aeroekommune.dk/sundhedsfestival eller download programmet for sundhedsfestivalen her (pdf).",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "location": {
+        "name": "Ærø"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommune-event-5ffa5468-d325-4884-a4f8-14666c60554f",
+            "date": "2026-09-14",
+            "kind": "timed",
+            "startTime": "12:00",
+            "endDate": "2026-09-18",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune-events",
+        "externalId": "5ffa5468-d325-4884-a4f8-14666c60554f",
+        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/sundhedsfestival-taend-for-soevnen",
+        "verifiedAt": "2026-09-14T11:55:45.875Z",
+        "modifiedAt": "2026-08-24T10:58:00.000Z"
+      }
+    },
+    {
+      "id": "aeroe-kommune-events-3e08a557-3498-49c3-a4f0-c79c0b4d8bb4",
+      "title": "Grøn middag på lille Søbygård",
+      "description": "Projekt Øko-Ø-Ærø og Danmarks Naturfredningsforening, Ærø, inviterer sammen med Lille Søbygård til Grøn Middag.Kom og hør mere om projekt Øko-Ø-Ærø, Danmarks Naturfredningsforening og drikkevand, Lille Søbygaard og lokal dyrkning - samt korn og bælgfrugter og hvorfor det er så godt at spise dem.Der er plads til 100, og det er først til mølle.Tilmelding: Overfør 40 kr. pr. person til Mobilepay 0128UT – skriv gerne hvor mange voksne (v) og børn (b), der deltager. Du modtager en kvittering.",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "location": {
+        "name": "Lille søbygaard",
+        "address": "Søbygaardsvej 1",
+        "city": "Søby"
+      },
+      "attendance": {
+        "kind": "registration"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "40,00 kroner",
+      "booking": {
+        "required": true,
+        "soldOut": false
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommune-event-3e08a557-3498-49c3-a4f0-c79c0b4d8bb4",
+            "date": "2026-09-15",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endDate": "2026-09-15",
+            "endTime": "19:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune-events",
+        "externalId": "3e08a557-3498-49c3-a4f0-c79c0b4d8bb4",
+        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/groen-middag-paa-lille-soebygaard",
+        "verifiedAt": "2026-09-14T11:55:45.875Z",
+        "modifiedAt": "2026-08-25T07:31:00.000Z"
+      }
+    },
+    {
+      "id": "aeroe-kommune-events-aadfc3d3-35db-4ef6-810b-d5e1cfbff218",
+      "title": "Ærø Gadefestival for Børn og Unge",
+      "description": "Dagsprogram - for alleKl. 11.00\nKeramik-workshop (90 minutter)\nBreakdance-workshop (45 minutter)\nSkatesession \"begynder-øvet\" (45 minutter)\nKl. 12.00\nLækker madbod\nKagekonkurrence\nKl. 13.00\nKeramik-workshop (90 minutter)\nBreakdance-workshop (45 minutter)\nSkatesession \"begynder-øvet\" (45 minutter)\nKl. 14.00\nSkatesession - piger (45 minutter)\nBreakdance-workshop (45 minutter)\nKl. 15.00\nKeramik-workshop (90 minutter)\nBreakdance-workshop (45 minutter)\nKl. 16.00\nDJ-skole\nOpen skate\nLøbende aktiviteter\nÆrø Friskoles Venner - loppemarked\nGraffiti\nÆrø Ungdomsråds Myselfie\nKreaworkshop - Muleposer/bøllehatte\nAftenprogram – for 6. klasse og op\nKl. 17.30 – CAMP OUT\nGrillparty på havnen\nSkatesession på minirampe\nKl. 19.00 – HANG\nFly-out competition\nMusikquiz\nPierre Alain fotoudstilling på skærm\nMystery Box\nKendama\nDJ\nUng Event fyrer den af\nKl. 23.00\nSlut",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "location": {
+        "name": "Det Gamle Værft",
+        "address": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommune-event-aadfc3d3-35db-4ef6-810b-d5e1cfbff218",
+            "date": "2026-09-19",
+            "kind": "timed",
+            "startTime": "11:00",
+            "endDate": "2026-09-19",
+            "endTime": "23:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune-events",
+        "externalId": "aadfc3d3-35db-4ef6-810b-d5e1cfbff218",
+        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/aeroe-gadefestival-for-boern-og-unge",
+        "verifiedAt": "2026-09-14T11:55:45.875Z",
+        "modifiedAt": "2026-09-10T02:12:00.000Z"
+      }
+    }
+  ]
+}

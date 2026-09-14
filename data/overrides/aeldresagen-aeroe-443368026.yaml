@@ -1,0 +1,12 @@
+eventId: aeldresagen-aeroe-443368026
+set:
+  publication: published
+  schedule:
+    kind: explicit
+    dates:
+      - id: aeldresagen-443368026
+        date: 2026-09-21
+        kind: timed
+        startTime: 13:30
+        endDate: 2026-09-21
+        endTime: 15:30

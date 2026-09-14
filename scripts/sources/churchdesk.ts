@@ -2,7 +2,7 @@ import { load } from "cheerio";
 import { DateTime } from "luxon";
 
 import { errorMessage, fetchText } from "./http";
-import { cleanText } from "./html";
+import { cleanText, slug } from "./html";
 import { SOURCE_REGISTRY } from "./registry";
 import type {
   CollectionContext,
@@ -26,6 +26,7 @@ interface ChurchDeskItem {
   endDate?: unknown;
   description?: unknown;
   summary?: unknown;
+  contributor?: unknown;
   hideEndTime?: unknown;
   allDay?: unknown;
   price?: unknown;
@@ -76,6 +77,12 @@ function descriptionText(value: unknown): string | undefined {
     .filter(Boolean)
     .join("\n");
   return text || undefined;
+}
+
+function organizerName(value: unknown): string | undefined {
+  const contributor = optionalString(value);
+  if (!contributor) return undefined;
+  return cleanText(contributor.replace(/^(?:v\.?|ved)\s+/iu, "")) || undefined;
 }
 
 function parseInstant(
@@ -142,6 +149,7 @@ function normalizeItem(
   };
   const description = descriptionText(item.description) ?? descriptionText(item.summary);
   const location = parseLocation(item);
+  const eventOrganizer = organizerName(item.contributor);
   const price = optionalString(item.price) ??
     (typeof item.price === "number" ? String(item.price) : undefined);
 
@@ -153,7 +161,8 @@ function normalizeItem(
       stableId: `${definition.id}-${id}`,
       title,
       ...(description ? { description } : {}),
-      organizerId: definition.organizerId,
+      organizerId: eventOrganizer ? slug(eventOrganizer) : definition.organizerId,
+      ...(eventOrganizer ? { organizerName: eventOrganizer } : {}),
       categoryIds: [...definition.categoryIds],
       ...(location ? { location } : {}),
       occurrences: [occurrence],

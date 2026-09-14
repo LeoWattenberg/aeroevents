@@ -1,0 +1,367 @@
+---
+import type { CalendarEventView, CategoryView } from "./calendar-types";
+import { occurrenceLastDate } from "./format";
+import { sitePath } from "./paths";
+import { categoryCalendarPath } from "../lib/ical";
+
+interface Props {
+  categories: CategoryView[];
+  events: CalendarEventView[];
+  today: string;
+}
+
+const { categories, events, today } = Astro.props;
+const currentEvents = events.filter(
+  (event) => event.status !== "cancelled" && event.occurrences.some(
+    (occurrence) => occurrence.status !== "cancelled" && occurrenceLastDate(occurrence) >= today,
+  ),
+);
+const payload = categories.map((category) => {
+  const calendarUrl = new URL(sitePath(categoryCalendarPath(category.id)), Astro.site ?? Astro.url).href;
+  return {
+    id: category.id,
+    name: category.name,
+    url: sitePath(`/?kategori=${encodeURIComponent(category.id)}#kalender`),
+    knownEventIds: currentEvents
+      .filter((event) => event.categoryIds.includes(category.id))
+      .map((event) => event.id),
+    calendarUrl,
+    webcalUrl: calendarUrl.replace(/^https?:\/\//, "webcal://"),
+  };
+});
+const initialCategory = payload[0];
+const serializedPayload = JSON.stringify(payload).replaceAll("<", "\\u003c");
+---
+
+<section class="category-notifications" data-category-notifications aria-labelledby="category-notification-heading">
+  <div class="category-notification-copy">
+    <p class="kicker">Hold dig opdateret</p>
+    <h2 id="category-notification-heading">Følg en kategori</h2>
+    <p>Få browserbeskeder om nye arrangementer, eller lad din kalenderapp hente alle ændringer automatisk.</p>
+  </div>
+
+  <div class="category-notification-actions">
+    <div class="category-select">
+      <label for="follow-category">
+        <span>Kategori</span>
+      </label>
+      <select id="follow-category" data-category-notification-select>
+        {categories.map((category) => <option value={category.id}>{category.name}</option>)}
+      </select>
+    </div>
+    <div class="category-action-buttons">
+      <button class="button secondary" type="button" data-category-notification-subscribe disabled>
+        Tilmeld beskeder
+      </button>
+      <a
+        class="button"
+        href={initialCategory?.webcalUrl ?? "#"}
+        data-category-calendar-subscribe
+      >
+        Abonnér i kalender
+      </a>
+    </div>
+  </div>
+
+  <div class="calendar-feed">
+    <div>
+      <h3>Kalenderabonnement</h3>
+      <p>Feedet opdateres sammen med hjemmesiden. Brug linket i Google Kalender eller andre apps, der beder om en kalender-URL.</p>
+    </div>
+    <div class="calendar-url">
+      <label for="category-calendar-url"><span>Abonnementslink</span></label>
+      <span class="calendar-url-field">
+        <input
+          id="category-calendar-url"
+          type="url"
+          readonly
+          value={initialCategory?.calendarUrl ?? ""}
+          data-category-calendar-url
+        />
+        <button type="button" data-category-calendar-copy>Kopiér</button>
+      </span>
+    </div>
+    <a
+      class="calendar-download"
+      href={initialCategory?.calendarUrl ?? "#"}
+      download={initialCategory ? `aeroevents-${initialCategory.id}.ics` : undefined}
+      type="text/calendar"
+      data-category-calendar-download
+    >
+      Hent et øjebliksbillede (.ics)
+    </a>
+    <p class="calendar-status" data-category-calendar-status role="status" aria-live="polite"></p>
+  </div>
+
+  <div class="active-categories" data-category-notification-active hidden>
+    <h3>Dine kategorier</h3>
+    <ul data-category-notification-list></ul>
+  </div>
+
+  <p class="notification-status" data-notification-status role="status" aria-live="polite">
+    Kræver JavaScript og tilladelse til notifikationer.
+  </p>
+  <p class="notification-note">
+    Nye arrangementer opdages, når siden eller en understøttet baggrundsopdatering kører. Valgene gemmes kun på denne enhed.
+  </p>
+  <noscript>
+    <div class="calendar-feed-list">
+      <h3>Kalenderfeeds</h3>
+      <p>Vælg eller kopiér linket til den kategori, du vil følge:</p>
+      <ul>
+        {payload.map((category) => (
+          <li><a href={category.calendarUrl} type="text/calendar">{category.name}</a></li>
+        ))}
+      </ul>
+    </div>
+  </noscript>
+  <script is:inline type="application/json" data-category-notification-payload set:html={serializedPayload}></script>
+</section>
+
+<style>
+  .category-notifications {
+    display: grid;
+    grid-template-columns: minmax(0, 1.25fr) minmax(17rem, 0.75fr);
+    gap: 1.25rem clamp(1.5rem, 4vw, 3rem);
+    margin-top: 1rem;
+    padding: clamp(1.25rem, 3vw, 2rem);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--gold);
+    border-radius: var(--radius);
+    background: rgb(255 253 245 / 72%);
+  }
+
+  .kicker {
+    margin-bottom: 0.2rem;
+    color: var(--red);
+    font-size: 0.66rem;
+    font-weight: 750;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    margin-bottom: 0.55rem;
+    font-size: clamp(1.35rem, 2.5vw, 1.8rem);
+  }
+
+  .category-notification-copy > p:last-child {
+    max-width: 38rem;
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.86rem;
+  }
+
+  .category-notification-actions {
+    display: grid;
+    gap: 0.65rem;
+  }
+
+  .category-action-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.65rem;
+  }
+
+  label > span,
+  h3 {
+    display: block;
+    margin: 0 0 0.3rem 0.1rem;
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.65rem;
+    font-weight: 750;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+  }
+
+  select,
+  input {
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0.6rem 0.7rem;
+    border: 1px solid #c8cbc1;
+    border-radius: 0.2rem;
+    color: var(--ink);
+    background: #fff;
+    font-size: 0.8rem;
+  }
+
+  .button {
+    min-height: 2.75rem;
+    font-size: 0.78rem;
+  }
+
+  .button:disabled {
+    cursor: not-allowed;
+    opacity: 0.58;
+  }
+
+  .calendar-feed {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: minmax(13rem, 0.8fr) minmax(17rem, 1.2fr) auto;
+    gap: 0.7rem 1.25rem;
+    align-items: end;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .calendar-feed p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.76rem;
+    line-height: 1.45;
+  }
+
+  .calendar-url-field {
+    display: flex;
+  }
+
+  .calendar-url-field input {
+    min-width: 0;
+    border-radius: 0.2rem 0 0 0.2rem;
+    cursor: text;
+    font-size: 0.72rem;
+  }
+
+  .calendar-url-field button {
+    padding-inline: 0.75rem;
+    border: 1px solid var(--sea);
+    border-left: 0;
+    border-radius: 0 0.2rem 0.2rem 0;
+    color: #fff;
+    background: var(--sea);
+    font-size: 0.74rem;
+    font-weight: 700;
+  }
+
+  .calendar-download {
+    min-height: 2.75rem;
+    display: inline-flex;
+    align-items: center;
+    color: var(--sea);
+    font-size: 0.74rem;
+    font-weight: 700;
+  }
+
+  .calendar-status {
+    grid-column: 2 / -1;
+    min-height: 1.2em;
+  }
+
+  .calendar-feed-list {
+    grid-column: 1 / -1;
+    padding-top: 1rem;
+    border-top: 1px solid var(--line);
+  }
+
+  .calendar-feed-list p,
+  .calendar-feed-list ul {
+    margin-bottom: 0.5rem;
+    color: var(--muted);
+    font-size: 0.78rem;
+  }
+
+  .calendar-feed-list ul {
+    columns: 2;
+  }
+
+  .active-categories {
+    grid-column: 1 / -1;
+  }
+
+  .active-categories ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .active-categories li {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.35rem 0.45rem 0.35rem 0.65rem;
+    border: 1px solid #bdc9c0;
+    border-radius: 99rem;
+    color: var(--sea);
+    background: var(--sea-light);
+    font-size: 0.76rem;
+    font-weight: 700;
+  }
+
+  .active-categories button {
+    width: 1.45rem;
+    height: 1.45rem;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    color: inherit;
+    background: rgb(255 255 255 / 65%);
+    font-weight: 800;
+    line-height: 1;
+  }
+
+  .notification-status,
+  .notification-note {
+    grid-column: 1 / -1;
+    margin: 0;
+    font-size: 0.73rem;
+  }
+
+  .notification-status {
+    min-height: 1.3em;
+    color: var(--sea);
+    font-weight: 650;
+  }
+
+  .notification-status[data-state="error"] {
+    color: var(--red);
+  }
+
+  .notification-status:empty,
+  .calendar-status:empty {
+    display: none;
+  }
+
+  .notification-note {
+    margin-top: -0.8rem;
+    color: var(--muted);
+    line-height: 1.45;
+  }
+
+  @media (max-width: 48rem) {
+    .category-notifications {
+      grid-template-columns: 1fr;
+    }
+
+    .category-notification-actions {
+      grid-template-columns: 1fr;
+    }
+
+    .category-action-buttons,
+    .calendar-feed {
+      grid-template-columns: 1fr;
+    }
+
+    .category-notification-actions .button,
+    .calendar-feed .calendar-download {
+      width: 100%;
+    }
+
+    .active-categories,
+    .notification-status,
+    .notification-note,
+    .calendar-feed,
+    .calendar-status {
+      grid-column: 1;
+    }
+
+    .calendar-feed-list ul {
+      columns: 1;
+    }
+  }
+</style>

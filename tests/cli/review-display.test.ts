@@ -88,12 +88,15 @@ describe("interactive review display", () => {
     expect(output).not.toContain("privat@example.dk");
   });
 
-  it("accepts English and Danish yes/no answers", () => {
+  it("accepts English and Danish approve, reject, and skip answers", () => {
     expect(parseReviewDecision("y")).toBe("approve");
     expect(parseReviewDecision("YES")).toBe("approve");
     expect(parseReviewDecision("ja")).toBe("approve");
     expect(parseReviewDecision("n")).toBe("reject");
     expect(parseReviewDecision("nej")).toBe("reject");
+    expect(parseReviewDecision("s")).toBe("skip");
+    expect(parseReviewDecision("SKIP")).toBe("skip");
+    expect(parseReviewDecision("spring over")).toBe("skip");
     expect(parseReviewDecision("maybe")).toBeUndefined();
   });
 });

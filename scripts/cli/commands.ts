@@ -173,11 +173,28 @@ async function collectCommand(args: string[]): Promise<void> {
     throw new Error(`Kilden mangler i data/sources.yaml: ${missingPolicies.join(", ")}`);
   }
   const rawCapture = createRawResponseCapture(paths.raw, now);
+  console.log(`Starter indsamling fra ${sourceIds.length} kilder.`);
   const results = await collectAllSources({
     fetch: globalThis.fetch,
     now,
     sourceIds,
     recordResponse: rawCapture.recordResponse,
+    onProgress: (progress) => {
+      if (progress.phase === "started") {
+        console.log(
+          `[${progress.position}/${progress.total}] Henter ${progress.source.id}: ${progress.source.name} ...`,
+        );
+        return;
+      }
+      const { result } = progress;
+      const candidateCount = result.status === "complete"
+        ? `, ${result.candidates.length} kandidater`
+        : "";
+      console.log(
+        `[${progress.completed}/${progress.total}] Hentet ${progress.source.id}: ` +
+          `${result.status}, ${result.pagesFetched} sider${candidateCount}.`,
+      );
+    },
   });
 
   interface PreparedCandidate {
@@ -405,28 +422,34 @@ async function reviewCommand(args: string[]): Promise<void> {
   const prompt = createInterface({ input: stdin, output: stdout });
   let approved = 0;
   let rejected = 0;
+  let skipped = 0;
   try {
     for (const [index, candidate] of candidates.entries()) {
       console.log(`\n${formatReviewCandidate(candidate, index + 1, candidates.length)}\n`);
       let decision;
       do {
-        decision = parseReviewDecision(await prompt.question("Godkend og tilføj? (y/n): "));
-        if (!decision) console.log("Svar y for ja eller n for nej.");
+        decision = parseReviewDecision(await prompt.question("Godkend og tilføj? (y/n/s = skip): "));
+        if (!decision) console.log("Svar y for ja, n for nej eller s for skip.");
       } while (!decision);
 
       if (decision === "approve") {
         console.log(await approveCandidate(paths, candidate));
         approved += 1;
-      } else {
+      } else if (decision === "reject") {
         await markRejected(paths, candidate, "Afvist ved interaktivt gennemsyn");
         console.log(`Afviste ${candidate.candidateId}.`);
         rejected += 1;
+      } else {
+        console.log(`Sprang ${candidate.candidateId} over; kandidaten forbliver i køen.`);
+        skipped += 1;
       }
     }
   } finally {
     prompt.close();
   }
-  console.log(`Gennemsyn færdigt: ${approved} godkendt, ${rejected} afvist.`);
+  console.log(
+    `Gennemsyn færdigt: ${approved} godkendt, ${rejected} afvist, ${skipped} sprunget over.`,
+  );
 }
 
 async function approveCandidate(paths: CliPaths, candidate: ReviewCandidate): Promise<string> {

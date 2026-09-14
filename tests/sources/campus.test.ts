@@ -18,7 +18,7 @@ function jsonResponse(body: string, status = 200): Response {
 }
 
 describe("Campus Ærø Tribe REST source", () => {
-  it("decodes Tribe fields and maps public event metadata conservatively", async () => {
+  it("decodes Tribe fields and trusts allowlisted public event metadata", async () => {
     const fixturePage = JSON.parse(await fixture("campus-page-1.json"));
     const parsed = parseCampusEvent(fixturePage.events[0], NOW.toISOString());
 
@@ -28,7 +28,7 @@ describe("Campus Ærø Tribe REST source", () => {
       stableId: "campus-aeroe-8001",
       title: "Foredrag & fællesspisning",
       categoryIds: ["musik-kultur"],
-      publication: "review",
+      publication: "trusted",
       attendance: "registration",
       bookingRequired: true,
       bookingUrl: "https://billet.example/campus-8001",
@@ -42,6 +42,7 @@ describe("Campus Ærø Tribe REST source", () => {
       occurrences: [{ date: "2026-10-22", startTime: "18:30", endTime: "21:00" }],
       provenance: { sourceModifiedAt: "2026-09-02T10:15:00.000Z" },
     });
+    expect(parsed.candidate?.reviewReasons).toEqual([]);
   });
 
   it("excludes restricted audiences even in an allowed category", async () => {

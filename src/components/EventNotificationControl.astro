@@ -1,0 +1,155 @@
+---
+import type { CalendarEventView, OccurrenceView } from "./calendar-types";
+import { capitalize, dateLabel, occurrenceTimeLabel } from "./format";
+import { sitePath } from "./paths";
+import { notificationOccurrenceStartTimestamp } from "../lib/notification-occurrence";
+
+interface Props {
+  event: CalendarEventView;
+  occurrences: OccurrenceView[];
+}
+
+const { event, occurrences } = Astro.props;
+const availableOccurrences = event.status === "cancelled"
+  ? []
+  : occurrences.filter((occurrence) => occurrence.status !== "cancelled");
+const eventUrl = sitePath(`/begivenheder/${encodeURIComponent(event.id)}/`);
+const payload = {
+  id: event.id,
+  title: event.title,
+  url: eventUrl,
+  occurrences: availableOccurrences.map((occurrence) => ({
+    id: occurrence.id,
+    date: occurrence.date,
+    start: occurrence.start,
+    startAt: notificationOccurrenceStartTimestamp(occurrence),
+    allDay: occurrence.allDay === true,
+    timeUnknown: occurrence.timeUnknown === true,
+    label: `${capitalize(dateLabel(occurrence.date))} · ${occurrenceTimeLabel(occurrence)}`,
+    location: (occurrence.location ?? event.location)?.name,
+  })),
+};
+const serializedPayload = JSON.stringify(payload).replaceAll("<", "\\u003c");
+---
+
+{availableOccurrences.length > 0 && (
+  <section class="notification-control" data-event-notifications aria-labelledby="event-notification-heading">
+    <h2 id="event-notification-heading">Browserpåmindelse</h2>
+    <p>Få en besked på denne enhed før arrangementet.</p>
+
+    <div class="notification-fields">
+      <label>
+        <span>Tidspunkt</span>
+        <select data-reminder-occurrence>
+          {availableOccurrences.map((occurrence) => (
+            <option value={occurrence.id}>
+              {capitalize(dateLabel(occurrence.date))} · {occurrenceTimeLabel(occurrence)}
+            </option>
+          ))}
+        </select>
+      </label>
+
+      <label>
+        <span>Giv besked</span>
+        <select data-reminder-lead>
+          <option value="10080">En uge før</option>
+          <option value="1440" selected>En dag før</option>
+          <option value="60">En time før</option>
+          <option value="0">Når det begynder</option>
+        </select>
+      </label>
+    </div>
+
+    <button class="button secondary" type="button" data-reminder-toggle disabled>
+      Slå påmindelse til
+    </button>
+    <p class="notification-status" data-notification-status role="status" aria-live="polite">
+      Kræver JavaScript og tilladelse til notifikationer.
+    </p>
+    <p class="notification-note">
+      Gemmes kun i denne browser. Levering i baggrunden afhænger af enhedens og browserens indstillinger.
+    </p>
+    <script is:inline type="application/json" data-event-notification-payload set:html={serializedPayload}></script>
+  </section>
+)}
+
+<style>
+  .notification-control {
+    padding: 1.4rem;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--gold);
+    border-radius: var(--radius);
+    background: var(--paper-strong);
+  }
+
+  h2 {
+    margin-bottom: 0.55rem;
+    font-family: var(--sans);
+    font-size: 0.78rem;
+    font-weight: 750;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+
+  .notification-control > p {
+    margin-bottom: 1rem;
+    color: #43514e;
+    font-size: 0.88rem;
+  }
+
+  .notification-fields {
+    display: grid;
+    gap: 0.7rem;
+    margin-bottom: 0.85rem;
+  }
+
+  label > span {
+    display: block;
+    margin: 0 0 0.25rem 0.1rem;
+    color: var(--muted);
+    font-size: 0.65rem;
+    font-weight: 750;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+
+  select {
+    width: 100%;
+    min-height: 2.65rem;
+    padding: 0.55rem 0.65rem;
+    border: 1px solid #c8cbc1;
+    border-radius: 0.2rem;
+    color: var(--ink);
+    background: #fff;
+    font-size: 0.78rem;
+  }
+
+  .button {
+    width: 100%;
+    font-size: 0.78rem;
+  }
+
+  .button:disabled {
+    cursor: not-allowed;
+    opacity: 0.58;
+  }
+
+  .notification-control > .notification-status {
+    min-height: 1.35em;
+    margin: 0.7rem 0 0;
+    color: var(--sea);
+    font-size: 0.74rem;
+    font-weight: 650;
+  }
+
+  .notification-control > .notification-status[data-state="error"] {
+    color: var(--red);
+  }
+
+  .notification-control > .notification-note {
+    margin: 0.35rem 0 0;
+    color: var(--muted);
+    font-size: 0.68rem;
+    line-height: 1.45;
+  }
+</style>

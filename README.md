@@ -33,6 +33,14 @@ Manuelle events ligger som YAML i `data/manual/events/`. Importerede, publicerba
 
 Et event kan have enten eksplicitte datoer eller en RFC 5545-gentagelsesregel. Alle lokale tider fortolkes i `Europe/Copenhagen`.
 
+## Kalenderabonnementer og browserbeskeder
+
+På en arrangementsside kan besøgende hente alle arrangementets kendte tidspunkter som en `.ics`-fil og slå en browserpåmindelse til for et bestemt tidspunkt. Kalenderfilen er et øjebliksbillede; den ændrer sig ikke efter import.
+
+Fra forsiden kan en besøgende følge en kategori på to måder. Det offentlige iCalendar-feed under `/kalender/kategorier/<kategori-id>.ics` kan tilføjes som et abonnement i Apple Kalender, Outlook og andre kalenderapps eller kopieres til Google Kalender. Feedet bygges på ny sammen med hjemmesiden og indeholder den rullende kalenderhorisont. Browserbeskeder gemmer derimod valgte kategorier og påmindelser lokalt på den enkelte enhed og sender ingen abonnementer til en server.
+
+Browserbeskeder kræver HTTPS og en browser, der understøtter Notifications API og service workers. Præcise påmindelser virker, mens siden er åben; understøttede installerede browsere kan desuden kontrollere dem via Periodic Background Sync. Andre browsere kontrollerer igen, næste gang siden besøges eller får fokus. Kalenderabonnementet er derfor den mest pålidelige løsning, hvis opdateringer også skal komme med lukket browser.
+
 ## Redaktionens kommandoer
 
 ```sh
@@ -51,7 +59,7 @@ npm run events -- validate
 npm run events -- publish
 ```
 
-`create` starter en terminaldialog eller indlæser en færdig eventfil. Nye manuelle events er kladder, medmindre `--publish` er angivet. `collect` publicerer kun fuldstændige resultater fra betroede kilder; tvivlsomme fund sendes til køen. `review` viser kandidaterne én ad gangen med tid, sted og kildelink; `y` godkender og tilføjer kandidaten, mens `n` afviser og arkiverer den privat. Brug `review --json` til en ikke-interaktiv visning. En tom, delvis eller fejlet indsamling erstatter aldrig sidste fungerende snapshot.
+`create` starter en terminaldialog eller indlæser en færdig eventfil. Nye manuelle events er kladder, medmindre `--publish` er angivet. `collect` publicerer kun fuldstændige resultater fra betroede kilder; tvivlsomme fund sendes til køen. `review` viser kandidaterne én ad gangen med tid, sted og kildelink; `y` godkender og tilføjer kandidaten, `n` afviser og arkiverer den privat, og `s` springer den over, så den forbliver i køen. Brug `review --json` til en ikke-interaktiv visning. En tom, delvis eller fejlet indsamling erstatter aldrig sidste fungerende snapshot.
 
 Kø, rå fund, afvisninger og eventuelle afsenderoplysninger er private. De gemmes uden for repositoryet i `$AEROEVENTS_STATE_DIR`, ellers under `$XDG_STATE_HOME/aeroevents` eller `~/.local/state/aeroevents`. De bliver ikke læst af Astro-buildet.
 

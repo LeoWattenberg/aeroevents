@@ -19,7 +19,7 @@ const CAMPUS_API = `${CAMPUS_ORIGIN}/wp-json/tribe/events/v1/events`;
 const PAGE_SIZE = 50;
 const MAX_PAGES = 100;
 
-/** Categories observed to contain public-facing activities. Every item still goes to review. */
+/** Categories observed to contain public-facing activities. */
 export const CAMPUS_ALLOWED_CATEGORY_SLUGS = new Set([
   "campus-ugentlig",
   "foredrag",
@@ -338,10 +338,8 @@ export function parseCampusEvent(value: unknown, retrievedAt: string): CampusEve
       ...(price(item, combinedText) ? { price: price(item, combinedText)! } : {}),
       ...(booking.url ? { bookingUrl: booking.url } : {}),
       ...(booking.url || bookingRequired ? { bookingRequired } : {}),
-      publication: "review",
-      reviewReasons: [
-        "Campus-kalenderen blander offentlige arrangementer med undervisning og interne forløb",
-      ],
+      publication: "trusted",
+      reviewReasons: [],
       provenance: {
         sourceId: definition.id,
         externalId: id,

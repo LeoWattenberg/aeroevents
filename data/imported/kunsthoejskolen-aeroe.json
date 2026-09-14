@@ -1,0 +1,186 @@
+{
+  "sourceId": "kunsthoejskolen-aeroe",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "kunsthoejskolen-aeroe-z3446798542",
+      "title": "MALERI: Hop ind i maleriet v. Tanja Nis-Hansen",
+      "description": "MALERIHop ind i maleriet Uge 41 (04.10.–10.10.2026)v. Tanja Nis-Hansen Hop ind i maleriets uudtømmelige mulighed for at udtrykke følelser, idéer og stemninger, her hvor man kan bruge løs af symboler og drømmebilleder. Velkommen til et malerikursus, hvor du motivmæssigt inviteres til at trækkerpå egne erfaringer fra din dagligdag såvel som på kunsthistoriske referencer. Undervejs vil der være rig mulighed for at eksperimentere med farvevalg, teknikker og andet der kan tilføje nye lag til dine maleriers fortællinger. Kurset er for alle – uanset om du er nybegynder eller øvet inden for maleri. Det vigtigste er nysgerrighed og lysten til at dykke dybere ned i symbolernes verden. Der kan arbejders med både akryl og oliemaling. Endvidere vil der i løbet af ugen blive tilbudt øvelser i oliemaleri for dem, som gerne vil prøve kræfter med dette medium.Tanja Nis-Hansen (f. 1988, Faxe, Danmark) er uddannet ved Kunstakademiet i Hamborg og Wien (2011-2018) og arbejder med maleri, performance og skrift. Seneste soloudstillinger: 2026 Cogito Ergonomic Sum, OTP Copenhagen (DK), 2025 To run as fast as a human, Sans titre, Paris (FR), 2023 Dort, Wo das Nichts ist, duo w. Yen Chun Lin, Galerie im Turm, Berlin (DE) SE MERE https://tanjanishansen.com/ https://www.instagram.com/hejtanja/ https://sanstitre.gallery/artists/tanja-nis-hansen Pris kr. 5.491,- Prisen omfatter undervisning, foredrag, kost & logi. Tillæg for eneværelse kr. 625,- Materialeudgifter er ikke inkluderet i prisen.",
+      "organizerId": "kunsthoejskolen-aeroe",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Kunsthøjskolen på Ærø",
+        "address": "Vester Møllebakke 4",
+        "postalCode": "5985",
+        "city": "Søby Ærø",
+        "url": "https://www.kunstaeroe.dk/"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Tilmelding kræves."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "price": "Pris kr. 5.491,-",
+      "booking": {
+        "required": true,
+        "soldOut": false,
+        "url": "https://www.webtilmeldinger.dk/TilmeldingsFormularV2/Tilmelding.aspx?FormId={F3C185D6-3C38-49DB-BD33-C78132708F6A}"
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "course-z3446798542",
+            "date": "2026-10-04",
+            "kind": "all-day",
+            "endDate": "2026-10-10"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "kunsthoejskolen-aeroe",
+        "externalId": "Z3446798542",
+        "url": "https://www.kunstaeroe.dk/maleri-hop-ind-i-maleriet-v-tanja-nis-hansen",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    },
+    {
+      "id": "kunsthoejskolen-aeroe-d1470158248",
+      "title": "MALERI: Al magt til farven v. Pia Fonnesbech",
+      "description": "MALERIAl magt til farven Uge 43 (18.10.–24.10.2026)Pia Fonnesbech UDSOLGT Velkommen til et kursus med fokus på farverne og det de kan, uanset om du arbejder abstrakt eller figurativt. Undervejs vil du blive opfordret til at arbejde komplementært, lige som du vil få rig mulighed for at gå i dybden og forbedre dine maleriske færdigheder. Der vil derfor også være stor opmærksomhed på at udvikle en personlige palet. Der vil endvidere blive arbejdet med komposition, mørke og lys, kolde og varme farver. Undervisningen vil være en kombination af fælles samlinger, individuel vejledning samt introduktion til malere fra før til nu der bevidst arbejder med farven som virkemiddel. På kurset kan der arbejdes med både akryl, vandopløselig olie eller akvarel. Alle er velkomne. Pia Fonnesbech ( f. 1961), uddannet på Konstfacks i Stockholm, Valand i Göteborg samt været udvekslingsstuderende på Det kgl. danske kunstakademi. Har blandt andet udstillet på Liljevalchs i Stockholm, Charlottenborg og Nordatlantens Brygge i Kbh, Nordens Hus på Island samt Arnolfini Gallery i Bristol. Medlem af Odsherredsmalerne i Huset i Asnæs. Har modtaget Nordisk Råds rejselegat og solgt til det svenske Statens Konstråd. SE MERE https://www.instagram.com/piafonnesbech/?hl=da https://www.piafonnesbech.dk Pris kr. 5.491,- Prisen omfatter undervisning, foredrag, kost & logi. Tillæg for eneværelse kr. 625,- Materialeudgifter er ikke inkluderet i prisen.",
+      "organizerId": "kunsthoejskolen-aeroe",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Kunsthøjskolen på Ærø",
+        "address": "Vester Møllebakke 4",
+        "postalCode": "5985",
+        "city": "Søby Ærø",
+        "url": "https://www.kunstaeroe.dk/"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Kurset er markeret som udsolgt."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "price": "Pris kr. 5.491,-",
+      "booking": {
+        "required": true,
+        "soldOut": true,
+        "details": "Udsolgt; se kursussiden for eventuel ændring eller venteliste."
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "course-d1470158248",
+            "date": "2026-10-18",
+            "kind": "all-day",
+            "endDate": "2026-10-24"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "kunsthoejskolen-aeroe",
+        "externalId": "D1470158248",
+        "url": "https://www.kunstaeroe.dk/maleri-al-magt-til-farven-v-pia-fonnesbech",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    },
+    {
+      "id": "kunsthoejskolen-aeroe-e0439443917",
+      "title": "MALERI: Ind i maleriet – grib dit eget udtryk v. Mia-Nelle Drøschler",
+      "description": "MALERIInd i maleriet – grib dit eget udtryk Uge 44 (25.10.–31.10.2026)Mia-Nelle Drøschler UDSOLGT En måde at gå til maleriet er at forstå det som en proces, opdelt i flere faser. Udgangspunktet for dette kursus er at betragte den kunstneriske proces opdelt i fem faser med formålet at udvikle brugbare redskaber til at arbejde mere frit, fokuseret og personligt med dit maleri. At male handler i høj grad om at tage beslutninger – både bevidste og intuitive – og om at turde stå ved dem. Derfor velkommen til et malerikursus med dit udtryk i centrum, der klæder dig på til at blive mere bevidst om din autentiske stemme som maler. Fokus vil ligge på at få håndværk og idé til at gå hånd i hånd, ligesom du vil blive grundigt introduceret til farve og komposition – to grundlæggende forudsætninger for et stærkt maleri. Kurset henvender sig til alle med kærlighed til maleri – uanset om du aldrig har malet før, eller allerede har stor erfaring. Her er derfor plads til både begyndere og øvede. Mia-Nelle Drøschler, f. 1978 afsluttede en BA i Fine Art på Goldsmiths (2010). Har udført tre offentlige udsmykninger i Danmark, senest et gavlværk under byfornyelsen i Nordvest i København. Hun er aktuel med en gruppeudstilling på Frederikshavn Kunstmuseum, udstillet løbende på gallerier og museums og modtaget en række legater herunder hæderslegat af Gottfred Eickhoff og Gerda Eickhoffs i 2023. Medlem af Billedkunstners Forbund. Arbejder derudover også som forfatter og udgav i 2022 bestsellerbogen ”Lær at male” (Muusmann). SE MERE www.mianelle.dk www.instagram.com/mianelle_studio Pris kr. 5.491,- Prisen omfatter undervisning, foredrag, kost & logi. Tillæg for eneværelse kr. 625,- Materialeudgifter er ikke inkluderet i prisen.",
+      "organizerId": "kunsthoejskolen-aeroe",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Kunsthøjskolen på Ærø",
+        "address": "Vester Møllebakke 4",
+        "postalCode": "5985",
+        "city": "Søby Ærø",
+        "url": "https://www.kunstaeroe.dk/"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Kurset er markeret som udsolgt."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "price": "Pris kr. 5.491,-",
+      "booking": {
+        "required": true,
+        "soldOut": true,
+        "details": "Udsolgt; se kursussiden for eventuel ændring eller venteliste."
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "course-e0439443917",
+            "date": "2026-10-25",
+            "kind": "all-day",
+            "endDate": "2026-10-31"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "kunsthoejskolen-aeroe",
+        "externalId": "E0439443917",
+        "url": "https://www.kunstaeroe.dk/maleri-ind-i-maleriet-%E2%80%93-grib-dit-eget-udtryk-v-mia-nelle-dr%C3%B8schler",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    },
+    {
+      "id": "kunsthoejskolen-aeroe-q0829709650",
+      "title": "MALERI: Et søgende maleri v. Peter Neuchs",
+      "description": "MALERIEt søgende maleri Uge 45 (01.11.–07.11.2026)Peter Neuchs UDSOLGT Maleri kan handle om alt mellem verden og dét inden i dig. Et søgende maleri handler først og fremmest om at turde fastholde sig i processen og søge dybere ned. Turde være undersøgende og nysgerrig omkring farven, strøget og det uplanlagte. Det handler om glæden ved at skabe billeder og arbejde med en plan flade … og blive bedre til det. Velkommen til et kursus, hvor dit maleri er omdrejningspunktet og vi går i dybden med det, du vil udtrykke, så du kan komme tættere på det, du søger i forhold til din kunst og dit maleri. Kort sagt et kursus om at søge og undersøge – om beslutninger og udfordringer, der peger mod nye veje ind i maleriet. Dit maleri. Den daglige undervisning foregår på værkstederne tilsat samtaler, vejledning og foredrag. Der kan arbejdes med både akryl- og oliemaling på kurset. Alle er velkomne – øvede som ikke øvede. Peter Neuchs (f. 1958) uddannet på Det Kongelige Danske Kunstakademi 1985-92. Modtog i 1997 Statens Kunstfonds 3-årige arbejdslegat. Har gennem årene udstillet både her i landet, men i særdeleshed i Madrid, Paris og Brasilien. Reprænsenteret i mange offentlige samlinger, blandt andre: Statens Museum for Kunst, AROS, Horsens Kunstmuseum, Arken, Herning Kunstmuseum, Esbjerg Kunstmuseum. Er tilknyttet Maria Lund Galleri i Paris. SE MERE https://marialund.com/wp-content/uploads/peter_neuchs_cv_en.pdf https://denstoredanske.lex.dk/.search?query=peter+neuchs https://collection.smk.dk/#q=peter%20neuchs Pris kr. 5.491,- Prisen omfatter undervisning, foredrag, kost & logi. Tillæg for eneværelse kr. 625,- Materialeudgifter er ikke inkluderet i prisen.",
+      "organizerId": "kunsthoejskolen-aeroe",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Kunsthøjskolen på Ærø",
+        "address": "Vester Møllebakke 4",
+        "postalCode": "5985",
+        "city": "Søby Ærø",
+        "url": "https://www.kunstaeroe.dk/"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Kurset er markeret som udsolgt."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Pris kr. 5.491,-",
+      "booking": {
+        "required": true,
+        "soldOut": true,
+        "details": "Udsolgt; se kursussiden for eventuel ændring eller venteliste."
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "course-q0829709650",
+            "date": "2026-11-01",
+            "kind": "all-day",
+            "endDate": "2026-11-07"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "kunsthoejskolen-aeroe",
+        "externalId": "Q0829709650",
+        "url": "https://www.kunstaeroe.dk/maleri-et-s%C3%B8gende-maleri-v-peter-neuchs-1",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    }
+  ]
+}

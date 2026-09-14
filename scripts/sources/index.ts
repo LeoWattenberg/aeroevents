@@ -93,6 +93,26 @@ export interface CollectOptions {
   recordResponse?: RawResponseRecorder;
 }
 
+export type CollectionProgress =
+  | {
+      phase: "started";
+      source: SourceAdapter["definition"];
+      position: number;
+      total: number;
+    }
+  | {
+      phase: "completed";
+      source: SourceAdapter["definition"];
+      completed: number;
+      total: number;
+      result: CollectionResult;
+    };
+
+export interface CollectAllOptions extends CollectOptions {
+  sourceIds: RegisteredSourceId[];
+  onProgress?: (progress: CollectionProgress) => void;
+}
+
 function context(options: CollectOptions): CollectionContext {
   const fetcher = options.fetch ?? globalThis.fetch;
   if (!fetcher) throw new Error("Denne Node-version har ingen global fetch");
@@ -112,10 +132,29 @@ export function collectSource(
 }
 
 export async function collectAllSources(
-  options: CollectOptions & { sourceIds: RegisteredSourceId[] },
+  options: CollectAllOptions,
 ): Promise<CollectionResult[]> {
   const collectionContext = context(options);
+  let completed = 0;
   return Promise.all(
-    options.sourceIds.map((sourceId) => SOURCE_ADAPTERS[sourceId].collect(collectionContext)),
+    options.sourceIds.map(async (sourceId, index) => {
+      const adapter = SOURCE_ADAPTERS[sourceId];
+      options.onProgress?.({
+        phase: "started",
+        source: adapter.definition,
+        position: index + 1,
+        total: options.sourceIds.length,
+      });
+      const result = await adapter.collect(collectionContext);
+      completed += 1;
+      options.onProgress?.({
+        phase: "completed",
+        source: adapter.definition,
+        completed,
+        total: options.sourceIds.length,
+        result,
+      });
+      return result;
+    }),
   );
 }

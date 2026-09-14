@@ -28,8 +28,8 @@ export const AEROE_HOTEL_MAX_EVENTS = 100;
 
 const UUID = /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/iu;
 const EVENT_SLUG = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
-const REVIEW_REASON =
-  "Kontrollér Wix-eventens tidspunkt mod eventuelle opholdsdatoer samt sted og bookingvilkår.";
+const SEMANTIC_DUPLICATE_REASON =
+  "Flere strukturelt komplette Wix-poster har samme titel og tidspunkt.";
 
 interface JsonObject {
   [key: string]: unknown;
@@ -363,7 +363,7 @@ function parseWixEvent(value: unknown, retrievedAt: string, index: number): Pars
     errors.push("har skjult detailside og derfor intet sikkert kanonisk eventlink");
   }
 
-  const reviewReasons = [REVIEW_REASON];
+  const reviewReasons: string[] = [];
   const localOccurrenceErrors: string[] = [];
   const occurrence = eventId
     ? parseOccurrence(eventId, event.scheduling, localOccurrenceErrors)
@@ -414,7 +414,7 @@ function parseWixEvent(value: unknown, retrievedAt: string, index: number): Pars
       bookingUrl: sourceUrl,
       bookingRequired: registration.bookingRequired,
       bookingDetails: registration.bookingDetails,
-      publication: "review",
+      publication: reviewReasons.length > 0 ? "review" : "trusted",
       reviewReasons: [...new Set(reviewReasons)],
       provenance: {
         sourceId: definition.id,
@@ -439,6 +439,45 @@ function candidateSignature(candidate: NormalizedEventDraft): string {
     bookingUrl: candidate.bookingUrl,
     bookingDetails: candidate.bookingDetails,
   });
+}
+
+function semanticEventFingerprint(candidate: NormalizedEventDraft): string {
+  const occurrence = candidate.occurrences[0]!;
+  return [
+    cleanText(candidate.title).toLocaleLowerCase("da-DK"),
+    occurrence.date,
+    occurrence.startTime ?? "",
+    occurrence.endDate ?? "",
+    occurrence.endTime ?? "",
+  ].join("|");
+}
+
+function guardSemanticDuplicates(
+  candidates: NormalizedEventDraft[],
+  warnings: string[],
+): void {
+  const groups = new Map<string, NormalizedEventDraft[]>();
+  for (const candidate of candidates) {
+    const fingerprint = semanticEventFingerprint(candidate);
+    groups.set(fingerprint, [...(groups.get(fingerprint) ?? []), candidate]);
+  }
+
+  let duplicateGroupCount = 0;
+  for (const group of groups.values()) {
+    if (group.length < 2) continue;
+    duplicateGroupCount += 1;
+    const trusted = group.filter((candidate) => candidate.publication === "trusted");
+    if (trusted.length < 2) continue;
+    for (const candidate of trusted) {
+      candidate.publication = "review";
+      candidate.reviewReasons = [...new Set([...candidate.reviewReasons, SEMANTIC_DUPLICATE_REASON])];
+    }
+  }
+  if (duplicateGroupCount > 0) {
+    warnings.push(
+      `Wix Events indeholder ${duplicateGroupCount} mulig${duplicateGroupCount === 1 ? "" : "e"} dubletgruppe${duplicateGroupCount === 1 ? "" : "r"} med forskellige UUID'er`,
+    );
+  }
 }
 
 export function parseAeroeHotelEventsPage(
@@ -521,6 +560,7 @@ export function parseAeroeHotelEventsPage(
   if (duplicateCount > 0) {
     warnings.push(`Wix-warmupdata gentog ${duplicateCount} event-UUID'er; dubletter blev fjernet`);
   }
+  guardSemanticDuplicates(candidates, warnings);
   return {
     candidates,
     warnings,

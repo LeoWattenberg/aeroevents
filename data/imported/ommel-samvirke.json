@@ -1,0 +1,2631 @@
+{
+  "sourceId": "ommel-samvirke",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "ommel-samvirke-activity-5d1d397f36738781c0f4",
+      "title": "Brætspil",
+      "description": "Første søndag i måneden er der brætspil i beboerhuset. Der er ingen aldersgrænse og alle er velkomne til at være med. Vi aftaler når vi kommer hvilke spil vi har lyst til at spille. Beboerhuset råder over en del brætspil men har du et du gerne vil spille må du meget gerne medbringe det. Pris 20 kr. som går til kaffen og en småkage",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-5d1d397f36738781c0f4-2026-10-04-1330",
+            "date": "2026-10-04",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2026-10-25-1330",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endDate": "2026-11-01",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2026-12-06-1330",
+            "date": "2026-12-06",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2027-01-03-1330",
+            "date": "2027-01-03",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2027-02-07-1330",
+            "date": "2027-02-07",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2027-03-07-1330",
+            "date": "2027-03-07",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2027-04-04-1330",
+            "date": "2027-04-04",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2027-05-02-1330",
+            "date": "2027-05-02",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2027-06-06-1330",
+            "date": "2027-06-06",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2027-07-04-1330",
+            "date": "2027-07-04",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2027-08-01-1330",
+            "date": "2027-08-01",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          },
+          {
+            "id": "activity-5d1d397f36738781c0f4-2027-09-05-1330",
+            "date": "2027-09-05",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-5d1d397f36738781c0f4",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:41:03.525Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-6e9475d965c159ce3680",
+      "title": "Fællesspisning 50+",
+      "description": "Pris: 60 kr. pr. person. Kun kontanter 😊 Drikkevarer: Kan købes men man må også gerne medbringe selv. Vi spiser kl. 17.30 men du er meget velkommen til at komme tidligere. Tilmelding til: Ragna Friborg Tlf. nr Senest mandagen før af hensyn til indkøb Menuplanen er vedhæftet som pdf-fil",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-6e9475d965c159ce3680-2026-09-23-1730",
+            "date": "2026-09-23",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2026-10-07-1730",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2026-10-21-1730",
+            "date": "2026-10-21",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2026-11-04-1730",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2026-11-18-1730",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2026-12-02-1730",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2027-01-06-1730",
+            "date": "2027-01-06",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2027-01-20-1730",
+            "date": "2027-01-20",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2027-02-03-1730",
+            "date": "2027-02-03",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2027-02-17-1730",
+            "date": "2027-02-17",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2027-03-03-1730",
+            "date": "2027-03-03",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2027-03-17-1730",
+            "date": "2027-03-17",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2027-03-31-1730",
+            "date": "2027-03-31",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-6e9475d965c159ce3680-2027-04-14-1730",
+            "date": "2027-04-14",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-6e9475d965c159ce3680",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:41:03.525Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-02e6d95bf640aca4bbae",
+      "title": "Fredagsbar",
+      "description": "Kom og sig god weekend",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-01-08-1600",
+            "date": "2027-01-08",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-01-22-1600",
+            "date": "2027-01-22",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-02-05-1600",
+            "date": "2027-02-05",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-02-19-1600",
+            "date": "2027-02-19",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-03-05-1600",
+            "date": "2027-03-05",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-03-19-1600",
+            "date": "2027-03-19",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-04-02-1600",
+            "date": "2027-04-02",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-04-16-1600",
+            "date": "2027-04-16",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-04-30-1600",
+            "date": "2027-04-30",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-05-14-1600",
+            "date": "2027-05-14",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-05-28-1600",
+            "date": "2027-05-28",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-06-11-1600",
+            "date": "2027-06-11",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-06-25-1600",
+            "date": "2027-06-25",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-07-09-1600",
+            "date": "2027-07-09",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-07-23-1600",
+            "date": "2027-07-23",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-08-06-1600",
+            "date": "2027-08-06",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-08-20-1600",
+            "date": "2027-08-20",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-02e6d95bf640aca4bbae-2027-09-03-1600",
+            "date": "2027-09-03",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-02e6d95bf640aca4bbae",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-161c07571e9abfa92738",
+      "title": "Formiddagsstrik",
+      "description": "🧶 Strik & Kreative Sysler – Fællesskab med garn, idéer og hygge Har du lyst til et par hyggelige timer i godt selskab? Tag dit strikketøj, hækletøj, broderi eller et andet kreativt projekt under armen, og kom og vær med. Her er der plads til både erfarne og nybegyndere – vi inspirerer hinanden, hjælper, hvis der er brug for det, og nyder nogle hyggelige timer sammen. Det handler ikke kun om masker og mønstre – men også om fællesskab, gode snakke og masser af smil. 🧶 Medbring dit eget kreative projekt. ☕ Medbring gerne kaffe, te eller andre drikkevarer samt din egen kop. Alle er hjerteligt velkomne! Kom, som du er – der er altid plads til en ekstra ved bordet.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-161c07571e9abfa92738-2026-09-23-1000",
+            "date": "2026-09-23",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2026-10-07-1000",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2026-10-21-1000",
+            "date": "2026-10-21",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2026-11-04-1000",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2026-11-18-1000",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2026-12-02-1000",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2026-12-16-1000",
+            "date": "2026-12-16",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2026-12-30-1000",
+            "date": "2026-12-30",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2027-01-13-1000",
+            "date": "2027-01-13",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2027-01-27-1000",
+            "date": "2027-01-27",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2027-02-10-1000",
+            "date": "2027-02-10",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2027-02-24-1000",
+            "date": "2027-02-24",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2027-03-10-1000",
+            "date": "2027-03-10",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2027-03-24-1000",
+            "date": "2027-03-24",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2027-04-07-1000",
+            "date": "2027-04-07",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-161c07571e9abfa92738-2027-04-21-1000",
+            "date": "2027-04-21",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-161c07571e9abfa92738",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-2516431221fb91896417",
+      "title": "Samkørsel biograf",
+      "description": "Er du vild med at se film i biografen. Så kom til mødet mandag 14. september kl. 19 i beboerhuset. Der holdes et kort møde for at scanne interessen for samkørsel til filmaftener i Andelen.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-2516431221fb91896417-2026-09-14-1900",
+            "date": "2026-09-14",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-2516431221fb91896417",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-30308c2d5b0827696f99",
+      "title": "Cykeltur og Skovfit i Marstal",
+      "description": "🚴 Cykeltur & Skovfit – Frisk luft, motion og godt fællesskab Kom med ud i naturen og start dagen med motion, frisk luft og hyggeligt samvær. Vi cykler fra Ommel kl. 9.45 til Eghovedskoven i Marstal, hvor vi deltager i Skovfit – en skøn kombination af bevægelse, natur og fællesskab. Undervejs får vi pulsen op, styrker kroppen og nyder den smukke natur. Øvelserne tilpasses, så alle kan være med, og der er god tid til både grin og en hyggelig snak. 🌳 Skovfit giver: Styrke, balance og bedre kondition Frisk energi og velvære Fællesskab og gode oplevelser i naturen Tovholder: Marianne Mitchell 🚴 Afgang fra Ommel kl. 9.45 Alle er velkomne! Tag cyklen med og vær med til en aktiv og hyggelig formiddag, hvor vi sammen får rørt kroppen og nyder naturen.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-09-18-0945",
+            "date": "2026-09-18",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          },
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-09-25-0945",
+            "date": "2026-09-25",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          },
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-10-02-0945",
+            "date": "2026-10-02",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          },
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-10-09-0945",
+            "date": "2026-10-09",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          },
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-10-16-0945",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          },
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-10-23-0945",
+            "date": "2026-10-23",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          },
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-10-30-0945",
+            "date": "2026-10-30",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          },
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-11-06-0945",
+            "date": "2026-11-06",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          },
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-11-13-0945",
+            "date": "2026-11-13",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          },
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-11-20-0945",
+            "date": "2026-11-20",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          },
+          {
+            "id": "activity-30308c2d5b0827696f99-2026-11-27-0945",
+            "date": "2026-11-27",
+            "kind": "timed",
+            "startTime": "09:45",
+            "endTime": "11:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-30308c2d5b0827696f99",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-496ff0a823833c4a8412",
+      "title": "Cykeltur",
+      "description": "Har du lyst til at cykle en tur sammen med andre. Vi mødes ved beboerhuset kl. 11 søndag i ulige uge. Vi cykler i et roligt tempo så det er muligt at snakke sammen undervejs. Medbring selv drikkevarer til turen og evt. lidt snack. Vi holder en pause undervejs. Pia List og Karin Hansen er tovholdere og kan kontaktes ved spørgsmål.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-496ff0a823833c4a8412-2026-09-27-1100",
+            "date": "2026-09-27",
+            "kind": "timed",
+            "startTime": "11:00",
+            "endTime": "13:00"
+          },
+          {
+            "id": "activity-496ff0a823833c4a8412-2026-10-11-1100",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "11:00",
+            "endTime": "13:00"
+          },
+          {
+            "id": "activity-496ff0a823833c4a8412-2026-10-25-1100",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "11:00",
+            "endTime": "13:00"
+          },
+          {
+            "id": "activity-496ff0a823833c4a8412-2026-11-08-1100",
+            "date": "2026-11-08",
+            "kind": "timed",
+            "startTime": "11:00",
+            "endTime": "13:00"
+          },
+          {
+            "id": "activity-496ff0a823833c4a8412-2026-11-22-1100",
+            "date": "2026-11-22",
+            "kind": "timed",
+            "startTime": "11:00",
+            "endTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-496ff0a823833c4a8412",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-67cdddcd989e08df5bcc",
+      "title": "Gåtur formiddag",
+      "description": "Tag med på en hyggelig gåtur i godt selskab Vi mødes ved Beboerhuset kl. 10.00, hvorfra vi sammen går en tur rundt i byen. Vi går i et roligt og behageligt tempo, så alle kan være med. Uanset om du går uden hjælpemidler, bruger rollator eller har andre hjælpemidler, er du hjerteligt velkommen. Det vigtigste er ikke, hvor langt vi går – men at vi får frisk luft, lidt motion og en hyggelig snak undervejs. Når vi kommer tilbage til Beboerhuset, fortsætter hyggen med en kop kaffe eller te og godt samvær. Vi glæder os til at se dig!",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-09-16-1000",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-09-23-1000",
+            "date": "2026-09-23",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-09-30-1000",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-10-07-1000",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-10-14-1000",
+            "date": "2026-10-14",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-10-21-1000",
+            "date": "2026-10-21",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-10-28-1000",
+            "date": "2026-10-28",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-11-04-1000",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-11-11-1000",
+            "date": "2026-11-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-11-18-1000",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-11-25-1000",
+            "date": "2026-11-25",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-12-02-1000",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-12-09-1000",
+            "date": "2026-12-09",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-12-16-1000",
+            "date": "2026-12-16",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-12-23-1000",
+            "date": "2026-12-23",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2026-12-30-1000",
+            "date": "2026-12-30",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-01-06-1000",
+            "date": "2027-01-06",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-01-13-1000",
+            "date": "2027-01-13",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-01-20-1000",
+            "date": "2027-01-20",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-01-27-1000",
+            "date": "2027-01-27",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-02-03-1000",
+            "date": "2027-02-03",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-02-10-1000",
+            "date": "2027-02-10",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-02-17-1000",
+            "date": "2027-02-17",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-02-24-1000",
+            "date": "2027-02-24",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-03-03-1000",
+            "date": "2027-03-03",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-03-10-1000",
+            "date": "2027-03-10",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-03-17-1000",
+            "date": "2027-03-17",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-03-24-1000",
+            "date": "2027-03-24",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-03-31-1000",
+            "date": "2027-03-31",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-04-07-1000",
+            "date": "2027-04-07",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-04-14-1000",
+            "date": "2027-04-14",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-04-21-1000",
+            "date": "2027-04-21",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-04-28-1000",
+            "date": "2027-04-28",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-05-05-1000",
+            "date": "2027-05-05",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-05-12-1000",
+            "date": "2027-05-12",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-05-19-1000",
+            "date": "2027-05-19",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          },
+          {
+            "id": "activity-67cdddcd989e08df5bcc-2027-05-26-1000",
+            "date": "2027-05-26",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-67cdddcd989e08df5bcc",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-7c1531624f129175a860",
+      "title": "Stolegymnastik",
+      "description": "Stolegymnastik – Bevægelse, styrke og fællesskab Hold kroppen i gang – hele livet. Kom og vær med til stolegymnastik, hvor vi træner på en tryg, sjov og skånsom måde. Øvelserne styrker musklerne, forbedrer balancen og holder kroppen smidig, så du lettere kan klare hverdagens gøremål. Du behøver hverken at være i topform eller have erfaring – alle kan være med, og øvelserne tilpasses den enkelte. Du får blandt andet: 💪 Stærkere muskler ⚖️ Bedre balance og stabilitet 🤸 Øget smidighed ❤️ Mere energi og velvære 😊 Et hyggeligt fællesskab med plads til smil og gode grin Vi slutter hver gang af med en kop kaffe eller te, hvor der er tid til en god snak og samvær.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-7c1531624f129175a860-2026-09-14-1000",
+            "date": "2026-09-14",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-09-21-1000",
+            "date": "2026-09-21",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-09-28-1000",
+            "date": "2026-09-28",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-10-05-1000",
+            "date": "2026-10-05",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-10-12-1000",
+            "date": "2026-10-12",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-10-19-1000",
+            "date": "2026-10-19",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-10-26-1000",
+            "date": "2026-10-26",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-11-02-1000",
+            "date": "2026-11-02",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-11-09-1000",
+            "date": "2026-11-09",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-11-16-1000",
+            "date": "2026-11-16",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-11-23-1000",
+            "date": "2026-11-23",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-11-30-1000",
+            "date": "2026-11-30",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-12-07-1000",
+            "date": "2026-12-07",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-12-14-1000",
+            "date": "2026-12-14",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-7c1531624f129175a860-2026-12-21-1000",
+            "date": "2026-12-21",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-7c1531624f129175a860",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-836eca1737f817254932",
+      "title": "Petanque",
+      "description": "🎯 Petanque i Æblehaven – Kom og vær med! Har du lyst til en hyggelig eftermiddag med frisk luft, smil og godt selskab? Hver torsdag kl. 15.00 mødes vi i Æblehaven til en omgang petanque. Her er der plads til både nybegyndere og øvede – det vigtigste er, at vi har det hyggeligt sammen. Petanque er en dejlig aktivitet, hvor der er tid til både spil, grin og gode snakke. Det sociale samvær er mindst lige så vigtigt som selve spillet. 🎱 Vi har petanquekugler, som du frit kan låne, men du er også meget velkommen til at medbringe dine egne. ☕ Tag gerne kaffekurven og din egen kop med, så slutter vi af med en hyggelig kaffepause og en god snak. Alle er hjerteligt velkomne! Tag gerne en nabo, ven eller et familiemedlem med – jo flere, jo hyggeligere.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Æblehaven"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-836eca1737f817254932-2026-09-24-1500",
+            "date": "2026-09-24",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "activity-836eca1737f817254932-2026-10-01-1500",
+            "date": "2026-10-01",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "activity-836eca1737f817254932-2026-10-08-1500",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "activity-836eca1737f817254932-2026-10-15-1500",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "activity-836eca1737f817254932-2026-10-22-1500",
+            "date": "2026-10-22",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "17:00"
+          },
+          {
+            "id": "activity-836eca1737f817254932-2026-10-29-1500",
+            "date": "2026-10-29",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-836eca1737f817254932",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-840c87c9f76a0f80e3dd",
+      "title": "Fredagsbar",
+      "description": "🍻 Fredagsbar i Ommel – Fællesskab, hygge og en god start på weekenden Hver anden fredag inviterer vi til fredagsbar i Ommel Beboerhus fra kl. 16.00–18.00. Kom forbi og nyd et par hyggelige timer med naboer, venner og nye bekendtskaber. Her er der plads til gode grin, spændende snakke og en afslappet stemning – uanset om du har lyst til en kop kaffe, en sodavand, en øl eller et glas vin. Fredagsbaren er et uformelt mødested, hvor fællesskabet er i centrum. Kig forbi i en halv time eller bliv hele eftermiddagen – alle er velkomne. 🥂 Hyggeligt samvær 😊 Gode snakke og nye bekendtskaber 🍺 Kolde drikke og god stemning ❤️ Et stærkt lokalt fællesskab Fredagsbaren er for alle – vi glæder os til at byde dig velkommen!",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-840c87c9f76a0f80e3dd-2026-09-18-1600",
+            "date": "2026-09-18",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-840c87c9f76a0f80e3dd-2026-10-02-1600",
+            "date": "2026-10-02",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-840c87c9f76a0f80e3dd-2026-10-16-1600",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-840c87c9f76a0f80e3dd-2026-10-30-1600",
+            "date": "2026-10-30",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-840c87c9f76a0f80e3dd-2026-11-13-1600",
+            "date": "2026-11-13",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-840c87c9f76a0f80e3dd-2026-11-27-1600",
+            "date": "2026-11-27",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          },
+          {
+            "id": "activity-840c87c9f76a0f80e3dd-2026-12-11-1600",
+            "date": "2026-12-11",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-840c87c9f76a0f80e3dd",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-854abf248a0f8c8fc1de",
+      "title": "Dart",
+      "description": "Vi spiller dart i Beboerhuset",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-09-15-1900",
+            "date": "2026-09-15",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-09-22-1900",
+            "date": "2026-09-22",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-09-29-1900",
+            "date": "2026-09-29",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-10-06-1900",
+            "date": "2026-10-06",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-10-13-1900",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-10-20-1900",
+            "date": "2026-10-20",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-10-27-1900",
+            "date": "2026-10-27",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-11-03-1900",
+            "date": "2026-11-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-11-10-1900",
+            "date": "2026-11-10",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-11-17-1900",
+            "date": "2026-11-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-11-24-1900",
+            "date": "2026-11-24",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-12-01-1900",
+            "date": "2026-12-01",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-12-08-1900",
+            "date": "2026-12-08",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-854abf248a0f8c8fc1de-2026-12-15-1900",
+            "date": "2026-12-15",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-854abf248a0f8c8fc1de",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-8d65f8aaf9dff471dc0e",
+      "title": "Krolf",
+      "description": "Har du lyst til at spille krolf. Søndag kl.10 er banen klar, så kom og få en hyggelig formiddag sammen med andre :-) Er du nybegynder, øvet, ung eller ældre så kom og prøv om det er noget for dig. Alle er velkomne",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Æblehaven"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-8d65f8aaf9dff471dc0e-2026-09-20-1000",
+            "date": "2026-09-20",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-8d65f8aaf9dff471dc0e",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-a59186c3c2663f88eb65",
+      "title": "Strikkeaften",
+      "description": "🧶 Strik & Kreative Sysler – Fællesskab med garn, idéer og hygge Har du lyst til et par hyggelige timer i godt selskab? Tag dit strikketøj, hækletøj, broderi eller et andet kreativt projekt under armen, og kom og vær med. Her er der plads til både erfarne og nybegyndere – vi inspirerer hinanden, hjælper, hvis der er brug for det, og nyder nogle hyggelige timer sammen. Det handler ikke kun om masker og mønstre – men også om fællesskab, gode snakke og masser af smil. 🧶 Medbring dit eget kreative projekt. ☕ Medbring gerne kaffe, te eller andre drikkevarer samt din egen kop. Alle er hjerteligt velkomne! Kom, som du er – der er altid plads til en ekstra ved bordet.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-a59186c3c2663f88eb65-2026-09-16-1900",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2026-09-30-1900",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2026-10-14-1900",
+            "date": "2026-10-14",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2026-10-28-1900",
+            "date": "2026-10-28",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2026-11-11-1900",
+            "date": "2026-11-11",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2026-11-25-1900",
+            "date": "2026-11-25",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2026-12-09-1900",
+            "date": "2026-12-09",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2026-12-23-1900",
+            "date": "2026-12-23",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2027-01-06-1900",
+            "date": "2027-01-06",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2027-01-20-1900",
+            "date": "2027-01-20",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2027-02-03-1900",
+            "date": "2027-02-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2027-02-17-1900",
+            "date": "2027-02-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2027-03-03-1900",
+            "date": "2027-03-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2027-03-17-1900",
+            "date": "2027-03-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2027-03-31-1900",
+            "date": "2027-03-31",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          },
+          {
+            "id": "activity-a59186c3c2663f88eb65-2027-04-14-1900",
+            "date": "2027-04-14",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-a59186c3c2663f88eb65",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-b0e925ea79720a9acd65",
+      "title": "Dart",
+      "description": "Vi spiller dart i Beboerhuset. Kom og vær med til et par hyggelige timer",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-01-05-1900",
+            "date": "2027-01-05",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-01-12-1900",
+            "date": "2027-01-12",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-01-19-1900",
+            "date": "2027-01-19",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-01-26-1900",
+            "date": "2027-01-26",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-02-02-1900",
+            "date": "2027-02-02",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-02-09-1900",
+            "date": "2027-02-09",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-02-16-1900",
+            "date": "2027-02-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-02-23-1900",
+            "date": "2027-02-23",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-03-02-1900",
+            "date": "2027-03-02",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-03-09-1900",
+            "date": "2027-03-09",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-03-16-1900",
+            "date": "2027-03-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-03-23-1900",
+            "date": "2027-03-23",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-03-30-1900",
+            "date": "2027-03-30",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-04-06-1900",
+            "date": "2027-04-06",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-04-13-1900",
+            "date": "2027-04-13",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-04-20-1900",
+            "date": "2027-04-20",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-04-27-1900",
+            "date": "2027-04-27",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-05-04-1900",
+            "date": "2027-05-04",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-05-11-1900",
+            "date": "2027-05-11",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-05-18-1900",
+            "date": "2027-05-18",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-05-25-1900",
+            "date": "2027-05-25",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-06-01-1900",
+            "date": "2027-06-01",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-06-08-1900",
+            "date": "2027-06-08",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-06-15-1900",
+            "date": "2027-06-15",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-06-22-1900",
+            "date": "2027-06-22",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-06-29-1900",
+            "date": "2027-06-29",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-07-06-1900",
+            "date": "2027-07-06",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-07-13-1900",
+            "date": "2027-07-13",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-07-20-1900",
+            "date": "2027-07-20",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-07-27-1900",
+            "date": "2027-07-27",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-08-03-1900",
+            "date": "2027-08-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-08-10-1900",
+            "date": "2027-08-10",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-08-17-1900",
+            "date": "2027-08-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-08-24-1900",
+            "date": "2027-08-24",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-08-31-1900",
+            "date": "2027-08-31",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-09-07-1900",
+            "date": "2027-09-07",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-09-14-1900",
+            "date": "2027-09-14",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-b0e925ea79720a9acd65",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-beff946b8065a3c9b786",
+      "title": "It-Hjælp",
+      "description": "💻 IT-hjælp – Små udfordringer, store løsninger Driller mobilen, computeren eller tabletten? Er der en app, du ikke kan få til at virke, eller er der noget digitalt, du gerne vil blive klogere på? Kom til IT-hjælp, hvor vi sammen finder løsninger på hverdagens digitale udfordringer. Her er der god tid til spørgsmål, og ingen spørgsmål er for små. Du kan blandt andet få hjælp til: 📱 Mobiltelefon, tablet og computer 📧 E-mail og MitID 🌐 Internettet og offentlige selvbetjeningsløsninger 📸 Billeder og beskeder 💡 Smarte tips og tricks, der gør hverdagen lettere Tovholder: Carsten Wolff Tag gerne din egen enhed med, så tager vi udgangspunkt i netop de udfordringer, du møder i hverdagen. Alle er velkomne – uanset om du er nybegynder eller blot ønsker at lære lidt mere.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-beff946b8065a3c9b786-2026-10-02-1330",
+            "date": "2026-10-02",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "15:30"
+          },
+          {
+            "id": "activity-beff946b8065a3c9b786-2026-10-16-1330",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "15:30"
+          },
+          {
+            "id": "activity-beff946b8065a3c9b786-2026-10-30-1330",
+            "date": "2026-10-30",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "15:30"
+          },
+          {
+            "id": "activity-beff946b8065a3c9b786-2026-11-13-1330",
+            "date": "2026-11-13",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "15:30"
+          },
+          {
+            "id": "activity-beff946b8065a3c9b786-2026-11-27-1330",
+            "date": "2026-11-27",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "15:30"
+          },
+          {
+            "id": "activity-beff946b8065a3c9b786-2026-12-11-1330",
+            "date": "2026-12-11",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "15:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-beff946b8065a3c9b786",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-cb60eb005fee08f91ed9",
+      "title": "Kagemand til Årets Næstbedste Landsby",
+      "description": "Ommel blev ikke Årets Landsby – men fik en delt 2. plads – som vi fejrer ved at invitere alle ommelitter på 'Kagemand og Kaffe' fredag kl. 15.00 – altså en time før 'Fredagsbaren' – beboerhuset!",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-cb60eb005fee08f91ed9-2026-09-18-1500",
+            "date": "2026-09-18",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-cb60eb005fee08f91ed9",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-cdccf0a5e1709986de9d",
+      "title": "Petanque",
+      "description": "🎯 Petanque i Æblehaven – Kom og vær med! Har du lyst til en hyggelig eftermiddag med frisk luft, smil og godt selskab? Hver torsdag kl. 15.00 mødes vi i Æblehaven til en omgang petanque. Her er der plads til både nybegyndere og øvede – det vigtigste er, at vi har det hyggeligt sammen. Petanque er en dejlig aktivitet, hvor der er tid til både spil, grin og gode snakke. Det sociale samvær er mindst lige så vigtigt som selve spillet. 🎱 Vi har petanquekugler, som du frit kan låne, men du er også meget velkommen til at medbringe dine egne. ☕ Tag gerne kaffekurven og din egen kop med, så slutter vi af med en hyggelig kaffepause og en god snak. Alle er hjerteligt velkomne! Tag gerne en nabo, ven eller et familiemedlem med – jo flere, jo hyggeligere.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Æblehaven"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-cdccf0a5e1709986de9d-2026-09-17-1500",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "16:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-cdccf0a5e1709986de9d",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-d0a8ed3087ff43c20a82",
+      "title": "Gåtur eftermiddag",
+      "description": "Eftermiddagsgåtur – Frisk luft, motion og godt humør Hver onsdag kl. 16.30 – 17.30 Har du lyst til at få pulsen lidt op, nyde den friske luft og gå en tur i godt selskab? Vi mødes ved Beboerhuset kl. 16.30 og går en rask tur på ca. en time. Undervejs er der tid til hyggelige snakke, grin og fællesskab – og samtidig får vi god motion. For at gøre turene spændende varierer vi ruterne fra gang til gang efter deltagernes ønsker og aftale. Kom alene eller tag en nabo eller ven med – alle er velkomne. En times frisk luft kan gøre en stor forskel for både krop og humør. Vi glæder os til at gå en tur sammen med dig!",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-09-16-1630",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-09-23-1630",
+            "date": "2026-09-23",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-09-30-1630",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-10-07-1630",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-10-14-1630",
+            "date": "2026-10-14",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-10-21-1630",
+            "date": "2026-10-21",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-10-28-1630",
+            "date": "2026-10-28",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-11-04-1630",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-11-11-1630",
+            "date": "2026-11-11",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-11-18-1630",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-11-25-1630",
+            "date": "2026-11-25",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-12-02-1630",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-12-09-1630",
+            "date": "2026-12-09",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-12-16-1630",
+            "date": "2026-12-16",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-12-23-1630",
+            "date": "2026-12-23",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2026-12-30-1630",
+            "date": "2026-12-30",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-01-06-1630",
+            "date": "2027-01-06",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-01-13-1630",
+            "date": "2027-01-13",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-01-20-1630",
+            "date": "2027-01-20",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-01-27-1630",
+            "date": "2027-01-27",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-02-03-1630",
+            "date": "2027-02-03",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-02-10-1630",
+            "date": "2027-02-10",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-02-17-1630",
+            "date": "2027-02-17",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-02-24-1630",
+            "date": "2027-02-24",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-03-03-1630",
+            "date": "2027-03-03",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-03-10-1630",
+            "date": "2027-03-10",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-03-17-1630",
+            "date": "2027-03-17",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-03-24-1630",
+            "date": "2027-03-24",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-03-31-1630",
+            "date": "2027-03-31",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-04-07-1630",
+            "date": "2027-04-07",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-04-14-1630",
+            "date": "2027-04-14",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-04-21-1630",
+            "date": "2027-04-21",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-04-28-1630",
+            "date": "2027-04-28",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-05-05-1630",
+            "date": "2027-05-05",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-05-12-1630",
+            "date": "2027-05-12",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-05-19-1630",
+            "date": "2027-05-19",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          },
+          {
+            "id": "activity-d0a8ed3087ff43c20a82-2027-05-26-1630",
+            "date": "2027-05-26",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-d0a8ed3087ff43c20a82",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-e6f28dc301076340953b",
+      "title": "Stolegymnastik",
+      "description": "Vi laver stolegymnastik hver mandag og slutter med en kop kaffe",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-e6f28dc301076340953b-2027-01-04-1000",
+            "date": "2027-01-04",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-01-11-1000",
+            "date": "2027-01-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-01-18-1000",
+            "date": "2027-01-18",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-01-25-1000",
+            "date": "2027-01-25",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-02-01-1000",
+            "date": "2027-02-01",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-02-08-1000",
+            "date": "2027-02-08",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-02-15-1000",
+            "date": "2027-02-15",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-02-22-1000",
+            "date": "2027-02-22",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-03-01-1000",
+            "date": "2027-03-01",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-03-08-1000",
+            "date": "2027-03-08",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-03-15-1000",
+            "date": "2027-03-15",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-03-22-1000",
+            "date": "2027-03-22",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-03-29-1000",
+            "date": "2027-03-29",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-04-05-1000",
+            "date": "2027-04-05",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-04-12-1000",
+            "date": "2027-04-12",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-04-19-1000",
+            "date": "2027-04-19",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-04-26-1000",
+            "date": "2027-04-26",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-05-03-1000",
+            "date": "2027-05-03",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-05-10-1000",
+            "date": "2027-05-10",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-05-17-1000",
+            "date": "2027-05-17",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-05-24-1000",
+            "date": "2027-05-24",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-05-31-1000",
+            "date": "2027-05-31",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-06-07-1000",
+            "date": "2027-06-07",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-06-14-1000",
+            "date": "2027-06-14",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-06-21-1000",
+            "date": "2027-06-21",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-06-28-1000",
+            "date": "2027-06-28",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-07-05-1000",
+            "date": "2027-07-05",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-07-12-1000",
+            "date": "2027-07-12",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-07-19-1000",
+            "date": "2027-07-19",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-07-26-1000",
+            "date": "2027-07-26",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-08-02-1000",
+            "date": "2027-08-02",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-08-09-1000",
+            "date": "2027-08-09",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-08-16-1000",
+            "date": "2027-08-16",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-08-23-1000",
+            "date": "2027-08-23",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-08-30-1000",
+            "date": "2027-08-30",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-09-06-1000",
+            "date": "2027-09-06",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "activity-e6f28dc301076340953b-2027-09-13-1000",
+            "date": "2027-09-13",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-e6f28dc301076340953b",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    }
+  ]
+}

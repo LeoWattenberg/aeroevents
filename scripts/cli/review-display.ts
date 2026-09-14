@@ -93,11 +93,12 @@ export function formatReviewCandidate(
   ].join("\n");
 }
 
-export type ReviewDecision = "approve" | "reject";
+export type ReviewDecision = "approve" | "reject" | "skip";
 
 export function parseReviewDecision(answer: string): ReviewDecision | undefined {
   const normalized = answer.trim().toLowerCase();
   if (["y", "yes", "j", "ja"].includes(normalized)) return "approve";
   if (["n", "no", "nej"].includes(normalized)) return "reject";
+  if (["s", "skip", "spring", "spring over"].includes(normalized)) return "skip";
   return undefined;
 }

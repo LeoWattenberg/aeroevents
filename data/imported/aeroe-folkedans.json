@@ -1,0 +1,822 @@
+{
+  "sourceId": "aeroe-folkedans",
+  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "events": [
+    {
+      "id": "aeroe-folkedans-6a93f65a93765",
+      "title": "Familiedans for hele familen",
+      "description": "",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f65a93765",
+            "date": "2026-09-22",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endDate": "2026-09-22",
+            "endTime": "16:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f65a93765",
+        "url": "https://6165826142842.site123.me/begivenheder/familiedans-for-hele-familen-4",
+        "verifiedAt": "2026-09-14T11:15:54.384Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f435e375d",
+      "title": "Familiedans for hele familen",
+      "description": "",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f435e375d",
+            "date": "2026-09-15",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endDate": "2026-09-15",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f435e375d",
+        "url": "https://6165826142842.site123.me/begivenheder/familiedans-for-hele-familen",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f629aa230",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f629aa230",
+            "date": "2026-09-15",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2026-09-15",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f629aa230",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f6f2dda41",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f6f2dda41",
+            "date": "2026-09-22",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2026-09-22",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f6f2dda41",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-2",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f444e846f",
+      "title": "Familiedans for hele familen",
+      "description": "",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f444e846f",
+            "date": "2026-09-29",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endDate": "2026-09-29",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f444e846f",
+        "url": "https://6165826142842.site123.me/begivenheder/familiedans-for-hele-familen-2",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f6f6aa83b",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f6f6aa83b",
+            "date": "2026-09-29",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2026-09-29",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f6f6aa83b",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-1",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f44263bdc",
+      "title": "Familiedans for hele familen",
+      "description": "",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f44263bdc",
+            "date": "2026-10-06",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endDate": "2026-10-06",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f44263bdc",
+        "url": "https://6165826142842.site123.me/begivenheder/familiedans-for-hele-familen-3",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f6fa13d62",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f6fa13d62",
+            "date": "2026-10-06",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2026-10-06",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f6fa13d62",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-3",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f6fc88d34",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f6fc88d34",
+            "date": "2026-10-20",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2026-10-20",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f6fc88d34",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-4",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f6ff11a3d",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f6ff11a3d",
+            "date": "2026-10-27",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2026-10-27",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f6ff11a3d",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-5",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f7015c40b",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f7015c40b",
+            "date": "2026-11-03",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2026-11-03",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f7015c40b",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-6",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f7039319c",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f7039319c",
+            "date": "2026-11-10",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2026-11-10",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f7039319c",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-7",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f705dc914",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f705dc914",
+            "date": "2026-11-17",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2026-11-17",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f705dc914",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-8",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93f8d42f27d",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93f8d42f27d",
+            "date": "2026-11-24",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2026-11-24",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93f8d42f27d",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-9",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93fc094cd3b",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93fc094cd3b",
+            "date": "2027-01-05",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2027-01-05",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93fc094cd3b",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-10",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93fc418b6cd",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93fc418b6cd",
+            "date": "2027-01-12",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2027-01-12",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93fc418b6cd",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-11",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93fc6a3a4d8",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93fc6a3a4d8",
+            "date": "2027-01-19",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2027-01-19",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93fc6a3a4d8",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-12",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93fca416785",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93fca416785",
+            "date": "2027-01-26",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2027-01-26",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93fca416785",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-13",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93fccc445c9",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93fccc445c9",
+            "date": "2027-02-02",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2027-02-02",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93fccc445c9",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-14",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a93fd552900f",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a93fd552900f",
+            "date": "2027-02-09",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2027-02-09",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a93fd552900f",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-15",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a94030ac34ab",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a94030ac34ab",
+            "date": "2027-02-23",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2027-02-23",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a94030ac34ab",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-16",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a940334c5eb1",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a940334c5eb1",
+            "date": "2027-03-02",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2027-03-02",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a940334c5eb1",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-17",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a940358e1c1b",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a940358e1c1b",
+            "date": "2027-03-09",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2027-03-09",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a940358e1c1b",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-18",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-6a94038127231",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkedans-6a94038127231",
+            "date": "2027-03-16",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endDate": "2027-03-16",
+            "endTime": "20:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "6a94038127231",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne-19",
+        "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    }
+  ]
+}
