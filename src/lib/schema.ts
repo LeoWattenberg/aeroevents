@@ -219,6 +219,29 @@ export const eventOverrideSchema = z.object({
   }),
 });
 
+export const deduplicationSchema = z
+  .object({
+    canonicalEventId: id,
+    duplicateEventIds: z.array(id).min(1),
+    reason: z.string().min(1).max(500).optional(),
+  })
+  .superRefine((value, context) => {
+    if (value.duplicateEventIds.includes(value.canonicalEventId)) {
+      context.addIssue({
+        code: "custom",
+        path: ["duplicateEventIds"],
+        message: "Den kanoniske event kan ikke samtidig være en dublet",
+      });
+    }
+    if (new Set(value.duplicateEventIds).size !== value.duplicateEventIds.length) {
+      context.addIssue({
+        code: "custom",
+        path: ["duplicateEventIds"],
+        message: "Dublet-id'er skal være unikke",
+      });
+    }
+  });
+
 export const importedSnapshotSchema = z.object({
   sourceId: id,
   verifiedAt: instant,
@@ -263,6 +286,7 @@ export type EventDate = z.infer<typeof eventDateSchema>;
 export type Schedule = z.infer<typeof scheduleSchema>;
 export type EventRecord = z.infer<typeof eventSchema>;
 export type EventOverride = z.infer<typeof eventOverrideSchema>;
+export type Deduplication = z.infer<typeof deduplicationSchema>;
 export type ImportedSnapshot = z.infer<typeof importedSnapshotSchema>;
 export type Occurrence = z.infer<typeof occurrenceSchema>;
 export type BuildMetadata = z.infer<typeof buildMetadataSchema>;

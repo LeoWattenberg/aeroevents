@@ -9,6 +9,7 @@ export interface CliPaths {
   manualEvents: string;
   importedEvents: string;
   overrides: string;
+  deduplications: string;
   sourceStatus: string;
   reviewPending: string;
   reviewApproved: string;
@@ -60,6 +61,7 @@ export function getPaths(): CliPaths {
     manualEvents: resolve(repo, "data/manual/events"),
     importedEvents: resolve(repo, "data/imported"),
     overrides: resolve(repo, "data/overrides"),
+    deduplications: resolve(repo, "data/deduplications.yaml"),
     sourceStatus: resolve(repo, "data/source-status.json"),
     reviewPending: resolve(state, "review/pending"),
     reviewApproved: resolve(state, "review/approved"),

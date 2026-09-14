@@ -25,6 +25,7 @@ async function paths(): Promise<CliPaths> {
     manualEvents: join(root, "repo/data/manual/events"),
     importedEvents: join(root, "repo/data/imported"),
     overrides: join(root, "repo/data/overrides"),
+    deduplications: join(root, "repo/data/deduplications.yaml"),
     sourceStatus: join(root, "repo/data/source-status.json"),
     reviewPending: join(state, "review/pending"),
     reviewApproved: join(state, "review/approved"),

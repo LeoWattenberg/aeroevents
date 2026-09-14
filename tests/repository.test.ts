@@ -86,6 +86,57 @@ describe("repository pipeline", () => {
     expect(first.events[0]?.source.externalId).toBe("42");
   });
 
+  it("reversibly suppresses registered duplicates while retaining their source records", async () => {
+    const root = await fixtureRoot();
+    const duplicate = {
+      ...importedEvent,
+      id: "manual-copy",
+      title: "Kopi af oprindelig titel",
+      source: { sourceId: "manual" },
+    };
+    await fs.writeFile(
+      path.join(root, "data/imported/trusted.json"),
+      JSON.stringify({ sourceId: "trusted", verifiedAt: "2026-09-13T12:00:00Z", events: [importedEvent] }),
+    );
+    await fs.writeFile(path.join(root, "data/manual/events/manual-copy.yaml"), toYaml(duplicate));
+    await fs.writeFile(
+      path.join(root, "data/deduplications.yaml"),
+      toYaml([{ canonicalEventId: "trusted-42", duplicateEventIds: ["manual-copy"] }]),
+    );
+
+    const repository = await loadRepository(root);
+    expect(repository.events.map((event) => event.id)).toEqual(["trusted-42"]);
+    expect(repository.suppressedEvents.map((event) => event.id)).toEqual(["manual-copy"]);
+    expect(repository.deduplications).toEqual([
+      { canonicalEventId: "trusted-42", duplicateEventIds: ["manual-copy"] },
+    ]);
+  });
+
+  it("keeps a suppression tombstone if a duplicate temporarily leaves its source snapshot", async () => {
+    const root = await fixtureRoot();
+    await fs.writeFile(
+      path.join(root, "data/imported/trusted.json"),
+      JSON.stringify({ sourceId: "trusted", verifiedAt: "2026-09-13T12:00:00Z", events: [importedEvent] }),
+    );
+    await fs.writeFile(
+      path.join(root, "data/deduplications.yaml"),
+      toYaml([{ canonicalEventId: "trusted-42", duplicateEventIds: ["missing"] }]),
+    );
+    const repository = await loadRepository(root);
+    expect(repository.events).toHaveLength(1);
+    expect(repository.suppressedEvents).toEqual([]);
+    expect(repository.deduplications[0]?.duplicateEventIds).toEqual(["missing"]);
+  });
+
+  it("rejects a deduplication whose canonical event is missing", async () => {
+    const root = await fixtureRoot();
+    await fs.writeFile(
+      path.join(root, "data/deduplications.yaml"),
+      toYaml([{ canonicalEventId: "missing", duplicateEventIds: ["trusted-42"] }]),
+    );
+    await expect(loadRepository(root)).rejects.toThrow("ukendt kanonisk event: missing");
+  });
+
   it("publishes only approved repository data and never reads the private state directory", async () => {
     const root = await fixtureRoot();
     await fs.writeFile(

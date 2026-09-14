@@ -5,6 +5,7 @@ import { parse as parseYaml } from "yaml";
 import {
   buildMetadataSchema,
   categorySchema,
+  deduplicationSchema,
   eventOverrideSchema,
   eventSchema,
   importedSnapshotSchema,
@@ -12,6 +13,7 @@ import {
   sourceDefinitionSchema,
   type BuildMetadata,
   type Category,
+  type Deduplication,
   type EventOverride,
   type EventRecord,
   type ImportedSnapshot,
@@ -27,8 +29,10 @@ export interface RepositoryData {
   organizers: Organizer[];
   sources: SourceDefinition[];
   events: EventRecord[];
+  suppressedEvents: EventRecord[];
   snapshots: ImportedSnapshot[];
   overrides: EventOverride[];
+  deduplications: Deduplication[];
 }
 
 export interface PublicData extends RepositoryData {
@@ -40,6 +44,15 @@ export interface PublicData extends RepositoryData {
 async function readStructuredFile(file: string): Promise<unknown> {
   const source = await fs.readFile(file, "utf8");
   return file.endsWith(".json") ? JSON.parse(source) : parseYaml(source);
+}
+
+async function readOptionalStructuredFile(file: string, fallback: unknown): Promise<unknown> {
+  try {
+    return await readStructuredFile(file);
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") return fallback;
+    throw error;
+  }
 }
 
 async function existingFiles(directory: string, extensions: string[]): Promise<string[]> {
@@ -109,10 +122,19 @@ function assertUnique<T>(items: T[], label: string, getId: (item: T) => string):
 
 export async function loadRepository(root = process.cwd()): Promise<RepositoryData> {
   const dataRoot = path.join(root, "data");
-  const [rawCategories, rawOrganizers, rawSources, manualFiles, overrideFiles, importedFiles] = await Promise.all([
+  const [
+    rawCategories,
+    rawOrganizers,
+    rawSources,
+    rawDeduplications,
+    manualFiles,
+    overrideFiles,
+    importedFiles,
+  ] = await Promise.all([
     readStructuredFile(path.join(dataRoot, "categories.yaml")),
     readStructuredFile(path.join(dataRoot, "organizers.yaml")),
     readStructuredFile(path.join(dataRoot, "sources.yaml")),
+    readOptionalStructuredFile(path.join(dataRoot, "deduplications.yaml"), []),
     existingFiles(path.join(dataRoot, "manual", "events"), [".yaml", ".yml"]),
     existingFiles(path.join(dataRoot, "overrides"), [".yaml", ".yml"]),
     existingFiles(path.join(dataRoot, "imported"), [".json"]),
@@ -121,6 +143,7 @@ export async function loadRepository(root = process.cwd()): Promise<RepositoryDa
   const categories = categorySchema.array().parse(rawCategories);
   const organizers = organizerSchema.array().parse(rawOrganizers);
   const sources = sourceDefinitionSchema.array().parse(rawSources);
+  const deduplications = deduplicationSchema.array().parse(rawDeduplications);
   const manualEvents = await parseMany(manualFiles, eventSchema);
   const overrides = await parseOverrides(overrideFiles);
   const snapshots = await parseMany(importedFiles, importedSnapshotSchema);
@@ -150,6 +173,7 @@ export async function loadRepository(root = process.cwd()): Promise<RepositoryDa
   assertUnique(organizers, "arrangør-id", (item) => item.id);
   assertUnique(sources, "kilde-id", (item) => item.id);
   assertUnique(snapshots, "kildesnapshot", (item) => item.sourceId);
+  assertUnique(deduplications, "kanonisk deduplikerings-id", (item) => item.canonicalEventId);
 
   const byId = new Map<string, EventRecord>();
   for (const event of [...manualEvents, ...importedEvents]) {
@@ -188,7 +212,38 @@ export async function loadRepository(root = process.cwd()): Promise<RepositoryDa
     }
   }
 
-  return { categories, organizers, sources, events: [...byId.values()], snapshots, overrides };
+
+  const canonicalEventIds = new Set(deduplications.map((item) => item.canonicalEventId));
+  const suppressedEventIds = new Set<string>();
+  for (const deduplication of deduplications) {
+    if (!byId.has(deduplication.canonicalEventId)) {
+      throw new Error(`Deduplikering peger på ukendt kanonisk event: ${deduplication.canonicalEventId}`);
+    }
+    for (const duplicateEventId of deduplication.duplicateEventIds) {
+      if (canonicalEventIds.has(duplicateEventId)) {
+        throw new Error(`Event kan ikke både være kanonisk og dublet: ${duplicateEventId}`);
+      }
+      if (suppressedEventIds.has(duplicateEventId)) {
+        throw new Error(`Event er registreret som dublet flere gange: ${duplicateEventId}`);
+      }
+      suppressedEventIds.add(duplicateEventId);
+    }
+  }
+
+  const allEvents = [...byId.values()];
+  const events = allEvents.filter((event) => !suppressedEventIds.has(event.id));
+  const suppressedEvents = allEvents.filter((event) => suppressedEventIds.has(event.id));
+
+  return {
+    categories,
+    organizers,
+    sources,
+    events,
+    suppressedEvents,
+    snapshots,
+    overrides,
+    deduplications,
+  };
 }
 
 export async function resolvePublicData(

@@ -54,7 +54,7 @@ import {
   type CandidateInput,
   type ReviewCandidate,
 } from "./review-store.js";
-import type { EventRecord } from "../../src/lib/schema.js";
+import type { Deduplication, EventRecord } from "../../src/lib/schema.js";
 import { formatReviewCandidate, parseReviewDecision } from "./review-display.js";
 import {
   DEFAULT_TIME_TOLERANCE_MINUTES,
@@ -246,9 +246,12 @@ async function collectCommand(args: string[]): Promise<void> {
 
   // Calculate duplicates over the full batch so every side of a new A/B match
   // is review-routed, independent of collector result order.
+  const suppressedEventIds = new Set(
+    existing.repository.deduplications.flatMap((item) => item.duplicateEventIds),
+  );
   const duplicateReasons = crossSourceDuplicateReasons(
     existing.repository.events,
-    normalizedCandidates,
+    normalizedCandidates.filter((event) => !suppressedEventIds.has(event.id)),
   );
   const importedEventIds = new Set(
     existing.repository.snapshots.flatMap((snapshot) => snapshot.events.map((event) => event.id)),
@@ -318,6 +321,14 @@ async function collectCommand(args: string[]): Promise<void> {
       }
 
       const identity = eventSourceIdentity(event);
+      if (suppressedEventIds.has(event.id)) {
+        // Keep refreshing the source record for auditability, but a resolved
+        // duplicate must neither re-enter review nor demote its canonical peer.
+        const suppressedEvent = validateEvent({ ...event, publication: "draft" });
+        observedEvents.push(suppressedEvent);
+        await clearPendingCandidate(paths, draftCandidateInput(draft, suppressedEvent, []));
+        continue;
+      }
       const editorOwned = editorOwnedIdentities.has(identity);
       const candidateInput = draftCandidateInput(draft, event, []);
       const reviewDecision = await getReviewDecision(paths, candidateInput);
@@ -693,7 +704,7 @@ async function validateCommand(): Promise<void> {
   const { repository, publicData } = await validateAllPublicData(paths.repo);
   console.log(
     `Valideret: ${repository.events.length} events, ${publicData.publicEvents.length} publicerede, ` +
-      `${publicData.occurrences.length} forekomster.`,
+      `${publicData.occurrences.length} forekomster, ${repository.suppressedEvents.length} undertrykte dubletter.`,
   );
   for (const warning of publicData.metadata.warnings) console.warn(`Advarsel: ${warning}`);
 }
@@ -770,9 +781,150 @@ async function duplicatesCommand(args: string[]): Promise<void> {
       }
     }
     for (const warning of expansion.warnings) console.warn(`Advarsel: ${warning}`);
+    console.log(
+      "\nLøs et fund: npm run events -- deduplicate <kanonisk-event-id> <dublet-event-id ...>",
+    );
   }
 
   if (matches.length && booleanOption(options, "fail-on-found")) process.exitCode = 1;
+}
+
+async function confirmRegistryChange(question: string, assumeYes: boolean): Promise<boolean> {
+  if (assumeYes) return true;
+  if (!stdin.isTTY || !stdout.isTTY) {
+    throw new Error("Bekræftelse kræver en terminal; kontrollér forhåndsvisningen og brug --yes til automatisering.");
+  }
+  const prompt = createInterface({ input: stdin, output: stdout });
+  try {
+    const answer = (await prompt.question(`${question} (j/N): `)).trim().toLocaleLowerCase("da-DK");
+    return answer === "j" || answer === "ja" || answer === "y" || answer === "yes";
+  } finally {
+    prompt.close();
+  }
+}
+
+async function persistDeduplications(paths: CliPaths, deduplications: Deduplication[]): Promise<void> {
+  const hadFile = await exists(paths.deduplications);
+  const previous = hadFile ? await readFile(paths.deduplications, "utf8") : undefined;
+  await atomicWrite(paths.deduplications, stringifyYaml(deduplications, { lineWidth: 100 }), 0o644);
+  try {
+    await validateAllPublicData(paths.repo);
+  } catch (error) {
+    if (previous === undefined) await unlink(paths.deduplications);
+    else await atomicWrite(paths.deduplications, previous, 0o644);
+    throw error;
+  }
+}
+
+async function deduplicateCommand(args: string[]): Promise<void> {
+  const paths = getPaths();
+  const options = parseOptions(args);
+  const supported = new Set(["reason", "yes"]);
+  const unknown = [...options.values.keys()].filter((name) => !supported.has(name));
+  if (unknown.length) throw new Error(`Ukendt flag: --${unknown.join(", --")}`);
+
+  const repository = await validateAllPublicData(paths.repo).then((result) => result.repository);
+  const allEvents = [...repository.events, ...repository.suppressedEvents];
+  const eventById = new Map(allEvents.map((event) => [event.id, event]));
+  const [first, ...rest] = options.positional;
+  const assumeYes = booleanOption(options, "yes");
+
+  if (first === "restore") {
+    if (rest.length !== 1) throw new Error("deduplicate restore kræver præcis ét dublet-event-id.");
+    if (stringOption(options, "reason")) throw new Error("--reason kan ikke bruges sammen med restore.");
+    const duplicateEventId = rest[0]!;
+    const group = repository.deduplications.find((item) => item.duplicateEventIds.includes(duplicateEventId));
+    if (!group) throw new Error(`${duplicateEventId} er ikke registreret som dublet.`);
+    const duplicate = eventById.get(duplicateEventId);
+    const canonical = eventById.get(group.canonicalEventId)!;
+    console.log(
+      duplicate
+        ? `Gendan: ${duplicate.id} — ${duplicate.title}`
+        : `Gendan: ${duplicateEventId} (findes ikke i det aktuelle kildesnapshot)`,
+    );
+    console.log(`Nuværende kanonisk event: ${canonical.id} — ${canonical.title}`);
+    if (!(await confirmRegistryChange("Gendan eventen i kalenderen?", assumeYes))) {
+      console.log("Ingen ændringer foretaget.");
+      return;
+    }
+    const updated = repository.deduplications
+      .map((item) => item === group
+        ? { ...item, duplicateEventIds: item.duplicateEventIds.filter((id) => id !== duplicateEventId) }
+        : item)
+      .filter((item) => item.duplicateEventIds.length > 0);
+    await persistDeduplications(paths, updated);
+    console.log(`Gendannede ${duplicateEventId}. Kildedata blev ikke ændret.`);
+    return;
+  }
+
+  if (!first || rest.length === 0) {
+    throw new Error("deduplicate kræver et kanonisk event-id og mindst ét dublet-event-id.");
+  }
+  const canonical = eventById.get(first);
+  if (!canonical) throw new Error(`Ukendt kanonisk event: ${first}`);
+  const duplicateIds = [...new Set(rest)];
+  if (duplicateIds.includes(first)) throw new Error("Den kanoniske event kan ikke undertrykkes som dublet.");
+  const duplicates = duplicateIds.map((id) => {
+    const event = eventById.get(id);
+    if (!event) throw new Error(`Ukendt dublet-event: ${id}`);
+    return event;
+  });
+
+  const canonicalAsDuplicate = repository.deduplications.find((item) =>
+    item.duplicateEventIds.includes(canonical.id),
+  );
+  if (canonicalAsDuplicate) {
+    throw new Error(`${canonical.id} er allerede undertrykt under ${canonicalAsDuplicate.canonicalEventId}.`);
+  }
+  for (const duplicate of duplicates) {
+    const asCanonical = repository.deduplications.find((item) => item.canonicalEventId === duplicate.id);
+    if (asCanonical) throw new Error(`${duplicate.id} er allerede kanonisk for en deduplikeringsgruppe.`);
+    const existing = repository.deduplications.find((item) => item.duplicateEventIds.includes(duplicate.id));
+    if (existing && existing.canonicalEventId !== canonical.id) {
+      throw new Error(`${duplicate.id} er allerede undertrykt under ${existing.canonicalEventId}.`);
+    }
+  }
+
+  const newDuplicateIds = duplicateIds.filter((id) =>
+    !repository.deduplications.some((item) =>
+      item.canonicalEventId === canonical.id && item.duplicateEventIds.includes(id),
+    ),
+  );
+  if (!newDuplicateIds.length) {
+    console.log("Alle valgte events er allerede registreret under den kanoniske event.");
+    return;
+  }
+
+  console.log(`Behold: ${canonical.id} [${canonical.source.sourceId}] — ${canonical.title}`);
+  for (const duplicate of duplicates.filter((item) => newDuplicateIds.includes(item.id))) {
+    console.log(`Undertryk: ${duplicate.id} [${duplicate.source.sourceId}] — ${duplicate.title}`);
+  }
+  console.log("Kildedata slettes ikke; valget kan fortrydes med deduplicate restore.");
+  if (!(await confirmRegistryChange("Registrér deduplikeringen?", assumeYes))) {
+    console.log("Ingen ændringer foretaget.");
+    return;
+  }
+
+  const reason = stringOption(options, "reason");
+  const existingGroup = repository.deduplications.find((item) => item.canonicalEventId === canonical.id);
+  const updated = existingGroup
+    ? repository.deduplications.map((item) => item === existingGroup
+      ? {
+          ...item,
+          duplicateEventIds: [...item.duplicateEventIds, ...newDuplicateIds].sort(),
+          ...(reason ? { reason } : {}),
+        }
+      : item)
+    : [
+        ...repository.deduplications,
+        {
+          canonicalEventId: canonical.id,
+          duplicateEventIds: newDuplicateIds.sort(),
+          ...(reason ? { reason } : {}),
+        },
+      ].sort((left, right) => left.canonicalEventId.localeCompare(right.canonicalEventId, "da-DK"));
+  await persistDeduplications(paths, updated);
+  console.log(`Registrerede ${newDuplicateIds.length} dublet${newDuplicateIds.length === 1 ? "" : "ter"}.`);
 }
 
 async function run(
@@ -804,6 +956,7 @@ function isPublishablePath(path: string): boolean {
     path === "data/categories.yaml" ||
     path === "data/organizers.yaml" ||
     path === "data/sources.yaml" ||
+    path === "data/deduplications.yaml" ||
     path === "data/source-status.json" ||
     path.startsWith("data/manual/events/") ||
     path.startsWith("data/overrides/") ||
@@ -877,6 +1030,8 @@ Brug:
   npm run events -- validate
   npm run events -- duplicates [--from YYYY-MM-DD] [--to YYYY-MM-DD] [--threshold 0.60] [--minutes 30]
                               [--published-only] [--json] [--fail-on-found]
+  npm run events -- deduplicate <kanonisk-event-id> <dublet-event-id ...> [--reason tekst] [--yes]
+  npm run events -- deduplicate restore <dublet-event-id> [--yes]
   npm run events -- publish [--message "commit-besked"]
 `;
 
@@ -899,6 +1054,8 @@ export async function dispatch(argv: string[]): Promise<void> {
       return validateCommand();
     case "duplicates":
       return duplicatesCommand(args);
+    case "deduplicate":
+      return deduplicateCommand(args);
     case "publish":
       return publishCommand(args);
     case "help":

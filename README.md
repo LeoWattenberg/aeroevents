@@ -27,7 +27,7 @@ Browsertesten bygger også siden med `/aeroevents` som base path og kræver Chro
 
 ## Eventdata
 
-Manuelle events ligger som YAML i `data/manual/events/`. Importerede, publicerbare snapshots ligger som JSON i `data/imported/`, mens redaktionelle rettelser ligger i `data/overrides/`. Arrangører, kategorier og kilder har hver sit register direkte under `data/`.
+Manuelle events ligger som YAML i `data/manual/events/`. Importerede, publicerbare snapshots ligger som JSON i `data/imported/`, mens redaktionelle rettelser ligger i `data/overrides/`. Bekræftede dubletter registreres reversibelt i `data/deduplications.yaml`; kildedataene bevares, men dubletterne udelades fra kalenderen. Arrangører, kategorier og kilder har hver sit register direkte under `data/`.
 
 `npm run data:build` validerer alle filer, anvender rettelser og skriver de afledte filer i `data/generated/`. Den mappe er ignoreret af Git og bliver altid gendannet før et Astro-build.
 
@@ -66,6 +66,17 @@ og starttider inden for 30 minutter. Moderate titelligheder kræver desuden samm
 sted. Brug `npm run duplicates -- --json` til
 maskinlæsbar output og `--fail-on-found` i automatiske kontroller. Se alle flag med
 `npm run events -- help`.
+
+Når et fund er kontrolleret, beholdes den bedste post og de andre undertrykkes med:
+
+```sh
+npm run deduplicate -- <kanonisk-event-id> <dublet-event-id ...>
+```
+
+Kommandoen viser præcis, hvad der beholdes og undertrykkes, før den spørger om
+bekræftelse. Den sletter ikke filer, så en beslutning kan fortrydes med
+`npm run deduplicate -- restore <dublet-event-id>`. Brug kun `--yes`, når valget
+allerede er kontrolleret i en automatiseret arbejdsgang.
 
 `create` starter en terminaldialog eller indlæser en færdig eventfil. Nye manuelle events er kladder, medmindre `--publish` er angivet. `collect` publicerer kun fuldstændige resultater fra betroede kilder; tvivlsomme fund sendes til køen. `review` viser kandidaterne én ad gangen med tid, sted og kildelink; `y` godkender og tilføjer kandidaten, `n` afviser og arkiverer den privat, og `s` springer den over, så den forbliver i køen. Brug `review --json` til en ikke-interaktiv visning. En tom, delvis eller fejlet indsamling erstatter aldrig sidste fungerende snapshot.
 

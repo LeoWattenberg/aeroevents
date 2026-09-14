@@ -18,6 +18,7 @@
     "test:e2e": "playwright test",
     "data:build": "tsx scripts/build-data.ts",
     "data:validate": "tsx scripts/aeroevents.ts validate",
+    "deduplicate": "tsx scripts/aeroevents.ts deduplicate",
     "duplicates": "tsx scripts/aeroevents.ts duplicates",
     "events": "tsx scripts/aeroevents.ts"
   },
