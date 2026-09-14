@@ -1,0 +1,6 @@
+eventId: aeroe-bibliotek-10266
+set:
+  booking:
+    required: false
+    soldOut: true
+    url: https://place2book.com/da/sw2/sales/nl53pjmfl1
