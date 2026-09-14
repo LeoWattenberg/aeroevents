@@ -122,26 +122,36 @@ const candidateStatus = {
     </ul>
   </section>
 
-  <section class="source-section page-width" aria-labelledby="candidate-sources-heading">
-    <div class="section-heading wide-heading">
-      <p class="eyebrow">Næste kilder</p>
-      <h2 id="candidate-sources-heading">Undersøgt, men endnu ikke integreret</h2>
-      <p>
-        Disse kilder er fundet og teknisk undersøgt, men deres import er endnu ikke implementeret. Derfor har de
-        ingen registreret kontroltid og leverer endnu ingen arrangementer til kalenderen.
-      </p>
-    </div>
+  {researchedSources.length > 0 ? (
+    <section class="source-section page-width" aria-labelledby="candidate-sources-heading">
+      <div class="section-heading wide-heading">
+        <p class="eyebrow">Næste kilder</p>
+        <h2 id="candidate-sources-heading">Undersøgt, men endnu ikke integreret</h2>
+        <p>
+          Disse kilder er fundet og teknisk undersøgt, men deres import er endnu ikke implementeret. Derfor har de
+          ingen registreret kontroltid og leverer endnu ingen arrangementer til kalenderen.
+        </p>
+      </div>
 
-    <div class="candidate-source-list">
-      {researchedSources.map((source) => (
-        <article class="candidate-source" data-candidate-source-id={source.id}>
-          <p class="candidate-status">{candidateStatus[source.status]}</p>
-          <h3><a href={source.url}>{source.name} <span aria-hidden="true">↗</span></a></h3>
-          <p>{source.summary}</p>
-        </article>
-      ))}
-    </div>
-  </section>
+      <div class="candidate-source-list">
+        {researchedSources.map((source) => (
+          <article class="candidate-source" data-candidate-source-id={source.id}>
+            <p class="candidate-status">{candidateStatus[source.status]}</p>
+            <h3><a href={source.url}>{source.name} <span aria-hidden="true">↗</span></a></h3>
+            <p>{source.summary}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  ) : (
+    <section class="source-section page-width" aria-labelledby="candidate-sources-heading">
+      <div class="section-heading wide-heading">
+        <p class="eyebrow">Researchstatus</p>
+        <h2 id="candidate-sources-heading">Alle hidtil undersøgte kilder er integreret</h2>
+        <p>Nye fund bliver føjet til listen, når de er teknisk undersøgt.</p>
+      </div>
+    </section>
+  )}
 
   {hasManualSource && (
     <section class="manual-source page-width" aria-labelledby="manual-source-heading">

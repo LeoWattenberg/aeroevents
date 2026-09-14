@@ -15,6 +15,7 @@ import type {
 const definition = SOURCE_REGISTRY["aeroe-kirkeliv"];
 const COPENHAGEN = "Europe/Copenhagen";
 const MAX_PAGES = 100;
+const MAX_PAGINATION_PASSES = 3;
 const CHURCHDESK_ORIGIN = new URL(definition.url).origin;
 
 interface ChurchDeskItem {
@@ -251,46 +252,69 @@ export function churchDeskPageUrl(pageNumber: number): string {
 
 async function collect(context: CollectionContext): Promise<CollectionResult> {
   const retrievedAt = context.now.toISOString();
-  const collected: NormalizedEventDraft[] = [];
+  const collectedById = new Map<string, NormalizedEventDraft>();
   const warnings: string[] = [];
   const errors: string[] = [];
   let pagesFetched = 0;
   let expectedTotal: number | undefined;
   let totalPages: number | undefined;
+  let sawIdenticalOverlap = false;
 
   try {
-    for (let page = 1; page <= (totalPages ?? 1); page += 1) {
-      const html = await fetchText(context, churchDeskPageUrl(page), {
-        expectedOrigin: CHURCHDESK_ORIGIN,
-      });
-      pagesFetched += 1;
-      const parsed = parseChurchDeskPage(html, retrievedAt);
-      warnings.push(...parsed.warnings);
-      errors.push(...parsed.errors);
-      if (!parsed.payload) break;
+    pagination: for (let pass = 1; pass <= MAX_PAGINATION_PASSES; pass += 1) {
+      for (let page = 1; page <= (totalPages ?? 1); page += 1) {
+        const html = await fetchText(context, churchDeskPageUrl(page), {
+          expectedOrigin: CHURCHDESK_ORIGIN,
+        });
+        pagesFetched += 1;
+        const parsed = parseChurchDeskPage(html, retrievedAt);
+        warnings.push(...parsed.warnings);
+        errors.push(...parsed.errors);
+        if (!parsed.payload) break pagination;
 
-      if (parsed.payload.pageNumber !== page) {
-        errors.push(
-          `ChurchDesk returnerede side ${parsed.payload.pageNumber}, forventede side ${page}`,
-        );
-        break;
-      }
-      if (page === 1) {
-        expectedTotal = parsed.payload.total;
-        totalPages = parsed.payload.totalPages;
-        if (expectedTotal === 0 || parsed.candidates.length === 0) {
-          errors.push("ChurchDesk returnerede ingen begivenheder; snapshot beholdes");
-          break;
+        if (parsed.payload.pageNumber !== page) {
+          errors.push(
+            `ChurchDesk returnerede side ${parsed.payload.pageNumber}, forventede side ${page}`,
+          );
+          break pagination;
         }
-      } else if (
-        parsed.payload.total !== expectedTotal ||
-        parsed.payload.totalPages !== totalPages
-      ) {
-        errors.push("ChurchDesk-pagination ændrede sig under indsamlingen");
+        if (expectedTotal === undefined) {
+          expectedTotal = parsed.payload.total;
+          totalPages = parsed.payload.totalPages;
+        } else if (
+          parsed.payload.total !== expectedTotal ||
+          parsed.payload.totalPages !== totalPages
+        ) {
+          errors.push("ChurchDesk-pagination ændrede sig under indsamlingen");
+          break pagination;
+        }
+        if (page === 1 && (expectedTotal === 0 || parsed.candidates.length === 0)) {
+          errors.push("ChurchDesk returnerede ingen begivenheder; snapshot beholdes");
+          break pagination;
+        }
+
+        for (const candidate of parsed.candidates) {
+          const existing = collectedById.get(candidate.sourceEventId);
+          if (existing && JSON.stringify(existing) !== JSON.stringify(candidate)) {
+            errors.push(
+              `ChurchDesk returnerede modstridende data for begivenhed ${candidate.sourceEventId}`,
+            );
+            break pagination;
+          }
+          if (existing) sawIdenticalOverlap = true;
+          else collectedById.set(candidate.sourceEventId, candidate);
+        }
+        if (parsed.errors.length > 0) break pagination;
+      }
+
+      if (expectedTotal !== undefined && collectedById.size === expectedTotal) break;
+      if (pass < MAX_PAGINATION_PASSES) {
+        warnings.push(
+          `ChurchDesk-pagination overlappede; genlæser siderne for at finde alle ${expectedTotal ?? "oplyste"} begivenheder`,
+        );
+      } else {
         break;
       }
-      collected.push(...parsed.candidates);
-      if (parsed.errors.length > 0) break;
     }
   } catch (error) {
     const message = errorMessage(error);
@@ -308,9 +332,9 @@ async function collect(context: CollectionContext): Promise<CollectionResult> {
     errors.push(message);
   }
 
-  const ids = collected.map((candidate) => candidate.sourceEventId);
-  if (new Set(ids).size !== ids.length) {
-    errors.push("ChurchDesk returnerede samme begivenheds-id flere gange");
+  const collected = [...collectedById.values()];
+  if (sawIdenticalOverlap && collected.length === expectedTotal) {
+    warnings.push("ChurchDesk returnerede overlappende sider; identiske event-ID'er blev samlet sikkert");
   }
   if (expectedTotal !== undefined && collected.length !== expectedTotal) {
     errors.push(

@@ -1,0 +1,9 @@
+[
+  {
+    "pk": 111001,
+    "is_deleted": false,
+    "is_expired": false,
+    "is_sold_out": true,
+    "start_date": "2026-11-06T20:00+01:00"
+  }
+]

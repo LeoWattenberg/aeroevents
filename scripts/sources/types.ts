@@ -3,19 +3,40 @@ export const SOURCE_IDS = [
   "aeroe-kirkeliv",
   "aeroe-bibliotek",
   "facebook",
+  "rise-sif",
+  "dn-aeroe",
+  "ritual-momoyoga",
+  "aeroe-kommune-events",
+  "aeldresagen-aeroe",
+  "aeroe-folkedans",
+  "viften",
+  "aeroe-folkeuniversitet",
+  "motorfabrikken",
+  "ommel-bk",
+  "marnav",
+  "campus-aeroe",
+  "ommel-samvirke",
+  "kunsthoejskolen-aeroe",
+  "soeby-lokalraad",
+  "aeroe-hotel-events",
+  "aeroeskoebing-grand-prix",
+  "aeroe-klatreklub",
+  "aeroe-tennisklub",
+  "parkinsonforeningen-aeroe",
 ] as const;
 
 export type SourceId = (typeof SOURCE_IDS)[number];
 
 export type PublicationDisposition = "trusted" | "review";
-export type EventStatus = "scheduled" | "cancelled";
-export type Attendance = "public" | "members" | "unknown";
+export type EventStatus = "scheduled" | "cancelled" | "postponed";
+export type Attendance = "public" | "members" | "registration" | "unknown";
 
 export interface EventLocationDraft {
   name?: string;
   address?: string;
   postalCode?: string;
   city?: string;
+  url?: string;
 }
 
 /**
@@ -31,6 +52,8 @@ export interface ExplicitOccurrenceDraft {
   endTime?: string;
   allDay: boolean;
   timeUnknown: boolean;
+  status?: EventStatus;
+  location?: EventLocationDraft;
 }
 
 export interface SourceProvenance {
@@ -58,8 +81,11 @@ export interface NormalizedEventDraft {
   status: EventStatus;
   availability?: "available" | "sold-out" | "unknown";
   attendance: Attendance;
+  attendanceDetails?: string;
   price?: string;
   bookingUrl?: string;
+  bookingRequired?: boolean;
+  bookingDetails?: string;
   publication: PublicationDisposition;
   reviewReasons: string[];
   provenance: SourceProvenance;

@@ -31,3 +31,154 @@
   publication: review
   enabled: true
   notes: Crawles lokalt med browser; alle fund kræver redaktionel godkendelse.
+- id: rise-sif
+  name: Rise Skytte- & Idrætsforenings aktiviteter
+  url: https://www.rise-sif.dk/
+  organizerId: rise-sif
+  categoryIds: [sport-motion]
+  publication: automatic
+  enabled: true
+  notes: Kun allowlistede, navngivne hold og foreningsarrangementer fra de offentlige Conventus-ressourcer.
+- id: dn-aeroe
+  name: Danmarks Naturfredningsforenings arrangementer på Ærø
+  url: https://arrangementer.dn.dk/
+  organizerId: dn-aeroe
+  categoryIds: [natur]
+  publication: automatic
+  enabled: true
+- id: ritual-momoyoga
+  name: Rituals gruppehold hos Momoyoga
+  url: https://www.momoyoga.com/nurtureaeroe/schedule
+  organizerId: ritual-aeroe
+  categoryIds: [sport-motion]
+  publication: automatic
+  enabled: true
+  notes: Kun eksplicit allowlistede gruppehold; individuelle behandlingstider udelades.
+- id: aeroe-kommune-events
+  name: Ærø Kommune – Det sker
+  url: https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker
+  organizerId: aeroe-kommune
+  categoryIds: [politik-kommune]
+  publication: automatic
+  enabled: true
+- id: aeldresagen-aeroe
+  name: Ældre Sagen Ærøs aktiviteter og kurser
+  url: https://www.aeldresagen.dk/lokalafdelinger/aeroe/aktiviteter-og-kurser?sortering=dato
+  organizerId: aeldresagen-aeroe
+  categoryIds: [forening-faellesskab]
+  publication: automatic
+  enabled: true
+- id: aeroe-folkedans
+  name: Ærø Folkedanserforenings begivenheder
+  url: https://6165826142842.site123.me/
+  organizerId: aeroe-folkedans
+  categoryIds: [sport-motion, forening-faellesskab]
+  publication: automatic
+  enabled: true
+- id: viften
+  name: Viftens ture og begivenheder
+  url: https://www.viften.net/ture
+  organizerId: viften
+  categoryIds: [boern-familie]
+  publication: automatic
+  enabled: true
+- id: aeroe-folkeuniversitet
+  name: Ærø Folkeuniversitets foredrag
+  url: https://fuko.dk/komite/aeroe-folkeuniversitet/
+  organizerId: aeroe-folkeuniversitet
+  categoryIds: [musik-kultur]
+  publication: automatic
+  enabled: true
+- id: motorfabrikken
+  name: Motorfabrikken Marstals kulturkalender
+  url: https://www.motorfabrikkenmarstal.com/kultur
+  organizerId: motorfabrikken
+  categoryIds: [musik-kultur]
+  publication: automatic
+  enabled: true
+- id: ommel-bk
+  name: Ommel BKs hjemmekampe hos DBU Fyn
+  url: https://www.dbufyn.dk/resultater/klub/1464/kampprogram
+  organizerId: ommel-bk
+  categoryIds: [sport-motion]
+  publication: automatic
+  enabled: true
+- id: marnav
+  name: Marstal Navigationsskoles offentlige arrangementer
+  url: https://marnav.nemtilmeld.dk/
+  organizerId: marnav
+  categoryIds: [andet]
+  publication: automatic
+  enabled: true
+  notes: Kun offentlige åbent-hus-arrangementer importeres automatisk.
+- id: campus-aeroe
+  name: Campus Ærøs arrangementer
+  url: https://campusaeroe.dk/events/
+  organizerId: campus-aeroe
+  categoryIds: []
+  publication: review
+  enabled: true
+  notes: Kun poster med en dokumenteret offentlig målgruppe indsamles; alle fund kræver gennemsyn.
+- id: ommel-samvirke
+  name: Ommel Samvirkes aktivitetskalender
+  url: https://www.ommelsamvirke.dk/aktivitetskalender
+  organizerId: ommel-samvirke
+  categoryIds: [forening-faellesskab]
+  publication: review
+  enabled: true
+  notes: Den offentlige webkalender læses i en browser, fordi kalenderens ICS-feed er defekt. Alle fund kræver gennemsyn.
+- id: kunsthoejskolen-aeroe
+  name: Kunsthøjskolen på Ærøs korte kurser
+  url: https://www.kunstaeroe.dk/for-og-efter%C3%A5rskurser
+  organizerId: kunsthoejskolen-aeroe
+  categoryIds: [musik-kultur]
+  publication: automatic
+  enabled: true
+- id: soeby-lokalraad
+  name: Søby Lokalråds arrangementer
+  url: https://soebylokalraad.dk/11/en/node/12
+  organizerId: soeby-lokalraad
+  categoryIds: [forening-faellesskab]
+  publication: review
+  enabled: true
+  notes: Flere arrangementer udledes af samme side og får sammensatte identiteter; alle fund kræver gennemsyn.
+- id: aeroe-hotel-events
+  name: Ærø Hotels arrangementer
+  url: https://www.aeroehotel.dk/event-list
+  organizerId: aeroe-hotel
+  categoryIds: [musik-kultur]
+  publication: review
+  enabled: true
+  notes: Dubletter og mulige opholdsdatoer kontrolleres før publicering.
+- id: aeroeskoebing-grand-prix
+  name: Ærøskøbing Grand Prix
+  url: https://www.xn--rgrandprix-c6a1t.dk/
+  organizerId: aeroeskoebing-grand-prix
+  categoryIds: [boern-familie, sport-motion]
+  publication: review
+  enabled: true
+  notes: Aktivitetsdagene får en årlig sammensat identitet og kræver gennemsyn.
+- id: aeroe-klatreklub
+  name: Ærø Klatreklubs faste aktiviteter
+  url: https://aekk.klub-modul.dk/default.aspx
+  organizerId: aeroe-klatreklub
+  categoryIds: [sport-motion]
+  publication: review
+  enabled: true
+  notes: Siden oplyser ikke sikre sæson- eller feriegrænser. Forekomster foreslås kun til redaktionelt gennemsyn med denne usikkerhed markeret.
+- id: aeroe-tennisklub
+  name: Ærø Tennisklubs faste aktiviteter
+  url: https://aeroetennisklub.dk/faste-aktiviteter/
+  organizerId: aeroe-tennisklub
+  categoryIds: [sport-motion]
+  publication: review
+  enabled: true
+  notes: Siden oplyser ikke sæsonens slutdato. Forekomster foreslås kun til redaktionelt gennemsyn med denne usikkerhed markeret.
+- id: parkinsonforeningen-aeroe
+  name: Parkinsonforeningen – Klub Ærø
+  url: https://parkinson.dk/kredse/2823-fyn/klubber/
+  organizerId: parkinsonforeningen-aeroe
+  categoryIds: [forening-faellesskab]
+  publication: review
+  enabled: true
+  notes: Den månedlige møderegel importeres som medlemsaktivitet og kræver gennemsyn for undtagelser.

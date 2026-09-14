@@ -1,0 +1,11 @@
+{
+  "currentPage": 1,
+  "totalPages": 2,
+  "totalItems": 2,
+  "itemsPerPage": 1,
+  "items": [
+    { "id": 7495, "title": "Strandrensning ved Voderup" }
+  ],
+  "hasPreviousPage": true,
+  "hasNextPage": true
+}

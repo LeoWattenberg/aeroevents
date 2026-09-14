@@ -1,0 +1,14 @@
+[
+  {
+    "groups": [],
+    "is_deleted": false,
+    "is_expired": false,
+    "is_sold_out": true,
+    "pk": 111001,
+    "price_range": { "min": 150, "max": 150 },
+    "start_date": "2026-11-06T20:00+01:00",
+    "end_date": null,
+    "title": "Sys Bjerre Intimkoncert",
+    "title_url": "sys-bjerre-intimkoncert"
+  }
+]

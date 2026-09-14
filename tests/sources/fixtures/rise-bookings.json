@@ -1,0 +1,47 @@
+[
+  {
+    "resource": { "id": 247, "name": "Hal" },
+    "bookings": [
+      {
+        "id": 22108657,
+        "resource": { "id": 247, "name": "Hal" },
+        "category": { "id": 213, "name": "Gymnastik" },
+        "start": 1789628400000,
+        "end": 1789632000000,
+        "title": "Gymnastik - Glad og go' motion +50 26/27",
+        "serie": 738768,
+        "participants": [{ "name": "må aldrig gemmes" }]
+      },
+      {
+        "id": 22108658,
+        "resource": { "id": 247, "name": "Hal" },
+        "category": { "id": 213, "name": "Gymnastik" },
+        "start": 1790233200000,
+        "end": 1790236800000,
+        "title": "Gymnastik - Glad og go' motion +50 26/27",
+        "serie": 738768
+      },
+      {
+        "id": 999,
+        "resource": { "id": 247, "name": "Hal" },
+        "start": 1789700000000,
+        "end": 1789703600000,
+        "title": "Privat fødselsdag"
+      }
+    ]
+  },
+  {
+    "resource": { "id": 248, "name": "Sal" },
+    "bookings": [
+      {
+        "id": 22345043,
+        "resource": { "id": 248, "name": "Sal" },
+        "category": { "id": 213, "name": "Gymnastik" },
+        "start": 1792825200000,
+        "end": 1792832400000,
+        "title": "Aktivitetsdag",
+        "serie": null
+      }
+    ]
+  }
+]

@@ -10,3 +10,60 @@
 - id: aeroe-kalenderen
   name: Ærø Kalenderen
   description: Redaktionelle og manuelt indsendte arrangementer
+- id: rise-sif
+  name: Rise Skytte- & Idrætsforening
+  url: https://www.rise-sif.dk/
+- id: dn-aeroe
+  name: Danmarks Naturfredningsforening Ærø
+  url: https://aeroe.dn.dk/
+- id: ritual-aeroe
+  name: Ritual – Ærø
+  url: https://www.momoyoga.com/nurtureaeroe/
+- id: aeldresagen-aeroe
+  name: Ældre Sagen Ærø
+  url: https://www.aeldresagen.dk/lokalafdelinger/aeroe
+- id: aeroe-folkedans
+  name: Ærø Folkedanserforening
+  url: https://6165826142842.site123.me/
+- id: viften
+  name: Viften
+  url: https://www.viften.net/
+- id: aeroe-folkeuniversitet
+  name: Ærø Folkeuniversitet
+  url: https://fuko.dk/komite/aeroe-folkeuniversitet/
+- id: motorfabrikken
+  name: Motorfabrikken Marstal
+  url: https://www.motorfabrikkenmarstal.com/
+- id: ommel-bk
+  name: Ommel Boldklub
+  url: https://www.ommelsport.dk/
+- id: marnav
+  name: Marstal Navigationsskole
+  url: https://www.marnav.dk/
+- id: campus-aeroe
+  name: Campus Ærø
+  url: https://campusaeroe.dk/
+- id: ommel-samvirke
+  name: Ommel Samvirke
+  url: https://www.ommelsamvirke.dk/
+- id: kunsthoejskolen-aeroe
+  name: Kunsthøjskolen på Ærø
+  url: https://www.kunstaeroe.dk/
+- id: soeby-lokalraad
+  name: Søby Lokalråd
+  url: https://soebylokalraad.dk/
+- id: aeroe-hotel
+  name: Ærø Hotel
+  url: https://www.aeroehotel.dk/
+- id: aeroeskoebing-grand-prix
+  name: Ærøskøbing Grand Prix
+  url: https://www.xn--rgrandprix-c6a1t.dk/
+- id: aeroe-klatreklub
+  name: Ærø Klatreklub
+  url: https://aekk.klub-modul.dk/
+- id: aeroe-tennisklub
+  name: Ærø Tennisklub
+  url: https://aeroetennisklub.dk/
+- id: parkinsonforeningen-aeroe
+  name: Parkinsonforeningen – Klub Ærø
+  url: https://parkinson.dk/kredse/2823-fyn/klubber/

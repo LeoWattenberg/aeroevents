@@ -1,0 +1,26 @@
+{
+  "id": 8067,
+  "title": "Svampetur på Ærø",
+  "teaser": "Kom med i skoven.",
+  "description": "Vi går på jagt efter spiselige svampe.\nPris 40 kr.",
+  "start": "2026-10-08T17:00:00Z",
+  "end": "2026-10-08T19:30:00Z",
+  "updated": "2026-08-20T11:12:13Z",
+  "cancelledAt": null,
+  "occupied": false,
+  "private": false,
+  "hideAddress": false,
+  "locationDirections": "Mødested ved skovens p-plads",
+  "address": {
+    "streetName": "Skovvejen",
+    "houseNumber": "4",
+    "postalCode": "5970",
+    "city": "Ærøskøbing",
+    "municipalityCode": "0492"
+  },
+  "useSignupInfo": true,
+  "signupType": "link",
+  "signupTypeData": "https://billet.example/dn-8067",
+  "signupInfo": "Tilmelding er nødvendig senest 5. oktober.",
+  "url": "https://arrangementer.dn.dk/arrangementer/8067"
+}

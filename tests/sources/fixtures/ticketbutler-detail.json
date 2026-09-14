@@ -1,0 +1,20 @@
+{
+  "address": {
+    "venue": "Motorfabrikken Marstal",
+    "street": "Havnegade 11",
+    "city": "Marstal",
+    "postcode": "5960"
+  },
+  "description": "<h2>En aften med Sys</h2><p>Intimkoncert på fabrikken.</p>",
+  "end_date": null,
+  "is_deleted": false,
+  "is_expired": false,
+  "is_free_event": false,
+  "is_sold_out": true,
+  "pk": 111001,
+  "start_date": "2026-11-06T20:00+01:00",
+  "timezone": "Europe/Copenhagen",
+  "title": "Sys Bjerre Intimkoncert",
+  "title_url": "sys-bjerre-intimkoncert",
+  "uuid": "c860b8771b224db9b79a77078b40ece9"
+}

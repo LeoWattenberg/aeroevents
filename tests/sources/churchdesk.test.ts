@@ -1,4 +1,5 @@
 import { describe, expect, it } from "vitest";
+import { load } from "cheerio";
 
 import {
   churchDeskPageUrl,
@@ -41,6 +42,42 @@ describe("Ærø Kirkeliv ChurchDesk source", () => {
     expect(result.candidates.find(({ sourceEventId }) => sourceEventId === "503")?.status).toBe(
       "cancelled",
     );
+  });
+
+  it("retries shifting page boundaries and safely unions identical events", async () => {
+    const page1 = await fixture("churchdesk-page-1.html");
+    const page2 = await fixture("churchdesk-page-2.html");
+    const raw = load(page1)("#__NEXT_DATA__").html();
+    if (!raw) throw new Error("Test fixture mangler __NEXT_DATA__");
+    const data = JSON.parse(raw) as {
+      props: { pageProps: { widget: { items: unknown[]; pageNumber: number } } };
+    };
+    data.props.pageProps.widget.items = [data.props.pageProps.widget.items[1]];
+    data.props.pageProps.widget.pageNumber = 2;
+    const overlappingPage2 = `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify(data)}</script>`;
+    let page2Requests = 0;
+
+    const result = await churchDeskSource.collect({
+      fetch: async (input) => {
+        const url = String(input);
+        if (url === churchDeskPageUrl(1)) return new Response(page1);
+        if (url === churchDeskPageUrl(2)) {
+          page2Requests += 1;
+          return new Response(page2Requests === 1 ? overlappingPage2 : page2);
+        }
+        return new Response("not found", { status: 404 });
+      },
+      now: NOW,
+    });
+
+    expect(result.status).toBe("complete");
+    expect(result.pagesFetched).toBe(4);
+    expect(result.candidates.map(({ sourceEventId }) => sourceEventId).sort()).toEqual([
+      "501",
+      "502",
+      "503",
+    ]);
+    expect(result.warnings.join(" ")).toContain("overlappende sider");
   });
 
   it("discards all fetched candidates when a later page fails", async () => {

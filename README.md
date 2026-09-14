@@ -59,20 +59,21 @@ Kø, rå fund, afvisninger og eventuelle afsenderoplysninger er private. De gemm
 
 Kør kun Facebook med `npm run events -- collect facebook`. Begræns en fejlsøgning til bestemte konfigurations-id'er med eksempelvis `AEROEVENTS_FACEBOOK_SOURCE_IDS=det-sker-paa-aeroe,oplev-mit-aeroe npm run events -- collect facebook`. Hvis Chromium ikke findes automatisk, sættes `AEROEVENTS_CHROMIUM_PATH` til browserens absolutte sti. Den eksisterende `facebook --fetch`-kommando henter fortsat én konkret event- eller post-URL, og `--details-file` er fallback til manuelt kopieret opslagstekst.
 
-## Automatiske kilder
+## Kildeadaptere
 
-Første version indeholder adapters til:
+Indsamlingslaget dækker nu alle kilder fra de to første researchbølger:
 
-- Ærø Kommunes mødeplan for Kommunalbestyrelsen
-- Ærø Kirkelivs samlede ChurchDesk-kalender, hvor alle valide poster går direkte til publicering
-- Ærø Folkebiblioteks arrangements- og detaljesider
+- kommunens mødeplan med FirstAgenda-berigelse, kommunens "Det sker", Kirkeliv og Folkebiblioteket
+- Rise SIF, DN Ærø, Ritual/Momoyoga, Ældre Sagen, Folkedanserforeningen, Viften, Folkeuniversitetet, Motorfabrikken, Ommel BK, Marstal Navigationsskole og Campus Ærø
+- Ommel Samvirke, Kunsthøjskolen, Søby Lokalråd, Ærø Hotel og Ærøskøbing Grand Prix
+- Ærø Klatreklub, Ærø Tennisklub og Parkinsonforeningens Klub Ærø, hvis sæsonløse regler altid går til review med usikkerheden bevaret
 - offentlige Facebook-events og eventannoncer i opslag, altid til review
 
 Hver adapter kræver et komplet og strukturelt gyldigt svar. Event-ID'er fra kilden bevares, så en ny kørsel opdaterer samme event. Eventuelle kandidater fra andre kilder med samme titel og starttid går til dubletkontrol.
 
 `data/sources.yaml` er den endelige autoritet for, om en kilde er aktiv, må publicere automatisk, og hvilke kategorireferencer den må bruge. En kildes `organizerId` er kun adapterens standardværdi; en arrangør, der er angivet på selve arrangementet, bevares. Vellykkede HTTP-svar arkiveres privat med begrænsede filrettigheder, så en import kan efterprøves uden at lægge rådata i Git.
 
-Se [driftsvejledningen](docs/operations.md) for cronjob, sikker publicering, fejlhåndtering og GitHub Pages. [Datapolitikken](docs/data-policy.md) beskriver grænsen mellem private arbejdsdata og det, der må publiceres. [Kandidater til nye datakilder](docs/source-candidates.md) er en verificeret, prioriteret scraper-backlog med konkrete endpoints og publiceringsregler. [Facebook-kilder på Ærø](docs/facebook-sources.md) dokumenterer de testede eventfaner, adgangsgrænsen og fallbacken.
+Se [driftsvejledningen](docs/operations.md) for cronjob, sikker publicering, fejlhåndtering og GitHub Pages. [Datapolitikken](docs/data-policy.md) beskriver grænsen mellem private arbejdsdata og det, der må publiceres. [Kildeinventaret](docs/source-candidates.md) dokumenterer verificerede endpoints, implementerede adaptere og den resterende observationsliste. [Facebook-kilder på Ærø](docs/facebook-sources.md) dokumenterer de testede eventfaner, adgangsgrænsen og fallbacken.
 
 ## GitHub Pages
 

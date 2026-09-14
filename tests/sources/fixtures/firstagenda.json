@@ -1,0 +1,49 @@
+{
+  "Udvalg": {
+    "Politiske udvalg, råd og nævn 2022-2025": [
+      {
+        "Id": "7262d86f-def1-4d77-8c25-462b32c18970",
+        "Navn": "Kommunalbestyrelsen 2022-2025",
+        "Moeder": []
+      }
+    ],
+    "Aktuelle politiske udvalg, råd og nævn": [
+      {
+        "Id": "8739c5d5-5c4c-45f8-afac-da330802c940",
+        "Navn": "Kommunalbestyrelsen",
+        "Moeder": [
+          {
+            "Id": "1ec7c87f-599a-4a09-a7fb-f24245b8ebae",
+            "MeetingBeginUtc": "2026-09-16T19:00:00+02:00",
+            "MeetingEndUtc": "2026-09-16T21:30:00+02:00",
+            "ReleasedDate": "2026-09-09T16:05:33.2867774+02:00",
+            "Sted": "Byrådssalen, Ærø Rådhus",
+            "IsSupplementaryAgenda": false
+          },
+          {
+            "Id": "f7f5d790-f909-473b-a725-485cb57098ac",
+            "MeetingBeginUtc": "2026-03-04T17:00:00+01:00",
+            "MeetingEndUtc": "2026-03-04T17:30:00+01:00",
+            "ReleasedDate": "2026-03-05T10:49:58.3263007+01:00",
+            "Sted": "Teams",
+            "IsSupplementaryAgenda": false
+          }
+        ]
+      },
+      {
+        "Id": "f33be372-d897-4353-8a1f-ee0e16b4c0cf",
+        "Navn": "Økonomi- og erhvervsudvalget",
+        "Moeder": [
+          {
+            "Id": "79e4e381-c107-4573-8a38-6be87ed8c5f4",
+            "MeetingBeginUtc": "2026-09-16T17:00:00+02:00",
+            "MeetingEndUtc": "2026-09-16T18:00:00+02:00",
+            "ReleasedDate": "2026-09-09T15:52:06.2345779+02:00",
+            "Sted": "Ærø Rådhus",
+            "IsSupplementaryAgenda": false
+          }
+        ]
+      }
+    ]
+  }
+}

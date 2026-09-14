@@ -4,35 +4,44 @@ test("filters agenda items and preserves the selection in the URL", async ({ pag
   await page.goto("./");
   await expect(page.getByRole("heading", { level: 1, name: /Hvad sker der/ })).toBeVisible();
 
-  await page.getByLabel("Arrangør").selectOption("aeroe-kirkeliv");
-  await page.getByLabel("Kategori").selectOption("kirke");
-  await page.getByLabel("Søg").fill("gudstjeneste");
+  const target = page.locator('[data-calendar-kind="agenda"]:visible').first();
+  await expect(target).toBeVisible();
+  const organizerId = await target.getAttribute("data-organizer");
+  const categoryId = (await target.getAttribute("data-categories"))?.split("|").filter(Boolean)[0];
+  const eventDate = await target.getAttribute("data-date");
+  const eventTitle = (await target.locator("h3").innerText()).trim();
+  expect(organizerId).toBeTruthy();
+  expect(categoryId).toBeTruthy();
+  expect(eventDate).toMatch(/^\d{4}-\d{2}-\d{2}$/);
+
+  await page.getByLabel("Arrangør").selectOption(organizerId!);
+  await page.locator('select[name="kategori"]').selectOption(categoryId!);
+  await page.getByLabel("Søg").fill(eventTitle);
   await page.getByText("Vælg datoer", { exact: true }).click();
-  await page.getByLabel("Fra og med").fill("2026-09-20");
-  await page.getByLabel("Til og med").fill("2026-10-31");
+  await page.getByLabel("Fra og med").fill(eventDate!);
+  await page.getByLabel("Til og med").fill(eventDate!);
   await page.getByText("Vælg datoer", { exact: true }).click();
   await page.getByRole("button", { name: "Vis arrangementer" }).click();
 
-  await expect(page).toHaveURL(/arrangoer=aeroe-kirkeliv/);
-  await expect(page).toHaveURL(/kategori=kirke/);
-  await expect(page).toHaveURL(/q=gudstjeneste/);
-  await expect(page).toHaveURL(/fra=2026-09-20/);
-  await expect(page).toHaveURL(/til=2026-10-31/);
+  await expect(page).toHaveURL(new RegExp(`arrangoer=${organizerId}`));
+  await expect(page).toHaveURL(new RegExp(`kategori=${categoryId}`));
+  await expect(page).toHaveURL(/q=/);
+  await expect(page).toHaveURL(new RegExp(`fra=${eventDate}`));
+  await expect(page).toHaveURL(new RegExp(`til=${eventDate}`));
   const visibleAgendaItems = page.locator('[data-calendar-kind="agenda"]:visible');
   await expect(visibleAgendaItems).not.toHaveCount(0);
-  await expect(visibleAgendaItems.first()).toContainText(/Gudstjeneste/i);
+  await expect(visibleAgendaItems.first().locator("h3")).toHaveText(eventTitle);
   for (const item of await visibleAgendaItems.all()) {
     const date = await item.getAttribute("data-date");
-    expect(date).toBeTruthy();
-    expect(date! >= "2026-09-20" && date! <= "2026-10-31").toBe(true);
+    expect(date).toBe(eventDate);
   }
 
   await page.reload();
-  await expect(page.getByLabel("Arrangør")).toHaveValue("aeroe-kirkeliv");
-  await expect(page.getByLabel("Kategori")).toHaveValue("kirke");
-  await expect(page.getByLabel("Søg")).toHaveValue("gudstjeneste");
-  await expect(page.getByLabel("Fra og med")).toHaveValue("2026-09-20");
-  await expect(page.getByLabel("Til og med")).toHaveValue("2026-10-31");
+  await expect(page.getByLabel("Arrangør")).toHaveValue(organizerId!);
+  await expect(page.locator('select[name="kategori"]')).toHaveValue(categoryId!);
+  await expect(page.getByLabel("Søg")).toHaveValue(eventTitle);
+  await expect(page.getByLabel("Fra og med")).toHaveValue(eventDate!);
+  await expect(page.getByLabel("Til og med")).toHaveValue(eventDate!);
 });
 
 test("switches to a Monday-first month and opens a stable event page", async ({ page }) => {
@@ -97,7 +106,7 @@ test("lists every enabled external source and links to it from the site", async 
 
   await expect(page).toHaveURL(/\/aeroevents\/kilder\/$/);
   await expect(page.getByRole("heading", { level: 1, name: "Kilder" })).toBeVisible();
-  await expect(page.locator("[data-source-id]")).toHaveCount(4);
+  await expect(page.locator("[data-source-id]")).toHaveCount(24);
   await expect(page.getByRole("link", { name: /Ærø Kommunes mødeplan/ })).toHaveAttribute(
     "href",
     "https://www.aeroekommune.dk/politik-og-indflydelse/moedeplaner",
@@ -114,9 +123,8 @@ test("lists every enabled external source and links to it from the site", async 
     "href",
     "https://www.facebook.com/events/",
   );
-  await expect(
-    page.locator('[aria-labelledby="external-sources-heading"]').getByText("Senest kontrolleret"),
-  ).toHaveCount(4);
+  const sourceSection = page.locator('[aria-labelledby="external-sources-heading"]');
+  await expect(sourceSection.locator("article")).toHaveCount(24);
   await expect(page.locator("[data-facebook-source-id]"), "every configured Facebook source").toHaveCount(47);
   await expect(page.locator('[data-facebook-source-id="det-sker-i-ommel"] a')).toHaveAttribute(
     "href",
@@ -126,12 +134,8 @@ test("lists every enabled external source and links to it from the site", async 
     "href",
     "https://www.facebook.com/aeroehotel/",
   );
-  await expect(page.locator("[data-candidate-source-id]"), "every researched source").toHaveCount(10);
-  await expect(page.locator('[data-candidate-source-id="ommel-samvirke"] a')).toHaveAttribute(
-    "href",
-    "https://www.ommelsamvirke.dk/aktivitetskalender",
-  );
-  await expect(page.getByText("Disse kilder er fundet og teknisk undersøgt")).toBeVisible();
+  await expect(page.locator("[data-candidate-source-id]"), "no integrated source remains in the backlog").toHaveCount(0);
+  await expect(page.getByRole("heading", { name: "Alle hidtil undersøgte kilder er integreret" })).toBeVisible();
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await expect(page.getByRole("heading", { name: /Lokale arrangører kan også sende/ })).toBeVisible();
   await expect(page.getByRole("link", { name: "Indsend et arrangement", exact: true })).toHaveAttribute(

@@ -1,0 +1,12 @@
+{
+  "internal": [
+    {
+      "organization": { "id": 206, "name": "Rise Skytte- & Idrætsforening" },
+      "resources": [
+        { "id": 247, "name": "Hal", "available": true },
+        { "id": 248, "name": "Sal", "available": true },
+        { "id": 249, "name": "Kantine", "available": true }
+      ]
+    }
+  ]
+}

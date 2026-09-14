@@ -1,14 +1,18 @@
-# Kandidater til nye datakilder
+# Kildeinventar og implementeringsnoter
 
-Status: undersøgt 13.-14. september 2026. URLs og tekniske detaljer skal kontrolleres
-igen, når en adapter implementeres.
+Status: undersøgt 13.-14. september 2026 og første integrationsrunde afsluttet
+14. september 2026. URLs og tekniske detaljer kontrolleres fortsat ved hver
+indsamling.
 
 Direkte kilder hos arrangøren eller den ansvarlige myndighed bør have forrang.
 En aggregator er nyttig til at opdage huller, men må ikke overskrive bedre data
 fra en direkte kilde. Nye adaptere starter i gennemsyn, indtil fixtures viser, at
 ID'er, datoer, aflysninger og tomme svar håndteres sikkert.
 
-## Implementér først
+## Implementeret første bølge
+
+Alle 13 kilder og berigelser i tabellen er implementeret med fixtures,
+strukturel validering, atomisk fejlhåndtering og den angivne publiceringsregel.
 
 | Prioritet | Kilde | Udbytte og format | Foreslået publicering |
 | --- | --- | --- | --- |
@@ -78,7 +82,11 @@ Navigationsskolens to kommende offentlige poster var
 [åbent hus 30. januar 2027](https://marnav.nemtilmeld.dk/648/). Status som
 fuldt booket/venteliste står uden for JSON-LD og skal derfor parses særskilt.
 
-## Næste gruppe
+## Anden bølge og videre backlog
+
+De første otte rækker — fra Ommel Samvirke til Ærøskøbing Grand Prix — er nu
+implementeret. De øvrige rækker forbliver dokumenteret backlog og aktiveres
+først, når en konkret kommende post kan valideres sikkert.
 
 | Kilde | Teknisk vej | Redaktionel regel |
 | --- | --- | --- |
@@ -86,7 +94,7 @@ fuldt booket/venteliste står uden for JSON-LD og skal derfor parses særskilt.
 | [Søby Lokalråd](https://soebylokalraad.dk/11/en/node/12) | Drupal-siden og dens [RSS-feed](https://soebylokalraad.dk/11/en/rss.xml) har stabile node-GUID'er. Den løbende referatside indeholdt fire kommende lokale forekomster: to boguddelinger/åbent hus, et bestyrelsesmøde og Aktivitetshusets åbent hus. | Gennemsyn. RSS-datoen ændres ikke, når referatsiden opdateres, og node-ID'et dækker flere events; hent hele siden, brug content-digest og sammensatte event-ID'er. Bestyrelsesmødets adgang er ukendt. |
 | [Ærø Klatreklub](https://aekk.klub-modul.dk/default.aspx) | KlubModul-siden angiver fire gentagelser: børneklub og fri klatring mandag, fri klatring onsdag samt anden søndag i måneden. Den separate eventside og JSON-kilde er tomme. | Manuel gentagelse eller gennemsyn, indtil klubben bekræfter sæson og ferieundtagelser. De fire tekstblokke har ingen ID'er; brug sammensatte serienøgler og bevar medlemskrav. |
 | [Ærø Tennisklub](https://aeroetennisklub.dk/faste-aktiviteter/) | WordPress REST-side `22` blev ændret i maj 2026 og angiver fem ugentlige aktiviteter med klokkeslæt, målgruppe og enkelte kapacitetskrav. | Manuel gentagelse eller gennemsyn. Siden siger kun "i sæsonen" uden start/slut; indhent sæsongrænser og gæt ikke forekomster fra banebookinger. |
-| [Parkinsonforeningen: Klub Ærø](https://parkinson.dk/kredse/2823-fyn/om-os/) | Det aktuelle medlemsblad angiver første tirsdag hver måned kl. 15-16.30 i Rise Beboerhus. | Manuel gentagelse med udgave og regel som identitet. Kontrollér hver ny bladudgave og mærk målgruppe/medlemsadgang tydeligt. |
+| [Parkinsonforeningen: Klub Ærø](https://parkinson.dk/kredse/2823-fyn/klubber/) | Fynskredsens direkte klubside angiver første tirsdag hver måned kl. 15-16.30 i Rise Beboerhus og har et stabilt WordPress-klub-ID. | Bounded gentagelse til gennemsyn med klub-ID og regel som identitet. Kontrollér undtagelser ved hver indsamling og mærk medlemsadgang tydeligt. |
 | [Kunsthøjskolen på Ærø](https://www.kunstaeroe.dk/for-og-efter%C3%A5rskurser) | Cargo-siden indeholder gyldigt `window.__PRELOADED_STATE__` med stabile side-ID'er, `purl`, tekst, priser og tilmeldingslinks. Fire kommende kurser blev fundet fra 4. oktober til 7. november 2026; tre var udsolgt. | Automatisk efter fixture og et første gennemsyn. Skolen er den direkte kilde og vinder over Højskolerne.dk; bevar `UDSOLGT`. |
 | [Ærø Hotel: events](https://www.aeroehotel.dk/event-list) | Wix' `wix-warmup-data` har UUID, slug, tidszone, sted, publiceringstid, billetlink og ICS. En kommende koncert med Johnny Hansen stod to gange med samme tid, men to UUID'er og kun ét korrekt venue. Hotellet har desuden daterede [strikkeworkshops](https://www.aeroehotel.dk/smuttur-1-2) og [veteranbilstræf](https://www.aeroehotel.dk/smuttur-2-1-1). | Gennemsyn. Slå interne Wix-dubletter sammen; behandl hotelpakke-datoer som ankomst/ophold og gæt ikke et koncerttidspunkt. |
 | [Ærøskøbing Grand Prix](https://www.xn--rgrandprix-c6a1t.dk/) | Wix-siden havde fire eksplicitte dage 12.-15. oktober 2026 kl. 9-12 med alder, kapacitet, pris og tilmelding. Der er intet selvstændigt eventobjekt. | Gennemsyn og årlig import med `arrangør+år` som kilde-ID. Deduplikér mod VisitÆrøs GuideDanmark-post. |
@@ -286,11 +294,9 @@ En adapter er klar til at blive aktiveret, når fixtures dækker:
 4. tomt, delvist og ændret HTML/API-svar uden tab af sidste gode snapshot, og
 5. dubletter mod de tre eksisterende kilder og mod andre poster i samme kørsel.
 
-Den mest effektive næste leverance er Rise SIF, DN's kommune-API, Momoyogas
-allowlistede hold, Kommune `Det sker` og Ældre Sagen. Ommel Samvirke har det
-største nye lokalsamfundsudbytte, men skal begynde som browserbaseret reviewkilde,
-indtil kalenderens ejer retter ICS-feedet eller giver en stabil dataadgang.
-Derefter følger Folkedanserforeningen, Viften, Folkeuniversitetet,
-Motorfabrikken, Kunsthøjskolen, Ommel BK, Navigationsskolen,
-FirstAgenda-berigelsen og Campus Ærø. En Facebook-browser må kun aktiveres ved
-en autoriseret adgangsvej og bør aldrig blokere de direkte adapters.
+De to prioriterede bølger er nu implementeret. Videre arbejde bør begynde med
+en konkret, kommende post fra backloggen frem for at aktivere tomme feeds.
+Beth Mohr, Gravendal og eksterne retreats er de nærmeste daterede
+reviewkandidater; observationskilder uden aktuelle Ærø-poster forbliver
+inaktive. En Facebook-browser må kun aktiveres ved en autoriseret adgangsvej og
+bør aldrig blokere de direkte adaptere.

@@ -70,13 +70,15 @@ export function digest(value: unknown): string {
 }
 
 export function safeId(value: string): string {
-  const result = value
+  const normalized = value
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
-    .slice(0, 80);
+    .replace(/^-+|-+$/g, "");
+  const result = normalized.length <= 80
+    ? normalized
+    : `${normalized.slice(0, 71).replace(/-+$/g, "")}-${digest(normalized).slice(0, 8)}`;
   if (!result) throw new Error(`Kan ikke danne et sikkert id fra ${JSON.stringify(value)}`);
   return result;
 }

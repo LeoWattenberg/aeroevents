@@ -7,7 +7,10 @@ export function fixture(name: string): Promise<string> {
 }
 
 export function mappedFetch(
-  pages: Record<string, string | { status: number; body?: string }>,
+  pages: Record<
+    string,
+    string | { status: number; body?: string; contentType?: string; headers?: HeadersInit }
+  >,
 ): FetchLike {
   return async (input) => {
     const url = String(input);
@@ -21,6 +24,10 @@ export function mappedFetch(
     }
     return new Response(configured.body ?? "request failed", {
       status: configured.status,
+      headers: {
+        ...(configured.contentType ? { "content-type": configured.contentType } : {}),
+        ...Object.fromEntries(new Headers(configured.headers).entries()),
+      },
     });
   };
 }

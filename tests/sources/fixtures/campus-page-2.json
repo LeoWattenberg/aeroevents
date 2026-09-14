@@ -1,0 +1,35 @@
+{
+  "events": [
+    {
+      "id": 8102,
+      "status": "publish",
+      "title": "Udsat: Åbent værksted",
+      "description": "<p>Kom til åbent værksted. Der er venteliste.</p>",
+      "excerpt": "<p>Åbent for alle.</p>",
+      "url": "https://campusaeroe.dk/event/aabent-vaerksted/",
+      "start_date": "2026-11-05 15:00:00",
+      "end_date": "2026-11-05 17:00:00",
+      "timezone": "Europe/Copenhagen",
+      "all_day": false,
+      "hide_from_listings": false,
+      "modified_utc": "2026-09-04 08:30:00",
+      "cost": "25 kr.",
+      "website": "https://booking.example/campus-8102",
+      "event_status": "postponed",
+      "venue": {
+        "venue": "Værkstedet",
+        "address": "Vestergade 5",
+        "zip": "5970",
+        "city": "Ærøskøbing",
+        "url": "https://campusaeroe.dk/venue/vaerkstedet/"
+      },
+      "categories": [
+        { "slug": "campus-ugentlig" }
+      ]
+    }
+  ],
+  "rest_url": "https://campusaeroe.dk/wp-json/tribe/events/v1/events/",
+  "next_rest_url": null,
+  "total": 3,
+  "total_pages": 2
+}

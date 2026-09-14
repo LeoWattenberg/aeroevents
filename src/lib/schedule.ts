@@ -138,7 +138,13 @@ export function expandEvent(event: EventRecord, rangeStart: DateTime, rangeEnd: 
   if (event.schedule.kind === "explicit") {
     for (const dateValue of event.schedule.dates) {
       if (!inDateRange(dateValue, rangeStart, rangeEnd)) continue;
-      const result = materialize(event, dateValue, wallIdentity(dateValue));
+      const result = materialize(
+        event,
+        dateValue,
+        wallIdentity(dateValue),
+        dateValue.status ?? event.status,
+        dateValue.location ?? event.location,
+      );
       if (result.occurrence) occurrences.push(result.occurrence);
       if (result.warning) warnings.push(result.warning);
     }

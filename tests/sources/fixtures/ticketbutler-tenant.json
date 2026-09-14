@@ -1,0 +1,12 @@
+{
+  "domain": "motorfabrikkenmarstal.ticketbutler.io",
+  "name": "Motorfabrikken Marstal",
+  "currency_code": "DKK",
+  "contact_details": {
+    "business_name": "Motorfabrikken Marstals Startpatroner",
+    "full_address": "Havnegade 11, 5960, Marstal",
+    "street": "Havnegade 11",
+    "postcode": "5960",
+    "city": "Marstal"
+  }
+}

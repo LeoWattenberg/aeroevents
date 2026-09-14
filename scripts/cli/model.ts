@@ -10,7 +10,12 @@ import {
 import { loadRepository, resolvePublicData } from "../../src/lib/repository.js";
 
 function occurrenceToDate(occurrence: NormalizedEventDraft["occurrences"][number]) {
-  const identity = { id: occurrence.id, date: occurrence.date };
+  const identity = {
+    id: occurrence.id,
+    date: occurrence.date,
+    ...(occurrence.status ? { status: occurrence.status } : {}),
+    ...(occurrence.location ? { location: occurrence.location } : {}),
+  };
   if (occurrence.allDay) {
     return eventDateSchema.parse({
       ...identity,
@@ -44,19 +49,28 @@ export function sourceDraftToEvent(draft: NormalizedEventDraft): EventRecord {
     ...(draft.location?.name ? { location: draft.location } : {}),
     attendance:
       draft.attendance === "members"
-        ? { kind: "members" }
+        ? { kind: "members", ...(draft.attendanceDetails ? { details: draft.attendanceDetails } : {}) }
+        : draft.attendance === "registration"
+          ? {
+              kind: "registration",
+              ...(draft.attendanceDetails ? { details: draft.attendanceDetails } : {}),
+            }
         : draft.attendance === "unknown"
-          ? { kind: "public", details: "Adgangsforhold er ikke bekræftet." }
-          : { kind: "public" },
+          ? {
+              kind: "public",
+              details: draft.attendanceDetails || "Adgangsforhold er ikke bekræftet.",
+            }
+          : { kind: "public", ...(draft.attendanceDetails ? { details: draft.attendanceDetails } : {}) },
     status: draft.status,
     publication: draft.publication === "trusted" ? "published" : "draft",
     ...(draft.price ? { price: draft.price } : {}),
-    ...(draft.bookingUrl || draft.availability === "sold-out"
+    ...(draft.bookingUrl || draft.bookingRequired !== undefined || draft.bookingDetails || draft.availability === "sold-out"
       ? {
           booking: {
-            required: false,
+            required: draft.bookingRequired ?? false,
             soldOut: draft.availability === "sold-out",
             ...(draft.bookingUrl ? { url: draft.bookingUrl } : {}),
+            ...(draft.bookingDetails ? { details: draft.bookingDetails } : {}),
           },
         }
       : {}),
@@ -66,6 +80,9 @@ export function sourceDraftToEvent(draft: NormalizedEventDraft): EventRecord {
       externalId: draft.sourceEventId,
       url: draft.provenance.sourceUrl,
       verifiedAt: draft.provenance.retrievedAt,
+      ...(draft.provenance.sourceModifiedAt
+        ? { modifiedAt: draft.provenance.sourceModifiedAt }
+        : {}),
     },
   });
 }

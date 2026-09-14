@@ -84,7 +84,12 @@ export const bookingSchema = z.object({
   details: z.string().max(500).optional(),
 });
 
-const dateIdentity = { id: id.optional(), date };
+const dateIdentity = {
+  id: id.optional(),
+  date,
+  status: z.enum(["scheduled", "cancelled", "postponed"]).optional(),
+  location: locationSchema.optional(),
+};
 
 export const allDayDateSchema = z
   .object({
@@ -176,6 +181,7 @@ export const sourceReferenceSchema = z.object({
   externalId: z.string().min(1).max(300).optional(),
   url: httpUrl.optional(),
   verifiedAt: instant.optional(),
+  modifiedAt: instant.optional(),
 });
 
 export const eventSchema = z.object({
