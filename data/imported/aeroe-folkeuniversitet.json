@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-folkeuniversitet",
-  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "verifiedAt": "2026-09-14T16:58:01.946Z",
   "events": [
     {
       "id": "aeroe-folkeuniversitet-robotter-i-hjemmet-kan-de-erstatte-mennesker",
@@ -36,7 +36,7 @@
         "sourceId": "aeroe-folkeuniversitet",
         "externalId": "robotter-i-hjemmet-kan-de-erstatte-mennesker",
         "url": "https://fuko.dk/kurser/robotter-i-hjemmet-kan-de-erstatte-mennesker/",
-        "verifiedAt": "2026-09-14T11:15:54.384Z",
+        "verifiedAt": "2026-09-14T16:58:01.946Z",
         "modifiedAt": "2026-09-06T21:00:32.000Z"
       }
     },
@@ -75,7 +75,7 @@
         "sourceId": "aeroe-folkeuniversitet",
         "externalId": "maden-paa-bordet-levnedsmidler-mad-og-maaltider-i-kulturhistorisk-perspektiv",
         "url": "https://fuko.dk/kurser/maden-paa-bordet-levnedsmidler-mad-og-maaltider-i-kulturhistorisk-perspektiv/",
-        "verifiedAt": "2026-09-14T11:55:45.875Z"
+        "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
     {
@@ -112,7 +112,7 @@
         "sourceId": "aeroe-folkeuniversitet",
         "externalId": "maden-paa-bordet-danske-maaltider-og-mad-i-kulturhistorisk-perspektiv",
         "url": "https://fuko.dk/kurser/maden-paa-bordet-danske-maaltider-og-mad-i-kulturhistorisk-perspektiv/",
-        "verifiedAt": "2026-09-14T11:55:45.875Z"
+        "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
     {
@@ -149,8 +149,8 @@
         "sourceId": "aeroe-folkeuniversitet",
         "externalId": "hoejskolevaevning-og-kvindeliv-og-om-en-slags-soegning-efter-identitet-og-resonans",
         "url": "https://fuko.dk/kurser/hoejskolevaevning-og-kvindeliv-og-om-en-slags-soegning-efter-identitet-og-resonans/",
-        "verifiedAt": "2026-09-14T11:55:45.875Z",
-        "modifiedAt": "2026-09-14T11:01:39.000Z"
+        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "modifiedAt": "2026-09-14T16:01:35.000Z"
       }
     },
     {
@@ -187,8 +187,8 @@
         "sourceId": "aeroe-folkeuniversitet",
         "externalId": "haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider",
         "url": "https://fuko.dk/kurser/haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider/",
-        "verifiedAt": "2026-09-14T11:55:45.875Z",
-        "modifiedAt": "2026-09-14T11:01:42.000Z"
+        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "modifiedAt": "2026-09-14T16:01:37.000Z"
       }
     }
   ]

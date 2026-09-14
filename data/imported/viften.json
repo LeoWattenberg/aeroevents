@@ -1,6 +1,6 @@
 {
   "sourceId": "viften",
-  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "verifiedAt": "2026-09-14T16:58:01.946Z",
   "events": [
     {
       "id": "viften-29c4da51dbc547608099eb011d23c72e",
@@ -40,7 +40,7 @@
         "sourceId": "viften",
         "externalId": "29c4da51dbc547608099eb011d23c72e",
         "url": "https://www.viften.net/subjectclass/29c4da51dbc547608099eb011d23c72e",
-        "verifiedAt": "2026-09-14T11:15:54.384Z"
+        "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
     {
@@ -83,7 +83,7 @@
         "sourceId": "viften",
         "externalId": "44529c680154462ca130ff14235f51aa",
         "url": "https://www.viften.net/subjectclass/44529c680154462ca130ff14235f51aa",
-        "verifiedAt": "2026-09-14T11:15:54.384Z"
+        "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     }
   ]

@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-klatreklub",
-  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "verifiedAt": "2026-09-14T16:58:01.946Z",
   "events": [
     {
       "id": "aeroe-klatreklub-monday-kids-club",
@@ -402,7 +402,7 @@
         "sourceId": "aeroe-klatreklub",
         "externalId": "monday-kids-club",
         "url": "https://aekk.klub-modul.dk/default.aspx",
-        "verifiedAt": "2026-09-14T11:15:54.384Z"
+        "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
     {
@@ -805,7 +805,7 @@
         "sourceId": "aeroe-klatreklub",
         "externalId": "monday-free-climbing",
         "url": "https://aekk.klub-modul.dk/default.aspx",
-        "verifiedAt": "2026-09-14T11:15:54.384Z"
+        "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
     {
@@ -1201,7 +1201,7 @@
         "sourceId": "aeroe-klatreklub",
         "externalId": "wednesday-free-climbing",
         "url": "https://aekk.klub-modul.dk/default.aspx",
-        "verifiedAt": "2026-09-14T11:15:54.384Z"
+        "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
     {
@@ -1317,7 +1317,7 @@
         "sourceId": "aeroe-klatreklub",
         "externalId": "second-sunday-free-climbing",
         "url": "https://aekk.klub-modul.dk/default.aspx",
-        "verifiedAt": "2026-09-14T11:15:54.384Z"
+        "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     }
   ]
