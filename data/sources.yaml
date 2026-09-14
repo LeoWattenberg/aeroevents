@@ -11,12 +11,12 @@
   enabled: true
 - id: aeroe-kirkeliv
   name: Ærø Kirkelivs kalender
-  url: https://www.xn--rkirkeliv-f3a3r.dk/kalender--aktiviteter/gudstjenester
+  url: https://www.xn--rkirkeliv-f3a3r.dk/kalender--aktiviteter
   organizerId: aeroe-kirkeliv
   categoryIds: [kirke]
   publication: automatic
   enabled: true
-  notes: Kun almindelige gudstjenester publiceres automatisk i første version.
+  notes: Alle valide poster fra Ærø Kirkelivs samlede ChurchDesk-kalender publiceres automatisk.
 - id: aeroe-bibliotek
   name: Ærø Folkebiblioteks arrangementer
   url: https://www.arrebib.dk/arrangementer

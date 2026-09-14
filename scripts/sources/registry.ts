@@ -10,8 +10,8 @@ export const SOURCE_REGISTRY = {
   },
   "aeroe-kirkeliv": {
     id: "aeroe-kirkeliv",
-    name: "Ærø Kirkeliv — gudstjenester",
-    url: "https://widget.churchdesk.com/da/w/1709/event/7HNwFsLGhxjE/1/1350954",
+    name: "Ærø Kirkeliv — kalender",
+    url: "https://widget.churchdesk.com/da/w/1709/event/7HsDjgjjLaLL/1/1350954",
     organizerId: "aeroe-kirkeliv",
     categoryIds: ["kirke"],
   },

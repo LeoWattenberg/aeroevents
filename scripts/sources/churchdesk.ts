@@ -17,11 +17,6 @@ const COPENHAGEN = "Europe/Copenhagen";
 const MAX_PAGES = 100;
 const CHURCHDESK_ORIGIN = new URL(definition.url).origin;
 
-interface ChurchDeskCategory {
-  title?: unknown;
-  calendar_taxonomies?: { isMaster?: unknown };
-}
-
 interface ChurchDeskItem {
   id?: unknown;
   title?: unknown;
@@ -41,7 +36,6 @@ interface ChurchDeskItem {
     city?: unknown;
     zipcode?: unknown;
   };
-  eventCategories?: ChurchDeskCategory[];
 }
 
 interface ChurchDeskWidgetPayload {
@@ -97,14 +91,6 @@ function parseInstant(
   return { date: parsed.toISODate()!, time: parsed.toFormat("HH:mm") };
 }
 
-function masterCategory(item: ChurchDeskItem): string | undefined {
-  if (!Array.isArray(item.eventCategories)) return undefined;
-  const master = item.eventCategories.find(
-    (category) => category.calendar_taxonomies?.isMaster === true,
-  );
-  return optionalString((master ?? item.eventCategories[0])?.title);
-}
-
 function parseLocation(item: ChurchDeskItem): EventLocationDraft | undefined {
   const location: EventLocationDraft = {};
   const name = optionalString(item.locationName);
@@ -140,15 +126,6 @@ function normalizeItem(
   if (!start) errors.push(`ChurchDesk-element ${id ?? itemIndex + 1} mangler gyldig startdato`);
   if (errors.length > 0 || !id || !title || !start) return { errors };
 
-  const category = masterCategory(item);
-  const isOrdinaryService = category?.toLocaleLowerCase("da-DK") === "gudstjeneste";
-  const reviewReasons = isOrdinaryService
-    ? []
-    : [
-        category
-          ? `ChurchDesk-kategorien er “${category}” og kræver redaktionel kontrol`
-          : "ChurchDesk-elementet mangler en hovedkategori",
-      ];
   const sourceUrl =
     optionalString(item.url) ??
     `https://www.xn--rkirkeliv-f3a3r.dk/b/${encodeURIComponent(id)}`;
@@ -182,8 +159,8 @@ function normalizeItem(
       status: item.cancelledAt ? "cancelled" : "scheduled",
       attendance: "public",
       ...(price ? { price } : {}),
-      publication: isOrdinaryService ? "trusted" : "review",
-      reviewReasons,
+      publication: "trusted",
+      reviewReasons: [],
       provenance: {
         sourceId: definition.id,
         externalId: id,
@@ -269,7 +246,7 @@ export function parseChurchDeskPage(
 }
 
 export function churchDeskPageUrl(pageNumber: number): string {
-  return `https://widget.churchdesk.com/da/w/1709/event/7HNwFsLGhxjE/${pageNumber}/1350954`;
+  return `https://widget.churchdesk.com/da/w/1709/event/7HsDjgjjLaLL/${pageNumber}/1350954`;
 }
 
 async function collect(context: CollectionContext): Promise<CollectionResult> {

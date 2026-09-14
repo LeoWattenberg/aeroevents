@@ -60,7 +60,7 @@ Facebook-integrationen er kun et redaktionelt hjælpemiddel. Offentlig synlighed
 Første version indeholder adapters til:
 
 - Ærø Kommunes mødeplan for Kommunalbestyrelsen
-- Ærø Kirkelivs ChurchDesk-kalender, hvor kun kategorien `Gudstjeneste` går direkte til publicering
+- Ærø Kirkelivs samlede ChurchDesk-kalender, hvor alle valide poster går direkte til publicering
 - Ærø Folkebiblioteks arrangements- og detaljesider
 
 Hver adapter kræver et komplet og strukturelt gyldigt svar. Event-ID'er fra kilden bevares, så en ny kørsel opdaterer samme event. Eventuelle kandidater fra andre kilder med samme titel og starttid går til dubletkontrol.

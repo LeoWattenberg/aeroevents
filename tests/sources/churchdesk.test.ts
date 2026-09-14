@@ -12,11 +12,11 @@ const NOW = new Date("2026-09-13T10:00:00.000Z");
 describe("Ærø Kirkeliv ChurchDesk source", () => {
   it("uses the verified site id in every pagination URL", () => {
     expect(churchDeskPageUrl(2)).toBe(
-      "https://widget.churchdesk.com/da/w/1709/event/7HNwFsLGhxjE/2/1350954",
+      "https://widget.churchdesk.com/da/w/1709/event/7HsDjgjjLaLL/2/1350954",
     );
   });
 
-  it("collects every advertised page and routes non-Gudstjeneste categories to review", async () => {
+  it("collects every advertised page and trusts every valid category", async () => {
     const page1 = await fixture("churchdesk-page-1.html");
     const page2 = await fixture("churchdesk-page-2.html");
     const result = await churchDeskSource.collect({
@@ -35,7 +35,8 @@ describe("Ærø Kirkeliv ChurchDesk source", () => {
       occurrences: [{ date: "2026-10-04", startTime: "10:00" }],
     });
     expect(result.candidates.find(({ sourceEventId }) => sourceEventId === "502")).toMatchObject({
-      publication: "review",
+      publication: "trusted",
+      reviewReasons: [],
     });
     expect(result.candidates.find(({ sourceEventId }) => sourceEventId === "503")?.status).toBe(
       "cancelled",
