@@ -31,7 +31,7 @@ Manuelle events ligger som YAML i `data/manual/events/`. Importerede, publicerba
 
 `npm run data:build` validerer alle filer, anvender rettelser og skriver de afledte filer i `data/generated/`. Den mappe er ignoreret af Git og bliver altid gendannet før et Astro-build.
 
-Et event kan have enten eksplicitte datoer eller en RFC 5545-gentagelsesregel. Alle lokale tider fortolkes i `Europe/Copenhagen`. Eksempeldataene i repositoryet har `publication: draft`; de demonstrerer et enkeltstående event, en gentagelse med ferieundtagelse og et medlemsmøde uden at blive vist offentligt.
+Et event kan have enten eksplicitte datoer eller en RFC 5545-gentagelsesregel. Alle lokale tider fortolkes i `Europe/Copenhagen`.
 
 ## Redaktionens kommandoer
 

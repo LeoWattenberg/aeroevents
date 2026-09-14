@@ -10,9 +10,3 @@
 - id: aeroe-kalenderen
   name: Ærø Kalenderen
   description: Redaktionelle og manuelt indsendte arrangementer
-- id: eksempel-musikforening
-  name: "Eksempel: lokal musikforening"
-  description: Demonstrationsarrangør; kladdeevents vises ikke på hjemmesiden
-- id: eksempel-faellesskab
-  name: "Eksempel: lokalt fællesskab"
-  description: Demonstrationsarrangør; kladdeevents vises ikke på hjemmesiden

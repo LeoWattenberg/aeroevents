@@ -56,13 +56,9 @@ afterEach(async () => {
 });
 
 describe("repository pipeline", () => {
-  it("validates the checked-in registries and three editorial examples", async () => {
+  it("validates the checked-in registries without example events", async () => {
     const repository = await loadRepository(process.cwd());
-    expect(repository.events.filter((event) => event.publication === "draft").map((event) => event.id).sort()).toEqual([
-      "eksempel-koncert",
-      "eksempel-medlemsmoede",
-      "eksempel-ugentlig-forening",
-    ]);
+    expect(repository.events.some((event) => event.id.startsWith("eksempel-") || event.title.startsWith("Eksempel:"))).toBe(false);
   });
 
   it("keeps manual overrides when an imported snapshot is loaded repeatedly", async () => {
