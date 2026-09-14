@@ -1,5 +1,5 @@
 import { churchDeskSource } from "./churchdesk";
-import { facebookSource } from "./facebook";
+import { facebookSource } from "./facebook-feed";
 import { librarySource } from "./library";
 import { municipalitySource } from "./municipality";
 import type { RegisteredSourceId } from "./registry";
@@ -13,6 +13,7 @@ import type {
 
 export * from "./churchdesk";
 export * from "./facebook";
+export * from "./facebook-feed";
 export * from "./library";
 export * from "./municipality";
 export * from "./registry";

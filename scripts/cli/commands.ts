@@ -245,6 +245,7 @@ async function collectCommand(args: string[]): Promise<void> {
       );
       continue;
     }
+    for (const warning of result.warnings) console.warn(`${result.source.id}: ${warning}`);
     if (result.candidates.length === 0) {
       retained += 1;
       console.error(`${result.source.id}: tomt resultat; sidste komplette snapshot bevares.`);
@@ -256,6 +257,9 @@ async function collectCommand(args: string[]): Promise<void> {
     const observedEvents: EventRecord[] = [];
     const demoteIdentities = new Set<string>();
     const removeIdentities = new Set<string>();
+    const scopedFacebookRun =
+      result.source.id === "facebook" &&
+      Boolean(process.env.AEROEVENTS_FACEBOOK_SOURCE_IDS?.trim());
     let trustedInvalid = false;
     let autoPublishedCount = 0;
     let reviewCount = 0;
@@ -325,6 +329,14 @@ async function collectCommand(args: string[]): Promise<void> {
       continue;
     }
 
+    if (scopedFacebookRun) {
+      retained += 1;
+      console.log(
+        "facebook: afgrænset fejlsøgning opdaterede reviewkøen; snapshot og kildestatus blev bevaret.",
+      );
+      continue;
+    }
+
     const previousSnapshot = existing.repository.snapshots.find(
       (snapshot) => snapshot.sourceId === result.source.id,
     );
@@ -365,7 +377,6 @@ async function collectCommand(args: string[]): Promise<void> {
       `${result.source.id}: ${autoPublishedCount} automatisk publiceret, ` +
         `${retainedPreviousCount} tidligere bevaret, ${reviewCount} til gennemsyn.`,
     );
-    for (const warning of result.warnings) console.warn(`${result.source.id}: ${warning}`);
   }
 
   if (updated > 0) {

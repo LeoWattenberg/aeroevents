@@ -77,7 +77,7 @@ describe("repository source policy", () => {
     const gated = await loadRepository(root);
     expect(gated.events[0]).toMatchObject({
       publication: "draft",
-      organizerId: "yaml-organizer",
+      organizerId: "adapter-organizer",
       categoryIds: ["yaml-category"],
       source: { verifiedAt: eventSeenAt },
     });

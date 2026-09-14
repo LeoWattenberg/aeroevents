@@ -1,16 +1,8 @@
 # Offentlige Facebook-kilder på Ærø
 
-Status: undersøgt anonymt 13.-14. september 2026. Facebook ændrer ofte markup og
-adgangskrav, så listen er et øjebliksbillede og ikke et løfte om fortsat adgang.
-
-Facebooks egne regler skelner mellem offentlige og private begivenheder, men en
-offentlig begivenhed er ikke det samme som en stabil data-API. Facebooks
-[`robots.txt`](https://www.facebook.com/robots.txt) siger direkte, at automatisk
-indsamling kræver udtrykkelig skriftlig tilladelse, og henviser til Metas
-[vilkår for automatisk dataindsamling](https://www.facebook.com/legal/automated_data_collection_terms).
-Kilderne nedenfor er derfor en verificeret liste til manuel discovery og en
-implementeringsspecifikation, hvis en autoriseret adgangsvej opnås. En planlagt
-browserindsamler skal forblive deaktiveret uden den tilladelse.
+Status: browsercrawler aktiveret 14. september 2026. Facebook ændrer ofte markup
+og adgangskrav, så hver kilde kan fejle selvstændigt uden at standse resten.
+Den aktive, maskinlæsbare liste ligger i `data/facebook-sources.yaml`.
 
 ## Hvad der faktisk kan indsamles
 
@@ -19,8 +11,10 @@ HTML uden eventlinks. En anonym Chromium-session viste derimod de første
 offentlige eventkort og stabile links på formen `/events/<numerisk-id>/`.
 Login-dialogen var synlig, men eventkortene kunne læses uden at logge ind.
 
-Den nuværende `facebook --fetch`-kommando er en forsigtig parser til én konkret
-event- eller post-URL. Den foretrækker JSON-LD eller Open Graph-eventfelter og
+`collect facebook` bruger en anonym Chromium-session til side- og gruppefeeds.
+Den finder både links til formelle events og almindelige opslag. Kommandoen
+`facebook --fetch` er desuden en parser til én konkret event- eller post-URL.
+Den foretrækker JSON-LD eller Open Graph-eventfelter og
 kan ellers fortolke den ene offentlige opslagstekst. Parseren kræver et
 arrangementssignal og en entydig dato, skelner mellem hele dagen og ukendt tid,
 ignorerer tilmeldingsfrister og sender altid resultatet til review. Afkortet
@@ -29,9 +23,8 @@ ikke fortolket; parseren laver ikke OCR. En manuelt kopieret fuld tekst kan
 behandles med `--details-file`. Genbrug samme konkrete permalink ved senere
 opdateringer. Facebooks `pfbid`-link og numeriske link til samme opslag kan ikke
 altid sammenkædes uden adgang til Facebook; en titel/dato/tid-dublet markeres
-derfor til ekstra kontrol. Side- og
-gruppeopdagelse kræver fortsat en særskilt, lokal browseradapter og en
-autoriseret adgangsvej, før kilderne her kan sættes i cron.
+derfor til ekstra kontrol. Side- og gruppeopdagelsen kører kun lokalt, gemmer rå
+HTML uden for Git og sender altid kandidater til redaktionelt review.
 
 ## Start med disse kilder
 
@@ -171,19 +164,15 @@ offentligt, men havde ingen eventfane.
 anonym eventkilde. Foreningens tidligere domæne indeholder nu uvedkommende
 SEO-/casinoindhold; hverken gruppen eller domænet skal poll'es.
 
-## Krav til en eventuel autoriseret browseradapter
-
-Adapteren må kun aktiveres, hvis Meta giver en passende tilladelse eller en anden
-understøttet adgangsvej bliver tilgængelig.
+## Browseradapterens drift
 
 1. Konfigurér hver side eller gruppe med fast source-nøgle, arrangørmapping,
    forventet Facebook-ID og højst én kontrol om dagen.
 2. Start en ren, anonym browserkontekst. Brug aldrig redaktørens konto eller en
    cookieprofil. Stop og rapportér ved loginmur, checkpoint, blokering eller
    ændret sidenavn/ID.
-3. Åbn kun den konfigurerede `/events?locale=da_DK`-fane og udtræk links, der
-   matcher `/events/<id>`. Sæt en lav grænse for ventetid, scrolling og antal
-   kort.
+3. Åbn de konfigurerede event- og postfeeds. Udtræk kun konkrete event- og
+   postpermalinks, og sæt en lav grænse for ventetid, scrolling og antal kort.
 4. Gem det numeriske event-ID som source-ID. For gentagelser gemmes også
    `event_time_id` på forekomsten; query-parameteren må ikke fjernes fra
    kilde-URL'en.
@@ -196,7 +185,6 @@ understøttet adgangsvej bliver tilgængelig.
    eller delvist resultat må aldrig erstatte sidste gode snapshot eller aflyse
    en tidligere event.
 
-Inden adapteren aktiveres, skal en fixture af et sidefeed, et gruppefeed, en
-gentagelse med `event_time_id`, en loginmur og et tomt svar bevise de fem vigtigste
-fejlveje. Hvis anonym adgang forsvinder, er den eksisterende manuelle
+Fixturetests dækker feedlinks, opslagstekst, kommentarer, afkortning,
+`event_time_id`, loginmur og tomme svar. Hvis anonym adgang forsvinder, er den eksisterende manuelle
 `facebook <url> --event ... --details-file ...`-kommando fallback.

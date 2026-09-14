@@ -20,6 +20,7 @@ De daglige kommandoer er:
 ```text
 npm run events -- create
 npm run events -- collect [source-id ...]
+npm run events -- collect facebook
 npm run events -- review
 npm run events -- approve <candidate-id>
 npm run events -- reject <candidate-id> [--reason "..."]
@@ -41,21 +42,43 @@ kandidat-id.
 
 `data/sources.yaml` er den afgørende publiceringspolitik. En adapter kan kræve
 gennemsyn, men kan ikke selv give tilladelse til automatisk publicering. Filens
-arrangør- og kategorimapping anvendes også til sidst, så redaktionelle ændringer
-slår igennem uden kodeændringer. Poster til gennemsyn gemmes som ikke-offentlige
-snapshotbaser; en godkendelse tilføjer en lille override og opretter derfor ikke
-et konkurrerende event-id.
+kategorimapping anvendes også til sidst, så redaktionelle ændringer slår igennem
+uden kodeændringer. `organizerId` er derimod kun en standardværdi for adapteren;
+den må ikke erstatte arrangøren på den enkelte post. Poster til gennemsyn gemmes
+som ikke-offentlige snapshotbaser; en godkendelse tilføjer derfor en lille override
+og opretter ikke et konkurrerende event-id.
+
+`collect facebook` starter en lokal Chromium-session og gennemgår alle aktive
+feeds i `data/facebook-sources.yaml`. Den udtrækker konkrete event- og
+postpermalinks og fortolker komplette arrangementsopslag fra feedet. Afkortede
+opslag åbnes på deres permalink; kommentarer bruges ikke som eventkandidater.
+Alle fund går til review. Fejl ved én side eller gruppe rapporteres, mens de
+øvrige kilder fortsætter. Browsercrawleren er eksplicit deaktiveret, når
+`GITHUB_ACTIONS=true`.
+
+Brug en afgrænset liste under fejlsøgning:
+
+```sh
+AEROEVENTS_FACEBOOK_SOURCE_IDS=det-sker-paa-aeroe,oplev-mit-aeroe npm run events -- collect facebook
+```
+
+En sådan afgrænset kørsel kan opdatere den private reviewkø, men bevarer det
+offentlige Facebook-snapshot og dets kontroltidspunkt.
+
+Browseren findes automatisk på almindelige Linux-stier. Ellers sættes
+`AEROEVENTS_CHROMIUM_PATH=/absolut/sti/til/chromium` eller Playwrights browser
+installeres med `npx playwright install chromium`. Det samlede loft over
+detaljesider er 400 pr. kørsel og kan ændres med
+`AEROEVENTS_FACEBOOK_MAX_DETAILS`. Rå feed- og detalje-HTML gemmes kun i den
+private state-mappe.
 
 Facebook-kommandoens `--fetch` forsøger én konkret offentlig event- eller
-post-URL og lægger alle fund i køen. Hvis strukturerede eventdata mangler, kan
-den fortolke den ene opslagstekst, men aldrig hele en side, gruppe, kommentartråd
-eller et afkortet uddrag. `--details-file` uden `--event` fortolker en manuelt
-kopieret offentlig opslagstekst; tilføj `--published-at`, når teksten bruger en
-relativ dato eller mangler årstal, og `--title`, hvis den foreløbige titel skal
-angives eksplicit. Genbrug samme permalink ved opdateringer. Den fulde tekst og
-parserens evidens bliver i den private kø. `--event` bevarer vejen til en
-redaktørudfyldt eventfil. Brug kun
-offentligt tilgængelige oplysninger, og omgå aldrig en adgangsbegrænsning.
+post-URL og lægger fundet i køen. `--details-file` uden `--event` fortolker en
+manuelt kopieret offentlig opslagstekst; tilføj `--published-at`, når teksten
+bruger en relativ dato eller mangler årstal, og `--title`, hvis den foreløbige
+titel skal angives eksplicit. Genbrug samme permalink ved opdateringer. Den
+fulde tekst og parserens evidens bliver i den private kø. `--event` bevarer
+vejen til en redaktørudfyldt eventfil.
 
 Vellykkede HTTP-svar fra kildeindsamling gemmes med private filrettigheder under
 `AEROEVENTS_STATE_DIR/raw/<kørsel>/`. En fejl under denne arkivering får den
@@ -78,7 +101,8 @@ En fejlet eller delvis kilde bevarer sidste komplette snapshot. At en event
 forsvinder fra en kilde, gør den ikke automatisk aflyst; en udtrykkelig status
 fra kilden eller en manuel redaktionel rettelse kræves.
 
-Wrapperen kræver Linux-værktøjerne `flock` og GNU `timeout`. Hver HTTP-anmodning
+Wrapperen kræver Linux-værktøjerne `flock` og GNU `timeout`. Facebook-kilden
+kræver desuden Chromium og kører kun i det lokale cronjob. Hver HTTP-anmodning
 har desuden sin egen tids- og størrelsesgrænse, så en hængende eller urimeligt
 stor kildeside ikke kan holde låsen på ubestemt tid.
 

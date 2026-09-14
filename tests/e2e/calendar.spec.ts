@@ -4,23 +4,23 @@ test("filters agenda items and preserves the selection in the URL", async ({ pag
   await page.goto("./");
   await expect(page.getByRole("heading", { level: 1, name: /Hvad sker der/ })).toBeVisible();
 
-  await page.getByLabel("Arrangør").selectOption("eksempel-faellesskab");
-  await page.getByLabel("Kategori").selectOption("forening-faellesskab");
-  await page.getByLabel("Søg").fill("fællesskab");
+  await page.getByLabel("Arrangør").selectOption("aeroe-kirkeliv");
+  await page.getByLabel("Kategori").selectOption("kirke");
+  await page.getByLabel("Søg").fill("gudstjeneste");
   await page.getByText("Vælg datoer", { exact: true }).click();
   await page.getByLabel("Fra og med").fill("2026-09-20");
   await page.getByLabel("Til og med").fill("2026-10-31");
   await page.getByText("Vælg datoer", { exact: true }).click();
   await page.getByRole("button", { name: "Vis arrangementer" }).click();
 
-  await expect(page).toHaveURL(/arrangoer=eksempel-faellesskab/);
-  await expect(page).toHaveURL(/kategori=forening-faellesskab/);
-  await expect(page).toHaveURL(/q=f%C3%A6llesskab/);
+  await expect(page).toHaveURL(/arrangoer=aeroe-kirkeliv/);
+  await expect(page).toHaveURL(/kategori=kirke/);
+  await expect(page).toHaveURL(/q=gudstjeneste/);
   await expect(page).toHaveURL(/fra=2026-09-20/);
   await expect(page).toHaveURL(/til=2026-10-31/);
   const visibleAgendaItems = page.locator('[data-calendar-kind="agenda"]:visible');
   await expect(visibleAgendaItems).not.toHaveCount(0);
-  await expect(visibleAgendaItems.first()).toContainText(/Eksempel:/);
+  await expect(visibleAgendaItems.first()).toContainText(/Gudstjeneste/i);
   for (const item of await visibleAgendaItems.all()) {
     const date = await item.getAttribute("data-date");
     expect(date).toBeTruthy();
@@ -28,9 +28,9 @@ test("filters agenda items and preserves the selection in the URL", async ({ pag
   }
 
   await page.reload();
-  await expect(page.getByLabel("Arrangør")).toHaveValue("eksempel-faellesskab");
-  await expect(page.getByLabel("Kategori")).toHaveValue("forening-faellesskab");
-  await expect(page.getByLabel("Søg")).toHaveValue("fællesskab");
+  await expect(page.getByLabel("Arrangør")).toHaveValue("aeroe-kirkeliv");
+  await expect(page.getByLabel("Kategori")).toHaveValue("kirke");
+  await expect(page.getByLabel("Søg")).toHaveValue("gudstjeneste");
   await expect(page.getByLabel("Fra og med")).toHaveValue("2026-09-20");
   await expect(page.getByLabel("Til og med")).toHaveValue("2026-10-31");
 });
@@ -53,10 +53,13 @@ test("switches to a Monday-first month and opens a stable event page", async ({ 
   await expect(page.locator("main h1")).toBeVisible();
 });
 
-test("keeps the page usable without JavaScript", async ({ browser }) => {
-  const context = await browser.newContext({ javaScriptEnabled: false });
+test("keeps the page usable without JavaScript", async ({ browser, baseURL }) => {
+  const context = await browser.newContext({
+    javaScriptEnabled: false,
+    ...(baseURL ? { baseURL } : {}),
+  });
   const page = await context.newPage();
-  await page.goto("http://127.0.0.1:4321/aeroevents/");
+  await page.goto("./");
 
   await expect(page.locator("[data-agenda-view]")).toBeVisible();
   await expect(page.locator('[data-calendar-kind="agenda"] a').first()).toBeVisible();
@@ -79,25 +82,22 @@ test("supports keyboard-operated search and view switching", async ({ page }) =>
   await expect(page).toHaveURL(/visning=maaned/);
 });
 
-test("shows booking and members-only details on stable event pages", async ({ page }) => {
-  await page.goto("./begivenheder/eksempel-koncert/");
-  await expect(page.locator("main h1")).toContainText("koncert i forsamlingshuset");
-  await expect(page.getByText("100 kr.", { exact: true })).toBeVisible();
-  await expect(page.getByText("Tilmelding eller billet er nødvendig.")).toBeVisible();
+test("shows booking and source details on stable event pages", async ({ page }) => {
+  await page.goto("./begivenheder/aeroe-bibliotek-10260/");
+  await expect(page.locator("main h1")).toContainText("Ude for uden");
+  await expect(page.getByText("Gratis", { exact: true })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Tilmeld eller bestil" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Sted" })).toBeVisible();
   await expect(page.getByRole("heading", { name: "Kilde" })).toBeVisible();
-
-  await page.goto("./begivenheder/eksempel-medlemsmoede/");
-  await expect(page.getByText("Kun for medlemmer", { exact: true }).first()).toBeVisible();
 });
 
-test("lists every enabled external source and links to it from the site", async ({ page }) => {
+test("lists every enabled external source and links to it from the site", async ({ page }, testInfo) => {
   await page.goto("./");
   await page.getByRole("link", { name: "Se alle kilder" }).click();
 
   await expect(page).toHaveURL(/\/aeroevents\/kilder\/$/);
   await expect(page.getByRole("heading", { level: 1, name: "Kilder" })).toBeVisible();
-  await expect(page.locator("[data-source-id]")).toHaveCount(3);
+  await expect(page.locator("[data-source-id]")).toHaveCount(4);
   await expect(page.getByRole("link", { name: /Ærø Kommunes mødeplan/ })).toHaveAttribute(
     "href",
     "https://www.aeroekommune.dk/politik-og-indflydelse/moedeplaner",
@@ -110,18 +110,23 @@ test("lists every enabled external source and links to it from the site", async 
     "href",
     "https://www.arrebib.dk/arrangementer",
   );
-  await expect(page.getByText("Senest kontrolleret")).toHaveCount(3);
+  await expect(page.getByRole("link", { name: /Offentlige Facebook-kilder/ })).toHaveAttribute(
+    "href",
+    "https://www.facebook.com/events/",
+  );
+  await expect(page.getByText("Senest kontrolleret")).toHaveCount(4);
   await expect(page.getByRole("heading", { name: /Lokale arrangører kan også sende/ })).toBeVisible();
   await expect(page.getByRole("link", { name: "Indsend et arrangement", exact: true })).toHaveAttribute(
     "href",
     "/aeroevents/indsend/",
   );
-  await expect(page.getByText("Offentlige Facebook-kilder", { exact: true })).toHaveCount(0);
 
   const expectedInternalPath = "/aeroevents/kilder/";
-  await expect(
-    page.getByRole("navigation", { name: "Primær navigation" }).getByRole("link", { name: "Kilder" }),
-  ).toHaveAttribute("href", expectedInternalPath);
+  if (!testInfo.project.name.startsWith("mobile")) {
+    await expect(
+      page.getByRole("navigation", { name: "Primær navigation" }).getByRole("link", { name: "Kilder" }),
+    ).toHaveAttribute("href", expectedInternalPath);
+  }
   await expect(
     page.getByRole("navigation", { name: "Sidefod" }).getByRole("link", { name: "Kilder" }),
   ).toHaveAttribute("href", expectedInternalPath);

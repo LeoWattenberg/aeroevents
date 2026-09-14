@@ -1,0 +1,230 @@
+{
+  "sourceId": "facebook",
+  "verifiedAt": "2026-09-14T08:51:39.767Z",
+  "events": [
+    {
+      "id": "facebook-post-28266211109655473",
+      "title": "Høstmarked i Minor's Hjem. Gratis adgang",
+      "description": "Høstmarked i Minor's Hjem. Gratis adgang.\nPå lørdag d. 19/9 kl. 13-16 holder vi årets høstmarked i haven i det gamle skipperhjem i Teglgade 11 i Marstal.\nDu kan opleve en masse spændende ting og købe lækre sager hos de mange stadeholderne.\nKom og se pilefletteren i arbejde, farvning af garn, fra bi til honning, filtning og spinning af uld m.m.\nDer vil også være salg af syltede sager, kunsthåndværk og årstidens grøntsager.\nVi sælger kaffe, te, øl og sodavand og selvfølgelig vil der være skønne kager som vores gæster også kan købe.\nVi glæder os til endnu engang at byde en masse gæster velkommen til en fornøjelig dag i Minor's Hjem.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1vcujyo-1",
+            "date": "2026-09-19",
+            "kind": "timed",
+            "startTime": "13:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28266211109655473",
+        "url": "https://www.facebook.com/groups/oplevmitaeroe/posts/28266211109655473/",
+        "verifiedAt": "2026-09-14T08:51:39.767Z"
+      }
+    },
+    {
+      "id": "facebook-post-2891520387886098",
+      "title": "Høstmarked i Minor's Hjem. Gratis adgang",
+      "description": "Høstmarked i Minor's Hjem. Gratis adgang.\nPå lørdag d. 19/9 kl. 13-16 holder vi årets høstmarked i haven i det gamle skipperhjem i Teglgade 11 i Marstal.\nDu kan opleve en masse spændende ting og købe lækre sager hos de mange stadeholderne.\nKom og se pilefletteren i arbejde, farvning af garn, fra bi til honning, filtning og spinning af uld m.m.\nDer vil også være salg af syltede sager, kunsthåndværk og årstidens grøntsager.\nVi sælger kaffe, te, øl og sodavand og selvfølgelig vil der være skønne kager som vores gæster også kan købe.\nVi glæder os til endnu engang at byde en masse gæster velkommen til en fornøjelig dag i Minor's Hjem.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-164m6by-1",
+            "date": "2026-09-19",
+            "kind": "timed",
+            "startTime": "13:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-2891520387886098",
+        "url": "https://www.facebook.com/groups/1853077681730379/posts/2891520387886098/",
+        "verifiedAt": "2026-09-14T08:51:39.767Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02apuwrnwyhptxm6f5zwetpzlvubghixe6wyaer5cqevtmbdoxyuni4nzd1qm",
+      "title": "Gratis Koncert med Emma Pilgaard - Årets Fynske Jazzmusiker",
+      "description": "Gratis Koncert med Emma Pilgaard - Årets Fynske Jazzmusiker\nMandag 14. september\nKl 18:00 (Døre åbner 17:30)\nMotorfabrikken Marstal\nhttps://www.facebook.com/events/1619221596534962\nEmma Pilgaard er netop kåret som årets fynske jazzmusiker. Hendes musik bevæger sig i spændingsfeltet mellem vokaljazz og singer-songwriter, hvor improvisation møder klare melodier, og teksterne er små historier for sig. Det er musik, der både udfordrer og omfavner.\nArrangementet er gratis. Bemærk, at der max er plads til 100 personer, og kom derfor gerne i god tid (dørene åbner kl. 17.30).\nDette arrangement er en del af sundhedsfestivalen TÆND FOR SØVNEN, som finder sted fra den 14. til 18. september 2026. Festivalen sætter fokus på søvnens betydning for vores sundhed og trivsel. Se hele programmet på www.aeroekommune.dk/sundhedsfestival",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1jddtj6-1",
+            "date": "2026-09-14",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02aPUWrnWYHPTXM6F5ZwEtpZLvuBgHiXE6wyaEr5CqeVtmbDoxYuni4NZd1qmuG8V4l",
+        "url": "https://www.facebook.com/motorfabrikkenmarstal/posts/gratis-koncert-med-emma-pilgaard-%C3%A5rets-fynske-jazzmusiker%EF%B8%8Fmandag-14-september-kl/1513004054196980/",
+        "verifiedAt": "2026-09-14T08:51:39.767Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02lfxucpbjvebxggaqas3unshcydf2dswlutibrwqcx8ytguer7byw4gmjsdq",
+      "title": "1000 TAK for en fantastisk 31. udgave af Ærø Harmonikafestival",
+      "description": "1000 TAK for en fantastisk 31. udgave af Ærø Harmonikafestival.\nTAK til:\n* de mange, fantastiske frivillige fra nær og fjern, som år efter år møder beredvilligt op og yder en kæmpe indsats – uden jer ingen festival.\n* fonde, foreninger, sponsorer og annoncører, som velvilligt støtter os, så vi kan afholde en festival på et kvalitetsmæssigt højt niveau.\n* alle medlemmer af Ærø Folkelige Musikforening (Ærø Harmonikafestival) for jeres støtte.\n* de skønne solister, grupper, sangere og dansere, som trofast bakker os op og gør det muligt at sammensætte et bredt, alsidigt program for 4 festivaldage.\n* myndigheder og samarbejdspartnere, som gør det praktisk muligt at stable denne festival på benene.\n* de dygtige, unge folkedansere fra Bernstorffsminde Efterskole, som traditionen tro lukker Ærø Harmonikafestival med et brag om søndagen.\n* vejrguderne for et ”skånsomt” festivalvejr.\nSidst men ikke mindst:\nTAK til vores fantastiske publikum, som med jeres humør, begejstring og danseglæde gør Ærø Harmonikafestival til noget helt særligt.\nHåber, vi alle ses på Ærø Harmonikafestival den 20.-23. maj 2027.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1oldycj-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1oldycj-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1oldycj-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1oldycj-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02LFXUCPbjveBXGGAqas3UNShCYDF2dSWLutibrWqCx8YTGUeR7byW4GmjsDqUBR8cl",
+        "url": "https://www.facebook.com/harmonikafestival/posts/1000-tak-for-en-fantastisk-31-udgave-af-%C3%A6r%C3%B8-harmonikafestivaltak-til-de-mange-fa/1842653603844423/",
+        "verifiedAt": "2026-09-14T08:51:39.767Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0t3lc4s5d4ai187btiuvqcbdrgju9em9lgxwqgklxttydmperizrbf4sepkcg",
+      "title": "Trænger du til ro i krop og sind",
+      "description": "Trænger du til ro i krop og sind?\nKom og oplev Yoga Nidra, også kaldet \"yogisk søvn\", hos @atmayogahouse i Ommel.\nMed Anna Kramer som guide bliver du gennem meditation og åndedrætsøvelser ført ind i en dybt afslappende tilstand mellem vågenhed og søvn. En teknik, der kan hjælpe med at reducere stress og skabe bedre søvn.\n16. september kl. 17.00-18.00\nAtma Yoga House, Kærvej 17, Ommel\nGratis deltagelse, tilmeld dig på sms til Anna 55 22 32 36.\nBEMÆRK, der er venteliste til dette arrangement!\nArrangeret af Ommel Sundhedslandsby. En del af Sundhedsfestivalen TÆND FOR SØVNEN. Se hele ugens program på www.aeroekommune.dk/sundhedsfestival",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1bp5rxv-1",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0T3Lc4S5D4Ai187bTiuvQCbDRgJU9eM9LGxwqGKLXTTYdmpeRiZRbf4sEPKcGWCNNl",
+        "url": "https://www.facebook.com/aeroekommune/posts/tr%C3%A6nger-du-til-ro-i-krop-og-sind%EF%B8%8F-kom-og-oplev-yoga-nidra-ogs%C3%A5-kaldet-yogisk-s%C3%B8v/1084903097235394/",
+        "verifiedAt": "2026-09-14T08:51:39.767Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0wlejmtia1kdak1jlhusrksqahn1ckeqcosb9jnndexgzcypycurkbjuvzqs7",
+      "title": "Har du lyst til at deltage med en bod til årets julemarked i Ærøskøbings smukke rammer",
+      "description": "Har du lyst til at deltage med en bod til årets julemarked i Ærøskøbings smukke rammer?\nLæs mere nedenfor\nVi ønsker at præsentere alt det bedste fra vores smukke ø samt fra andre kreative udstillere, som ønsker at komme til Ærø. Vi stræber efter indretning og præsentation, som er tilpasset de smukke rammer i Ærøskøbing.\nHVORNÅR\nJulemarkederne afholdes i år over fire lørdage.\nHenholdsvis lørdag d. 21/11, lørdag d. 28/11, lørdag d. 5/12 samt lørdag d. 12/12.\nVi holder åbent fra kl. 9.30-17 alle dage.\nBODER\nMan kan vælge at leje en bod for en, to, tre eller alle lørdage.\nVi stræber efter indretning og præsentation, som er tilpasset de smukke rammer i Ærøskøbing. Derfor er der nogle retningslinjer til interiør omkring boderne, etc. som vil blive udspecificeret ved tilmelding.\nPris for leje af boder er:\nStore boder på torvet med adgang til strøm: 600 kr. pr. lørdag\n(disse boder er forbeholdt mad og drikke)\nSmå boder på torvet med adgang til strøm 450 kr pr lørdag\nSmå boder i Søndergade 350 kr. pr. lørdag\nDe store boder på torvet er som skrevet ovenfor forbeholdt mad, men skulle der være plads til andre, vil vi tage en vurdering af, hvilke produkter der egner sig bedste til torvet og trække lod mellem disse.\nNår vi har modtaget din ansøgning, vil din tilmelding først være gældende og bindende når leje indtægten er indbetalt. Ved senere aflysning refunderes pengene ikke.\nBoderne tildeles efter først-til-mølle princippet. Såfremt der er flere tilmeldte, end der er boder, oprettes en venteliste.\nInden første julemarked laves en oversigt over, hvem der har hvilke boder de enkelte weekender.\nTILMELDING:\nI kan tilmelde jer på følgende måde:\n1. Skriv en kommentar om at I ønsker at modtage tilmeldingsblanketten\n2. Send en e-mail med den udfyldte tilmeldingsblanket til info@cafe-aroma.dk\nVi glæder os til at høre fra jer og ikke mindst til endnu et smukt julemarked i Ærøskøbings hyggelige kulisse\nDe bedste hilsner\nÆrøskøbings Erhvervsforening",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1kqx3dr-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1kqx3dr-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1kqx3dr-3",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1kqx3dr-4",
+            "date": "2026-12-12",
+            "kind": "timed",
+            "startTime": "09:30",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0WLEjmTiA1KDAK1jLhuSrKsqahN1cKeqCosB9jnNDexGzCypyCUrkBJuvzQs75UJYl",
+        "url": "https://www.facebook.com/julehyggeiaeroskobing/posts/har-du-lyst-til-at-deltage-med-en-bod-til-%C3%A5rets-julemarked-i-%C3%A6r%C3%B8sk%C3%B8bings-smukke-/1693891992661773/",
+        "verifiedAt": "2026-09-14T08:51:39.767Z"
+      }
+    }
+  ]
+}

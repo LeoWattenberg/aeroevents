@@ -1,0 +1,233 @@
+# Public Facebook feeds crawled by the local Playwright collector. Every result
+# is review-only. Disable an individual source here if it becomes irrelevant or
+# consistently inaccessible.
+- id: aeroe-kommune
+  name: Ærø Kommune
+  eventFeedUrl: https://www.facebook.com/aeroekommune/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/aeroekommune/posts?locale=da_DK
+  organizerId: aeroe-kommune
+  enabled: true
+- id: aeroe-folkebibliotek
+  name: Ærø Folkebibliotek
+  eventFeedUrl: https://www.facebook.com/arrebib/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/arrebib/posts?locale=da_DK
+  organizerId: aeroe-folkebibliotek
+  enabled: true
+- id: det-sker-paa-aeroe
+  name: Det sker på Ærø
+  eventFeedUrl: https://www.facebook.com/groups/1853077681730379/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/groups/1853077681730379/?locale=da_DK
+  enabled: true
+- id: oplev-mit-aeroe
+  name: OPLEV MIT ÆRØ
+  eventFeedUrl: https://www.facebook.com/groups/oplevmitaeroe/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/groups/oplevmitaeroe/?locale=da_DK
+  enabled: true
+- id: paa-torvet
+  name: På Torvet
+  eventFeedUrl: https://www.facebook.com/PaaTorvet/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/PaaTorvet/posts?locale=da_DK
+  enabled: true
+- id: viften-aeroe
+  name: Viften Ærø
+  eventFeedUrl: https://www.facebook.com/ViftenAeroe/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/ViftenAeroe/posts?locale=da_DK
+  enabled: true
+- id: julehygge-aeroeskoebing
+  name: Julehygge i Ærøskøbing
+  eventFeedUrl: https://www.facebook.com/julehyggeiaeroskobing/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/julehyggeiaeroskobing/posts?locale=da_DK
+  enabled: true
+- id: aeroeskoebing-handelsstandsforening
+  name: Ærøskøbing Handelsstandsforening
+  eventFeedUrl: https://www.facebook.com/AEroskobingHandelsstandsforening/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/AEroskobingHandelsstandsforening/posts?locale=da_DK
+  enabled: true
+- id: atma-yoga-house
+  name: Atma Yoga House
+  eventFeedUrl: https://www.facebook.com/atmayogahouse/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/atmayogahouse/posts?locale=da_DK
+  enabled: true
+- id: motorfabrikken-marstal
+  name: Motorfabrikken Marstal
+  eventFeedUrl: https://www.facebook.com/motorfabrikkenmarstal/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/motorfabrikkenmarstal/posts?locale=da_DK
+  enabled: true
+- id: soebygaard
+  name: Søbygaard
+  eventFeedUrl: https://www.facebook.com/soebygaardaeroe/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/soebygaardaeroe/posts?locale=da_DK
+  enabled: true
+- id: bregninge-paa-aeroe
+  name: Bregninge på Ærø
+  eventFeedUrl: https://www.facebook.com/groups/144664695598174/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/groups/144664695598174/?locale=da_DK
+  enabled: true
+- id: det-sker-i-ommel
+  name: Det sker i Ommel
+  eventFeedUrl: https://www.facebook.com/groups/871725845485563/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/groups/871725845485563/?locale=da_DK
+  enabled: true
+- id: aktivitetshuset-soeby
+  name: Aktivitetshuset i Søby
+  eventFeedUrl: https://www.facebook.com/groups/434434336369842/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/groups/434434336369842/?locale=da_DK
+  enabled: true
+- id: aeroe-hotel
+  name: Ærø Hotel
+  eventFeedUrl: https://www.facebook.com/aeroehotel/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/aeroehotel/posts?locale=da_DK
+  enabled: true
+- id: aeik-arrangerer
+  name: ÆIK arrangerer
+  eventFeedUrl: https://www.facebook.com/aeikarrangerer/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/aeikarrangerer/posts?locale=da_DK
+  enabled: true
+- id: rise-sif
+  name: Rise SIF
+  eventFeedUrl: https://www.facebook.com/RISESIF/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/RISESIF/posts?locale=da_DK
+  enabled: true
+- id: marstal-erhvervsforening
+  name: Marstal Erhvervsforening
+  eventFeedUrl: https://www.facebook.com/MarstalHandelsforening/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/MarstalHandelsforening/posts?locale=da_DK
+  enabled: true
+- id: soeby-erhvervsforening
+  name: Søby Erhvervsforening
+  eventFeedUrl: https://www.facebook.com/100057148403910/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/100057148403910/posts?locale=da_DK
+  enabled: true
+- id: landbogaarden
+  name: Landbogaarden
+  eventFeedUrl: https://www.facebook.com/Landbogaarden/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/Landbogaarden/posts?locale=da_DK
+  enabled: true
+- id: kjobinghus
+  name: Kjobinghus
+  eventFeedUrl: https://www.facebook.com/61582082199581/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/61582082199581/posts?locale=da_DK
+  enabled: true
+- id: aeroe-bryggeri
+  name: Ærø Bryggeri
+  eventFeedUrl: https://www.facebook.com/AeroeBryggeri/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/AeroeBryggeri/posts?locale=da_DK
+  enabled: true
+- id: aeroe-jazz-festival
+  name: Ærø Jazz Festival
+  eventFeedUrl: https://www.facebook.com/aerojazz/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/aerojazz/posts?locale=da_DK
+  enabled: true
+- id: harmonikafestival
+  name: Ærø Harmonikafestival
+  eventFeedUrl: https://www.facebook.com/harmonikafestival/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/harmonikafestival/posts?locale=da_DK
+  enabled: true
+- id: oehavet-festival
+  name: Øhavet Festival
+  eventFeedUrl: https://www.facebook.com/oehavetfestival/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/oehavetfestival/posts?locale=da_DK
+  enabled: true
+- id: marstal-soefartsmuseum
+  name: Marstal Søfartsmuseum
+  eventFeedUrl: https://www.facebook.com/MarstalMuseum/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/MarstalMuseum/posts?locale=da_DK
+  enabled: true
+- id: marstal-navigationsskole
+  name: Marstal Navigationsskole
+  eventFeedUrl: https://www.facebook.com/marnav.dk/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/marnav.dk/posts?locale=da_DK
+  enabled: true
+- id: aeroe-kajak-sup
+  name: Ærø Kajak & SUP
+  eventFeedUrl: https://www.facebook.com/kajakudlejningen/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/kajakudlejningen/posts?locale=da_DK
+  enabled: true
+- id: marstal-camping
+  name: Marstal Camping
+  eventFeedUrl: https://www.facebook.com/Marstalcampingplads/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/Marstalcampingplads/posts?locale=da_DK
+  enabled: true
+- id: aeroe-rideklub
+  name: Ærø Rideklub
+  eventFeedUrl: https://www.facebook.com/groups/667725396572738/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/groups/667725396572738/?locale=da_DK
+  enabled: true
+- id: aeroe-klatreklub
+  name: Ærø Klatreklub
+  eventFeedUrl: https://www.facebook.com/groups/aeroeklatreklub/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/groups/aeroeklatreklub/?locale=da_DK
+  enabled: true
+- id: aeroe-golf-klub
+  name: Ærø Golf Klub
+  eventFeedUrl: https://www.facebook.com/aeroegolfklub/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/aeroegolfklub/posts?locale=da_DK
+  enabled: true
+- id: aeroeskoebing-idraetsklub
+  name: Ærøskøbing Idrætsklub
+  eventFeedUrl: https://www.facebook.com/aeroeskoebingindraetsklub/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/aeroeskoebingindraetsklub/posts?locale=da_DK
+  enabled: true
+- id: aeroe-pastorat
+  name: Ærø Pastorat
+  eventFeedUrl: https://www.facebook.com/aeroepastorat/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/aeroepastorat/posts?locale=da_DK
+  organizerId: aeroe-kirkeliv
+  enabled: true
+- id: aeroe-vin
+  name: Ærø Vin
+  eventFeedUrl: https://www.facebook.com/aeroevin/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/aeroevin/posts?locale=da_DK
+  enabled: true
+- id: venstre-aeroe
+  name: Venstre på Ærø
+  eventFeedUrl: https://www.facebook.com/venstreaeroe/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/venstreaeroe/posts?locale=da_DK
+  enabled: true
+- id: socialdemokratiet-aeroe
+  name: Socialdemokratiet på Ærø
+  eventFeedUrl: https://www.facebook.com/socialdemokratietaeroe/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/socialdemokratietaeroe/posts?locale=da_DK
+  enabled: true
+- id: konservative-aeroe
+  name: Det Konservative Folkeparti på Ærø
+  eventFeedUrl: https://www.facebook.com/406569136115644?sk=events&locale=da_DK
+  postFeedUrl: https://www.facebook.com/406569136115644?sk=posts&locale=da_DK
+  enabled: true
+- id: enhedslisten-aeroe
+  name: Enhedslisten Ærø
+  eventFeedUrl: https://www.facebook.com/EnhedslistenAeroe/events?locale=da_DK
+  postFeedUrl: https://www.facebook.com/EnhedslistenAeroe/posts?locale=da_DK
+  enabled: true
+- id: aeroehallen
+  name: Ærøhallen
+  postFeedUrl: https://www.facebook.com/Aeroehallen/posts?locale=da_DK
+  enabled: true
+- id: kfum-spejderne-aeroe
+  name: KFUM-spejderne på Ærø
+  postFeedUrl: https://www.facebook.com/aeroespejderne/posts?locale=da_DK
+  enabled: true
+- id: campus-aeroe
+  name: Campus Ærø
+  postFeedUrl: https://www.facebook.com/61560348249274/posts?locale=da_DK
+  enabled: true
+- id: marstal-lokalraad
+  name: Marstal Lokalråd
+  postFeedUrl: https://www.facebook.com/100076201150616/posts?locale=da_DK
+  enabled: true
+- id: urk-aeroe
+  name: URK Ærø
+  postFeedUrl: https://www.facebook.com/100064379844681/posts?locale=da_DK
+  enabled: true
+- id: hjemmevaernet-aeroe
+  name: Hjemmeværnet Ærø
+  postFeedUrl: https://www.facebook.com/HJVAeroe/posts?locale=da_DK
+  enabled: true
+- id: nyt-om-aeroe
+  name: Nyt om Ærø
+  postFeedUrl: https://www.facebook.com/NytOmAeroe/posts?locale=da_DK
+  enabled: true
+- id: spisekammer-aeroe
+  name: Spisekammer Ærø
+  postFeedUrl: https://www.facebook.com/61560657601071/posts?locale=da_DK
+  enabled: true

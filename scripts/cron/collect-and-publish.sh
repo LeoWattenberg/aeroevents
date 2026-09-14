@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Run the trusted collectors in a dedicated checkout and publish only the
+# Run all configured collectors in a dedicated checkout and publish only the
 # generated public snapshots. Private review data lives in AEROEVENTS_STATE_DIR
 # and is never staged by this script.
 

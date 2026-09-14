@@ -74,11 +74,10 @@ export function reviewSnapshotAction(
   return "observe-draft";
 }
 
-/** Apply editor-controlled defaults before reference validation and persistence. */
+/** Apply editor-controlled category defaults before reference validation and persistence. */
 export function applySourceMappings(event: EventRecord, source: RepositorySource): EventRecord {
   return {
     ...event,
-    ...(source.organizerId ? { organizerId: source.organizerId } : {}),
     ...(source.categoryIds.length ? { categoryIds: [...source.categoryIds] } : {}),
   };
 }

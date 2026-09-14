@@ -42,14 +42,14 @@ describe("final collection policy", () => {
     expect(applyCollectionPolicy(automaticSource, "trusted", [], false, true).publication).toBe("draft");
   });
 
-  it("uses organizer and category mappings from YAML at the final gate", () => {
+  it("preserves the event organizer while applying category mappings from YAML", () => {
     const mappedSource = sourceDefinitionSchema.parse({
       ...automaticSource,
       organizerId: "yaml-arrangoer",
       categoryIds: ["yaml-kategori"],
     });
     expect(applySourceMappings(event("source-a", "one"), mappedSource)).toMatchObject({
-      organizerId: "yaml-arrangoer",
+      organizerId: "arrangoer",
       categoryIds: ["yaml-kategori"],
     });
   });

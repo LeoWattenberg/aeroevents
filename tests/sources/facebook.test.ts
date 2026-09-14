@@ -135,6 +135,7 @@ describe("Facebook discovery source", () => {
       location: { name: "Ommel Forsamlingshus" },
       price: "75 kr.",
       publication: "review",
+      description: expect.stringContaining("Fællesspisning i Ommel"),
       occurrences: [{ date: "2026-10-02", startTime: "18:30", endTime: "21:00" }],
     });
     expect(result.candidates[0]?.reviewReasons.join(" ")).toContain("Årstal er udledt");
@@ -398,6 +399,42 @@ describe("Facebook discovery source", () => {
         { now: NOW },
       ).errors.join(" "),
     ).toContain("dato");
+  });
+
+  it("does not confuse ages, enclosing festival dates, or cancellation terms with event facts", () => {
+    const children = parseFacebookAnnouncementText(
+      "Kalder alle børn i alderen 8-12 år! Kom med på kreativ workshop i dag kl. 10-12.30",
+      { now: NOW, publishedAt: "2026-09-13T08:00:00+02:00" },
+    );
+    expect(children.occurrences).toHaveLength(1);
+    expect(children.occurrences[0]).toMatchObject({ date: "2026-09-13", startTime: "10:00" });
+
+    const festival = parseFacebookAnnouncementText(
+      "Gratis koncert mandag den 14. september 2026 kl. 18. Dette arrangement er en del af sundhedsfestivalen, som finder sted fra den 14. til 18. september 2026.",
+      { now: NOW },
+    );
+    expect(festival.occurrences).toHaveLength(1);
+    expect(festival.occurrences[0]?.date).toBe("2026-09-14");
+    expect(festival.warnings.join(" ")).toContain("overordnet arrangement");
+
+    const terms = parseFacebookAnnouncementText(
+      "Julemarkederne afholdes lørdag d. 21/11, lørdag d. 28/11, lørdag d. 5/12 samt lørdag d. 12/12. Vi holder åbent kl. 10. Ved senere aflysning refunderes stadelejen ikke.",
+      { now: NOW },
+    );
+    expect(terms.status).toBe("scheduled");
+    expect(terms.occurrences.map((item) => item.date)).toEqual([
+      "2026-11-21",
+      "2026-11-28",
+      "2026-12-05",
+      "2026-12-12",
+    ]);
+
+    const stay = parseFacebookAnnouncementText(
+      "Jul på Ærø. Fra den 20. november er byen pyntet op til julemarked. Vi holder åbent for overnatning til 13. december. Book årets juleophold.",
+      { now: NOW },
+    );
+    expect(stay.occurrences).toEqual([]);
+    expect(stay.errors.join(" ")).toContain("arrangementssignal");
   });
 
   it("uses stable post identities despite tracking query changes", () => {

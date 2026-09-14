@@ -106,7 +106,10 @@ function hasAffirmedSignal(text: string, pattern: RegExp): boolean {
     const after = text.slice(match.index + match[0].length, match.index + match[0].length + 16);
     const negatedBefore = /\b(?:ikke|ingen)\b(?:\s+\p{L}+){0,2}\s*$/iu.test(before);
     const negatedAfter = /^\s+(?:alligevel\s+)?ikke\b/iu.test(after);
-    if (!negatedBefore && !negatedAfter) return true;
+    const conditionalBefore = /\b(?:ved(?:\s+senere)?|hvis|såfremt|i\s+tilfælde\s+af)\s*$/iu.test(
+      before,
+    );
+    if (!negatedBefore && !negatedAfter && !conditionalBefore) return true;
   }
   return false;
 }
@@ -208,6 +211,13 @@ function replacementDateContext(text: string, index: number): boolean {
   );
 }
 
+function enclosingEventDateContext(text: string, index: number): boolean {
+  const context = text.slice(Math.max(0, index - 260), index).toLocaleLowerCase("da-DK");
+  return /\bdette arrangement er en del af[\s\S]{0,180}\b(?:som\s+)?(?:finder sted|afholdes|løber)(?:\s+fra)?\s*$/iu.test(
+    context,
+  );
+}
+
 function weekdayBefore(text: string, index: number): number | undefined {
   const context = text.slice(Math.max(0, index - 24), index).toLocaleLowerCase("da-DK");
   const match = context.match(/(mandag|tirsdag|onsdag|torsdag|fredag|lørdag|søndag)(?:\s+(?:den|d\.))?\s*$/);
@@ -250,6 +260,10 @@ function collectDateGroups(
   ) => {
     if (deadlineContext(text, index)) {
       warnings.push(`Ignorerede fristdato: ${evidence}`);
+      return;
+    }
+    if (groups.length > 0 && enclosingEventDateContext(text, index)) {
+      warnings.push(`Ignorerede dato for et overordnet arrangement: ${evidence}`);
       return;
     }
     if (groups.some((group) => overlaps(group, index, end))) return;
@@ -311,7 +325,7 @@ function collectDateGroups(
     add(index, index + raw.length, raw, rawDates, connector === "-" || connector === "–" || connector === "—" || connector === "til");
   }
 
-  const numericPattern = /(?<!\d)(?:\b(?:den\s+|d\.\s*))?(\d{1,2})([./-])(\d{1,2})(?:\2(\d{2}|20\d{2}))?(?=$|[\s,;:!?])/giu;
+  const numericPattern = /(?<!\d)(?:\b(?:den\s+|d\.\s*))?(\d{1,2})([./-])(\d{1,2})(?:\2(\d{2}|20\d{2}))?(?=$|[\s,.;:!?])/giu;
   for (const match of text.matchAll(numericPattern)) {
     const index = match.index;
     const raw = match[0];
@@ -320,7 +334,14 @@ function collectDateGroups(
     const month = Number(match[3]);
     if (month < 1 || month > 12) continue;
     const before = text.slice(Math.max(0, index - 24), index).toLocaleLowerCase("da-DK");
+    const after = text.slice(index + raw.length, index + raw.length + 18);
     if (/kl(?:okken)?\.?\s*$/.test(before)) continue;
+    if (
+      !match[4] &&
+      (/^\s*(?:år|årige)\b/iu.test(after) || /\b(?:alder(?:en)?|aldersgruppen)\s*$/iu.test(before))
+    ) {
+      continue;
+    }
     if (!match[4] && match[2] === "." && /(?:kl(?:okken)?\.?[^\n]*|\d{1,2}[.:]\d{2}\s*[-–—]\s*)$/u.test(before)) continue;
     const year = yearNumber(match[4]);
     add(index, index + raw.length, raw, [{ day, month, ...(year !== undefined ? { year } : {}) }], false);
@@ -523,7 +544,15 @@ export function parseFacebookAnnouncementText(
     return result;
   }
   const eventSignal = hasEventSignal(text);
-  if (!eventSignal || /\b(?:vi holder lukket|lukket på grund af|almindelige åbningstider)\b/iu.test(text)) {
+  const accommodationPromotion =
+    /\b(?:overnatning|juleophold|hotelophold|værelser?)\b/iu.test(text) &&
+    /\b(?:book|booking|ophold)\b/iu.test(text) &&
+    !/\b(?:vi arrangerer|inviterer til|kom til|arrangementet|eventet|afholdes|finder sted)\b/iu.test(text);
+  if (
+    !eventSignal ||
+    accommodationPromotion ||
+    /\b(?:vi holder lukket|lukket på grund af|almindelige åbningstider)\b/iu.test(text)
+  ) {
     result.errors.push("Opslaget har ikke et entydigt arrangementssignal");
     return result;
   }

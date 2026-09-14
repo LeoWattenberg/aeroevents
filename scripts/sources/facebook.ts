@@ -17,7 +17,6 @@ import type {
   EventLocationDraft,
   ExplicitOccurrenceDraft,
   NormalizedEventDraft,
-  SourceAdapter,
 } from "./types";
 
 const definition = SOURCE_REGISTRY.facebook;
@@ -117,6 +116,11 @@ function isConcreteFacebookContent(url: URL): boolean {
       Boolean(url.searchParams.get("story_fbid"))) ||
     Boolean(url.searchParams.get("fbid"))
   );
+}
+
+export function isConcreteFacebookContentUrl(rawUrl: string): boolean {
+  const url = facebookUrl(rawUrl);
+  return Boolean(url && isConcreteFacebookContent(url));
 }
 
 function parseDateTime(value: unknown): { date: string; time?: string } | undefined {
@@ -359,6 +363,7 @@ export function parseFacebookPostText(
     sourceEventId: id,
     stableId: `${definition.id}-${id}`,
     title: parsed.title,
+    description: normalizeFacebookPostText(input.text),
     organizerId: definition.organizerId,
     categoryIds: [...definition.categoryIds],
     ...(parsed.locationName ? { location: { name: parsed.locationName } } : {}),
@@ -727,24 +732,3 @@ export function createFacebookManualDiscovery(
     now.toISOString(),
   );
 }
-
-async function collectWithoutConfiguredUrl(
-  context: CollectionContext,
-): Promise<CollectionResult> {
-  return {
-    status: "failed",
-    source: definition,
-    retrievedAt: context.now.toISOString(),
-    pagesFetched: 0,
-    candidates: [],
-    warnings: [],
-    errors: [
-      "Facebook-indsamling kræver en konkret offentlig URL; brug collectFacebookPublicUrl",
-    ],
-  };
-}
-
-export const facebookSource: SourceAdapter = {
-  definition,
-  collect: collectWithoutConfiguredUrl,
-};

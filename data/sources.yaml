@@ -26,8 +26,8 @@
   enabled: true
 - id: facebook
   name: Offentlige Facebook-kilder
-  organizerId: aeroe-kalenderen
+  url: https://www.facebook.com/events/
   categoryIds: [andet]
   publication: review
-  enabled: false
-  notes: Aktiveres kilde for kilde efter kontrol af adgang og vilkår.
+  enabled: true
+  notes: Crawles lokalt med browser; alle fund kræver redaktionel godkendelse.

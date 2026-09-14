@@ -40,6 +40,7 @@ npm run events -- create
 npm run events -- create --from event.yaml --publish
 npm run events -- collect
 npm run events -- collect aeroe-kirkeliv
+npm run events -- collect facebook
 npm run events -- review
 npm run events -- approve <kandidat-id>
 npm run events -- reject <kandidat-id> --reason "Ikke offentligt"
@@ -54,7 +55,9 @@ npm run events -- publish
 
 Kø, rå fund, afvisninger og eventuelle afsenderoplysninger er private. De gemmes uden for repositoryet i `$AEROEVENTS_STATE_DIR`, ellers under `$XDG_STATE_HOME/aeroevents` eller `~/.local/state/aeroevents`. De bliver ikke læst af Astro-buildet.
 
-Facebook-integrationen er kun et redaktionelt hjælpemiddel. Offentlig synlighed garanterer ikke stabil eller tilladt automatisk adgang. `--fetch` forsøger én konkret event- eller post-URL. Den læser først strukturerede eventdata og kan derefter fortolke en enkelt opslagstekst med en entydig dansk dato. En fuld, manuelt kopieret opslagstekst kan fortolkes med `--details-file`; `--published-at` gør relative datoer og manglende årstal sikrere. Loginmure, afkortet tekst, tvetydige datoer og opslag uden arrangementsignal afvises. Alle fund gemmes i den private kø, og intet publiceres uden godkendelse. En anonym browsertest fandt eventlinks på flere offentlige sider, men Facebooks `robots.txt` kræver udtrykkelig skriftlig tilladelse til automatiseret indsamling. Browserindsamling af side- og gruppefeeds er derfor ikke aktiveret.
+`collect` omfatter en lokal Playwright-crawler til de offentlige side- og gruppefeeds i `data/facebook-sources.yaml`. Den finder både formelle Facebook-events og almindelige opslag, der annoncerer et arrangement. Komplette opslag fortolkes direkte fra feedet; eventlinks og afkortede opslag åbnes på deres konkrete permalink. Loginmure, tvetydige datoer og opslag uden arrangementsignal afvises. Alle Facebook-fund gemmes i den private kø, og intet publiceres uden godkendelse. Crawleren starter ikke i GitHub Actions.
+
+Kør kun Facebook med `npm run events -- collect facebook`. Begræns en fejlsøgning til bestemte konfigurations-id'er med eksempelvis `AEROEVENTS_FACEBOOK_SOURCE_IDS=det-sker-paa-aeroe,oplev-mit-aeroe npm run events -- collect facebook`. Hvis Chromium ikke findes automatisk, sættes `AEROEVENTS_CHROMIUM_PATH` til browserens absolutte sti. Den eksisterende `facebook --fetch`-kommando henter fortsat én konkret event- eller post-URL, og `--details-file` er fallback til manuelt kopieret opslagstekst.
 
 ## Automatiske kilder
 
@@ -63,10 +66,11 @@ Første version indeholder adapters til:
 - Ærø Kommunes mødeplan for Kommunalbestyrelsen
 - Ærø Kirkelivs samlede ChurchDesk-kalender, hvor alle valide poster går direkte til publicering
 - Ærø Folkebiblioteks arrangements- og detaljesider
+- offentlige Facebook-events og eventannoncer i opslag, altid til review
 
 Hver adapter kræver et komplet og strukturelt gyldigt svar. Event-ID'er fra kilden bevares, så en ny kørsel opdaterer samme event. Eventuelle kandidater fra andre kilder med samme titel og starttid går til dubletkontrol.
 
-`data/sources.yaml` er den endelige autoritet for, om en kilde er aktiv, må publicere automatisk, og hvilke arrangør- og kategorireferencer den må bruge. Vellykkede HTTP-svar arkiveres privat med begrænsede filrettigheder, så en import kan efterprøves uden at lægge rådata i Git.
+`data/sources.yaml` er den endelige autoritet for, om en kilde er aktiv, må publicere automatisk, og hvilke kategorireferencer den må bruge. En kildes `organizerId` er kun adapterens standardværdi; en arrangør, der er angivet på selve arrangementet, bevares. Vellykkede HTTP-svar arkiveres privat med begrænsede filrettigheder, så en import kan efterprøves uden at lægge rådata i Git.
 
 Se [driftsvejledningen](docs/operations.md) for cronjob, sikker publicering, fejlhåndtering og GitHub Pages. [Datapolitikken](docs/data-policy.md) beskriver grænsen mellem private arbejdsdata og det, der må publiceres. [Kandidater til nye datakilder](docs/source-candidates.md) er en verificeret, prioriteret scraper-backlog med konkrete endpoints og publiceringsregler. [Facebook-kilder på Ærø](docs/facebook-sources.md) dokumenterer de testede eventfaner, adgangsgrænsen og fallbacken.
 

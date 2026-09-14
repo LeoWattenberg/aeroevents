@@ -129,7 +129,6 @@ export async function loadRepository(root = process.cwd()): Promise<RepositoryDa
       const source = sourceById.get(snapshot.sourceId);
       return eventSchema.parse({
         ...event,
-        ...(source?.organizerId ? { organizerId: source.organizerId } : {}),
         ...(source?.categoryIds.length ? { categoryIds: source.categoryIds } : {}),
         // A source configured for review cannot grant itself publication by
         // storing a published event. An explicit editorial override may still
