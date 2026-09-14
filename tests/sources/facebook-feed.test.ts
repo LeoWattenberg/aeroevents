@@ -111,6 +111,7 @@ describe("Facebook feed crawler", () => {
       },
       {
         sources: [source()],
+        githubActions: false,
         createBrowser: fakeBrowser({ [FEED_URL]: FEED_HTML, [eventUrl]: eventHtml, [postUrl]: postHtml }, opened),
       },
     );
@@ -138,6 +139,7 @@ describe("Facebook feed crawler", () => {
       { fetch: globalThis.fetch, now: NOW },
       {
         sources: [source(), source({ id: "missing", name: "Manglende", eventFeedUrl: failedUrl })],
+        githubActions: false,
         createBrowser: fakeBrowser({ [FEED_URL]: FEED_HTML, [failedUrl]: new Error("navigation timeout") }),
         maxDetails: 1,
       },

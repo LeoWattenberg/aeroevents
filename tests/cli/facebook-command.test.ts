@@ -53,7 +53,7 @@ describe("facebook announcement CLI", () => {
       sourceEventId: "post-987654321",
       event: {
         title: "Fællesspisning i Ommel",
-        description: "",
+        description: expect.stringContaining("Fællesspisning i Ommel"),
         publication: "draft",
         location: { name: "Ommel Forsamlingshus" },
         schedule: {
