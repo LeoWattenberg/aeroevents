@@ -56,6 +56,8 @@ const serializedPayload = JSON.stringify(payload).replaceAll("<", "\\u003c");
       <a
         class="button"
         href={initialCategory?.webcalUrl ?? "#"}
+        target="_blank"
+        rel="noopener"
         data-category-calendar-subscribe
       >
         Abonnér i kalender
@@ -84,6 +86,8 @@ const serializedPayload = JSON.stringify(payload).replaceAll("<", "\\u003c");
     <a
       class="calendar-download"
       href={initialCategory?.calendarUrl ?? "#"}
+      target="_blank"
+      rel="noopener"
       download={initialCategory ? `aeroevents-${initialCategory.id}.ics` : undefined}
       type="text/calendar"
       data-category-calendar-download
@@ -110,7 +114,7 @@ const serializedPayload = JSON.stringify(payload).replaceAll("<", "\\u003c");
       <p>Vælg eller kopiér linket til den kategori, du vil følge:</p>
       <ul>
         {payload.map((category) => (
-          <li><a href={category.calendarUrl} type="text/calendar">{category.name}</a></li>
+          <li><a href={category.calendarUrl} target="_blank" rel="noopener" type="text/calendar">{category.name}</a></li>
         ))}
       </ul>
     </div>

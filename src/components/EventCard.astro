@@ -58,7 +58,7 @@ const dateTime = occurrence.allDay || occurrence.timeUnknown ? occurrence.date :
       {attendance && <span class="badge attendance">{attendance}</span>}
       {categories.slice(0, compact ? 1 : 2).map((category) => <span class="badge">{category.name}</span>)}
     </div>
-    <h3><a href={sitePath(`/begivenheder/${encodeURIComponent(event.id)}/`)}>{event.title}</a></h3>
+    <h3><a href={sitePath(`/begivenheder/${encodeURIComponent(event.id)}/`)} target="_blank" rel="noopener">{event.title}</a></h3>
     <p class="event-meta">
       {organizer && <span>{organizer.name}</span>}
       {organizer && location?.name && <span aria-hidden="true"> · </span>}

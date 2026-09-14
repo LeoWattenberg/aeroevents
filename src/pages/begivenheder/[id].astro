@@ -73,7 +73,7 @@ const sourceTime = event.source?.verifiedAt
 
 <BaseLayout title={event.title} description={event.description || `${event.title} på Ærø`} canonicalPath={`/begivenheder/${event.id}/`}>
   <article class="event-page page-width">
-    <a class="back-link" href={sitePath("/")}>← Tilbage til kalenderen</a>
+    <a class="back-link" href={sitePath("/")} target="_blank" rel="noopener">← Tilbage til kalenderen</a>
 
     <header class="event-header">
       <div class="event-title">
@@ -84,7 +84,7 @@ const sourceTime = event.source?.verifiedAt
         </div>
         <h1>{event.title}</h1>
         {organizer && (
-          <p class="byline">Arrangeret af <a href={sitePath(`/arrangoerer/${organizer.id}/`)}>{organizer.name}</a></p>
+          <p class="byline">Arrangeret af <a href={sitePath(`/arrangoerer/${organizer.id}/`)} target="_blank" rel="noopener">{organizer.name}</a></p>
         )}
       </div>
 
@@ -135,7 +135,7 @@ const sourceTime = event.source?.verifiedAt
               {primaryLocation.address && <>{primaryLocation.address}<br /></>}
               {(primaryLocation.postalCode || primaryLocation.city) && <>{primaryLocation.postalCode} {primaryLocation.city}</>}
             </p>
-            {primaryLocation.url && <a href={primaryLocation.url}>Læs om stedet ↗</a>}
+            {primaryLocation.url && <a href={primaryLocation.url} target="_blank" rel="noopener">Læs om stedet ↗</a>}
           </section>
         )}
 
@@ -145,7 +145,7 @@ const sourceTime = event.source?.verifiedAt
             {event.price && <p><strong>{event.price}</strong></p>}
             {event.bookingRequired && <p><strong>Tilmelding eller billet er nødvendig.</strong></p>}
             {event.bookingDetails && <p>{event.bookingDetails}</p>}
-            {event.bookingUrl && <a class="button" href={event.bookingUrl}>Tilmeld eller bestil</a>}
+            {event.bookingUrl && <a class="button" href={event.bookingUrl} target="_blank" rel="noopener">Tilmeld eller bestil</a>}
           </section>
         )}
 
@@ -161,7 +161,7 @@ const sourceTime = event.source?.verifiedAt
           <section class="source">
             <h2>Kilde</h2>
             <p>
-              {event.source.url ? <a href={event.source.url}>{event.source.name} ↗</a> : event.source.name}
+              {event.source.url ? <a href={event.source.url} target="_blank" rel="noopener">{event.source.name} ↗</a> : event.source.name}
               {sourceTime && <><br /><small>Kontrolleret {sourceTime}</small></>}
             </p>
             <p><small>Kontrollér altid den oprindelige kilde ved ændringer i sidste øjeblik.</small></p>

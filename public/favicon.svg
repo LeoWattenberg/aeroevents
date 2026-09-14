@@ -1,8 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="10" fill="#f4f0e2"/>
-  <path d="M8 8h48v16H8z" fill="#e0b62f"/>
-  <path d="M8 24h48v16H8z" fill="#315f45"/>
-  <path d="M8 40h48v16H8z" fill="#a54238"/>
-  <path d="M8 24h48M8 40h48" stroke="#f4f0e2" stroke-width="2" opacity=".7"/>
-  <text x="32" y="43" fill="#fffdf5" font-family="Georgia,serif" font-size="31" font-weight="700" text-anchor="middle">Æ</text>
+  <defs>
+    <clipPath id="flag-shape">
+      <rect width="64" height="64" rx="8"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#flag-shape)">
+    <rect width="64" height="64" fill="#e0b62f"/>
+    <path d="M0 7.111h64v7.112H0zM0 28.444h64v7.112H0zM0 49.778h64v7.112H0z" fill="#315f45"/>
+    <path d="M0 14.222h64v7.112H0zM0 35.555h64v7.112H0zM0 56.889h64v7.112H0z" fill="#a54238"/>
+  </g>
 </svg>

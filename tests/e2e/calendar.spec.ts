@@ -57,9 +57,11 @@ test("switches to a Monday-first month and opens a stable event page", async ({ 
   await expect(link).toBeVisible();
   const href = await link.getAttribute("href");
   expect(href).toMatch(/^\/aeroevents\/begivenheder\/[a-z0-9-]+\/$/);
-  await link.click();
-  await expect(page).toHaveURL(/\/aeroevents\/begivenheder\/[a-z0-9-]+\/$/);
-  await expect(page.locator("main h1")).toBeVisible();
+  await expect(link).toHaveAttribute("target", "_blank");
+  const [eventPage] = await Promise.all([page.waitForEvent("popup"), link.click()]);
+  await expect(eventPage).toHaveURL(/\/aeroevents\/begivenheder\/[a-z0-9-]+\/$/);
+  await expect(eventPage.locator("main h1")).toBeVisible();
+  await eventPage.close();
 });
 
 test("keeps the page usable without JavaScript", async ({ browser, baseURL }) => {
@@ -102,43 +104,45 @@ test("shows booking and source details on stable event pages", async ({ page }) 
 
 test("lists every enabled external source and links to it from the site", async ({ page }, testInfo) => {
   await page.goto("./");
-  await page.getByRole("link", { name: "Se alle kilder" }).click();
+  const allSourcesLink = page.getByRole("link", { name: "Se alle kilder" });
+  await expect(allSourcesLink).toHaveAttribute("target", "_blank");
+  const [sourcesPage] = await Promise.all([page.waitForEvent("popup"), allSourcesLink.click()]);
 
-  await expect(page).toHaveURL(/\/aeroevents\/kilder\/$/);
-  await expect(page.getByRole("heading", { level: 1, name: "Kilder" })).toBeVisible();
-  await expect(page.locator("[data-source-id]")).toHaveCount(24);
-  await expect(page.getByRole("link", { name: /Ærø Kommunes mødeplan/ })).toHaveAttribute(
+  await expect(sourcesPage).toHaveURL(/\/aeroevents\/kilder\/$/);
+  await expect(sourcesPage.getByRole("heading", { level: 1, name: "Kilder" })).toBeVisible();
+  await expect(sourcesPage.locator("[data-source-id]")).toHaveCount(24);
+  await expect(sourcesPage.getByRole("link", { name: /Ærø Kommunes mødeplan/ })).toHaveAttribute(
     "href",
     "https://www.aeroekommune.dk/politik-og-indflydelse/moedeplaner",
   );
-  await expect(page.getByRole("link", { name: /Ærø Kirkelivs kalender/ })).toHaveAttribute(
+  await expect(sourcesPage.getByRole("link", { name: /Ærø Kirkelivs kalender/ })).toHaveAttribute(
     "href",
     "https://www.xn--rkirkeliv-f3a3r.dk/kalender--aktiviteter",
   );
-  await expect(page.getByRole("link", { name: /Ærø Folkebiblioteks arrangementer/ })).toHaveAttribute(
+  await expect(sourcesPage.getByRole("link", { name: /Ærø Folkebiblioteks arrangementer/ })).toHaveAttribute(
     "href",
     "https://www.arrebib.dk/arrangementer",
   );
-  await expect(page.getByRole("link", { name: /Offentlige Facebook-kilder/ })).toHaveAttribute(
+  await expect(sourcesPage.getByRole("link", { name: /Offentlige Facebook-kilder/ })).toHaveAttribute(
     "href",
     "https://www.facebook.com/events/",
   );
-  const sourceSection = page.locator('[aria-labelledby="external-sources-heading"]');
+  const sourceSection = sourcesPage.locator('[aria-labelledby="external-sources-heading"]');
   await expect(sourceSection.locator("article")).toHaveCount(24);
-  await expect(page.locator("[data-facebook-source-id]"), "every configured Facebook source").toHaveCount(47);
-  await expect(page.locator('[data-facebook-source-id="det-sker-i-ommel"] a')).toHaveAttribute(
+  await expect(sourcesPage.locator("[data-facebook-source-id]"), "every configured Facebook source").toHaveCount(47);
+  await expect(sourcesPage.locator('[data-facebook-source-id="det-sker-i-ommel"] a')).toHaveAttribute(
     "href",
     "https://www.facebook.com/groups/871725845485563/",
   );
-  await expect(page.locator('[data-facebook-source-id="aeroe-hotel"] a')).toHaveAttribute(
+  await expect(sourcesPage.locator('[data-facebook-source-id="aeroe-hotel"] a')).toHaveAttribute(
     "href",
     "https://www.facebook.com/aeroehotel/",
   );
-  await expect(page.locator("[data-candidate-source-id]"), "no integrated source remains in the backlog").toHaveCount(0);
-  await expect(page.getByRole("heading", { name: "Alle hidtil undersøgte kilder er integreret" })).toBeVisible();
-  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
-  await expect(page.getByRole("heading", { name: /Lokale arrangører kan også sende/ })).toBeVisible();
-  await expect(page.getByRole("link", { name: "Indsend et arrangement", exact: true })).toHaveAttribute(
+  await expect(sourcesPage.locator("[data-candidate-source-id]"), "no integrated source remains in the backlog").toHaveCount(0);
+  await expect(sourcesPage.getByRole("heading", { name: "Alle hidtil undersøgte kilder er integreret" })).toBeVisible();
+  expect(await sourcesPage.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await expect(sourcesPage.getByRole("heading", { name: /Lokale arrangører kan også sende/ })).toBeVisible();
+  await expect(sourcesPage.getByRole("link", { name: "Indsend et arrangement", exact: true })).toHaveAttribute(
     "href",
     "/aeroevents/indsend/",
   );
@@ -146,12 +150,31 @@ test("lists every enabled external source and links to it from the site", async 
   const expectedInternalPath = "/aeroevents/kilder/";
   if (!testInfo.project.name.startsWith("mobile")) {
     await expect(
-      page.getByRole("navigation", { name: "Primær navigation" }).getByRole("link", { name: "Kilder" }),
+      sourcesPage.getByRole("navigation", { name: "Primær navigation" }).getByRole("link", { name: "Kilder" }),
     ).toHaveAttribute("href", expectedInternalPath);
   }
   await expect(
-    page.getByRole("navigation", { name: "Sidefod" }).getByRole("link", { name: "Kilder" }),
+    sourcesPage.getByRole("navigation", { name: "Sidefod" }).getByRole("link", { name: "Kilder" }),
   ).toHaveAttribute("href", expectedInternalPath);
+  await sourcesPage.close();
+});
+
+test("opens every link in a new tab without exposing an opener", async ({ page }) => {
+  const paths = [
+    "./",
+    "./kilder/",
+    "./arrangoerer/",
+    "./arrangoerer/aeroe-kommune/",
+    "./begivenheder/aeroe-bibliotek-10260/",
+    "./indsend/",
+  ];
+
+  for (const path of paths) {
+    await page.goto(path);
+    await expect(page.locator("a")).not.toHaveCount(0);
+    await expect(page.locator('a:not([target="_blank"])')).toHaveCount(0);
+    await expect(page.locator('a:not([rel~="noopener"])')).toHaveCount(0);
+  }
 });
 
 test("fits the mobile viewport and exposes the submission address", async ({ page }, testInfo) => {

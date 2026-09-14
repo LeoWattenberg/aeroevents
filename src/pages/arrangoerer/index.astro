@@ -43,7 +43,7 @@ const visibleOrganizers = dataset.organizers
       return (
         <article>
           <p class="count">{eventCount === 1 ? "1 arrangement" : `${eventCount} arrangementer`}</p>
-          <h2><a href={sitePath(`/arrangoerer/${organizer.id}/`)}>{organizer.name}</a></h2>
+          <h2><a href={sitePath(`/arrangoerer/${organizer.id}/`)} target="_blank" rel="noopener">{organizer.name}</a></h2>
           {organizer.description && <p>{organizer.description}</p>}
           <span class="arrow" aria-hidden="true">↗</span>
         </article>

@@ -32,7 +32,7 @@ const mailto = `mailto:${email}?subject=${subject}&body=${body}`;
     </div>
     <aside>
       <p>Send oplysningerne til</p>
-      <a href={mailto}>{email}</a>
+      <a href={mailto} target="_blank" rel="noopener">{email}</a>
       <small>Indsendelser bliver læst og godkendt, før de kommer i kalenderen.</small>
     </aside>
   </header>
@@ -55,8 +55,8 @@ const mailto = `mailto:${email}?subject=${subject}&body=${body}`;
       <p class="eyebrow">Klar?</p>
       <h2>Åbn en færdig mailskabelon</h2>
       <p>Skabelonen har felter til de vigtigste oplysninger. Du må gerne vedhæfte en plakat eller et billede som supplement.</p>
-      <a class="button" href={mailto}>Skriv om et arrangement</a>
-      <p class="email-fallback">Hvis knappen ikke virker: <a href={`mailto:${email}`}>{email}</a></p>
+      <a class="button" href={mailto} target="_blank" rel="noopener">Skriv om et arrangement</a>
+      <p class="email-fallback">Hvis knappen ikke virker: <a href={`mailto:${email}`} target="_blank" rel="noopener">{email}</a></p>
     </div>
   </section>
 </BaseLayout>

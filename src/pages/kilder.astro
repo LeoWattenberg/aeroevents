@@ -74,7 +74,7 @@ const candidateStatus = {
           const verification = verificationBySource.get(source.id);
           return (
             <article data-source-id={source.id}>
-              <h3><a href={source.url}>{source.name} <span aria-hidden="true">↗</span></a></h3>
+              <h3><a href={source.url} target="_blank" rel="noopener">{source.name} <span aria-hidden="true">↗</span></a></h3>
               {verification?.verifiedAt ? (
                 <dl>
                   <div>
@@ -115,7 +115,7 @@ const candidateStatus = {
       {facebookSources.map((source) => (
         <li data-facebook-source-id={source.id} data-enabled={String(source.enabled)}>
           <span class={`source-kind ${facebookKind(source).toLocaleLowerCase("da-DK")}`}>{facebookKind(source)}</span>
-          <a href={facebookProfileUrl(source)}>{source.name} <span aria-hidden="true">↗</span></a>
+          <a href={facebookProfileUrl(source)} target="_blank" rel="noopener">{source.name} <span aria-hidden="true">↗</span></a>
           {!source.enabled && <span class="paused">På pause</span>}
         </li>
       ))}
@@ -137,7 +137,7 @@ const candidateStatus = {
         {researchedSources.map((source) => (
           <article class="candidate-source" data-candidate-source-id={source.id}>
             <p class="candidate-status">{candidateStatus[source.status]}</p>
-            <h3><a href={source.url}>{source.name} <span aria-hidden="true">↗</span></a></h3>
+            <h3><a href={source.url} target="_blank" rel="noopener">{source.name} <span aria-hidden="true">↗</span></a></h3>
             <p>{source.summary}</p>
           </article>
         ))}
@@ -163,7 +163,7 @@ const candidateStatus = {
           godkendt, før de vises i kalenderen.
         </p>
       </div>
-      <a class="button secondary" href={sitePath("/indsend/")}>Indsend et arrangement</a>
+      <a class="button secondary" href={sitePath("/indsend/")} target="_blank" rel="noopener">Indsend et arrangement</a>
     </section>
   )}
 </BaseLayout>

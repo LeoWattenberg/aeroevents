@@ -43,18 +43,18 @@ const canonical = Astro.site ? new URL(sitePath(canonicalPath), Astro.site) : un
     data-notification-home={sitePath("/")}
     data-notification-icon={sitePath("/favicon.svg")}
   >
-    <a class="skip-link" href="#indhold">Gå til indhold</a>
+    <a class="skip-link" href="#indhold" target="_blank" rel="noopener">Gå til indhold</a>
     <header class="site-header">
       <div class="header-inner page-width">
-        <a class="brand" href={sitePath("/")} aria-label="Det sker på Ærø, forside">
+        <a class="brand" href={sitePath("/")} target="_blank" rel="noopener" aria-label="Det sker på Ærø, forside">
           <span class="brand-mark" aria-hidden="true"></span>
           <span><small>Det sker</small>på Ærø</span>
         </a>
         <nav aria-label="Primær navigation">
-          <a href={sitePath("/")}>Kalender</a>
-          <a href={sitePath("/arrangoerer/")}>Arrangører</a>
-          <a href={sitePath("/kilder/")}>Kilder</a>
-          <a class="nav-submit" href={sitePath("/indsend/")}>Indsend arrangement</a>
+          <a href={sitePath("/")} target="_blank" rel="noopener">Kalender</a>
+          <a href={sitePath("/arrangoerer/")} target="_blank" rel="noopener">Arrangører</a>
+          <a href={sitePath("/kilder/")} target="_blank" rel="noopener">Kilder</a>
+          <a class="nav-submit" href={sitePath("/indsend/")} target="_blank" rel="noopener">Indsend arrangement</a>
         </nav>
       </div>
     </header>
@@ -77,14 +77,14 @@ const canonical = Astro.site ? new URL(sitePath(canonicalPath), Astro.site) : un
           <p class="footer-title">Det sker på Ærø</p>
           <p>En enkel, lokal oversigt over det, vi kan mødes om.</p>
           <p class="map-credit">
-            Kort: <a href="https://commons.wikimedia.org/wiki/File:Arroe_by_Blaeu_1665_(cropped).jpg">Joan Blaeu, 1665</a>
+            Kort: <a href="https://commons.wikimedia.org/wiki/File:Arroe_by_Blaeu_1665_(cropped).jpg" target="_blank" rel="noopener">Joan Blaeu, 1665</a>
             · public domain
           </p>
         </div>
         <nav aria-label="Sidefod">
-          <a href={sitePath("/")}>Kalender</a>
-          <a href={sitePath("/kilder/")}>Kilder</a>
-          <a href={sitePath("/indsend/")}>Få et arrangement med</a>
+          <a href={sitePath("/")} target="_blank" rel="noopener">Kalender</a>
+          <a href={sitePath("/kilder/")} target="_blank" rel="noopener">Kilder</a>
+          <a href={sitePath("/indsend/")} target="_blank" rel="noopener">Få et arrangement med</a>
         </nav>
       </div>
     </footer>

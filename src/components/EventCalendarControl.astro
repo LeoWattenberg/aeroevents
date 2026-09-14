@@ -16,6 +16,8 @@ const calendarUrl = sitePath(eventCalendarPath(eventId));
   <a
     class="button secondary"
     href={calendarUrl}
+    target="_blank"
+    rel="noopener"
     download={`aeroevents-${eventId}.ics`}
     type="text/calendar"
   >
