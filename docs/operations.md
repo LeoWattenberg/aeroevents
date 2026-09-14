@@ -32,8 +32,11 @@ npm run events -- publish
 `create` spørger om de nødvendige felter og skriver et manuelt YAML-udkast.
 `collect` opdaterer kun et import-snapshot, når hele kilden er hentet og alle
 offentlige poster er valide. Tvivlsomme poster lægges i den private kø.
-`review` viser køen; `approve` kopierer en valideret, offentlig event til Git,
-mens `reject` arkiverer den privat.
+`review` viser køen én kandidat ad gangen med tid, sted og kildelink. Svar `y`
+for at validere og tilføje kandidaten til Git med det samme, eller `n` for at
+afvise og arkivere den privat. `review --json` viser køen uden den interaktive
+dialog. De separate kommandoer `approve` og `reject` kan fortsat bruges med et
+kandidat-id.
 
 `data/sources.yaml` er den afgørende publiceringspolitik. En adapter kan kræve
 gennemsyn, men kan ikke selv give tilladelse til automatisk publicering. Filens

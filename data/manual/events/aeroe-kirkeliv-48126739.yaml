@@ -1,0 +1,27 @@
+id: aeroe-kirkeliv-48126739
+title: Dåb i Søby
+description: ""
+organizerId: aeroe-kirkeliv
+categoryIds:
+  - kirke
+location:
+  name: Langebro 2a, 5985 Søby
+  address: Langebro 2A
+  postalCode: "5985"
+  city: Søby Ærø
+attendance:
+  kind: public
+status: scheduled
+publication: published
+schedule:
+  kind: explicit
+  dates:
+    - id: churchdesk-48126739
+      date: 2026-09-19
+      kind: timed
+      startTime: 12:00
+source:
+  sourceId: aeroe-kirkeliv
+  externalId: "48126739"
+  url: https://www.xn--rkirkeliv-f3a3r.dk/b/dab-48126739
+  verifiedAt: 2026-09-13T20:51:14.761Z

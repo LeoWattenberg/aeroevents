@@ -49,7 +49,7 @@ npm run events -- validate
 npm run events -- publish
 ```
 
-`create` starter en terminaldialog eller indlæser en færdig eventfil. Nye manuelle events er kladder, medmindre `--publish` er angivet. `collect` publicerer kun fuldstændige resultater fra betroede kilder; tvivlsomme fund sendes til køen. En tom, delvis eller fejlet indsamling erstatter aldrig sidste fungerende snapshot.
+`create` starter en terminaldialog eller indlæser en færdig eventfil. Nye manuelle events er kladder, medmindre `--publish` er angivet. `collect` publicerer kun fuldstændige resultater fra betroede kilder; tvivlsomme fund sendes til køen. `review` viser kandidaterne én ad gangen med tid, sted og kildelink; `y` godkender og tilføjer kandidaten, mens `n` afviser og arkiverer den privat. Brug `review --json` til en ikke-interaktiv visning. En tom, delvis eller fejlet indsamling erstatter aldrig sidste fungerende snapshot.
 
 Kø, rå fund, afvisninger og eventuelle afsenderoplysninger er private. De gemmes uden for repositoryet i `$AEROEVENTS_STATE_DIR`, ellers under `$XDG_STATE_HOME/aeroevents` eller `~/.local/state/aeroevents`. De bliver ikke læst af Astro-buildet.
 

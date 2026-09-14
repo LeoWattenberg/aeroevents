@@ -1,0 +1,30 @@
+id: aeroe-kirkeliv-53650220
+title: Aftensang i Søby
+description: |-
+  Torsdag den 1. oktober kl. 19.00 i Søby Kirke
+  AFTENSANG I SØBY
+  En stemningsfuld aften i Søby Kirk...
+organizerId: aeroe-kirkeliv
+categoryIds:
+  - kirke
+location:
+  name: Langebro 2a, 5985 Søby
+  address: Langebro 2A
+  postalCode: "5985"
+  city: Søby Ærø
+attendance:
+  kind: public
+status: scheduled
+publication: published
+schedule:
+  kind: explicit
+  dates:
+    - id: churchdesk-53650220
+      date: 2026-10-01
+      kind: timed
+      startTime: 19:00
+source:
+  sourceId: aeroe-kirkeliv
+  externalId: "53650220"
+  url: https://www.xn--rkirkeliv-f3a3r.dk/b/musikgudstjeneste-i-bregninge-53650220
+  verifiedAt: 2026-09-13T20:51:14.761Z

@@ -2,6 +2,8 @@ import { spawn } from "node:child_process";
 import { readFile, stat, unlink } from "node:fs/promises";
 import { basename, relative, resolve } from "node:path";
 import { once } from "node:events";
+import { createInterface } from "node:readline/promises";
+import { stdin, stdout } from "node:process";
 import { stringify as stringifyYaml } from "yaml";
 import {
   collectAllSources,
@@ -49,6 +51,7 @@ import {
   type ReviewCandidate,
 } from "./review-store.js";
 import type { EventRecord } from "../../src/lib/schema.js";
+import { formatReviewCandidate, parseReviewDecision } from "./review-display.js";
 
 async function exists(path: string): Promise<boolean> {
   try {
@@ -369,13 +372,6 @@ async function collectCommand(args: string[]): Promise<void> {
   console.log(`Indsamling færdig: ${updated} snapshots opdateret, ${queued} nye/ændrede i kø, ${retained} bevaret.`);
 }
 
-function candidateTitle(candidate: ReviewCandidate): string {
-  if (candidate.event && typeof candidate.event === "object" && "title" in candidate.event) {
-    return String((candidate.event as { title?: unknown }).title || "Uden titel");
-  }
-  return "Uden titel";
-}
-
 async function reviewCommand(args: string[]): Promise<void> {
   const paths = getPaths();
   const options = parseOptions(args);
@@ -388,19 +384,38 @@ async function reviewCommand(args: string[]): Promise<void> {
     console.log("Der er ingen kandidater til gennemsyn.");
     return;
   }
-  for (const candidate of candidates) {
-    const reasons = candidate.reasons.length ? ` — ${candidate.reasons.join("; ")}` : "";
-    console.log(`${candidate.candidateId}  ${candidateTitle(candidate)}  [${candidate.sourceId}]${reasons}`);
+  if (!stdin.isTTY || !stdout.isTTY) {
+    throw new Error("Interaktivt gennemsyn kræver en terminal; brug review --json til maskinlæsbar visning.");
   }
-  console.log(`${candidates.length} kandidat(er). Brug review --json for de private arbejdsdata.`);
+
+  const prompt = createInterface({ input: stdin, output: stdout });
+  let approved = 0;
+  let rejected = 0;
+  try {
+    for (const [index, candidate] of candidates.entries()) {
+      console.log(`\n${formatReviewCandidate(candidate, index + 1, candidates.length)}\n`);
+      let decision;
+      do {
+        decision = parseReviewDecision(await prompt.question("Godkend og tilføj? (y/n): "));
+        if (!decision) console.log("Svar y for ja eller n for nej.");
+      } while (!decision);
+
+      if (decision === "approve") {
+        console.log(await approveCandidate(paths, candidate));
+        approved += 1;
+      } else {
+        await markRejected(paths, candidate, "Afvist ved interaktivt gennemsyn");
+        console.log(`Afviste ${candidate.candidateId}.`);
+        rejected += 1;
+      }
+    }
+  } finally {
+    prompt.close();
+  }
+  console.log(`Gennemsyn færdigt: ${approved} godkendt, ${rejected} afvist.`);
 }
 
-async function approveCommand(args: string[]): Promise<void> {
-  const paths = getPaths();
-  const options = parseOptions(args);
-  const candidateId = options.positional[0];
-  if (!candidateId) throw new Error("approve kræver et kandidat-id.");
-  const candidate = await findPending(paths, candidateId);
+async function approveCandidate(paths: CliPaths, candidate: ReviewCandidate): Promise<string> {
   const event = validateEvent({ ...(candidate.event as object), publication: "published" });
   await assertEventReferences(paths.repo, event);
 
@@ -418,8 +433,7 @@ async function approveCommand(args: string[]): Promise<void> {
     if (!sameSourceRecord) throw new Error(`Event-id'et ${event.id} tilhører allerede en anden event.`);
     const publicPath = await writeEventOverride(paths, event, importedConflict);
     await markApproved(paths, candidate, publicPath);
-    console.log(`Godkendte ${candidate.candidateId} som redaktionel override i ${publicPath}.`);
-    return;
+    return `Godkendte ${candidate.candidateId} som redaktionel override i ${publicPath}.`;
   }
   if (conflicting) {
     allowReplace =
@@ -431,7 +445,16 @@ async function approveCommand(args: string[]): Promise<void> {
 
   const publicPath = await writeManualEvent(paths, event, allowReplace);
   await markApproved(paths, candidate, publicPath);
-  console.log(`Godkendte ${candidate.candidateId} som ${publicPath}.`);
+  return `Godkendte ${candidate.candidateId} som ${publicPath}.`;
+}
+
+async function approveCommand(args: string[]): Promise<void> {
+  const paths = getPaths();
+  const options = parseOptions(args);
+  const candidateId = options.positional[0];
+  if (!candidateId) throw new Error("approve kræver et kandidat-id.");
+  const candidate = await findPending(paths, candidateId);
+  console.log(await approveCandidate(paths, candidate));
 }
 
 async function rejectCommand(args: string[]): Promise<void> {
