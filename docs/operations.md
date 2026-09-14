@@ -19,6 +19,7 @@ De daglige kommandoer er:
 
 ```text
 npm run events -- create
+npm run events -- queue --from event.yaml [--reason "..."] [--evidence "..."]
 npm run events -- collect [source-id ...]
 npm run events -- collect facebook
 npm run events -- review
@@ -32,6 +33,12 @@ npm run events -- publish
 ```
 
 `create` spørger om de nødvendige felter og skriver et manuelt YAML-udkast.
+`queue --from` lægger en manuelt researchet YAML- eller JSON-event i reviewkøen
+uden at publicere den. Gentagelser angives kanonisk med `dtstart`, `rrule` og en
+eventuel varighed; kommandoen kontrollerer både reglen, dens startanker og mulige
+dubletter i kalenderens rullende vindue. Reviewvisningen gengiver almindelige
+regler som læsbar tekst, mens godkendelse bevarer reglen og kalenderbygget
+udvider den til almindelige forekomster.
 `collect` opdaterer kun et import-snapshot, når hele kilden er hentet og alle
 offentlige poster er valide. Tvivlsomme poster lægges i den private kø.
 `review` viser køen én kandidat ad gangen med tid, sted og kildelink. Svar `y`

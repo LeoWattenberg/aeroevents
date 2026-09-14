@@ -1,0 +1,37 @@
+id: aeroe-svoemmeklub-bassinlivredder-2026
+title: Bassinlivredder
+description: Bassinlivredderhold for deltagere fra 15 år i Ærø Svømmeklub.
+organizerId: aeroe-svoemmeklub
+organizerName: Ærø Svømmeklub
+categoryIds:
+  - sport-motion
+location:
+  name: Svømmehallen – bassin
+  address: Markgade 1
+  postalCode: "5960"
+  city: Marstal
+attendance:
+  kind: registration
+  details: Betalt klubhold for deltagere fra 15 år; tilmelding kræves.
+status: scheduled
+publication: published
+booking:
+  required: true
+  soldOut: false
+  details: Tilmelding og pris fremgår af klubbens programside.
+schedule:
+  kind: recurring
+  dtstart:
+    date: 2026-09-01
+    kind: timed
+    startTime: 17:00
+  rrule: FREQ=WEEKLY;BYDAY=TU;UNTIL=20261110T170000
+  rdates: []
+  exdates: []
+  overrides: []
+  durationMinutes: 120
+source:
+  sourceId: manual
+  externalId: aeroe-svoemmeklub-bassinlivredder-2026
+  url: https://aero.klub-modul.dk/cms/TeamOverviewProgramList.aspx
+  verifiedAt: 2026-09-14T19:35:00Z

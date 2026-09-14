@@ -1,0 +1,33 @@
+id: marstal-marineforening-sunday-open-house-2026
+title: Søndagsåbent i Marstal Marineforening
+description: Åbent hus for medlemmer med hyggesnak. Den første søndag i måneden serveres der normalt lidt mad.
+organizerId: marstal-marineforening
+organizerName: Marstal Marineforening
+categoryIds:
+  - forening-faellesskab
+location:
+  name: Marstal Marineforenings Hus
+  address: Strandstræde 47A
+  postalCode: "5960"
+  city: Marstal
+attendance:
+  kind: members
+  details: Søndagsåbningen er for foreningens medlemmer.
+status: scheduled
+publication: published
+schedule:
+  kind: recurring
+  dtstart:
+    date: 2026-09-20
+    kind: timed
+    startTime: 10:00
+  rrule: FREQ=WEEKLY;BYDAY=SU;UNTIL=20261213T100000
+  rdates: []
+  exdates: []
+  overrides: []
+  durationMinutes: 180
+source:
+  sourceId: manual
+  externalId: marstal-marineforening-sunday-open-house-2026
+  url: https://www.marstalmarineforening.dk/aktiviteter/
+  verifiedAt: 2026-09-14T19:35:00Z

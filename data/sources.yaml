@@ -182,3 +182,43 @@
   publication: review
   enabled: true
   notes: Den månedlige møderegel importeres som medlemsaktivitet og kræver gennemsyn for undtagelser.
+- id: aeroe-rideklub
+  name: Ærø Rideklubs aktivitetskalender
+  url: https://www.aeroerideklub.dk/events-1
+  organizerId: aeroe-rideklub
+  categoryIds: [sport-motion, forening-faellesskab]
+  publication: review
+  enabled: true
+  notes: Den offentlige HTML-side læses uden Squarespaces robots-fravalgte JSON- og iCal-varianter. Adgang og usædvanlige tidspunkter kræver gennemsyn.
+- id: aeroe-golfklub
+  name: Ærø Golf Klubs turneringskalender
+  url: https://www.aeroegolf.dk/turneringer.aspx
+  organizerId: aeroe-golfklub
+  categoryIds: [sport-motion]
+  publication: review
+  enabled: true
+  notes: Den årlige HTML-plan har sikre datoer, men ikke starttider; nye turneringer kræver gennemsyn.
+- id: marstal-if
+  name: Marstal IFs kommende hjemmekampe
+  url: https://www.marstalif.dk/fodbold/kommende-kampe/
+  organizerId: marstal-if
+  categoryIds: [sport-motion]
+  publication: automatic
+  enabled: true
+  notes: Kun fremtidige hjemmekampe med stabilt DBU-kamp-id og spillested på stadion i Marstal publiceres automatisk.
+- id: marstal-billard-klub
+  name: Marstal Billard Klubs kommende hjemmekampe
+  url: https://spiller.ddbu-admin.dk/?m=1005&klubnr=511
+  organizerId: marstal-billard-klub
+  categoryIds: [sport-motion, forening-faellesskab]
+  publication: review
+  enabled: true
+  notes: Kun fremtidige hjemmekampe med stabilt kamp-id importeres. Kilden angiver ikke starttid eller tilskueradgang, så alle fund kræver gennemsyn.
+- id: aeroeskoebing-sejlklub
+  name: Ærøskøbing Sejlklubs aktivitetskalender
+  url: https://calendar.google.com/calendar/ical/9db3eee6cb77ad0a86cb2c024117df053701c9e5e4898f548914f560650e3df9%40group.calendar.google.com/public/basic.ics
+  organizerId: aeroeskoebing-sejlklub
+  categoryIds: [sport-motion, forening-faellesskab]
+  publication: review
+  enabled: true
+  notes: Det offentlige iCal-feed filtreres for klubhusbookinger og aktiviteter uden for Ærø. Medlemsadgang og heldagsangivelser kræver gennemsyn.

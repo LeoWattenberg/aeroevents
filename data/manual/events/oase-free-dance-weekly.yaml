@@ -1,0 +1,35 @@
+id: oase-free-dance-weekly
+title: Fri dans inspireret af de 5 rytmer
+description: Halvanden times improviseret dans og bevægelse for voksne; ingen binding eller tilmelding.
+organizerId: oase-for-velvaere-ved-anja-kamedula-wraa
+organizerName: Oase for velvære ved Anja Kamedula Wraa
+categoryIds:
+  - sport-motion
+  - forening-faellesskab
+location:
+  name: Oase for velvære
+  address: Oldevej 8
+  postalCode: "5970"
+  city: Ærøskøbing
+attendance:
+  kind: public
+  details: For mænd og kvinder; ingen tilmelding.
+status: scheduled
+publication: published
+price: 60 kr. pr. gang
+schedule:
+  kind: recurring
+  dtstart:
+    date: 2026-09-15
+    kind: timed
+    startTime: 18:00
+  rrule: FREQ=WEEKLY;BYDAY=TU;BYMONTH=1,2,3,4,5,9,10,11,12
+  rdates: []
+  exdates: []
+  overrides: []
+  durationMinutes: 90
+source:
+  sourceId: manual
+  externalId: oase-free-dance-weekly
+  url: https://www.anjakamedula.dk/dans-workshop
+  verifiedAt: 2026-09-14T19:35:00Z

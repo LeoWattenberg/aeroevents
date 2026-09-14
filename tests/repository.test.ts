@@ -199,4 +199,51 @@ describe("repository pipeline", () => {
     expect(resolved.metadata.rangeEnd).toBe("2027-09-13");
     expect(resolved.occurrences).toHaveLength(1);
   });
+
+  it("expands an approved recurring manual event as ordinary calendar occurrences", async () => {
+    const root = await fixtureRoot();
+    await fs.writeFile(
+      path.join(root, "data/manual/events/monthly-club-night.yaml"),
+      toYaml({
+        ...importedEvent,
+        id: "monthly-club-night",
+        title: "Månedlig klubaften",
+        publication: "published",
+        source: { sourceId: "manual", url: "https://example.test/monthly" },
+        schedule: {
+          kind: "recurring",
+          dtstart: { kind: "timed", date: "2026-09-10", startTime: "18:00" },
+          rrule: "FREQ=MONTHLY;BYDAY=TH;BYSETPOS=2",
+          durationMinutes: 120,
+        },
+      }),
+    );
+
+    const resolved = await resolvePublicData(
+      root,
+      DateTime.fromISO("2026-09-14T12:00:00", { zone: CALENDAR_ZONE }),
+    );
+    expect(resolved.publicEvents[0]?.schedule.kind).toBe("recurring");
+    expect(resolved.occurrences.slice(0, 3).map((occurrence) => ({
+      date: occurrence.date,
+      startAt: occurrence.startAt,
+      endAt: occurrence.endAt,
+    }))).toEqual([
+      {
+        date: "2026-09-10",
+        startAt: "2026-09-10T18:00:00.000+02:00",
+        endAt: "2026-09-10T20:00:00.000+02:00",
+      },
+      {
+        date: "2026-10-08",
+        startAt: "2026-10-08T18:00:00.000+02:00",
+        endAt: "2026-10-08T20:00:00.000+02:00",
+      },
+      {
+        date: "2026-11-12",
+        startAt: "2026-11-12T18:00:00.000+01:00",
+        endAt: "2026-11-12T20:00:00.000+01:00",
+      },
+    ]);
+  });
 });

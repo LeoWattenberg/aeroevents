@@ -67,3 +67,18 @@
 - id: parkinsonforeningen-aeroe
   name: Parkinsonforeningen – Klub Ærø
   url: https://parkinson.dk/kredse/2823-fyn/klubber/
+- id: aeroe-rideklub
+  name: Ærø Rideklub
+  url: https://www.aeroerideklub.dk/
+- id: aeroe-golfklub
+  name: Ærø Golf Klub
+  url: https://www.aeroegolf.dk/
+- id: marstal-if
+  name: Marstal Idrætsforening
+  url: https://www.marstalif.dk/
+- id: marstal-billard-klub
+  name: Marstal Billard Klub
+  url: https://spiller.ddbu-admin.dk/?m=88&klubnr=511
+- id: aeroeskoebing-sejlklub
+  name: Ærøskøbing Sejlklub
+  url: https://www.aeroeskoebing-sejlklub.dk/

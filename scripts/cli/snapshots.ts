@@ -28,6 +28,8 @@ export interface SnapshotMergeOptions {
   demoteIdentities?: ReadonlySet<string>;
   /** A review-only source policy demotes all retained records as a final safety gate. */
   demoteAllRetained?: boolean;
+  /** Authoritative feeds retire unobserved records unless an invalid/review transition must retain them. */
+  retainUnobserved?: boolean;
   /** Backfill an old snapshot once so later checks cannot look like its last-seen time. */
   previousVerifiedAt?: string;
 }
@@ -53,7 +55,11 @@ export function mergeSourceEvents(
   const retained = previousEvents
     .filter((event) => {
       const identity = snapshotSourceIdentity(event);
-      return !replacements.has(identity) && !options.removeIdentities?.has(identity);
+      return (
+        !replacements.has(identity) &&
+        !options.removeIdentities?.has(identity) &&
+        (options.retainUnobserved !== false || options.demoteIdentities?.has(identity))
+      );
     })
     .map((event) => {
       const retainedEvent =

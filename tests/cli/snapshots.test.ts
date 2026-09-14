@@ -70,6 +70,32 @@ describe("source snapshot merge", () => {
     ).toEqual([{ ...invalidNow, publication: "draft" }]);
   });
 
+  it("removes a previously imported identity when a complete source explicitly excludes it", () => {
+    const formerlyInScope = event("match-one", "stable-match", "2026-11-01");
+    const stillObserved = event("match-two", "other-match", "2026-11-02");
+
+    expect(
+      mergeSourceEvents([formerlyInScope, stillObserved], [stillObserved], {
+        removeIdentities: new Set(["stable-match"]),
+      }),
+    ).toEqual([stillObserved]);
+  });
+
+  it("retires unobserved identities for an authoritative source snapshot", () => {
+    const noLongerListed = event("old-tournament", "old-title", "2026-11-01");
+    const current = event("current-tournament", "current-title", "2026-11-02");
+
+    expect(
+      mergeSourceEvents([noLongerListed], [current], { retainUnobserved: false }),
+    ).toEqual([current]);
+    expect(
+      mergeSourceEvents([noLongerListed], [current], {
+        retainUnobserved: false,
+        demoteIdentities: new Set(["old-title"]),
+      }),
+    ).toEqual([{ ...noLongerListed, publication: "draft" }, current]);
+  });
+
   it("backfills a retained legacy event with its old snapshot verification time", () => {
     const legacy = event("meeting-old", "old", "2026-01-01");
     expect(legacy.source.verifiedAt).toBeUndefined();

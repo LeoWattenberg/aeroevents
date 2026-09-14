@@ -1,0 +1,34 @@
+id: marstal-if-krolf-weekly
+title: Krolf i Marstal IF
+description: Ugentlig krolftræning med mødested ved Marstal IFs klubhus.
+organizerId: marstal-idraetsforening
+organizerName: Marstal Idrætsforening
+categoryIds:
+  - sport-motion
+  - forening-faellesskab
+location:
+  name: Marstal IFs klubhus
+  address: Reberbanen 35B
+  postalCode: "5960"
+  city: Marstal
+attendance:
+  kind: members
+  details: Klubbens side angiver ikke sikkert, om nye deltagere kan møde op uden medlemskab.
+status: scheduled
+publication: published
+schedule:
+  kind: recurring
+  dtstart:
+    date: 2026-09-16
+    kind: timed
+    startTime: 10:00
+  rrule: FREQ=WEEKLY;BYDAY=WE
+  rdates: []
+  exdates: []
+  overrides: []
+  durationMinutes: 90
+source:
+  sourceId: manual
+  externalId: marstal-if-krolf-weekly
+  url: https://www.marstalif.dk/andre-sportsgrene/krolf/traeningstider/
+  verifiedAt: 2026-09-14T19:35:00Z

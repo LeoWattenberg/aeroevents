@@ -169,6 +169,41 @@ export const SOURCE_REGISTRY = {
     organizerId: "parkinsonforeningen-aeroe",
     categoryIds: ["forening-faellesskab"],
   },
+  "aeroe-rideklub": {
+    id: "aeroe-rideklub",
+    name: "Ærø Rideklub — aktivitetskalender",
+    url: "https://www.aeroerideklub.dk/events-1",
+    organizerId: "aeroe-rideklub",
+    categoryIds: ["sport-motion", "forening-faellesskab"],
+  },
+  "aeroe-golfklub": {
+    id: "aeroe-golfklub",
+    name: "Ærø Golf Klub — turneringskalender",
+    url: "https://www.aeroegolf.dk/turneringer.aspx",
+    organizerId: "aeroe-golfklub",
+    categoryIds: ["sport-motion"],
+  },
+  "marstal-if": {
+    id: "marstal-if",
+    name: "Marstal IF — kommende hjemmekampe",
+    url: "https://www.marstalif.dk/fodbold/kommende-kampe/",
+    organizerId: "marstal-if",
+    categoryIds: ["sport-motion"],
+  },
+  "marstal-billard-klub": {
+    id: "marstal-billard-klub",
+    name: "Marstal Billard Klub — kommende hjemmekampe",
+    url: "https://spiller.ddbu-admin.dk/?m=1005&klubnr=511",
+    organizerId: "marstal-billard-klub",
+    categoryIds: ["sport-motion", "forening-faellesskab"],
+  },
+  "aeroeskoebing-sejlklub": {
+    id: "aeroeskoebing-sejlklub",
+    name: "Ærøskøbing Sejlklub — aktivitetskalender",
+    url: "https://calendar.google.com/calendar/ical/9db3eee6cb77ad0a86cb2c024117df053701c9e5e4898f548914f560650e3df9%40group.calendar.google.com/public/basic.ics",
+    organizerId: "aeroeskoebing-sejlklub",
+    categoryIds: ["sport-motion", "forening-faellesskab"],
+  },
 } as const satisfies Record<string, SourceDefinition>;
 
 export type RegisteredSourceId = keyof typeof SOURCE_REGISTRY;

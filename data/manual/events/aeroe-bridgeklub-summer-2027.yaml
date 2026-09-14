@@ -1,0 +1,36 @@
+id: aeroe-bridgeklub-summer-2027
+title: Sommerbridge – mandag
+description: Ærø Bridgeklubs ugentlige sommerbridge i juni, juli og august.
+organizerId: aeroe-bridgeklub
+organizerName: Ærø Bridgeklub
+categoryIds:
+  - forening-faellesskab
+location:
+  name: Ærø Bridgeklub
+  address: Vestergade 32B, 1. sal
+  postalCode: "5960"
+  city: Marstal
+attendance:
+  kind: registration
+  details: Tilmelding på spilledagen. Gæstevilkår bør bekræftes for sommersæsonen.
+status: scheduled
+publication: published
+booking:
+  required: true
+  soldOut: false
+  details: Se kildesiden for den aktuelle tilmeldingskontakt.
+schedule:
+  kind: recurring
+  dtstart:
+    date: 2027-06-07
+    kind: timed
+    startTime: 19:00
+  rrule: FREQ=WEEKLY;BYDAY=MO;UNTIL=20270830T190000
+  rdates: []
+  exdates: []
+  overrides: []
+source:
+  sourceId: manual
+  externalId: aeroe-bridgeklub-summer-2027
+  url: https://www.bridge.dk/4596/Forside.html
+  verifiedAt: 2026-09-14T19:35:00Z

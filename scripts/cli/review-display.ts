@@ -1,4 +1,5 @@
 import type { ReviewCandidate } from "./review-store.js";
+import { recurrenceLabel } from "./recurrence-label.js";
 
 type UnknownRecord = Record<string, unknown>;
 
@@ -41,6 +42,11 @@ function formatSchedule(event: UnknownRecord): string {
     return schedule.dates.map(formatDate).join("; ") || "Ikke angivet";
   }
   if (schedule?.kind === "recurring") {
+    const friendly = recurrenceLabel(schedule);
+    if (friendly) {
+      const rule = text(schedule.rrule);
+      return `${friendly}${rule ? ` [${rule}]` : ""}`;
+    }
     const start = formatDate(schedule.dtstart);
     const rule = text(schedule.rrule);
     return `${start}${rule ? `; gentagelse: ${rule}` : "; gentagende"}`;

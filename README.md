@@ -46,6 +46,7 @@ Browserbeskeder kræver HTTPS og en browser, der understøtter Notifications API
 ```sh
 npm run events -- create
 npm run events -- create --from event.yaml --publish
+npm run events -- queue --from event.yaml --reason "Kontrollér sæsonens undtagelser"
 npm run events -- collect
 npm run events -- collect aeroe-kirkeliv
 npm run events -- collect facebook
@@ -78,7 +79,9 @@ bekræftelse. Den sletter ikke filer, så en beslutning kan fortrydes med
 `npm run deduplicate -- restore <dublet-event-id>`. Brug kun `--yes`, når valget
 allerede er kontrolleret i en automatiseret arbejdsgang.
 
-`create` starter en terminaldialog eller indlæser en færdig eventfil. Nye manuelle events er kladder, medmindre `--publish` er angivet. `collect` publicerer kun fuldstændige resultater fra betroede kilder; tvivlsomme fund sendes til køen. `review` viser kandidaterne én ad gangen med tid, sted og kildelink; `y` godkender og tilføjer kandidaten, `n` afviser og arkiverer den privat, og `s` springer den over, så den forbliver i køen. Brug `review --json` til en ikke-interaktiv visning. En tom, delvis eller fejlet indsamling erstatter aldrig sidste fungerende snapshot.
+`create` starter en terminaldialog eller indlæser en færdig eventfil. Nye manuelle events er kladder, medmindre `--publish` er angivet. `queue --from` validerer en færdig YAML- eller JSON-event og lægger den i den private reviewkø; den er beregnet til manuelt researchede fund og kræver et offentligt `source.url`. En gentagelse gemmes som én `recurring`-plan med `dtstart`, RFC 5545-`rrule` og eventuelt `durationMinutes`, ikke som en liste af beregnede datoer. Reglen kontrolleres mod kalenderens næste 12 måneder, før kandidaten gemmes.
+
+`collect` publicerer kun fuldstændige resultater fra betroede kilder; tvivlsomme fund sendes til køen. `review` viser kandidaterne én ad gangen med tid, sted og kildelink; almindelige gentagelsesregler vises som eksempelvis “hver anden torsdag i måneden kl. 18:00”. `y` godkender og tilføjer kandidaten, `n` afviser og arkiverer den privat, og `s` springer den over, så den forbliver i køen. Brug `review --json` til en ikke-interaktiv visning. Efter godkendelse udvider kalenderbygget gentagelsen til normale forekomster i det rullende 12-månedersvindue. En tom, delvis eller fejlet indsamling erstatter aldrig sidste fungerende snapshot.
 
 Kø, rå fund, afvisninger og eventuelle afsenderoplysninger er private. De gemmes uden for repositoryet i `$AEROEVENTS_STATE_DIR`, ellers under `$XDG_STATE_HOME/aeroevents` eller `~/.local/state/aeroevents`. De bliver ikke læst af Astro-buildet.
 
@@ -88,12 +91,13 @@ Kør kun Facebook med `npm run events -- collect facebook`. Begræns en fejlsøg
 
 ## Kildeadaptere
 
-Indsamlingslaget dækker nu alle kilder fra de to første researchbølger:
+Indsamlingslaget dækker nu de implementerede kilder fra tre researchbølger:
 
 - kommunens mødeplan med FirstAgenda-berigelse, kommunens "Det sker", Kirkeliv og Folkebiblioteket
 - Rise SIF, DN Ærø, Ritual/Momoyoga, Ældre Sagen, Folkedanserforeningen, Viften, Folkeuniversitetet, Motorfabrikken, Ommel BK, Marstal Navigationsskole og Campus Ærø
 - Ommel Samvirke, Kunsthøjskolen, Søby Lokalråd, Ærø Hotel og Ærøskøbing Grand Prix
 - Ærø Klatreklub, Ærø Tennisklub og Parkinsonforeningens Klub Ærø, hvis sæsonløse regler altid går til review med usikkerheden bevaret
+- Ærø Rideklub, Ærø Golf Klub, Marstal IF, Marstal Billard Klub og Ærøskøbing Sejlklub; kun de verificerede Marstal IF-hjemmekampe publiceres automatisk, mens de øvrige fund starter i review
 - offentlige Facebook-events og eventannoncer i opslag, altid til review
 
 Hver adapter kræver et komplet og strukturelt gyldigt svar. Event-ID'er fra kilden bevares, så en ny kørsel opdaterer samme event. Eventuelle kandidater fra andre kilder med samme titel og starttid går til dubletkontrol.

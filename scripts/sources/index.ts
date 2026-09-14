@@ -1,6 +1,9 @@
 import { aeldresagenSource } from "./aeldresagen";
 import { aeroeHotelEventsSource } from "./aeroe-hotel-events";
+import { aeroeGolfklubSource } from "./aeroe-golfklub";
+import { aeroeRideklubSource } from "./aeroe-rideklub";
 import { aeroeskoebingGrandPrixSource } from "./aeroeskoebing-grand-prix";
+import { aeroeskoebingSejlklubSource } from "./aeroeskoebing-sejlklub";
 import { campusSource } from "./campus";
 import { churchDeskSource } from "./churchdesk";
 import { dnEventsSource } from "./dn-events";
@@ -11,6 +14,8 @@ import { klatreklubSource } from "./klatreklub";
 import { kunsthoejskolenSource } from "./kunsthoejskolen";
 import { librarySource } from "./library";
 import { marnavSource } from "./marnav";
+import { marstalBillardKlubSource } from "./marstal-billard-klub";
+import { marstalIfSource } from "./marstal-if";
 import { momoyogaSource } from "./momoyoga";
 import { motorfabrikkenSource } from "./motorfabrikken";
 import { municipalityEventsSource } from "./municipality-events";
@@ -33,7 +38,10 @@ import type {
 
 export * from "./aeldresagen";
 export * from "./aeroe-hotel-events";
+export * from "./aeroe-golfklub";
+export * from "./aeroe-rideklub";
 export * from "./aeroeskoebing-grand-prix";
+export * from "./aeroeskoebing-sejlklub";
 export * from "./campus";
 export * from "./churchdesk";
 export * from "./dn-events";
@@ -45,6 +53,8 @@ export * from "./klatreklub";
 export * from "./kunsthoejskolen";
 export * from "./library";
 export * from "./marnav";
+export * from "./marstal-billard-klub";
+export * from "./marstal-if";
 export * from "./momoyoga";
 export * from "./motorfabrikken";
 export * from "./municipality-events";
@@ -84,6 +94,11 @@ export const SOURCE_ADAPTERS: Record<RegisteredSourceId, SourceAdapter> = {
   "aeroe-klatreklub": klatreklubSource,
   "aeroe-tennisklub": tennisklubSource,
   "parkinsonforeningen-aeroe": parkinsonAeroeSource,
+  "aeroe-rideklub": aeroeRideklubSource,
+  "aeroe-golfklub": aeroeGolfklubSource,
+  "marstal-if": marstalIfSource,
+  "marstal-billard-klub": marstalBillardKlubSource,
+  "aeroeskoebing-sejlklub": aeroeskoebingSejlklubSource,
 };
 
 export interface CollectOptions {

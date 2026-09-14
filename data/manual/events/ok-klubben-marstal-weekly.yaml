@@ -1,0 +1,37 @@
+id: ok-klubben-marstal-weekly
+title: OK-klubben – ugentligt samvær
+description: Spil, strik og hyggesnak for seniorer; der er blandt andet banko en gang om måneden.
+organizerId: ok-klubben-i-marstal
+organizerName: OK-klubben i Marstal
+categoryIds:
+  - forening-faellesskab
+location:
+  name: Konfirmandstuen
+  address: Strandstræde 20
+  postalCode: "5960"
+  city: Marstal
+attendance:
+  kind: registration
+  details: Senioraktivitet; kontakt klubben via kildesiden før første deltagelse.
+status: scheduled
+publication: published
+booking:
+  required: true
+  soldOut: false
+  details: Kontaktoplysning findes på kommunens kildeside.
+schedule:
+  kind: recurring
+  dtstart:
+    date: 2026-09-17
+    kind: timed
+    startTime: 14:00
+  rrule: FREQ=WEEKLY;BYDAY=TH
+  rdates: []
+  exdates: []
+  overrides: []
+  durationMinutes: 120
+source:
+  sourceId: manual
+  externalId: ok-klubben-marstal-weekly
+  url: https://www.aeroekommune.dk/mit-liv/aeldre/aktivt-seniorliv/sociale-arrangementer/ok-klubben
+  verifiedAt: 2026-09-14T19:35:00Z

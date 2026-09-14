@@ -1,0 +1,38 @@
+id: aeroeskoebing-if-tai-chi-september-may
+title: Tai Chi på engelsk
+description: Tai Chi-undervisning på engelsk med socialt samvær bagefter, fra september til maj.
+organizerId: aeroeskoebing-idraetsklub
+organizerName: Ærøskøbing Idrætsklub
+categoryIds:
+  - sport-motion
+  - forening-faellesskab
+location:
+  name: Arrebohallen
+  address: Statene 42
+  postalCode: "5970"
+  city: Ærøskøbing
+attendance:
+  kind: registration
+  details: Aktiviteten omtales under kommunens seniorliv; tilmeldingsvilkår skal bekræftes.
+status: scheduled
+publication: published
+booking:
+  required: true
+  soldOut: false
+  details: Se kommunens kildeside og Ærøskøbing Idrætsklubs hjemmeside.
+schedule:
+  kind: recurring
+  dtstart:
+    date: 2026-09-18
+    kind: timed
+    startTime: 11:45
+  rrule: FREQ=WEEKLY;BYDAY=FR;BYMONTH=1,2,3,4,5,9,10,11,12
+  rdates: []
+  exdates: []
+  overrides: []
+  durationMinutes: 75
+source:
+  sourceId: manual
+  externalId: aeroeskoebing-if-tai-chi-september-may
+  url: https://www.aeroekommune.dk/mit-liv/aeldre/aktivt-seniorliv/motion-og-sundhed/tai-chi-paa-engelsk
+  verifiedAt: 2026-09-14T19:35:00Z

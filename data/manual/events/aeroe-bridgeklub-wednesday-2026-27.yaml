@@ -1,0 +1,39 @@
+id: aeroe-bridgeklub-wednesday-2026-27
+title: Bridge – onsdag eftermiddag
+description: Fast onsdagsturnering i Ærø Bridgeklubs sæson 2026/27.
+organizerId: aeroe-bridgeklub
+organizerName: Ærø Bridgeklub
+categoryIds:
+  - forening-faellesskab
+location:
+  name: Ærø Bridgeklub
+  address: Vestergade 32B, 1. sal
+  postalCode: "5960"
+  city: Marstal
+attendance:
+  kind: registration
+  details: Tilmelding på spilledagen senest kl. 10. Gæster kan deltage.
+status: scheduled
+publication: published
+price: Medlemmer gratis; gæster 30 kr.
+booking:
+  required: true
+  soldOut: false
+  details: Se kildesiden for den aktuelle tilmeldingskontakt.
+schedule:
+  kind: recurring
+  dtstart:
+    date: 2026-09-02
+    kind: timed
+    startTime: 13:00
+  rrule: FREQ=WEEKLY;BYDAY=WE;UNTIL=20270526T130000
+  rdates: []
+  exdates:
+    - 2026-12-23T13:00
+    - 2026-12-30T13:00
+  overrides: []
+source:
+  sourceId: manual
+  externalId: aeroe-bridgeklub-wednesday-2026-27
+  url: https://www.bridge.dk/4596/Turneringsoversigt.html
+  verifiedAt: 2026-09-14T19:35:00Z

@@ -61,7 +61,12 @@ import {
   DEFAULT_TITLE_SIMILARITY,
   findEventDuplicates,
 } from "./duplicate-finder.js";
-import { CALENDAR_ZONE, expandEvents } from "../../src/lib/schedule.js";
+import {
+  CALENDAR_ZONE,
+  expandEvent,
+  expandEvents,
+  wallIdentity,
+} from "../../src/lib/schedule.js";
 
 async function exists(path: string): Promise<boolean> {
   try {
@@ -127,6 +132,100 @@ async function createCommand(args: string[]): Promise<void> {
   await assertEventReferences(paths.repo, event);
   const destination = await writeManualEvent(paths, event);
   console.log(`Oprettede ${destination}${event.publication === "draft" ? " som kladde" : ""}.`);
+}
+
+async function queueCommand(args: string[]): Promise<void> {
+  const paths = getPaths();
+  const options = parseOptions(args);
+  const supported = new Set(["from", "reason", "evidence"]);
+  const unknown = [...options.values.keys()].filter((name) => !supported.has(name));
+  if (unknown.length) throw new Error(`Ukendt flag: --${unknown.join(", --")}`);
+  if (options.positional.length) throw new Error(`Uventet argument: ${options.positional.join(" ")}`);
+
+  const inputFile = stringOption(options, "from");
+  if (!inputFile) throw new Error("queue kræver --from med en YAML- eller JSON-eventfil.");
+  const event = validateEvent({
+    ...(await readStructuredFile(resolve(inputFile)) as object),
+    publication: "draft",
+  });
+  await assertEventReferences(paths.repo, event);
+  if (!event.source.url) {
+    throw new Error("En kandidat til reviewkøen skal have et offentligt source.url.");
+  }
+
+  const today = DateTime.now().setZone(CALENDAR_ZONE).startOf("day");
+  const rangeEnd = today.plus({ months: 12 });
+  if (event.schedule.kind === "recurring") {
+    const { schedule } = event;
+    if (schedule.durationMinutes !== undefined && schedule.durationDays !== undefined) {
+      throw new Error("En gentagelse kan ikke have både durationMinutes og durationDays.");
+    }
+    if (schedule.durationMinutes !== undefined && schedule.dtstart.kind !== "timed") {
+      throw new Error("durationMinutes kræver et tidsfastsat dtstart.");
+    }
+    if (schedule.durationDays !== undefined && schedule.dtstart.kind !== "all-day") {
+      throw new Error("durationDays kræver et heldags-dtstart.");
+    }
+
+    const anchor = DateTime.fromISO(schedule.dtstart.date, { zone: CALENDAR_ZONE }).startOf("day");
+    const anchorEvent: EventRecord = {
+      ...event,
+      schedule: { ...schedule, rdates: [], exdates: [], overrides: [] },
+    };
+    const anchorExpansion = expandEvent(anchorEvent, anchor, anchor);
+    if (anchorExpansion.warnings.length) {
+      throw new Error(
+        `Gentagelsesreglen kunne ikke valideres: ${anchorExpansion.warnings.join("; ")}`,
+      );
+    }
+    if (
+      !anchorExpansion.occurrences.some(
+        (occurrence) => occurrence.recurrenceId === wallIdentity(schedule.dtstart),
+      )
+    ) {
+      throw new Error("Gentagelsesreglens dtstart skal selv passe til RRULE-mønstret.");
+    }
+
+    const expansion = expandEvent(event, today, rangeEnd);
+    if (expansion.warnings.length) {
+      throw new Error(`Gentagelsesreglen kunne ikke valideres: ${expansion.warnings.join("; ")}`);
+    }
+    if (!expansion.occurrences.length) {
+      throw new Error("Gentagelsesreglen giver ingen forekomster i kalenderens næste 12 måneder.");
+    }
+  }
+
+  const repository = await validateAllPublicData(paths.repo).then((result) => result.repository);
+  const duplicateStart = today.minus({ days: 31 });
+  const comparisonEvents = [...repository.events.filter((item) => item.id !== event.id), event];
+  const comparisonExpansion = expandEvents(comparisonEvents, duplicateStart, rangeEnd);
+  const duplicateReasons = findEventDuplicates(comparisonEvents, comparisonExpansion.occurrences, {
+    minimumTitleSimilarity: DEFAULT_TITLE_SIMILARITY,
+    timeToleranceMinutes: DEFAULT_TIME_TOLERANCE_MINUTES,
+  }).flatMap((match) => {
+    if (match.left.id !== event.id && match.right.id !== event.id) return [];
+    const other = match.left.id === event.id ? match.right : match.left;
+    const shared = match.sharedStarts[0];
+    return [
+      `Mulig dublet af ${other.id} fra ${other.sourceId}` +
+        (shared
+          ? ` (${shared.date} kl. ${match.left.id === event.id ? shared.leftTime : shared.rightTime})`
+          : ""),
+    ];
+  });
+
+  const reason = stringOption(options, "reason") || "Manuelt researchfund kræver redaktionelt gennemsyn";
+  const evidence = stringOption(options, "evidence");
+  const outcome = await enqueueCandidate(paths, {
+    sourceId: event.source.sourceId,
+    sourceEventId: event.source.externalId || event.id,
+    sourceUrl: event.source.url,
+    discoveredAt: event.source.verifiedAt || new Date().toISOString(),
+    reasons: [reason, ...duplicateReasons],
+    event,
+    ...(evidence ? { private: { parseEvidence: [evidence] } } : {}),
+  });
+  console.log(`Reviewkandidat ${event.id}: ${outcome}.`);
 }
 
 function draftCandidateInput(
@@ -281,7 +380,20 @@ async function collectCommand(args: string[]): Promise<void> {
       continue;
     }
     for (const warning of result.warnings) console.warn(`${result.source.id}: ${warning}`);
-    if (result.candidates.length === 0) {
+    const excludedSourceEventIds = result.excludedSourceEventIds ?? [];
+    const excludedIdentities = new Set(excludedSourceEventIds);
+    const candidateIdentities = new Set(result.candidates.map((candidate) => candidate.sourceEventId));
+    const invalidExclusions = excludedSourceEventIds.some(
+      (identity) => !identity || identity.length > 300 || candidateIdentities.has(identity),
+    );
+    if (invalidExclusions || excludedIdentities.size !== excludedSourceEventIds.length) {
+      retained += 1;
+      console.error(
+        `${result.source.id}: listen over eksplicit udelukkede kilde-id'er er ugyldig; sidste komplette snapshot bevares.`,
+      );
+      continue;
+    }
+    if (result.candidates.length === 0 && excludedIdentities.size === 0) {
       retained += 1;
       console.error(`${result.source.id}: tomt resultat; sidste komplette snapshot bevares.`);
       continue;
@@ -291,7 +403,7 @@ async function collectCommand(args: string[]): Promise<void> {
     if (!sourcePolicy) throw new Error(`Kilden ${result.source.id} mangler i data/sources.yaml.`);
     const observedEvents: EventRecord[] = [];
     const demoteIdentities = new Set<string>();
-    const removeIdentities = new Set<string>();
+    const removeIdentities = new Set<string>(excludedIdentities);
     const scopedFacebookRun =
       result.source.id === "facebook" &&
       Boolean(process.env.AEROEVENTS_FACEBOOK_SOURCE_IDS?.trim());
@@ -387,6 +499,7 @@ async function collectCommand(args: string[]): Promise<void> {
       demoteIdentities,
       removeIdentities,
       demoteAllRetained: sourcePolicy.publication !== "automatic" || !sourcePolicy.enabled,
+      retainUnobserved: result.snapshotCoverage !== "authoritative",
       ...(previousSnapshot ? { previousVerifiedAt: previousSnapshot.verifiedAt } : {}),
     });
     const retainedPreviousCount = mergedEvents.length - observedEvents.length;
@@ -411,6 +524,15 @@ async function collectCommand(args: string[]): Promise<void> {
       );
       continue;
     }
+    await Promise.all(
+      excludedSourceEventIds.map((sourceEventId) =>
+        clearPendingCandidate(paths, {
+          sourceId: result.source.id,
+          sourceEventId,
+          event: {},
+        })
+      ),
+    );
     sourceStatus[result.source.id] = {
       verifiedAt: result.retrievedAt,
       eventCount: snapshot.events.length,
@@ -418,7 +540,8 @@ async function collectCommand(args: string[]): Promise<void> {
     updated += 1;
     console.log(
       `${result.source.id}: ${autoPublishedCount} automatisk publiceret, ` +
-        `${retainedPreviousCount} tidligere bevaret, ${reviewCount} til gennemsyn.`,
+        `${retainedPreviousCount} tidligere bevaret, ${reviewCount} til gennemsyn, ` +
+        `${excludedSourceEventIds.length} eksplicit udeladt.`,
     );
   }
 
@@ -1020,6 +1143,7 @@ export const USAGE = `Ærøkalenderens redaktionsværktøj
 
 Brug:
   npm run events -- create [--from event.yaml] [--publish]
+  npm run events -- queue --from event.yaml [--reason tekst] [--evidence tekst]
   npm run events -- collect [source-id ...] [--now ISO-tidspunkt]
   npm run events -- review [--json]
   npm run events -- approve <candidate-id>
@@ -1040,6 +1164,8 @@ export async function dispatch(argv: string[]): Promise<void> {
   switch (command) {
     case "create":
       return createCommand(args);
+    case "queue":
+      return queueCommand(args);
     case "collect":
       return collectCommand(args);
     case "review":

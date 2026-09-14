@@ -1,0 +1,37 @@
+id: aeroe-svoemmeklub-motion-wednesday-0930-2026-27
+title: Motionssvømning – onsdag kl. 09.30
+description: Motionssvømning for deltagere fra 15 år i Ærø Svømmeklub.
+organizerId: aeroe-svoemmeklub
+organizerName: Ærø Svømmeklub
+categoryIds:
+  - sport-motion
+location:
+  name: Svømmehallen – bassin
+  address: Markgade 1
+  postalCode: "5960"
+  city: Marstal
+attendance:
+  kind: registration
+  details: Betalt klubhold for deltagere fra 15 år; tilmelding kræves.
+status: scheduled
+publication: published
+booking:
+  required: true
+  soldOut: false
+  details: Tilmelding og pris fremgår af klubbens programside.
+schedule:
+  kind: recurring
+  dtstart:
+    date: 2026-09-02
+    kind: timed
+    startTime: 09:30
+  rrule: FREQ=WEEKLY;BYDAY=WE;UNTIL=20270428T093000
+  rdates: []
+  exdates: []
+  overrides: []
+  durationMinutes: 60
+source:
+  sourceId: manual
+  externalId: aeroe-svoemmeklub-motion-wednesday-0930-2026-27
+  url: https://aero.klub-modul.dk/cms/TeamOverviewProgramList.aspx
+  verifiedAt: 2026-09-14T19:35:00Z

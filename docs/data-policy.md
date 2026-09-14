@@ -38,3 +38,7 @@ indsamling. Flyttede forekomster beholder deres forekomst-id. Sammenfald i
 titel, sted eller tidspunkt er kun et dubletsignal; poster fra forskellige
 kilder flettes aldrig automatisk.
 
+En adapter kan kun pensionere en tidligere kildeidentitet, når et komplet svar
+er markeret som autoritativt, eller når identiteten udtrykkeligt er observeret
+som uden for adapterens scope. Tomme, delvise og fejlede svar bevarer altid det
+sidste komplette snapshot.

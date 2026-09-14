@@ -23,6 +23,11 @@ export const SOURCE_IDS = [
   "aeroe-klatreklub",
   "aeroe-tennisklub",
   "parkinsonforeningen-aeroe",
+  "aeroe-rideklub",
+  "aeroe-golfklub",
+  "marstal-if",
+  "marstal-billard-klub",
+  "aeroeskoebing-sejlklub",
 ] as const;
 
 export type SourceId = (typeof SOURCE_IDS)[number];
@@ -133,6 +138,10 @@ interface CollectionResultBase {
 export interface CompleteCollectionResult extends CollectionResultBase {
   status: "complete";
   candidates: NormalizedEventDraft[];
+  /** The response fully enumerates this adapter's current scope, so absent identities may be retired. */
+  snapshotCoverage?: "incremental" | "authoritative";
+  /** Stable source identities observed in this snapshot but intentionally outside this adapter's scope. */
+  excludedSourceEventIds?: string[];
   errors: [];
 }
 
