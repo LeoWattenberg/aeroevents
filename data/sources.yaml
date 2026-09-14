@@ -16,7 +16,7 @@
   categoryIds: [kirke]
   publication: automatic
   enabled: true
-  notes: Alle valide poster fra Ærø Kirkelivs samlede ChurchDesk-kalender publiceres automatisk.
+  notes: Tre verificerede programserier samles som afgrænsede gentagelser; øvrige valide ChurchDesk-poster publiceres enkeltvis.
 - id: aeroe-bibliotek
   name: Ærø Folkebiblioteks arrangementer
   url: https://www.arrebib.dk/arrangementer
@@ -75,6 +75,7 @@
   categoryIds: [sport-motion, forening-faellesskab]
   publication: automatic
   enabled: true
+  notes: Voksenholdets nummererede sæsonlinks samles som én afgrænset ugegentagelse med ferieundtagelser; familiehold med ufuldstændig sluttid bevares enkeltvis.
 - id: viften
   name: Viftens ture og begivenheder
   url: https://www.viften.net/ture
@@ -118,7 +119,7 @@
   categoryIds: []
   publication: automatic
   enabled: true
-  notes: Strukturelt valide poster i allowlistede offentlige kategorier publiceres automatisk; interne og skjulte poster udelades.
+  notes: Poster i kategorien campus-ugentlig samles efter stabil slug som afgrænsede gentagelser med ferieundtagelser. Tekstkonflikter sendes til gennemsyn; interne og skjulte poster udelades.
 - id: ommel-samvirke
   name: Ommel Samvirkes aktivitetskalender
   url: https://www.ommelsamvirke.dk/aktivitetskalender
@@ -126,7 +127,7 @@
   categoryIds: [forening-faellesskab]
   publication: automatic
   enabled: true
-  notes: Den offentlige webkalender læses i en browser, fordi kalenderens ICS-feed er defekt. Komplette, ensartede eventdialoger publiceres automatisk; uklare poster sendes til gennemsyn.
+  notes: Den offentlige webkalender læses i en browser, fordi kalenderens ICS-feed er defekt. Teksterklærede uge- og månedsserier gemmes med deres observerede undtagelser; uklare poster sendes til gennemsyn.
 - id: kunsthoejskolen-aeroe
   name: Kunsthøjskolen på Ærøs korte kurser
   url: https://www.kunstaeroe.dk/for-og-efter%C3%A5rskurser
@@ -165,7 +166,7 @@
   categoryIds: [sport-motion]
   publication: review
   enabled: true
-  notes: Siden oplyser ikke sikre sæson- eller feriegrænser. Forekomster foreslås kun til redaktionelt gennemsyn med denne usikkerhed markeret.
+  notes: Siden oplyser ikke sikre sæson- eller feriegrænser. Gentagelsesregler foreslås kun til redaktionelt gennemsyn med denne usikkerhed markeret.
 - id: aeroe-tennisklub
   name: Ærø Tennisklubs faste aktiviteter
   url: https://aeroetennisklub.dk/faste-aktiviteter/
@@ -173,7 +174,7 @@
   categoryIds: [sport-motion]
   publication: review
   enabled: true
-  notes: Siden oplyser ikke sæsonens slutdato. Forekomster foreslås kun til redaktionelt gennemsyn med denne usikkerhed markeret.
+  notes: Siden oplyser ikke sæsonens slutdato. Gentagelsesregler foreslås kun til redaktionelt gennemsyn med denne usikkerhed markeret.
 - id: parkinsonforeningen-aeroe
   name: Parkinsonforeningen – Klub Ærø
   url: https://parkinson.dk/kredse/2823-fyn/klubber/
@@ -222,3 +223,35 @@
   publication: review
   enabled: true
   notes: Det offentlige iCal-feed filtreres for klubhusbookinger og aktiviteter uden for Ærø. Medlemsadgang og heldagsangivelser kræver gennemsyn.
+- id: aeroe-bridgeklub
+  name: Ærø Bridgeklubs turneringsoversigt
+  url: https://www.bridge.dk/4596/Turneringsoversigt.html
+  organizerId: aeroe-bridgeklub
+  categoryIds: [forening-faellesskab]
+  publication: review
+  enabled: true
+  notes: Den afgrænsede sæsonplan omsættes til RRULE med eksplicitte ferieundtagelser. Weekendture uden for Ærø udelades, og alle fund kræver gennemsyn.
+- id: ahop
+  name: Aktivitetshuset OvenPaa – faste aktiviteter
+  url: https://ahop.dk/
+  organizerId: ahop
+  categoryIds: [forening-faellesskab]
+  publication: review
+  enabled: true
+  notes: Allowlistede WordPress-sider med faste ugedage omsættes til gentagelsesregler. Medlemsadgang, manglende sluttider og sproglig usikkerhed kræver gennemsyn.
+- id: aeroe-svoemmeklub
+  name: Ærø Svømmeklubs holdprogram
+  url: https://aero.klub-modul.dk/cms/TeamOverviewProgramList.aspx
+  organizerId: aeroe-svoemmeklub
+  categoryIds: [sport-motion, boern-familie]
+  publication: review
+  enabled: true
+  notes: KlubModuls hold-ID, start/slutdato og ugedag bruges til afgrænsede gentagelser. Ferier, tilmeldingsstatus og målgruppe bevares og kontrolleres før publicering.
+- id: marstal-marineforening
+  name: Marstal Marineforenings aktiviteter
+  url: https://www.marstalmarineforening.dk/aktiviteter/
+  organizerId: marstal-marineforening
+  categoryIds: [forening-faellesskab]
+  publication: review
+  enabled: true
+  notes: Faste medlemsaktiviteter importeres som gentagelser; lokale enkeltdatoer læses særskilt. Ture uden for Ærø og poster uden fast dato udelades.

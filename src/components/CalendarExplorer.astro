@@ -40,6 +40,22 @@ const agendaHeading = (date: string) => {
   if (date === tomorrowDate) return "I morgen";
   return capitalize(dateLabel(date));
 };
+const monthName = (key: string) =>
+  capitalize(
+    new Intl.DateTimeFormat("da-DK", { month: "long", year: "numeric", timeZone: "UTC" }).format(
+      new Date(`${key}-01T12:00:00Z`),
+    ),
+  );
+const nextMonthStart = (key: string) => {
+  const [year = 0, month = 1] = key.split("-").map(Number);
+  const next = new Date(Date.UTC(year, month, 1));
+  return next.toISOString().slice(0, 10);
+};
+const occurrenceOverlapsMonth = (occurrence: OccurrenceView, key: string) =>
+  occurrence.date < nextMonthStart(key) && occurrenceLastDate(occurrence) >= `${key}-01`;
+const initialMonthOccurrenceCount = occurrences.filter((occurrence) =>
+  occurrenceOverlapsMonth(occurrence, initialMonth)
+).length;
 ---
 
 <div class="calendar" data-calendar data-initial-month={initialMonth}>
@@ -47,16 +63,34 @@ const agendaHeading = (date: string) => {
   <CategoryNotificationControl categories={dataset.categories} events={dataset.events} today={today} />
 
   <div class="results-heading">
-    <p data-result-count aria-live="polite">
-      {occurrences.length === 1 ? "1 arrangement" : `${occurrences.length} arrangementer`}
+    <p class="enhanced-result-count" data-result-count aria-live="polite">
+      {initialMonthOccurrenceCount === 1 ? "1 arrangement" : `${initialMonthOccurrenceCount} arrangementer`}
+      i {monthName(initialMonth).toLocaleLowerCase("da-DK")}
     </p>
+    <noscript><p data-result-count>{occurrences.length === 1 ? "1 arrangement" : `${occurrences.length} arrangementer`}</p></noscript>
     <p class="source-note">Tider vises i dansk tid</p>
   </div>
 
-  <section class="agenda-view" data-agenda-view aria-label="Kommende arrangementer">
+  <nav class="month-navigation" aria-label="Vælg måned" data-month-navigation>
+    <button type="button" data-month-previous aria-label="Vis forrige måned">←</button>
+    <h2 id="calendar-month-title" data-month-title tabindex="-1">{monthName(initialMonth)}</h2>
+    <button type="button" data-month-next aria-label="Vis næste måned">→</button>
+  </nav>
+
+  <section class="agenda-view" id="agenda-calendar" data-agenda-view aria-labelledby="calendar-month-title">
     {occurrencesByDate.size > 0 ? (
       Array.from(occurrencesByDate.entries()).map(([date, dateOccurrences]) => (
-        <section class="agenda-day" data-agenda-day={date}>
+        <section
+          class:list={[
+            "agenda-day",
+            {
+              "is-current-month": dateOccurrences.some((occurrence) =>
+                occurrenceOverlapsMonth(occurrence, initialMonth)
+              ),
+            },
+          ]}
+          data-agenda-day={date}
+        >
           <header>
             <h2>{agendaHeading(date)}</h2>
             {(date === today || date === tomorrowDate) && <p>{capitalize(dateLabel(date))}</p>}
@@ -85,6 +119,18 @@ const agendaHeading = (date: string) => {
         <p>Har du noget, der skal med? Send det gerne til redaktionen.</p>
       </div>
     )}
+    {occurrencesByDate.size > 0 && (
+      <nav class="agenda-pagination" aria-label="Flere måneder">
+        <button type="button" data-agenda-month-previous aria-label="Gå til forrige måned">
+          <span aria-hidden="true">←</span>
+          <span data-agenda-previous-label>Forrige måned</span>
+        </button>
+        <button type="button" data-agenda-month-next aria-label="Gå til næste måned">
+          <span data-agenda-next-label>Næste måned</span>
+          <span aria-hidden="true">→</span>
+        </button>
+      </nav>
+    )}
   </section>
 
   <MonthCalendar
@@ -96,9 +142,16 @@ const agendaHeading = (date: string) => {
   />
 
   <div class="empty-state" data-filter-empty hidden>
-    <p class="eyebrow">Ingen træffere</p>
-    <h2>Prøv at gøre søgningen lidt bredere</h2>
-    <p>Fjern et filter, vælg en anden periode, eller <a href="./" target="_blank" rel="noopener" data-filter-reset>nulstil alle filtre</a>.</p>
+    <div data-month-empty>
+      <p class="eyebrow">Denne måned er stille</p>
+      <h2>Der er ingen arrangementer i <span data-empty-month></span></h2>
+      <p>Vælg en anden måned for at se, hvad der ellers sker.</p>
+    </div>
+    <div data-filter-no-results hidden>
+      <p class="eyebrow">Ingen træffere</p>
+      <h2>Prøv at gøre søgningen lidt bredere</h2>
+      <p>Fjern et filter, vælg en anden periode, eller <a href="./" target="_blank" rel="noopener" data-filter-reset>nulstil alle filtre</a>.</p>
+    </div>
   </div>
 </div>
 
@@ -110,10 +163,17 @@ const agendaHeading = (date: string) => {
     const agenda = calendar.querySelector<HTMLElement>("[data-agenda-view]");
     const monthView = calendar.querySelector<HTMLElement>("[data-month-view]");
     const empty = calendar.querySelector<HTMLElement>("[data-filter-empty]");
+    const monthEmpty = calendar.querySelector<HTMLElement>("[data-month-empty]");
+    const filterNoResults = calendar.querySelector<HTMLElement>("[data-filter-no-results]");
+    const emptyMonth = calendar.querySelector<HTMLElement>("[data-empty-month]");
     const resultCount = calendar.querySelector<HTMLElement>("[data-result-count]");
     const monthTitle = calendar.querySelector<HTMLElement>("[data-month-title]");
     const previous = calendar.querySelector<HTMLButtonElement>("[data-month-previous]");
     const next = calendar.querySelector<HTMLButtonElement>("[data-month-next]");
+    const agendaPrevious = calendar.querySelector<HTMLButtonElement>("[data-agenda-month-previous]");
+    const agendaNext = calendar.querySelector<HTMLButtonElement>("[data-agenda-month-next]");
+    const agendaPreviousLabel = calendar.querySelector<HTMLElement>("[data-agenda-previous-label]");
+    const agendaNextLabel = calendar.querySelector<HTMLElement>("[data-agenda-next-label]");
     const panels = Array.from(calendar.querySelectorAll<HTMLElement>("[data-month-panel]"));
     const availableMonths = panels.map((panel) => panel.dataset.monthPanel ?? "").filter(Boolean);
     const initialMonth = calendar.dataset.initialMonth ?? availableMonths[0] ?? "";
@@ -138,6 +198,32 @@ const agendaHeading = (date: string) => {
         .replaceAll("å", "aa")
         .trim();
 
+    const followingMonthByKey = new Map<string, string>();
+    const monthAfter = (key: string) => {
+      const cached = followingMonthByKey.get(key);
+      if (cached) return cached;
+      const [year = 0, month = 1] = key.split("-").map(Number);
+      const nextDate = new Date(Date.UTC(year, month, 1));
+      const result = nextDate.toISOString().slice(0, 10);
+      followingMonthByKey.set(key, result);
+      return result;
+    };
+
+    const agendaItemOverlapsMonth = (item: HTMLElement, key: string) => {
+      const start = item.dataset.date ?? "";
+      const end = item.dataset.endDate ?? start;
+      return start < monthAfter(key) && end >= `${key}-01`;
+    };
+
+    const formattedMonth = (key: string) =>
+      new Intl.DateTimeFormat("da-DK", { month: "long", year: "numeric", timeZone: "UTC" })
+        .format(new Date(`${key}-01T12:00:00Z`));
+
+    const titledMonth = (key: string) => {
+      const label = formattedMonth(key);
+      return label.charAt(0).toLocaleUpperCase("da-DK") + label.slice(1);
+    };
+
     const readUrl = () => {
       const params = new URLSearchParams(window.location.search);
       if (fields.query) fields.query.value = params.get("q") ?? "";
@@ -152,7 +238,7 @@ const agendaHeading = (date: string) => {
       if (dateDetails && (fields.from?.value || fields.to?.value)) dateDetails.open = true;
     };
 
-    const writeUrl = () => {
+    const writeUrl = (mode: "replace" | "push" = "replace") => {
       const url = new URL(window.location.href);
       const values: Array<[string, string]> = [
         ["q", fields.query?.value.trim() ?? ""],
@@ -161,49 +247,79 @@ const agendaHeading = (date: string) => {
         ["fra", fields.from?.value ?? ""],
         ["til", fields.to?.value ?? ""],
         ["visning", currentView === "maaned" ? "maaned" : ""],
-        ["maaned", currentView === "maaned" && currentMonth !== initialMonth ? currentMonth : ""],
+        ["maaned", currentMonth !== initialMonth ? currentMonth : ""],
       ];
       for (const [name, value] of values) value ? url.searchParams.set(name, value) : url.searchParams.delete(name);
-      window.history.replaceState({}, "", `${url.pathname}${url.search}${url.hash}`);
+      const nextUrl = `${url.pathname}${url.search}${url.hash}`;
+      if (mode === "push") window.history.pushState({}, "", nextUrl);
+      else window.history.replaceState({}, "", nextUrl);
     };
 
     const updateMonth = () => {
       const index = availableMonths.indexOf(currentMonth);
       for (const panel of panels) panel.hidden = panel.dataset.monthPanel !== currentMonth;
+      for (const day of calendar.querySelectorAll<HTMLElement>("[data-agenda-day]")) {
+        const items = Array.from(day.querySelectorAll<HTMLElement>('[data-calendar-kind="agenda"]'));
+        day.classList.toggle("is-current-month", items.some((item) => agendaItemOverlapsMonth(item, currentMonth)));
+      }
       if (monthTitle && currentMonth) {
-        const label = new Intl.DateTimeFormat("da-DK", { month: "long", year: "numeric", timeZone: "UTC" })
-          .format(new Date(`${currentMonth}-01T12:00:00Z`));
-        monthTitle.textContent = label.charAt(0).toLocaleUpperCase("da-DK") + label.slice(1);
+        monthTitle.textContent = titledMonth(currentMonth);
       }
       if (previous) previous.disabled = index <= 0;
       if (next) next.disabled = index < 0 || index >= availableMonths.length - 1;
+      if (agendaPrevious) agendaPrevious.disabled = index <= 0;
+      if (agendaNext) agendaNext.disabled = index < 0 || index >= availableMonths.length - 1;
+      const previousMonth = availableMonths[index - 1];
+      const nextMonth = availableMonths[index + 1];
+      if (agendaPreviousLabel) {
+        agendaPreviousLabel.textContent = previousMonth ? titledMonth(previousMonth) : "Forrige måned";
+      }
+      if (agendaNextLabel) {
+        agendaNextLabel.textContent = nextMonth ? titledMonth(nextMonth) : "Næste måned";
+      }
+      if (agendaPrevious) {
+        agendaPrevious.setAttribute(
+          "aria-label",
+          previousMonth ? `Gå til ${formattedMonth(previousMonth)}` : "Ingen tidligere måned",
+        );
+      }
+      if (agendaNext) {
+        agendaNext.setAttribute(
+          "aria-label",
+          nextMonth ? `Gå til ${formattedMonth(nextMonth)}` : "Ingen senere måned",
+        );
+      }
     };
 
-    const apply = (updateUrl = true) => {
+    const apply = (updateUrl = true, historyMode: "replace" | "push" = "replace") => {
       const query = normalized(fields.query?.value ?? "");
       const organizer = fields.organizer?.value ?? "";
       const category = fields.category?.value ?? "";
       const from = fields.from?.value ?? "";
       const to = fields.to?.value ?? "";
+      const hasActiveFilters = Boolean(query || organizer || category || from || to);
       const items = Array.from(calendar.querySelectorAll<HTMLElement>("[data-calendar-item]"));
 
       for (const item of items) {
-        const matches =
+        const matchesFilters =
           (!query || normalized(item.dataset.search ?? "").includes(query)) &&
           (!organizer || item.dataset.organizer === organizer) &&
           (!category || (item.dataset.categories ?? "").includes(`|${category}|`)) &&
           (!from || (item.dataset.endDate ?? item.dataset.date ?? "") >= from) &&
           (!to || (item.dataset.date ?? "") <= to);
-        item.hidden = !matches;
+        const matchesAgendaMonth =
+          item.dataset.calendarKind !== "agenda" || agendaItemOverlapsMonth(item, currentMonth);
+        item.hidden = !matchesFilters || !matchesAgendaMonth;
       }
 
       const agendaItems = items.filter((item) => item.dataset.calendarKind === "agenda");
-      const agendaVisible = agendaItems.filter((item) => !item.hidden).length;
-      const monthVisible = items.filter(
+      const agendaMonthItems = agendaItems.filter((item) => agendaItemOverlapsMonth(item, currentMonth));
+      const agendaVisible = agendaMonthItems.filter((item) => !item.hidden).length;
+      const currentMonthItems = items.filter(
         (item) => item.dataset.calendarKind === "month" &&
-          item.dataset.date?.startsWith(currentMonth) &&
-          !item.hidden,
-      ).length;
+          item.dataset.date?.startsWith(currentMonth),
+      );
+      const monthVisible = currentMonthItems.filter((item) => !item.hidden).length;
       const visible = currentView === "maaned" ? monthVisible : agendaVisible;
       for (const day of calendar.querySelectorAll<HTMLElement>("[data-agenda-day]")) {
         day.hidden = !Array.from(day.querySelectorAll<HTMLElement>("[data-calendar-item]")).some((item) => !item.hidden);
@@ -213,15 +329,25 @@ const agendaHeading = (date: string) => {
         day.classList.toggle("filtered-empty", dayItems.length > 0 && dayItems.every((item) => item.hidden));
       }
 
-      if (resultCount) resultCount.textContent = visible === 1 ? "1 arrangement" : `${visible} arrangementer`;
-      if (empty) empty.hidden = visible !== 0;
-      if (agenda) agenda.hidden = currentView !== "agenda" || visible === 0;
-      if (monthView) monthView.hidden = currentView !== "maaned";
+      const monthLabel = formattedMonth(currentMonth);
+      if (resultCount) {
+        resultCount.textContent = `${visible === 1 ? "1 arrangement" : `${visible} arrangementer`} i ${monthLabel}`;
+      }
+      if (emptyMonth) emptyMonth.textContent = monthLabel;
+      const unfilteredCurrentCount =
+        currentView === "maaned" ? currentMonthItems.length : agendaMonthItems.length;
+      const showFilterNoResults = hasActiveFilters && unfilteredCurrentCount > 0;
+      if (monthEmpty) monthEmpty.hidden = showFilterNoResults;
+      if (filterNoResults) filterNoResults.hidden = !showFilterNoResults;
+      const catalogEmpty = agendaItems.length === 0;
+      if (empty) empty.hidden = catalogEmpty ? currentView === "agenda" : visible !== 0;
+      if (agenda) agenda.hidden = currentView !== "agenda" || (visible === 0 && !catalogEmpty);
+      if (monthView) monthView.hidden = currentView !== "maaned" || catalogEmpty;
       for (const button of calendar.querySelectorAll<HTMLButtonElement>("[data-view-button]")) {
         button.setAttribute("aria-pressed", String(button.dataset.viewButton === currentView));
       }
       updateMonth();
-      if (updateUrl) writeUrl();
+      if (updateUrl) writeUrl(historyMode);
     };
 
     readUrl();
@@ -247,14 +373,28 @@ const agendaHeading = (date: string) => {
       const index = availableMonths.indexOf(currentMonth);
       const target = availableMonths[index - 1];
       if (target) currentMonth = target;
-      apply();
+      apply(true, "push");
     });
     next?.addEventListener("click", () => {
       const index = availableMonths.indexOf(currentMonth);
       const target = availableMonths[index + 1];
       if (target) currentMonth = target;
-      apply();
+      apply(true, "push");
     });
+    const changeAgendaMonth = (offset: number) => {
+      const index = availableMonths.indexOf(currentMonth);
+      const target = availableMonths[index + offset];
+      if (!target) return;
+      currentMonth = target;
+      apply(true, "push");
+      monthTitle?.focus({ preventScroll: true });
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = "auto";
+      monthTitle?.scrollIntoView({ block: "center" });
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+    };
+    agendaPrevious?.addEventListener("click", () => changeAgendaMonth(-1));
+    agendaNext?.addEventListener("click", () => changeAgendaMonth(1));
     for (const reset of calendar.querySelectorAll<HTMLAnchorElement>("[data-filter-reset]")) {
       reset.addEventListener("click", (event) => {
         event.preventDefault();
@@ -291,9 +431,93 @@ const agendaHeading = (date: string) => {
     font-weight: 650;
   }
 
+  .enhanced-result-count {
+    display: none;
+  }
+
+  :global(.has-js) .enhanced-result-count {
+    display: block;
+  }
+
   .source-note {
     color: var(--muted);
     font-size: 0.75rem;
+  }
+
+  .month-navigation {
+    display: none;
+    grid-template-columns: 2.8rem 1fr 2.8rem;
+    align-items: center;
+    margin-top: 1.5rem;
+  }
+
+  :global(.has-js) .month-navigation {
+    display: grid;
+  }
+
+  .month-navigation h2 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .month-navigation button {
+    width: 2.8rem;
+    height: 2.8rem;
+    border: 1px solid var(--line);
+    border-radius: 50%;
+    color: var(--sea);
+    background: var(--paper-strong);
+    font-size: 1.2rem;
+  }
+
+  .month-navigation button:hover:not(:disabled) {
+    color: #fff;
+    background: var(--sea);
+  }
+
+  .month-navigation button:disabled {
+    cursor: default;
+    opacity: 0.32;
+  }
+
+  :global(.has-js) .agenda-day:not(.is-current-month) {
+    display: none;
+  }
+
+  .agenda-pagination {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 2.5rem;
+  }
+
+  :global(.has-js) .agenda-pagination {
+    display: flex;
+  }
+
+  .agenda-pagination button {
+    display: inline-flex;
+    min-height: 2.8rem;
+    align-items: center;
+    gap: 0.55rem;
+    padding: 0.55rem 0.9rem;
+    border: 1px solid var(--line);
+    border-radius: 0.25rem;
+    color: var(--sea);
+    background: var(--paper-strong);
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+
+  .agenda-pagination button:hover:not(:disabled) {
+    color: #fff;
+    background: var(--sea);
+  }
+
+  .agenda-pagination button:disabled {
+    cursor: default;
+    opacity: 0.32;
   }
 
   .agenda-day {

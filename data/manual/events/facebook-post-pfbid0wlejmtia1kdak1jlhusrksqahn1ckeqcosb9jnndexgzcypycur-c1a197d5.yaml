@@ -70,28 +70,16 @@ attendance:
 status: scheduled
 publication: published
 schedule:
-  kind: explicit
-  dates:
-    - id: facebook-1kqx3dr-1
-      date: 2026-11-21
-      kind: timed
-      startTime: 09:30
-      endTime: 17:00
-    - id: facebook-1kqx3dr-2
-      date: 2026-11-28
-      kind: timed
-      startTime: 09:30
-      endTime: 17:00
-    - id: facebook-1kqx3dr-3
-      date: 2026-12-05
-      kind: timed
-      startTime: 09:30
-      endTime: 17:00
-    - id: facebook-1kqx3dr-4
-      date: 2026-12-12
-      kind: timed
-      startTime: 09:30
-      endTime: 17:00
+  kind: recurring
+  dtstart:
+    date: 2026-11-21
+    kind: timed
+    startTime: 09:30
+  rrule: FREQ=WEEKLY;BYDAY=SA;COUNT=4
+  rdates: []
+  exdates: []
+  overrides: []
+  durationMinutes: 450
 source:
   sourceId: facebook
   externalId: post-pfbid0WLEjmTiA1KDAK1jLhuSrKsqahN1cKeqCosB9jnNDexGzCypyCUrkBJuvzQs75UJYl

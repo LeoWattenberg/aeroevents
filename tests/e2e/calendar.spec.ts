@@ -44,9 +44,58 @@ test("filters agenda items and preserves the selection in the URL", async ({ pag
   await expect(page.getByLabel("Til og med")).toHaveValue(eventDate!);
 });
 
+test("pages the agenda by month and shares the selected month between views", async ({ page }) => {
+  const expectVisibleAgendaMonth = async (month: string) => {
+    const visibleItems = page.locator('[data-calendar-kind="agenda"]:visible');
+    await expect(visibleItems).not.toHaveCount(0);
+    const ranges = await visibleItems.evaluateAll((items) =>
+      items.map((item) => ({
+        start: item.getAttribute("data-date"),
+        end: item.getAttribute("data-end-date") ?? item.getAttribute("data-date"),
+      })),
+    );
+    const [year, monthNumber] = month.split("-").map(Number);
+    const monthAfter = new Date(Date.UTC(year!, monthNumber!, 1)).toISOString().slice(0, 10);
+    expect(ranges.every(({ start, end }) => start! < monthAfter && end! >= `${month}-01`)).toBe(true);
+  };
+
+  await page.goto("./");
+  await expectVisibleAgendaMonth("2026-09");
+  await expect(page.locator("[data-month-title]:visible")).toHaveText("September 2026");
+  await expect(page.locator("[data-result-count]:visible")).toContainText(/arrangement(?:er)? i september 2026/);
+
+  await page.getByRole("button", { name: "Vis næste måned" }).click();
+  await expect(page).toHaveURL(/maaned=2026-10/);
+  await expect(page.locator("[data-month-title]:visible")).toHaveText("Oktober 2026");
+  await expect(page.locator("[data-result-count]:visible")).toContainText(/arrangement(?:er)? i oktober 2026/);
+  await expectVisibleAgendaMonth("2026-10");
+
+  await page.reload();
+  await expect(page).toHaveURL(/maaned=2026-10/);
+  await expectVisibleAgendaMonth("2026-10");
+
+  await page.getByRole("button", { name: "Måned", exact: true }).click();
+  await expect(page.locator('[data-month-panel="2026-10"]')).toBeVisible();
+  await expect(page).toHaveURL(/maaned=2026-10/);
+
+  await page.getByRole("button", { name: "Liste", exact: true }).click();
+  await expectVisibleAgendaMonth("2026-10");
+  await expect(page).toHaveURL(/maaned=2026-10/);
+
+  await page.goBack();
+  await expect(page).not.toHaveURL(/maaned=/);
+  await expectVisibleAgendaMonth("2026-09");
+
+  const bottomNext = page.getByRole("button", { name: "Gå til oktober 2026" });
+  await bottomNext.focus();
+  await page.keyboard.press("Enter");
+  await expect(page.locator("[data-month-title]:visible")).toBeFocused();
+  await expectVisibleAgendaMonth("2026-10");
+});
+
 test("switches to a Monday-first month and opens a stable event page", async ({ page }) => {
   await page.goto("./");
-  await page.getByRole("button", { name: "Måned" }).click();
+  await page.getByRole("button", { name: "Måned", exact: true }).click();
   await expect(page).toHaveURL(/visning=maaned/);
   await expect(page.locator("[data-month-view]")).toBeVisible();
   const visibleMonth = page.locator('[data-month-panel]:visible');

@@ -9,6 +9,7 @@ import type {
   CollectionResult,
   EventLocationDraft,
   NormalizedEventDraft,
+  RecurringScheduleDraft,
   SourceAdapter,
 } from "./types";
 
@@ -17,6 +18,72 @@ const COPENHAGEN = "Europe/Copenhagen";
 const MAX_PAGES = 100;
 const MAX_PAGINATION_PASSES = 3;
 const CHURCHDESK_ORIGIN = new URL(definition.url).origin;
+
+interface ChurchDeskSeriesDefinition {
+  sourceEventId: string;
+  title: string;
+  organizerId: string;
+  location: EventLocationDraft;
+  startTime: string;
+  weekday: number;
+  weekdayCode: "WE" | "TH";
+  intervalWeeks: number;
+}
+
+/**
+ * ChurchDesk exposes the occurrences below as unrelated event IDs and does
+ * not include a parent-series identifier. Keep this list deliberately narrow:
+ * these are the three programmes whose checked source schedule establishes a
+ * regular series. Generic titles such as "Gudstjeneste Marstal" must remain
+ * individual events even when a short run happens to share a weekday.
+ */
+const CHURCHDESK_SERIES: readonly ChurchDeskSeriesDefinition[] = [
+  {
+    sourceEventId: "series-babysalmesang-i-tranderup",
+    title: "Babysalmesang i Tranderup",
+    organizerId: "linda-skjoennemand",
+    location: {
+      name: "Tranderup sognehus",
+      address: "Tranderupgade",
+      postalCode: "5970",
+      city: "Ærøskøbing",
+    },
+    startTime: "10:00",
+    weekday: 3,
+    weekdayCode: "WE",
+    intervalWeeks: 1,
+  },
+  {
+    sourceEventId: "series-tumlingemusik-i-tranderup",
+    title: "Tumlingemusik i Tranderup",
+    organizerId: "linda-skjoennemand",
+    location: {
+      name: "Tranderup kirke",
+      address: "Tranderupvej 49",
+      postalCode: "5970",
+      city: "Ærøskøbing",
+    },
+    startTime: "15:30",
+    weekday: 4,
+    weekdayCode: "TH",
+    intervalWeeks: 1,
+  },
+  {
+    sourceEventId: "series-bibelstudiekreds-marstal",
+    title: "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
+    organizerId: "pia-vandrup",
+    location: {
+      name: "Marstal Menighedshus",
+      address: "Strandstræde 20",
+      postalCode: "5960",
+      city: "Marstal",
+    },
+    startTime: "19:00",
+    weekday: 4,
+    weekdayCode: "TH",
+    intervalWeeks: 2,
+  },
+] as const;
 
 interface ChurchDeskItem {
   id?: unknown;
@@ -178,6 +245,203 @@ function normalizeItem(
         retrievedAt,
       },
     },
+  };
+}
+
+function sameLocation(
+  left: EventLocationDraft | undefined,
+  right: EventLocationDraft,
+): boolean {
+  if (!left) return false;
+  return left.name === right.name &&
+    left.address === right.address &&
+    left.postalCode === right.postalCode &&
+    left.city === right.city &&
+    left.url === right.url;
+}
+
+function matchingSeries(
+  candidate: NormalizedEventDraft,
+): ChurchDeskSeriesDefinition | undefined {
+  if (candidate.occurrences.length !== 1 || candidate.schedule) return undefined;
+  const occurrence = candidate.occurrences[0]!;
+  if (
+    occurrence.allDay ||
+    occurrence.timeUnknown ||
+    occurrence.endTime !== undefined ||
+    occurrence.location !== undefined
+  ) {
+    return undefined;
+  }
+  return CHURCHDESK_SERIES.find((series) =>
+    candidate.title === series.title &&
+    candidate.organizerId === series.organizerId &&
+    sameLocation(candidate.location, series.location) &&
+    occurrence.startTime === series.startTime
+  );
+}
+
+function comparableSeriesMetadata(candidate: NormalizedEventDraft): string {
+  const {
+    sourceEventId: _sourceEventId,
+    stableId: _stableId,
+    schedule: _schedule,
+    occurrences: _occurrences,
+    status: _status,
+    provenance: _provenance,
+    ...metadata
+  } = candidate;
+  return JSON.stringify(metadata);
+}
+
+function compactLocalDateTime(date: string, time: string): string {
+  return `${date.replaceAll("-", "")}T${time.replace(":", "")}00`;
+}
+
+function recurringScheduleFor(
+  series: ChurchDeskSeriesDefinition,
+  candidates: NormalizedEventDraft[],
+): RecurringScheduleDraft | undefined {
+  const observations = candidates
+    .map((candidate) => ({ candidate, occurrence: candidate.occurrences[0]! }))
+    .sort((left, right) =>
+      `${left.occurrence.date}T${left.occurrence.startTime}`.localeCompare(
+        `${right.occurrence.date}T${right.occurrence.startTime}`,
+      ),
+    );
+  const first = observations[0];
+  if (!first) return undefined;
+  const firstDate = DateTime.fromISO(first.occurrence.date, { zone: COPENHAGEN }).startOf("day");
+  if (!firstDate.isValid || firstDate.weekday !== series.weekday) return undefined;
+
+  const recurrenceIds = new Set<string>();
+  for (const { occurrence } of observations) {
+    const date = DateTime.fromISO(occurrence.date, { zone: COPENHAGEN }).startOf("day");
+    const elapsedDays = date.diff(firstDate, "days").days;
+    const recurrenceId = `${occurrence.date}T${series.startTime}`;
+    if (
+      !date.isValid ||
+      date.weekday !== series.weekday ||
+      occurrence.startTime !== series.startTime ||
+      !Number.isSafeInteger(elapsedDays) ||
+      elapsedDays < 0 ||
+      elapsedDays % (series.intervalWeeks * 7) !== 0 ||
+      recurrenceIds.has(recurrenceId)
+    ) {
+      return undefined;
+    }
+    recurrenceIds.add(recurrenceId);
+  }
+
+  const last = observations.at(-1)!;
+  const lastDate = DateTime.fromISO(last.occurrence.date, { zone: COPENHAGEN }).startOf("day");
+  const exdates: string[] = [];
+  for (
+    let cursor = firstDate;
+    cursor <= lastDate;
+    cursor = cursor.plus({ weeks: series.intervalWeeks })
+  ) {
+    const recurrenceId = `${cursor.toISODate()}T${series.startTime}`;
+    if (!recurrenceIds.has(recurrenceId)) exdates.push(recurrenceId);
+  }
+
+  return {
+    kind: "recurring",
+    dtstart: {
+      kind: "timed",
+      date: first.occurrence.date,
+      startTime: series.startTime,
+    },
+    rrule:
+      `FREQ=WEEKLY;${series.intervalWeeks > 1 ? `INTERVAL=${series.intervalWeeks};` : ""}` +
+      `BYDAY=${series.weekdayCode};UNTIL=${compactLocalDateTime(last.occurrence.date, series.startTime)}`,
+    rdates: [],
+    exdates,
+    overrides: observations.flatMap(({ candidate, occurrence }) => {
+      const status = occurrence.status ?? candidate.status;
+      return status === "scheduled"
+        ? []
+        : [{ recurrenceId: `${occurrence.date}T${series.startTime}`, status }];
+    }),
+  };
+}
+
+/** Consolidate only the three ChurchDesk programmes whose recurrence is known. */
+export function consolidateChurchDeskSeries(
+  candidates: NormalizedEventDraft[],
+): {
+  candidates: NormalizedEventDraft[];
+  absorbedSourceEventIds: string[];
+  warnings: string[];
+} {
+  const groups = new Map<ChurchDeskSeriesDefinition, NormalizedEventDraft[]>();
+  const untouched: NormalizedEventDraft[] = [];
+  for (const candidate of candidates) {
+    const series = matchingSeries(candidate);
+    if (!series) {
+      untouched.push(candidate);
+      continue;
+    }
+    const group = groups.get(series) ?? [];
+    group.push(candidate);
+    groups.set(series, group);
+  }
+
+  const consolidated: NormalizedEventDraft[] = [];
+  const absorbedSourceEventIds: string[] = [];
+  const retiredSeriesSourceEventIds: string[] = [];
+  const warnings: string[] = [];
+  for (const series of CHURCHDESK_SERIES) {
+    const group = groups.get(series);
+    if (!group) {
+      retiredSeriesSourceEventIds.push(series.sourceEventId);
+      continue;
+    }
+    const metadata = new Set(group.map(comparableSeriesMetadata));
+    const schedule = metadata.size === 1 ? recurringScheduleFor(series, group) : undefined;
+    if (!schedule) {
+      warnings.push(
+        `ChurchDesk-serien “${series.title}” kunne ikke samles sikkert; de enkelte events blev bevaret`,
+      );
+      consolidated.push(...group);
+      retiredSeriesSourceEventIds.push(series.sourceEventId);
+      continue;
+    }
+
+    const observations = group
+      .flatMap((candidate) => candidate.occurrences)
+      .sort((left, right) =>
+        `${left.date}T${left.startTime ?? ""}`.localeCompare(
+          `${right.date}T${right.startTime ?? ""}`,
+        ),
+      );
+    const representative = group.find(({ status }) => status === "scheduled") ?? group[0]!;
+    consolidated.push({
+      ...representative,
+      sourceEventId: series.sourceEventId,
+      stableId: `${definition.id}-${series.sourceEventId}`,
+      schedule,
+      occurrences: observations,
+      status: "scheduled",
+      provenance: {
+        ...representative.provenance,
+        externalId: series.sourceEventId,
+        sourceUrl: definition.url,
+      },
+    });
+    absorbedSourceEventIds.push(...group.map(({ sourceEventId }) => sourceEventId));
+  }
+
+  return {
+    candidates: [...untouched, ...consolidated].sort((left, right) => {
+      const leftOccurrence = left.occurrences[0];
+      const rightOccurrence = right.occurrences[0];
+      return `${leftOccurrence?.date ?? ""}T${leftOccurrence?.startTime ?? ""}`.localeCompare(
+        `${rightOccurrence?.date ?? ""}T${rightOccurrence?.startTime ?? ""}`,
+      ) || left.sourceEventId.localeCompare(right.sourceEventId);
+    }),
+    absorbedSourceEventIds: [...absorbedSourceEventIds, ...retiredSeriesSourceEventIds],
+    warnings,
   };
 }
 
@@ -364,14 +628,18 @@ async function collect(context: CollectionContext): Promise<CollectionResult> {
     };
   }
 
+  const series = consolidateChurchDeskSeries(collected);
+  warnings.push(...series.warnings);
+
   return {
     status: "complete",
     source: definition,
     retrievedAt,
     pagesFetched,
-    candidates: collected,
+    candidates: series.candidates,
+    excludedSourceEventIds: series.absorbedSourceEventIds,
     errors: [],
-    warnings,
+    warnings: [...new Set(warnings)],
   };
 }
 

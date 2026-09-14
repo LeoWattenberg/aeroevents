@@ -1,5 +1,7 @@
 import type { EventRecord, SourceDefinition as RepositorySource } from "../../src/lib/schema.js";
 import { applyAutomaticCategoryRules } from "../../src/lib/category-rules.js";
+import { DateTime } from "luxon";
+import { CALENDAR_ZONE, expandEvent } from "../../src/lib/schedule.js";
 import type { PublicationDisposition } from "../sources/types.js";
 
 export function eventSourceIdentity(event: EventRecord): string {
@@ -15,14 +17,28 @@ function normalizeText(value: string): string {
     .trim();
 }
 
-function firstEventDate(event: EventRecord): { date: string; time: string } {
+function firstEventDate(event: EventRecord, referenceDate?: Date): { date: string; time: string } {
+  if (referenceDate) {
+    const start = DateTime.fromJSDate(referenceDate, { zone: CALENDAR_ZONE }).startOf("day");
+    if (start.isValid) {
+      const first = expandEvent(event, start, start.plus({ years: 2 })).occurrences[0];
+      if (first) {
+        const startTime = first.startAt
+          ? DateTime.fromISO(first.startAt, { setZone: true }).setZone(CALENDAR_ZONE).toFormat("HH:mm")
+          : first.allDay
+            ? "all-day"
+            : "time-unknown";
+        return { date: first.date, time: startTime };
+      }
+    }
+  }
   const item = event.schedule.kind === "explicit" ? event.schedule.dates[0] : event.schedule.dtstart;
   if (!item) return { date: "", time: "" };
   return { date: item.date, time: item.kind === "timed" ? item.startTime : item.kind };
 }
 
-export function eventFingerprint(event: EventRecord): string {
-  const when = firstEventDate(event);
+export function eventFingerprint(event: EventRecord, referenceDate?: Date): string {
+  const when = firstEventDate(event, referenceDate);
   return [normalizeText(event.title), when.date, when.time].join("|");
 }
 
@@ -30,16 +46,17 @@ export function eventFingerprint(event: EventRecord): string {
 export function crossSourceDuplicateReasons(
   existingEvents: EventRecord[],
   candidates: EventRecord[],
+  referenceDate?: Date,
 ): Map<string, string[]> {
   const groups = new Map<string, EventRecord[]>();
   for (const event of [...existingEvents, ...candidates]) {
-    const fingerprint = eventFingerprint(event);
+    const fingerprint = eventFingerprint(event, referenceDate);
     groups.set(fingerprint, [...(groups.get(fingerprint) || []), event]);
   }
 
   const reasons = new Map<string, string[]>();
   for (const candidate of candidates) {
-    const duplicates = (groups.get(eventFingerprint(candidate)) || []).filter(
+    const duplicates = (groups.get(eventFingerprint(candidate, referenceDate)) || []).filter(
       (other) => other.source.sourceId !== candidate.source.sourceId,
     );
     if (!duplicates.length) continue;

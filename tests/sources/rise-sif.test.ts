@@ -31,6 +31,12 @@ describe("Rise SIF source", () => {
       stableId: "rise-sif-series-738768",
       attendance: "members",
       publication: "trusted",
+      schedule: {
+        kind: "recurring",
+        dtstart: { kind: "timed", date: "2026-09-17", startTime: "09:00" },
+        rrule: "FREQ=WEEKLY;BYDAY=TH;UNTIL=20260924T090000",
+        durationMinutes: 60,
+      },
     });
     expect(parsed.candidates[1]!.occurrences).toHaveLength(2);
     expect(parsed.candidates.some((candidate) => candidate.title.includes("fødselsdag"))).toBe(false);

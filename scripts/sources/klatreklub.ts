@@ -1,6 +1,6 @@
 import { load } from "cheerio";
 
-import { monthlyNthWeekdayOccurrences, normalizedTime, weeklyOccurrences } from "./fixed-schedule";
+import { monthlyNthWeekdaySchedule, normalizedTime, weeklySchedule } from "./fixed-schedule";
 import { errorMessage, fetchText } from "./http";
 import { cleanText } from "./html";
 import { SOURCE_REGISTRY } from "./registry";
@@ -8,7 +8,7 @@ import type { CollectionContext, CollectionResult, NormalizedEventDraft, SourceA
 
 const definition = SOURCE_REGISTRY["aeroe-klatreklub"];
 const SOURCE_ORIGIN = new URL(definition.url).origin;
-const REVIEW_REASON = "Kildesiden angiver ingen sæson- eller feriegrænser; de beregnede datoer skal kontrolleres før publicering";
+const REVIEW_REASON = "Kildesiden angiver ingen sæson- eller feriegrænser; gentagelsesreglen skal kontrolleres før publicering";
 
 interface Rule {
   id: string;
@@ -35,7 +35,6 @@ function timeRange(match: RegExpMatchArray | null): { startTime?: string; endTim
 export function parseKlatreklubPage(
   html: string,
   retrievedAt: string,
-  now: Date,
 ): KlatreklubParseResult {
   const $ = load(html);
   const warnings: string[] = [];
@@ -84,9 +83,10 @@ export function parseKlatreklubPage(
       postalCode: "5985",
       city: "Søby Ærø",
     },
-    occurrences: rule.ordinal
-      ? monthlyNthWeekdayOccurrences(rule.id, rule.weekday, rule.ordinal, rule.startTime, rule.endTime, now)
-      : weeklyOccurrences(rule.id, rule.weekday, rule.startTime, rule.endTime, now),
+    schedule: rule.ordinal
+      ? monthlyNthWeekdaySchedule(rule.weekday, rule.ordinal, rule.startTime, rule.endTime)
+      : weeklySchedule(rule.weekday, rule.startTime, rule.endTime),
+    occurrences: [],
     status: "scheduled",
     attendance: "unknown",
     attendanceDetails: "Klubben oplyser ikke på siden, om ikke-medlemmer kan deltage.",
@@ -106,7 +106,7 @@ async function collect(context: CollectionContext): Promise<CollectionResult> {
   const retrievedAt = context.now.toISOString();
   try {
     const html = await fetchText(context, definition.url, { expectedOrigin: SOURCE_ORIGIN });
-    const parsed = parseKlatreklubPage(html, retrievedAt, context.now);
+    const parsed = parseKlatreklubPage(html, retrievedAt);
     if (parsed.errors.length > 0) {
       return {
         status: "partial", source: definition, retrievedAt, pagesFetched: 1,

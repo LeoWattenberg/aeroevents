@@ -11,6 +11,7 @@ import type {
   EventStatus,
   ExplicitOccurrenceDraft,
   NormalizedEventDraft,
+  RecurringScheduleDraft,
   SourceAdapter,
 } from "./types";
 
@@ -67,6 +68,11 @@ interface ParsedInterval {
 interface WeeklyRule {
   weekdays: Set<number>;
   until: ParsedTemporal;
+}
+
+interface ParsedExdates {
+  identities: Set<string>;
+  values: ParsedTemporal[];
 }
 
 export interface AeroeskoebingSejlklubParseResult {
@@ -440,8 +446,9 @@ function parsedExdates(
   start: ParsedTemporal,
   label: string,
   errors: string[],
-): Set<string> {
+): ParsedExdates {
   const identities = new Set<string>();
+  const valuesByIdentity = new Map<string, ParsedTemporal>();
   for (const property of matching(properties, "EXDATE")) {
     const values = property.value.split(",");
     if (values.length === 0 || values.some((value) => !value)) {
@@ -455,10 +462,58 @@ function parsedExdates(
         errors.push(`${label} EXDATE har en anden type end DTSTART`);
         continue;
       }
-      identities.add(temporalIdentity(parsed));
+      const identity = temporalIdentity(parsed);
+      identities.add(identity);
+      valuesByIdentity.set(identity, parsed);
     }
   }
-  return identities;
+  return { identities, values: [...valuesByIdentity.values()] };
+}
+
+function canonicalWeeklyRrule(property: IcsProperty, rule: WeeklyRule): string {
+  const localUntil = rule.until.value.setZone(COPENHAGEN).toFormat("yyyyLLdd'T'HHmmss");
+  return property.value
+    .split(";")
+    .map((segment) => {
+      const equals = segment.indexOf("=");
+      const key = segment.slice(0, equals).toUpperCase();
+      const value = segment.slice(equals + 1).toUpperCase();
+      return `${key}=${key === "UNTIL" ? localUntil : value}`;
+    })
+    .join(";");
+}
+
+/**
+ * The canonical recurrence engine operates on Copenhagen wall-clock values.
+ * Preserve source recurrences only when DTSTART has exactly those semantics;
+ * UTC and all-day rules continue through the proven explicit expansion path.
+ */
+function canonicalRecurringSchedule(
+  interval: ParsedInterval,
+  ruleProperty: IcsProperty,
+  rule: WeeklyRule,
+  exdates: ParsedExdates,
+): RecurringScheduleDraft | undefined {
+  if (interval.start.kind !== "date-time" || interval.start.zone !== "copenhagen") return undefined;
+  const durationMinutes = interval.durationMilliseconds! / 60_000;
+  if (!Number.isSafeInteger(durationMinutes) || durationMinutes <= 0) return undefined;
+
+  const localStart = interval.start.value.setZone(COPENHAGEN);
+  return {
+    kind: "recurring",
+    dtstart: {
+      kind: "timed",
+      date: localStart.toISODate()!,
+      startTime: localStart.toFormat("HH:mm"),
+    },
+    rrule: canonicalWeeklyRrule(ruleProperty, rule),
+    rdates: [],
+    exdates: exdates.values
+      .map((value) => value.value.setZone(COPENHAGEN).toFormat("yyyy-LL-dd'T'HH:mm"))
+      .sort(),
+    overrides: [],
+    durationMinutes,
+  };
 }
 
 function occurrenceId(uid: string, recurrenceOrdinal: number | undefined): string {
@@ -707,7 +762,7 @@ function parseEvent(
   if (rules.length === 1) {
     recurrenceRule = parsedWeeklyRule(rules[0]!, interval.start, label, errors);
     starts = recurrenceRule
-      ? recurringStarts(interval, recurrenceRule, exdates, windowStart, windowEnd, label, errors)
+      ? recurringStarts(interval, recurrenceRule, exdates.identities, windowStart, windowEnd, label, errors)
       : [];
   } else {
     if (matching(properties, "EXDATE").length > 0) {
@@ -730,6 +785,9 @@ function parseEvent(
       status,
     )
   );
+  const schedule = recurrenceRule
+    ? canonicalRecurringSchedule(interval, rules[0]!, recurrenceRule, exdates)
+    : undefined;
   const accessText = `${title}\n${description ?? ""}`;
   const publicSignal = /(?:åbent\s+hus|offentlig(?:t|e)?|alle\s+er\s+velkomne)/iu.test(accessText);
   const membersSignal = /(?:kun\s+for\s+medlemmer|medlemsaktivitet)/iu.test(accessText);
@@ -756,6 +814,7 @@ function parseEvent(
       organizerId: definition.organizerId,
       categoryIds: [...definition.categoryIds],
       ...(locationName ? { location: { name: locationName } } : {}),
+      ...(schedule ? { schedule } : {}),
       occurrences,
       status,
       attendance,

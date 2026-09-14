@@ -351,6 +351,7 @@ async function collectCommand(args: string[]): Promise<void> {
   const duplicateReasons = crossSourceDuplicateReasons(
     existing.repository.events,
     normalizedCandidates.filter((event) => !suppressedEventIds.has(event.id)),
+    now,
   );
   const importedEventIds = new Set(
     existing.repository.snapshots.flatMap((snapshot) => snapshot.events.map((event) => event.id)),
@@ -660,6 +661,7 @@ async function queueFacebookDrafts(
   warnings: string[],
   privateData?: Record<string, unknown>,
 ): Promise<number> {
+  const referenceDate = new Date();
   const repository = await validateAllPublicData(paths.repo);
   const sourcePolicy = repository.repository.sources.find((source) => source.id === "facebook");
   if (!sourcePolicy) throw new Error("Facebook-kilden mangler i data/sources.yaml.");
@@ -674,7 +676,11 @@ async function queueFacebookDrafts(
       ),
     ),
   );
-  const duplicates = crossSourceDuplicateReasons(repository.repository.events, normalized);
+  const duplicates = crossSourceDuplicateReasons(
+    repository.repository.events,
+    normalized,
+    referenceDate,
+  );
   let queued = 0;
   for (let index = 0; index < drafts.length; index += 1) {
     const draft = drafts[index];
@@ -685,7 +691,7 @@ async function queueFacebookDrafts(
       (other) =>
         other.source.sourceId === "facebook" &&
         eventSourceIdentity(other) !== eventSourceIdentity(event) &&
-        eventFingerprint(other) === eventFingerprint(event),
+        eventFingerprint(other, referenceDate) === eventFingerprint(event, referenceDate),
     );
     const duplicateReasons = [
       ...(duplicates.get(eventSourceIdentity(event)) || []),

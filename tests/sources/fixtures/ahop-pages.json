@@ -1,0 +1,86 @@
+[
+  {
+    "id": 28,
+    "modified": "2026-05-20T14:01:30",
+    "slug": "vaevevaerksted",
+    "status": "publish",
+    "link": "https://ahop.dk/vaevevaerksted/",
+    "title": { "rendered": "Væveværksted" },
+    "content": {
+      "rendered": "<style>.fake::after { content: 'mandage fra 01-02'; }</style><section class='sm-section'><h3>Væveværkstedet</h3><div class='sm-text-image-4-content'><p>Vi mødes fast hver torsdag kl. 19; men vi har mulighed for at arbejde i lokalet døgnet rundt, hele året.</p><p>I gruppen er der øvede, let øvede og nybegyndere. I vævegruppen hjælper vi hinanden med de væveopgaver, vi har lyst til at udføre.</p><p>Kontakt Privat Kontakt på 12 34 56 78.</p></div></section>",
+      "protected": false
+    }
+  },
+  {
+    "id": 31,
+    "modified": "2026-05-21T10:35:36",
+    "slug": "hjemloese-strik",
+    "status": "publish",
+    "link": "https://ahop.dk/hjemloese-strik/",
+    "title": { "rendered": "Hjemløse strik" },
+    "content": {
+      "rendered": "<section class='sm-section'><h3>Hjemløse strik</h3><div class='sm-text-image-4-content'><p>Hver onsdag fra kl 14-16 strikker vi huer, halstørklæder, strømper, håndledsvarmere, benvarmere o.lign til hjemløse. Vi aflever vores ting til udsatte i Odense.</p><p>Har du lyst til at finde ud af om det er noget for dig, møder du bare op i aktivitetshusets fællesrum. Gå ind af indgangen fra Vestergade og op på 1. sal til højre.</p></div></section>",
+      "protected": false
+    }
+  },
+  {
+    "id": 32,
+    "modified": "2026-05-20T14:03:18",
+    "slug": "strik-tirsdag-aften",
+    "status": "publish",
+    "link": "https://ahop.dk/strik-tirsdag-aften/",
+    "title": { "rendered": "Strik tirsdag aften" },
+    "content": {
+      "rendered": "<section class='sm-section'><h3>Strik Tirsdag aften</h3><div class='sm-text-image-3-content'><div>Har du lyst til at strikke tirsdage fra kl 19-21 er du velkommen.</div><div>Vi strikker, drikker kaffe og har det rigtig hyggeligt.</div></div></section>",
+      "protected": false
+    }
+  },
+  {
+    "id": 33,
+    "modified": "2026-05-20T14:16:32",
+    "slug": "strik-torsdag-aften",
+    "status": "publish",
+    "link": "https://ahop.dk/strik-torsdag-aften/",
+    "title": { "rendered": "Strik torsdag aften" },
+    "content": {
+      "rendered": "<section class='sm-section'><h3>Strik Onsdag aften</h3><div class='sm-text-image-4-content'><p>Vi strikker onsdage fra 19-21 i Ahops fællesrum på 1. sal.</p><p>Kontaktperson: Privat Kontakt 23 45 67 89.</p></div></section>",
+      "protected": false
+    }
+  },
+  {
+    "id": 41,
+    "modified": "2026-09-14T10:19:09",
+    "slug": "traevaerksted",
+    "status": "publish",
+    "link": "https://ahop.dk/traevaerksted/",
+    "title": { "rendered": "Sløjd" },
+    "content": {
+      "rendered": "<section class='sm-section'><h3>Træværksted</h3><div class='sm-text-image-4-content'><p>Vil du være med på vores nystartede Træværksted, som holder til på Rise gamle Skole…</p><p>De mødes som regel onsdage kl. 14-16.</p></div></section>",
+      "protected": false
+    }
+  },
+  {
+    "id": 42,
+    "modified": "2026-05-20T14:29:05",
+    "slug": "dart",
+    "status": "publish",
+    "link": "https://ahop.dk/dart/",
+    "title": { "rendered": "Dart" },
+    "content": {
+      "rendered": "<section class='sm-section'><h3>Dart</h3><div class='sm-text-image-4-content'><p>Har du lyst til at spille dart …</p><p>Så kom op i Ærøskøbing Dartklub mandage fra 18.30-21. Det er på 1. sal til højre.<br>Mød bare op.</p><script type='application/json'>{\"privateNote\":\"søndage fra 03-04\"}</script></div></section>",
+      "protected": false
+    }
+  },
+  {
+    "id": 276,
+    "modified": "2026-06-01T12:18:12",
+    "slug": "keramikvaerksted",
+    "status": "publish",
+    "link": "https://ahop.dk/keramikvaerksted/",
+    "title": { "rendered": "Keramikværksted" },
+    "content": {
+      "rendered": "<section class='sm-section'><h3>Keramikværkstedet</h3><div class='sm-text-image-4-content'><p>I keramikværkstedet har du mulighed for at lege med stentøjsler. Du kan være ung, gammel, garvet, nybegynder og alt derimellem.</p><p>Vi mødes så vidt muligt fast hver tirsdag fra kl 19.00, men du har mulighed for at komme ned i værkstedet stort set når du har lyst.</p><p>Du kan melde dig ind i AHOP for at være en del af værkstedet.</p></div></section>",
+      "protected": false
+    }
+  }
+]

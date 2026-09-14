@@ -1,6 +1,6 @@
 import { load } from "cheerio";
 
-import { monthlyNthWeekdayOccurrences, normalizedTime } from "./fixed-schedule";
+import { monthlyNthWeekdaySchedule, normalizedTime } from "./fixed-schedule";
 import { errorMessage, fetchText, sameOriginHttpsUrl } from "./http";
 import { cleanText } from "./html";
 import { SOURCE_REGISTRY } from "./registry";
@@ -8,7 +8,7 @@ import type { CollectionContext, CollectionResult, NormalizedEventDraft, SourceA
 
 const definition = SOURCE_REGISTRY["parkinsonforeningen-aeroe"];
 const SOURCE_ORIGIN = new URL(definition.url).origin;
-const REVIEW_REASON = "Den månedlige regel angiver ikke aflysninger, ferier eller en slutdato; de beregnede datoer skal kontrolleres før publicering";
+const REVIEW_REASON = "Den månedlige regel angiver ikke aflysninger, ferier eller en slutdato; gentagelsesreglen skal kontrolleres før publicering";
 
 export interface ParkinsonAeroeParseResult {
   candidates: NormalizedEventDraft[];
@@ -19,7 +19,6 @@ export interface ParkinsonAeroeParseResult {
 export function parseParkinsonAeroePage(
   html: string,
   retrievedAt: string,
-  now: Date,
 ): ParkinsonAeroeParseResult {
   const $ = load(html);
   const warnings: string[] = [];
@@ -67,7 +66,8 @@ export function parseParkinsonAeroePage(
       postalCode: "5970",
       city: "Ærøskøbing",
     },
-    occurrences: monthlyNthWeekdayOccurrences(sourceEventId, 2, 1, startTime, endTime, now),
+    schedule: monthlyNthWeekdaySchedule(2, 1, startTime, endTime),
+    occurrences: [],
     status: "scheduled",
     attendance: "members",
     attendanceDetails: "Aktivitet i Parkinsonforeningens Klub Ærø; alle foreningens medlemmer kan deltage i kredsens klubaktiviteter.",
@@ -87,7 +87,7 @@ async function collect(context: CollectionContext): Promise<CollectionResult> {
   const retrievedAt = context.now.toISOString();
   try {
     const html = await fetchText(context, definition.url, { expectedOrigin: SOURCE_ORIGIN });
-    const parsed = parseParkinsonAeroePage(html, retrievedAt, context.now);
+    const parsed = parseParkinsonAeroePage(html, retrievedAt);
     if (parsed.errors.length > 0) {
       return { status: "partial", source: definition, retrievedAt, pagesFetched: 1, candidates: [], errors: parsed.errors, warnings: parsed.warnings, discardedCandidateCount: 0 };
     }

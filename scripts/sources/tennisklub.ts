@@ -1,6 +1,6 @@
 import { load } from "cheerio";
 
-import { normalizedTime, weeklyOccurrences } from "./fixed-schedule";
+import { normalizedTime, weeklySchedule } from "./fixed-schedule";
 import { errorMessage, fetchText, sameOriginHttpsUrl } from "./http";
 import { cleanText } from "./html";
 import { SOURCE_REGISTRY } from "./registry";
@@ -8,7 +8,7 @@ import type { CollectionContext, CollectionResult, NormalizedEventDraft, SourceA
 
 const definition = SOURCE_REGISTRY["aeroe-tennisklub"];
 const SOURCE_ORIGIN = new URL(definition.url).origin;
-const REVIEW_REASON = "Kildesiden angiver ikke sæsonens slutdato eller ferieundtagelser; de beregnede datoer skal kontrolleres før publicering";
+const REVIEW_REASON = "Kildesiden angiver ikke sæsonens slutdato eller ferieundtagelser; gentagelsesreglen skal kontrolleres før publicering";
 
 interface TennisRule {
   id: string;
@@ -37,7 +37,6 @@ function parseTimes(value: string): { startTime?: string; endTime?: string } {
 export function parseTennisklubPage(
   html: string,
   retrievedAt: string,
-  now: Date,
 ): TennisklubParseResult {
   const $ = load(html);
   const warnings: string[] = [];
@@ -93,7 +92,8 @@ export function parseTennisklubPage(
     organizerId: definition.organizerId,
     categoryIds: [...definition.categoryIds],
     location: { name: "Ærø Tennisklub", address: "Pilebækken 14", city: "Ærøskøbing" },
-    occurrences: weeklyOccurrences(rule.id, rule.weekday, rule.startTime, rule.endTime, now),
+    schedule: weeklySchedule(rule.weekday, rule.startTime, rule.endTime),
+    occurrences: [],
     status: "scheduled",
     attendance: rule.registration ? "registration" : "unknown",
     attendanceDetails: rule.registration
@@ -118,7 +118,7 @@ async function collect(context: CollectionContext): Promise<CollectionResult> {
   const retrievedAt = context.now.toISOString();
   try {
     const html = await fetchText(context, definition.url, { expectedOrigin: SOURCE_ORIGIN });
-    const parsed = parseTennisklubPage(html, retrievedAt, context.now);
+    const parsed = parseTennisklubPage(html, retrievedAt);
     if (parsed.errors.length > 0) {
       return { status: "partial", source: definition, retrievedAt, pagesFetched: 1, candidates: [], errors: parsed.errors, warnings: parsed.warnings, discardedCandidateCount: 0 };
     }

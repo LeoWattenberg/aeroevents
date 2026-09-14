@@ -62,6 +62,41 @@ describe("interactive review display", () => {
     expect(
       formatReviewCandidate(
         candidate({
+          title: "Ugentligt møde uden oplyst startdato",
+          schedule: {
+            kind: "recurring",
+            dtstart: { kind: "timed", date: "2000-01-04", startTime: "18:00" },
+            startDateUnknown: true,
+            rrule: "FREQ=WEEKLY;BYDAY=TU",
+          },
+        }),
+        1,
+        1,
+      ),
+    ).toContain("Tid: hver tirsdag kl. 18:00 [FREQ=WEEKLY;BYDAY=TU]");
+
+    expect(
+      formatReviewCandidate(
+        candidate({
+          title: "Sejlads",
+          schedule: {
+            kind: "recurring",
+            dtstart: { kind: "timed", date: "2026-09-16", startTime: "18:00" },
+            rrule: "FREQ=WEEKLY;WKST=MO;UNTIL=20261007T180000;BYDAY=WE",
+            durationMinutes: 120,
+          },
+        }),
+        1,
+        1,
+      ),
+    ).toContain(
+      "Tid: hver onsdag fra 2026-09-16 kl. 18:00–20:00 til 2026-10-07 kl. 18:00 " +
+        "[FREQ=WEEKLY;WKST=MO;UNTIL=20261007T180000;BYDAY=WE]",
+    );
+
+    expect(
+      formatReviewCandidate(
+        candidate({
           title: "Månedligt møde",
           schedule: {
             kind: "recurring",

@@ -70,6 +70,26 @@ describe("final collection policy", () => {
     expect(crossSourceDuplicateReasons([], [first, second])).toEqual(new Map());
   });
 
+  it("fingerprints the next real date instead of a technical recurrence anchor", () => {
+    const recurring = eventSchema.parse({
+      ...event("source-a", "weekly"),
+      schedule: {
+        kind: "recurring",
+        dtstart: { kind: "timed", date: "2000-01-05", startTime: "19:00" },
+        startDateUnknown: true,
+        rrule: "FREQ=WEEKLY;BYDAY=WE",
+      },
+    });
+    const occurrence = event("source-b", "dated");
+    const reasons = crossSourceDuplicateReasons(
+      [],
+      [recurring, occurrence],
+      new Date("2026-11-01T12:00:00Z"),
+    );
+    expect(reasons.get(eventSourceIdentity(recurring))?.join(" ")).toContain("source-b-dated");
+    expect(reasons.get(eventSourceIdentity(occurrence))?.join(" ")).toContain("source-a-weekly");
+  });
+
   it("does not expose changed review payloads through an older publication override", () => {
     expect(reviewSnapshotAction(false, "updated")).toBe("retain-demoted");
     expect(reviewSnapshotAction(false, "already-pending")).toBe("retain-demoted");

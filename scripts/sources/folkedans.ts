@@ -4,6 +4,7 @@ import { DateTime } from "luxon";
 import { errorMessage, fetchText, sameOriginHttpsUrl } from "./http";
 import { absoluteUrl, cleanText, isoDate, validCalendarDate } from "./html";
 import { SOURCE_REGISTRY } from "./registry";
+import { boundedWeeklySchedule } from "./series-schedule";
 import type {
   CollectionContext,
   CollectionResult,
@@ -15,9 +16,14 @@ import type {
 
 const definition = SOURCE_REGISTRY["aeroe-folkedans"];
 const FOLKEDANS_ORIGIN = new URL(definition.url).origin;
+const ADULT_SERIES_TITLE = "Folkedans for alle (unge og voksne)";
+const ADULT_SERIES_PATH = "/begivenheder/folkedans-for-alle-unge-og-voksne";
+const ADULT_SERIES_SOURCE_EVENT_ID = "adult-series-2026-27";
+const ADULT_SERIES_MAX_SUFFIX = 19;
 
 export interface FolkedansParseResult {
   candidates: NormalizedEventDraft[];
+  excludedSourceEventIds: string[];
   warnings: string[];
   errors: string[];
 }
@@ -100,6 +106,106 @@ function chronology(occurrence: ExplicitOccurrenceDraft): number {
   );
 }
 
+function adultSeriesOrdinal(candidate: NormalizedEventDraft): number | undefined {
+  if (candidate.title !== ADULT_SERIES_TITLE) return undefined;
+  let url: URL;
+  try {
+    url = new URL(candidate.provenance.sourceUrl);
+  } catch {
+    return undefined;
+  }
+  const path = url.pathname.replace(/\/+$/u, "");
+  if (path === ADULT_SERIES_PATH) return 0;
+  const prefix = `${ADULT_SERIES_PATH}-`;
+  const suffix = path.startsWith(prefix) ? path.slice(prefix.length) : "";
+  const ordinal = /^\d+$/u.test(suffix) ? Number(suffix) : undefined;
+  return ordinal !== undefined &&
+    suffix === String(ordinal) &&
+    Number.isSafeInteger(ordinal) &&
+    ordinal >= 1 &&
+    ordinal <= ADULT_SERIES_MAX_SUFFIX
+    ? ordinal
+    : undefined;
+}
+
+function seriesMetadata(candidate: NormalizedEventDraft): string {
+  const {
+    sourceEventId: _sourceEventId,
+    stableId: _stableId,
+    occurrences: _occurrences,
+    provenance,
+    ...metadata
+  } = candidate;
+  const {
+    externalId: _externalId,
+    sourceUrl: _sourceUrl,
+    ...stableProvenance
+  } = provenance;
+  return JSON.stringify({ metadata, provenance: stableProvenance });
+}
+
+function collapseAdultSeries(
+  candidates: NormalizedEventDraft[],
+  warnings: string[],
+): { candidates: NormalizedEventDraft[]; excludedSourceEventIds: string[] } {
+  const members = candidates
+    .map((candidate, index) => ({ candidate, index, ordinal: adultSeriesOrdinal(candidate) }))
+    .filter((item): item is { candidate: NormalizedEventDraft; index: number; ordinal: number } =>
+      item.ordinal !== undefined
+    );
+  if (members.length < 2) {
+    return { candidates, excludedSourceEventIds: [ADULT_SERIES_SOURCE_EVENT_ID] };
+  }
+
+  const ordinals = new Set<number>();
+  for (const { ordinal } of members) {
+    if (ordinals.has(ordinal)) {
+      warnings.push("Folkedanserforeningens voksenserie har gentagne ordinaler i eventlinkene og blev ikke samlet");
+      return { candidates, excludedSourceEventIds: [ADULT_SERIES_SOURCE_EVENT_ID] };
+    }
+    ordinals.add(ordinal);
+  }
+  const signature = seriesMetadata(members[0]!.candidate);
+  if (members.some(({ candidate }) => seriesMetadata(candidate) !== signature)) {
+    warnings.push("Folkedanserforeningens voksenserie har modstridende metadata og blev ikke samlet");
+    return { candidates, excludedSourceEventIds: [ADULT_SERIES_SOURCE_EVENT_ID] };
+  }
+
+  const occurrences = members
+    .flatMap(({ candidate }) => candidate.occurrences)
+    .sort((left, right) =>
+      `${left.date}T${left.startTime ?? ""}`.localeCompare(`${right.date}T${right.startTime ?? ""}`),
+    );
+  const schedule = boundedWeeklySchedule(occurrences);
+  if (!schedule) {
+    warnings.push("Folkedanserforeningens voksenserie kunne ikke bevares som én tabsfri ugentlig regel");
+    return { candidates, excludedSourceEventIds: [ADULT_SERIES_SOURCE_EVENT_ID] };
+  }
+
+  const template = members.find(({ ordinal }) => ordinal === 0)?.candidate ?? members[0]!.candidate;
+  const series: NormalizedEventDraft = {
+    ...template,
+    sourceEventId: ADULT_SERIES_SOURCE_EVENT_ID,
+    stableId: `${definition.id}-${ADULT_SERIES_SOURCE_EVENT_ID}`,
+    schedule,
+    occurrences,
+    provenance: {
+      ...template.provenance,
+      externalId: ADULT_SERIES_SOURCE_EVENT_ID,
+      sourceUrl: new URL(ADULT_SERIES_PATH, `${FOLKEDANS_ORIGIN}/`).toString(),
+    },
+  };
+  const memberIndexes = new Set(members.map(({ index }) => index));
+  const firstIndex = Math.min(...memberIndexes);
+  return {
+    candidates: candidates.flatMap((candidate, index) => {
+      if (index === firstIndex) return [series];
+      return memberIndexes.has(index) ? [] : [candidate];
+    }),
+    excludedSourceEventIds: members.map(({ candidate }) => candidate.sourceEventId),
+  };
+}
+
 export function parseFolkedansPage(
   html: string,
   retrievedAt: string,
@@ -112,7 +218,7 @@ export function parseFolkedansPage(
   const upcomingContainers = $(".events-container [data-event-filter='kommende-begivenheder']");
   if (upcomingContainers.length === 0) {
     errors.push("Folkedanserforeningens side mangler sektionen med kommende begivenheder");
-    return { candidates: [], warnings, errors };
+    return { candidates: [], excludedSourceEventIds: [], warnings, errors };
   }
   if (upcomingContainers.length > 1) {
     warnings.push("Site123 gengav sektionen med kommende begivenheder flere gange; dubletter blev fjernet");
@@ -244,7 +350,13 @@ export function parseFolkedansPage(
     });
   });
 
-  return { candidates: [...candidatesById.values()], warnings, errors };
+  const collapsed = collapseAdultSeries([...candidatesById.values()], warnings);
+  return {
+    candidates: collapsed.candidates,
+    excludedSourceEventIds: collapsed.excludedSourceEventIds,
+    warnings,
+    errors,
+  };
 }
 
 async function collect(context: CollectionContext): Promise<CollectionResult> {
@@ -275,6 +387,7 @@ async function collect(context: CollectionContext): Promise<CollectionResult> {
       retrievedAt,
       pagesFetched: 1,
       candidates: parsed.candidates,
+      excludedSourceEventIds: parsed.excludedSourceEventIds,
       errors: [],
       warnings: [...new Set(parsed.warnings)],
     };

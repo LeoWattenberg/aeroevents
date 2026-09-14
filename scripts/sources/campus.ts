@@ -4,6 +4,7 @@ import { DateTime } from "luxon";
 import { errorMessage, fetchJson, sameOriginHttpsUrl } from "./http";
 import { cleanText } from "./html";
 import { SOURCE_REGISTRY } from "./registry";
+import { boundedWeeklySchedule } from "./series-schedule";
 import type {
   CollectionContext,
   CollectionResult,
@@ -33,7 +34,15 @@ interface CampusPage {
   itemCount: number;
   eventIds: string[];
   candidates: NormalizedEventDraft[];
+  seriesEvidence: CampusSeriesEvidence[];
   excludedCount: number;
+}
+
+export interface CampusSeriesEvidence {
+  sourceEventId: string;
+  slug: string;
+  canonicalSourceUrl: string;
+  categorySlugs: string[];
 }
 
 export interface CampusPageParseResult {
@@ -44,10 +53,18 @@ export interface CampusPageParseResult {
 
 export interface CampusEventParseResult {
   candidate?: NormalizedEventDraft;
+  seriesEvidence?: CampusSeriesEvidence;
   excluded: boolean;
   excludedReason?: string;
   warnings: string[];
   errors: string[];
+}
+
+export interface CampusSeriesConsolidationResult {
+  candidates: NormalizedEventDraft[];
+  absorbedSourceEventIds: string[];
+  retiredSeriesSourceEventIds: string[];
+  warnings: string[];
 }
 
 function record(value: unknown): Record<string, unknown> | undefined {
@@ -132,6 +149,37 @@ function categorySlugs(value: unknown): string[] | undefined {
   return [...new Set(slugs)];
 }
 
+function campusSeriesEvidence(
+  item: Record<string, unknown>,
+  sourceEventId: string,
+  sourceUrl: string,
+  occurrenceDate: string,
+  slugs: string[],
+): CampusSeriesEvidence | undefined {
+  if (!slugs.includes("campus-ugentlig")) return undefined;
+  const slug = plainText(item.slug)?.toLocaleLowerCase("da-DK");
+  if (!slug || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug)) return undefined;
+
+  const url = new URL(sourceUrl);
+  const match = url.pathname.match(/^\/event\/([a-z0-9]+(?:-[a-z0-9]+)*)\/(\d{4}-\d{2}-\d{2})\/?$/);
+  if (
+    !match ||
+    match[1] !== slug ||
+    match[2] !== occurrenceDate ||
+    url.search ||
+    url.hash
+  ) {
+    return undefined;
+  }
+
+  return {
+    sourceEventId,
+    slug,
+    canonicalSourceUrl: new URL(`/event/${slug}/`, CAMPUS_ORIGIN).toString(),
+    categorySlugs: [...slugs].sort(),
+  };
+}
+
 function mappedCategoryIds(slugs: string[], text: string): string[] {
   const categories = new Set<string>();
   if (slugs.includes("kultur") || slugs.includes("foredrag") || /\b(?:kunst|musik|koncert|foredrag)\b/iu.test(text)) {
@@ -212,6 +260,200 @@ function status(item: Record<string, unknown>, title: string): "scheduled" | "ca
     return "postponed";
   }
   return "scheduled";
+}
+
+const DANISH_WEEKDAYS = [
+  "",
+  "mandag",
+  "tirsdag",
+  "onsdag",
+  "torsdag",
+  "fredag",
+  "lørdag",
+  "søndag",
+] as const;
+
+function sharedSeriesMetadata(candidate: NormalizedEventDraft): string {
+  const metadata: Record<string, unknown> = { ...candidate };
+  delete metadata.sourceEventId;
+  delete metadata.stableId;
+  delete metadata.occurrences;
+  const provenance: Record<string, unknown> = { ...candidate.provenance };
+  delete provenance.externalId;
+  delete provenance.sourceUrl;
+  metadata.provenance = provenance;
+  return JSON.stringify(metadata);
+}
+
+function normalizedClock(hour: string, minute: string): string {
+  return `${hour.padStart(2, "0")}:${minute}`;
+}
+
+function seriesScheduleReviewReasons(candidate: NormalizedEventDraft): string[] {
+  const description = candidate.description ?? "";
+  const occurrence = candidate.occurrences[0];
+  if (!occurrence) return [];
+  const reasons: string[] = [];
+  const structuredDate = DateTime.fromISO(occurrence.date, { zone: COPENHAGEN });
+  const weekdayMatch = description.match(
+    /\bhver\s+(mandag|tirsdag|onsdag|torsdag|fredag|lørdag|søndag)\b/iu,
+  );
+  if (weekdayMatch && structuredDate.isValid) {
+    const declaredWeekday = weekdayMatch[1]?.toLocaleLowerCase("da-DK");
+    const structuredWeekday = DANISH_WEEKDAYS[structuredDate.weekday];
+    if (declaredWeekday && structuredWeekday && declaredWeekday !== structuredWeekday) {
+      reasons.push(
+        `Kildeteksten angiver "hver ${declaredWeekday}", men de strukturerede ` +
+          `Campus-forekomster ligger om ${structuredWeekday}en; den strukturerede ugedag er bevaret.`,
+      );
+    }
+  }
+
+  const timeMatch = description.match(
+    /\bfra\s+(?:kl\.?\s*)?([01]?\d|2[0-3])[.:]([0-5]\d)\s+til\s+(?:kl\.?\s*)?([01]?\d|2[0-3])[.:]([0-5]\d)\b/iu,
+  );
+  if (timeMatch && occurrence.startTime && occurrence.endTime) {
+    const declaredStart = normalizedClock(timeMatch[1]!, timeMatch[2]!);
+    const declaredEnd = normalizedClock(timeMatch[3]!, timeMatch[4]!);
+    if (declaredStart !== occurrence.startTime || declaredEnd !== occurrence.endTime) {
+      reasons.push(
+        `Kildeteksten angiver kl. ${declaredStart}–${declaredEnd}, men de strukturerede ` +
+          `Campus-felter angiver kl. ${occurrence.startTime}–${occurrence.endTime}; ` +
+          "de strukturerede tider er bevaret.",
+      );
+    }
+  }
+  return reasons;
+}
+
+/**
+ * Tribe gives every recurrence instance a numeric id, while its weekly
+ * category, stable slug and date-qualified permalink identify the shared
+ * source series. Consolidate only when all event-level metadata agrees; the
+ * bounded rule then retains source omissions as EXDATEs.
+ */
+export function consolidateCampusWeeklySeries(
+  candidates: NormalizedEventDraft[],
+  evidence: CampusSeriesEvidence[],
+): CampusSeriesConsolidationResult {
+  const warnings: string[] = [];
+  const evidenceByEventId = new Map<string, CampusSeriesEvidence>();
+  for (const item of evidence) {
+    const previous = evidenceByEventId.get(item.sourceEventId);
+    if (previous && previous.canonicalSourceUrl !== item.canonicalSourceUrl) {
+      warnings.push(
+        `Campus-post ${item.sourceEventId} optræder med flere serieidentiteter og bevares enkeltvis`,
+      );
+      evidenceByEventId.delete(item.sourceEventId);
+      continue;
+    }
+    evidenceByEventId.set(item.sourceEventId, item);
+  }
+
+  const groups = new Map<
+    string,
+    { evidence: CampusSeriesEvidence; candidates: NormalizedEventDraft[] }
+  >();
+  for (const candidate of candidates) {
+    const item = evidenceByEventId.get(candidate.sourceEventId);
+    if (!item) continue;
+    const group = groups.get(item.canonicalSourceUrl);
+    if (group) group.candidates.push(candidate);
+    else groups.set(item.canonicalSourceUrl, { evidence: item, candidates: [candidate] });
+  }
+
+  const candidateIndexes = new Map(
+    candidates.map((candidate, index) => [candidate, index] as const),
+  );
+  const replacements = new Map<number, NormalizedEventDraft>();
+  const absorbedIndexes = new Set<number>();
+  const absorbedSourceEventIds: string[] = [];
+  const retiredSeriesSourceEventIds: string[] = [];
+  for (const group of groups.values()) {
+    const sourceEventId = `series-${group.evidence.slug}`;
+    const categorySignatures = new Set(
+      group.candidates.map((candidate) =>
+        JSON.stringify(evidenceByEventId.get(candidate.sourceEventId)?.categorySlugs ?? []),
+      ),
+    );
+    if (group.candidates.length < 2) {
+      retiredSeriesSourceEventIds.push(sourceEventId);
+      continue;
+    }
+    if (
+      new Set(group.candidates.map(sharedSeriesMetadata)).size !== 1 ||
+      categorySignatures.size !== 1
+    ) {
+      warnings.push(
+        `Campus-serien ${group.evidence.slug} har forskellig metadata mellem forekomster og bevares enkeltvis`,
+      );
+      retiredSeriesSourceEventIds.push(sourceEventId);
+      continue;
+    }
+    if (group.candidates.some((candidate) => candidate.occurrences.length !== 1)) {
+      warnings.push(
+        `Campus-serien ${group.evidence.slug} har en uventet forekomststruktur og bevares enkeltvis`,
+      );
+      retiredSeriesSourceEventIds.push(sourceEventId);
+      continue;
+    }
+
+    const occurrences = group.candidates
+      .flatMap((candidate) => candidate.occurrences)
+      .sort((left, right) =>
+        `${left.date}T${left.startTime ?? ""}`.localeCompare(
+          `${right.date}T${right.startTime ?? ""}`,
+        ),
+      );
+    const schedule = boundedWeeklySchedule(occurrences);
+    if (!schedule) {
+      warnings.push(
+        `Campus-serien ${group.evidence.slug} kunne ikke bevares som én entydig ugentlig regel og bevares enkeltvis`,
+      );
+      retiredSeriesSourceEventIds.push(sourceEventId);
+      continue;
+    }
+
+    const indexedCandidates = group.candidates
+      .map((candidate) => ({ candidate, index: candidateIndexes.get(candidate)! }))
+      .sort((left, right) => left.index - right.index);
+    const first = indexedCandidates[0]!;
+    const reviewReasons = [
+      ...new Set([
+        ...first.candidate.reviewReasons,
+        ...seriesScheduleReviewReasons(first.candidate),
+      ]),
+    ];
+    replacements.set(first.index, {
+      ...first.candidate,
+      sourceEventId,
+      stableId: `${definition.id}-${sourceEventId}`,
+      schedule,
+      occurrences,
+      publication: reviewReasons.length > 0 ? "review" : first.candidate.publication,
+      reviewReasons,
+      provenance: {
+        ...first.candidate.provenance,
+        externalId: sourceEventId,
+        sourceUrl: group.evidence.canonicalSourceUrl,
+      },
+    });
+    indexedCandidates.forEach(({ candidate, index }) => {
+      absorbedIndexes.add(index);
+      absorbedSourceEventIds.push(candidate.sourceEventId);
+    });
+  }
+
+  return {
+    candidates: candidates.flatMap((candidate, index) => {
+      const replacement = replacements.get(index);
+      if (replacement) return [replacement];
+      return absorbedIndexes.has(index) ? [] : [candidate];
+    }),
+    absorbedSourceEventIds,
+    retiredSeriesSourceEventIds,
+    warnings: [...new Set(warnings)],
+  };
 }
 
 export function campusPageUrl(page: number, now: Date, perPage = PAGE_SIZE): string {
@@ -316,11 +558,24 @@ export function parseCampusEvent(value: unknown, retrievedAt: string): CampusEve
         allDay: false,
         timeUnknown: false,
       };
+  const seriesEvidence = campusSeriesEvidence(
+    item,
+    id,
+    sourceUrl,
+    occurrence.date,
+    slugs,
+  );
+  if (slugs.includes("campus-ugentlig") && !seriesEvidence) {
+    warnings.push(
+      `Campus-post ${id} er mærket som ugentlig, men mangler en entydig slug og datolink; posten bevares enkeltvis`,
+    );
+  }
 
   return {
     excluded: false,
     warnings,
     errors,
+    ...(seriesEvidence ? { seriesEvidence } : {}),
     candidate: {
       sourceId: definition.id,
       sourceEventId: id,
@@ -390,6 +645,7 @@ export function parseCampusPage(
 
   const eventIds: string[] = [];
   const candidates: NormalizedEventDraft[] = [];
+  const seriesEvidence: CampusSeriesEvidence[] = [];
   let excludedCount = 0;
   for (const event of events) {
     const parsed = parseCampusEvent(event, retrievedAt);
@@ -398,6 +654,7 @@ export function parseCampusPage(
     const id = eventId(record(event)?.id);
     if (id) eventIds.push(id);
     if (parsed.candidate) candidates.push(parsed.candidate);
+    if (parsed.seriesEvidence) seriesEvidence.push(parsed.seriesEvidence);
     if (parsed.excluded) excludedCount += 1;
   }
   if (new Set(eventIds).size !== eventIds.length) {
@@ -418,6 +675,7 @@ export function parseCampusPage(
             itemCount: events.length,
             eventIds,
             candidates,
+            seriesEvidence,
             excludedCount,
           },
         }
@@ -432,6 +690,7 @@ export async function collectCampusEvents(context: CollectionContext): Promise<C
   const warnings: string[] = [];
   const errors: string[] = [];
   const candidates: NormalizedEventDraft[] = [];
+  const seriesEvidence: CampusSeriesEvidence[] = [];
   const allEventIds: string[] = [];
   let pagesFetched = 0;
   let itemsSeen = 0;
@@ -469,6 +728,7 @@ export async function collectCampusEvents(context: CollectionContext): Promise<C
       itemsSeen += parsed.page.itemCount;
       allEventIds.push(...parsed.page.eventIds);
       candidates.push(...parsed.page.candidates);
+      seriesEvidence.push(...parsed.page.seriesEvidence);
     }
   } catch (error) {
     const message = errorMessage(error);
@@ -507,12 +767,18 @@ export async function collectCampusEvents(context: CollectionContext): Promise<C
       discardedCandidateCount: candidates.length,
     };
   }
+  const consolidated = consolidateCampusWeeklySeries(candidates, seriesEvidence);
+  warnings.push(...consolidated.warnings);
   return {
     status: "complete",
     source: definition,
     retrievedAt,
     pagesFetched,
-    candidates,
+    candidates: consolidated.candidates,
+    excludedSourceEventIds: [
+      ...consolidated.absorbedSourceEventIds,
+      ...consolidated.retiredSeriesSourceEventIds,
+    ],
     warnings: [...new Set(warnings)],
     errors: [],
   };

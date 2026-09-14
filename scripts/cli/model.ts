@@ -75,7 +75,10 @@ export function sourceDraftToEvent(draft: NormalizedEventDraft): EventRecord {
           },
         }
       : {}),
-    schedule: { kind: "explicit", dates: draft.occurrences.map(occurrenceToDate) },
+    schedule: draft.schedule ?? {
+      kind: "explicit",
+      dates: draft.occurrences.map(occurrenceToDate),
+    },
     source: {
       sourceId: draft.sourceId,
       externalId: draft.sourceEventId,

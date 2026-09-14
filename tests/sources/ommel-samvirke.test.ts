@@ -112,6 +112,52 @@ describe("Ommel Samvirke source", () => {
       .toEqual(["2026-09-24", "2026-10-01"]);
   });
 
+  it("joins source-declared series continuations and retains duration exceptions", async () => {
+    const html = (await fixture("ommel-samvirke-calendar.html")).replaceAll(
+      "Kom og spil petanque i hyggeligt selskab.",
+      "Vi spiller petanque hver torsdag.",
+    );
+    const emptyOctober = `<!doctype html><main data-ommel-calendar-capture
+      data-view-month="2026-10-01" data-visible-event-count="0"></main>`;
+    const result = await collectOmmelSamvirke(
+      { now: NOW, fetch: globalThis.fetch },
+      {
+        monthsAhead: 1,
+        createBrowser: fakeBrowser([snapshot(html), snapshot(emptyOctober, "2026-10-01")]),
+      },
+    );
+
+    expect(result.status).toBe("complete");
+    if (result.status !== "complete") return;
+    expect(result.excludedSourceEventIds).toEqual(expect.arrayContaining([
+      "declared-series-fredagsbar",
+      "declared-series-stolegymnastik",
+    ]));
+    expect((result.excludedSourceEventIds ?? []).filter((id) => id.startsWith("activity-"))).toHaveLength(2);
+    const petanque = result.candidates.filter((candidate) => candidate.title === "Petanque");
+    expect(petanque).toHaveLength(1);
+    expect(petanque[0]).toMatchObject({
+      sourceEventId: "declared-series-petanque",
+      publication: "review",
+      schedule: {
+        kind: "recurring",
+        dtstart: { kind: "timed", date: "2026-09-24", startTime: "15:00" },
+        rrule: "FREQ=WEEKLY;BYDAY=TH;UNTIL=20261001T150000",
+        durationMinutes: 90,
+        overrides: [{
+          recurrenceId: "2026-10-01T15:00",
+          replacement: {
+            kind: "timed",
+            date: "2026-10-01",
+            startTime: "15:00",
+            endTime: "17:00",
+          },
+        }],
+      },
+    });
+    expect(petanque[0]?.reviewReasons.join(" ")).toContain("flere aktivitets-id'er");
+  });
+
   it("walks the bounded month range and records only sanitized rendered HTML", async () => {
     const html = await fixture("ommel-samvirke-calendar.html");
     const emptyOctober = `<!doctype html><main data-ommel-calendar-capture
@@ -138,6 +184,35 @@ describe("Ommel Samvirke source", () => {
     expect(actions).toEqual([`open:${SOURCE_URL}`, "next", "close"]);
     expect(recorded).toHaveLength(2);
     expect(recorded.join(" ")).not.toMatch(/stol@example\.dk|61 74 15 54|Privat Person/u);
+  });
+
+  it("preserves a recurrence only when the activity description declares it", async () => {
+    const html = (await fixture("ommel-samvirke-calendar.html")).replaceAll(
+      "Tryg bevægelse og fællesskab.",
+      "Vi laver stolegymnastik hver mandag.",
+    );
+    const emptyOctober = `<!doctype html><main data-ommel-calendar-capture
+      data-view-month="2026-10-01" data-visible-event-count="0"></main>`;
+    const result = await collectOmmelSamvirke(
+      { now: NOW, fetch: globalThis.fetch },
+      {
+        monthsAhead: 1,
+        createBrowser: fakeBrowser([snapshot(html), snapshot(emptyOctober, "2026-10-01")]),
+      },
+    );
+
+    expect(result.status).toBe("complete");
+    if (result.status !== "complete") return;
+    const gymnastics = result.candidates.find((candidate) => candidate.title === "Stolegymnastik");
+    expect(gymnastics?.schedule).toEqual({
+      kind: "recurring",
+      dtstart: { kind: "timed", date: "2026-09-14", startTime: "10:00" },
+      rrule: "FREQ=WEEKLY;BYDAY=MO;UNTIL=20260921T100000",
+      rdates: [],
+      exdates: [],
+      overrides: [],
+      durationMinutes: 120,
+    });
   });
 
   it("returns an atomic partial result when one visible dialog is malformed", async () => {

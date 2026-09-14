@@ -1,11 +1,14 @@
+import { DateTime } from "luxon";
 import { describe, expect, it } from "vitest";
 
+import { sourceDraftToEvent } from "../../scripts/cli/model";
 import {
   aeroeskoebingSejlklubSource,
   isOffIslandLocation,
   parseAeroeskoebingSejlklubCalendar,
   unescapeIcsText,
 } from "../../scripts/sources/aeroeskoebing-sejlklub";
+import { CALENDAR_ZONE, expandEvent } from "../../src/lib/schedule";
 import { fixture, mappedFetch } from "./test-helpers";
 
 const NOW = new Date("2026-09-14T10:00:00.000Z");
@@ -13,7 +16,7 @@ const SOURCE_URL =
   "https://calendar.google.com/calendar/ical/9db3eee6cb77ad0a86cb2c024117df053701c9e5e4898f548914f560650e3df9%40group.calendar.google.com/public/basic.ics";
 
 describe("Ærøskøbing Sejlklub source", () => {
-  it("unfolds and unescapes the calendar while expanding bounded weekly occurrences", async () => {
+  it("unfolds the calendar and retains a local weekly rule as a canonical recurrence", async () => {
     const parsed = parseAeroeskoebingSejlklubCalendar(
       await fixture("aeroeskoebing-sejlklub.ics"),
       NOW.toISOString(),
@@ -56,6 +59,60 @@ describe("Ærøskøbing Sejlklub source", () => {
     expect(parsed.candidates[0]!.occurrences.every((occurrence) =>
       /^sejlklub-[a-f0-9]{20}-occurrence-\d+$/u.test(occurrence.id)
     )).toBe(true);
+    expect(parsed.candidates[0]!.schedule).toEqual({
+      kind: "recurring",
+      dtstart: { kind: "timed", date: "2026-09-02", startTime: "18:00" },
+      rrule: "FREQ=WEEKLY;WKST=MO;UNTIL=20261007T235959;BYDAY=WE",
+      rdates: [],
+      exdates: ["2026-09-23T18:00"],
+      overrides: [],
+      durationMinutes: 60,
+    });
+
+    const canonical = sourceDraftToEvent(parsed.candidates[0]!);
+    const expanded = expandEvent(
+      canonical,
+      DateTime.fromISO("2026-09-14", { zone: CALENDAR_ZONE }),
+      DateTime.fromISO("2027-09-14", { zone: CALENDAR_ZONE }),
+    );
+    expect(expanded.warnings).toEqual([]);
+    expect(expanded.occurrences.map((occurrence) => ({
+      date: occurrence.date,
+      startTime: DateTime.fromISO(occurrence.startAt!, { setZone: true }).toFormat("HH:mm"),
+      endTime: DateTime.fromISO(occurrence.endAt!, { setZone: true }).toFormat("HH:mm"),
+    }))).toEqual(parsed.candidates[0]!.occurrences.map((occurrence) => ({
+      date: occurrence.date,
+      startTime: occurrence.startTime,
+      endTime: occurrence.endTime,
+    })));
+  });
+
+  it("keeps UTC weekly rules on the explicit fallback path", async () => {
+    const ics = (await fixture("aeroeskoebing-sejlklub.ics"))
+      .replace(
+        "DTSTART;TZID=Europe/Copenhagen:20260902T180000",
+        "DTSTART:20260902T160000Z",
+      )
+      .replace(
+        "DTEND;TZID=Europe/Copenhagen:20260902T190000",
+        "DTEND:20260902T170000Z",
+      )
+      .replace(
+        "EXDATE;TZID=Europe/Copenhagen:20260923T180000",
+        "EXDATE:20260923T160000Z",
+      );
+    const parsed = parseAeroeskoebingSejlklubCalendar(ics, NOW.toISOString(), NOW);
+    const series = parsed.candidates.find(
+      (candidate) => candidate.sourceEventId === "series-kapsejlads@google.com",
+    );
+
+    expect(parsed.errors).toEqual([]);
+    expect(series?.schedule).toBeUndefined();
+    expect(series?.occurrences.map((occurrence) => [occurrence.date, occurrence.startTime])).toEqual([
+      ["2026-09-16", "18:00"],
+      ["2026-09-30", "18:00"],
+      ["2026-10-07", "18:00"],
+    ]);
   });
 
   it("normalizes exclusive DATE ends, UTC instants, cancellation, location, and modified time", async () => {

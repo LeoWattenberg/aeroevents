@@ -3,7 +3,7 @@
   "verifiedAt": "2026-09-14T16:58:01.946Z",
   "events": [
     {
-      "id": "aeroe-kirkeliv-50756174",
+      "id": "aeroe-kirkeliv-series-babysalmesang-i-tranderup",
       "title": "Babysalmesang i Tranderup",
       "description": "",
       "organizerId": "linda-skjoennemand",
@@ -23,20 +23,21 @@
       "status": "scheduled",
       "publication": "published",
       "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-50756174",
-            "date": "2026-09-16",
-            "kind": "timed",
-            "startTime": "10:00"
-          }
-        ]
+        "kind": "recurring",
+        "dtstart": {
+          "kind": "timed",
+          "date": "2026-09-16",
+          "startTime": "10:00"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20261007T100000",
+        "rdates": [],
+        "exdates": [],
+        "overrides": []
       },
       "source": {
         "sourceId": "aeroe-kirkeliv",
-        "externalId": "50756174",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/babysalmesang-i-tranderup-50756174",
+        "externalId": "series-babysalmesang-i-tranderup",
+        "url": "https://widget.churchdesk.com/da/w/1709/event/7HsDjgjjLaLL/1/1350954",
         "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
@@ -79,7 +80,7 @@
       }
     },
     {
-      "id": "aeroe-kirkeliv-50756144",
+      "id": "aeroe-kirkeliv-series-tumlingemusik-i-tranderup",
       "title": "Tumlingemusik i Tranderup",
       "description": "",
       "organizerId": "linda-skjoennemand",
@@ -99,20 +100,21 @@
       "status": "scheduled",
       "publication": "published",
       "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-50756144",
-            "date": "2026-09-17",
-            "kind": "timed",
-            "startTime": "15:30"
-          }
-        ]
+        "kind": "recurring",
+        "dtstart": {
+          "kind": "timed",
+          "date": "2026-09-17",
+          "startTime": "15:30"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=TH;UNTIL=20261008T153000",
+        "rdates": [],
+        "exdates": [],
+        "overrides": []
       },
       "source": {
         "sourceId": "aeroe-kirkeliv",
-        "externalId": "50756144",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/tumlingemusik-i-tranderup-50756144",
+        "externalId": "series-tumlingemusik-i-tranderup",
+        "url": "https://widget.churchdesk.com/da/w/1709/event/7HsDjgjjLaLL/1/1350954",
         "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
@@ -344,83 +346,7 @@
       }
     },
     {
-      "id": "aeroe-kirkeliv-50756177",
-      "title": "Babysalmesang i Tranderup",
-      "description": "",
-      "organizerId": "linda-skjoennemand",
-      "organizerName": "Linda Skjønnemand",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Tranderup sognehus",
-        "address": "Tranderupgade",
-        "postalCode": "5970",
-        "city": "Ærøskøbing"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-50756177",
-            "date": "2026-09-23",
-            "kind": "timed",
-            "startTime": "10:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "50756177",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/babysalmesang-i-tranderup-50756177",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-50756145",
-      "title": "Tumlingemusik i Tranderup",
-      "description": "",
-      "organizerId": "linda-skjoennemand",
-      "organizerName": "Linda Skjønnemand",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Tranderup kirke",
-        "address": "Tranderupvej 49",
-        "postalCode": "5970",
-        "city": "Ærøskøbing"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-50756145",
-            "date": "2026-09-24",
-            "kind": "timed",
-            "startTime": "15:30"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "50756145",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/tumlingemusik-i-tranderup-50756145",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-53896466",
+      "id": "aeroe-kirkeliv-series-bibelstudiekreds-marstal",
       "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
       "description": "",
       "organizerId": "pia-vandrup",
@@ -440,20 +366,21 @@
       "status": "scheduled",
       "publication": "published",
       "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896466",
-            "date": "2026-09-24",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
+        "kind": "recurring",
+        "dtstart": {
+          "kind": "timed",
+          "date": "2026-09-24",
+          "startTime": "19:00"
+        },
+        "rrule": "FREQ=WEEKLY;INTERVAL=2;BYDAY=TH;UNTIL=20270211T190000",
+        "rdates": [],
+        "exdates": [],
+        "overrides": []
       },
       "source": {
         "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896466",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896466",
+        "externalId": "series-bibelstudiekreds-marstal",
+        "url": "https://widget.churchdesk.com/da/w/1709/event/7HsDjgjjLaLL/1/1350954",
         "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
@@ -649,44 +576,6 @@
       }
     },
     {
-      "id": "aeroe-kirkeliv-50756175",
-      "title": "Babysalmesang i Tranderup",
-      "description": "",
-      "organizerId": "linda-skjoennemand",
-      "organizerName": "Linda Skjønnemand",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Tranderup sognehus",
-        "address": "Tranderupgade",
-        "postalCode": "5970",
-        "city": "Ærøskøbing"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-50756175",
-            "date": "2026-09-30",
-            "kind": "timed",
-            "startTime": "10:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "50756175",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/babysalmesang-i-tranderup-50756175",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
       "id": "aeroe-kirkeliv-45094892",
       "title": "Menighedsrådsmøde / Rise Sogenhus",
       "description": "Menighedsrådsmøde i Rise Sognehus\nOnsdag den 30. september kl. 19.00-22.00\nAlle er velkomne til...",
@@ -720,44 +609,6 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "45094892",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/menighedsradsmode-marstal-45094892",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-50756146",
-      "title": "Tumlingemusik i Tranderup",
-      "description": "",
-      "organizerId": "linda-skjoennemand",
-      "organizerName": "Linda Skjønnemand",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Tranderup kirke",
-        "address": "Tranderupvej 49",
-        "postalCode": "5970",
-        "city": "Ærøskøbing"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-50756146",
-            "date": "2026-10-01",
-            "kind": "timed",
-            "startTime": "15:30"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "50756146",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/tumlingemusik-i-tranderup-50756146",
         "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
@@ -952,44 +803,6 @@
       }
     },
     {
-      "id": "aeroe-kirkeliv-50756176",
-      "title": "Babysalmesang i Tranderup",
-      "description": "",
-      "organizerId": "linda-skjoennemand",
-      "organizerName": "Linda Skjønnemand",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Tranderup sognehus",
-        "address": "Tranderupgade",
-        "postalCode": "5970",
-        "city": "Ærøskøbing"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-50756176",
-            "date": "2026-10-07",
-            "kind": "timed",
-            "startTime": "10:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "50756176",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/babysalmesang-i-tranderup-50756176",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
       "id": "aeroe-kirkeliv-53896726",
       "title": "Opstartsgudstjeneste for konfirmander i Ærøskøbing Kirke",
       "description": "",
@@ -1024,82 +837,6 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896726",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/opstartsgudstjeneste-for-konfirmander-i-aeroskobing-kirke-53896726",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-50756147",
-      "title": "Tumlingemusik i Tranderup",
-      "description": "",
-      "organizerId": "linda-skjoennemand",
-      "organizerName": "Linda Skjønnemand",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Tranderup kirke",
-        "address": "Tranderupvej 49",
-        "postalCode": "5970",
-        "city": "Ærøskøbing"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-50756147",
-            "date": "2026-10-08",
-            "kind": "timed",
-            "startTime": "15:30"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "50756147",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/tumlingemusik-i-tranderup-50756147",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-53896467",
-      "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
-      "description": "",
-      "organizerId": "pia-vandrup",
-      "organizerName": "Pia Vandrup",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Marstal Menighedshus",
-        "address": "Strandstræde 20",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896467",
-            "date": "2026-10-08",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896467",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896467",
         "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
@@ -1405,44 +1142,6 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53656433",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-tranderup-m-altergang-53656433",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-53896468",
-      "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
-      "description": "",
-      "organizerId": "pia-vandrup",
-      "organizerName": "Pia Vandrup",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Marstal Menighedshus",
-        "address": "Strandstræde 20",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896468",
-            "date": "2026-10-22",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896468",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896468",
         "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
@@ -1942,44 +1641,6 @@
       }
     },
     {
-      "id": "aeroe-kirkeliv-53896469",
-      "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
-      "description": "",
-      "organizerId": "pia-vandrup",
-      "organizerName": "Pia Vandrup",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Marstal Menighedshus",
-        "address": "Strandstræde 20",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896469",
-            "date": "2026-11-05",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896469",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896469",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
       "id": "aeroe-kirkeliv-53896742",
       "title": "Aftenandagt: Tid til ro - et pusterum i din hverdag / Rise Kirke",
       "description": "Torsdag den 5. november i Rise kirke kl. 19.00\nTID TIL RO – ET PUSTERUM I DIN HVERDAG\nTo aftener ...",
@@ -2356,44 +2017,6 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896136",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-bregninge-53896136",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-53896470",
-      "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
-      "description": "",
-      "organizerId": "pia-vandrup",
-      "organizerName": "Pia Vandrup",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Marstal Menighedshus",
-        "address": "Strandstræde 20",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896470",
-            "date": "2026-11-19",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896470",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896470",
         "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },
@@ -2925,234 +2548,6 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896198",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/adventsgudstjeneste-tranderup-53896198",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-53896474",
-      "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
-      "description": "",
-      "organizerId": "pia-vandrup",
-      "organizerName": "Pia Vandrup",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Marstal Menighedshus",
-        "address": "Strandstræde 20",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896474",
-            "date": "2026-12-03",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896474",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896474",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-53896471",
-      "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
-      "description": "",
-      "organizerId": "pia-vandrup",
-      "organizerName": "Pia Vandrup",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Marstal Menighedshus",
-        "address": "Strandstræde 20",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896471",
-            "date": "2026-12-17",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896471",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896471",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-53896472",
-      "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
-      "description": "",
-      "organizerId": "pia-vandrup",
-      "organizerName": "Pia Vandrup",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Marstal Menighedshus",
-        "address": "Strandstræde 20",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896472",
-            "date": "2026-12-31",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896472",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896472",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-53896473",
-      "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
-      "description": "",
-      "organizerId": "pia-vandrup",
-      "organizerName": "Pia Vandrup",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Marstal Menighedshus",
-        "address": "Strandstræde 20",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896473",
-            "date": "2027-01-14",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896473",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896473",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-53896475",
-      "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
-      "description": "",
-      "organizerId": "pia-vandrup",
-      "organizerName": "Pia Vandrup",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Marstal Menighedshus",
-        "address": "Strandstræde 20",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896475",
-            "date": "2027-01-28",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896475",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896475",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "aeroe-kirkeliv-53896476",
-      "title": "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
-      "description": "",
-      "organizerId": "pia-vandrup",
-      "organizerName": "Pia Vandrup",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Marstal Menighedshus",
-        "address": "Strandstræde 20",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "churchdesk-53896476",
-            "date": "2027-02-11",
-            "kind": "timed",
-            "startTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "53896476",
-        "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896476",
         "verifiedAt": "2026-09-14T16:58:01.946Z"
       }
     },

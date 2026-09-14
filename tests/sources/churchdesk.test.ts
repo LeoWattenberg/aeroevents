@@ -1,14 +1,66 @@
 import { describe, expect, it } from "vitest";
 import { load } from "cheerio";
+import { DateTime } from "luxon";
 
 import {
   churchDeskPageUrl,
   churchDeskSource,
   parseChurchDeskPage,
 } from "../../scripts/sources/churchdesk";
+import { sourceDraftToEvent } from "../../scripts/cli/model";
+import { expandEvent } from "../../src/lib/schedule";
 import { fixture, mappedFetch } from "./test-helpers";
 
 const NOW = new Date("2026-09-13T10:00:00.000Z");
+
+function churchDeskHtml(items: unknown[]): string {
+  return `<script id="__NEXT_DATA__" type="application/json">${JSON.stringify({
+    props: {
+      pageProps: {
+        widget: {
+          items,
+          pageNumber: 1,
+          total: items.length,
+          totalPages: 1,
+          pageSize: Math.max(items.length, 1),
+        },
+      },
+    },
+  })}</script>`;
+}
+
+function programmeItem(options: {
+  id: number;
+  title: string;
+  date: string;
+  time: string;
+  contributor: string;
+  locationName: string;
+  address: string;
+  postalCode: string;
+  city: string;
+}) {
+  const start = DateTime.fromISO(`${options.date}T${options.time}`, {
+    zone: "Europe/Copenhagen",
+  });
+  return {
+    id: options.id,
+    title: options.title,
+    cancelledAt: null,
+    startDate: start.toUTC().toISO(),
+    endDate: start.plus({ hours: 1 }).toUTC().toISO(),
+    contributor: `v. ${options.contributor}`,
+    hideEndTime: true,
+    allDay: false,
+    url: `https://www.xn--rkirkeliv-f3a3r.dk/b/program-${options.id}`,
+    locationName: options.locationName,
+    locationObj: {
+      address: options.address,
+      zipcode: options.postalCode,
+      city: options.city,
+    },
+  };
+}
 
 describe("Ærø Kirkeliv ChurchDesk source", () => {
   it("uses the verified site id in every pagination URL", () => {
@@ -44,6 +96,165 @@ describe("Ærø Kirkeliv ChurchDesk source", () => {
     expect(result.candidates.find(({ sourceEventId }) => sourceEventId === "503")?.status).toBe(
       "cancelled",
     );
+  });
+
+  it("consolidates only the three allowlisted programmes into bounded recurring events", async () => {
+    const babyDates = ["2026-09-16", "2026-09-23", "2026-09-30", "2026-10-07"];
+    const babies = babyDates.map(
+      (date, index) => programmeItem({
+        id: [50756174, 50756177, 50756175, 50756176][index]!,
+        title: "Babysalmesang i Tranderup",
+        date,
+        time: "10:00",
+        contributor: "Linda Skjønnemand",
+        locationName: "Tranderup sognehus",
+        address: "Tranderupgade",
+        postalCode: "5970",
+        city: "Ærøskøbing",
+      }),
+    );
+    const toddlerDates = ["2026-09-17", "2026-09-24", "2026-10-01", "2026-10-08"];
+    const toddlers = toddlerDates.map(
+      (date, index) => programmeItem({
+        id: 50756144 + index,
+        title: "Tumlingemusik i Tranderup",
+        date,
+        time: "15:30",
+        contributor: "Linda Skjønnemand",
+        locationName: "Tranderup kirke",
+        address: "Tranderupvej 49",
+        postalCode: "5970",
+        city: "Ærøskøbing",
+      }),
+    );
+    const bibleDates = [
+      "2026-09-24",
+      "2026-10-08",
+      "2026-10-22",
+      "2026-11-05",
+      "2026-11-19",
+      "2026-12-03",
+      "2026-12-17",
+      "2026-12-31",
+      "2027-01-14",
+      "2027-01-28",
+      "2027-02-11",
+    ];
+    const bibleStudies = bibleDates.map((date, index) => programmeItem({
+      id: 53896466 + index,
+      title: "Bibelstudiekreds i Johannesevangeliet / Marstal Menigehedshus",
+      date,
+      time: "19:00",
+      contributor: "Pia Vandrup",
+      locationName: "Marstal Menighedshus",
+      address: "Strandstræde 20",
+      postalCode: "5960",
+      city: "Marstal",
+    }));
+    const ordinaryServices = ["2026-09-20", "2026-09-27", "2026-10-04"].map(
+      (date, index) => programmeItem({
+        id: 600 + index,
+        title: "Gudstjeneste Marstal",
+        date,
+        time: "10:00",
+        contributor: "Linda Skjønnemand",
+        locationName: "Marstal Kirke",
+        address: "Kongensgade 35",
+        postalCode: "5960",
+        city: "Marstal",
+      }),
+    );
+    const result = await churchDeskSource.collect({
+      fetch: mappedFetch({
+        [churchDeskPageUrl(1)]: churchDeskHtml([
+          ...babies,
+          ...toddlers,
+          ...bibleStudies,
+          ...ordinaryServices,
+        ]),
+      }),
+      now: NOW,
+    });
+
+    expect(result.status).toBe("complete");
+    if (result.status !== "complete") return;
+    expect(result.excludedSourceEventIds).toHaveLength(19);
+    expect(result.candidates).toHaveLength(6);
+    expect(result.candidates.filter(({ title }) => title === "Gudstjeneste Marstal"))
+      .toHaveLength(3);
+
+    const expected = [
+      {
+        sourceEventId: "series-babysalmesang-i-tranderup",
+        dates: babyDates,
+        rrule: "FREQ=WEEKLY;BYDAY=WE;UNTIL=20261007T100000",
+      },
+      {
+        sourceEventId: "series-tumlingemusik-i-tranderup",
+        dates: toddlerDates,
+        rrule: "FREQ=WEEKLY;BYDAY=TH;UNTIL=20261008T153000",
+      },
+      {
+        sourceEventId: "series-bibelstudiekreds-marstal",
+        dates: bibleDates,
+        rrule: "FREQ=WEEKLY;INTERVAL=2;BYDAY=TH;UNTIL=20270211T190000",
+      },
+    ];
+    for (const item of expected) {
+      const candidate = result.candidates.find(
+        ({ sourceEventId }) => sourceEventId === item.sourceEventId,
+      );
+      expect(candidate?.schedule).toMatchObject({
+        kind: "recurring",
+        rrule: item.rrule,
+        rdates: [],
+        exdates: [],
+        overrides: [],
+      });
+      if (!candidate) throw new Error(`Mangler den samlede serie ${item.sourceEventId}`);
+      const expansion = expandEvent(
+        sourceDraftToEvent(candidate),
+        DateTime.fromISO("2026-09-01", { zone: "Europe/Copenhagen" }),
+        DateTime.fromISO("2027-03-01", { zone: "Europe/Copenhagen" }),
+      );
+      expect(expansion.warnings).toEqual([]);
+      expect(expansion.occurrences.map(({ date }) => date)).toEqual(item.dates);
+    }
+  });
+
+  it("uses EXDATEs to preserve gaps in an allowlisted source series", async () => {
+    const dates = ["2026-09-16", "2026-09-30", "2026-10-07"];
+    const result = await churchDeskSource.collect({
+      fetch: mappedFetch({
+        [churchDeskPageUrl(1)]: churchDeskHtml(dates.map((date, index) => programmeItem({
+          id: 700 + index,
+          title: "Babysalmesang i Tranderup",
+          date,
+          time: "10:00",
+          contributor: "Linda Skjønnemand",
+          locationName: "Tranderup sognehus",
+          address: "Tranderupgade",
+          postalCode: "5970",
+          city: "Ærøskøbing",
+        }))),
+      }),
+      now: NOW,
+    });
+
+    const candidate = result.candidates[0];
+    expect(candidate?.sourceEventId).toBe("series-babysalmesang-i-tranderup");
+    expect(candidate?.schedule).toMatchObject({
+      kind: "recurring",
+      rrule: "FREQ=WEEKLY;BYDAY=WE;UNTIL=20261007T100000",
+      exdates: ["2026-09-23T10:00"],
+    });
+    if (!candidate) throw new Error("Mangler babysalmesangsserien");
+    const expansion = expandEvent(
+      sourceDraftToEvent(candidate),
+      DateTime.fromISO("2026-09-01", { zone: "Europe/Copenhagen" }),
+      DateTime.fromISO("2026-10-31", { zone: "Europe/Copenhagen" }),
+    );
+    expect(expansion.occurrences.map(({ date }) => date)).toEqual(dates);
   });
 
   it("retries shifting page boundaries and safely unions identical events", async () => {

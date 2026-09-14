@@ -204,6 +204,34 @@ export const SOURCE_REGISTRY = {
     organizerId: "aeroeskoebing-sejlklub",
     categoryIds: ["sport-motion", "forening-faellesskab"],
   },
+  "aeroe-bridgeklub": {
+    id: "aeroe-bridgeklub",
+    name: "Ærø Bridgeklub — turneringsoversigt",
+    url: "https://www.bridge.dk/4596/Turneringsoversigt.html",
+    organizerId: "aeroe-bridgeklub",
+    categoryIds: ["forening-faellesskab"],
+  },
+  ahop: {
+    id: "ahop",
+    name: "Aktivitetshuset OvenPaa — faste aktiviteter",
+    url: "https://ahop.dk/",
+    organizerId: "ahop",
+    categoryIds: ["forening-faellesskab"],
+  },
+  "aeroe-svoemmeklub": {
+    id: "aeroe-svoemmeklub",
+    name: "Ærø Svømmeklub — holdprogram",
+    url: "https://aero.klub-modul.dk/cms/TeamOverviewProgramList.aspx",
+    organizerId: "aeroe-svoemmeklub",
+    categoryIds: ["sport-motion", "boern-familie"],
+  },
+  "marstal-marineforening": {
+    id: "marstal-marineforening",
+    name: "Marstal Marineforening — aktiviteter",
+    url: "https://www.marstalmarineforening.dk/aktiviteter/",
+    organizerId: "marstal-marineforening",
+    categoryIds: ["forening-faellesskab"],
+  },
 } as const satisfies Record<string, SourceDefinition>;
 
 export type RegisteredSourceId = keyof typeof SOURCE_REGISTRY;

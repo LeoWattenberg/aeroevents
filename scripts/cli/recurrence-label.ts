@@ -45,6 +45,7 @@ const SUPPORTED_RULE_PARTS = new Set([
   "BYMONTH",
   "COUNT",
   "UNTIL",
+  "WKST",
 ]);
 
 function record(value: unknown): UnknownRecord | undefined {
@@ -228,6 +229,8 @@ export function recurrenceLabel(scheduleValue: unknown): string | undefined {
   if ([...parts.keys()].some((key) => !SUPPORTED_RULE_PARTS.has(key))) return undefined;
 
   const frequency = parts.get("FREQ");
+  const weekStart = parts.get("WKST");
+  if (weekStart && weekStart !== "MO") return undefined;
   const interval = parts.has("INTERVAL") ? positiveInteger(parts.get("INTERVAL")) : 1;
   if (!interval) return undefined;
   const weekdays = weekdayParts(parts.get("BYDAY"));
@@ -261,6 +264,8 @@ export function recurrenceLabel(scheduleValue: unknown): string | undefined {
   if (!clock.valid) return undefined;
   const anchor = startDate(schedule);
   if (!anchor) return undefined;
+  const startDateUnknown = schedule.startDateUnknown === true;
+  if (schedule.startDateUnknown !== undefined && !startDateUnknown) return undefined;
   const untilRule = parts.get("UNTIL");
   const until = untilLabel(untilRule);
   if (untilRule && !until) return undefined;
@@ -272,7 +277,7 @@ export function recurrenceLabel(scheduleValue: unknown): string | undefined {
   return [
     cadence,
     ...(months ? [`i ${months}`] : []),
-    `fra ${anchor}`,
+    ...(startDateUnknown ? [] : [`fra ${anchor}`]),
     ...(clock.label ? [clock.label] : []),
     ...(until ? [until] : []),
     ...(count ? [`${count} gange`] : []),

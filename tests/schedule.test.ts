@@ -1,6 +1,6 @@
 import { DateTime, Settings } from "luxon";
 import { describe, expect, it } from "vitest";
-import { eventDateSchema, type EventRecord } from "../src/lib/schema";
+import { eventDateSchema, recurringScheduleSchema, type EventRecord } from "../src/lib/schema";
 import { CALENDAR_ZONE, expandEvent } from "../src/lib/schedule";
 
 const base: Omit<EventRecord, "id" | "title" | "schedule"> = {
@@ -256,5 +256,56 @@ describe("expandEvent", () => {
         endTime: "01:00",
       }).success,
     ).toBe(true);
+  });
+
+  it("rejects recurring fields that expansion would otherwise ignore", () => {
+    const baseSchedule = {
+      kind: "recurring" as const,
+      dtstart: { kind: "timed" as const, date: "2026-09-15", startTime: "18:00" },
+      rrule: "FREQ=WEEKLY;BYDAY=TU",
+    };
+    expect(recurringScheduleSchema.safeParse({
+      ...baseSchedule,
+      durationMinutes: 60,
+      durationDays: 1,
+    }).success).toBe(false);
+    expect(recurringScheduleSchema.safeParse({
+      ...baseSchedule,
+      rdates: [{ kind: "all-day", date: "2026-09-22" }],
+    }).success).toBe(false);
+    expect(recurringScheduleSchema.safeParse({
+      ...baseSchedule,
+      rdates: [{
+        kind: "timed",
+        date: "2026-09-22",
+        startTime: "18:00",
+        endTime: "19:00",
+      }],
+    }).success).toBe(false);
+    expect(recurringScheduleSchema.safeParse({
+      ...baseSchedule,
+      durationMinutes: 60,
+      rdates: [{ kind: "timed", date: "2026-09-22", startTime: "18:00" }],
+    }).success).toBe(true);
+    expect(recurringScheduleSchema.safeParse({
+      ...baseSchedule,
+      exdates: ["2026-09-22"],
+    }).success).toBe(false);
+    expect(recurringScheduleSchema.safeParse({
+      ...baseSchedule,
+      overrides: [{ recurrenceId: "2026-09-22", status: "cancelled" }],
+    }).success).toBe(false);
+    expect(recurringScheduleSchema.safeParse({
+      ...baseSchedule,
+      overrides: [{
+        recurrenceId: "2026-09-22T18:00",
+        replacement: {
+          kind: "timed",
+          date: "2026-09-22",
+          startTime: "19:00",
+          status: "postponed",
+        },
+      }],
+    }).success).toBe(false);
   });
 });

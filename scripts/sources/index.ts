@@ -1,9 +1,12 @@
 import { aeldresagenSource } from "./aeldresagen";
-import { aeroeHotelEventsSource } from "./aeroe-hotel-events";
+import { aeroeBridgeklubSource } from "./aeroe-bridgeklub";
 import { aeroeGolfklubSource } from "./aeroe-golfklub";
+import { aeroeHotelEventsSource } from "./aeroe-hotel-events";
 import { aeroeRideklubSource } from "./aeroe-rideklub";
+import { aeroeSvoemmeklubSource } from "./aeroe-svoemmeklub";
 import { aeroeskoebingGrandPrixSource } from "./aeroeskoebing-grand-prix";
 import { aeroeskoebingSejlklubSource } from "./aeroeskoebing-sejlklub";
+import { ahopSource } from "./ahop";
 import { campusSource } from "./campus";
 import { churchDeskSource } from "./churchdesk";
 import { dnEventsSource } from "./dn-events";
@@ -16,6 +19,7 @@ import { librarySource } from "./library";
 import { marnavSource } from "./marnav";
 import { marstalBillardKlubSource } from "./marstal-billard-klub";
 import { marstalIfSource } from "./marstal-if";
+import { marstalMarineforeningSource } from "./marstal-marineforening";
 import { momoyogaSource } from "./momoyoga";
 import { motorfabrikkenSource } from "./motorfabrikken";
 import { municipalityEventsSource } from "./municipality-events";
@@ -37,11 +41,14 @@ import type {
 } from "./types";
 
 export * from "./aeldresagen";
-export * from "./aeroe-hotel-events";
+export * from "./aeroe-bridgeklub";
 export * from "./aeroe-golfklub";
+export * from "./aeroe-hotel-events";
 export * from "./aeroe-rideklub";
+export * from "./aeroe-svoemmeklub";
 export * from "./aeroeskoebing-grand-prix";
 export * from "./aeroeskoebing-sejlklub";
+export * from "./ahop";
 export * from "./campus";
 export * from "./churchdesk";
 export * from "./dn-events";
@@ -55,6 +62,7 @@ export * from "./library";
 export * from "./marnav";
 export * from "./marstal-billard-klub";
 export * from "./marstal-if";
+export * from "./marstal-marineforening";
 export * from "./momoyoga";
 export * from "./motorfabrikken";
 export * from "./municipality-events";
@@ -99,6 +107,10 @@ export const SOURCE_ADAPTERS: Record<RegisteredSourceId, SourceAdapter> = {
   "marstal-if": marstalIfSource,
   "marstal-billard-klub": marstalBillardKlubSource,
   "aeroeskoebing-sejlklub": aeroeskoebingSejlklubSource,
+  "aeroe-bridgeklub": aeroeBridgeklubSource,
+  ahop: ahopSource,
+  "aeroe-svoemmeklub": aeroeSvoemmeklubSource,
+  "marstal-marineforening": marstalMarineforeningSource,
 };
 
 export interface CollectOptions {

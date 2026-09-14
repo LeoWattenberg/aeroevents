@@ -200,37 +200,17 @@
       "status": "scheduled",
       "publication": "draft",
       "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "facebook-1kqx3dr-1",
-            "date": "2026-11-21",
-            "kind": "timed",
-            "startTime": "09:30",
-            "endTime": "17:00"
-          },
-          {
-            "id": "facebook-1kqx3dr-2",
-            "date": "2026-11-28",
-            "kind": "timed",
-            "startTime": "09:30",
-            "endTime": "17:00"
-          },
-          {
-            "id": "facebook-1kqx3dr-3",
-            "date": "2026-12-05",
-            "kind": "timed",
-            "startTime": "09:30",
-            "endTime": "17:00"
-          },
-          {
-            "id": "facebook-1kqx3dr-4",
-            "date": "2026-12-12",
-            "kind": "timed",
-            "startTime": "09:30",
-            "endTime": "17:00"
-          }
-        ]
+        "kind": "recurring",
+        "dtstart": {
+          "kind": "timed",
+          "date": "2026-11-21",
+          "startTime": "09:30"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=SA;COUNT=4",
+        "rdates": [],
+        "exdates": [],
+        "overrides": [],
+        "durationMinutes": 450
       },
       "source": {
         "sourceId": "facebook",

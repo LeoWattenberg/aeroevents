@@ -3,6 +3,7 @@ import { DateTime } from "luxon";
 import { errorMessage, fetchText } from "./http";
 import { cleanText, deduplicateBy } from "./html";
 import { SOURCE_REGISTRY } from "./registry";
+import { boundedWeeklySchedule } from "./series-schedule";
 import type {
   CollectionContext,
   CollectionResult,
@@ -208,6 +209,9 @@ export function parseRiseBookings(
       const reviewReasons = group.review
         ? ["Enkeltarrangementets offentlige adgang skal bekræftes"]
         : [];
+      const schedule = sourceEventId.startsWith("series-")
+        ? boundedWeeklySchedule(occurrences)
+        : undefined;
       return {
         sourceId: definition.id,
         sourceEventId,
@@ -219,6 +223,7 @@ export function parseRiseBookings(
         ...(group.resourceName
           ? { location: { name: `Rise Skytte- & Idrætsforening – ${group.resourceName}` } }
           : {}),
+        ...(schedule ? { schedule } : {}),
         occurrences,
         status: "scheduled",
         attendance: group.review ? "unknown" : "members",

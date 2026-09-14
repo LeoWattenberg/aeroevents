@@ -156,6 +156,16 @@ export const occurrenceOverrideSchema = z
   })
   .refine((value) => value.replacement || value.status || value.location, {
     message: "En forekomstændring skal ændre mindst ét felt",
+  })
+  .superRefine((value, context) => {
+    const replacement = value.replacement;
+    if (replacement?.id || replacement?.status || replacement?.location) {
+      context.addIssue({
+        code: "custom",
+        path: ["replacement"],
+        message: "Status, sted og id skal angives på selve forekomstændringen",
+      });
+    }
   });
 
 export const explicitScheduleSchema = z.object({
@@ -163,16 +173,74 @@ export const explicitScheduleSchema = z.object({
   dates: z.array(eventDateSchema).min(1),
 });
 
-export const recurringScheduleSchema = z.object({
-  kind: z.literal("recurring"),
-  dtstart: eventDateSchema,
-  rrule: z.string().min(1),
-  rdates: z.array(eventDateSchema).default([]),
-  exdates: z.array(z.string().min(1)).default([]),
-  overrides: z.array(occurrenceOverrideSchema).default([]),
-  durationMinutes: z.number().int().positive().optional(),
-  durationDays: z.number().int().positive().optional(),
-});
+export const recurringScheduleSchema = z
+  .object({
+    kind: z.literal("recurring"),
+    dtstart: eventDateSchema,
+    /** DTSTART is a stable technical anchor because the source gives no first date. */
+    startDateUnknown: z.literal(true).optional(),
+    rrule: z.string().min(1),
+    rdates: z.array(eventDateSchema).default([]),
+    exdates: z.array(z.string().min(1)).default([]),
+    overrides: z.array(occurrenceOverrideSchema).default([]),
+    durationMinutes: z.number().int().positive().optional(),
+    durationDays: z.number().int().positive().optional(),
+  })
+  .superRefine((value, context) => {
+    const issue = (path: Array<string | number>, message: string) => {
+      context.addIssue({ code: "custom", path, message });
+    };
+    if (value.durationMinutes !== undefined && value.durationDays !== undefined) {
+      issue(["durationDays"], "En gentagelse kan ikke have både durationMinutes og durationDays");
+    }
+    if (value.durationMinutes !== undefined && value.dtstart.kind !== "timed") {
+      issue(["durationMinutes"], "durationMinutes kræver et tidsfastsat dtstart");
+    }
+    if (value.durationDays !== undefined && value.dtstart.kind !== "all-day") {
+      issue(["durationDays"], "durationDays kræver et heldags-dtstart");
+    }
+
+    const checkRuleDate = (item: z.infer<typeof eventDateSchema>, path: Array<string | number>) => {
+      if (item.id || item.status || item.location) {
+        issue(path, "Status, sted og id for en enkelt gentagelse skal angives som en override");
+      }
+      if (
+        (item.kind === "timed" && (item.endDate || item.endTime)) ||
+        (item.kind === "all-day" && item.endDate)
+      ) {
+        issue(path, "Sluttid for en gentagelse skal angives med schedule.duration");
+      }
+    };
+    checkRuleDate(value.dtstart, ["dtstart"]);
+    value.rdates.forEach((item, index) => {
+      if (item.kind !== value.dtstart.kind) {
+        issue(["rdates", index, "kind"], "En RDATE skal have samme type som dtstart");
+      }
+      checkRuleDate(item, ["rdates", index]);
+    });
+
+    const identityMatchesStart = (identity: string): boolean => {
+      const match = /^(\d{4}-\d{2}-\d{2})(?:T([0-2]\d:[0-5]\d))?$/u.exec(identity);
+      if (!match?.[1] || !date.safeParse(match[1]).success) return false;
+      if (value.dtstart.kind === "timed") {
+        return Boolean(match[2] && time.safeParse(match[2]).success);
+      }
+      return match[2] === undefined;
+    };
+    value.exdates.forEach((identity, index) => {
+      if (!identityMatchesStart(identity)) {
+        issue(["exdates", index], "En EXDATE skal have samme dato-/tidstype som dtstart");
+      }
+    });
+    value.overrides.forEach((override, index) => {
+      if (!identityMatchesStart(override.recurrenceId)) {
+        issue(
+          ["overrides", index, "recurrenceId"],
+          "En recurrenceId skal have samme dato-/tidstype som dtstart",
+        );
+      }
+    });
+  });
 
 export const scheduleSchema = z.discriminatedUnion("kind", [explicitScheduleSchema, recurringScheduleSchema]);
 

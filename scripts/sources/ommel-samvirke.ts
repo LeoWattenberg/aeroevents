@@ -7,6 +7,10 @@ import { DateTime } from "luxon";
 import { cleanText, deduplicateBy } from "./html";
 import { errorMessage } from "./http";
 import { SOURCE_REGISTRY } from "./registry";
+import {
+  boundedMonthlyNthWeekdaySchedule,
+  boundedWeeklySchedule,
+} from "./series-schedule";
 import type {
   CollectionContext,
   CollectionResult,
@@ -24,6 +28,27 @@ const MAX_RENDERED_HTML_BYTES = 5 * 1024 * 1024;
 const MAX_DESCRIPTION_LENGTH = 8_000;
 const SOURCE_ORIGIN = "https://www.ommelsamvirke.dk";
 const SOURCE_PATH = "/aktivitetskalender";
+
+const DECLARED_SERIES_CONTINUATIONS = [
+  {
+    title: "Fredagsbar",
+    sourceEventId: "declared-series-fredagsbar",
+    declaration: /\bhver\s+anden\s+fredag\b/iu,
+    rulePrefix: "FREQ=WEEKLY;INTERVAL=2;BYDAY=FR;",
+  },
+  {
+    title: "Stolegymnastik",
+    sourceEventId: "declared-series-stolegymnastik",
+    declaration: /\bhver\s+mandag\b/iu,
+    rulePrefix: "FREQ=WEEKLY;BYDAY=MO;",
+  },
+  {
+    title: "Petanque",
+    sourceEventId: "declared-series-petanque",
+    declaration: /\bhver\s+torsdag\b/iu,
+    rulePrefix: "FREQ=WEEKLY;BYDAY=TH;",
+  },
+] as const;
 
 const EMAIL_PATTERN = /\b[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}\b/giu;
 const DANISH_PHONE_PATTERN =
@@ -271,6 +296,124 @@ function mergeCandidate(
     ),
     (occurrence) => occurrence.id,
   );
+}
+
+function sourceDeclaresWeeklyRecurrence(candidate: NormalizedEventDraft): boolean {
+  const description = candidate.description ?? "";
+  return [
+    /\bsøndag\s+i\s+ulige\s+uge\b/iu,
+    /\bhver\s+torsdag\b/iu,
+    /\bhver\s+anden\s+fredag\b/iu,
+    /\bhver\s+onsdag\b/iu,
+    /\bhver\s+mandag\b/iu,
+  ].some((pattern) => pattern.test(description));
+}
+
+function preserveDeclaredRecurrence(candidate: NormalizedEventDraft): NormalizedEventDraft {
+  if (/\bførste\s+søndag\s+i\s+måneden\b/iu.test(candidate.description ?? "")) {
+    const schedule = boundedMonthlyNthWeekdaySchedule(candidate.occurrences, 7, 1);
+    if (!schedule) return candidate;
+    const hasExceptions =
+      Boolean(schedule.exdates?.length) ||
+      Boolean(schedule.rdates?.length) ||
+      Boolean(schedule.overrides?.length);
+    return {
+      ...candidate,
+      schedule,
+      ...(hasExceptions
+        ? {
+            publication: "review" as const,
+            reviewReasons: [
+              ...candidate.reviewReasons,
+              "Den oplyste månedsregel indeholder manglende eller ekstra datoer; undtagelserne skal kontrolleres",
+              ...(schedule.overrides?.length
+                ? ["En ekstra forekomst har et usædvanligt langt tidsinterval, som er bevaret uændret"]
+                : []),
+            ],
+          }
+        : {}),
+    };
+  }
+  if (!sourceDeclaresWeeklyRecurrence(candidate)) return candidate;
+  const schedule = boundedWeeklySchedule(candidate.occurrences);
+  return schedule ? { ...candidate, schedule } : candidate;
+}
+
+function continuationMetadata(candidate: NormalizedEventDraft): string {
+  const {
+    sourceEventId: _sourceEventId,
+    stableId: _stableId,
+    description: _description,
+    schedule: _schedule,
+    occurrences: _occurrences,
+    publication: _publication,
+    reviewReasons: _reviewReasons,
+    provenance,
+    ...metadata
+  } = candidate;
+  const { externalId: _externalId, ...stableProvenance } = provenance;
+  return JSON.stringify({ metadata, provenance: stableProvenance });
+}
+
+function collapseDeclaredSeriesContinuations(
+  candidates: NormalizedEventDraft[],
+  warnings: string[],
+): NormalizedEventDraft[] {
+  let result = candidates;
+  for (const definition of DECLARED_SERIES_CONTINUATIONS) {
+    const members = result
+      .map((candidate, index) => ({ candidate, index }))
+      .filter(({ candidate }) => candidate.title === definition.title);
+    if (
+      members.length < 2 ||
+      !members.some(({ candidate }) => definition.declaration.test(candidate.description ?? ""))
+    ) {
+      continue;
+    }
+    const signature = continuationMetadata(members[0]!.candidate);
+    if (members.some(({ candidate }) => continuationMetadata(candidate) !== signature)) {
+      warnings.push(`${definition.title} har modstridende metadata på tværs af kilde-id'er og blev ikke samlet`);
+      continue;
+    }
+    const occurrences = members
+      .flatMap(({ candidate }) => candidate.occurrences)
+      .sort((left, right) =>
+        `${left.date}T${left.startTime ?? ""}`.localeCompare(`${right.date}T${right.startTime ?? ""}`),
+      );
+    const schedule = boundedWeeklySchedule(occurrences);
+    if (!schedule?.rrule.startsWith(definition.rulePrefix)) {
+      warnings.push(`${definition.title} passer ikke tabsfrit til den oplyste gentagelsesregel og blev ikke samlet`);
+      continue;
+    }
+    const template = members.reduce((selected, member) =>
+      (member.candidate.description?.length ?? 0) > (selected.candidate.description?.length ?? 0)
+        ? member
+        : selected
+    ).candidate;
+    const reviewReasons = [...new Set([
+      ...members.flatMap(({ candidate }) => candidate.reviewReasons),
+      "Kilden bruger flere aktivitets-id'er til samme erklærede serie; sammenlægningen skal kontrolleres",
+    ])];
+    const series: NormalizedEventDraft = {
+      ...template,
+      sourceEventId: definition.sourceEventId,
+      stableId: `${template.sourceId}-${definition.sourceEventId}`,
+      schedule,
+      occurrences,
+      publication: "review",
+      reviewReasons,
+      provenance: {
+        ...template.provenance,
+        externalId: definition.sourceEventId,
+      },
+    };
+    const indexes = new Set(members.map(({ index }) => index));
+    const firstIndex = Math.min(...indexes);
+    result = result.flatMap((candidate, index) =>
+      index === firstIndex ? [series] : indexes.has(index) ? [] : [candidate]
+    );
+  }
+  return result;
 }
 
 function parseCapturedDialog(
@@ -710,19 +853,31 @@ export async function collectOmmelSamvirke(
       : { status: "failed", ...failure };
   }
 
+  const recurrenceCandidates = [...candidates.values()]
+    .map((candidate) => preserveDeclaredRecurrence({
+      ...candidate,
+      occurrences: candidate.occurrences.sort((left, right) =>
+        `${left.date}T${left.startTime ?? ""}`.localeCompare(`${right.date}T${right.startTime ?? ""}`),
+      ),
+    }))
+    .sort((left, right) => left.sourceEventId.localeCompare(right.sourceEventId));
+  const collapsedCandidates = collapseDeclaredSeriesContinuations(recurrenceCandidates, warnings);
+  const retainedIdentities = new Set(collapsedCandidates.map(({ sourceEventId }) => sourceEventId));
+
   return {
     status: "complete",
     source: definition,
     retrievedAt,
     pagesFetched,
-    candidates: [...candidates.values()]
-      .map((candidate) => ({
-        ...candidate,
-        occurrences: candidate.occurrences.sort((left, right) =>
-          `${left.date}T${left.startTime ?? ""}`.localeCompare(`${right.date}T${right.startTime ?? ""}`),
-        ),
-      }))
-      .sort((left, right) => left.sourceEventId.localeCompare(right.sourceEventId)),
+    candidates: collapsedCandidates,
+    excludedSourceEventIds: recurrenceCandidates
+      .filter(({ sourceEventId }) => !retainedIdentities.has(sourceEventId))
+      .map(({ sourceEventId }) => sourceEventId)
+      .concat(
+        DECLARED_SERIES_CONTINUATIONS
+          .map(({ sourceEventId }) => sourceEventId)
+          .filter((sourceEventId) => !retainedIdentities.has(sourceEventId)),
+      ),
     warnings: [...new Set(warnings)],
     errors: [],
   };

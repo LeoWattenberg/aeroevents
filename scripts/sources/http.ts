@@ -182,8 +182,20 @@ async function responseTextWithinLimit(
     );
   }
 
+  const declaredCharset = response.headers
+    .get("content-type")
+    ?.match(/(?:^|;)\s*charset\s*=\s*["']?([^;"'\s]+)/i)?.[1]
+    ?.toLowerCase();
+  const decoderLabel =
+    declaredCharset === "iso-8859-1" ||
+    declaredCharset === "iso8859-1" ||
+    declaredCharset === "latin1" ||
+    declaredCharset === "latin-1"
+      ? "windows-1252"
+      : "utf-8";
+
   if (!response.body) {
-    const body = await response.text();
+    const body = new TextDecoder(decoderLabel).decode(await response.arrayBuffer());
     if (new TextEncoder().encode(body).byteLength > maxBytes) {
       throw new SourceHttpError(
         `Kildens svar overstiger grænsen på ${maxBytes} bytes`,
@@ -195,7 +207,7 @@ async function responseTextWithinLimit(
   }
 
   const reader = response.body.getReader();
-  const decoder = new TextDecoder();
+  const decoder = new TextDecoder(decoderLabel);
   let bytesRead = 0;
   let body = "";
   try {

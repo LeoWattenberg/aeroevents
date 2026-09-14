@@ -28,6 +28,10 @@ export const SOURCE_IDS = [
   "marstal-if",
   "marstal-billard-klub",
   "aeroeskoebing-sejlklub",
+  "aeroe-bridgeklub",
+  "ahop",
+  "aeroe-svoemmeklub",
+  "marstal-marineforening",
 ] as const;
 
 export type SourceId = (typeof SOURCE_IDS)[number];
@@ -61,6 +65,39 @@ export interface ExplicitOccurrenceDraft {
   location?: EventLocationDraft;
 }
 
+/**
+ * A source-declared recurrence in the same wall-clock form as the canonical
+ * event model. `occurrences` may still contain source observations for
+ * validation, but persistence uses this schedule instead of materialising
+ * those observations as individual dates.
+ */
+export interface RecurringScheduleDraft {
+  kind: "recurring";
+  dtstart:
+    | { kind: "all-day"; date: string }
+    | { kind: "time-unknown"; date: string }
+    | { kind: "timed"; date: string; startTime: string };
+  startDateUnknown?: true;
+  rrule: string;
+  rdates?: Array<
+    | { kind: "all-day"; date: string }
+    | { kind: "time-unknown"; date: string }
+    | { kind: "timed"; date: string; startTime: string }
+  >;
+  exdates?: string[];
+  overrides?: Array<{
+    recurrenceId: string;
+    replacement?:
+      | { kind: "all-day"; date: string; endDate?: string }
+      | { kind: "time-unknown"; date: string }
+      | { kind: "timed"; date: string; startTime: string; endDate?: string; endTime?: string };
+    status?: EventStatus;
+    location?: EventLocationDraft;
+  }>;
+  durationMinutes?: number;
+  durationDays?: number;
+}
+
 export interface SourceProvenance {
   sourceId: SourceId;
   externalId: string;
@@ -84,6 +121,8 @@ export interface NormalizedEventDraft {
   organizerName?: string;
   categoryIds: string[];
   location?: EventLocationDraft;
+  /** Present when the source supplies a recurrence rather than isolated dates. */
+  schedule?: RecurringScheduleDraft;
   occurrences: ExplicitOccurrenceDraft[];
   status: EventStatus;
   availability?: "available" | "sold-out" | "unknown";

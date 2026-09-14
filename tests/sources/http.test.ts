@@ -17,6 +17,26 @@ import { fixture, mappedFetch } from "./test-helpers";
 const NOW = new Date("2026-09-13T10:00:00.000Z");
 
 describe("source HTTP boundary", () => {
+  it("decodes legacy ISO-8859-1 pages from their Content-Type", async () => {
+    const bytes = Uint8Array.from([
+      ...new TextEncoder().encode("efter"),
+      0xe5,
+      ...new TextEncoder().encode("rsturnering"),
+    ]);
+    const result = await fetchText(
+      {
+        fetch: async () =>
+          new Response(bytes, {
+            headers: { "content-type": "text/html; charset=ISO-8859-1" },
+          }),
+        now: NOW,
+      },
+      "https://source.example/schedule",
+    );
+
+    expect(result).toBe("efterårsturnering");
+  });
+
   it("sends bounded POST JSON with custom source headers and exposes response metadata", async () => {
     const requested: Array<{
       url: string;
