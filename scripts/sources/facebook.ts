@@ -119,6 +119,10 @@ function isConcreteFacebookContent(url: URL): boolean {
   );
 }
 
+function isFacebookGroupContent(url: URL): boolean {
+  return /\/groups\/[^/]+\/(?:posts|permalink)\/[^/]+/i.test(url.pathname);
+}
+
 export function isConcreteFacebookContentUrl(rawUrl: string): boolean {
   const url = facebookUrl(rawUrl);
   return Boolean(url && isConcreteFacebookContent(url));
@@ -639,7 +643,12 @@ export function parseFacebookPublicPage(
         retrievedAt,
         ...(announcement.publishedAt ? { publishedAt: announcement.publishedAt } : {}),
         ...(announcement.titleHint ? { titleHint: announcement.titleHint } : {}),
-        ...(announcement.organizerName ? { organizerName: announcement.organizerName } : {}),
+        // A Facebook group's name describes where the post was discovered,
+        // not who organizes the event. Explicit feed mappings still apply in
+        // facebook-feed.ts, while page posts retain their author metadata.
+        ...(!isFacebookGroupContent(requested) && announcement.organizerName
+          ? { organizerName: announcement.organizerName }
+          : {}),
       });
       if (parsed.candidates.length > 0) {
         return {

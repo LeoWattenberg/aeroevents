@@ -14,6 +14,7 @@ import type {
 
 const definition = SOURCE_REGISTRY["aeroe-kommune-events"];
 const MUNICIPALITY_ORIGIN = new URL(definition.url).origin;
+const COPENHAGEN = "Europe/Copenhagen";
 
 const MONTHS = new Map<string, number>([
   ["januar", 1],
@@ -29,6 +30,23 @@ const MONTHS = new Map<string, number>([
   ["november", 11],
   ["december", 12],
 ]);
+
+const WEEKDAYS = new Map<string, number>([
+  ["mandag", 1],
+  ["tirsdag", 2],
+  ["onsdag", 3],
+  ["torsdag", 4],
+  ["fredag", 5],
+  ["lørdag", 6],
+  ["søndag", 7],
+]);
+
+interface VisibleDanishDate {
+  day: number;
+  month: number;
+  endDay?: number;
+  weekday?: number;
+}
 
 export interface MunicipalityEventListingItem {
   url: string;
@@ -86,6 +104,74 @@ function parseDanishDateRange(value: string): { date: string; endDate?: string }
   };
 }
 
+function parseVisibleDanishDate(value: string): VisibleDanishDate | undefined {
+  const match = cleanText(value)
+    .toLocaleLowerCase("da-DK")
+    .match(
+      /\b(?:(mandag|tirsdag|onsdag|torsdag|fredag|lørdag|søndag)\s+(?:den\s+)?)?(\d{1,2})\.?(?:\s*[-–—]\s*(\d{1,2})\.?)?\s+([a-zæøå]+)/i,
+    );
+  if (!match?.[2] || !match[4]) return undefined;
+  const day = Number(match[2]);
+  const endDay = match[3] ? Number(match[3]) : undefined;
+  const month = MONTHS.get(match[4]);
+  if (!month || day < 1 || day > 31) return undefined;
+  const weekday = match[1] ? WEEKDAYS.get(match[1]) : undefined;
+  return {
+    day,
+    month,
+    ...(endDay !== undefined ? { endDay } : {}),
+    ...(weekday ? { weekday } : {}),
+  };
+}
+
+function parseCmsInstant(value: string | undefined): DateTime | undefined {
+  if (!value) return undefined;
+  for (const format of ["yyyy-MM-dd HH.mm", "yyyy-MM-dd HH:mm"]) {
+    const parsed = DateTime.fromFormat(cleanText(value), format, { zone: COPENHAGEN });
+    if (parsed.isValid) return parsed;
+  }
+  return undefined;
+}
+
+function inferDateFromPublicationWindow(
+  metaDescription: string,
+  dateText: string,
+  activeToValue: string | undefined,
+  retrievedAt: string,
+): { date: string } | undefined {
+  const metaDate = parseVisibleDanishDate(metaDescription);
+  const boxDate = parseVisibleDanishDate(dateText);
+  const activeTo = parseCmsInstant(activeToValue);
+  const retrieved = DateTime.fromISO(retrievedAt, { setZone: true }).setZone(COPENHAGEN);
+  if (
+    !metaDate ||
+    !boxDate ||
+    !metaDate.weekday ||
+    !boxDate.weekday ||
+    !activeTo ||
+    !retrieved.isValid ||
+    metaDate.endDay !== undefined ||
+    boxDate.endDay !== undefined ||
+    metaDate.day !== boxDate.day ||
+    metaDate.month !== boxDate.month
+  ) {
+    return undefined;
+  }
+
+  const inferred = [activeTo.startOf("day"), activeTo.startOf("day").minus({ days: 1 })].find(
+    (candidate) => candidate.month === boxDate.month && candidate.day === boxDate.day,
+  );
+  if (
+    !inferred ||
+    inferred.weekday !== metaDate.weekday ||
+    inferred.weekday !== boxDate.weekday ||
+    inferred.startOf("day") < retrieved.startOf("day")
+  ) {
+    return undefined;
+  }
+  return { date: inferred.toISODate()! };
+}
+
 function parseClockRange(value: string): { startTime: string; endTime?: string } | undefined {
   const match = cleanText(value).match(
     /(?:klokken|kl\.?)?\s*(\d{1,2})[.:](\d{2})(?:\s*[-–—]\s*(\d{1,2})[.:](\d{2}))?/i,
@@ -118,7 +204,7 @@ function parseLocation(value: string): EventLocationDraft | undefined {
   const name = lines[0];
   if (!name) return undefined;
   if (lines[1] && /\d/.test(name) && !/\d/.test(lines[1])) {
-    return { address: name, city: lines[1] };
+    return { name, city: lines[1] };
   }
   const location: EventLocationDraft = { name };
   if (lines[1]) {
@@ -215,18 +301,18 @@ export function parseMunicipalityEventDetail(
   const dateText = textWithoutIcons(eventItemForIcon($, "calendar"));
   let dates = parseDanishDateRange(metaDescription);
   if (!dates) {
-    const activeTo = $("meta[name='cmspageactiveto']").first().attr("content")?.match(/^(20\d{2})-/)?.[1];
-    if (activeTo) {
-      dates = parseDanishDateRange(`${dateText} ${activeTo}`);
-      if (dates) warnings.push("Eventens årstal er udledt af kommunens publiceringsperiode");
-    }
+    dates = inferDateFromPublicationWindow(
+      metaDescription,
+      dateText,
+      $("meta[name='cmspageactiveto']").first().attr("content"),
+      retrievedAt,
+    );
   }
-  const dateWithoutYear = dateText
-    .toLocaleLowerCase("da-DK")
-    .match(/(\d{1,2})\.?\s+([a-zæøå]+)/i);
+  const visibleDate = parseVisibleDanishDate(dateText);
   const clock = parseClockRange(
     textWithoutIcons(eventItemForIcon($, "clock")) || dateText,
   );
+  const metaClock = parseClockRange(metaDescription);
   const endItemText = textWithoutIcons(eventItemForIcon($, "calendar-check"));
   const endClock = endItemText ? parseClockRange(endItemText) : undefined;
 
@@ -239,13 +325,25 @@ export function parseMunicipalityEventDetail(
   }
   if (!dates) errors.push("Kommunens arrangementsside mangler en gyldig dato med årstal");
   if (!clock) errors.push("Kommunens arrangementsside mangler et gyldigt starttidspunkt");
-  if (dates && dateWithoutYear?.[1] && dateWithoutYear[2]) {
+  if (
+    clock &&
+    metaClock &&
+    (clock.startTime !== metaClock.startTime ||
+      (clock.endTime && metaClock.endTime && clock.endTime !== metaClock.endTime))
+  ) {
+    errors.push("Tidspunktet i kommunens informationsboks stemmer ikke med sidens metadata");
+  }
+  if (dates && visibleDate) {
     const [, month, day] = dates.date.split("-").map(Number);
     if (
-      Number(dateWithoutYear[1]) !== day ||
-      MONTHS.get(dateWithoutYear[2].toLocaleLowerCase("da-DK")) !== month
+      visibleDate.day !== day ||
+      visibleDate.month !== month
     ) {
       errors.push("Datoen i kommunens informationsboks stemmer ikke med sidens metadata");
+    }
+    const parsedDate = DateTime.fromISO(dates.date, { zone: COPENHAGEN });
+    if (visibleDate.weekday && parsedDate.isValid && visibleDate.weekday !== parsedDate.weekday) {
+      errors.push("Ugedagen i kommunens informationsboks stemmer ikke med datoen");
     }
   }
   if (errors.length > 0 || !title || !dates || !clock) {

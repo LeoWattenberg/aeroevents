@@ -4,6 +4,23 @@ export function snapshotSourceIdentity(event: EventRecord): string {
   return event.source.externalId || event.id;
 }
 
+/**
+ * Public event IDs are URLs and override targets. Once a source identity has
+ * been imported, keep that established ID even if slug generation improves.
+ */
+export function preserveSnapshotEventId(
+  previousEvents: EventRecord[],
+  observedEvent: EventRecord,
+): EventRecord {
+  const identity = snapshotSourceIdentity(observedEvent);
+  const previous = previousEvents.find(
+    (event) => snapshotSourceIdentity(event) === identity,
+  );
+  return previous && previous.id !== observedEvent.id
+    ? { ...observedEvent, id: previous.id }
+    : observedEvent;
+}
+
 export interface SnapshotMergeOptions {
   /** Identities represented by editor-owned manual records must leave the snapshot. */
   removeIdentities?: ReadonlySet<string>;

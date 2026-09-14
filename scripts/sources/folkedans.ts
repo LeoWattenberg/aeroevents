@@ -80,9 +80,9 @@ function textWithoutIcon(
 
 function parseLocation(value: string): EventLocationDraft | undefined {
   const parts = value.split(",").map(cleanText).filter(Boolean);
-  if (parts.length === 0) return undefined;
-  const location: EventLocationDraft = {};
-  if (parts[0]) location.address = parts[0];
+  const name = parts[0];
+  if (!name) return undefined;
+  const location: EventLocationDraft = { name };
   if (parts[1]) location.city = parts[1];
   if (Object.keys(location).length === 0) return undefined;
   return location;
@@ -173,8 +173,21 @@ export function parseFolkedansPage(
 
       const reviewReasons: string[] = [];
       const ordering = chronology(occurrence);
+      let normalizedOccurrence = occurrence;
       if (ordering === 0) {
-        reviewReasons.push("Start- og sluttidspunkt er ens på kildesiden");
+        // Site123 sometimes repeats the start value in its end-time field. The
+        // start is still explicit and stable, so preserve it and treat the
+        // duplicated end value as an omitted duration.
+        normalizedOccurrence = {
+          id: occurrence.id,
+          date: occurrence.date,
+          ...(occurrence.startTime ? { startTime: occurrence.startTime } : {}),
+          allDay: occurrence.allDay,
+          timeUnknown: occurrence.timeUnknown,
+        };
+        warnings.push(
+          `Folkedanserforeningens event ${sourceEventId} har ens start- og sluttid; sluttidspunktet blev udeladt`,
+        );
       } else if (ordering > 0) {
         reviewReasons.push("Sluttidspunktet ligger før starttidspunktet på kildesiden");
       }
@@ -195,7 +208,7 @@ export function parseFolkedansPage(
         organizerId: definition.organizerId,
         categoryIds: [...definition.categoryIds],
         ...(location ? { location } : {}),
-        occurrences: [occurrence],
+        occurrences: [normalizedOccurrence],
         status: cancelled ? "cancelled" : postponed ? "postponed" : "scheduled",
         availability: soldOut ? "sold-out" : "unknown",
         attendance: bookingUrl ? "registration" : "public",

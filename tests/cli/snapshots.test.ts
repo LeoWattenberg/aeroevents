@@ -1,5 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { mergeSourceEvents } from "../../scripts/cli/snapshots";
+import {
+  mergeSourceEvents,
+  preserveSnapshotEventId,
+} from "../../scripts/cli/snapshots";
 import { eventSchema, type EventRecord } from "../../src/lib/schema";
 
 function event(id: string, externalId: string, date: string, status: "scheduled" | "cancelled" = "scheduled"): EventRecord {
@@ -15,6 +18,18 @@ function event(id: string, externalId: string, date: string, status: "scheduled"
 }
 
 describe("source snapshot merge", () => {
+  it("preserves an established public ID for the same external source identity", () => {
+    const previous = event("legacy-truncated-id", "stable-external-id", "2026-11-01");
+    const observed = event("new-hashed-id", "stable-external-id", "2026-11-02");
+    const newIdentity = event("new-hashed-id", "different-external-id", "2026-11-02");
+
+    expect(preserveSnapshotEventId([previous], observed)).toMatchObject({
+      id: "legacy-truncated-id",
+      schedule: { dates: [{ date: "2026-11-02" }] },
+    });
+    expect(preserveSnapshotEventId([previous], newIdentity).id).toBe("new-hashed-id");
+  });
+
   it("retains entries absent from a later source window", () => {
     const oldPast = event("meeting-old", "old", "2026-01-01");
     const future = event("meeting-future", "future", "2027-01-01");

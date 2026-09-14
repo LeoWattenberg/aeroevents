@@ -1,4 +1,5 @@
 import { load } from "cheerio";
+import { DateTime } from "luxon";
 
 import { errorMessage, fetchText, sameOriginHttpsUrl } from "./http";
 import { absoluteUrl, cleanText, deduplicateBy, isoDate, validCalendarDate } from "./html";
@@ -15,6 +16,7 @@ import type {
 
 const definition = SOURCE_REGISTRY["aeldresagen-aeroe"];
 const AELDRESAGEN_ORIGIN = new URL(definition.url).origin;
+const COPENHAGEN = "Europe/Copenhagen";
 
 export interface AeldresagenListingItem {
   id: string;
@@ -64,19 +66,39 @@ function parseOccurrence(
   value: string,
   id: string,
 ): { occurrence?: ExplicitOccurrenceDraft; recurring: boolean; timeUnknown: boolean } {
-  const dates = [...value.matchAll(/(\d{1,2})\.(\d{1,2})\.(20\d{2})/g)];
+  const recurring = /\b(?:alle\s+uger|ugedag|næste\s+forekomst)\b/i.test(value);
+  const nextOccurrenceIndex = value.search(/\bnæste\s+forekomst\s*:/i);
+  // A repeating activity is safe only when the source itself anchors a full
+  // next occurrence. Never infer a future date from the generic weekday rule.
+  if (recurring && nextOccurrenceIndex < 0) {
+    return { recurring, timeUnknown: true };
+  }
+  const occurrenceText = recurring ? value.slice(nextOccurrenceIndex) : value;
+  const dates = [...occurrenceText.matchAll(/(\d{1,2})\.(\d{1,2})\.(20\d{2})/g)];
   const dateMatch = dates.at(-1);
   if (!dateMatch?.[1] || !dateMatch[2] || !dateMatch[3]) {
-    return { recurring: false, timeUnknown: true };
+    return { recurring, timeUnknown: true };
   }
   const day = Number(dateMatch[1]);
   const month = Number(dateMatch[2]);
   const year = Number(dateMatch[3]);
   if (!validCalendarDate(year, month, day)) {
-    return { recurring: false, timeUnknown: true };
+    return { recurring, timeUnknown: true };
   }
 
-  const ranges = [...value.matchAll(
+  const weekdayMatch = occurrenceText.match(
+    /\b(mandag|tirsdag|onsdag|torsdag|fredag|lørdag|søndag)\s+(?:d\.\s*)?\d{1,2}\.\d{1,2}\.20\d{2}/i,
+  );
+  const weekdayNames = ["søndag", "mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag"];
+  if (
+    weekdayMatch?.[1] &&
+    weekdayNames[new Date(Date.UTC(year, month - 1, day)).getUTCDay()] !==
+      weekdayMatch[1].toLocaleLowerCase("da-DK")
+  ) {
+    return { recurring, timeUnknown: true };
+  }
+
+  const ranges = [...occurrenceText.matchAll(
     /(?:kl\.?\s*)?(\d{1,2})(?:[.:](\d{2}))?\s*[-–—]\s*(\d{1,2})(?:[.:](\d{2}))?/gi,
   )];
   const range = ranges.at(-1);
@@ -86,7 +108,7 @@ function parseOccurrence(
     startTime = parseTime(range[1], range[2]);
     endTime = parseTime(range[3], range[4]);
   } else {
-    const singles = [...value.matchAll(/kl\.?\s*(\d{1,2})[.:](\d{2})/gi)];
+    const singles = [...occurrenceText.matchAll(/kl\.?\s*(\d{1,2})[.:](\d{2})/gi)];
     const single = singles.at(-1);
     if (single?.[1] && single[2]) startTime = parseTime(single[1], single[2]);
   }
@@ -100,7 +122,7 @@ function parseOccurrence(
       allDay: false,
       timeUnknown: startTime === undefined,
     },
-    recurring: /\b(?:alle\s+uger|ugedag|næste\s+forekomst)\b/i.test(value),
+    recurring,
     timeUnknown: startTime === undefined,
   };
 }
@@ -297,20 +319,34 @@ export function parseAeldresagenDetail(
   const cancelled = /\baflyst\b/i.test(statusText);
   const postponed = !cancelled && /\b(?:udskudt|udsat|flyttet)\b/i.test(statusText);
   const soldOut = /\b(?:udsolgt|fuldt booket|venteliste)\b/i.test(`${statusText} ${description}`);
-  const reviewReasons: string[] = [];
+  const reviewReasons: string[] = [...warnings];
   if (parsedOccurrence.recurring) {
-    reviewReasons.push("Kilden beskriver en gentagelse; kun næste eksplicitte forekomst er importeret");
+    // The detail page exposes one explicit "Næste forekomst" with a stable
+    // activity id. Re-importing that authoritative value on every run is safe;
+    // no recurrence rule has to be inferred locally.
+    warnings.push("Kilden beskriver en gentagelse; næste eksplicitte forekomst er importeret");
   }
   if (parsedOccurrence.timeUnknown) {
     reviewReasons.push("Ældre Sagen oplyser ikke et sikkert starttidspunkt");
+  }
+  const retrievedDate = DateTime.fromISO(retrievedAt, { setZone: true })
+    .setZone(COPENHAGEN)
+    .toISODate();
+  if (retrievedDate && parsedOccurrence.occurrence.date < retrievedDate) {
+    reviewReasons.push(
+      parsedOccurrence.recurring
+        ? "Ældre Sagens næste forekomst ligger før indsamlingstidspunktet"
+        : "Ældre Sagens aktivitetsdato ligger før indsamlingstidspunktet",
+    );
   }
   if (attendance === "unknown") {
     reviewReasons.push("Ældre Sagens målgruppe kunne ikke omsættes til en sikker adgangstype");
   }
   if (!location) {
-    reviewReasons.push("Ældre Sagen oplyser ikke et mødested på detaljesiden");
+    // Location is optional in the canonical model and its absence does not
+    // make the explicit date/time or activity identity ambiguous.
+    warnings.push("Ældre Sagen oplyser ikke et mødested på detaljesiden");
   }
-  reviewReasons.push(...warnings);
 
   return {
     warnings,

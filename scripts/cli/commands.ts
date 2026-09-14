@@ -5,6 +5,7 @@ import { once } from "node:events";
 import { createInterface } from "node:readline/promises";
 import { stdin, stdout } from "node:process";
 import { stringify as stringifyYaml } from "yaml";
+import { DateTime } from "luxon";
 import {
   collectAllSources,
   collectFacebookPublicUrl,
@@ -31,7 +32,7 @@ import {
 } from "./model.js";
 import { booleanOption, parseOptions, stringOption } from "./options.js";
 import { promptForEvent } from "./prompts.js";
-import { mergeSourceEvents } from "./snapshots.js";
+import { mergeSourceEvents, preserveSnapshotEventId } from "./snapshots.js";
 import {
   applyCollectionPolicy,
   applySourceMappings,
@@ -55,6 +56,12 @@ import {
 } from "./review-store.js";
 import type { EventRecord } from "../../src/lib/schema.js";
 import { formatReviewCandidate, parseReviewDecision } from "./review-display.js";
+import {
+  DEFAULT_TIME_TOLERANCE_MINUTES,
+  DEFAULT_TITLE_SIMILARITY,
+  findEventDuplicates,
+} from "./duplicate-finder.js";
+import { CALENDAR_ZONE, expandEvents } from "../../src/lib/schedule.js";
 
 async function exists(path: string): Promise<boolean> {
   try {
@@ -209,13 +216,21 @@ async function collectCommand(args: string[]): Promise<void> {
     if (result.status !== "complete") continue;
     const sourcePolicy = existing.repository.sources.find((source) => source.id === result.source.id);
     if (!sourcePolicy) throw new Error(`Kilden ${result.source.id} mangler i data/sources.yaml.`);
+    const previousEvents = existing.repository.snapshots.find(
+      (snapshot) => snapshot.sourceId === result.source.id,
+    )?.events ?? [];
     const prepared: PreparedCandidate[] = [];
     for (const draft of result.candidates) {
       try {
         if (draft.sourceId !== result.source.id) {
           throw new Error(`Kandidaten angiver en anden kilde: ${draft.sourceId}`);
         }
-        const event = validateEvent(applySourceMappings(sourceDraftToEvent(draft), sourcePolicy));
+        const event = validateEvent(
+          applySourceMappings(
+            preserveSnapshotEventId(previousEvents, sourceDraftToEvent(draft)),
+            sourcePolicy,
+          ),
+        );
         await assertEventReferences(paths.repo, event);
         prepared.push({ draft, event });
         normalizedCandidates.push(event);
@@ -514,8 +529,16 @@ async function queueFacebookDrafts(
   const repository = await validateAllPublicData(paths.repo);
   const sourcePolicy = repository.repository.sources.find((source) => source.id === "facebook");
   if (!sourcePolicy) throw new Error("Facebook-kilden mangler i data/sources.yaml.");
+  const previousEvents = repository.repository.snapshots.find(
+    (snapshot) => snapshot.sourceId === "facebook",
+  )?.events ?? [];
   const normalized = drafts.map((draft) =>
-    validateEvent(applySourceMappings(sourceDraftToEvent(draft), sourcePolicy)),
+    validateEvent(
+      applySourceMappings(
+        preserveSnapshotEventId(previousEvents, sourceDraftToEvent(draft)),
+        sourcePolicy,
+      ),
+    ),
   );
   const duplicates = crossSourceDuplicateReasons(repository.repository.events, normalized);
   let queued = 0;
@@ -675,6 +698,83 @@ async function validateCommand(): Promise<void> {
   for (const warning of publicData.metadata.warnings) console.warn(`Advarsel: ${warning}`);
 }
 
+function numericOption(
+  options: ReturnType<typeof parseOptions>,
+  name: string,
+  fallback: number,
+): number {
+  const raw = options.values.get(name);
+  if (raw === undefined) return fallback;
+  if (raw === true || raw.trim() === "") throw new Error(`--${name} kræver et tal.`);
+  const value = Number(raw);
+  if (!Number.isFinite(value)) throw new Error(`Ugyldig værdi for --${name}: ${raw}`);
+  return value;
+}
+
+function duplicateRangeDate(value: string | undefined, name: string, fallback: DateTime): DateTime {
+  if (value === undefined) return fallback;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) throw new Error(`--${name} skal være YYYY-MM-DD.`);
+  const parsed = DateTime.fromISO(value, { zone: CALENDAR_ZONE }).startOf("day");
+  if (!parsed.isValid || parsed.toISODate() !== value) throw new Error(`Ugyldig --${name}-dato: ${value}`);
+  return parsed;
+}
+
+async function duplicatesCommand(args: string[]): Promise<void> {
+  const paths = getPaths();
+  const options = parseOptions(args);
+  if (options.positional.length) throw new Error(`Uventet argument: ${options.positional.join(" ")}`);
+  const supported = new Set(["from", "to", "threshold", "minutes", "published-only", "json", "fail-on-found"]);
+  const unknown = [...options.values.keys()].filter((name) => !supported.has(name));
+  if (unknown.length) throw new Error(`Ukendt flag: --${unknown.join(", --")}`);
+
+  const now = DateTime.now().setZone(CALENDAR_ZONE).startOf("day");
+  const from = duplicateRangeDate(stringOption(options, "from"), "from", now.minus({ days: 31 }));
+  const to = duplicateRangeDate(stringOption(options, "to"), "to", now.plus({ months: 12 }));
+  if (from > to) throw new Error("--from må ikke ligge efter --to.");
+  const threshold = numericOption(options, "threshold", DEFAULT_TITLE_SIMILARITY);
+  const minutes = numericOption(options, "minutes", DEFAULT_TIME_TOLERANCE_MINUTES);
+
+  const repository = await validateAllPublicData(paths.repo).then((result) => result.repository);
+  const events = booleanOption(options, "published-only")
+    ? repository.events.filter((event) => event.publication === "published")
+    : repository.events;
+  const expansion = expandEvents(events, from, to);
+  const matches = findEventDuplicates(events, expansion.occurrences, {
+    minimumTitleSimilarity: threshold,
+    timeToleranceMinutes: minutes,
+  });
+  const range = { from: from.toISODate()!, to: to.toISODate()! };
+
+  if (booleanOption(options, "json")) {
+    console.log(JSON.stringify({ range, eventCount: events.length, occurrenceCount: expansion.occurrences.length, matches, warnings: expansion.warnings }, null, 2));
+  } else if (!matches.length) {
+    console.log(
+      `Ingen mulige dubletter blandt ${events.length} events og ${expansion.occurrences.length} forekomster ` +
+        `fra ${range.from} til ${range.to}.`,
+    );
+  } else {
+    console.log(
+      `Fandt ${matches.length} mulige dubletpar blandt ${events.length} events ` +
+        `fra ${range.from} til ${range.to}:`,
+    );
+    for (const match of matches) {
+      console.log(`\n${match.left.id} [${match.left.sourceId}] ${match.left.title}`);
+      console.log(`${match.right.id} [${match.right.sourceId}] ${match.right.title}`);
+      console.log(`Titellighed: ${Math.round(match.titleSimilarity * 100)} %`);
+      const visibleStarts = match.sharedStarts.slice(0, 5);
+      for (const start of visibleStarts) {
+        console.log(`  ${start.date}: ${start.leftTime} / ${start.rightTime}`);
+      }
+      if (match.sharedStarts.length > visibleStarts.length) {
+        console.log(`  ... og ${match.sharedStarts.length - visibleStarts.length} fælles datoer`);
+      }
+    }
+    for (const warning of expansion.warnings) console.warn(`Advarsel: ${warning}`);
+  }
+
+  if (matches.length && booleanOption(options, "fail-on-found")) process.exitCode = 1;
+}
+
 async function run(
   command: string,
   args: string[],
@@ -775,6 +875,8 @@ Brug:
   npm run events -- facebook <opslags-url> --details-file tekstfil [--published-at ISO-tid] [--title tekst]
   npm run events -- facebook <offentlig-url> [--event event.yaml] [--details-file tekstfil]
   npm run events -- validate
+  npm run events -- duplicates [--from YYYY-MM-DD] [--to YYYY-MM-DD] [--threshold 0.60] [--minutes 30]
+                              [--published-only] [--json] [--fail-on-found]
   npm run events -- publish [--message "commit-besked"]
 `;
 
@@ -795,6 +897,8 @@ export async function dispatch(argv: string[]): Promise<void> {
       return facebookCommand(args);
     case "validate":
       return validateCommand();
+    case "duplicates":
+      return duplicatesCommand(args);
     case "publish":
       return publishCommand(args);
     case "help":

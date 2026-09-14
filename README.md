@@ -56,8 +56,16 @@ npm run events -- facebook <offentlig-facebook-url> --fetch
 npm run events -- facebook <facebook-opslag> --details-file opslag.txt --published-at <ISO-tid> [--title tekst]
 npm run events -- facebook <offentlig-facebook-url> --event event.yaml --details-file opslag.txt
 npm run events -- validate
+npm run duplicates
 npm run events -- publish
 ```
+
+`npm run duplicates` gennemgår både publicerede events og kladder i den rullende
+kalenderhorisont. Den finder events på samme dato med ens eller næsten ens titler
+og starttider inden for 30 minutter. Moderate titelligheder kræver desuden samme
+sted. Brug `npm run duplicates -- --json` til
+maskinlæsbar output og `--fail-on-found` i automatiske kontroller. Se alle flag med
+`npm run events -- help`.
 
 `create` starter en terminaldialog eller indlæser en færdig eventfil. Nye manuelle events er kladder, medmindre `--publish` er angivet. `collect` publicerer kun fuldstændige resultater fra betroede kilder; tvivlsomme fund sendes til køen. `review` viser kandidaterne én ad gangen med tid, sted og kildelink; `y` godkender og tilføjer kandidaten, `n` afviser og arkiverer den privat, og `s` springer den over, så den forbliver i køen. Brug `review --json` til en ikke-interaktiv visning. En tom, delvis eller fejlet indsamling erstatter aldrig sidste fungerende snapshot.
 

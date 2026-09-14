@@ -1,42 +1,7 @@
 {
   "sourceId": "aeroe-kommune-events",
-  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "verifiedAt": "2026-09-14T12:20:49.324Z",
   "events": [
-    {
-      "id": "aeroe-kommune-events-ea5821ac-96a1-4805-9cc2-91ff1e24ab14",
-      "title": "Kommunalbestyrelsesmøde",
-      "description": "",
-      "organizerId": "aeroe-kommune",
-      "categoryIds": [
-        "politik-kommune"
-      ],
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "price": "Gratis",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "kommune-event-ea5821ac-96a1-4805-9cc2-91ff1e24ab14",
-            "date": "2026-09-16",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endDate": "2026-09-16",
-            "endTime": "21:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-kommune-events",
-        "externalId": "ea5821ac-96a1-4805-9cc2-91ff1e24ab14",
-        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/kommunalbestyrelsesmoede",
-        "verifiedAt": "2026-09-14T11:15:54.384Z",
-        "modifiedAt": "2026-09-04T07:03:00.000Z"
-      }
-    },
     {
       "id": "aeroe-kommune-events-5ffa5468-d325-4884-a4f8-14666c60554f",
       "title": "Sundhedsfestival TÆND FOR SØVNEN",
@@ -71,7 +36,7 @@
         "sourceId": "aeroe-kommune-events",
         "externalId": "5ffa5468-d325-4884-a4f8-14666c60554f",
         "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/sundhedsfestival-taend-for-soevnen",
-        "verifiedAt": "2026-09-14T11:55:45.875Z",
+        "verifiedAt": "2026-09-14T12:20:49.324Z",
         "modifiedAt": "2026-08-24T10:58:00.000Z"
       }
     },
@@ -115,8 +80,47 @@
         "sourceId": "aeroe-kommune-events",
         "externalId": "3e08a557-3498-49c3-a4f0-c79c0b4d8bb4",
         "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/groen-middag-paa-lille-soebygaard",
-        "verifiedAt": "2026-09-14T11:55:45.875Z",
+        "verifiedAt": "2026-09-14T12:20:49.324Z",
         "modifiedAt": "2026-08-25T07:31:00.000Z"
+      }
+    },
+    {
+      "id": "aeroe-kommune-events-ea5821ac-96a1-4805-9cc2-91ff1e24ab14",
+      "title": "Kommunalbestyrelsesmøde",
+      "description": "",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "location": {
+        "name": "Statene 2",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommune-event-ea5821ac-96a1-4805-9cc2-91ff1e24ab14",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endDate": "2026-09-16",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune-events",
+        "externalId": "ea5821ac-96a1-4805-9cc2-91ff1e24ab14",
+        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/kommunalbestyrelsesmoede",
+        "verifiedAt": "2026-09-14T12:20:49.324Z",
+        "modifiedAt": "2026-09-04T07:03:00.000Z"
       }
     },
     {
@@ -154,7 +158,7 @@
         "sourceId": "aeroe-kommune-events",
         "externalId": "aadfc3d3-35db-4ef6-810b-d5e1cfbff218",
         "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/aeroe-gadefestival-for-boern-og-unge",
-        "verifiedAt": "2026-09-14T11:55:45.875Z",
+        "verifiedAt": "2026-09-14T12:20:49.324Z",
         "modifiedAt": "2026-09-10T02:12:00.000Z"
       }
     }

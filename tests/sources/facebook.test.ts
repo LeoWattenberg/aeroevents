@@ -145,6 +145,20 @@ describe("Facebook discovery source", () => {
     expect(result.candidates[0]?.reviewReasons.join(" ")).toContain("Årstal er udledt");
   });
 
+  it("does not mistake a Facebook group name for the event organizer", () => {
+    const url = "https://www.facebook.com/groups/1853077681730379/posts/2891520387886098/";
+    const parsed = parseFacebookPublicPage(
+      `<meta property="og:url" content="${url}">
+       <meta property="og:title" content="Det sker på Ærø | Facebook">
+       <meta property="og:description" content="Høstmarked den 19. september 2026 kl. 13-16 i haven">`,
+      url,
+      NOW.toISOString(),
+    );
+
+    expect(parsed.candidates[0]).toMatchObject({ organizerId: "aeroe-kalenderen" });
+    expect(parsed.candidates[0]).not.toHaveProperty("organizerName");
+  });
+
   it("extracts only the concrete embed message and ignores comment dates", async () => {
     const url = "https://www.facebook.com/aeroehotel/posts/pfbid-tracking/?mibextid=test";
     const result = await collectFacebookPublicUrl(url, {
