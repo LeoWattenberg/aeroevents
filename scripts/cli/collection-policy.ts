@@ -1,4 +1,5 @@
 import type { EventRecord, SourceDefinition as RepositorySource } from "../../src/lib/schema.js";
+import { applyAutomaticCategoryRules } from "../../src/lib/category-rules.js";
 import type { PublicationDisposition } from "../sources/types.js";
 
 export function eventSourceIdentity(event: EventRecord): string {
@@ -76,10 +77,10 @@ export function reviewSnapshotAction(
 
 /** Apply editor-controlled category defaults before reference validation and persistence. */
 export function applySourceMappings(event: EventRecord, source: RepositorySource): EventRecord {
-  return {
+  return applyAutomaticCategoryRules({
     ...event,
     ...(source.categoryIds.length ? { categoryIds: [...source.categoryIds] } : {}),
-  };
+  });
 }
 
 /**

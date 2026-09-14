@@ -452,7 +452,8 @@
       "description": "Torsdag den 24. september kl. 19.30 i Bregninge Kirke\nHAAKON SCHAUB, BAS-BARYTON, OG KARSTEN HERM...",
       "organizerId": "aeroe-kirkeliv",
       "categoryIds": [
-        "kirke"
+        "kirke",
+        "musik-kultur"
       ],
       "location": {
         "name": "Bregninge Kirke",
@@ -1229,7 +1230,8 @@
       "description": "Lørdag den 17. oktober kl. 16.00 i Marstal Kirke\nKONCERT MED SYLVESTER LARSEN\nSylvester Larsen e...",
       "organizerId": "aeroe-kirkeliv",
       "categoryIds": [
-        "kirke"
+        "kirke",
+        "musik-kultur"
       ],
       "location": {
         "name": "Marstal Kirke",

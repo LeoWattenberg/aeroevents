@@ -19,6 +19,7 @@ import {
   type Organizer,
   type SourceDefinition,
 } from "./schema";
+import { applyAutomaticCategoryRules } from "./category-rules";
 import { CALENDAR_ZONE, expandEvents } from "./schedule";
 
 export interface RepositoryData {
@@ -160,6 +161,10 @@ export async function loadRepository(root = process.cwd()): Promise<RepositoryDa
     const event = byId.get(override.eventId);
     if (!event) throw new Error(`Override peger på ukendt event: ${override.eventId}`);
     byId.set(event.id, applyOverride(event, override));
+  }
+
+  for (const [eventId, event] of byId) {
+    byId.set(eventId, applyAutomaticCategoryRules(event));
   }
 
   const organizerIds = new Set(organizers.map((item) => item.id));

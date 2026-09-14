@@ -365,6 +365,13 @@ describe("Facebook discovery source", () => {
     ]);
     expect(parsed.locationName).toBe("Motorfabrikken Marstal");
     expect(parsed.reasons.join(" ")).not.toContain("flere mulige starttidspunkter");
+
+    const candidate = parseFacebookPostText({
+      url: "https://www.facebook.com/motorfabrikkenmarstal/posts/1513004054196980/",
+      text: "Gratis Koncert med Emma Pilgaard\nMandag 14. september\nKl 18:00\nMotorfabrikken Marstal",
+      retrievedAt: NOW.toISOString(),
+    }).candidates[0];
+    expect(candidate?.categoryIds).toEqual(["musik-kultur"]);
   });
 
   it("rejects recurrence-only, non-event, and inconsistent weekday text", () => {

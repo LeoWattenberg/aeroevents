@@ -19,7 +19,10 @@ async function fixtureRoot(): Promise<string> {
   ]);
   await fs.writeFile(
     path.join(root, "data/categories.yaml"),
-    toYaml([{ id: "andet", name: "Andet", color: "#656b70" }]),
+    toYaml([
+      { id: "andet", name: "Andet", color: "#656b70" },
+      { id: "musik-kultur", name: "Musik og kultur", color: "#a44432" },
+    ]),
   );
   await fs.writeFile(
     path.join(root, "data/organizers.yaml"),
@@ -59,6 +62,12 @@ describe("repository pipeline", () => {
   it("validates the checked-in registries without example events", async () => {
     const repository = await loadRepository(process.cwd());
     expect(repository.events.some((event) => event.id.startsWith("eksempel-") || event.title.startsWith("Eksempel:"))).toBe(false);
+    for (const event of repository.events.filter((event) =>
+      /koncert/iu.test(`${event.title}\n${event.description ?? ""}`)
+    )) {
+      expect(event.categoryIds, event.title).toContain("musik-kultur");
+      expect(event.categoryIds, event.title).not.toContain("andet");
+    }
   });
 
   it("keeps manual overrides when an imported snapshot is loaded repeatedly", async () => {

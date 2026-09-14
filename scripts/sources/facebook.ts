@@ -2,6 +2,7 @@ import { load } from "cheerio";
 import type { AnyNode } from "domhandler";
 import { DateTime } from "luxon";
 
+import { applyAutomaticCategoryRules } from "../../src/lib/category-rules.js";
 import { errorMessage, fetchText } from "./http";
 import { cleanText } from "./html";
 import {
@@ -392,7 +393,12 @@ export function parseFacebookPostText(
       ...(input.publishedAt ? { sourceModifiedAt: input.publishedAt } : {}),
     },
   };
-  return { candidates: [candidate], warnings: parsed.warnings, errors: [], evidence: parsed.evidence };
+  return {
+    candidates: [applyAutomaticCategoryRules(candidate)],
+    warnings: parsed.warnings,
+    errors: [],
+    evidence: parsed.evidence,
+  };
 }
 
 function schemaLocation(value: unknown): EventLocationDraft | undefined {
@@ -440,7 +446,7 @@ function draftFromFields(
     allDay: fields.start.time === undefined,
     timeUnknown: false,
   };
-  return {
+  return applyAutomaticCategoryRules({
     sourceId: definition.id,
     sourceEventId: id,
     stableId: `${definition.id}-${id}`,
@@ -462,7 +468,7 @@ function draftFromFields(
       sourceUrl: fields.sourceUrl,
       retrievedAt,
     },
-  };
+  });
 }
 
 export function parseFacebookPublicPage(
