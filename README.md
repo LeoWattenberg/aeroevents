@@ -44,6 +44,7 @@ npm run events -- review
 npm run events -- approve <kandidat-id>
 npm run events -- reject <kandidat-id> --reason "Ikke offentligt"
 npm run events -- facebook <offentlig-facebook-url> --fetch
+npm run events -- facebook <facebook-opslag> --details-file opslag.txt --published-at <ISO-tid> [--title tekst]
 npm run events -- facebook <offentlig-facebook-url> --event event.yaml --details-file opslag.txt
 npm run events -- validate
 npm run events -- publish
@@ -53,7 +54,7 @@ npm run events -- publish
 
 Kø, rå fund, afvisninger og eventuelle afsenderoplysninger er private. De gemmes uden for repositoryet i `$AEROEVENTS_STATE_DIR`, ellers under `$XDG_STATE_HOME/aeroevents` eller `~/.local/state/aeroevents`. De bliver ikke læst af Astro-buildet.
 
-Facebook-integrationen er kun et redaktionelt hjælpemiddel. Offentlig synlighed garanterer ikke stabil eller tilladt automatisk adgang. `--fetch` forsøger én konkret event-URL og rapporterer loginmure, blokering og parsefejl; den manuelle `--event`/`--details-file`-vej er fallback. Alle fund gemmes i den private kø, og intet publiceres uden godkendelse. En anonym browsertest fandt eventlinks på flere offentlige sider, men Facebooks `robots.txt` kræver udtrykkelig skriftlig tilladelse til automatiseret indsamling. Browserindsamling er derfor ikke aktiveret.
+Facebook-integrationen er kun et redaktionelt hjælpemiddel. Offentlig synlighed garanterer ikke stabil eller tilladt automatisk adgang. `--fetch` forsøger én konkret event- eller post-URL. Den læser først strukturerede eventdata og kan derefter fortolke en enkelt opslagstekst med en entydig dansk dato. En fuld, manuelt kopieret opslagstekst kan fortolkes med `--details-file`; `--published-at` gør relative datoer og manglende årstal sikrere. Loginmure, afkortet tekst, tvetydige datoer og opslag uden arrangementsignal afvises. Alle fund gemmes i den private kø, og intet publiceres uden godkendelse. En anonym browsertest fandt eventlinks på flere offentlige sider, men Facebooks `robots.txt` kræver udtrykkelig skriftlig tilladelse til automatiseret indsamling. Browserindsamling af side- og gruppefeeds er derfor ikke aktiveret.
 
 ## Automatiske kilder
 

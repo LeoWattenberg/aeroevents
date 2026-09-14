@@ -104,7 +104,15 @@ export async function enqueueCandidate(
   }
 
   const existing = await readJsonIfPresent<ReviewCandidate>(pendingPath);
-  if (existing?.payloadDigest === payloadDigest) return "already-pending";
+  if (existing?.payloadDigest === payloadDigest) {
+    await atomicWriteJson(pendingPath, {
+      ...existing,
+      sourceUrl: input.sourceUrl,
+      discoveredAt: input.discoveredAt,
+      ...(input.private ? { private: input.private } : {}),
+    });
+    return "already-pending";
+  }
 
   const candidate: ReviewCandidate = {
     version: 1,

@@ -8,6 +8,9 @@ import { stringify as stringifyYaml } from "yaml";
 import {
   collectAllSources,
   collectFacebookPublicUrl,
+  canonicalFacebookContentUrl,
+  facebookContentId,
+  parseFacebookPostText,
   SOURCE_REGISTRY,
   type RegisteredSourceId,
 } from "../sources/index.js";
@@ -16,7 +19,6 @@ import { getPaths, type CliPaths } from "./config.js";
 import {
   atomicWrite,
   atomicWriteJson,
-  digest,
   readStructuredFile,
   safeId,
 } from "./files.js";
@@ -34,6 +36,7 @@ import {
   applyCollectionPolicy,
   applySourceMappings,
   crossSourceDuplicateReasons,
+  eventFingerprint,
   eventSourceIdentity,
   reviewSnapshotAction,
 } from "./collection-policy.js";
@@ -468,9 +471,57 @@ async function rejectCommand(args: string[]): Promise<void> {
   console.log(`Afviste ${candidate.candidateId}.`);
 }
 
-function facebookExternalId(url: URL): string {
-  const match = url.pathname.match(/\/events\/(\d+)/);
-  return match?.[1] || digest(url.href).slice(0, 16);
+async function queueFacebookDrafts(
+  paths: CliPaths,
+  drafts: NormalizedEventDraft[],
+  warnings: string[],
+  privateData?: Record<string, unknown>,
+): Promise<number> {
+  const repository = await validateAllPublicData(paths.repo);
+  const sourcePolicy = repository.repository.sources.find((source) => source.id === "facebook");
+  if (!sourcePolicy) throw new Error("Facebook-kilden mangler i data/sources.yaml.");
+  const normalized = drafts.map((draft) =>
+    validateEvent(applySourceMappings(sourceDraftToEvent(draft), sourcePolicy)),
+  );
+  const duplicates = crossSourceDuplicateReasons(repository.repository.events, normalized);
+  let queued = 0;
+  for (let index = 0; index < drafts.length; index += 1) {
+    const draft = drafts[index];
+    const event = normalized[index];
+    if (!draft || !event) continue;
+    await assertEventReferences(paths.repo, event);
+    const sameSourceDuplicates = repository.repository.events.filter(
+      (other) =>
+        other.source.sourceId === "facebook" &&
+        eventSourceIdentity(other) !== eventSourceIdentity(event) &&
+        eventFingerprint(other) === eventFingerprint(event),
+    );
+    const duplicateReasons = [
+      ...(duplicates.get(eventSourceIdentity(event)) || []),
+      ...sameSourceDuplicates.map(
+        (other) =>
+          `Mulig dublet af ${other.id} fra et andet Facebook-link; kontrollér permalinket`,
+      ),
+    ];
+    const decision = applyCollectionPolicy(
+      sourcePolicy,
+      draft.publication,
+      duplicateReasons,
+      false,
+    );
+    const reviewEvent = validateEvent({ ...event, publication: "draft" });
+    const outcome = await enqueueCandidate(
+      paths,
+      draftCandidateInput(
+        draft,
+        reviewEvent,
+        [...draft.reviewReasons, ...decision.reasons, ...warnings],
+        privateData,
+      ),
+    );
+    if (outcome === "created" || outcome === "updated") queued += 1;
+  }
+  return queued;
 }
 
 async function facebookCommand(args: string[]): Promise<void> {
@@ -478,9 +529,10 @@ async function facebookCommand(args: string[]): Promise<void> {
   const options = parseOptions(args);
   const rawUrl = options.positional[0];
   if (!rawUrl) throw new Error("facebook kræver URL'en til den offentlige begivenhed.");
-  const url = new URL(rawUrl);
-  const host = url.hostname.toLowerCase();
-  if (url.protocol !== "https:" || !(host === "facebook.com" || host.endsWith(".facebook.com"))) {
+  let url: URL;
+  try {
+    url = new URL(canonicalFacebookContentUrl(rawUrl));
+  } catch {
     throw new Error("Brug en offentlig https-URL på facebook.com.");
   }
 
@@ -503,36 +555,7 @@ async function facebookCommand(args: string[]): Promise<void> {
       throw new Error("Facebook-siden gav ingen eventoplysninger til gennemsyn.");
     }
 
-    const repository = await validateAllPublicData(paths.repo);
-    const sourcePolicy = repository.repository.sources.find((source) => source.id === "facebook");
-    if (!sourcePolicy) throw new Error("Facebook-kilden mangler i data/sources.yaml.");
-    const normalized = result.candidates.map((draft) =>
-      validateEvent(applySourceMappings(sourceDraftToEvent(draft), sourcePolicy)),
-    );
-    const duplicates = crossSourceDuplicateReasons(repository.repository.events, normalized);
-    let queued = 0;
-    for (let index = 0; index < result.candidates.length; index += 1) {
-      const draft = result.candidates[index];
-      const event = normalized[index];
-      if (!draft || !event) continue;
-      await assertEventReferences(paths.repo, event);
-      const decision = applyCollectionPolicy(
-        sourcePolicy,
-        draft.publication,
-        duplicates.get(eventSourceIdentity(event)) || [],
-        false,
-      );
-      const reviewEvent = validateEvent({ ...event, publication: "draft" });
-      const outcome = await enqueueCandidate(
-        paths,
-        draftCandidateInput(draft, reviewEvent, [
-          ...draft.reviewReasons,
-          ...decision.reasons,
-          ...result.warnings,
-        ]),
-      );
-      if (outcome === "created" || outcome === "updated") queued += 1;
-    }
+    const queued = await queueFacebookDrafts(paths, result.candidates, result.warnings);
     console.log(
       `Facebook: ${result.candidates.length} fund behandlet, ${queued} nye/ændrede i kø. ` +
         `Råsvaret ligger privat i ${rawCapture.runDirectory}.`,
@@ -540,8 +563,42 @@ async function facebookCommand(args: string[]): Promise<void> {
     return;
   }
 
-  const externalId = facebookExternalId(url);
   const eventFile = stringOption(options, "event");
+  const detailsFile = stringOption(options, "details-file");
+  const pastedDetails = detailsFile
+    ? await readFile(resolve(detailsFile), "utf8")
+    : stringOption(options, "details");
+  if (!eventFile && pastedDetails) {
+    const retrievedAt = new Date().toISOString();
+    const parsed = parseFacebookPostText({
+      url: url.href,
+      text: pastedDetails,
+      retrievedAt,
+      ...(stringOption(options, "published-at")
+        ? { publishedAt: stringOption(options, "published-at")! }
+        : {}),
+      ...(stringOption(options, "title")
+        ? { titleOverride: stringOption(options, "title")! }
+        : {}),
+    });
+    if (!parsed.candidates.length) {
+      throw new Error(
+        `Facebook-opslaget kunne ikke fortolkes: ${parsed.errors.join("; ")}. ` +
+          "Ret teksten eller brug --event med en redigeret eventfil.",
+      );
+    }
+    const queued = await queueFacebookDrafts(paths, parsed.candidates, parsed.warnings, {
+      pastedDetails,
+      parseEvidence: parsed.evidence,
+    });
+    console.log(
+      `Facebook-opslag: ${parsed.candidates.length} fund behandlet, ${queued} nye/ændrede i kø. ` +
+        "Opslagsteksten ligger kun i den private arbejdskø.",
+    );
+    return;
+  }
+
+  const externalId = facebookContentId(url.href);
   let event: EventRecord;
   if (eventFile) {
     const input = validateEvent(await readStructuredFile(resolve(eventFile)));
@@ -562,10 +619,6 @@ async function facebookCommand(args: string[]): Promise<void> {
   }
   await assertEventReferences(paths.repo, event);
 
-  const detailsFile = stringOption(options, "details-file");
-  const pastedDetails = detailsFile
-    ? await readFile(resolve(detailsFile), "utf8")
-    : stringOption(options, "details");
   const outcome = await enqueueCandidate(paths, {
     sourceId: "facebook",
     sourceEventId: externalId,
@@ -685,6 +738,7 @@ Brug:
   npm run events -- approve <candidate-id>
   npm run events -- reject <candidate-id> [--reason tekst]
   npm run events -- facebook <offentlig-url> --fetch
+  npm run events -- facebook <opslags-url> --details-file tekstfil [--published-at ISO-tid] [--title tekst]
   npm run events -- facebook <offentlig-url> [--event event.yaml] [--details-file tekstfil]
   npm run events -- validate
   npm run events -- publish [--message "commit-besked"]

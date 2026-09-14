@@ -71,6 +71,23 @@ describe("interactive review display", () => {
     ).toContain("Tid: 2026-09-20 (hele dagen)");
   });
 
+  it("shows the matched post evidence without exposing the complete private text", () => {
+    const value = candidate({
+      title: "Fællesspisning",
+      schedule: {
+        kind: "explicit",
+        dates: [{ kind: "timed", date: "2026-10-02", startTime: "18:30" }],
+      },
+    });
+    value.private = {
+      pastedDetails: "Kontakt privat@example.dk for flere oplysninger",
+      parseEvidence: ["2. oktober kl. 18.30"],
+    };
+    const output = formatReviewCandidate(value, 1, 1);
+    expect(output).toContain("Fundet tekst: 2. oktober kl. 18.30");
+    expect(output).not.toContain("privat@example.dk");
+  });
+
   it("accepts English and Danish yes/no answers", () => {
     expect(parseReviewDecision("y")).toBe("approve");
     expect(parseReviewDecision("YES")).toBe("approve");

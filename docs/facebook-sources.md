@@ -19,13 +19,19 @@ HTML uden eventlinks. En anonym Chromium-session viste derimod de første
 offentlige eventkort og stabile links på formen `/events/<numerisk-id>/`.
 Login-dialogen var synlig, men eventkortene kunne læses uden at logge ind.
 
-Den nuværende `facebook --fetch`-kommando er kun en forsigtig parser til én
-konkret event-URL. Den finder JSON-LD eller Open Graph-tidspunkter, hvis Facebook
-udleverer dem. En virkelig 2026-eventside gav titel, dato og arrangør i
-`og:description`, men intet struktureret klokkeslæt; kommandoen afviste derfor
-korrekt fundet som ufuldstændigt. Side- og gruppeopdagelse kræver en særskilt,
-lokal browseradapter og en autoriseret adgangsvej, før kilderne her kan sættes i
-cron.
+Den nuværende `facebook --fetch`-kommando er en forsigtig parser til én konkret
+event- eller post-URL. Den foretrækker JSON-LD eller Open Graph-eventfelter og
+kan ellers fortolke den ene offentlige opslagstekst. Parseren kræver et
+arrangementssignal og en entydig dato, skelner mellem hele dagen og ukendt tid,
+ignorerer tilmeldingsfrister og sender altid resultatet til review. Afkortet
+tekst, kommentarer, naboposter og tekst, som kun findes inde i billeder, bliver
+ikke fortolket; parseren laver ikke OCR. En manuelt kopieret fuld tekst kan
+behandles med `--details-file`. Genbrug samme konkrete permalink ved senere
+opdateringer. Facebooks `pfbid`-link og numeriske link til samme opslag kan ikke
+altid sammenkædes uden adgang til Facebook; en titel/dato/tid-dublet markeres
+derfor til ekstra kontrol. Side- og
+gruppeopdagelse kræver fortsat en særskilt, lokal browseradapter og en
+autoriseret adgangsvej, før kilderne her kan sættes i cron.
 
 ## Start med disse kilder
 

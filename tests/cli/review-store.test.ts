@@ -51,9 +51,17 @@ describe("private editorial queue", () => {
     };
 
     expect(await enqueueCandidate(config, input)).toBe("created");
-    expect(await enqueueCandidate(config, input)).toBe("already-pending");
+    expect(
+      await enqueueCandidate(config, {
+        ...input,
+        discoveredAt: "2026-09-14T10:00:00.000Z",
+        private: { pastedDetails: "opdateret privat tekst" },
+      }),
+    ).toBe("already-pending");
     const [candidate] = await listPending(config);
     expect(candidate).toBeDefined();
+    expect(candidate?.discoveredAt).toBe("2026-09-14T10:00:00.000Z");
+    expect(candidate?.private).toEqual({ pastedDetails: "opdateret privat tekst" });
     await markApproved(config, candidate!, "data/manual/events/test-event.yaml");
 
     const marker = await readFile(join(config.reviewApproved, `${candidate!.candidateId}.json`), "utf8");

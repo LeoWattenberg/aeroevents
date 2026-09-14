@@ -62,6 +62,16 @@ function formatLocation(event: UnknownRecord): string {
   return parts.join(", ") || "Ikke angivet";
 }
 
+function formatEvidence(candidate: ReviewCandidate): string | undefined {
+  const privateData = record(candidate.private);
+  const evidence = privateData?.parseEvidence;
+  if (!Array.isArray(evidence)) return undefined;
+  const snippets = evidence
+    .filter((value): value is string => typeof value === "string" && Boolean(value.trim()))
+    .map((value) => value.trim());
+  return snippets.length ? `Fundet tekst: ${snippets.join("; ")}` : undefined;
+}
+
 export function formatReviewCandidate(
   candidate: ReviewCandidate,
   position: number,
@@ -70,12 +80,14 @@ export function formatReviewCandidate(
   const event = record(candidate.event) || {};
   const title = text(event.title) || "Uden titel";
   const reasons = candidate.reasons.length ? candidate.reasons.join("; ") : "Ingen angivet";
+  const evidence = formatEvidence(candidate);
   return [
     `Kandidat ${position} af ${total}`,
     `Titel: ${title}`,
     `Tid: ${formatSchedule(event)}`,
     `Sted: ${formatLocation(event)}`,
     `Kilde: ${candidate.sourceUrl}`,
+    ...(evidence ? [evidence] : []),
     `Årsag: ${reasons}`,
     `Kandidat-id: ${candidate.candidateId}`,
   ].join("\n");

@@ -24,6 +24,7 @@ npm run events -- review
 npm run events -- approve <candidate-id>
 npm run events -- reject <candidate-id> [--reason "..."]
 npm run events -- facebook <offentlig-url> --fetch
+npm run events -- facebook <opslags-url> --details-file opslag.txt --published-at <ISO-tid> [--title tekst]
 npm run events -- facebook <offentlig-url> --event event.yaml --details-file opslag.txt
 npm run events -- validate
 npm run events -- publish
@@ -45,10 +46,15 @@ slår igennem uden kodeændringer. Poster til gennemsyn gemmes som ikke-offentli
 snapshotbaser; en godkendelse tilføjer en lille override og opretter derfor ikke
 et konkurrerende event-id.
 
-Facebook-kommandoens `--fetch` forsøger én konkret offentlig URL og lægger alle
-fund i køen; loginvægge, blokering og manglende strukturerede eventdata vises
-som fejl. Uden `--fetch` gemmer kommandoen URL'en sammen med en redaktørudfyldt
-eventfil og eventuelt indsat opslagstekst til samme gennemsyn. Brug kun
+Facebook-kommandoens `--fetch` forsøger én konkret offentlig event- eller
+post-URL og lægger alle fund i køen. Hvis strukturerede eventdata mangler, kan
+den fortolke den ene opslagstekst, men aldrig hele en side, gruppe, kommentartråd
+eller et afkortet uddrag. `--details-file` uden `--event` fortolker en manuelt
+kopieret offentlig opslagstekst; tilføj `--published-at`, når teksten bruger en
+relativ dato eller mangler årstal, og `--title`, hvis den foreløbige titel skal
+angives eksplicit. Genbrug samme permalink ved opdateringer. Den fulde tekst og
+parserens evidens bliver i den private kø. `--event` bevarer vejen til en
+redaktørudfyldt eventfil. Brug kun
 offentligt tilgængelige oplysninger, og omgå aldrig en adgangsbegrænsning.
 
 Vellykkede HTTP-svar fra kildeindsamling gemmes med private filrettigheder under
