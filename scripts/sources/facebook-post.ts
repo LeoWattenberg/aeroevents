@@ -464,6 +464,21 @@ function timeFromSegment(segment: string): {
   };
 }
 
+function sharedTimeForOccurrences(
+  text: string,
+): ReturnType<typeof timeFromSegment> | undefined {
+  const sharedDays = /\b(?:(?:alle|begge|samtlige)\s+(?:de\s+)?(?:dage|datoer|lørdage|søndage|aftener|gange)|hver\s+dag)\b/iu;
+  const clauses = text.split(
+    /\n+|(?<=[!?])\s+|(?<=\.)\s+(?=[\p{Lu}ÆØÅ])/u,
+  );
+  for (const clause of clauses) {
+    if (!sharedDays.test(clause)) continue;
+    const time = timeFromSegment(beforeDeadlineDetails(clause));
+    if (time.startTime && !time.doorTime && !time.ambiguous && !time.auxiliary) return time;
+  }
+  return undefined;
+}
+
 function locationFromHeader(text: string, dateEnd: number): string | undefined {
   const lines = text.slice(dateEnd).split("\n").slice(0, 6);
   let sawTime = false;
@@ -630,6 +645,11 @@ export function parseFacebookAnnouncementText(
   result.reasons.push("Titel og arrangementsfelter er udledt af opslagsteksten");
 
   const allDay = /\b(?:hele dagen|heldagsarrangement)\b/iu.test(text);
+  const occurrenceCount = dates.groups.reduce((sum, group) => sum + group.dates.length, 0);
+  const sharedTime = occurrenceCount > 1 ? sharedTimeForOccurrences(text) : undefined;
+  if (sharedTime) {
+    result.reasons.push("Et fælles klokkeslæt er anvendt på alle annoncerede datoer");
+  }
   for (const [groupIndex, group] of dates.groups.entries()) {
     const nextIndex = dates.groups[groupIndex + 1]?.index ?? text.length;
     const segment = beforeDeadlineDetails(
@@ -637,10 +657,11 @@ export function parseFacebookAnnouncementText(
         .slice(group.index, nextIndex)
         .split(/\n\s*(?:pris)\b/iu)[0]!,
     );
-    const time = (() => {
+    const localTime = (() => {
       const afterDate = timeFromSegment(segment);
       return afterDate.startTime ? afterDate : timeImmediatelyBeforeDate(text, group.index);
     })();
+    const time = sharedTime ?? localTime;
     if (time.approximate) result.reasons.push("Opslaget angiver et omtrentligt tidspunkt");
     if (time.doorTime) result.reasons.push("Det fundne tidspunkt kan være døråbning");
     if (time.ambiguous) result.reasons.push("Opslaget indeholder flere mulige starttidspunkter");

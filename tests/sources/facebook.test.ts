@@ -431,16 +431,17 @@ describe("Facebook discovery source", () => {
     expect(festival.warnings.join(" ")).toContain("overordnet arrangement");
 
     const terms = parseFacebookAnnouncementText(
-      "Julemarkederne afholdes lørdag d. 21/11, lørdag d. 28/11, lørdag d. 5/12 samt lørdag d. 12/12. Vi holder åbent kl. 10. Ved senere aflysning refunderes stadelejen ikke.",
+      "Julemarkederne afholdes i år over fire lørdage. Henholdsvis lørdag d. 21/11, lørdag d. 28/11, lørdag d. 5/12 samt lørdag d. 12/12. Vi holder åbent fra kl. 9.30-17 alle dage. Man kan vælge at leje en bod for en, to, tre eller alle lørdage. Ved senere aflysning refunderes stadelejen ikke.",
       { now: NOW },
     );
     expect(terms.status).toBe("scheduled");
-    expect(terms.occurrences.map((item) => item.date)).toEqual([
-      "2026-11-21",
-      "2026-11-28",
-      "2026-12-05",
-      "2026-12-12",
+    expect(terms.occurrences).toEqual([
+      expect.objectContaining({ date: "2026-11-21", startTime: "09:30", endTime: "17:00" }),
+      expect.objectContaining({ date: "2026-11-28", startTime: "09:30", endTime: "17:00" }),
+      expect.objectContaining({ date: "2026-12-05", startTime: "09:30", endTime: "17:00" }),
+      expect.objectContaining({ date: "2026-12-12", startTime: "09:30", endTime: "17:00" }),
     ]);
+    expect(terms.reasons.join(" ")).toContain("alle annoncerede datoer");
 
     const stay = parseFacebookAnnouncementText(
       "Jul på Ærø. Fra den 20. november er byen pyntet op til julemarked. Vi holder åbent for overnatning til 13. december. Book årets juleophold.",
