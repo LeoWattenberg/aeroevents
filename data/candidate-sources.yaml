@@ -1,0 +1,53 @@
+# Researched public sources that are not yet part of the collection pipeline.
+# Keeping these separate from data/sources.yaml prevents the site from claiming
+# that they have been checked or imported automatically.
+- id: ommel-samvirke
+  name: Ommel Samvirkes aktivitetskalender
+  url: https://www.ommelsamvirke.dk/aktivitetskalender
+  status: review-planned
+  summary: Webkalenderen har mange lokale aktiviteter, men dens ICS-feed er defekt. En browserbaseret import med redaktionelt gennemsyn mangler at blive implementeret.
+- id: ritual-aeroe-momoyoga
+  name: Ritual Ærø hos Momoyoga
+  url: https://www.momoyoga.com/nurtureaeroe/schedule
+  status: automatic-planned
+  summary: Den offentlige holdplan har stabile lektions-ID’er. Importen skal afgrænses til offentlige gruppehold, så individuelle behandlingstider ikke kommer i kalenderen.
+- id: dn-aeroe
+  name: Danmarks Naturfredningsforening på Ærø
+  url: https://arrangementer.dn.dk/
+  status: automatic-planned
+  summary: Arrangementstjenesten har et offentligt Ærø-filter og stabile event-ID’er. En kildeadapter og dubletkontrol mangler.
+- id: kunsthoejskolen-aeroe
+  name: Kunsthøjskolen på Ærø
+  url: https://www.kunstaeroe.dk/for-og-efter%C3%A5rskurser
+  status: automatic-planned
+  summary: Kursussiderne indeholder datoer, priser, tilmeldingslinks og udsolgtstatus. Parser og fixtures mangler.
+- id: soeby-lokalraad
+  name: Søby Lokalråd
+  url: https://soebylokalraad.dk/11/en/node/12
+  status: review-planned
+  summary: Siden samler flere arrangementer under samme dokument-ID. De skal opdeles med stabile sammensatte ID’er og gennemgås redaktionelt.
+- id: aeroe-hotel-events
+  name: Ærø Hotel – arrangementer
+  url: https://www.aeroehotel.dk/event-list
+  status: review-planned
+  summary: Eventdata kan udledes fra hotellets website, men dubletter og opholdsdatoer kræver kontrol før publicering.
+- id: aeroeskoebing-grand-prix
+  name: Ærøskøbing Grand Prix
+  url: https://www.xn--rgrandprix-c6a1t.dk/
+  status: review-planned
+  summary: Årets aktivitetsdage står på websitet uden selvstændige event-ID’er. En årlig import med sammensat identitet mangler.
+- id: aeroe-klatreklub-website
+  name: Ærø Klatreklub
+  url: https://aekk.klub-modul.dk/default.aspx
+  status: manual-planned
+  summary: Klubben beskriver faste aktiviteter uden sikre sæson- og feriegrænser. De kan først oprettes som gentagelser, når grænserne er bekræftet.
+- id: aeroe-tennisklub
+  name: Ærø Tennisklub
+  url: https://aeroetennisklub.dk/faste-aktiviteter/
+  status: manual-planned
+  summary: De ugentlige aktiviteter mangler præcise sæsongrænser. Kalenderen gætter derfor ikke datoer ud fra teksten.
+- id: parkinsonforeningen-aeroe
+  name: Parkinsonforeningen – Klub Ærø
+  url: https://parkinson.dk/kredse/2823-fyn/om-os/
+  status: manual-planned
+  summary: Møderne er beskrevet som en månedlig regel i medlemsmateriale. En redaktionel gentagelse med medlemsmarkering mangler.

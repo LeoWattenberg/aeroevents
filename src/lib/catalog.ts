@@ -1,5 +1,14 @@
 import { getCollection } from "astro:content";
-import type { BuildMetadata, Category, EventRecord, Occurrence, Organizer, SourceDefinition } from "./schema";
+import type {
+  BuildMetadata,
+  CandidateSource,
+  Category,
+  EventRecord,
+  FacebookFeedSource,
+  Occurrence,
+  Organizer,
+  SourceDefinition,
+} from "./schema";
 
 export async function getPublishedEvents(): Promise<EventRecord[]> {
   return (await getCollection("events")).map((entry) => entry.data as EventRecord);
@@ -25,4 +34,12 @@ export async function getBuildMetadata(): Promise<BuildMetadata> {
   const [entry] = await getCollection("metadata");
   if (!entry) throw new Error("Buildmetadata mangler");
   return entry.data as BuildMetadata;
+}
+
+export async function getFacebookSources(): Promise<FacebookFeedSource[]> {
+  return (await getCollection("facebookSources")).map((entry) => entry.data as FacebookFeedSource);
+}
+
+export async function getCandidateSources(): Promise<CandidateSource[]> {
+  return (await getCollection("candidateSources")).map((entry) => entry.data as CandidateSource);
 }

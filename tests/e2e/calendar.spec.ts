@@ -114,7 +114,25 @@ test("lists every enabled external source and links to it from the site", async 
     "href",
     "https://www.facebook.com/events/",
   );
-  await expect(page.getByText("Senest kontrolleret")).toHaveCount(4);
+  await expect(
+    page.locator('[aria-labelledby="external-sources-heading"]').getByText("Senest kontrolleret"),
+  ).toHaveCount(4);
+  await expect(page.locator("[data-facebook-source-id]"), "every configured Facebook source").toHaveCount(47);
+  await expect(page.locator('[data-facebook-source-id="det-sker-i-ommel"] a')).toHaveAttribute(
+    "href",
+    "https://www.facebook.com/groups/871725845485563/",
+  );
+  await expect(page.locator('[data-facebook-source-id="aeroe-hotel"] a')).toHaveAttribute(
+    "href",
+    "https://www.facebook.com/aeroehotel/",
+  );
+  await expect(page.locator("[data-candidate-source-id]"), "every researched source").toHaveCount(10);
+  await expect(page.locator('[data-candidate-source-id="ommel-samvirke"] a')).toHaveAttribute(
+    "href",
+    "https://www.ommelsamvirke.dk/aktivitetskalender",
+  );
+  await expect(page.getByText("Disse kilder er fundet og teknisk undersøgt")).toBeVisible();
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
   await expect(page.getByRole("heading", { name: /Lokale arrangører kan også sende/ })).toBeVisible();
   await expect(page.getByRole("link", { name: "Indsend et arrangement", exact: true })).toHaveAttribute(
     "href",

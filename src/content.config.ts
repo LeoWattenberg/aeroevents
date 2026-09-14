@@ -2,8 +2,10 @@ import { defineCollection } from "astro:content";
 import { file } from "astro/loaders";
 import {
   buildMetadataSchema,
+  candidateSourceSchema,
   categorySchema,
   eventSchema,
+  facebookFeedSourceSchema,
   occurrenceSchema,
   organizerSchema,
   sourceDefinitionSchema,
@@ -15,5 +17,16 @@ const organizers = defineCollection({ loader: file("data/generated/organizers.js
 const categories = defineCollection({ loader: file("data/generated/categories.json"), schema: categorySchema });
 const sources = defineCollection({ loader: file("data/generated/sources.json"), schema: sourceDefinitionSchema });
 const metadata = defineCollection({ loader: file("data/generated/metadata.json"), schema: buildMetadataSchema });
+const facebookSources = defineCollection({ loader: file("data/facebook-sources.yaml"), schema: facebookFeedSourceSchema });
+const candidateSources = defineCollection({ loader: file("data/candidate-sources.yaml"), schema: candidateSourceSchema });
 
-export const collections = { events, occurrences, organizers, categories, sources, metadata };
+export const collections = {
+  events,
+  occurrences,
+  organizers,
+  categories,
+  sources,
+  metadata,
+  facebookSources,
+  candidateSources,
+};

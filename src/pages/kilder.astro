@@ -1,19 +1,51 @@
 ---
 import { sitePath } from "../components/paths";
 import BaseLayout from "../layouts/BaseLayout.astro";
-import { getBuildMetadata, getSources } from "../lib/catalog";
+import {
+  getBuildMetadata,
+  getCandidateSources,
+  getFacebookSources,
+  getSources,
+} from "../lib/catalog";
+import type { FacebookFeedSource } from "../lib/schema";
 
-const [sources, metadata] = await Promise.all([getSources(), getBuildMetadata()]);
+const [sources, metadata, facebookFeedSources, candidateSources] = await Promise.all([
+  getSources(),
+  getBuildMetadata(),
+  getFacebookSources(),
+  getCandidateSources(),
+]);
 const externalSources = sources
   .filter((source) => source.enabled && source.url)
   .sort((a, b) => a.name.localeCompare(b.name, "da-DK"));
+const facebookSources = facebookFeedSources.sort((a, b) => a.name.localeCompare(b.name, "da-DK"));
+const researchedSources = candidateSources.sort((a, b) => a.name.localeCompare(b.name, "da-DK"));
 const hasManualSource = sources.some((source) => source.enabled && source.id === "manual");
 const verificationBySource = new Map(metadata.sources.map((source) => [source.sourceId, source]));
+const facebookVerification = verificationBySource.get("facebook");
 const format = new Intl.DateTimeFormat("da-DK", {
   dateStyle: "medium",
   timeStyle: "short",
   timeZone: "Europe/Copenhagen",
 });
+
+function facebookProfileUrl(source: FacebookFeedSource): string {
+  const url = new URL(source.postFeedUrl ?? source.eventFeedUrl!);
+  url.search = "";
+  url.hash = "";
+  url.pathname = `${url.pathname.replace(/\/(?:posts|events)\/?$/u, "").replace(/\/+$/u, "")}/`;
+  return url.toString();
+}
+
+function facebookKind(source: FacebookFeedSource): "Gruppe" | "Side" {
+  return /\/groups\//u.test(source.postFeedUrl ?? source.eventFeedUrl!) ? "Gruppe" : "Side";
+}
+
+const candidateStatus = {
+  "automatic-planned": "Automatisk import planlagt",
+  "review-planned": "Import med gennemsyn planlagt",
+  "manual-planned": "Afventer manuel oprettelse",
+} as const;
 ---
 
 <BaseLayout
@@ -66,6 +98,51 @@ const format = new Intl.DateTimeFormat("da-DK", {
     )}
   </section>
 
+  <section class="source-section page-width" aria-labelledby="facebook-sources-heading">
+    <div class="section-heading wide-heading">
+      <p class="eyebrow">{facebookSources.length} konfigurerede Facebook-kilder</p>
+      <h2 id="facebook-sources-heading">Facebook-sider og -grupper</h2>
+      <p>
+        Her er hver offentlig side og gruppe, som er konfigureret til den lokale crawler. Opslag og Facebook-events
+        bliver kandidater og vises først i kalenderen efter redaktionel godkendelse. Kilder på pause er tydeligt mærket.
+        {facebookVerification?.verifiedAt && (
+          <> Den samlede Facebook-kilde blev senest kontrolleret <time datetime={facebookVerification.verifiedAt}>{format.format(new Date(facebookVerification.verifiedAt))}</time>.</>
+        )}
+      </p>
+    </div>
+
+    <ul class="facebook-source-list" aria-label="Konfigurerede Facebook-kilder">
+      {facebookSources.map((source) => (
+        <li data-facebook-source-id={source.id} data-enabled={String(source.enabled)}>
+          <span class={`source-kind ${facebookKind(source).toLocaleLowerCase("da-DK")}`}>{facebookKind(source)}</span>
+          <a href={facebookProfileUrl(source)}>{source.name} <span aria-hidden="true">↗</span></a>
+          {!source.enabled && <span class="paused">På pause</span>}
+        </li>
+      ))}
+    </ul>
+  </section>
+
+  <section class="source-section page-width" aria-labelledby="candidate-sources-heading">
+    <div class="section-heading wide-heading">
+      <p class="eyebrow">Næste kilder</p>
+      <h2 id="candidate-sources-heading">Undersøgt, men endnu ikke integreret</h2>
+      <p>
+        Disse kilder er fundet og teknisk undersøgt, men deres import er endnu ikke implementeret. Derfor har de
+        ingen registreret kontroltid og leverer endnu ingen arrangementer til kalenderen.
+      </p>
+    </div>
+
+    <div class="candidate-source-list">
+      {researchedSources.map((source) => (
+        <article class="candidate-source" data-candidate-source-id={source.id}>
+          <p class="candidate-status">{candidateStatus[source.status]}</p>
+          <h3><a href={source.url}>{source.name} <span aria-hidden="true">↗</span></a></h3>
+          <p>{source.summary}</p>
+        </article>
+      ))}
+    </div>
+  </section>
+
   {hasManualSource && (
     <section class="manual-source page-width" aria-labelledby="manual-source-heading">
       <div>
@@ -102,6 +179,14 @@ const format = new Intl.DateTimeFormat("da-DK", {
     margin-bottom: 1.5rem;
   }
 
+  .section-heading.wide-heading {
+    max-width: 52rem;
+  }
+
+  .section-heading > p:last-child {
+    color: var(--muted);
+  }
+
   .section-heading .eyebrow,
   .manual-source .eyebrow {
     margin-top: 0;
@@ -135,6 +220,90 @@ const format = new Intl.DateTimeFormat("da-DK", {
     color: var(--red);
     font-family: var(--sans);
     font-size: 0.8em;
+  }
+
+  .facebook-source-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1px;
+    overflow: hidden;
+    margin: 0;
+    padding: 1px;
+    border-radius: 0.8rem;
+    background: var(--line);
+    list-style: none;
+  }
+
+  .facebook-source-list li {
+    display: flex;
+    align-items: baseline;
+    gap: 0.7rem;
+    min-width: 0;
+    padding: 1rem 1.1rem;
+    background: var(--paper-strong);
+  }
+
+  .facebook-source-list a,
+  .candidate-source a {
+    color: var(--green);
+    font-weight: 700;
+  }
+
+  .facebook-source-list a span,
+  .candidate-source a span {
+    color: var(--red);
+    font-family: var(--sans);
+  }
+
+  .source-kind,
+  .candidate-status {
+    color: var(--muted);
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  .source-kind {
+    flex: 0 0 auto;
+  }
+
+  .paused {
+    margin-left: auto;
+    color: var(--red);
+    font-family: var(--sans);
+    font-size: 0.7rem;
+    font-weight: 800;
+    text-transform: uppercase;
+  }
+
+  .source-kind.gruppe {
+    color: var(--red);
+  }
+
+  .candidate-source-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1px;
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 0.8rem;
+    background: var(--line);
+  }
+
+  .candidate-source {
+    min-height: 0;
+  }
+
+  .candidate-source h3 {
+    margin: 0.5rem 0 1rem;
+  }
+
+  .candidate-source > p:last-child {
+    margin-bottom: 0;
+    color: var(--muted);
+    font-size: 0.9rem;
   }
 
   dl {
@@ -201,7 +370,9 @@ const format = new Intl.DateTimeFormat("da-DK", {
   }
 
   @media (max-width: 42rem) {
-    .source-list {
+    .source-list,
+    .candidate-source-list,
+    .facebook-source-list {
       grid-template-columns: 1fr;
     }
 

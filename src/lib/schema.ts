@@ -43,6 +43,27 @@ export const sourceDefinitionSchema = z.object({
   notes: z.string().optional(),
 });
 
+export const facebookFeedSourceSchema = z
+  .object({
+    id,
+    name: z.string().min(1).max(160),
+    eventFeedUrl: httpUrl.optional(),
+    postFeedUrl: httpUrl.optional(),
+    organizerId: id.optional(),
+    enabled: z.boolean().default(true),
+  })
+  .refine((source) => source.eventFeedUrl || source.postFeedUrl, {
+    message: "En Facebook-kilde skal have et event- eller opslagsfeed",
+  });
+
+export const candidateSourceSchema = z.object({
+  id,
+  name: z.string().min(1).max(160),
+  url: httpUrl,
+  status: z.enum(["automatic-planned", "review-planned", "manual-planned"]),
+  summary: z.string().min(1).max(1_000),
+});
+
 export const locationSchema = z.object({
   name: z.string().min(1).max(200),
   address: z.string().max(300).optional(),
@@ -228,6 +249,8 @@ export const buildMetadataSchema = z.object({
 export type Category = z.infer<typeof categorySchema>;
 export type Organizer = z.infer<typeof organizerSchema>;
 export type SourceDefinition = z.infer<typeof sourceDefinitionSchema>;
+export type FacebookFeedSource = z.infer<typeof facebookFeedSourceSchema>;
+export type CandidateSource = z.infer<typeof candidateSourceSchema>;
 export type EventDate = z.infer<typeof eventDateSchema>;
 export type Schedule = z.infer<typeof scheduleSchema>;
 export type EventRecord = z.infer<typeof eventSchema>;
