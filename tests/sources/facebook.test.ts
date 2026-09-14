@@ -354,6 +354,19 @@ describe("Facebook discovery source", () => {
     expect(parsed.reasons.join(" ")).toContain("flere mulige");
   });
 
+  it("uses the event start before a labelled door time and reads the following venue line", () => {
+    const parsed = parseFacebookAnnouncementText(
+      "Gratis Koncert med Emma Pilgaard - Årets Fynske Jazzmusiker\nMandag 14. september\nKl 18:00 (Døre åbner 17:30)\nMotorfabrikken Marstal\nhttps://www.facebook.com/events/1619221596534962\nArrangementet er gratis. Bemærk, at dørene åbner kl. 17.30.",
+      { now: NOW },
+    );
+    expect(parsed.errors).toEqual([]);
+    expect(parsed.occurrences).toEqual([
+      expect.objectContaining({ date: "2026-09-14", startTime: "18:00" }),
+    ]);
+    expect(parsed.locationName).toBe("Motorfabrikken Marstal");
+    expect(parsed.reasons.join(" ")).not.toContain("flere mulige starttidspunkter");
+  });
+
   it("rejects recurrence-only, non-event, and inconsistent weekday text", () => {
     expect(
       parseFacebookAnnouncementText("Yoga hver tirsdag kl. 18", { now: NOW }).errors.join(" "),

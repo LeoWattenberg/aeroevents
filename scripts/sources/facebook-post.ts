@@ -438,13 +438,22 @@ function timeFromSegment(segment: string): {
     startTime = clock(match[1], match[2]);
     endTime = clock(match[3], match[4]);
   }
-  const allTimes = [...segment.matchAll(/(?:klokken|kl\.?)\s*\d{1,2}(?:[.:]\d{2})?/giu)];
   const beforeMatch = segment.slice(Math.max(0, (match.index ?? 0) - 40), match.index ?? 0);
+  const doorTime = /dørene?\s+(?:åbner|op)\s*(?:ca\.?\s*)?$/iu.test(beforeMatch);
+  const ambiguityText = doorTime
+    ? segment
+    : segment.replace(
+        /\b(?:dørene?\s+(?:åbner|op)|døråbning)\s*(?:ca\.?\s*)?(?:(?:klokken|kl\.?)\s*)?\d{1,2}(?:[.:]\d{2})?/giu,
+        "",
+      );
+  const allTimes = [
+    ...ambiguityText.matchAll(/(?:klokken|kl\.?)\s*\d{1,2}(?:[.:]\d{2})?/giu),
+  ];
   return {
     ...(startTime ? { startTime } : {}),
     ...(endTime ? { endTime } : {}),
     approximate,
-    doorTime: /dørene?\s+(?:åbner|op)\s*(?:ca\.?\s*)?$/iu.test(beforeMatch),
+    doorTime,
     ambiguous: match !== preferred && allTimes.length > (endTime ? 2 : 1),
     auxiliary:
       match !== preferred &&
@@ -453,6 +462,34 @@ function timeFromSegment(segment: string): {
       ),
     evidence: match[0],
   };
+}
+
+function locationFromHeader(text: string, dateEnd: number): string | undefined {
+  const lines = text.slice(dateEnd).split("\n").slice(0, 6);
+  let sawTime = false;
+  for (const rawLine of lines) {
+    const line = rawLine.trim();
+    if (!line) continue;
+    if (/^(?:klokken|kl\.?)\s*\d{1,2}(?:[.:]\d{2})?/iu.test(line)) {
+      sawTime = true;
+      continue;
+    }
+    if (!sawTime) continue;
+    if (/^(?:https?:\/\/|www\.)/iu.test(line)) break;
+    const candidate = line.replace(/^[^\p{L}\p{N}]+/gu, "").trim();
+    if (
+      candidate.length <= 100 &&
+      candidate.split(/\s+/u).length <= 10 &&
+      !/[.!?]$/u.test(candidate) &&
+      /\b(?:motorfabrikken|forsamlingshus(?:et)?|kulturhus(?:et)?|aktivitetshus(?:et)?|bibliotek(?:et)?|museum|kirke|hallen|hotel|skole|torvet|havn(?:en)?|gaard|gård|slot|scene|sal(?:en)?|marstal|ærøskøbing|søby|ommel|rise|bregninge)\b/iu.test(
+        candidate,
+      )
+    ) {
+      return candidate;
+    }
+    break;
+  }
+  return undefined;
 }
 
 function timeImmediatelyBeforeDate(text: string, index: number) {
@@ -637,9 +674,13 @@ export function parseFacebookAnnouncementText(
     result.reasons.push("Kontrollér at de fundne datoer er forekomster af samme arrangement");
   }
 
-  const locationName = labeledValue(text, "sted|hvor|lokation|mødested|adresse");
-  if (locationName) result.locationName = locationName;
-  else result.reasons.push("Sted kunne ikke udledes sikkert");
+  const labeledLocation = labeledValue(text, "sted|hvor|lokation|mødested|adresse");
+  const headerLocation = locationFromHeader(text, dates.groups[0]!.end);
+  const locationName = labeledLocation ?? headerLocation;
+  if (locationName) {
+    result.locationName = locationName;
+    if (!labeledLocation) result.reasons.push("Sted er udledt fra opslagets overskriftsblok");
+  } else result.reasons.push("Sted kunne ikke udledes sikkert");
   const price = labeledValue(text, "pris");
   if (price && /\b(?:kr\.?|kroner|gratis)\b/iu.test(price)) result.price = price;
   result.evidence = unique(result.occurrences.map((item) => item.evidence));

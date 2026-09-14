@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-14T08:51:39.767Z",
+  "verifiedAt": "2026-09-14T09:04:10.695Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -65,37 +65,6 @@
         "sourceId": "facebook",
         "externalId": "post-2891520387886098",
         "url": "https://www.facebook.com/groups/1853077681730379/posts/2891520387886098/",
-        "verifiedAt": "2026-09-14T08:51:39.767Z"
-      }
-    },
-    {
-      "id": "facebook-post-pfbid02apuwrnwyhptxm6f5zwetpzlvubghixe6wyaer5cqevtmbdoxyuni4nzd1qm",
-      "title": "Gratis Koncert med Emma Pilgaard - Årets Fynske Jazzmusiker",
-      "description": "Gratis Koncert med Emma Pilgaard - Årets Fynske Jazzmusiker\nMandag 14. september\nKl 18:00 (Døre åbner 17:30)\nMotorfabrikken Marstal\nhttps://www.facebook.com/events/1619221596534962\nEmma Pilgaard er netop kåret som årets fynske jazzmusiker. Hendes musik bevæger sig i spændingsfeltet mellem vokaljazz og singer-songwriter, hvor improvisation møder klare melodier, og teksterne er små historier for sig. Det er musik, der både udfordrer og omfavner.\nArrangementet er gratis. Bemærk, at der max er plads til 100 personer, og kom derfor gerne i god tid (dørene åbner kl. 17.30).\nDette arrangement er en del af sundhedsfestivalen TÆND FOR SØVNEN, som finder sted fra den 14. til 18. september 2026. Festivalen sætter fokus på søvnens betydning for vores sundhed og trivsel. Se hele programmet på www.aeroekommune.dk/sundhedsfestival",
-      "organizerId": "aeroe-kalenderen",
-      "categoryIds": [
-        "andet"
-      ],
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold er ikke bekræftet."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "facebook-1jddtj6-1",
-            "date": "2026-09-14",
-            "kind": "time-unknown"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "facebook",
-        "externalId": "post-pfbid02aPUWrnWYHPTXM6F5ZwEtpZLvuBgHiXE6wyaEr5CqeVtmbDoxYuni4NZd1qmuG8V4l",
-        "url": "https://www.facebook.com/motorfabrikkenmarstal/posts/gratis-koncert-med-emma-pilgaard-%C3%A5rets-fynske-jazzmusiker%EF%B8%8Fmandag-14-september-kl/1513004054196980/",
         "verifiedAt": "2026-09-14T08:51:39.767Z"
       }
     },
@@ -224,6 +193,41 @@
         "externalId": "post-pfbid0WLEjmTiA1KDAK1jLhuSrKsqahN1cKeqCosB9jnNDexGzCypyCUrkBJuvzQs75UJYl",
         "url": "https://www.facebook.com/julehyggeiaeroskobing/posts/har-du-lyst-til-at-deltage-med-en-bod-til-%C3%A5rets-julemarked-i-%C3%A6r%C3%B8sk%C3%B8bings-smukke-/1693891992661773/",
         "verifiedAt": "2026-09-14T08:51:39.767Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02apuwrnwyhptxm6f5zwetpzlvubghixe6wyaer5cqevtmbdoxyuni4nzd1qm",
+      "title": "Gratis Koncert med Emma Pilgaard - Årets Fynske Jazzmusiker",
+      "description": "Gratis Koncert med Emma Pilgaard - Årets Fynske Jazzmusiker\nMandag 14. september\nKl 18:00 (Døre åbner 17:30)\nMotorfabrikken Marstal\nhttps://www.facebook.com/events/1619221596534962\nEmma Pilgaard er netop kåret som årets fynske jazzmusiker. Hendes musik bevæger sig i spændingsfeltet mellem vokaljazz og singer-songwriter, hvor improvisation møder klare melodier, og teksterne er små historier for sig. Det er musik, der både udfordrer og omfavner.\nArrangementet er gratis. Bemærk, at der max er plads til 100 personer, og kom derfor gerne i god tid (dørene åbner kl. 17.30).\nDette arrangement er en del af sundhedsfestivalen TÆND FOR SØVNEN, som finder sted fra den 14. til 18. september 2026. Festivalen sætter fokus på søvnens betydning for vores sundhed og trivsel. Se hele programmet på www.aeroekommune.dk/sundhedsfestival",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Motorfabrikken Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1jddtj6-1",
+            "date": "2026-09-14",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02aPUWrnWYHPTXM6F5ZwEtpZLvuBgHiXE6wyaEr5CqeVtmbDoxYuni4NZd1qmuG8V4l",
+        "url": "https://www.facebook.com/motorfabrikkenmarstal/posts/gratis-koncert-med-emma-pilgaard-%C3%A5rets-fynske-jazzmusiker%EF%B8%8Fmandag-14-september-kl/1513004054196980/",
+        "verifiedAt": "2026-09-14T09:04:10.695Z"
       }
     }
   ]
