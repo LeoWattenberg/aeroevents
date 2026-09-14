@@ -24,6 +24,7 @@ ID'er, datoer, aflysninger og tomme svar håndteres sikkert.
 | 10 | [Ommel BK hos DBU Fyn](https://www.dbufyn.dk/resultater/klub/1464/kampprogram) | DBU's kampprogram har stabile match-ID'er, pulje, hold, status, dato, tid og stadion. To kommende hjemmekampe blev fundet. | Genbrug Marstal IF-parseren. Hent først den aktuelle puljeliste; et `pools=0`-indeks må ikke hardcodes. Publicér kun hjemmekampe på Ærø. |
 | 11 | [Marstal Navigationsskole](https://marnav.nemtilmeld.dk/) | NemTilmeld-detaljer har schema.org Event JSON-LD og stabile numeriske ID'er. Der var to kommende offentlige åbent-hus-arrangementer; begge var fuldt bookede med venteliste. | Automatisk for en snæver allowlist som `Åbent hus`; læs også synlig kapacitetsstatus. Send erhvervskurser til review eller udelad dem. |
 | 12 | [FirstAgenda](https://dagsordener.aeroekommune.dk/) | Autoritative rettelser til kommunale møder. Efter et anonymt cookie-kald til forsiden returnerer `GET /api/agenda/udvalgsliste` JSON med stabile møde-GUID'er, start/slut med offset, sted, publiceringstid og status. | Berig den eksisterende kommunekilde; opret ikke dubletter. Publicér automatisk for Kommunalbestyrelsen. |
+| 13 | [Campus Ærø](https://campusaeroe.dk/events/) | The Events Calendars offentlige [REST-endpoint](https://campusaeroe.dk/wp-json/tribe/events/v1/events) gav 196 fremtidige forekomster med pagination, numerisk ID, start/slut, ændringstid, status, venue og kanonisk URL. Kalenderen blander offentlige kultur-, sundheds- og værkstedsarrangementer med undervisning og lukkede skole-/personaleforløb. | Start i gennemsyn med en positiv allowlist og eksplicit adgangskontrol. Publicér kun poster med offentlig målgruppe; bevar alder og tilmelding, og deduplikér blandt andet mod biblioteket, Motorfabrikken, Atma og Søbygaard. |
 
 FirstAgenda bør kombineres med den eksisterende
 [årsplan](https://www.aeroekommune.dk/politik-og-indflydelse/moedeplaner):
@@ -90,6 +91,7 @@ fuldt booket/venteliste står uden for JSON-LD og skal derfor parses særskilt.
 | [Ærø Hotel: events](https://www.aeroehotel.dk/event-list) | Wix' `wix-warmup-data` har UUID, slug, tidszone, sted, publiceringstid, billetlink og ICS. En kommende koncert med Johnny Hansen stod to gange med samme tid, men to UUID'er og kun ét korrekt venue. Hotellet har desuden daterede [strikkeworkshops](https://www.aeroehotel.dk/smuttur-1-2) og [veteranbilstræf](https://www.aeroehotel.dk/smuttur-2-1-1). | Gennemsyn. Slå interne Wix-dubletter sammen; behandl hotelpakke-datoer som ankomst/ophold og gæt ikke et koncerttidspunkt. |
 | [Ærøskøbing Grand Prix](https://www.xn--rgrandprix-c6a1t.dk/) | Wix-siden havde fire eksplicitte dage 12.-15. oktober 2026 kl. 9-12 med alder, kapacitet, pris og tilmelding. Der er intet selvstændigt eventobjekt. | Gennemsyn og årlig import med `arrangør+år` som kilde-ID. Deduplikér mod VisitÆrøs GuideDanmark-post. |
 | [Beth Mohr: malekursus på Ærø](https://bethmohr.dk/shop/17-malekursus-paa-aeroe/) | Webshoppen har et offentligt produkt-endpoint på `/json/products`; det daterede kursus 21.-25. september 2026 har stabilt produkt-ID `215`, priser, varianter og lagerfelter. | Kun gennemsyn. Datoen står i titlen, kategoriens prosa modsiger varighed/pris, og lagerstatusfelterne er indbyrdes uenige. Udelad produkter uden faste datoer. |
+| [Gravendal: strikkeretreat](https://gravendalbedandbreakfast.dk/strikke-retreat) | Den direkte, statiske detaljeside beskriver et retreat 30. oktober-1. november 2026 med program, ophold og priser. Siden har ingen struktureret eventpost eller andet stabilt ID end sidens slug. | Gennemsyn og sæsonkontrol. Brug `slug+startdato` som ID, bevar at det er et ophold, og gæt ikke enkelttidspunkter ud fra programteksten. |
 | [Yogaschule Flensburg: retreat hos Atma](https://www.yogaschule-flensburg.de/retreats) | Squarespace-siden og `?format=json` beskriver et udsolgt retreat 11.-13. juni 2027 med program, undervisere, pris, kapacitet og venteliste. | Kun gennemsyn. Brug sideankeret og startdatoen som sammensat ID, og kontrollér overlap mod Atmas egen kalender. |
 | [Ærø Rideklub](https://www.aeroerideklub.dk/events-1) | Squarespace-samlingen har `?format=json` med stabilt ID, slug, ændringstid, epoch-start/slut, tekst og sted. Hver detalje har desuden `?format=ical` med persistent `UID`. | Start i gennemsyn. Kilden blander offentlige stævner med arbejdsdage og medlemsaktiviteter, og mindst ét fremtidigt tidspunkt ser fejlindtastet ud. |
 | [Ærø Jazz Festival](https://www.aeroejazzfestival.dk/program-tidspunkter/) | WordPress-side `9188` kan hentes gennem `/wp-json/wp/v2/pages/9188`; programtabellen har dato, tid, kunstner, venue og adgang. Billetprodukter har stabile WooCommerce-ID'er. | Gennemsyn. Brug `festivalår+dato+tid+kunstner+venue` som ID; HTML kan indeholde udsolgte eller efterladte programrækker. Bevar både festivalen og de enkelte koncerter. |
@@ -106,6 +108,10 @@ fuldt booket/venteliste står uden for JSON-LD og skal derfor parses særskilt.
 | [Marstal Marineforening](https://www.marstalmarineforening.dk/aktiviteter/) | Server-renderet prosaside med ugentligt søndagsåbent, medlemsfester og et offentligt julemarked. | Gennemsyn. Parse eksplicitte datoer og gentagelser, brug sammensatte nøgler, og bevar medlemsmarkeringen. |
 | [Atma Yoga House](https://www.atmayogahouse.com/yoga-schedule?format=json) | Squarespace JSON og ICS har stabile item-ID'er/UID'er. Seks kommende poster blev fundet. En hel ugentlig sæson er dog kodet som ét langt event uden RRULE; antal gange og undtagelser står i teksten. | Gennemsyn. Omsæt aldrig det lange interval direkte; opret først en gentagelse, når tekstens sessioner og undtagelser er entydige. |
 | [Ærø Fotoklub](https://www.aeroefotoklub.dk/program) | Programmet har aktuelle klubaftener, men flere trykte datoer modsiger de angivne ugenumre. | Kun discovery og manuel korrektion, indtil kilden er konsistent. |
+| [Marstal Sejl- og Roklub](https://marstalsejlogroklub.dk/kalendar/) | Den statiske årsplan havde seks daterede arrangementer i december 2025-marts 2026 samt beskrivelser af årlige sejladser og fester. Der er ingen stabile event-ID'er, alle viste datoer var passeret, og almindelige scriptkald gav HTTP 455 ved kontrollen. | Manuelt gennemsyn og årlig kontrol. Brug `år+dato+titel` som ID, bevar medlemskrav, og publicér kun de arrangementer, hvor gæsteadgang eller offentlig adgang fremgår. Aktivér ingen adapter uden en almindeligt tilgængelig fixture. |
+| [Teglværkspladsen / Ærø Kajak & SUP](https://teglvaerkspladsen.dk/kurser-ture/) | WooCommerce-siden viste et IPP2-begynderkursus med eksplicitte 2026-datoer sammen med introer, ture og private instruktørprodukter. Produkterne har egne detail-URL'er og pris/varianter, men ikke alt er en kalenderbegivenhed; almindelige scriptkald gav HTTP 455. | Manuelt gennemsyn. Importér kun navngivne gruppeforløb med fast dato; udelad private guider, bestillingsvarer og ture efter aftale. Deduplikér mod den allerede registrerede Facebook-side, og omgå ikke adgangsbegrænsningen. |
+| [Ærø Club for Hundeejere](https://aech.dk/hvalpe-hold) | Holdsiden angav indskrivning 7. september og træningsstart 9. september 2026 samt antal træninger, krav om vaccination/forsikring og kontakt. Andre holdsider fungerer som løbende sæsonplaner uden fælles kalender. | Gennemsyn eller manuel sæsonimport. Brug `hold+sæson+startdato` som ID, bevar deltagerkrav, og opret ikke ugentlige forekomster uden en entydig plan og ferieundtagelser. |
+| [OK-klubben i Marstal](https://www.aeroekommune.dk/mit-liv/aeldre/aktivt-seniorliv/sociale-arrangementer/ok-klubben) | Kommunens aktuelle side angiver ugentligt møde torsdag kl. 14-16 med forskellige aktiviteter i Konfirmandstuen. Der er ingen event-ID'er eller sæsongrænser. | Manuel gentagelse eller gennemsyn. Mærk seniormålgruppen tydeligt, indhent undtagelser, og importér kun særarrangementer, når de får en konkret dato. |
 
 ## Opdagelseskilder
 
@@ -157,6 +163,48 @@ redaktionelt gennemsyn.
   er ikke en eventkilde, men er den bedste seed-liste til at opdage flere lokale
   arrangørers hjemmesider og kalendere. Gennemgå den kvartalsvist og registrér
   kun de underliggende, direkte kilder, som faktisk har daterede arrangementer.
+
+## Ærø-specifik observations- og sikkerhedsliste
+
+Listen omfatter bevidst også lokale kilder uden kommende events: en tom kalender
+er stadig nyttig at kende, men skal ikke aktiveres som feed. Kontrollér kun med
+den angivne lave frekvens, og behandl poster mærket `defekt`, `hijacket` eller
+`lukket` som sikkerhedsregler, ikke som links der skal hentes.
+
+| Kilde | Status 14. september 2026 | Opfølgning |
+| --- | --- | --- |
+| [Marstal Kajakklubs kalender](https://marstalkajakklub.dk/kalender) | Aktiv klubside, men kalenderen viste ingen poster; siden om indmeldelse siger, at årets åbent hus normalt annonceres i april/maj. | Kontrollér månedligt fra februar til maj; opret intet ud fra traditionen alene. |
+| [Ærøhallen hos DanskHåndbold](https://danskhaandbold.dk/spillesteder/14260/kampprogram), [Marstal Håndbold MH89](https://www.mh89.dk/) og [Ærøhallen](https://www.aeroehallen.dk/) | Det stabile spillested `14260` havde nul kampe i den kontrollerede tremånedersperiode. Klub- og halsiderne er aktuelle, men uden egen eventkalender; hallen henviser primært til Facebook. | Kontrollér DanskHåndbold månedligt og publicér kun hjemmekampe på Ærø. Brug web- og Facebook-siderne til manuel discovery. |
+| [Ærø Netavis: Det sker](https://aeroenetavis.dk/det-sker/) | Tom sekundær kalender med lokale filtre for Ærøskøbing, Birkholm, Marstal og Søby; sidens metadata nævnte fejlagtigt Randers Netavis. | Lavfrekvent manuel kontrol; kræv altid direkte bekræftelse hos arrangøren. |
+| [Ærø Dagblad](https://www.aeroedagblad.dk/) | Aktiv lokal netavis med løbende 2026-artikler, men ingen særskilt struktureret kalender. | Ugentlig manuel søgning efter annoncerede arrangementer; publicér fra den direkte arrangørkilde, når den findes. |
+| [Ærø Lokalradio](https://www.aeroelokalradio.dk/) | Aktiv lokalradio med ugentlig programplan og lokalt kultur-/foreningsstof, men intet eventfeed. | Manuel discovery; radioudsendelser er kun kalenderrelevante, hvis de annonceres som et offentligt arrangement. |
+| [Ærø Kommunes aktivitetshuse](https://www.aeroekommune.dk/mit-liv/kultur-og-fritidsliv/aktivitetshuse) | Autoritativ oversigt over tre lokale huse, brugere og kontaktpersoner, men ingen offentlige bookinger eller daterede arrangementer. | Brug som kvartalsvis seed-liste; kontakt huset eller find en direkte annoncering før publicering. |
+| [Ærø Kunstforenings kalender](https://www.aeroekunstforening.dk/arrangementer/kalender.php) | Foreningens egen hjemmeside linker til en særskilt arrangementskalender, men kalenderkaldet gav HTTP 455 ved kontrollen, så aktuelle poster kunne ikke verificeres sikkert. | Kontrollér manuelt med lav frekvens. Omgå ikke adgangsbegrænsningen; aktivér først en adapter efter en almindeligt tilgængelig fixture. |
+| [Røde Kors Ærø](https://www.rodekors.dk/afdelinger/aeroe) | Aktiv lokalafdeling med aktivitetsoversigt, men ingen kommende datoer på afdelingssiden. | Månedlig manuel kontrol; bevar målgruppe og eventuelle adgangskrav. |
+| [URK Ærø](https://urk.dk/urk-aeroe) | Aktiv lokalside med kontakt og aktivitetsbeskrivelse, men ingen kalender. | Manuel discovery via siden og den registrerede Facebook-profil. |
+| [KFUM-spejderne på Ærø](https://aeroespejderne.gruppesite.dk/) | Aktiv gruppeside med faste mødetider, men ingen offentlig eventkalender. | Brug kun konkrete særarrangementer; gæt ikke forekomster ud fra mødetiderne. |
+| [Gigtforeningens lokalgruppe Ærø](https://www.gigtforeningen.dk/faellesskabet/kredse-og-lokalgrupper/) og [fælles NemTilmeld-portal](https://gfsydvestfyn.nemtilmeld.dk/) | Den officielle oversigt har en aktiv Ærø-lokalgruppe og henviser til Sydvestfyns eventportal. Portalen havde aktuelle arrangementer, men ingen kunne ved kontrollen knyttes til Ærø. | Kontrollér månedligt, og kræv en konkret Ærø-adresse; bevar medlems- og målgruppekrav. |
+| [Kræftens Bekæmpelse Ærø](https://www.cancer.dk/om-os/kontakt/lokalforeninger/aeroe-lokalforening/) og [den nationale kalender](https://www.cancer.dk/faa-raadgivning/kalender/) | Aktiv lokalforeningsside med kontakt og Facebook-gruppe, men ingen aktuel Ærø-post blev fundet i den nationale kalender. | Månedlig manuel kontrol af kalender og lokal side; kræv Ærø-sted og bevar målgruppe/adgang. |
+| [Foreningen NORDENs arrangementskalender](https://foreningen-norden.dk/arrangementer/) | Kommunens foreningsoversigt registrerer en Ærø-afdeling, men den aktuelle nationale kalender viste ingen Ærø-arrangementer ved kontrollen. | Kontrollér kvartalsvist og importér kun resultater, der udtrykkeligt tilhører Ærø-afdelingen eller har sted på Ærø. |
+| [Ærøforeningen](https://aeroeforeningen.dk/) | Aktiv forening med daterede 2026-poster, men foreningen er hjemmehørende i København, og arrangementerne kan ligge uden for Ærø. | Kontrollér kvartalsvist og kræv et konkret sted på Ærø før import. |
+| [Fultons Venner](https://fultons-venner.dk/aktivitetskalender/) | Aktuel 2026-kalender med stabile detail-/bookinglinks, men de kontrollerede ture var medlemsrettede og lå uden for Ærø. | Kun discovery med strengt Ærø-stedfilter og tydelig medlemsadgang. |
+| [Danish Sail Training Association](https://dsta.nemtilmeld.dk/) | NemTilmeld-tenant med stabile event-ID'er; en tidligere 2026-post gjaldt Bådebyggerugen på Ærø, men forsiden var tom ved seneste kontrol. | Kontrollér kvartalsvist og acceptér kun poster med dokumenteret sted på Ærø. |
+| [Ærøs Operavenner](https://www.operavenner.dk/) | Aktiv forening bag den årlige opera på HCC Bådeværft; 2026-årgangen blev bekræftet af VisitÆrø, mens almindelige scriptkald til arrangørsiden gav HTTP 455. | Årlig manuel kontrol; direkte arrangøroplysning vinder, og ingen adgangsbegrænsning må omgås. |
+| [Ærø Sportsfiskerforening hos Fishing in Denmark](https://fishingindenmark.info/foreninger/aero-sportsfiskerforening) | Sikker foreningsprofil med månedlige ture og årlig Havørredweekend, men uden konkrete datoer. Det tidligere domæne er overtaget af SEO-/casinoindhold, og eksterne opslag var uenige om weekendens dato. | Brug kun profilen som seed. Det tidligere domæne og den private Facebook-gruppe må ikke poll'es; publicér først efter direkte datobekræftelse. |
+| [Lys i Mørket på Ærø](https://www.visitaeroe.dk/aeroe/events/lys-i-moerket-paa-aeroe) | Sæsonside uden program nu; den oplyser, at 2026-programmet ventes sidst i oktober. Siden er et VisitÆrø-knudepunkt, ikke en ny autoritativ kilde. | Kontrollér årligt i oktober/november og følg videre til den direkte arrangør for hver post. |
+| [Alternativet Ærø](https://aero.alternativet.dk/) | Aktiv lokal partside, som lover nyheder og invitationer, men ingen aktuelle datoer blev fundet. | Manuel discovery; mærk medlemsmøder og politisk arrangør tydeligt. |
+| [Snorren – Bevaringsforening for Marstal](http://www.snorren.dk/) | Aktiv lokal foreningsside uden eventfeed eller aktuelle datoer. | Kvartalsvis manuel kontrol efter særarrangementer. |
+| [Ærø Portal](http://www.xn--rportal-lxa7n.dk/) | Lokal portal og sekundær link-/nyhedssamling uden selvstændigt autoritativt eventfeed. Den hænger sammen med Facebook-siden Nyt om Ærø, og HTTPS-værtsnavnet har et certifikat fra en anden vært. | Kun manuel discovery via HTTP, indtil TLS er rettet; deaktivér aldrig certifikatkontrol. Deduplikér web- og Facebook-fund som samme kildefamilie. |
+| [Spisekammer Ærø hos Underværker](https://undervaerker.dk/udforsk/2026/spisekammer-aeroe-et-regenerativt-faellesskab/) | Aktuel projektside for et lokalt fællesskab, som planlægger åbent hus, workshops, fællesspisninger og arbejdsdage, men ikke viser konkrete datoer endnu. | Brug som projektsignal og følg den registrerede Facebook-side manuelt; publicér først en konkret, direkte annoncering. |
+| [Ærø Soap](https://aeroesoap.dk/) | Aktiv lokal webshop og producent uden dateret eventfeed. Rundvisninger og aktiviteter kan annonceres andre steder. | Kvartalsvis manuel discovery på hjemmeside og Facebook; opret kun arrangementer med en konkret offentlig dato. |
+| [Casa Ghiorsi: bondegårdsbesøg](https://casaghiorsi.dk/velkommen/bondegaardsbesoeg) | Den direkte side tilbyder besøg efter aftale, men har ingen faste offentlige datoer eller eventfeed. | Brug som arrangørseed, ikke som gentagelse; kun særskilt annoncerede åbne arrangementer er kalenderposter. |
+| [Ærø Dog Days](https://www.aeroedogdays.dk/) | `stille`: den indekserede side siger, at initiativet har været sat på pause siden 2020; almindelige scriptkald gav HTTP 455. | Højst årlig manuel kontrol; ingen omgåelse og ingen automatisk import. |
+| [Ærø International Mask Festival](https://aeroe.maskefestival.dk/) | `historisk`: siden beskriver festivalen 18.-21. juni 2009 og siger, at videre arbejde blev lagt på hylden. | Arkivér som kendt navn; kontrollér højst årligt for en dokumenteret genstart. |
+| `flyingheroes.dk` | `defekt`: domænet viste kun standardsiden "Welcome to nginx!". | Udeluk fra polling, indtil en rigtig lokal arrangørside er dokumenteret. |
+| `flaskepeters-samling.dk` | `hijacket`: domænet viser uvedkommende casino-/SEO-indhold og er ikke museets hjemmeside. | Udeluk permanent. Brug kun den registrerede [Ærø Museum-kilde](https://aeroemuseum.dk/). |
+| `aeroefestival.dk` | `hijacket`: domænet blander et gammelt festivalprogram med uvedkommende casino-/spilindhold. | Udeluk permanent og forveksl det ikke med Øhavet Festival eller andre aktive arrangører. |
+| `event.aeroe.teambooking.dk` | `defekt`: TLS-certifikatet matcher ikke værtsnavnet. | Udeluk; deaktivér aldrig certifikatkontrol for at hente siden. |
+| [Ærø Kommunes lokalebooking](https://lokalebooking-aeroe.kmd.dk/Login/Login) | `lukket`: KMD-portalen kræver login og er en lokalebooking, ikke en offentlig eventkalender. | Brug ikke som eventkilde; aktivitetshusene eller arrangøren skal bekræfte offentlige events. |
 
 ## Bevidst fravalgt eller afventende
 
@@ -227,12 +275,6 @@ redaktionelt gennemsyn.
   har et årligt program i server-renderet prosa, men ingen resterende 2026-datoer
   efter kontroldatoen. Kontrollér siden årligt fra februar til maj og send
   medlems- og ø-ture til review.
-- Ærø Sportsfiskerforenings tidligere domæne er overtaget af uvedkommende
-  SEO-/casinoindhold og må aldrig bruges som arrangørkilde. Facebook-gruppen er
-  privat. Et landsdækkende forbundsopslag og VisitDanmark var uenige om den
-  konkrete Havørredweekends startdato, så kun en direkte bekræftelse kan
-  publiceres.
-
 ## Krav til hver ny adapter
 
 En adapter er klar til at blive aktiveret, når fixtures dækker:
@@ -249,6 +291,6 @@ allowlistede hold, Kommune `Det sker` og Ældre Sagen. Ommel Samvirke har det
 største nye lokalsamfundsudbytte, men skal begynde som browserbaseret reviewkilde,
 indtil kalenderens ejer retter ICS-feedet eller giver en stabil dataadgang.
 Derefter følger Folkedanserforeningen, Viften, Folkeuniversitetet,
-Motorfabrikken, Kunsthøjskolen, Ommel BK, Navigationsskolen og
-FirstAgenda-berigelsen. En Facebook-browser må kun aktiveres ved en autoriseret
-adgangsvej og bør aldrig blokere de direkte adapters.
+Motorfabrikken, Kunsthøjskolen, Ommel BK, Navigationsskolen,
+FirstAgenda-berigelsen og Campus Ærø. En Facebook-browser må kun aktiveres ved
+en autoriseret adgangsvej og bør aldrig blokere de direkte adapters.

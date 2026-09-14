@@ -184,6 +184,10 @@ input[type="date"] {
   background: var(--sea);
 }
 
+.site-footer nav {
+  flex-wrap: wrap;
+}
+
 main {
   min-height: 68vh;
 }

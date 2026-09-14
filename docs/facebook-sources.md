@@ -104,6 +104,25 @@ Der var også læsbare eventfaner hos
 [Ærø Traktortræk](https://www.facebook.com/profile.php?id=100092558438110&sk=events).
 De direkte klub-, kirke- og programkilder skal have forrang.
 
+## Ærø-specifikke kandidater uden verificeret eventfane
+
+Disse ni lokale profiler er med, selv om der ikke blev verificeret en brugbar
+eventfane eller kommende eventkort. Basis-URL'en er bevidst bevaret; tilføj
+først `/events` eller `sk=events`, når den konkrete fane virker anonymt og en
+autoriseret adgangsvej findes. Indtil da er alle ni kun til manuel discovery.
+
+| Kilde | Evidens for lokal relevans | Status og regel |
+| --- | --- | --- |
+| [Campus Ærø](https://www.facebook.com/profile.php?id=61560348249274) | Campus' egen hjemmeside linker til det numeriske side-ID. | Aktiv lokal arrangør; den direkte Campus-kalender er autoritativ. Brug kun Facebook til opslag, som mangler dér. |
+| [Ærø Club for Hundeejere](https://www.facebook.com/groups/188138807902050/) | Klubbens egen hjemmeside linker til gruppen og har aktuelle 2026-holdoplysninger. | Uverificeret eventfane; manuel discovery med tydelig medlems-, vaccine- og forsikringsadgang. |
+| [Marstal Lokalråd](https://www.facebook.com/profile.php?id=100076201150616) | Ærø Kommunes side om helhedsplanen for Marstal linker til profilen; det kanoniske numeriske side-ID er bevaret. | Uverificeret eventfane; overvåg manuelt for borgermøder og lokale høringer, og kræv konkret dato/adgang. |
+| [URK Ærø](https://www.facebook.com/profile.php?id=100064379844681) | Ærø Kommunes foreningsoversigt linker til det numeriske side-ID. | Uverificeret eventfane; manuel discovery for lokale frivillig- og ungeaktiviteter. |
+| [Hjemmeværnet Ærø](https://www.facebook.com/HJVAeroe/) | Kommunens foreningsoversigt linker til sidens mobile variant; URL'en er normaliseret til `www.facebook.com`. | Uverificeret eventfane; publicér kun eksplicit offentlige åbent-hus-, parade- eller mindedagsarrangementer. |
+| [Sol over Ærø](https://www.facebook.com/groups/785997328554943/) | Kommunens foreningsoversigt linker til gruppens numeriske ID. | Adgang og eventhistorik er ikke verificeret; kun manuel discovery og altid review. |
+| [Nyt om Ærø](https://www.facebook.com/NytOmAeroe) | Den lokale Ærø Portal linker til siden. | Sekundær kilde med lavere tillid; behandl portal og Facebook-side som samme kildefamilie og find den direkte arrangør før publicering. |
+| [Kræftens Bekæmpelse Ærø](https://www.facebook.com/groups/405383436219663/) | Lokalforeningens officielle kontaktside linker til Facebook-gruppen. | Uverificeret eventfane; manuel discovery, og kontrollér fund mod lokalforeningen eller den nationale kalender. |
+| [Spisekammer Ærø](https://www.facebook.com/profile.php?id=61560657601071) | Den aktuelle Underværker-projektside linker til profilen og beskriver planlagte åbent-hus-arrangementer, workshops og fællesspisninger. | Nyt lokalt initiativ uden verificerede datoer; manuel discovery og altid direkte datobekræftelse. |
+
 ## Politik og foreningsmøder
 
 Politiske sider er særligt nyttige til vælgermøder og medlemsmøder, som ikke
@@ -131,15 +150,20 @@ medlemsmøde må gerne vises, men må ikke præsenteres som åbent for alle.
 offentlige opslag med stabile `pfbid`-permalinks, men ingen brugbar eventfane.
 Et opslag kan være afkortet og blander nyheder med events. Brug derfor kun disse
 sider til manuel discovery med indsat opslagstekst; publicér aldrig direkte fra
-et kort uddrag. Arrebo viste "indhold ikke tilgængeligt" ved kontrollen og må
-ligeledes bruge den manuelle URL-og-tekst-fallback.
+et kort uddrag. [Arrebo](https://www.facebook.com/Arrebo) viste "indhold ikke
+tilgængeligt" ved kontrollen og må ligeledes bruge den manuelle
+URL-og-tekst-fallback.
 
 ## Sider der ikke bør poll'es nu
 
-Eventfanerne hos Café Arthur, Ærø Soap, Gravendal og Casa Ghiorsi havde kun
-flere år gamle kort. Ærø Festspil havde senest kort fra 2018. Ærø Grand Prix,
-Kulturladen og Det Røde Pakhus havde ingen aktuelle kommende kort. Behold dem på
-en kvartalsvis observationsliste i stedet for at bruge daglige browserkald.
+Eventfanerne hos [Café Arthur](https://www.facebook.com/cafearthuraeroe/),
+[Ærø Soap](https://www.facebook.com/aeroesoap),
+[Gravendal](https://www.facebook.com/gravendalaeroe/) og
+[Casa Ghiorsi](https://www.facebook.com/profile.php?id=100067718036923)
+havde kun flere år gamle kort. Ærø Festspil havde senest kort fra 2018. Ærø
+Grand Prix, Kulturladen og Det Røde Pakhus havde ingen aktuelle kommende kort.
+Behold dem på en kvartalsvis observationsliste i stedet for at bruge daglige
+browserkald.
 Café Maris, KEFS Guesthouse, Maritim Dag Ærø og MIF's klubhusprofil kunne åbnes
 offentligt, men havde ingen eventfane.
 

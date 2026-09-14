@@ -47,6 +47,7 @@ const canonical = Astro.site ? new URL(sitePath(canonicalPath), Astro.site) : un
         <nav aria-label="Primær navigation">
           <a href={sitePath("/")}>Kalender</a>
           <a href={sitePath("/arrangoerer/")}>Arrangører</a>
+          <a href={sitePath("/kilder/")}>Kilder</a>
           <a class="nav-submit" href={sitePath("/indsend/")}>Indsend arrangement</a>
         </nav>
       </div>
@@ -76,6 +77,7 @@ const canonical = Astro.site ? new URL(sitePath(canonicalPath), Astro.site) : un
         </div>
         <nav aria-label="Sidefod">
           <a href={sitePath("/")}>Kalender</a>
+          <a href={sitePath("/kilder/")}>Kilder</a>
           <a href={sitePath("/indsend/")}>Få et arrangement med</a>
         </nav>
       </div>

@@ -91,6 +91,42 @@ test("shows booking and members-only details on stable event pages", async ({ pa
   await expect(page.getByText("Kun for medlemmer", { exact: true }).first()).toBeVisible();
 });
 
+test("lists every enabled external source and links to it from the site", async ({ page }) => {
+  await page.goto("./");
+  await page.getByRole("link", { name: "Se alle kilder" }).click();
+
+  await expect(page).toHaveURL(/\/aeroevents\/kilder\/$/);
+  await expect(page.getByRole("heading", { level: 1, name: "Kilder" })).toBeVisible();
+  await expect(page.locator("[data-source-id]")).toHaveCount(3);
+  await expect(page.getByRole("link", { name: /Ærø Kommunes mødeplan/ })).toHaveAttribute(
+    "href",
+    "https://www.aeroekommune.dk/politik-og-indflydelse/moedeplaner",
+  );
+  await expect(page.getByRole("link", { name: /Ærø Kirkelivs kalender/ })).toHaveAttribute(
+    "href",
+    "https://www.xn--rkirkeliv-f3a3r.dk/kalender--aktiviteter",
+  );
+  await expect(page.getByRole("link", { name: /Ærø Folkebiblioteks arrangementer/ })).toHaveAttribute(
+    "href",
+    "https://www.arrebib.dk/arrangementer",
+  );
+  await expect(page.getByText("Senest kontrolleret")).toHaveCount(3);
+  await expect(page.getByRole("heading", { name: /Lokale arrangører kan også sende/ })).toBeVisible();
+  await expect(page.getByRole("link", { name: "Indsend et arrangement", exact: true })).toHaveAttribute(
+    "href",
+    "/aeroevents/indsend/",
+  );
+  await expect(page.getByText("Offentlige Facebook-kilder", { exact: true })).toHaveCount(0);
+
+  const expectedInternalPath = "/aeroevents/kilder/";
+  await expect(
+    page.getByRole("navigation", { name: "Primær navigation" }).getByRole("link", { name: "Kilder" }),
+  ).toHaveAttribute("href", expectedInternalPath);
+  await expect(
+    page.getByRole("navigation", { name: "Sidefod" }).getByRole("link", { name: "Kilder" }),
+  ).toHaveAttribute("href", expectedInternalPath);
+});
+
 test("fits the mobile viewport and exposes the submission address", async ({ page }, testInfo) => {
   test.skip(!testInfo.project.name.startsWith("mobile"), "Mobilkontrol køres i mobilprojektet");
   await page.goto("./indsend/");

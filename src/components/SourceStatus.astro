@@ -1,5 +1,6 @@
 ---
 import type { CalendarDataset } from "./calendar-types";
+import { sitePath } from "./paths";
 
 interface Props {
   dataset: CalendarDataset;
@@ -14,24 +15,27 @@ const format = new Intl.DateTimeFormat("da-DK", {
 const sources = (dataset.sourceVerifications ?? []).filter((source) => source.verifiedAt);
 ---
 
-{sources.length > 0 && (
-  <details class="source-status">
-    <summary>Hvornår er kilderne senest kontrolleret?</summary>
-    <div>
-      <ul>
-        {sources.map((source) => (
-          <li>
-            <span>{source.name}</span>
-            <time datetime={source.verifiedAt}>{format.format(new Date(source.verifiedAt!))}</time>
-          </li>
-        ))}
-      </ul>
-      {dataset.generatedAt && (
-        <p>Hjemmesiden blev bygget <time datetime={dataset.generatedAt}>{format.format(new Date(dataset.generatedAt))}</time>.</p>
-      )}
-    </div>
-  </details>
-)}
+<div class="source-status">
+  {sources.length > 0 && (
+    <details>
+      <summary>Hvornår er kilderne senest kontrolleret?</summary>
+      <div>
+        <ul>
+          {sources.map((source) => (
+            <li>
+              <span>{source.name}</span>
+              <time datetime={source.verifiedAt}>{format.format(new Date(source.verifiedAt!))}</time>
+            </li>
+          ))}
+        </ul>
+        {dataset.generatedAt && (
+          <p>Hjemmesiden blev bygget <time datetime={dataset.generatedAt}>{format.format(new Date(dataset.generatedAt))}</time>.</p>
+        )}
+      </div>
+    </details>
+  )}
+  <p class="all-sources"><a href={sitePath("/kilder/")}>Se alle kilder →</a></p>
+</div>
 
 <style>
   .source-status {
@@ -48,7 +52,7 @@ const sources = (dataset.sourceVerifications ?? []).filter((source) => source.ve
     text-underline-offset: 0.18em;
   }
 
-  .source-status > div {
+  details > div {
     margin-top: 0.75rem;
     padding: 1rem;
     border: 1px solid var(--line);
@@ -69,9 +73,19 @@ const sources = (dataset.sourceVerifications ?? []).filter((source) => source.ve
     padding: 0.3rem 0;
   }
 
-  p {
+  details p {
     margin: 0.75rem 0 0;
     padding-top: 0.75rem;
     border-top: 1px solid var(--line);
+  }
+
+  .all-sources {
+    margin: 0.75rem 0 0;
+    text-align: center;
+  }
+
+  .all-sources a {
+    color: var(--sea);
+    font-weight: 700;
   }
 </style>
