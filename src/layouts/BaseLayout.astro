@@ -28,7 +28,7 @@ const canonical = Astro.site ? new URL(sitePath(canonicalPath), Astro.site) : un
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta name="description" content={description} />
-    <meta name="theme-color" content="#174e4a" />
+    <meta name="theme-color" content="#315f45" />
     <link rel="icon" href={sitePath("/favicon.svg")} type="image/svg+xml" />
     {canonical && <link rel="canonical" href={canonical} />}
     <title>{pageTitle}</title>
@@ -41,10 +41,7 @@ const canonical = Astro.site ? new URL(sitePath(canonicalPath), Astro.site) : un
     <header class="site-header">
       <div class="header-inner page-width">
         <a class="brand" href={sitePath("/")} aria-label="Det sker på Ærø, forside">
-          <svg class="brand-mark" aria-hidden="true" viewBox="0 0 44 44">
-            <path d="M4 25c6-8 12-8 18 0s12 8 18 0" />
-            <path d="M4 16c6-8 12-8 18 0s12 8 18 0" />
-          </svg>
+          <span class="brand-mark" aria-hidden="true"></span>
           <span><small>Det sker</small>på Ærø</span>
         </a>
         <nav aria-label="Primær navigation">
@@ -61,10 +58,21 @@ const canonical = Astro.site ? new URL(sitePath(canonicalPath), Astro.site) : un
     </main>
 
     <footer class="site-footer">
+      <img
+        class="footer-map"
+        src={sitePath("/images/aero-blaeu-1665.webp")}
+        alt=""
+        loading="lazy"
+        aria-hidden="true"
+      />
       <div class="page-width footer-grid">
         <div>
           <p class="footer-title">Det sker på Ærø</p>
           <p>En enkel, lokal oversigt over det, vi kan mødes om.</p>
+          <p class="map-credit">
+            Kort: <a href="https://commons.wikimedia.org/wiki/File:Arroe_by_Blaeu_1665_(cropped).jpg">Joan Blaeu, 1665</a>
+            · public domain
+          </p>
         </div>
         <nav aria-label="Sidefod">
           <a href={sitePath("/")}>Kalender</a>

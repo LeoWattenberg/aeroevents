@@ -80,11 +80,23 @@ const { organizers, categories } = Astro.props;
   .filter-panel {
     position: relative;
     z-index: 2;
+    overflow: visible;
     padding: clamp(1.25rem, 3vw, 2rem);
     border: 1px solid var(--line);
-    border-radius: 1rem;
+    border-top: 0;
+    border-radius: 0.35rem;
     background: var(--paper-strong);
     box-shadow: var(--shadow);
+  }
+
+  .filter-panel::before {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    left: -1px;
+    height: 5px;
+    background: linear-gradient(to right, var(--gold) 0 33.333%, var(--green) 33.333% 66.666%, var(--red) 66.666%);
+    content: "";
   }
 
   .filter-heading-row {
@@ -115,7 +127,7 @@ const { organizers, categories } = Astro.props;
     display: flex;
     padding: 0.22rem;
     border: 1px solid var(--line);
-    border-radius: 99rem;
+    border-radius: 0.25rem;
     background: var(--paper);
   }
 
@@ -125,7 +137,7 @@ const { organizers, categories } = Astro.props;
     gap: 0.35rem;
     padding: 0.38rem 0.7rem;
     border: 0;
-    border-radius: 99rem;
+    border-radius: 0.18rem;
     color: #53615d;
     background: transparent;
     font-size: 0.75rem;
@@ -169,7 +181,7 @@ const { organizers, categories } = Astro.props;
     width: 100%;
     min-height: 2.85rem;
     border: 1px solid #c8cbc1;
-    border-radius: 0.45rem;
+    border-radius: 0.2rem;
     color: var(--ink);
     background: #fff;
   }
@@ -242,7 +254,7 @@ const { organizers, categories } = Astro.props;
     min-height: 2.85rem;
     padding: 0.6rem 1rem;
     border: 1px solid var(--sea);
-    border-radius: 0.45rem;
+    border-radius: 0.2rem;
     color: #fff;
     background: var(--sea);
     font-size: 0.82rem;
