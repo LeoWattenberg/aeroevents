@@ -1,0 +1,386 @@
+{
+  "sourceId": "marstal-billard-klub",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
+  "events": [
+    {
+      "id": "marstal-billard-klub-242475",
+      "title": "Marstal BK – Sydfyn BK",
+      "description": "Keglebillard - Serie 1 Vest",
+      "organizerId": "marstal-billard-klub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Marstal Billard Klub",
+        "address": "Tordenskjoldsgade 20, 1.",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ddbu-242475",
+            "date": "2026-10-07",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-billard-klub",
+        "externalId": "242475",
+        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=242475",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-billard-klub-231356",
+      "title": "Marstal BK – Assens BK",
+      "description": "Keglebillard - Serie 3 Vest",
+      "organizerId": "marstal-billard-klub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Marstal Billard Klub",
+        "address": "Tordenskjoldsgade 20, 1.",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ddbu-231356",
+            "date": "2026-10-22",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-billard-klub",
+        "externalId": "231356",
+        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=231356",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-billard-klub-231359",
+      "title": "Marstal BK – Faaborg",
+      "description": "Keglebillard - Serie 3 Vest",
+      "organizerId": "marstal-billard-klub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Marstal Billard Klub",
+        "address": "Tordenskjoldsgade 20, 1.",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ddbu-231359",
+            "date": "2026-11-05",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-billard-klub",
+        "externalId": "231359",
+        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=231359",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-billard-klub-242489",
+      "title": "Marstal BK – Otterup BK",
+      "description": "Keglebillard - Serie 1 Vest",
+      "organizerId": "marstal-billard-klub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Marstal Billard Klub",
+        "address": "Tordenskjoldsgade 20, 1.",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ddbu-242489",
+            "date": "2026-12-02",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-billard-klub",
+        "externalId": "242489",
+        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=242489",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-billard-klub-231367",
+      "title": "Marstal BK – Midtfyns BK",
+      "description": "Keglebillard - Serie 3 Vest",
+      "organizerId": "marstal-billard-klub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Marstal Billard Klub",
+        "address": "Tordenskjoldsgade 20, 1.",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ddbu-231367",
+            "date": "2026-12-03",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-billard-klub",
+        "externalId": "231367",
+        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=231367",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-billard-klub-242493",
+      "title": "Marstal BK – Haarby BK",
+      "description": "Keglebillard - Serie 1 Vest",
+      "organizerId": "marstal-billard-klub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Marstal Billard Klub",
+        "address": "Tordenskjoldsgade 20, 1.",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ddbu-242493",
+            "date": "2027-01-06",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-billard-klub",
+        "externalId": "242493",
+        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=242493",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-billard-klub-231377",
+      "title": "Marstal BK – Ørbæk BK",
+      "description": "Keglebillard - Serie 3 Vest",
+      "organizerId": "marstal-billard-klub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Marstal Billard Klub",
+        "address": "Tordenskjoldsgade 20, 1.",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ddbu-231377",
+            "date": "2027-01-21",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-billard-klub",
+        "externalId": "231377",
+        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=231377",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-billard-klub-242499",
+      "title": "Marstal BK – Haastrup BK",
+      "description": "Keglebillard - Serie 1 Vest",
+      "organizerId": "marstal-billard-klub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Marstal Billard Klub",
+        "address": "Tordenskjoldsgade 20, 1.",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ddbu-242499",
+            "date": "2027-02-03",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-billard-klub",
+        "externalId": "242499",
+        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=242499",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-billard-klub-242505",
+      "title": "Marstal BK – Sydfyn BK",
+      "description": "Keglebillard - Serie 1 Vest",
+      "organizerId": "marstal-billard-klub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Marstal Billard Klub",
+        "address": "Tordenskjoldsgade 20, 1.",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ddbu-242505",
+            "date": "2027-03-03",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-billard-klub",
+        "externalId": "242505",
+        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=242505",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-billard-klub-231391",
+      "title": "Marstal BK – Haastrup BK",
+      "description": "Keglebillard - Serie 3 Vest",
+      "organizerId": "marstal-billard-klub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Marstal Billard Klub",
+        "address": "Tordenskjoldsgade 20, 1.",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ddbu-231391",
+            "date": "2027-03-18",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-billard-klub",
+        "externalId": "231391",
+        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=231391",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    }
+  ]
+}

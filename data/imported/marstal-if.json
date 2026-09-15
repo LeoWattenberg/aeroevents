@@ -1,0 +1,652 @@
+{
+  "sourceId": "marstal-if",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
+  "events": [
+    {
+      "id": "marstal-if-633168",
+      "title": "Marstal/Rise – FC Kurant",
+      "description": "Herrer S4, Efterår 2026 (11:11/9:9) • Pulje 2",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-633168",
+            "date": "2026-09-18",
+            "kind": "timed",
+            "startTime": "17:50"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "633168",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501669&matchid=633168",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-667413",
+      "title": "Marstal IF – Aarslev BK",
+      "description": "U12 dr. C - 5-7 kampe - efterår 26 • Pulje 2",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-667413",
+            "date": "2026-09-19",
+            "kind": "timed",
+            "startTime": "11:35"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "667413",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=508116&matchid=667413",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-289062",
+      "title": "Marstal/Rise – Tårup IF",
+      "description": "Herrer S3, Efterår 2026 • Pulje 1",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-289062",
+            "date": "2026-09-19",
+            "kind": "timed",
+            "startTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "289062",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501662&matchid=289062",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-659515",
+      "title": "Marstal IF – Brylle/Verninge/Broby",
+      "description": "U15 Drenge Liga 5 (2012) 11:11 - efterår 2026 • Pulje 1",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-659515",
+            "date": "2026-09-20",
+            "kind": "timed",
+            "startTime": "11:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "659515",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=503447&matchid=659515",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-633193",
+      "title": "Marstal/Rise – Skårup IF (1)",
+      "description": "Herrer S4, Efterår 2026 (11:11/9:9) • Pulje 2",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-633193",
+            "date": "2026-09-26",
+            "kind": "timed",
+            "startTime": "11:35"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "633193",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501669&matchid=633193",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-285010",
+      "title": "Marstal/Rise – Tved BK",
+      "description": "Herrer S1, Efterår 2026 • Pulje 2",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-285010",
+            "date": "2026-09-26",
+            "kind": "timed",
+            "startTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "285010",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501651&matchid=285010",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-642783",
+      "title": "Marstal IF – Oure Fodbold Akademi",
+      "description": "Kvinder C, 7:7, Efterår 2026 • Pulje 1",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-642783",
+            "date": "2026-10-03",
+            "kind": "timed",
+            "startTime": "11:35"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "642783",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501685&matchid=642783",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-289082",
+      "title": "Marstal/Rise – Oure Fodbold Akademi",
+      "description": "Herrer S3, Efterår 2026 • Pulje 1",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-289082",
+            "date": "2026-10-03",
+            "kind": "timed",
+            "startTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "289082",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501662&matchid=289082",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-659593",
+      "title": "Marstal IF – Otterup Bold- og Idrætsklub",
+      "description": "U15 Drenge Liga 5 (2012) 11:11 - efterår 2026 • Pulje 1",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-659593",
+            "date": "2026-10-04",
+            "kind": "timed",
+            "startTime": "11:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "659593",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=503447&matchid=659593",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-285016",
+      "title": "Marstal/Rise – Thurø BK af 1920",
+      "description": "Herrer S1, Efterår 2026 • Pulje 2",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-285016",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "285016",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501651&matchid=285016",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-633206",
+      "title": "Marstal/Rise – FC Sydfyn",
+      "description": "Herrer S4, Efterår 2026 (11:11/9:9) • Pulje 2",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-633206",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "15:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "633206",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501669&matchid=633206",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-289096",
+      "title": "Marstal/Rise – BK Stjernen af 1968",
+      "description": "Herrer S3, Efterår 2026 • Pulje 1",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-289096",
+            "date": "2026-10-18",
+            "kind": "timed",
+            "startTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "289096",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501662&matchid=289096",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-633218",
+      "title": "Marstal/Rise – Longelse Sp.",
+      "description": "Herrer S4, Efterår 2026 (11:11/9:9) • Pulje 2",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-633218",
+            "date": "2026-10-24",
+            "kind": "timed",
+            "startTime": "11:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "633218",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501669&matchid=633218",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-285051",
+      "title": "Marstal/Rise – SfB-Oure FA",
+      "description": "Herrer S1, Efterår 2026 • Pulje 2",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-285051",
+            "date": "2026-10-24",
+            "kind": "timed",
+            "startTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "285051",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501651&matchid=285051",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-659636",
+      "title": "Marstal IF – BBB/SB",
+      "description": "U15 Drenge Liga 5 (2012) 11:11 - efterår 2026 • Pulje 1",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-659636",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "11:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "659636",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=503447&matchid=659636",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-642805",
+      "title": "Marstal IF – FC Kurant",
+      "description": "Kvinder C, 7:7, Efterår 2026 • Pulje 1",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-642805",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "11:35"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "642805",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501685&matchid=642805",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-289107",
+      "title": "Marstal/Rise – Skårup IF",
+      "description": "Herrer S3, Efterår 2026 • Pulje 1",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-289107",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "289107",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=501662&matchid=289107",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-667422",
+      "title": "Marstal IF – Tåsinge f. B.",
+      "description": "U12 dr. C - 5-7 kampe - efterår 26 • Pulje 2",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-667422",
+            "date": "2026-10-31",
+            "kind": "timed",
+            "startTime": "11:35"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "667422",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=508116&matchid=667422",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "marstal-if-659729",
+      "title": "Marstal IF – OB",
+      "description": "U15 Drenge Liga 5 (2012) 11:11 - efterår 2026 • Pulje 1",
+      "organizerId": "marstal-if",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Kortermann-IT stadion, Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "dbu-659729",
+            "date": "2026-11-07",
+            "kind": "timed",
+            "startTime": "11:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "marstal-if",
+        "externalId": "659729",
+        "url": "https://www.marstalif.dk/kampvisning?poolrowid=503447&matchid=659729",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "sourceId": "aeroe-rideklub",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
+  "events": [
+    {
+      "id": "aeroe-rideklub-nisseoptog",
+      "title": "Nisseoptog",
+      "description": "Vi er glade for at kunne invitere jer til vores traditionelle nisseoptåg 🎅✨Kom og vær med til en dag fyldt med juleglæde og sjov, hvor vi sammen vil sprede julestemning i Ærøskøbing. Det bliver en fantastisk mulighed for at mødes med andre medlemmer og fejre julen sammen i vores dejlige rideklub.Vi håber at se jer alle til en uforglemmelig dag med masser af julehygge og nisseoptåg!",
+      "organizerId": "aeroe-rideklub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "rideklub-nisseoptog",
+            "date": "2026-12-20",
+            "kind": "timed",
+            "startTime": "00:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-rideklub",
+        "externalId": "nisseoptog",
+        "url": "https://www.aeroerideklub.dk/events-1/nisseoptog",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    }
+  ]
+}

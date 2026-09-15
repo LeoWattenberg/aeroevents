@@ -1,0 +1,298 @@
+{
+  "sourceId": "ahop",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
+  "events": [
+    {
+      "id": "ahop-page-42",
+      "title": "Dart",
+      "description": "Dart i Ærøskøbing Dartklub i Aktivitetshuset OvenPaa.",
+      "organizerId": "ahop",
+      "organizerName": "Ærøskøbing Dartklub",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Ærøskøbing Dartklub / Aktivitetshuset OvenPaa",
+        "address": "Vestergade 52A",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Aktivitetssiden siger, at man kan møde op, men oplyser ikke entydigt, om medlemskab kræves."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2000-01-03",
+          "kind": "timed",
+          "startTime": "18:30"
+        },
+        "startDateUnknown": true,
+        "rrule": "FREQ=WEEKLY;BYDAY=MO",
+        "rdates": [],
+        "exdates": [],
+        "overrides": [],
+        "durationMinutes": 150
+      },
+      "source": {
+        "sourceId": "ahop",
+        "externalId": "page-42",
+        "url": "https://ahop.dk/dart/",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
+        "modifiedAt": "2026-05-20T12:29:05.000Z"
+      }
+    },
+    {
+      "id": "ahop-page-31",
+      "title": "Hjemløse strik",
+      "description": "Fælles strikning af varme ting til udsatte i Odense.",
+      "organizerId": "ahop",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Aktivitetshuset OvenPaa, fællesrummet",
+        "address": "Vestergade 52A",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Aktivitetssiden siger, at man kan møde op, men oplyser ikke entydigt, om medlemskab kræves."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2000-01-05",
+          "kind": "timed",
+          "startTime": "14:00"
+        },
+        "startDateUnknown": true,
+        "rrule": "FREQ=WEEKLY;BYDAY=WE",
+        "rdates": [],
+        "exdates": [],
+        "overrides": [],
+        "durationMinutes": 120
+      },
+      "source": {
+        "sourceId": "ahop",
+        "externalId": "page-31",
+        "url": "https://ahop.dk/hjemloese-strik/",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
+        "modifiedAt": "2026-05-21T08:35:36.000Z"
+      }
+    },
+    {
+      "id": "ahop-page-32",
+      "title": "Strik tirsdag aften",
+      "description": "Fælles strikkeaften med kaffe i Aktivitetshuset OvenPaa.",
+      "organizerId": "ahop",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Aktivitetshuset OvenPaa, fællesrummet",
+        "address": "Vestergade 52A",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Aktivitetssiden byder interesserede velkommen, men oplyser ikke entydigt, om medlemskab kræves."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2000-01-04",
+          "kind": "timed",
+          "startTime": "19:00"
+        },
+        "startDateUnknown": true,
+        "rrule": "FREQ=WEEKLY;BYDAY=TU",
+        "rdates": [],
+        "exdates": [],
+        "overrides": [],
+        "durationMinutes": 120
+      },
+      "source": {
+        "sourceId": "ahop",
+        "externalId": "page-32",
+        "url": "https://ahop.dk/strik-tirsdag-aften/",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
+        "modifiedAt": "2026-05-20T12:03:18.000Z"
+      }
+    },
+    {
+      "id": "ahop-page-33",
+      "title": "Strik onsdag aften",
+      "description": "Fælles strikkeaften i Aktivitetshuset OvenPaa.",
+      "organizerId": "ahop",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Aktivitetshuset OvenPaa, fællesrummet",
+        "address": "Vestergade 52A",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Aktivitetssiden oplyser ikke, om ikke-medlemmer kan deltage."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2000-01-05",
+          "kind": "timed",
+          "startTime": "19:00"
+        },
+        "startDateUnknown": true,
+        "rrule": "FREQ=WEEKLY;BYDAY=WE",
+        "rdates": [],
+        "exdates": [],
+        "overrides": [],
+        "durationMinutes": 120
+      },
+      "source": {
+        "sourceId": "ahop",
+        "externalId": "page-33",
+        "url": "https://ahop.dk/strik-torsdag-aften/",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
+        "modifiedAt": "2026-05-20T12:16:32.000Z"
+      }
+    },
+    {
+      "id": "ahop-page-276",
+      "title": "Keramikværksted",
+      "description": "Fælles værkstedstid med stentøjsler, hvor deltagerne hjælper hinanden og deler erfaringer.",
+      "organizerId": "ahop",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Aktivitetshuset OvenPaa, keramikværkstedet",
+        "address": "Vestergade 52A",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "Aktivitetssiden angiver, at deltagelse i keramikværkstedet kræver medlemskab af AHOP."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2000-01-04",
+          "kind": "timed",
+          "startTime": "19:00"
+        },
+        "startDateUnknown": true,
+        "rrule": "FREQ=WEEKLY;BYDAY=TU",
+        "rdates": [],
+        "exdates": [],
+        "overrides": []
+      },
+      "source": {
+        "sourceId": "ahop",
+        "externalId": "page-276",
+        "url": "https://ahop.dk/keramikvaerksted/",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
+        "modifiedAt": "2026-06-01T10:18:12.000Z"
+      }
+    },
+    {
+      "id": "ahop-page-28",
+      "title": "Væveværksted",
+      "description": "Fælles værkstedstid for øvede, let øvede og nybegyndere.",
+      "organizerId": "ahop",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Aktivitetshuset OvenPaa, væveværkstedet",
+        "address": "Vestergade 52A",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "AHOPs medlemsinformation beskriver værkstedsbrug som et medlemstilbud."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2000-01-06",
+          "kind": "timed",
+          "startTime": "19:00"
+        },
+        "startDateUnknown": true,
+        "rrule": "FREQ=WEEKLY;BYDAY=TH",
+        "rdates": [],
+        "exdates": [],
+        "overrides": []
+      },
+      "source": {
+        "sourceId": "ahop",
+        "externalId": "page-28",
+        "url": "https://ahop.dk/vaevevaerksted/",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
+        "modifiedAt": "2026-05-20T12:01:30.000Z"
+      }
+    },
+    {
+      "id": "ahop-page-41",
+      "title": "Træværksted",
+      "description": "Fælles træværksted på Rise gamle Skole.",
+      "organizerId": "ahop",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Rise gamle Skole",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "members",
+        "details": "AHOPs medlemsinformation beskriver værkstedsbrug som et medlemstilbud."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2000-01-05",
+          "kind": "timed",
+          "startTime": "14:00"
+        },
+        "startDateUnknown": true,
+        "rrule": "FREQ=WEEKLY;BYDAY=WE",
+        "rdates": [],
+        "exdates": [],
+        "overrides": [],
+        "durationMinutes": 120
+      },
+      "source": {
+        "sourceId": "ahop",
+        "externalId": "page-41",
+        "url": "https://ahop.dk/traevaerksted/",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
+        "modifiedAt": "2026-09-14T08:19:09.000Z"
+      }
+    }
+  ]
+}

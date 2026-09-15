@@ -1,0 +1,50 @@
+{
+  "sourceId": "aeroe-golfklub",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
+  "events": [
+    {
+      "id": "aeroe-golfklub-2026-superbrugsen-afslutningsturnering-stableford",
+      "title": "SuperBrugsen Afslutningsturnering – Stableford",
+      "description": "Åben turnering. Deltagelse kræver DGU-kort; se GolfBox for turneringsform og vilkår.",
+      "organizerId": "aeroe-golfklub",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Ærø Golf Klub",
+        "address": "Skjoldnæsvej 8",
+        "postalCode": "5985",
+        "city": "Søby Ærø"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Åben for medlemmer og gæster med DGU-kort."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "price": "Turneringsfee ca. 100 kr. for medlemmer; gæstespillere betaler 250 kr. i greenfee.",
+      "booking": {
+        "required": true,
+        "soldOut": false,
+        "url": "https://golfbox.golf/#/",
+        "details": "Tilmelding åbner ifølge klubben 10 dage før turneringsdatoen."
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "golf-f6350560b49972ff1658-day-1",
+            "date": "2026-10-04",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-golfklub",
+        "externalId": "2026-superbrugsen-afslutningsturnering-stableford",
+        "url": "https://www.aeroegolf.dk/turneringer.aspx",
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    }
+  ]
+}

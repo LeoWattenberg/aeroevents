@@ -1,6 +1,6 @@
 {
   "sourceId": "parkinsonforeningen-aeroe",
-  "verifiedAt": "2026-09-14T16:58:01.946Z",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
   "events": [
     {
       "id": "parkinsonforeningen-aeroe-club-3976-monthly-meeting",
@@ -25,16 +25,16 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2000-01-04",
+          "kind": "timed",
           "startTime": "15:00"
         },
+        "startDateUnknown": true,
         "rrule": "FREQ=MONTHLY;BYDAY=TU;BYSETPOS=1",
         "rdates": [],
         "exdates": [],
         "overrides": [],
-        "durationMinutes": 90,
-        "startDateUnknown": true
+        "durationMinutes": 90
       },
       "source": {
         "sourceId": "parkinsonforeningen-aeroe",

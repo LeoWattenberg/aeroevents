@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-klatreklub",
-  "verifiedAt": "2026-09-14T16:58:01.946Z",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
   "events": [
     {
       "id": "aeroe-klatreklub-monday-kids-club",
@@ -25,16 +25,16 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2000-01-03",
+          "kind": "timed",
           "startTime": "16:30"
         },
+        "startDateUnknown": true,
         "rrule": "FREQ=WEEKLY;BYDAY=MO",
         "rdates": [],
         "exdates": [],
         "overrides": [],
-        "durationMinutes": 90,
-        "startDateUnknown": true
+        "durationMinutes": 90
       },
       "source": {
         "sourceId": "aeroe-klatreklub",
@@ -66,16 +66,16 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2000-01-03",
+          "kind": "timed",
           "startTime": "18:00"
         },
+        "startDateUnknown": true,
         "rrule": "FREQ=WEEKLY;BYDAY=MO",
         "rdates": [],
         "exdates": [],
         "overrides": [],
-        "durationMinutes": 90,
-        "startDateUnknown": true
+        "durationMinutes": 90
       },
       "source": {
         "sourceId": "aeroe-klatreklub",
@@ -107,16 +107,16 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2000-01-05",
+          "kind": "timed",
           "startTime": "17:00"
         },
+        "startDateUnknown": true,
         "rrule": "FREQ=WEEKLY;BYDAY=WE",
         "rdates": [],
         "exdates": [],
         "overrides": [],
-        "durationMinutes": 180,
-        "startDateUnknown": true
+        "durationMinutes": 180
       },
       "source": {
         "sourceId": "aeroe-klatreklub",
@@ -148,16 +148,16 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2000-01-09",
+          "kind": "timed",
           "startTime": "10:00"
         },
+        "startDateUnknown": true,
         "rrule": "FREQ=MONTHLY;BYDAY=SU;BYSETPOS=2",
         "rdates": [],
         "exdates": [],
         "overrides": [],
-        "durationMinutes": 180,
-        "startDateUnknown": true
+        "durationMinutes": 180
       },
       "source": {
         "sourceId": "aeroe-klatreklub",

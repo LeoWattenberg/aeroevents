@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-tennisklub",
-  "verifiedAt": "2026-09-14T16:58:01.946Z",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
   "events": [
     {
       "id": "aeroe-tennisklub-monday-coffee-tennis",
@@ -24,16 +24,16 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2000-01-03",
+          "kind": "timed",
           "startTime": "09:00"
         },
+        "startDateUnknown": true,
         "rrule": "FREQ=WEEKLY;BYDAY=MO",
         "rdates": [],
         "exdates": [],
         "overrides": [],
-        "durationMinutes": 180,
-        "startDateUnknown": true
+        "durationMinutes": 180
       },
       "source": {
         "sourceId": "aeroe-tennisklub",
@@ -64,16 +64,16 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2000-01-03",
+          "kind": "timed",
           "startTime": "17:00"
         },
+        "startDateUnknown": true,
         "rrule": "FREQ=WEEKLY;BYDAY=MO",
         "rdates": [],
         "exdates": [],
         "overrides": [],
-        "durationMinutes": 120,
-        "startDateUnknown": true
+        "durationMinutes": 120
       },
       "source": {
         "sourceId": "aeroe-tennisklub",
@@ -104,16 +104,16 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2000-01-05",
+          "kind": "timed",
           "startTime": "10:00"
         },
+        "startDateUnknown": true,
         "rrule": "FREQ=WEEKLY;BYDAY=WE",
         "rdates": [],
         "exdates": [],
         "overrides": [],
-        "durationMinutes": 120,
-        "startDateUnknown": true
+        "durationMinutes": 120
       },
       "source": {
         "sourceId": "aeroe-tennisklub",
@@ -144,16 +144,16 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2000-01-06",
+          "kind": "timed",
           "startTime": "17:00"
         },
+        "startDateUnknown": true,
         "rrule": "FREQ=WEEKLY;BYDAY=TH",
         "rdates": [],
         "exdates": [],
         "overrides": [],
-        "durationMinutes": 120,
-        "startDateUnknown": true
+        "durationMinutes": 120
       },
       "source": {
         "sourceId": "aeroe-tennisklub",
@@ -189,16 +189,16 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2000-01-09",
+          "kind": "timed",
           "startTime": "17:00"
         },
+        "startDateUnknown": true,
         "rrule": "FREQ=WEEKLY;BYDAY=SU",
         "rdates": [],
         "exdates": [],
         "overrides": [],
-        "durationMinutes": 60,
-        "startDateUnknown": true
+        "durationMinutes": 60
       },
       "source": {
         "sourceId": "aeroe-tennisklub",

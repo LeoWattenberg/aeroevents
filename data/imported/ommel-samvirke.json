@@ -1,7 +1,99 @@
 {
   "sourceId": "ommel-samvirke",
-  "verifiedAt": "2026-09-14T16:58:01.946Z",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
   "events": [
+    {
+      "id": "ommel-samvirke-activity-2516431221fb91896417",
+      "title": "Samkørsel biograf",
+      "description": "Er du vild med at se film i biografen. Så kom til mødet mandag 14. september kl. 19 i beboerhuset. Der holdes et kort møde for at scanne interessen for samkørsel til filmaftener i Andelen.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-2516431221fb91896417-2026-09-14-1900",
+            "date": "2026-09-14",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-2516431221fb91896417",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T16:58:01.946Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-5d1d397f36738781c0f4",
+      "title": "Brætspil",
+      "description": "Første søndag i måneden er der brætspil i beboerhuset. Der er ingen aldersgrænse og alle er velkomne til at være med. Vi aftaler når vi kommer hvilke spil vi har lyst til at spille. Beboerhuset råder over en del brætspil men har du et du gerne vil spille må du meget gerne medbringe det. Pris 20 kr. som går til kaffen og en småkage",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-10-04",
+          "kind": "timed",
+          "startTime": "13:30"
+        },
+        "rrule": "FREQ=MONTHLY;BYDAY=SU;BYSETPOS=1;UNTIL=20270905T133000",
+        "rdates": [
+          {
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "13:30"
+          }
+        ],
+        "exdates": [
+          "2026-11-01T13:30"
+        ],
+        "overrides": [
+          {
+            "recurrenceId": "2026-10-25T13:30",
+            "replacement": {
+              "date": "2026-10-25",
+              "kind": "timed",
+              "startTime": "13:30",
+              "endDate": "2026-11-01",
+              "endTime": "16:30"
+            }
+          }
+        ],
+        "durationMinutes": 180
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-5d1d397f36738781c0f4",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-14T16:58:01.946Z"
+      }
+    },
     {
       "id": "ommel-samvirke-declared-series-fredagsbar",
       "title": "Fredagsbar",
@@ -18,12 +110,12 @@
         "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
       },
       "status": "scheduled",
-      "publication": "published",
+      "publication": "draft",
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-18",
+          "kind": "timed",
           "startTime": "16:00"
         },
         "rrule": "FREQ=WEEKLY;INTERVAL=2;BYDAY=FR;UNTIL=20270903T160000",
@@ -38,7 +130,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "declared-series-fredagsbar",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -179,43 +271,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-161c07571e9abfa92738",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-2516431221fb91896417",
-      "title": "Samkørsel biograf",
-      "description": "Er du vild med at se film i biografen. Så kom til mødet mandag 14. september kl. 19 i beboerhuset. Der holdes et kort møde for at scanne interessen for samkørsel til filmaftener i Andelen.",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Beboerhuset"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "activity-2516431221fb91896417-2026-09-14-1900",
-            "date": "2026-09-14",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "20:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-2516431221fb91896417",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -321,7 +377,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30308c2d5b0827696f99",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -344,8 +400,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-27",
+          "kind": "timed",
           "startTime": "11:00"
         },
         "rrule": "FREQ=WEEKLY;INTERVAL=2;BYDAY=SU;UNTIL=20261122T110000",
@@ -358,63 +414,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-496ff0a823833c4a8412",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-5d1d397f36738781c0f4",
-      "title": "Brætspil",
-      "description": "Første søndag i måneden er der brætspil i beboerhuset. Der er ingen aldersgrænse og alle er velkomne til at være med. Vi aftaler når vi kommer hvilke spil vi har lyst til at spille. Beboerhuset råder over en del brætspil men har du et du gerne vil spille må du meget gerne medbringe det. Pris 20 kr. som går til kaffen og en småkage",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Beboerhuset"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "kind": "timed",
-          "date": "2026-10-04",
-          "startTime": "13:30"
-        },
-        "rrule": "FREQ=MONTHLY;BYDAY=SU;BYSETPOS=1;UNTIL=20270905T133000",
-        "rdates": [
-          {
-            "kind": "timed",
-            "date": "2026-10-25",
-            "startTime": "13:30"
-          }
-        ],
-        "exdates": [
-          "2026-11-01T13:30"
-        ],
-        "overrides": [
-          {
-            "recurrenceId": "2026-10-25T13:30",
-            "replacement": {
-              "kind": "timed",
-              "date": "2026-10-25",
-              "startTime": "13:30",
-              "endDate": "2026-11-01",
-              "endTime": "16:30"
-            }
-          }
-        ],
-        "durationMinutes": 180
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-5d1d397f36738781c0f4",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -702,7 +702,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-67cdddcd989e08df5bcc",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -829,7 +829,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6e9475d965c159ce3680",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -848,12 +848,12 @@
         "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
       },
       "status": "scheduled",
-      "publication": "published",
+      "publication": "draft",
       "schedule": {
         "kind": "recurring",
         "dtstart": {
+          "date": "2026-09-21",
           "kind": "timed",
-          "date": "2026-09-14",
           "startTime": "10:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270913T100000",
@@ -868,7 +868,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "declared-series-stolegymnastik",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -887,12 +887,12 @@
         "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
       },
       "status": "scheduled",
-      "publication": "published",
+      "publication": "draft",
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-17",
+          "kind": "timed",
           "startTime": "15:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TH;UNTIL=20261029T150000",
@@ -902,8 +902,8 @@
           {
             "recurrenceId": "2026-09-17T15:00",
             "replacement": {
-              "kind": "timed",
               "date": "2026-09-17",
+              "kind": "timed",
               "startTime": "15:00",
               "endTime": "16:30"
             }
@@ -915,7 +915,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "declared-series-petanque",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -1042,7 +1042,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-854abf248a0f8c8fc1de",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -1078,7 +1078,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-8d65f8aaf9dff471dc0e",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -1219,7 +1219,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a59186c3c2663f88eb65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -1507,7 +1507,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-b0e925ea79720a9acd65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -1578,7 +1578,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-beff946b8065a3c9b786",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -1614,7 +1614,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-cb60eb005fee08f91ed9",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -1637,8 +1637,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-16",
+          "kind": "timed",
           "startTime": "16:30"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270526T163000",
@@ -1651,7 +1651,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-d0a8ed3087ff43c20a82",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     }
   ]

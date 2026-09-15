@@ -1,6 +1,6 @@
 {
   "sourceId": "campus-aeroe",
-  "verifiedAt": "2026-09-14T16:58:01.946Z",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
   "events": [
     {
       "id": "campus-aeroe-7956",
@@ -113,7 +113,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8009",
         "url": "https://campusaeroe.dk/event/familie-workshop-soede-droemme-og-gode-skaermvane-2/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-28T11:33:57.000Z"
       }
     },
@@ -135,13 +135,13 @@
         "kind": "public"
       },
       "status": "scheduled",
-      "publication": "published",
+      "publication": "draft",
       "price": "Gratis",
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-15",
+          "kind": "timed",
           "startTime": "17:25"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270615T172500",
@@ -161,7 +161,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-havvaerk-2-2",
         "url": "https://campusaeroe.dk/event/havvaerk-2-2/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-24T09:38:17.000Z"
       }
     },
@@ -202,7 +202,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8005",
         "url": "https://campusaeroe.dk/event/foredrag-til-voksne-med-soevnproblemer-ved-sine-ditlev-bihlet-center-for-soevn/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-20T14:32:34.000Z"
       }
     },
@@ -242,7 +242,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8021",
         "url": "https://campusaeroe.dk/event/yoga-nidra-og-aandedraetsoevelser-for-bedre-soevn-v-yogalaerer-anna-kramer/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-24T09:11:16.000Z"
       }
     },
@@ -283,7 +283,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8018",
         "url": "https://campusaeroe.dk/event/langbordsmiddag-for-unge-gratis-mad-snak-om-det-gode-liv-med-skaerm/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-24T09:08:19.000Z"
       }
     },
@@ -323,7 +323,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8025",
         "url": "https://campusaeroe.dk/event/soevnlaboratorium-og-lydrejse-v-musiker-kristian-humaidan/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-24T09:16:46.000Z"
       }
     },
@@ -368,7 +368,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8031",
         "url": "https://campusaeroe.dk/event/foredrag-hvad-betyder-soevn-for-hjernen-v-hjerneforsker-troels-w-kjaer/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-24T09:23:14.000Z"
       }
     },
@@ -409,7 +409,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8028",
         "url": "https://campusaeroe.dk/event/foredrag-soevn-hos-de-smaa-hjemme-og-i-dagtilbud-0-3-aar-ved-karen-kildahl/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-24T09:19:04.000Z"
       }
     },
@@ -449,7 +449,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8057",
         "url": "https://campusaeroe.dk/event/aeroe-gadefest/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-09-14T15:23:39.000Z"
       }
     },
@@ -473,8 +473,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-10-19",
+          "kind": "timed",
           "startTime": "18:30"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270607T183000",
@@ -493,7 +493,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-aabent-metalvaerksted",
         "url": "https://campusaeroe.dk/event/aabent-metalvaerksted/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-07-06T07:26:55.000Z"
       }
     },
@@ -521,8 +521,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-10-20",
+          "kind": "timed",
           "startTime": "08:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270413T080000",
@@ -540,7 +540,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet",
         "url": "https://campusaeroe.dk/event/campus-idraet/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-17T08:13:49.000Z"
       }
     },
@@ -568,8 +568,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-10-20",
+          "kind": "timed",
           "startTime": "19:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270608T190000",
@@ -586,7 +586,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet-2",
         "url": "https://campusaeroe.dk/event/campus-idraet-2/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-17T08:22:05.000Z"
       }
     },
@@ -609,12 +609,12 @@
         "kind": "public"
       },
       "status": "scheduled",
-      "publication": "published",
+      "publication": "draft",
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-10-21",
+          "kind": "timed",
           "startTime": "18:30"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270616T183000",
@@ -632,7 +632,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-kunst",
         "url": "https://campusaeroe.dk/event/campus-kunst/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-17T08:10:01.000Z"
       }
     },
@@ -660,8 +660,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-10-21",
+          "kind": "timed",
           "startTime": "19:30"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270414T193000",
@@ -679,7 +679,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-musik",
         "url": "https://campusaeroe.dk/event/campus-musik/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-17T08:02:57.000Z"
       }
     },
@@ -719,7 +719,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "7963",
         "url": "https://campusaeroe.dk/event/fejring-af-faellesskaber-og-uddannelse-paa-aeroe/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z",
+        "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-08-04T08:50:50.000Z"
       }
     }

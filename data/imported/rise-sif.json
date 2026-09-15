@@ -1,6 +1,6 @@
 {
   "sourceId": "rise-sif",
-  "verifiedAt": "2026-09-14T16:58:01.946Z",
+  "verifiedAt": "2026-09-15T16:17:03.394Z",
   "events": [
     {
       "id": "rise-sif-booking-22133794",
@@ -35,7 +35,7 @@
         "sourceId": "rise-sif",
         "externalId": "booking-22133794",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -72,7 +72,7 @@
         "sourceId": "rise-sif",
         "externalId": "booking-22133835",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -109,7 +109,7 @@
         "sourceId": "rise-sif",
         "externalId": "booking-22133845",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -145,7 +145,7 @@
         "sourceId": "rise-sif",
         "externalId": "booking-22345043",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -168,8 +168,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-29",
+          "kind": "timed",
           "startTime": "09:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270330T090000",
@@ -182,7 +182,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-734689",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -205,8 +205,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-29",
+          "kind": "timed",
           "startTime": "16:30"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270330T163000",
@@ -219,7 +219,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-734690",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -242,8 +242,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-17",
+          "kind": "timed",
           "startTime": "09:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TH;UNTIL=20270318T090000",
@@ -256,7 +256,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738768",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -279,8 +279,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-15",
+          "kind": "timed",
           "startTime": "17:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270316T170000",
@@ -293,7 +293,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738773",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -316,8 +316,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-16",
+          "kind": "timed",
           "startTime": "16:45"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270317T164500",
@@ -330,7 +330,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738775",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -353,8 +353,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-16",
+          "kind": "timed",
           "startTime": "19:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270310T190000",
@@ -367,7 +367,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738778",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -390,8 +390,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-15",
+          "kind": "timed",
           "startTime": "19:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270316T190000",
@@ -404,7 +404,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738782",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -427,8 +427,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-16",
+          "kind": "timed",
           "startTime": "15:45"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270317T154500",
@@ -441,7 +441,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738783",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -464,8 +464,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-15",
+          "kind": "timed",
           "startTime": "16:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270316T160000",
@@ -478,7 +478,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738785",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -501,8 +501,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-16",
+          "kind": "timed",
           "startTime": "18:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270317T180000",
@@ -515,7 +515,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738786",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -538,8 +538,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-16",
+          "kind": "timed",
           "startTime": "19:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270317T190000",
@@ -552,7 +552,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-739505",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -575,8 +575,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-17",
+          "kind": "timed",
           "startTime": "17:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TH;UNTIL=20261126T170000",
@@ -589,7 +589,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741067",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -612,8 +612,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-28",
+          "kind": "timed",
           "startTime": "18:30"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270329T183000",
@@ -631,7 +631,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741416",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -654,8 +654,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
+          "date": "2026-09-21",
           "kind": "timed",
-          "date": "2026-09-14",
           "startTime": "16:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270405T160000",
@@ -668,7 +668,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741831",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -691,8 +691,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-17",
+          "kind": "timed",
           "startTime": "16:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TH;UNTIL=20270408T160000",
@@ -705,7 +705,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741832",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -728,8 +728,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
+          "date": "2026-09-21",
           "kind": "timed",
-          "date": "2026-09-14",
           "startTime": "17:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270405T170000",
@@ -742,7 +742,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741833",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -765,8 +765,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-17",
+          "kind": "timed",
           "startTime": "17:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TH;UNTIL=20270408T170000",
@@ -779,7 +779,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741834",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -802,8 +802,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
+          "date": "2026-09-21",
           "kind": "timed",
-          "date": "2026-09-14",
           "startTime": "18:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270405T180000",
@@ -816,7 +816,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741836",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -839,8 +839,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-17",
+          "kind": "timed",
           "startTime": "18:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TH;UNTIL=20270408T180000",
@@ -853,7 +853,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741837",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -876,8 +876,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
+          "date": "2026-09-21",
           "kind": "timed",
-          "date": "2026-09-14",
           "startTime": "19:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270405T190000",
@@ -890,7 +890,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741838",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     },
     {
@@ -913,8 +913,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-09-17",
+          "kind": "timed",
           "startTime": "19:00"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TH;UNTIL=20270408T190000",
@@ -927,7 +927,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741839",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-14T16:58:01.946Z"
+        "verifiedAt": "2026-09-15T16:17:03.394Z"
       }
     }
   ]
