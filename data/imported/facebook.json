@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-14T11:55:45.875Z",
+  "verifiedAt": "2026-09-16T16:17:02.588Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -202,8 +202,8 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "kind": "timed",
           "date": "2026-11-21",
+          "kind": "timed",
           "startTime": "09:30"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=SA;COUNT=4",
@@ -255,6 +255,37 @@
         "externalId": "post-pfbid02uTEBC2qjs8Xk6NmcuVPgBdoFjEQawmfHtYmKmMcYFUnGssBe8YzpgRgmHbgnEGJ8l",
         "url": "https://www.facebook.com/arrebib/posts/-ny-opdatering-p%C3%A5-manglende-netforbindelse-p%C3%A5-%C3%A6r%C3%B8sk%C3%B8bing-bibliotekgrundet-overgr/1557089606446010/",
         "verifiedAt": "2026-09-14T11:55:45.875Z"
+      }
+    },
+    {
+      "id": "facebook-post-28270644639212120",
+      "title": "Jeg har været på Ærø to gange og jeg har også tænkt mig at komme igen",
+      "description": "Jeg har været på Ærø to gange og jeg har også tænkt mig at komme igen.\nJeg skal have fundet et sted at bo nogle dage. Jeg kan godt lide sådan at tage rundt og kigge og gå tur men jeg ved ikke helt hvor jeg skal bo den her gang .\nDet kunne da også være sjovt at komme derover og synge der hvis man altså kan det.\nTænk hvis jeg flyttede over 5-6 dage og kunne lave noget sjovt med jer.\nJeg synger jo alt efterhånden.\nKunne man lave sådan at jeg var et par overnatninger et sted og det må det gerne være et sted hvor i kan danse og Giddens at komme og samles fordi jeg er rigtig god til at feste",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-m2rvdz-1",
+            "date": "2027-06-05",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28270644639212120",
+        "url": "https://www.facebook.com/groups/oplevmitaeroe/posts/28270644639212120/",
+        "verifiedAt": "2026-09-16T16:17:02.588Z"
       }
     }
   ]

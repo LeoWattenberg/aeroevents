@@ -1,6 +1,6 @@
 {
   "sourceId": "campus-aeroe",
-  "verifiedAt": "2026-09-15T16:17:03.394Z",
+  "verifiedAt": "2026-09-16T16:17:02.588Z",
   "events": [
     {
       "id": "campus-aeroe-7956",
@@ -207,390 +207,6 @@
       }
     },
     {
-      "id": "campus-aeroe-8021",
-      "title": "Yoga Nidra og åndedrætsøvelser for bedre søvn v yogalærer Anna Kramer",
-      "description": "Gratis. 15 pladser. Tilmelding på SMS til Anna tlf. 5522 3236\nYoga Nidra er en meditationsteknik, der også bliver kaldt ”yogisk søvn”. Det er en afslappende teknik, hvor man liggende bliver guidet ind i en meditativ tilstand mellem vågenhed og søvn. Yoga Nidra og åndedrætsøvelser kan have en række positive effekter på både kroppen og sindet: Det reducerer stress og angst og forbedrer søvnkvaliteten samtidig med at det er let at udføre og tilgængeligt for alle.",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "sport-motion"
-      ],
-      "location": {
-        "name": "Atma Yoga House",
-        "address": "Kærvejen 17",
-        "city": "Ommel",
-        "url": "https://campusaeroe.dk/sted/atma-yoga-house/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "price": "Gratis",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "campus-8021",
-            "date": "2026-09-16",
-            "kind": "timed",
-            "startTime": "17:00",
-            "endTime": "18:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "8021",
-        "url": "https://campusaeroe.dk/event/yoga-nidra-og-aandedraetsoevelser-for-bedre-soevn-v-yogalaerer-anna-kramer/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-08-24T09:11:16.000Z"
-      }
-    },
-    {
-      "id": "campus-aeroe-8018",
-      "title": "Langbordsmiddag for unge: Gratis mad & snak om det gode liv med skærm",
-      "description": "Tilmelding pga. mad. Send SMS til Cecilie på 3051942\nVær med til en hyggelig langbordsmiddag, hvor vi samles om god mad, uformel stemning og en ærlig snak om skærme, søvn og hverdagen. En aften, hvor I kan udveksle erfaringer, grine ad de dårlige vaner og snakke om, hvordan man får mere ud af døgnets timer – uden at droppe alt det sjove på skærmen.",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "boern-familie"
-      ],
-      "location": {
-        "name": "Campus Ærø Studiecenter",
-        "address": "Ellenet 10 (Indgang gennem Navigationsskolens hovedindgang)",
-        "postalCode": "5965",
-        "city": "Marstal",
-        "url": "https://campusaeroe.dk/sted/campus-aeroe-studiecenter/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "price": "Gratis",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "campus-8018",
-            "date": "2026-09-16",
-            "kind": "timed",
-            "startTime": "18:00",
-            "endTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "8018",
-        "url": "https://campusaeroe.dk/event/langbordsmiddag-for-unge-gratis-mad-snak-om-det-gode-liv-med-skaerm/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-08-24T09:08:19.000Z"
-      }
-    },
-    {
-      "id": "campus-aeroe-8025",
-      "title": "Søvnlaboratorium og lydrejse /v musiker Kristian Humaidan",
-      "description": "Tilmelding på SMS eller mail til Stine:60682911/stine@soebygaard.dk\nOplev en dyb, rolig og anderledes måde at tilegne sig teoretisk og praktisk viden om søvn. Søvnlaboratoriet er et sanseligt og oplevelsesbaseret format, hvor viden serveres sammen med musik og små visualiseringsøvelser. Oplægget foregår liggende, og deltagerne finder sig godt til rette på yogamåtter og med dæmpet belysning. Deltagerne inviteres bl.a. med på en “lydrejse” til tonerne fra SoundWheel",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "musik-kultur"
-      ],
-      "location": {
-        "name": "Søbygaard",
-        "address": "Søbygårdsvej 2",
-        "postalCode": "5985",
-        "city": "Søby",
-        "url": "https://campusaeroe.dk/sted/soebygaard/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "campus-8025",
-            "date": "2026-09-17",
-            "kind": "timed",
-            "startTime": "17:00",
-            "endTime": "19:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "8025",
-        "url": "https://campusaeroe.dk/event/soevnlaboratorium-og-lydrejse-v-musiker-kristian-humaidan/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-08-24T09:16:46.000Z"
-      }
-    },
-    {
-      "id": "campus-aeroe-8031",
-      "title": "Foredrag: Hvad betyder søvn for hjernen /v hjerneforsker Troels W Kjær",
-      "description": "Gratis. Kræver tilmelding via www.arrebib.dk\nTroels W. Kjær er en højt anerkendt hjerneforsker, forfatter og speciallæge, der er kendt for sin ekspertise inden for hjernens funktioner og mysterier. Med en imponerende baggrund og en passion for at formidle kompleks videnskab på en letforståelig og underholdende måde, er rammerne sat for en fantastisk underholdende og oplysende aften.",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "musik-kultur"
-      ],
-      "location": {
-        "name": "Ærøskøbing Bibliotek",
-        "address": "Søndergade 16B",
-        "city": "Ærøskøbing",
-        "url": "https://campusaeroe.dk/sted/aeroeskoebing-bibliotek/"
-      },
-      "attendance": {
-        "kind": "registration",
-        "details": "Tilmelding er påkrævet."
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "price": "Gratis",
-      "booking": {
-        "required": true,
-        "soldOut": false
-      },
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "campus-8031",
-            "date": "2026-09-17",
-            "kind": "timed",
-            "startTime": "18:30",
-            "endTime": "20:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "8031",
-        "url": "https://campusaeroe.dk/event/foredrag-hvad-betyder-soevn-for-hjernen-v-hjerneforsker-troels-w-kjaer/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-08-24T09:23:14.000Z"
-      }
-    },
-    {
-      "id": "campus-aeroe-8028",
-      "title": "Foredrag: Søvn hos de små, hjemme og i dagtilbud 0-3 år ved Karen Kildahl",
-      "description": "Gratis. Uden tilmelding – bare mød op.\nKom og hør søvnspecialist Karen Kildahl fortælle kærligt og humoristisk om søvn i alderen 0-3 år. Hvad kan vi gøre som forældre, som institution og i samarbejde for, at børn sover godt og nok? Vi kommer til at høre om den nyeste evidens på området. Avler søvn søvn? Kan søvnproblemer løses, og hvordan har man en dialog om søvn, så vi sammen kan arbejde hen imod det bedste for alle parter.",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "musik-kultur",
-        "boern-familie"
-      ],
-      "location": {
-        "name": "Ærø Friskole",
-        "address": "Vestergade 52A",
-        "city": "Ærøskøbing",
-        "url": "https://campusaeroe.dk/sted/aeroe-friskole/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "price": "Gratis",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "campus-8028",
-            "date": "2026-09-17",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "20:30"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "8028",
-        "url": "https://campusaeroe.dk/event/foredrag-soevn-hos-de-smaa-hjemme-og-i-dagtilbud-0-3-aar-ved-karen-kildahl/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-08-24T09:19:04.000Z"
-      }
-    },
-    {
-      "id": "campus-aeroe-8057",
-      "title": "Ærø Gadefest",
-      "description": "Kom med til en helt ny festival fyldt med streetkultur, kreativitet, musik og fællesskab!\nDagen er fyldt med workshops hvor unge professionelle fra hele landet underviser i graffiti, skate, break, basket og keramik. Ud over det tidsbestemte program er der masser af fede oplevelser løbende gennem dagen. Her kan du slippe kreativiteten løs i krea-workshops, lær tricks med kendama ved graffitivæggen, prøv kræfter med mix og musik på Lauwi’s DJ-skole på skateparkens 1. sal. Sæt din lid til Ærø Ungdomsråd og deres instrukser ved myselfie-stationen\nAftenprogrammet er eksklusivt for unge fra 6. klasse og opefter hvor UNG EVENT byder på musikquiz, mysterybox, mere kunst/krea, fotoudstilling, DJ´s, flyout og meget mere – Jesper Bus sørger for at alle bliver kørt hjem til Søby og Marstal kl. 23.00 når programmet slutter\nArrangører: Viften, Ærø Folkebibliotek, UngEvent og Ærø Skate.\nLæs mere og se det fulde program her: (1) Ærø Gadefest for Børn og Unge | Facebook",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "musik-kultur",
-        "boern-familie"
-      ],
-      "location": {
-        "name": "Det Gamle Værft",
-        "address": "Ærøskøbing Havn 4aa",
-        "city": "Ærøskøbing",
-        "url": "https://campusaeroe.dk/sted/det-gamle-vaerft/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "campus-8057",
-            "date": "2026-09-19",
-            "kind": "timed",
-            "startTime": "11:00",
-            "endTime": "23:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "8057",
-        "url": "https://campusaeroe.dk/event/aeroe-gadefest/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-09-14T15:23:39.000Z"
-      }
-    },
-    {
-      "id": "campus-aeroe-series-aabent-metalvaerksted",
-      "title": "Åbent (Metal)værksted",
-      "description": "Åbent Værksted på Navigationsskolen med Rasmus – hver mandag\nHer kan du arbejde med reparation af knallerter og cykler samt udføre mindre jernprojekter. For at deltage skal du have gennemført §17-kurset online, som giver adgang til værkstedets maskiner og processer\n• Her kan du:\n• Reparere din knallert eller cykel\n• Lave små projekter i jern\n• Prøve at svejse, bukke og forme\n• Være en del af et hyggeligt fællesskab med god stemning\nCampus-holdet er åbent for alle under uddannelse fra 15 + år. Ingen tilmelding – bare mød op.",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Reberbanen, Marstal",
-        "url": "https://campusaeroe.dk/sted/reberbanen-marstal/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-10-19",
-          "kind": "timed",
-          "startTime": "18:30"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270607T183000",
-        "rdates": [],
-        "exdates": [
-          "2026-12-28T18:30",
-          "2027-02-22T18:30",
-          "2027-03-22T18:30",
-          "2027-03-29T18:30",
-          "2027-05-17T18:30"
-        ],
-        "overrides": [],
-        "durationMinutes": 120
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "series-aabent-metalvaerksted",
-        "url": "https://campusaeroe.dk/event/aabent-metalvaerksted/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-07-06T07:26:55.000Z"
-      }
-    },
-    {
-      "id": "campus-aeroe-series-campus-idraet",
-      "title": "CAMPUS-IDRÆT",
-      "description": "Kom og vær aktiv med andre unge fra 15+, der er ingen tilmelding, bare mød op.\nLeder: Klaus Fynsk Norup, underviser på HF",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "sport-motion",
-        "boern-familie"
-      ],
-      "location": {
-        "name": "Ærøhallen",
-        "address": "Halvejen 22",
-        "postalCode": "5965",
-        "city": "Marstal",
-        "url": "https://campusaeroe.dk/sted/aeroehallen/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-10-20",
-          "kind": "timed",
-          "startTime": "08:00"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270413T080000",
-        "rdates": [],
-        "exdates": [
-          "2026-12-22T08:00",
-          "2026-12-29T08:00",
-          "2027-02-16T08:00",
-          "2027-03-23T08:00"
-        ],
-        "overrides": [],
-        "durationMinutes": 540
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "series-campus-idraet",
-        "url": "https://campusaeroe.dk/event/campus-idraet/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-08-17T08:13:49.000Z"
-      }
-    },
-    {
-      "id": "campus-aeroe-series-campus-idraet-2",
-      "title": "CAMPUS-IDRÆT",
-      "description": "Kom og vær aktiv med andre unge fra 15+, der er ingen tilmelding, bare mød op.\nLeder: Klaus Fynsk Norup, underviser på HF",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "sport-motion",
-        "boern-familie"
-      ],
-      "location": {
-        "name": "Ærøhallen",
-        "address": "Halvejen 22",
-        "postalCode": "5965",
-        "city": "Marstal",
-        "url": "https://campusaeroe.dk/sted/aeroehallen/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-10-20",
-          "kind": "timed",
-          "startTime": "19:00"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270608T190000",
-        "rdates": [],
-        "exdates": [
-          "2026-12-22T19:00",
-          "2026-12-29T19:00",
-          "2027-03-23T19:00"
-        ],
-        "overrides": [],
-        "durationMinutes": 120
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "series-campus-idraet-2",
-        "url": "https://campusaeroe.dk/event/campus-idraet-2/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-08-17T08:22:05.000Z"
-      }
-    },
-    {
       "id": "campus-aeroe-series-campus-kunst",
       "title": "CAMPUS-KUNST",
       "description": "Giv dig selv et udtryk\nHver mandag fra oktober til april er der åbent kunstværksted. HF billedkunstlærer Nynne Haugaard Pedersen leder holdet.\nCampus-holdet er åbent for alle under uddannelse fra 15 + år. Ingen tilmelding – bare mød op.",
@@ -637,6 +253,390 @@
       }
     },
     {
+      "id": "campus-aeroe-8021",
+      "title": "Yoga Nidra og åndedrætsøvelser for bedre søvn v yogalærer Anna Kramer",
+      "description": "Gratis. 15 pladser. Tilmelding på SMS til Anna tlf. 5522 3236\nYoga Nidra er en meditationsteknik, der også bliver kaldt ”yogisk søvn”. Det er en afslappende teknik, hvor man liggende bliver guidet ind i en meditativ tilstand mellem vågenhed og søvn. Yoga Nidra og åndedrætsøvelser kan have en række positive effekter på både kroppen og sindet: Det reducerer stress og angst og forbedrer søvnkvaliteten samtidig med at det er let at udføre og tilgængeligt for alle.",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Atma Yoga House",
+        "address": "Kærvejen 17",
+        "city": "Ommel",
+        "url": "https://campusaeroe.dk/sted/atma-yoga-house/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "campus-8021",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "8021",
+        "url": "https://campusaeroe.dk/event/yoga-nidra-og-aandedraetsoevelser-for-bedre-soevn-v-yogalaerer-anna-kramer/",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
+        "modifiedAt": "2026-08-24T09:11:16.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-8018",
+      "title": "Langbordsmiddag for unge: Gratis mad & snak om det gode liv med skærm",
+      "description": "Tilmelding pga. mad. Send SMS til Cecilie på 3051942\nVær med til en hyggelig langbordsmiddag, hvor vi samles om god mad, uformel stemning og en ærlig snak om skærme, søvn og hverdagen. En aften, hvor I kan udveksle erfaringer, grine ad de dårlige vaner og snakke om, hvordan man får mere ud af døgnets timer – uden at droppe alt det sjove på skærmen.",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "boern-familie"
+      ],
+      "location": {
+        "name": "Campus Ærø Studiecenter",
+        "address": "Ellenet 10 (Indgang gennem Navigationsskolens hovedindgang)",
+        "postalCode": "5965",
+        "city": "Marstal",
+        "url": "https://campusaeroe.dk/sted/campus-aeroe-studiecenter/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "campus-8018",
+            "date": "2026-09-16",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "8018",
+        "url": "https://campusaeroe.dk/event/langbordsmiddag-for-unge-gratis-mad-snak-om-det-gode-liv-med-skaerm/",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
+        "modifiedAt": "2026-08-24T09:08:19.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-8025",
+      "title": "Søvnlaboratorium og lydrejse /v musiker Kristian Humaidan",
+      "description": "Tilmelding på SMS eller mail til Stine:60682911/stine@soebygaard.dk\nOplev en dyb, rolig og anderledes måde at tilegne sig teoretisk og praktisk viden om søvn. Søvnlaboratoriet er et sanseligt og oplevelsesbaseret format, hvor viden serveres sammen med musik og små visualiseringsøvelser. Oplægget foregår liggende, og deltagerne finder sig godt til rette på yogamåtter og med dæmpet belysning. Deltagerne inviteres bl.a. med på en “lydrejse” til tonerne fra SoundWheel",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Søbygaard",
+        "address": "Søbygårdsvej 2",
+        "postalCode": "5985",
+        "city": "Søby",
+        "url": "https://campusaeroe.dk/sted/soebygaard/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "campus-8025",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "8025",
+        "url": "https://campusaeroe.dk/event/soevnlaboratorium-og-lydrejse-v-musiker-kristian-humaidan/",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
+        "modifiedAt": "2026-08-24T09:16:46.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-8031",
+      "title": "Foredrag: Hvad betyder søvn for hjernen /v hjerneforsker Troels W Kjær",
+      "description": "Gratis. Kræver tilmelding via www.arrebib.dk\nTroels W. Kjær er en højt anerkendt hjerneforsker, forfatter og speciallæge, der er kendt for sin ekspertise inden for hjernens funktioner og mysterier. Med en imponerende baggrund og en passion for at formidle kompleks videnskab på en letforståelig og underholdende måde, er rammerne sat for en fantastisk underholdende og oplysende aften.",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Ærøskøbing Bibliotek",
+        "address": "Søndergade 16B",
+        "city": "Ærøskøbing",
+        "url": "https://campusaeroe.dk/sted/aeroeskoebing-bibliotek/"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Tilmelding er påkrævet."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "booking": {
+        "required": true,
+        "soldOut": false
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "campus-8031",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "18:30",
+            "endTime": "20:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "8031",
+        "url": "https://campusaeroe.dk/event/foredrag-hvad-betyder-soevn-for-hjernen-v-hjerneforsker-troels-w-kjaer/",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
+        "modifiedAt": "2026-08-24T09:23:14.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-8028",
+      "title": "Foredrag: Søvn hos de små, hjemme og i dagtilbud 0-3 år ved Karen Kildahl",
+      "description": "Gratis. Uden tilmelding – bare mød op.\nKom og hør søvnspecialist Karen Kildahl fortælle kærligt og humoristisk om søvn i alderen 0-3 år. Hvad kan vi gøre som forældre, som institution og i samarbejde for, at børn sover godt og nok? Vi kommer til at høre om den nyeste evidens på området. Avler søvn søvn? Kan søvnproblemer løses, og hvordan har man en dialog om søvn, så vi sammen kan arbejde hen imod det bedste for alle parter.",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "musik-kultur",
+        "boern-familie"
+      ],
+      "location": {
+        "name": "Ærø Friskole",
+        "address": "Vestergade 52A",
+        "city": "Ærøskøbing",
+        "url": "https://campusaeroe.dk/sted/aeroe-friskole/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "campus-8028",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "20:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "8028",
+        "url": "https://campusaeroe.dk/event/foredrag-soevn-hos-de-smaa-hjemme-og-i-dagtilbud-0-3-aar-ved-karen-kildahl/",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
+        "modifiedAt": "2026-08-24T09:19:04.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-8057",
+      "title": "Ærø Gadefest",
+      "description": "Kom med til en helt ny festival fyldt med streetkultur, kreativitet, musik og fællesskab!\nDagen er fyldt med workshops hvor unge professionelle fra hele landet underviser i graffiti, skate, break, basket og keramik. Ud over det tidsbestemte program er der masser af fede oplevelser løbende gennem dagen. Her kan du slippe kreativiteten løs i krea-workshops, lær tricks med kendama ved graffitivæggen, prøv kræfter med mix og musik på Lauwi’s DJ-skole på skateparkens 1. sal. Sæt din lid til Ærø Ungdomsråd og deres instrukser ved myselfie-stationen\nAftenprogrammet er eksklusivt for unge fra 6. klasse og opefter hvor UNG EVENT byder på musikquiz, mysterybox, mere kunst/krea, fotoudstilling, DJ´s, flyout og meget mere – Jesper Bus sørger for at alle bliver kørt hjem til Søby og Marstal kl. 23.00 når programmet slutter\nArrangører: Viften, Ærø Folkebibliotek, UngEvent og Ærø Skate.\nLæs mere og se det fulde program her: (1) Ærø Gadefest for Børn og Unge | Facebook",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "musik-kultur",
+        "boern-familie"
+      ],
+      "location": {
+        "name": "Det Gamle Værft",
+        "address": "Ærøskøbing Havn 4aa",
+        "city": "Ærøskøbing",
+        "url": "https://campusaeroe.dk/sted/det-gamle-vaerft/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "campus-8057",
+            "date": "2026-09-19",
+            "kind": "timed",
+            "startTime": "11:00",
+            "endTime": "23:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "8057",
+        "url": "https://campusaeroe.dk/event/aeroe-gadefest/",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
+        "modifiedAt": "2026-09-14T15:23:39.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-series-aabent-metalvaerksted",
+      "title": "Åbent (Metal)værksted",
+      "description": "Åbent Værksted på Navigationsskolen med Rasmus – hver mandag\nHer kan du arbejde med reparation af knallerter og cykler samt udføre mindre jernprojekter. For at deltage skal du have gennemført §17-kurset online, som giver adgang til værkstedets maskiner og processer\n• Her kan du:\n• Reparere din knallert eller cykel\n• Lave små projekter i jern\n• Prøve at svejse, bukke og forme\n• Være en del af et hyggeligt fællesskab med god stemning\nCampus-holdet er åbent for alle under uddannelse fra 15 + år. Ingen tilmelding – bare mød op.",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Reberbanen, Marstal",
+        "url": "https://campusaeroe.dk/sted/reberbanen-marstal/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-10-19",
+          "kind": "timed",
+          "startTime": "18:30"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270607T183000",
+        "rdates": [],
+        "exdates": [
+          "2026-12-28T18:30",
+          "2027-02-22T18:30",
+          "2027-03-22T18:30",
+          "2027-03-29T18:30",
+          "2027-05-17T18:30"
+        ],
+        "overrides": [],
+        "durationMinutes": 120
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "series-aabent-metalvaerksted",
+        "url": "https://campusaeroe.dk/event/aabent-metalvaerksted/",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
+        "modifiedAt": "2026-07-06T07:26:55.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-series-campus-idraet",
+      "title": "CAMPUS-IDRÆT",
+      "description": "Kom og vær aktiv med andre unge fra 15+, der er ingen tilmelding, bare mød op.\nLeder: Klaus Fynsk Norup, underviser på HF",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "sport-motion",
+        "boern-familie"
+      ],
+      "location": {
+        "name": "Ærøhallen",
+        "address": "Halvejen 22",
+        "postalCode": "5965",
+        "city": "Marstal",
+        "url": "https://campusaeroe.dk/sted/aeroehallen/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-10-20",
+          "kind": "timed",
+          "startTime": "08:00"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270413T080000",
+        "rdates": [],
+        "exdates": [
+          "2026-12-22T08:00",
+          "2026-12-29T08:00",
+          "2027-02-16T08:00",
+          "2027-03-23T08:00"
+        ],
+        "overrides": [],
+        "durationMinutes": 540
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "series-campus-idraet",
+        "url": "https://campusaeroe.dk/event/campus-idraet/",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
+        "modifiedAt": "2026-08-17T08:13:49.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-series-campus-idraet-2",
+      "title": "CAMPUS-IDRÆT",
+      "description": "Kom og vær aktiv med andre unge fra 15+, der er ingen tilmelding, bare mød op.\nLeder: Klaus Fynsk Norup, underviser på HF",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "sport-motion",
+        "boern-familie"
+      ],
+      "location": {
+        "name": "Ærøhallen",
+        "address": "Halvejen 22",
+        "postalCode": "5965",
+        "city": "Marstal",
+        "url": "https://campusaeroe.dk/sted/aeroehallen/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-10-20",
+          "kind": "timed",
+          "startTime": "19:00"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270608T190000",
+        "rdates": [],
+        "exdates": [
+          "2026-12-22T19:00",
+          "2026-12-29T19:00",
+          "2027-03-23T19:00"
+        ],
+        "overrides": [],
+        "durationMinutes": 120
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "series-campus-idraet-2",
+        "url": "https://campusaeroe.dk/event/campus-idraet-2/",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
+        "modifiedAt": "2026-08-17T08:22:05.000Z"
+      }
+    },
+    {
       "id": "campus-aeroe-series-campus-musik",
       "title": "CAMPUS-MUSIK",
       "description": "Er du klar til samspil? HF’s musiklærer Claus Svane leder dette hold, der en gang om ugen fra oktober til april samler unge fra hele øen til musik.\nCampus-holdet er åbent for alle fra 15 + år.",
@@ -679,7 +679,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-musik",
         "url": "https://campusaeroe.dk/event/campus-musik/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
         "modifiedAt": "2026-08-17T08:02:57.000Z"
       }
     },
@@ -719,7 +719,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "7963",
         "url": "https://campusaeroe.dk/event/fejring-af-faellesskaber-og-uddannelse-paa-aeroe/",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
+        "verifiedAt": "2026-09-16T16:17:02.588Z",
         "modifiedAt": "2026-08-04T08:50:50.000Z"
       }
     }

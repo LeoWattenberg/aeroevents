@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-rideklub",
-  "verifiedAt": "2026-09-15T16:17:03.394Z",
+  "verifiedAt": "2026-09-16T16:17:02.588Z",
   "events": [
     {
       "id": "aeroe-rideklub-nisseoptog",
@@ -34,6 +34,74 @@
         "externalId": "nisseoptog",
         "url": "https://www.aeroerideklub.dk/events-1/nisseoptog",
         "verifiedAt": "2026-09-15T16:17:03.394Z"
+      }
+    },
+    {
+      "id": "aeroe-rideklub-elev-hygge-eftermiddag",
+      "title": "elev hygge eftermiddag",
+      "description": "Vi hygger, leger, snakker og spiser fredags slik inden aftensmaden.mød op og hyg med os.. vi glæder os til at se dig",
+      "organizerId": "aeroe-rideklub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "rideklub-elev-hygge-eftermiddag",
+            "date": "2026-10-02",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-rideklub",
+        "externalId": "elev-hygge-eftermiddag",
+        "url": "https://www.aeroerideklub.dk/events-1/elev-hygge-eftermiddag",
+        "verifiedAt": "2026-09-16T16:17:02.588Z"
+      }
+    },
+    {
+      "id": "aeroe-rideklub-halloween-springning",
+      "title": "halloween springning",
+      "description": "Kom gerne udklædt eller kom som du er. Det skal være hyggeligt og for alle.",
+      "organizerId": "aeroe-rideklub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "rideklub-halloween-springning",
+            "date": "2026-10-31",
+            "kind": "timed",
+            "startTime": "12:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-rideklub",
+        "externalId": "halloween-springning",
+        "url": "https://www.aeroerideklub.dk/events-1/halloween-springning",
+        "verifiedAt": "2026-09-16T16:17:02.588Z"
       }
     }
   ]
