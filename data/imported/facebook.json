@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-16T16:17:02.588Z",
+  "verifiedAt": "2026-09-17T16:17:03.172Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -286,6 +286,38 @@
         "externalId": "post-28270644639212120",
         "url": "https://www.facebook.com/groups/oplevmitaeroe/posts/28270644639212120/",
         "verifiedAt": "2026-09-16T16:17:02.588Z"
+      }
+    },
+    {
+      "id": "facebook-post-1050656034259209",
+      "title": "Kære alle friske cyklister",
+      "description": "Kære alle friske cyklister\nBEBOERHUSET KL. 10\nhver fredag\nHvis vejret holder tørt i morgen fredag d.18.9 cykler vi i skoven til skovfit.\nVi cykler fra Beboerhuset kl.10.\nRuten går op over Græsvænget/Reberbanen/Midtmarken igennem skoven til Ældresagens plads i skoven ( ved “Bivognens hus”).\nHer gør vi gymnastik med naturens materialer en times tid.\nTag gerne lidt “snack” og drikkelse med til pause, inden vi cykler hjem igen.\nVi er hjemme ca.12.30.\nAflysning ved regn/storm skrives her og ellers møder man bare op.\nVel mødt\nMarianne mob. 50716360",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "cancelled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-z4bgxn-1",
+            "date": "2026-09-18",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-1050656034259209",
+        "url": "https://www.facebook.com/groups/871725845485563/posts/1050656034259209/",
+        "verifiedAt": "2026-09-17T16:17:03.172Z"
       }
     }
   ]
