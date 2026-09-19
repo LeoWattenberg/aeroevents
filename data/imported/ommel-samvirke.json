@@ -1,6 +1,6 @@
 {
   "sourceId": "ommel-samvirke",
-  "verifiedAt": "2026-09-17T16:17:03.172Z",
+  "verifiedAt": "2026-09-19T16:17:03.610Z",
   "events": [
     {
       "id": "ommel-samvirke-activity-2516431221fb91896417",
@@ -220,6 +220,115 @@
       }
     },
     {
+      "id": "ommel-samvirke-activity-6c8c527604fb0902ee16",
+      "title": "Kleven siger TUSIND TAK",
+      "description": "… for hjælpen med stort og småt. Til alle der gav en hånd som hjælpere, samt til alle der slog en tur forbi havnen og købte kage, kaffe, øl og pølser. TUSIND TAK!",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Kleven Havn"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-6c8c527604fb0902ee16-2026-09-17-1000",
+            "date": "2026-09-17",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endDate": "2026-09-26",
+            "endTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-6c8c527604fb0902ee16",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-17T16:17:03.172Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-cb60eb005fee08f91ed9",
+      "title": "Kagemand til Årets Næstbedste Landsby",
+      "description": "Ommel blev ikke Årets Landsby – men fik en delt 2. plads – som vi fejrer ved at invitere alle ommelitter på 'Kagemand og Kaffe' fredag kl. 15.00 – altså en time før 'Fredagsbaren' – beboerhuset!",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-cb60eb005fee08f91ed9-2026-09-18-1500",
+            "date": "2026-09-18",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-cb60eb005fee08f91ed9",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-17T16:17:03.172Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-edb5ac395a02dad2683e",
+      "title": "It-hjælp",
+      "description": "💻 IT-hjælp – Små udfordringer, store løsninger Driller mobilen, computeren eller tabletten? Er der en app, du ikke kan få til at virke, eller er der noget digitalt, du gerne vil blive klogere på? Kom til IT-hjælp, hvor vi sammen finder løsninger på hverdagens digitale udfordringer. Her er der god tid til spørgsmål, og ingen spørgsmål er for små. Du kan blandt andet få hjælp til: 📱 Mobiltelefon, tablet og computer 📧 E-mail og MitID 🌐 Internettet og offentlige selvbetjeningsløsninger 📸 Billeder og beskeder 💡 Smarte tips og tricks, der gør hverdagen lettere Tovholder: Carsten Wolff Tag gerne din egen enhed med, så tager vi udgangspunkt i netop de udfordringer, du møder i hverdagen. Alle er velkomne – uanset om du er nybegynder eller blot ønsker at lære lidt mere.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-edb5ac395a02dad2683e-2026-09-18-1330",
+            "date": "2026-09-18",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "14:55"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-edb5ac395a02dad2683e",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-17T16:17:03.172Z"
+      }
+    },
+    {
       "id": "ommel-samvirke-activity-161c07571e9abfa92738",
       "title": "Formiddagsstrik",
       "description": "🧶 Strik & Kreative Sysler – Fællesskab med garn, idéer og hygge Har du lyst til et par hyggelige timer i godt selskab? Tag dit strikketøj, hækletøj, broderi eller et andet kreativt projekt under armen, og kom og vær med. Her er der plads til både erfarne og nybegyndere – vi inspirerer hinanden, hjælper, hvis der er brug for det, og nyder nogle hyggelige timer sammen. Det handler ikke kun om masker og mønstre – men også om fællesskab, gode snakke og masser af smil. 🧶 Medbring dit eget kreative projekt. ☕ Medbring gerne kaffe, te eller andre drikkevarer samt din egen kop. Alle er hjerteligt velkomne! Kom, som du er – der er altid plads til en ekstra ved bordet.",
@@ -239,13 +348,6 @@
       "schedule": {
         "kind": "explicit",
         "dates": [
-          {
-            "id": "activity-161c07571e9abfa92738-2026-09-23-1000",
-            "date": "2026-09-23",
-            "kind": "timed",
-            "startTime": "10:00",
-            "endTime": "12:00"
-          },
           {
             "id": "activity-161c07571e9abfa92738-2026-10-07-1000",
             "date": "2026-10-07",
@@ -357,7 +459,43 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-161c07571e9abfa92738",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-189bbe534d199bc141a3",
+      "title": "Dart",
+      "description": "Vi spiller dart i Beboerhuset",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-189bbe534d199bc141a3-2026-09-22-1900",
+            "date": "2026-09-22",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-189bbe534d199bc141a3",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -380,13 +518,6 @@
       "schedule": {
         "kind": "explicit",
         "dates": [
-          {
-            "id": "activity-30308c2d5b0827696f99-2026-09-18-0945",
-            "date": "2026-09-18",
-            "kind": "timed",
-            "startTime": "09:45",
-            "endTime": "11:45"
-          },
           {
             "id": "activity-30308c2d5b0827696f99-2026-09-25-0945",
             "date": "2026-09-25",
@@ -463,7 +594,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30308c2d5b0827696f99",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -500,7 +631,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-496ff0a823833c4a8412",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -781,19 +912,19 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-67cdddcd989e08df5bcc",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
-      "id": "ommel-samvirke-activity-6c8c527604fb0902ee16",
-      "title": "Kleven siger TUSIND TAK",
-      "description": "… for hjælpen med stort og småt. Til alle der gav en hånd som hjælpere, samt til alle der slog en tur forbi havnen og købte kage, kaffe, øl og pølser. TUSIND TAK!",
+      "id": "ommel-samvirke-activity-6c5fb863182f451a4f10",
+      "title": "Dart",
+      "description": "Vi spiller dart i Beboerhuset. Kom og vær med til et par hyggelige timer",
       "organizerId": "ommel-samvirke",
       "categoryIds": [
         "forening-faellesskab"
       ],
       "location": {
-        "name": "Kleven Havn"
+        "name": "Beboerhuset"
       },
       "attendance": {
         "kind": "public",
@@ -805,20 +936,19 @@
         "kind": "explicit",
         "dates": [
           {
-            "id": "activity-6c8c527604fb0902ee16-2026-09-17-1000",
-            "date": "2026-09-17",
+            "id": "activity-6c5fb863182f451a4f10-2027-05-25-1900",
+            "date": "2027-05-25",
             "kind": "timed",
-            "startTime": "10:00",
-            "endDate": "2026-09-26",
-            "endTime": "14:00"
+            "startTime": "19:00",
+            "endTime": "21:00"
           }
         ]
       },
       "source": {
         "sourceId": "ommel-samvirke",
-        "externalId": "activity-6c8c527604fb0902ee16",
+        "externalId": "activity-6c5fb863182f451a4f10",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -945,7 +1075,44 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6e9475d965c159ce3680",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-7d990f12e03ac408ef04",
+      "title": "Gåtur eftermiddag",
+      "description": "Eftermiddagsgåtur – Frisk luft, motion og godt humør Hver onsdag kl. 16.30 – 17.30 Har du lyst til at få pulsen lidt op, nyde den friske luft og gå en tur i godt selskab? Vi mødes ved Beboerhuset kl. 16.30 og går en rask tur på ca. en time. Undervejs er der tid til hyggelige snakke, grin og fællesskab – og samtidig får vi god motion. For at gøre turene spændende varierer vi ruterne fra gang til gang efter deltagernes ønsker og aftale. Kom alene eller tag en nabo eller ven med – alle er velkomne. En times frisk luft kan gøre en stor forskel for både krop og humør. Vi glæder os til at gå en tur sammen med dig!",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-09-23",
+          "kind": "timed",
+          "startTime": "16:30"
+        },
+        "rrule": "FREQ=WEEKLY;INTERVAL=18;BYDAY=WE;UNTIL=20270127T163000",
+        "rdates": [],
+        "exdates": [],
+        "overrides": [],
+        "durationMinutes": 60
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-7d990f12e03ac408ef04",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -968,13 +1135,6 @@
       "schedule": {
         "kind": "explicit",
         "dates": [
-          {
-            "id": "activity-854abf248a0f8c8fc1de-2026-09-22-1900",
-            "date": "2026-09-22",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "21:00"
-          },
           {
             "id": "activity-854abf248a0f8c8fc1de-2026-09-29-1900",
             "date": "2026-09-29",
@@ -1065,7 +1225,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-854abf248a0f8c8fc1de",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -1101,7 +1261,79 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-8d65f8aaf9dff471dc0e",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-98fd0ca67f6179b5f2d7",
+      "title": "It-Hjælp",
+      "description": "💻 IT-hjælp – Små udfordringer, store løsninger Driller mobilen, computeren eller tabletten? Er der en app, du ikke kan få til at virke, eller er der noget digitalt, du gerne vil blive klogere på? Kom til IT-hjælp, hvor vi sammen finder løsninger på hverdagens digitale udfordringer. Her er der god tid til spørgsmål, og ingen spørgsmål er for små. Du kan blandt andet få hjælp til: 📱 Mobiltelefon, tablet og computer 📧 E-mail og MitID 🌐 Internettet og offentlige selvbetjeningsløsninger 📸 Billeder og beskeder 💡 Smarte tips og tricks, der gør hverdagen lettere Tovholder: Carsten Wolff Tag gerne din egen enhed med, så tager vi udgangspunkt i netop de udfordringer, du møder i hverdagen. Alle er velkomne – uanset om du er nybegynder eller blot ønsker at lære lidt mere.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-98fd0ca67f6179b5f2d7-2026-10-02-1330",
+            "date": "2026-10-02",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "15:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-98fd0ca67f6179b5f2d7",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-9e7440788364c2912744",
+      "title": "Formiddagsstrik",
+      "description": "🧶 Strik & Kreative Sysler – Fællesskab med garn, idéer og hygge Har du lyst til et par hyggelige timer i godt selskab? Tag dit strikketøj, hækletøj, broderi eller et andet kreativt projekt under armen, og kom og vær med. Her er der plads til både erfarne og nybegyndere – vi inspirerer hinanden, hjælper, hvis der er brug for det, og nyder nogle hyggelige timer sammen. Det handler ikke kun om masker og mønstre – men også om fællesskab, gode snakke og masser af smil. 🧶 Medbring dit eget kreative projekt. ☕ Medbring gerne kaffe, te eller andre drikkevarer samt din egen kop. Alle er hjerteligt velkomne! Kom, som du er – der er altid plads til en ekstra ved bordet.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-9e7440788364c2912744-2026-09-23-1000",
+            "date": "2026-09-23",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-9e7440788364c2912744",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -1137,7 +1369,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9f7394883888a0233afa",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -1271,7 +1503,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a59186c3c2663f88eb65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -1307,7 +1539,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a8dc39b0cd3c624e29ba",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -1471,13 +1703,6 @@
             "endTime": "21:00"
           },
           {
-            "id": "activity-b0e925ea79720a9acd65-2027-05-25-1900",
-            "date": "2027-05-25",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "21:00"
-          },
-          {
             "id": "activity-b0e925ea79720a9acd65-2027-06-01-1900",
             "date": "2027-06-01",
             "kind": "timed",
@@ -1595,7 +1820,43 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-b0e925ea79720a9acd65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-bd43d7d08f6f6648dd44",
+      "title": "Brætspil",
+      "description": "Første søndag i måneden er der brætspil i beboerhuset. Der er ingen aldersgrænse og alle er velkomne til at være med. Vi aftaler når vi kommer hvilke spil vi har lyst til at spille. Beboerhuset råder over en del brætspil men har du et du gerne vil spille må du meget gerne medbringe det. Pris 20 kr. som går til kaffen og en småkage",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-bd43d7d08f6f6648dd44-2027-07-04-1330",
+            "date": "2027-07-04",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endTime": "16:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-bd43d7d08f6f6648dd44",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -1666,7 +1927,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-beff946b8065a3c9b786",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -1709,43 +1970,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ca911d32328bdabc0823",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-cb60eb005fee08f91ed9",
-      "title": "Kagemand til Årets Næstbedste Landsby",
-      "description": "Ommel blev ikke Årets Landsby – men fik en delt 2. plads – som vi fejrer ved at invitere alle ommelitter på 'Kagemand og Kaffe' fredag kl. 15.00 – altså en time før 'Fredagsbaren' – beboerhuset!",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Beboerhuset"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "activity-cb60eb005fee08f91ed9-2026-09-18-1500",
-            "date": "2026-09-18",
-            "kind": "timed",
-            "startTime": "15:00",
-            "endTime": "16:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-cb60eb005fee08f91ed9",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     },
     {
@@ -1768,13 +1993,15 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "date": "2026-09-23",
+          "date": "2026-09-30",
           "kind": "timed",
           "startTime": "16:30"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270526T163000",
         "rdates": [],
-        "exdates": [],
+        "exdates": [
+          "2027-01-27T16:30"
+        ],
         "overrides": [],
         "durationMinutes": 60
       },
@@ -1782,43 +2009,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-d0a8ed3087ff43c20a82",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-edb5ac395a02dad2683e",
-      "title": "It-hjælp",
-      "description": "💻 IT-hjælp – Små udfordringer, store løsninger Driller mobilen, computeren eller tabletten? Er der en app, du ikke kan få til at virke, eller er der noget digitalt, du gerne vil blive klogere på? Kom til IT-hjælp, hvor vi sammen finder løsninger på hverdagens digitale udfordringer. Her er der god tid til spørgsmål, og ingen spørgsmål er for små. Du kan blandt andet få hjælp til: 📱 Mobiltelefon, tablet og computer 📧 E-mail og MitID 🌐 Internettet og offentlige selvbetjeningsløsninger 📸 Billeder og beskeder 💡 Smarte tips og tricks, der gør hverdagen lettere Tovholder: Carsten Wolff Tag gerne din egen enhed med, så tager vi udgangspunkt i netop de udfordringer, du møder i hverdagen. Alle er velkomne – uanset om du er nybegynder eller blot ønsker at lære lidt mere.",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Beboerhuset"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "activity-edb5ac395a02dad2683e-2026-09-18-1330",
-            "date": "2026-09-18",
-            "kind": "timed",
-            "startTime": "13:30",
-            "endTime": "14:55"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-edb5ac395a02dad2683e",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-17T16:17:03.172Z"
+        "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
     }
   ]
