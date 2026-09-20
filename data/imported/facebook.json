@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-17T16:17:03.172Z",
+  "verifiedAt": "2026-09-20T16:17:09.708Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -318,6 +318,73 @@
         "externalId": "post-1050656034259209",
         "url": "https://www.facebook.com/groups/871725845485563/posts/1050656034259209/",
         "verifiedAt": "2026-09-17T16:17:03.172Z"
+      }
+    },
+    {
+      "id": "facebook-post-2897632957274841",
+      "title": "Fra",
+      "description": "Fra torsdag den 24. september til onsdag den 30. september, hver aften kl. 19.30 (ikke mandag) samt søndag kl. 15.00 viser vi:\nTHE INVITE\nJoe og Angelas ægteskab er ved at gå i opløsning. De skændes konstant, og der er ingen gnist mellem dem. Men da Angela inviterer deres gådefulde overboer til middag meget imod Joes vilje, udvikler aftenen sig i en noget uventet retning.\nJoe og Angela er elendige værter. Da de beslutter sig for at invitere et andet par på middag, serverer de et charcuteribræt uden at være klar over, at den ene gæst er veganer.\nDe har ingen drikkevarer at byde på, og souffléen, de skal have til hovedret, bliver en katastrofe, fordi Angela aldrig før har prøvet at lave den notorisk vanskelige ret.\nAlligevel gennemfører de middagen, hvor akavet det end måtte blive.\n‘The Invite’ er et komediedrama om de uventede og mærkelige drejninger, aftenen tager.\nI hænderne på instruktøren Olivia Wilde, som også spiller Angela, bliver filmen en snedig undersøgelse af de udfordringer, mange par møder senere i livet.\nUdover Wilde selv byder skuespillerkvartetten i front på Seth Rogen, Penélope Cruz og Edward Norton.\nPremiere: 13.08.2026\nSkuespillere: Seth Rogen, Olivia Wilde, Penélope Cruz, Edward Norton\nGenre: Comedy / Drama\nInstruktion: Olivia Wilde\nNationalitet: USA\nCensur : 7 år\nOriginalsprog: Engelsk\nDistributør: SF Studios\nTrailer: https://www.youtube.com/watch?v=W7zuytv33CA",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-rz4apm-1",
+            "date": "2026-09-24",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-rz4apm-2",
+            "date": "2026-09-30",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-2897632957274841",
+        "url": "https://www.facebook.com/groups/1853077681730379/posts/2897632957274841/",
+        "verifiedAt": "2026-09-20T16:17:09.708Z"
+      }
+    },
+    {
+      "id": "facebook-post-39119886660929798",
+      "title": "Hej alle",
+      "description": "Hej alle\nVi har mulighed for rid for dommer( program træning) hvor man kan ride et højere program end man plejer og få dommer kommentarer osv uden det tæller med nogen steder.\nDet er Gitte som dømte de 2 første stævner\n7/11. hvem vil være med ?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1ppfhij-1",
+            "date": "2026-11-07",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-39119886660929798",
+        "url": "https://www.facebook.com/groups/aeroerideklub.dk/posts/39119886660929798/",
+        "verifiedAt": "2026-09-20T16:17:09.708Z"
       }
     }
   ]
