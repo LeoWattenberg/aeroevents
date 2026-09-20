@@ -1,6 +1,6 @@
 {
   "sourceId": "marnav",
-  "verifiedAt": "2026-09-19T16:17:03.610Z",
+  "verifiedAt": "2026-09-20T04:17:03.351Z",
   "events": [
     {
       "id": "marnav-647",
@@ -44,7 +44,7 @@
         "sourceId": "marnav",
         "externalId": "647",
         "url": "https://marnav.nemtilmeld.dk/647/",
-        "verifiedAt": "2026-09-19T16:17:03.610Z"
+        "verifiedAt": "2026-09-20T04:17:03.351Z"
       }
     },
     {
@@ -89,7 +89,7 @@
         "sourceId": "marnav",
         "externalId": "648",
         "url": "https://marnav.nemtilmeld.dk/648/",
-        "verifiedAt": "2026-09-19T16:17:03.610Z"
+        "verifiedAt": "2026-09-20T04:17:03.351Z"
       }
     }
   ]

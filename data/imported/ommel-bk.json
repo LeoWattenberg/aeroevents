@@ -1,6 +1,6 @@
 {
   "sourceId": "ommel-bk",
-  "verifiedAt": "2026-09-19T16:17:03.610Z",
+  "verifiedAt": "2026-09-20T04:17:03.351Z",
   "events": [
     {
       "id": "ommel-bk-633197",
@@ -34,7 +34,7 @@
         "sourceId": "ommel-bk",
         "externalId": "633197",
         "url": "https://www.dbufyn.dk/resultater/kamp/633197_501669/kampinfo",
-        "verifiedAt": "2026-09-19T16:17:03.610Z"
+        "verifiedAt": "2026-09-20T04:17:03.351Z"
       }
     },
     {
@@ -69,7 +69,7 @@
         "sourceId": "ommel-bk",
         "externalId": "633210",
         "url": "https://www.dbufyn.dk/resultater/kamp/633210_501669/kampinfo",
-        "verifiedAt": "2026-09-19T16:17:03.610Z"
+        "verifiedAt": "2026-09-20T04:17:03.351Z"
       }
     }
   ]
