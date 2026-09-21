@@ -1,6 +1,6 @@
 {
   "sourceId": "soeby-lokalraad",
-  "verifiedAt": "2026-09-21T04:17:02.270Z",
+  "verifiedAt": "2026-09-21T16:17:02.690Z",
   "events": [
     {
       "id": "soeby-lokalraad-node-12-2026-10-01-16-00",
@@ -36,7 +36,7 @@
         "sourceId": "soeby-lokalraad",
         "externalId": "node-12-2026-10-01-16-00",
         "url": "https://soebylokalraad.dk/11/en/node/12",
-        "verifiedAt": "2026-09-21T04:17:02.270Z"
+        "verifiedAt": "2026-09-21T16:17:02.690Z"
       }
     },
     {
@@ -73,7 +73,7 @@
         "sourceId": "soeby-lokalraad",
         "externalId": "node-12-2026-10-03-13-30",
         "url": "https://soebylokalraad.dk/11/en/node/12",
-        "verifiedAt": "2026-09-21T04:17:02.270Z"
+        "verifiedAt": "2026-09-21T16:17:02.690Z"
       }
     }
   ]

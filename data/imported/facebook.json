@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-21T04:17:02.270Z",
+  "verifiedAt": "2026-09-21T16:17:02.690Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -385,6 +385,100 @@
         "externalId": "post-39119886660929798",
         "url": "https://www.facebook.com/groups/aeroerideklub.dk/posts/39119886660929798/",
         "verifiedAt": "2026-09-20T16:17:09.708Z"
+      }
+    },
+    {
+      "id": "facebook-post-28363513493286583",
+      "title": "Hej. Så er der den første fællesspisning på Bregninge Sognegård i dette efterår",
+      "description": "Hej. Så er der den første fællesspisning på Bregninge Sognegård i dette efterår.\nMette Meldgård fra Gravendal er gæstekok den 24.september. Hvis man gerne vil have en vegetarisk ret, skal det meddeles specielt.\nVi glæder os til at se jer igen. Tilmelding til Mathilde på telefon 61265970.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1y4fjp5-1",
+            "date": "2026-09-24",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28363513493286583",
+        "url": "https://www.facebook.com/groups/144664695598174/posts/28363513493286583/",
+        "verifiedAt": "2026-09-21T16:17:02.690Z"
+      }
+    },
+    {
+      "id": "facebook-post-960860693727201",
+      "title": "Nu er det snart tid til en hyggelig fællesspisning i Aktivitetshuset Vi mødes",
+      "description": "Nu er det snart tid til en hyggelig fællesspisning i Aktivitetshuset Vi mødes tirsdag den 6. oktober klokken 18, og som altid : medbring drikkevarer, bestik og tallerken samt noget lækkert til buffet’en\nOg, jeg foreslår at vi skiftes til at mødes tirsdage og onsdage, da nogle har faste aftaler om tirsdagen. Så i november kunne vi mødes onsdag ? Skriv gerne et feedback i kommentarfeltet",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-8einw8-1",
+            "date": "2026-10-06",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-960860693727201",
+        "url": "https://www.facebook.com/groups/434434336369842/posts/960860693727201/",
+        "verifiedAt": "2026-09-21T16:17:02.690Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid06wjc7fh2p6ktpbhh9rqmj5hs2tz1ikkcnbgydsxpq7q16n2ccn4-749147d0",
+      "title": "Ungt Omdrejningspunkt afholder musikbanko",
+      "description": "Ungt Omdrejningspunkt afholder musikbanko fredag den 9. oktober for alle unge mellem 18-34 år. Tag en ven under armen og kom med til en aften fuld af god musik, godt selskab og mulighed for at vinde fede præmier!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1x5qtb5-1",
+            "date": "2026-10-09",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid06WJC7Fh2p6kTpBhH9rqMJ5hs2TZ1iKkcnbGYDsxpq7q16N2cCN4gmv3UH4eZ6itYl",
+        "url": "https://www.facebook.com/motorfabrikkenmarstal/posts/ungt-omdrejningspunkt-afholder-musikbanko-fredag-den-9-oktober-for-alle-unge-mel/1526828652814520/",
+        "verifiedAt": "2026-09-21T16:17:02.690Z"
       }
     }
   ]

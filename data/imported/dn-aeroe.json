@@ -1,6 +1,6 @@
 {
   "sourceId": "dn-aeroe",
-  "verifiedAt": "2026-09-21T04:17:02.270Z",
+  "verifiedAt": "2026-09-21T16:17:02.690Z",
   "events": [
     {
       "id": "dn-aeroe-7912",
@@ -88,7 +88,7 @@
         "sourceId": "dn-aeroe",
         "externalId": "8067",
         "url": "https://arrangementer.dn.dk/arrangementer/8067",
-        "verifiedAt": "2026-09-21T04:17:02.270Z",
+        "verifiedAt": "2026-09-21T16:17:02.690Z",
         "modifiedAt": "2026-09-08T19:03:09.501Z"
       }
     },
@@ -127,7 +127,7 @@
         "sourceId": "dn-aeroe",
         "externalId": "7495",
         "url": "https://arrangementer.dn.dk/arrangementer/7495",
-        "verifiedAt": "2026-09-21T04:17:02.270Z",
+        "verifiedAt": "2026-09-21T16:17:02.690Z",
         "modifiedAt": "2026-06-23T19:47:09.705Z"
       }
     }
