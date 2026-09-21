@@ -1,6 +1,6 @@
 {
   "sourceId": "ommel-samvirke",
-  "verifiedAt": "2026-09-20T16:17:09.708Z",
+  "verifiedAt": "2026-09-21T04:17:02.270Z",
   "events": [
     {
       "id": "ommel-samvirke-activity-2516431221fb91896417",
@@ -499,6 +499,42 @@
       }
     },
     {
+      "id": "ommel-samvirke-activity-8d65f8aaf9dff471dc0e",
+      "title": "Krolf",
+      "description": "Har du lyst til at spille krolf. Søndag kl.10 er banen klar, så kom og få en hyggelig formiddag sammen med andre :-) Er du nybegynder, øvet, ung eller ældre så kom og prøv om det er noget for dig. Alle er velkomne",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Æblehaven"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-8d65f8aaf9dff471dc0e-2026-09-20-1000",
+            "date": "2026-09-20",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "11:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-8d65f8aaf9dff471dc0e",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-20T16:17:09.708Z"
+      }
+    },
+    {
       "id": "ommel-samvirke-activity-161c07571e9abfa92738",
       "title": "Formiddagsstrik",
       "description": "🧶 Strik & Kreative Sysler – Fællesskab med garn, idéer og hygge Har du lyst til et par hyggelige timer i godt selskab? Tag dit strikketøj, hækletøj, broderi eller et andet kreativt projekt under armen, og kom og vær med. Her er der plads til både erfarne og nybegyndere – vi inspirerer hinanden, hjælper, hvis der er brug for det, og nyder nogle hyggelige timer sammen. Det handler ikke kun om masker og mønstre – men også om fællesskab, gode snakke og masser af smil. 🧶 Medbring dit eget kreative projekt. ☕ Medbring gerne kaffe, te eller andre drikkevarer samt din egen kop. Alle er hjerteligt velkomne! Kom, som du er – der er altid plads til en ekstra ved bordet.",
@@ -636,7 +672,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-161c07571e9abfa92738",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -735,7 +771,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30308c2d5b0827696f99",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -772,7 +808,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-496ff0a823833c4a8412",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -1053,7 +1089,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-67cdddcd989e08df5bcc",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -1180,7 +1216,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6e9475d965c159ce3680",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -1217,7 +1253,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-836eca1737f817254932",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -1337,43 +1373,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-854abf248a0f8c8fc1de",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-8d65f8aaf9dff471dc0e",
-      "title": "Krolf",
-      "description": "Har du lyst til at spille krolf. Søndag kl.10 er banen klar, så kom og få en hyggelig formiddag sammen med andre :-) Er du nybegynder, øvet, ung eller ældre så kom og prøv om det er noget for dig. Alle er velkomne",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Æblehaven"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "activity-8d65f8aaf9dff471dc0e-2026-09-20-1000",
-            "date": "2026-09-20",
-            "kind": "timed",
-            "startTime": "10:00",
-            "endTime": "11:30"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-8d65f8aaf9dff471dc0e",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -1409,7 +1409,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9f7394883888a0233afa",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -1543,7 +1543,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a59186c3c2663f88eb65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -1579,7 +1579,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a8dc39b0cd3c624e29ba",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -1860,6 +1860,13 @@
             "kind": "timed",
             "startTime": "19:00",
             "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-09-21-1900",
+            "date": "2027-09-21",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
           }
         ]
       },
@@ -1867,7 +1874,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-b0e925ea79720a9acd65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -1938,7 +1945,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-beff946b8065a3c9b786",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -1981,7 +1988,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ca911d32328bdabc0823",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     },
     {
@@ -2018,7 +2025,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-d0a8ed3087ff43c20a82",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-20T16:17:09.708Z"
+        "verifiedAt": "2026-09-21T04:17:02.270Z"
       }
     }
   ]
