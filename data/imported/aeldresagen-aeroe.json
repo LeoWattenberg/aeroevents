@@ -1,19 +1,15 @@
 {
   "sourceId": "aeldresagen-aeroe",
-  "verifiedAt": "2026-09-21T16:17:02.690Z",
+  "verifiedAt": "2026-09-22T16:17:03.225Z",
   "events": [
     {
-      "id": "aeldresagen-aeroe-443478288",
-      "title": "Gåture og stavgang",
-      "description": "Find traveskoene frem og få god motion i den friske luft - med eller uden stave. Vi går ture i Marstal og Omegn i ca. 1 time. Alle er velkomne. Vi går i et passende tempo, så alle kan være med.\nKontakt Karen Esther Jakobsen, 20 57 98 18 eller Inge Lise Rasmussen, 61 74 01 30.",
+      "id": "aeldresagen-aeroe-443367982",
+      "title": "Gåture for dårligt gående",
+      "description": "Har du lyst til at gå ture sammen med andre, som er dårligt gående eller bruger rollator? Så er der nu mulighed for dette. Vel mødt til hyggelige ture med socialt samvær.\nHar du spørgsmål, er du velkommen til at kontakte Annelise Nielsen på 20 72 08 47",
       "organizerId": "aeldresagen-aeroe",
       "categoryIds": [
         "forening-faellesskab"
       ],
-      "location": {
-        "name": "Det gamle posthus i Marstal",
-        "address": "Havnegade 3"
-      },
       "attendance": {
         "kind": "public",
         "details": "For alle"
@@ -24,32 +20,33 @@
         "kind": "explicit",
         "dates": [
           {
-            "id": "aeldresagen-443478288",
-            "date": "2026-09-28",
+            "id": "aeldresagen-443367982",
+            "date": "2026-09-24",
             "kind": "timed",
-            "startTime": "10:00",
-            "endDate": "2026-09-28",
-            "endTime": "11:00"
+            "startTime": "11:00",
+            "endDate": "2026-09-24",
+            "endTime": "12:00"
           }
         ]
       },
       "source": {
         "sourceId": "aeldresagen-aeroe",
-        "externalId": "443478288",
-        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443478288-gaature-og-stavgang",
+        "externalId": "443367982",
+        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443367982-gaature-for-daarligt-gaaende",
         "verifiedAt": "2026-09-21T16:17:02.690Z"
       }
     },
     {
-      "id": "aeldresagen-aeroe-443368026",
-      "title": "Petanque",
-      "description": "Har du lyst til at mødes med andre til et slag petanque?\nHer er socialt samvær og fællesskab i centrum, så mød endelig op!\nKontakt Ina Vestergaard på 42 18 75 78",
+      "id": "aeldresagen-aeroe-443367804",
+      "title": "Krolf",
+      "description": "Kom og få et spil krolf på banerne i Marstal Idrætsforening.\nVi mødes hver onsdag kl. 10-12.\nKr. 275 årligt.\nKontakt Lise og Flemming Johansen på 21 65 20 35",
       "organizerId": "aeldresagen-aeroe",
       "categoryIds": [
         "forening-faellesskab"
       ],
       "location": {
-        "name": "Sejlklubben i Marstal"
+        "name": "MIF`s baner",
+        "address": "Marstal"
       },
       "attendance": {
         "kind": "public",
@@ -61,20 +58,20 @@
         "kind": "explicit",
         "dates": [
           {
-            "id": "aeldresagen-443368026",
-            "date": "2026-09-28",
+            "id": "aeldresagen-443367804",
+            "date": "2026-09-23",
             "kind": "timed",
-            "startTime": "13:30",
-            "endDate": "2026-09-28",
-            "endTime": "15:30"
+            "startTime": "10:00",
+            "endDate": "2026-09-23",
+            "endTime": "12:00"
           }
         ]
       },
       "source": {
         "sourceId": "aeldresagen-aeroe",
-        "externalId": "443368026",
-        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443368026-petanque",
-        "verifiedAt": "2026-09-21T16:17:02.690Z"
+        "externalId": "443367804",
+        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443367804-krolf",
+        "verifiedAt": "2026-09-22T16:17:03.225Z"
       }
     },
     {
@@ -117,79 +114,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443468911",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443468911-spisevenner",
-        "verifiedAt": "2026-09-21T16:17:02.690Z"
-      }
-    },
-    {
-      "id": "aeldresagen-aeroe-443367804",
-      "title": "Krolf",
-      "description": "Kom og få et spil krolf på banerne i Marstal Idrætsforening.\nVi mødes hver onsdag kl. 10-12.\nKr. 275 årligt.\nKontakt Lise og Flemming Johansen på 21 65 20 35",
-      "organizerId": "aeldresagen-aeroe",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "MIF`s baner",
-        "address": "Marstal"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "For alle"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "aeldresagen-443367804",
-            "date": "2026-09-23",
-            "kind": "timed",
-            "startTime": "10:00",
-            "endDate": "2026-09-23",
-            "endTime": "12:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeldresagen-aeroe",
-        "externalId": "443367804",
-        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443367804-krolf",
-        "verifiedAt": "2026-09-21T16:17:02.690Z"
-      }
-    },
-    {
-      "id": "aeldresagen-aeroe-443367982",
-      "title": "Gåture for dårligt gående",
-      "description": "Har du lyst til at gå ture sammen med andre, som er dårligt gående eller bruger rollator? Så er der nu mulighed for dette. Vel mødt til hyggelige ture med socialt samvær.\nHar du spørgsmål, er du velkommen til at kontakte Annelise Nielsen på 20 72 08 47",
-      "organizerId": "aeldresagen-aeroe",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "attendance": {
-        "kind": "public",
-        "details": "For alle"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "aeldresagen-443367982",
-            "date": "2026-09-24",
-            "kind": "timed",
-            "startTime": "11:00",
-            "endDate": "2026-09-24",
-            "endTime": "12:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeldresagen-aeroe",
-        "externalId": "443367982",
-        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443367982-gaature-for-daarligt-gaaende",
-        "verifiedAt": "2026-09-21T16:17:02.690Z"
+        "verifiedAt": "2026-09-22T16:17:03.225Z"
       }
     },
     {
@@ -227,7 +152,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443477909",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443477909-naturen-som-traeningsrum",
-        "verifiedAt": "2026-09-21T16:17:02.690Z"
+        "verifiedAt": "2026-09-22T16:17:03.225Z"
       }
     },
     {
@@ -266,7 +191,82 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443446336",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443446336-aeroe-mandeklub",
-        "verifiedAt": "2026-09-21T16:17:02.690Z"
+        "verifiedAt": "2026-09-22T16:17:03.225Z"
+      }
+    },
+    {
+      "id": "aeldresagen-aeroe-443478288",
+      "title": "Gåture og stavgang",
+      "description": "Find traveskoene frem og få god motion i den friske luft - med eller uden stave. Vi går ture i Marstal og Omegn i ca. 1 time. Alle er velkomne. Vi går i et passende tempo, så alle kan være med.\nKontakt Karen Esther Jakobsen, 20 57 98 18 eller Inge Lise Rasmussen, 61 74 01 30.",
+      "organizerId": "aeldresagen-aeroe",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Det gamle posthus i Marstal",
+        "address": "Havnegade 3"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "For alle"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "aeldresagen-443478288",
+            "date": "2026-09-28",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endDate": "2026-09-28",
+            "endTime": "11:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeldresagen-aeroe",
+        "externalId": "443478288",
+        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443478288-gaature-og-stavgang",
+        "verifiedAt": "2026-09-22T16:17:03.225Z"
+      }
+    },
+    {
+      "id": "aeldresagen-aeroe-443368026",
+      "title": "Petanque",
+      "description": "Har du lyst til at mødes med andre til et slag petanque?\nHer er socialt samvær og fællesskab i centrum, så mød endelig op!\nKontakt Ina Vestergaard på 42 18 75 78",
+      "organizerId": "aeldresagen-aeroe",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Sejlklubben i Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "For alle"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "aeldresagen-443368026",
+            "date": "2026-09-28",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endDate": "2026-09-28",
+            "endTime": "15:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeldresagen-aeroe",
+        "externalId": "443368026",
+        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443368026-petanque",
+        "verifiedAt": "2026-09-22T16:17:03.225Z"
       }
     },
     {
@@ -306,7 +306,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443497864",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443497864-foredrag-med-finn-noerbygaard",
-        "verifiedAt": "2026-09-21T16:17:02.690Z"
+        "verifiedAt": "2026-09-22T16:17:03.225Z"
       }
     },
     {
@@ -345,7 +345,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443478968",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443478968-soendagscafe-i-marstal",
-        "verifiedAt": "2026-09-21T16:17:02.690Z"
+        "verifiedAt": "2026-09-22T16:17:03.225Z"
       }
     }
   ]
