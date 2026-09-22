@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-21T16:17:02.690Z",
+  "verifiedAt": "2026-09-22T04:17:03.064Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -479,6 +479,37 @@
         "externalId": "post-pfbid06WJC7Fh2p6kTpBhH9rqMJ5hs2TZ1iKkcnbGYDsxpq7q16N2cCN4gmv3UH4eZ6itYl",
         "url": "https://www.facebook.com/motorfabrikkenmarstal/posts/ungt-omdrejningspunkt-afholder-musikbanko-fredag-den-9-oktober-for-alle-unge-mel/1526828652814520/",
         "verifiedAt": "2026-09-21T16:17:02.690Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02amjuhvcrfe338dxkxckpeggrmyfppadz7jyx8vczqhesvrweex-53058b27",
+      "title": "Ungt Omdrejningspunkt afholder musikbanko",
+      "description": "Ungt Omdrejningspunkt afholder musikbanko fredag den 9. oktober for alle unge mellem 18-34 år. Tag en ven under armen og kom med til en aften fuld af god musik, godt selskab og mulighed for at vinde fede præmier!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1x57k86-1",
+            "date": "2026-10-09",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02AMjuHvcrfe338DXKxCkPeGGrmYFPpAdZ7JYx8VCzQhESVrWEexhxjeUzHxLTm9gAl",
+        "url": "https://www.facebook.com/motorfabrikkenmarstal/posts/ungt-omdrejningspunkt-afholder-musikbanko-fredag-den-9-oktober-for-alle-unge-mel/1526828652814520/",
+        "verifiedAt": "2026-09-22T04:17:03.064Z"
       }
     }
   ]
