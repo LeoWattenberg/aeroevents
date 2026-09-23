@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-folkedans",
-  "verifiedAt": "2026-09-22T16:17:03.225Z",
+  "verifiedAt": "2026-09-23T04:17:02.467Z",
   "events": [
     {
       "id": "aeroe-folkedans-6a93f435e375d",
@@ -77,52 +77,6 @@
       }
     },
     {
-      "id": "aeroe-folkedans-adult-series-2026-27",
-      "title": "Folkedans for alle (unge og voksne)",
-      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
-      "organizerId": "aeroe-folkedans",
-      "categoryIds": [
-        "sport-motion",
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Pilebækken 30",
-        "city": "Ærøskøbing"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-09-22",
-          "kind": "timed",
-          "startTime": "18:30"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270316T183000",
-        "rdates": [],
-        "exdates": [
-          "2026-10-13T18:30",
-          "2026-12-01T18:30",
-          "2026-12-08T18:30",
-          "2026-12-15T18:30",
-          "2026-12-22T18:30",
-          "2026-12-29T18:30",
-          "2027-02-16T18:30"
-        ],
-        "overrides": [],
-        "durationMinutes": 135
-      },
-      "source": {
-        "sourceId": "aeroe-folkedans",
-        "externalId": "adult-series-2026-27",
-        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
-      }
-    },
-    {
       "id": "aeroe-folkedans-6a93f444e846f",
       "title": "Familiedans for hele familen",
       "description": "",
@@ -157,7 +111,53 @@
         "sourceId": "aeroe-folkedans",
         "externalId": "6a93f444e846f",
         "url": "https://6165826142842.site123.me/begivenheder/familiedans-for-hele-familen-2",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
+      }
+    },
+    {
+      "id": "aeroe-folkedans-adult-series-2026-27",
+      "title": "Folkedans for alle (unge og voksne)",
+      "description": "Kom og dans med os! Alle er meget velkomne - også selvom du er helt uøvet.",
+      "organizerId": "aeroe-folkedans",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Pilebækken 30",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-09-29",
+          "kind": "timed",
+          "startTime": "18:30"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270316T183000",
+        "rdates": [],
+        "exdates": [
+          "2026-10-13T18:30",
+          "2026-12-01T18:30",
+          "2026-12-08T18:30",
+          "2026-12-15T18:30",
+          "2026-12-22T18:30",
+          "2026-12-29T18:30",
+          "2027-02-16T18:30"
+        ],
+        "overrides": [],
+        "durationMinutes": 135
+      },
+      "source": {
+        "sourceId": "aeroe-folkedans",
+        "externalId": "adult-series-2026-27",
+        "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne",
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -195,7 +195,7 @@
         "sourceId": "aeroe-folkedans",
         "externalId": "6a93f44263bdc",
         "url": "https://6165826142842.site123.me/begivenheder/familiedans-for-hele-familen-3",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     }
   ]

@@ -1,6 +1,6 @@
 {
   "sourceId": "ommel-samvirke",
-  "verifiedAt": "2026-09-22T16:17:03.225Z",
+  "verifiedAt": "2026-09-23T04:17:02.467Z",
   "events": [
     {
       "id": "ommel-samvirke-activity-2516431221fb91896417",
@@ -535,6 +535,42 @@
       }
     },
     {
+      "id": "ommel-samvirke-activity-d73820683168a84bca46",
+      "title": "Biograftur til Andelen",
+      "description": "Vi aftaler at mødes og kører sammen til torsdagens film i Andelen. Lotte Sonne bestiller billetter senest tirsdag.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Andelen, Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-d73820683168a84bca46-2026-09-24-1845",
+            "date": "2026-09-24",
+            "kind": "timed",
+            "startTime": "18:45",
+            "endTime": "23:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-d73820683168a84bca46",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-22T16:17:03.225Z"
+      }
+    },
+    {
       "id": "ommel-samvirke-activity-161c07571e9abfa92738",
       "title": "Formiddagsstrik",
       "description": "🧶 Strik & Kreative Sysler – Fællesskab med garn, idéer og hygge Har du lyst til et par hyggelige timer i godt selskab? Tag dit strikketøj, hækletøj, broderi eller et andet kreativt projekt under armen, og kom og vær med. Her er der plads til både erfarne og nybegyndere – vi inspirerer hinanden, hjælper, hvis der er brug for det, og nyder nogle hyggelige timer sammen. Det handler ikke kun om masker og mønstre – men også om fællesskab, gode snakke og masser af smil. 🧶 Medbring dit eget kreative projekt. ☕ Medbring gerne kaffe, te eller andre drikkevarer samt din egen kop. Alle er hjerteligt velkomne! Kom, som du er – der er altid plads til en ekstra ved bordet.",
@@ -672,7 +708,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-161c07571e9abfa92738",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -771,7 +807,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30308c2d5b0827696f99",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -808,7 +844,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-496ff0a823833c4a8412",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -1089,7 +1125,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-67cdddcd989e08df5bcc",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -1216,7 +1252,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6e9475d965c159ce3680",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -1253,7 +1289,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-836eca1737f817254932",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -1276,13 +1312,6 @@
       "schedule": {
         "kind": "explicit",
         "dates": [
-          {
-            "id": "activity-854abf248a0f8c8fc1de-2026-09-22-1900",
-            "date": "2026-09-22",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "21:00"
-          },
           {
             "id": "activity-854abf248a0f8c8fc1de-2026-09-29-1900",
             "date": "2026-09-29",
@@ -1373,7 +1402,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-854abf248a0f8c8fc1de",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -1409,7 +1438,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9f7394883888a0233afa",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -1543,7 +1572,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a59186c3c2663f88eb65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -1579,7 +1608,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a8dc39b0cd3c624e29ba",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -1874,7 +1903,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-b0e925ea79720a9acd65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -1945,7 +1974,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-beff946b8065a3c9b786",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -1988,7 +2017,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ca911d32328bdabc0823",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     },
     {
@@ -2025,43 +2054,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-d0a8ed3087ff43c20a82",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-d73820683168a84bca46",
-      "title": "Biograftur til Andelen",
-      "description": "Vi aftaler at mødes og kører sammen til torsdagens film i Andelen. Lotte Sonne bestiller billetter senest tirsdag.",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Andelen, Ærøskøbing"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "activity-d73820683168a84bca46-2026-09-24-1845",
-            "date": "2026-09-24",
-            "kind": "timed",
-            "startTime": "18:45",
-            "endTime": "23:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-d73820683168a84bca46",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-22T16:17:03.225Z"
+        "verifiedAt": "2026-09-23T04:17:02.467Z"
       }
     }
   ]
