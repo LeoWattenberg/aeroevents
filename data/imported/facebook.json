@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-23T04:17:02.467Z",
+  "verifiedAt": "2026-09-23T16:17:03.127Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -541,6 +541,106 @@
         "externalId": "post-pfbid06L9Bp7RHzbhN9F7rkfJT54cvHiT1XJfi8PeeF55eFt7sze5ahNamScsEUj5EpToLl",
         "url": "https://www.facebook.com/motorfabrikkenmarstal/posts/ungt-omdrejningspunkt-afholder-musikbanko-fredag-den-9-oktober-for-alle-unge-mel/1526828652814520/",
         "verifiedAt": "2026-09-23T04:17:02.467Z"
+      }
+    },
+    {
+      "id": "facebook-post-38775356222049512",
+      "title": "Alle junior medlemmer se med her",
+      "description": "Alle junior medlemmer se med her\nEr der stemning for en hygge fredag 2/10\nVi mødes 16-18.\nHygger, lave kæpheste bane og spiser chips. Snakker om heste\nAlle er velkomne.\nSkriv gerne herunder om I kan . Blot et jeg kommer alle aldre fra 0-17 år er velkommen.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1viyhbz-1",
+            "date": "2026-10-02",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-38775356222049512",
+        "url": "https://www.facebook.com/groups/aeroerideklub.dk/posts/38775356222049512/",
+        "verifiedAt": "2026-09-23T16:17:03.127Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02auirtlqvvnpyabcirzzxbv6e5ywahjmwyx6nnebt4deiaeywzm-c7ce2ac5",
+      "title": "HØSTMARKED 2026",
+      "description": "HØSTMARKED 2026\nForberedelserne er godt i gang, og det vælter ind med tilmeldinger til boder til årets høstmarked på Søbygaard søndag d. 11. oktober kl. 10-16.\nMarkedet arrangeres for 4. år i træk i samarbejde med Iværk' Ærø, og I kan godt sætte et stort kryds i kalenderen til den hyggeligste efterårsdag på Søbygaard\nUdover boder, vil der også være lækre madstande, der kan stille sulten samt kreaaktiviteter for små og store.\nHar du noget skønt at sælge? Det kan være alt - bl.a. kunsthåndværk, tegninger, oplevelser, håndlæsninger, grøntsager, eller hvad du ønsker.\nSkriv til ivaerkaeroe@gmail.com",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1q4ra3t-1",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02aUirTLQvvNPyABCirZZXBv6e5YwaHjMWYX6NnEBt4DEiAeyWZMUgWzZ43ww8rZjTl",
+        "url": "https://www.facebook.com/soebygaardaeroe/posts/h%C3%B8stmarked-2026forberedelserne-er-godt-i-gang-og-det-v%C3%A6lter-ind-med-tilmeldinger/1039718822373586/",
+        "verifiedAt": "2026-09-23T16:17:03.127Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid08b4maxjesl3cxi9itjkknqecxbpq75x79be8vmfa2jcv8wdvsud-1f795371",
+      "title": "Nye datoer for Åbent Hus 2027",
+      "description": "Nye datoer for Åbent Hus 2027\nVi holder Åbent Hus på HF-Søfart lørdag den 23. januar og lørdag den 6. februar 2027.\nSe mere om HF-Søfart her:\nhttps://www.marnav.dk/hf-soefart/det-kan-hf-soefart\nTilmeld dig Åbent Hus her:\nhttps://www.marnav.dk/hf-soefart/aabent-hus\n#hfsøfartmarstal\n#marnav\n#ungdomsuddannelse\n#uddannelse\n#maritimeuddannelser\n#læring\n#læringsmiljø\n#hfsøfart\n#detblaadanmark\n#altervandvedsidenafærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1c923zg-1",
+            "date": "2027-01-23",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1c923zg-2",
+            "date": "2027-02-06",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid08B4MaXJesL3Cxi9itJkKnQEcxBpq75X79bE8vmFa2jcv8WdVSUdguDr57hBB7QR7l",
+        "url": "https://www.facebook.com/marnav.dk/posts/nye-datoer-for-%C3%A5bent-hus-2027-vi-holder-%C3%A5bent-hus-p%C3%A5-hf-s%C3%B8fart-l%C3%B8rdag-den-23-jan/1950992842618078/",
+        "verifiedAt": "2026-09-23T16:17:03.127Z"
       }
     }
   ]

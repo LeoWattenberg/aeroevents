@@ -1,11 +1,11 @@
 {
   "sourceId": "marnav",
-  "verifiedAt": "2026-09-23T04:17:02.467Z",
+  "verifiedAt": "2026-09-23T16:17:03.127Z",
   "events": [
     {
       "id": "marnav-647",
-      "title": "Åbent hus den 16. januar 2027",
-      "description": "Du og din familie inviteres hermed til ÅBENT HUS på HF-Søfartsuddannelsen i Marstal, Ærø. Lørdag den 16. januar 2027. Vi giver et tilskud til rejsen på kr. 240,- pr. tilmeldt elev.",
+      "title": "Åbent hus den 23. januar 2027",
+      "description": "Du og din familie inviteres hermed til ÅBENT HUS på HF-Søfartsuddannelsen i Marstal, Ærø. Lørdag den 23. januar 2027. Vi giver et tilskud til rejsen på kr. 240,- pr. tilmeldt elev.",
       "organizerId": "marnav",
       "categoryIds": [
         "andet"
@@ -33,7 +33,7 @@
         "dates": [
           {
             "id": "nemtilmeld-647",
-            "date": "2027-01-16",
+            "date": "2027-01-23",
             "kind": "timed",
             "startTime": "11:00",
             "endTime": "15:30"
@@ -44,13 +44,13 @@
         "sourceId": "marnav",
         "externalId": "647",
         "url": "https://marnav.nemtilmeld.dk/647/",
-        "verifiedAt": "2026-09-23T04:17:02.467Z"
+        "verifiedAt": "2026-09-23T16:17:03.127Z"
       }
     },
     {
       "id": "marnav-648",
-      "title": "Åbent hus den 30. januar 2027",
-      "description": "Du og din familie inviteres hermed til ÅBENT HUS på HF-Søfartsuddannelsen i Marstal, Ærø. Lørdag den 30. januar 2027. Vi giver et tilskud til rejsen på kr. 240,- pr. tilmeldt elev.",
+      "title": "Åbent hus den 6. februar 2027",
+      "description": "Du og din familie inviteres hermed til ÅBENT HUS på HF-Søfartsuddannelsen i Marstal, Ærø. Lørdag den 6. februar 2027. Vi giver et tilskud til rejsen på kr. 240,- pr. tilmeldt elev.",
       "organizerId": "marnav",
       "categoryIds": [
         "andet"
@@ -78,7 +78,7 @@
         "dates": [
           {
             "id": "nemtilmeld-648",
-            "date": "2027-01-30",
+            "date": "2027-02-06",
             "kind": "timed",
             "startTime": "11:00",
             "endTime": "15:30"
@@ -89,7 +89,7 @@
         "sourceId": "marnav",
         "externalId": "648",
         "url": "https://marnav.nemtilmeld.dk/648/",
-        "verifiedAt": "2026-09-23T04:17:02.467Z"
+        "verifiedAt": "2026-09-23T16:17:03.127Z"
       }
     }
   ]
