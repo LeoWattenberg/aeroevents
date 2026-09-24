@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-23T16:17:03.127Z",
+  "verifiedAt": "2026-09-24T04:17:06.221Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -641,6 +641,39 @@
         "externalId": "post-pfbid08B4MaXJesL3Cxi9itJkKnQEcxBpq75X79bE8vmFa2jcv8WdVSUdguDr57hBB7QR7l",
         "url": "https://www.facebook.com/marnav.dk/posts/nye-datoer-for-%C3%A5bent-hus-2027-vi-holder-%C3%A5bent-hus-p%C3%A5-hf-s%C3%B8fart-l%C3%B8rdag-den-23-jan/1950992842618078/",
         "verifiedAt": "2026-09-23T16:17:03.127Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0wt88yxdnfqupxh7t85qcfvbh3odfwfy8dnsnas7i5watuwfb6ry-c4171901",
+      "title": "HØSTMARKED 2026",
+      "description": "HØSTMARKED 2026\nForberedelserne er godt i gang, og det vælter ind med tilmeldinger til boder til årets høstmarked på Søbygaard søndag d. 11. oktober kl. 10-16.\nMarkedet arrangeres for 4. år i træk i samarbejde med Iværk' Ærø, og I kan godt sætte et stort kryds i kalenderen til den hyggeligste efterårsdag på Søbygaard\nUdover boder, vil der også være lækre madstande, der kan stille sulten samt kreaaktiviteter for små og store.\nHar du noget skønt at sælge? Det kan være alt - bl.a. kunsthåndværk, tegninger, oplevelser, håndlæsninger, grøntsager, eller hvad du ønsker.\nSkriv til ivaerkaeroe@gmail.com",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-158af7b-1",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0WT88yXDNFQUpxH7T85qcfVBH3odFWfY8dnsNAS7i5WATUWfb6RYQNPdwX7qJxZRQl",
+        "url": "https://www.facebook.com/soebygaardaeroe/posts/h%C3%B8stmarked-2026forberedelserne-er-godt-i-gang-og-det-v%C3%A6lter-ind-med-tilmeldinger/1039718822373586/",
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     }
   ]

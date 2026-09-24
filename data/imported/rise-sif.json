@@ -1,6 +1,6 @@
 {
   "sourceId": "rise-sif",
-  "verifiedAt": "2026-09-23T16:17:03.127Z",
+  "verifiedAt": "2026-09-24T04:17:06.221Z",
   "events": [
     {
       "id": "rise-sif-booking-22133794",
@@ -35,7 +35,7 @@
         "sourceId": "rise-sif",
         "externalId": "booking-22133794",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -72,7 +72,7 @@
         "sourceId": "rise-sif",
         "externalId": "booking-22133835",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -109,7 +109,7 @@
         "sourceId": "rise-sif",
         "externalId": "booking-22133845",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -145,7 +145,7 @@
         "sourceId": "rise-sif",
         "externalId": "booking-22345043",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -182,7 +182,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-734689",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -219,7 +219,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-734690",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -256,7 +256,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738768",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -293,7 +293,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738773",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -316,7 +316,7 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "date": "2026-09-23",
+          "date": "2026-09-30",
           "kind": "timed",
           "startTime": "16:45"
         },
@@ -330,7 +330,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738775",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -353,7 +353,7 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "date": "2026-09-23",
+          "date": "2026-09-30",
           "kind": "timed",
           "startTime": "19:00"
         },
@@ -367,7 +367,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738778",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -404,7 +404,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738782",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -427,7 +427,7 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "date": "2026-09-23",
+          "date": "2026-09-30",
           "kind": "timed",
           "startTime": "15:45"
         },
@@ -441,7 +441,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738783",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -478,7 +478,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738785",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -501,7 +501,7 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "date": "2026-09-23",
+          "date": "2026-09-30",
           "kind": "timed",
           "startTime": "18:00"
         },
@@ -515,7 +515,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738786",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -538,7 +538,7 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "date": "2026-09-23",
+          "date": "2026-09-30",
           "kind": "timed",
           "startTime": "19:00"
         },
@@ -552,7 +552,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-739505",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -589,7 +589,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741067",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -631,7 +631,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741416",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -668,7 +668,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741831",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -705,7 +705,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741832",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -742,7 +742,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741833",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -779,7 +779,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741834",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -816,7 +816,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741836",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -853,7 +853,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741837",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -890,7 +890,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741838",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     },
     {
@@ -927,7 +927,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741839",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-09-23T16:17:03.127Z"
+        "verifiedAt": "2026-09-24T04:17:06.221Z"
       }
     }
   ]
