@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-24T04:17:06.221Z",
+  "verifiedAt": "2026-09-24T16:17:03.555Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -674,6 +674,77 @@
         "externalId": "post-pfbid0WT88yXDNFQUpxH7T85qcfVBH3odFWfY8dnsNAS7i5WATUWfb6RYQNPdwX7qJxZRQl",
         "url": "https://www.facebook.com/soebygaardaeroe/posts/h%C3%B8stmarked-2026forberedelserne-er-godt-i-gang-og-det-v%C3%A6lter-ind-med-tilmeldinger/1039718822373586/",
         "verifiedAt": "2026-09-24T04:17:06.221Z"
+      }
+    },
+    {
+      "id": "facebook-post-28409363972006852",
+      "title": "SPILLERE TIL HERRE- OG DAMEHOLDET",
+      "description": "SPILLERE TIL HERRE- OG DAMEHOLDET?\nVI MANGLER DIG I MH89!\nKom til Håndbold & Biksemad Aften i Ærø Hallen, Marstal!\nVi søger spillere til herre- og dameholdet – så uanset om du er helt ny eller har spillet før, er du mere end velkommen. Vi træner sammen på tværs, får sved på panden og slutter af med hygge og mad.\nOnsdag d. 30. september\nKl. 18.00: Fællestræning for herrer og damer (nye & gamle spillere)\nBagefter: Biksemad og socialt samvær i kantinen\nSted: Ærø Hallen, Marstal\nIngen tilmelding – bare mød op i træningstøj! Klubben giver biksemaden helt gratis. Tag gerne en ven, kollega eller nabo under armen – sørg bare for, at sulten er størst efter spillet!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Ærø Hallen, Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-5dh6j2-1",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28409363972006852",
+        "url": "https://www.facebook.com/groups/oplevmitaeroe/posts/28409363972006852/",
+        "verifiedAt": "2026-09-24T16:17:03.555Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02byyycyfgtzguque2yzmgdvcn3xvpvxdyredeseqmf4hhwajgqw-75add1ff",
+      "title": "Nye datoer for Åbent Hus 2027",
+      "description": "Nye datoer for Åbent Hus 2027\nVi holder Åbent Hus på HF-Søfart lørdag den 23. januar og lørdag den 6. februar 2027.\nSe mere om HF-Søfart her:\nhttps://www.marnav.dk/hf-soefart/det-kan-hf-soefart\nTilmeld dig Åbent Hus her:\nhttps://www.marnav.dk/hf-soefart/aabent-hus\n#hfsøfartmarstal\n#marnav\n#ungdomsuddannelse\n#uddannelse\n#maritimeuddannelser\n#læring\n#læringsmiljø\n#hfsøfart\n#detblaadanmark\n#altervandvedsidenafærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-xyx7h8-1",
+            "date": "2027-01-23",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xyx7h8-2",
+            "date": "2027-02-06",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02BYYYCYfGtzGUque2Yzmgdvcn3XVpvxDyredEsEqMf4HHwAjgQwhVAD8qc36iwPAZl",
+        "url": "https://www.facebook.com/marnav.dk/posts/nye-datoer-for-%C3%A5bent-hus-2027-vi-holder-%C3%A5bent-hus-p%C3%A5-hf-s%C3%B8fart-l%C3%B8rdag-den-23-jan/1950992842618078/",
+        "verifiedAt": "2026-09-24T16:17:03.555Z"
       }
     }
   ]

@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-kommune-events",
-  "verifiedAt": "2026-09-20T04:17:03.351Z",
+  "verifiedAt": "2026-09-24T16:17:03.555Z",
   "events": [
     {
       "id": "aeroe-kommune-events-3e08a557-3498-49c3-a4f0-c79c0b4d8bb4",
@@ -160,6 +160,120 @@
         "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/aeroe-gadefest-for-boern-og-unge",
         "verifiedAt": "2026-09-20T04:17:03.351Z",
         "modifiedAt": "2026-09-16T04:39:00.000Z"
+      }
+    },
+    {
+      "id": "aeroe-kommune-events-7f733037-ef1a-451c-b015-a6006fb748a3",
+      "title": "Få info om alkohol og misbrug",
+      "description": "Det kan ramme alle, men hvor meget ved du om alkohol og misbrug?Ærø Kommunes rådgivende team sætter fokus på dette i uge 40. Du kan både stille spørgsmål og få råd og vejledning samt udfordre din viden i forhold til alkohol og misbrug. Der er en æske chokolade på højkant til den, der gætter flest rigtige. Du vil kunne møde Det Rådgivende Team følgende steder i uge 40:Mandag den 28. september fra kl. 10.00-12.00 i Dagli’Brugsen i Søby, kan du møde teamleder i hjemmepleje Vest Ulla Mouritsen og hjemmevejleder Bettina SørensenTirsdag den 29. september fra kl. 13.00-16.00 på Ærøskøbing bibliotek kan du møde familiekonsulent Heidi Beck og sundhedskoordinator Pernille Rønn BoldingOnsdag den 30. september fra kl. 9.00 til kl. 13.30 på Marstal bibliotek kan du møde kommunens alkoholbehandler, Rusmiddelrådgiver og TUBA rådgiver. En samtale kan være første skridt på vejen til et nyt liv\nNår man selv drikker for meget eller er pårørende til en der gør, kan man føle sig ensom. Måske fordi man går med en masse bekymringer alene. Ved at åbne op og tale om, hvordan alkohol fylder i ens liv, kan man få opbygget mod og viljestyrke til at tage dét skridt, der kan ændre ens liv. Sammen med Alkohol&Samfund sætter Ærø Kommune fokus på, at der er gratis hjælp at få til både dig, der drikker for meget, og til dig, der er pårørende. Kontakt Det Rådgivende Team i Ærø Kommune på detraadgivendeteam@aeroekommune.dk, for at høre mere. Kontakt pr. telefon:Heidi Beck: 63 52 50 58Pernille Bolding: 63 52 55 23Bettina Sørensen: 20 59 11 34Ulla Mouritsen: 51 50 15 39Pernille Dybro, alkoholbehandler: 62 23 32 66Toyna Fladmark, RUS: 30 17 44 14Sine Møller, TUBA: 30 67 24 80DET RÅDGIVENDE TEAM",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "location": {
+        "name": "Dagli'Brugsen i Søby"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommune-event-7f733037-ef1a-451c-b015-a6006fb748a3",
+            "date": "2026-09-28",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endDate": "2026-09-28",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune-events",
+        "externalId": "7f733037-ef1a-451c-b015-a6006fb748a3",
+        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/faa-info-om-alkohol-og-misbrug",
+        "verifiedAt": "2026-09-24T16:17:03.555Z",
+        "modifiedAt": "2026-09-24T02:31:00.000Z"
+      }
+    },
+    {
+      "id": "aeroe-kommune-events-11fdcfa6-84a4-4dc2-86f8-a249f00ed97b",
+      "title": "Få info om alkohol og misbrug",
+      "description": "Det kan ramme alle, men hvor meget ved du om alkohol og misbrug?Ærø Kommunes rådgivende team sætter fokus på dette i uge 40. Du kan både stille spørgsmål og få råd og vejledning samt udfordre din viden i forhold til alkohol og misbrug. Der er en æske chokolade på højkant til den, der gætter flest rigtige. Du vil kunne møde Det Rådgivende Team følgende steder i uge 40:Mandag den 28. september fra kl. 10.00-12.00 i Dagli’Brugsen i Søby, kan du møde teamleder i hjemmepleje Vest Ulla Mouritsen og hjemmevejleder Bettina SørensenTirsdag den 29. september fra kl. 13.00-16.00 på Ærøskøbing bibliotek kan du møde familiekonsulent Heidi Beck og sundhedskoordinator Pernille Rønn BoldingOnsdag den 30. september fra kl. 9.00 til kl. 13.30 på Marstal bibliotek kan du møde kommunens alkoholbehandler, Rusmiddelrådgiver og TUBA rådgiver. En samtale kan være første skridt på vejen til et nyt liv\nNår man selv drikker for meget eller er pårørende til en der gør, kan man føle sig ensom. Måske fordi man går med en masse bekymringer alene. Ved at åbne op og tale om, hvordan alkohol fylder i ens liv, kan man få opbygget mod og viljestyrke til at tage dét skridt, der kan ændre ens liv. Sammen med Alkohol&Samfund sætter Ærø Kommune fokus på, at der er gratis hjælp at få til både dig, der drikker for meget, og til dig, der er pårørende. Kontakt Det Rådgivende Team i Ærø Kommune på detraadgivendeteam@aeroekommune.dk, for at høre mere. Kontakt pr. telefon:Heidi Beck: 63 52 50 58Pernille Bolding: 63 52 55 23Bettina Sørensen: 20 59 11 34Ulla Mouritsen: 51 50 15 39Pernille Dybro, alkoholbehandler: 62 23 32 66Toyna Fladmark, RUS: 30 17 44 14Sine Møller, TUBA: 30 67 24 80DET RÅDGIVENDE TEAM",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "location": {
+        "name": "Ærøskøbing Bibliotek"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommune-event-11fdcfa6-84a4-4dc2-86f8-a249f00ed97b",
+            "date": "2026-09-29",
+            "kind": "timed",
+            "startTime": "13:00",
+            "endDate": "2026-09-29",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune-events",
+        "externalId": "11fdcfa6-84a4-4dc2-86f8-a249f00ed97b",
+        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/faa-info-om-alkohol-og-misbrug-2",
+        "verifiedAt": "2026-09-24T16:17:03.555Z",
+        "modifiedAt": "2026-09-24T02:33:00.000Z"
+      }
+    },
+    {
+      "id": "aeroe-kommune-events-b75e9b50-dfdd-4f2a-ae39-9306086d091f",
+      "title": "Få info om alkohol og misbrug",
+      "description": "Det kan ramme alle, men hvor meget ved du om alkohol og misbrug?Ærø Kommunes rådgivende team sætter fokus på dette i uge 40. Du kan både stille spørgsmål og få råd og vejledning samt udfordre din viden i forhold til alkohol og misbrug. Der er en æske chokolade på højkant til den, der gætter flest rigtige. Du vil kunne møde Det Rådgivende Team følgende steder i uge 40:Mandag den 28. september fra kl. 10.00-12.00 i Dagli’Brugsen i Søby, kan du møde teamleder i hjemmepleje Vest Ulla Mouritsen og hjemmevejleder Bettina SørensenTirsdag den 29. september fra kl. 13.00-16.00 på Ærøskøbing bibliotek kan du møde familiekonsulent Heidi Beck og sundhedskoordinator Pernille Rønn BoldingOnsdag den 30. september fra kl. 9.00 til kl. 13.30 på Marstal bibliotek kan du møde kommunens alkoholbehandler, Rusmiddelrådgiver og TUBA rådgiver. En samtale kan være første skridt på vejen til et nyt liv\nNår man selv drikker for meget eller er pårørende til en der gør, kan man føle sig ensom. Måske fordi man går med en masse bekymringer alene. Ved at åbne op og tale om, hvordan alkohol fylder i ens liv, kan man få opbygget mod og viljestyrke til at tage dét skridt, der kan ændre ens liv. Sammen med Alkohol&Samfund sætter Ærø Kommune fokus på, at der er gratis hjælp at få til både dig, der drikker for meget, og til dig, der er pårørende. Kontakt Det Rådgivende Team i Ærø Kommune på detraadgivendeteam@aeroekommune.dk, for at høre mere. Kontakt pr. telefon:Heidi Beck: 63 52 50 58Pernille Bolding: 63 52 55 23Bettina Sørensen: 20 59 11 34Ulla Mouritsen: 51 50 15 39Pernille Dybro, alkoholbehandler: 62 23 32 66Toyna Fladmark, RUS: 30 17 44 14Sine Møller, TUBA: 30 67 24 80DET RÅDGIVENDE TEAM",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "location": {
+        "name": "Marstal Bibliotek"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommune-event-b75e9b50-dfdd-4f2a-ae39-9306086d091f",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "09:00",
+            "endDate": "2026-09-30",
+            "endTime": "13:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune-events",
+        "externalId": "b75e9b50-dfdd-4f2a-ae39-9306086d091f",
+        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/faa-info-om-alkohol-og-misbrug-3",
+        "verifiedAt": "2026-09-24T16:17:03.555Z",
+        "modifiedAt": "2026-09-24T02:35:00.000Z"
       }
     }
   ]

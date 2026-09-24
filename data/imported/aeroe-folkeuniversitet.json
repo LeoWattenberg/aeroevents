@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-folkeuniversitet",
-  "verifiedAt": "2026-09-24T04:17:06.221Z",
+  "verifiedAt": "2026-09-24T16:17:03.555Z",
   "events": [
     {
       "id": "aeroe-folkeuniversitet-robotter-i-hjemmet-kan-de-erstatte-mennesker",
@@ -153,6 +153,43 @@
       }
     },
     {
+      "id": "aeroe-folkeuniversitet-hoejskolevaevning-og-kvindeliv-og-om-en-slags-la-167b43a0",
+      "title": "Højskolevævning og kvindeliv – og om en slags længsel efter identifikation og resonans",
+      "description": "Ærø Museum, Smedegade 22 i Ærøskøbing – kl. 19-21. Højskolevævning og kvindeliv – og om en slags længsel efter identifikation og resonans: Håndens arbejde tillægges igen stor værdi. Mange søger særlig enkle og bæredygtige løsninger, andre søger identifikation i andre tider og andre steder. Således også igennem\nhøjskolens lange historie, hvor særlig revitaliseringen af traditionel håndvævning får afgørende betydning for både kvindebillede, hjemkultur og tekstil æstetik gennem et stort århundrede. Foredraget skildrer især vævningens betydning i miljøet omkring Askov højskole – både som materiel praksis og som kulturel fortælling.",
+      "organizerId": "aeroe-folkeuniversitet",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Ærø Museum",
+        "address": "Smedegade 22 I Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "100 kr. for voksne, skoleelever har gratis adgang.",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "folkeuniversitet-hoejskolevaevning-og-kvindeliv-og-om-en-slags-laengsel-efter-identifikation-og-resonans",
+            "date": "2026-10-22",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-folkeuniversitet",
+        "externalId": "hoejskolevaevning-og-kvindeliv-og-om-en-slags-laengsel-efter-identifikation-og-resonans",
+        "url": "https://fuko.dk/kurser/hoejskolevaevning-og-kvindeliv-og-om-en-slags-laengsel-efter-identifikation-og-resonans/",
+        "verifiedAt": "2026-09-24T16:17:03.555Z",
+        "modifiedAt": "2026-09-24T16:01:11.000Z"
+      }
+    },
+    {
       "id": "aeroe-folkeuniversitet-haandtering-af-landbrugets-udfordringer-med-kvae-e5a44fbc",
       "title": "Håndtering af landbrugets udfordringer med kvælstof og pesticider",
       "description": "De miljø- og sundhedsmæssige konsekvenser af landbrugets anvendelse af kvælstofgødninger og pesticider har været åbenbare i Danmark og resten af verden over adskillige årtier. I Danmark har der været gjort store indsatser for at løse udfordringerne. På det seneste gennem den Grønne Trepart. På mange områder er Danmark gået foran, og de resterende udfordringer er håndterbare, men håndteringen kræver en fælles forståelse for balancen mellem miljø, sundhed og fødevareforsyning. Foredraget vil opridse historien bag udfordringerne og italesætte hvordan vi kommer i mål med løsningerne.",
@@ -186,8 +223,8 @@
         "sourceId": "aeroe-folkeuniversitet",
         "externalId": "haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider",
         "url": "https://fuko.dk/kurser/haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider/",
-        "verifiedAt": "2026-09-24T04:17:06.221Z",
-        "modifiedAt": "2026-09-24T04:01:30.000Z"
+        "verifiedAt": "2026-09-24T16:17:03.555Z",
+        "modifiedAt": "2026-09-24T16:01:13.000Z"
       }
     }
   ]
