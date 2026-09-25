@@ -1,6 +1,6 @@
 {
   "sourceId": "ommel-samvirke",
-  "verifiedAt": "2026-09-25T04:17:02.902Z",
+  "verifiedAt": "2026-09-25T16:17:11.718Z",
   "events": [
     {
       "id": "ommel-samvirke-activity-2516431221fb91896417",
@@ -349,43 +349,6 @@
       "source": {
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6c5fb863182f451a4f10",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-19T16:17:03.610Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-7d990f12e03ac408ef04",
-      "title": "Gåtur eftermiddag",
-      "description": "Eftermiddagsgåtur – Frisk luft, motion og godt humør Hver onsdag kl. 16.30 – 17.30 Har du lyst til at få pulsen lidt op, nyde den friske luft og gå en tur i godt selskab? Vi mødes ved Beboerhuset kl. 16.30 og går en rask tur på ca. en time. Undervejs er der tid til hyggelige snakke, grin og fællesskab – og samtidig får vi god motion. For at gøre turene spændende varierer vi ruterne fra gang til gang efter deltagernes ønsker og aftale. Kom alene eller tag en nabo eller ven med – alle er velkomne. En times frisk luft kan gøre en stor forskel for både krop og humør. Vi glæder os til at gå en tur sammen med dig!",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Beboerhuset"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-09-23",
-          "kind": "timed",
-          "startTime": "16:30"
-        },
-        "rrule": "FREQ=WEEKLY;INTERVAL=18;BYDAY=WE;UNTIL=20270127T163000",
-        "rdates": [],
-        "exdates": [],
-        "overrides": [],
-        "durationMinutes": 60
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-7d990f12e03ac408ef04",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
         "verifiedAt": "2026-09-19T16:17:03.610Z"
       }
@@ -970,7 +933,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30308c2d5b0827696f99",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -1007,7 +970,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-496ff0a823833c4a8412",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -1281,7 +1244,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-67cdddcd989e08df5bcc",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -1317,7 +1280,43 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6be363e470685db32b1c",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-7d990f12e03ac408ef04",
+      "title": "Gåtur eftermiddag",
+      "description": "Eftermiddagsgåtur – Frisk luft, motion og godt humør Hver onsdag kl. 16.30 – 17.30 Har du lyst til at få pulsen lidt op, nyde den friske luft og gå en tur i godt selskab? Vi mødes ved Beboerhuset kl. 16.30 og går en rask tur på ca. en time. Undervejs er der tid til hyggelige snakke, grin og fællesskab – og samtidig får vi god motion. For at gøre turene spændende varierer vi ruterne fra gang til gang efter deltagernes ønsker og aftale. Kom alene eller tag en nabo eller ven med – alle er velkomne. En times frisk luft kan gøre en stor forskel for både krop og humør. Vi glæder os til at gå en tur sammen med dig!",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-7d990f12e03ac408ef04-2027-03-31-1630",
+            "date": "2027-03-31",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-7d990f12e03ac408ef04",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -1354,7 +1353,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-836eca1737f817254932",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -1467,7 +1466,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-854abf248a0f8c8fc1de",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -1573,7 +1572,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9ec112d0956cd8982970",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -1609,7 +1608,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9f7394883888a0233afa",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -1729,7 +1728,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a59186c3c2663f88eb65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -2024,7 +2023,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-b0e925ea79720a9acd65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -2095,7 +2094,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-beff946b8065a3c9b786",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -2166,7 +2165,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-bf23c6d47faddee5e6b7",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -2244,7 +2243,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-c5cf94bfe0ce56b7b1e9",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -2287,7 +2286,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ca911d32328bdabc0823",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -2324,7 +2323,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-d0a8ed3087ff43c20a82",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     },
     {
@@ -2360,7 +2359,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-e40d8cb77872e5d44236",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-25T04:17:02.902Z"
+        "verifiedAt": "2026-09-25T16:17:11.718Z"
       }
     }
   ]
