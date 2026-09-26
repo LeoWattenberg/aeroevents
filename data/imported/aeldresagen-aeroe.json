@@ -1,6 +1,6 @@
 {
   "sourceId": "aeldresagen-aeroe",
-  "verifiedAt": "2026-09-25T16:17:11.718Z",
+  "verifiedAt": "2026-09-26T04:17:02.934Z",
   "events": [
     {
       "id": "aeldresagen-aeroe-443367982",
@@ -71,7 +71,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443478288",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443478288-gaature-og-stavgang",
-        "verifiedAt": "2026-09-25T16:17:11.718Z"
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
       }
     },
     {
@@ -108,7 +108,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443368026",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443368026-petanque",
-        "verifiedAt": "2026-09-25T16:17:11.718Z"
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
       }
     },
     {
@@ -146,7 +146,45 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443367804",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443367804-krolf",
-        "verifiedAt": "2026-09-25T16:17:11.718Z"
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
+      }
+    },
+    {
+      "id": "aeldresagen-aeroe-443477909",
+      "title": "Naturen som træningsrum",
+      "description": "Naturen som træningsrum\nI samarbejde med Naturstyrelsen har vi fået tildelt et område i Egehovedskoven til Ældrefitness. Der er stubbe, liggende stammer, skrå stammer og kæppe og sten som vægtklasser. Disse er vores træningsredskaber. Vi styrketræner og får et godt grin. Vi aflyser aldrig, om det så regner eller sner. Hanne Svinth Clausen, 27 20 60 05.",
+      "organizerId": "aeldresagen-aeroe",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Egehovedvej nr. 9",
+        "address": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "For alle"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "aeldresagen-443477909",
+            "date": "2026-10-01",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endDate": "2026-10-01",
+            "endTime": "11:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeldresagen-aeroe",
+        "externalId": "443477909",
+        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443477909-naturen-som-traeningsrum",
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
       }
     },
     {
@@ -185,45 +223,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443446336",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443446336-aeroe-mandeklub",
-        "verifiedAt": "2026-09-25T16:17:11.718Z"
-      }
-    },
-    {
-      "id": "aeldresagen-aeroe-443477909",
-      "title": "Naturen som træningsrum",
-      "description": "Naturen som træningsrum\nI samarbejde med Naturstyrelsen har vi fået tildelt et område i Egehovedskoven til Ældrefitness. Der er stubbe, liggende stammer, skrå stammer og kæppe og sten som vægtklasser. Disse er vores træningsredskaber. Vi styrketræner og får et godt grin. Vi aflyser aldrig, om det så regner eller sner. Hanne Svinth Clausen, 27 20 60 05.",
-      "organizerId": "aeldresagen-aeroe",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Egehovedvej nr. 9",
-        "address": "Marstal"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "For alle"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "aeldresagen-443477909",
-            "date": "2026-10-01",
-            "kind": "timed",
-            "startTime": "10:00",
-            "endDate": "2026-10-01",
-            "endTime": "11:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeldresagen-aeroe",
-        "externalId": "443477909",
-        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443477909-naturen-som-traeningsrum",
-        "verifiedAt": "2026-09-25T16:17:11.718Z"
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
       }
     },
     {
@@ -266,7 +266,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443468911",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443468911-spisevenner",
-        "verifiedAt": "2026-09-25T16:17:11.718Z"
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
       }
     },
     {
@@ -306,7 +306,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443497864",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443497864-foredrag-med-finn-noerbygaard",
-        "verifiedAt": "2026-09-25T16:17:11.718Z"
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
       }
     },
     {
@@ -345,7 +345,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443478968",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443478968-soendagscafe-i-marstal",
-        "verifiedAt": "2026-09-25T16:17:11.718Z"
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
       }
     }
   ]

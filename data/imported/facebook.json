@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-25T16:17:11.718Z",
+  "verifiedAt": "2026-09-26T04:17:02.934Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -843,6 +843,145 @@
         "externalId": "post-pfbid0F32CpkUhN5vTSWmKntAx23UYwVnEpxUH6oJ3o59sDuVJao3kSiP313vEAoD9fybjl",
         "url": "https://www.facebook.com/ViftenAeroe/posts/-vi-indf%C3%B8rer-lille-l%C3%B8rdag-%EF%B8%8Fnu-kommer-de-m%C3%B8rke-aftener-og-derfor-skruer-vi-lidt-e/1095528903302177/",
         "verifiedAt": "2026-09-25T16:17:11.718Z"
+      }
+    },
+    {
+      "id": "facebook-post-2902923213412482",
+      "title": "DET SKER PÅ ÆRØ",
+      "description": "DET SKER PÅ ÆRØ\n26. september–2. oktober 2026\nHer er ugens arrangementer på Ærø. Del gerne oversigten!\nLØRDAG 26. SEPTEMBER\nÆrø Havørred Weekend\nKl. 13.00 – Fodboldkamp, MIF/RSI – Tved BK – Stadion, Marstal\nKl. 14.00 – Rævejagt – Marstal Sejlklub\nKl. 19.30 – Filmforevisning, The Invite – Bio Andelen, Ærøskøbing\nSØNDAG 27. SEPTEMBER\nÆrø Havørred Weekend\nKl. 10.00 – Gudstjeneste v. Brian Dan Christensen – Marstal Kirke\nKl. 10.00 – Gudstjeneste v. Henny Kvist – Ærøskøbing Kirke\nKl. 14.00 – Høstgudstjeneste v. Brian Dan Christensen – Bregninge Kirke\nKl. 14.00 – Søndagsspil/banko – Rise Minihal\nKl. 14.00–16.00 – Kaffemik: Forholdet mellem Øst- og Vestgrønland – Medborgerhuset, Pilebækken 30, Ærøskøbing\nKl. 15.00 – Filmforevisning, The Invite – Bio Andelen, Ærøskøbing\nKl. 19.00 – Gudstjeneste med altergang v. Henny Kvist – Ommel Kirke\nKl. 19.30 – Filmforevisning, The Invite – Bio Andelen, Ærøskøbing\nMANDAG 28. SEPTEMBER\nKl. 10.00–12.00 – Information og rådgivning om alkohol og misbrug – Dagli’Brugsen, Søby\nTIRSDAG 29. SEPTEMBER\nKl. 13.00–16.00 – Information og rådgivning om alkohol og misbrug – Ærøskøbing Bibliotek\nKl. 19.00 – Tirsdagsspil/banko – MIF’s klubhus, Marstal\nKl. 19.30 – Filmforevisning, The Invite – Bio Andelen, Ærøskøbing\nONSDAG 30. SEPTEMBER\nKl. 9.00–13.30 – Information og rådgivning om alkohol og misbrug – Marstal Bibliotek\nKl. 19.30 – Walkie-banko på Kanal 13 – Ærø Walkie Klub\nKl. 19.30 – Filmforevisning, The Invite – Bio Andelen, Ærøskøbing\nTORSDAG 1. OKTOBER\nKl. 19.00 – Aftensang v. Brian Dan Christensen – Søby Kirke\nKl. 19.30 – Filmforevisning, Pressure – Bio Andelen, Ærøskøbing\nFREDAG 2. OKTOBER\nKl. 19.30 – Filmforevisning, Pressure – Bio Andelen, Ærøskøbing",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-10ko2p4-1",
+            "date": "2026-09-26",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-10ko2p4-2",
+            "date": "2026-10-02",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-10ko2p4-3",
+            "date": "2026-09-26",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-10ko2p4-4",
+            "date": "2026-09-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-10ko2p4-5",
+            "date": "2026-09-28",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          },
+          {
+            "id": "facebook-10ko2p4-6",
+            "date": "2026-09-29",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-10ko2p4-7",
+            "date": "2026-09-30",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-10ko2p4-8",
+            "date": "2026-10-01",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-10ko2p4-9",
+            "date": "2026-10-02",
+            "kind": "timed",
+            "startTime": "19:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-2902923213412482",
+        "url": "https://www.facebook.com/groups/1853077681730379/posts/2902923213412482/",
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid024daucpccjbtpqzjdyduzexyumexqyrgp7woqgr1miejazmwb4b-775468a1",
+      "title": "Har du lyst til at mødes med andre nybagte forældre og deres børn, så er Babycafeen helt sikkert noget for dig",
+      "description": "Har du lyst til at mødes med andre nybagte forældre og deres børn, så er Babycafeen helt sikkert noget for dig.\nMødrehjælpen afholder Babycafe hver anden torsdag på Ærøskøbing bibliotek for forældre og deres børn mellem 0-3 år.\nVi mødes næste gang torsdag 8. oktober kl. 10 på Ærøskøbing bibliotek. Du skal ikke tilmelde dig, bare møde op.\nDe frivillige sørger for, at der er legetøj til de små og kaffe på kanden.\nBabycafeen drives af Mødrehjælpen i samarbejde med\nSundhedsplejen på Ærø og Ærø Folkebibliotek. Du kan kontakte os på\nsvendborg@mhj-lokal.dk",
+      "organizerId": "aeroe-folkebibliotek",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1fm72l9-1",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid024DAucPcCjbTpqzJdYdUzexyumeXqYrgP7Woqgr1MieJaZMwb4bNdkmNHYA1giMdDl",
+        "url": "https://www.facebook.com/arrebib/posts/har-du-lyst-til-at-m%C3%B8des-med-andre-nybagte-for%C3%A6ldre-og-deres-b%C3%B8rn-s%C3%A5-er-babycafe/1567218698766434/",
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0wkvff2wqfaeghscmbu982fyfb6ekpdrnwup1dc4zu2hhewofncz-37fd1e65",
+      "title": "HØSTMARKED 2026",
+      "description": "HØSTMARKED 2026\nForberedelserne er godt i gang, og det vælter ind med tilmeldinger til boder til årets høstmarked på Søbygaard søndag d. 11. oktober kl. 10-16.\nMarkedet arrangeres for 4. år i træk i samarbejde med Iværk' Ærø, og I kan godt sætte et stort kryds i kalenderen til den hyggeligste efterårsdag på Søbygaard\nUdover boder, vil der også være lækre madstande, der kan stille sulten samt kreaaktiviteter for små og store.\nHar du noget skønt at sælge? Det kan være alt - bl.a. kunsthåndværk, tegninger, oplevelser, håndlæsninger, grøntsager, eller hvad du ønsker.\nSkriv til ivaerkaeroe@gmail.com",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1cix141-1",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0WkvfF2WqFaeGHScMbu982fyfB6ekPdrnWUp1dC4Zu2HhEwofnczQevh8AJwGKeszl",
+        "url": "https://www.facebook.com/soebygaardaeroe/posts/h%C3%B8stmarked-2026forberedelserne-er-godt-i-gang-og-det-v%C3%A6lter-ind-med-tilmeldinger/1039718822373586/",
+        "verifiedAt": "2026-09-26T04:17:02.934Z"
       }
     }
   ]
