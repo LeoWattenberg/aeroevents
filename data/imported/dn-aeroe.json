@@ -1,6 +1,6 @@
 {
   "sourceId": "dn-aeroe",
-  "verifiedAt": "2026-09-26T04:17:02.934Z",
+  "verifiedAt": "2026-09-26T16:17:02.554Z",
   "events": [
     {
       "id": "dn-aeroe-7912",
@@ -88,20 +88,20 @@
         "sourceId": "dn-aeroe",
         "externalId": "8067",
         "url": "https://arrangementer.dn.dk/arrangementer/8067",
-        "verifiedAt": "2026-09-26T04:17:02.934Z",
+        "verifiedAt": "2026-09-26T16:17:02.554Z",
         "modifiedAt": "2026-09-08T19:03:09.501Z"
       }
     },
     {
       "id": "dn-aeroe-7495",
       "title": "Årsmøde DN Ærø",
-      "description": "DN Ærøs årsmøde holdes denne gang på VUC i Marstal fra kl. 19.00 - ca. 21.00.\nVi beretter om årets gang i DN Ærø, samt fortæller om den grønne trepart mm.\nDa vores program for dagen ikke er helt fastlagt endnu, forbeholder vi os ret til ændringer.\nDu er velkommen til at kontakte DN Ærø på mail: aeroe@dn.dk",
+      "description": "Velkommen til årsmøde i DN Ærø!\nVi fortæller om årets begivenheder, arbejdsgrupper og indsatsområder i DN Ærø i 2026 - fx arbejdet med rent drikkevand, regenerativt landbrug, naturture, en øko-festival, en stor grøn middag - og det meget krævende i år: arbejdet med grøn trepart.\nVi afholder valg til bestyrelsen, hvor vi har enkelte ledige pladser, også som suppleant. Kontakt os endelig, hvis du vil høre mere om, hvad arbejdet indebærer.\nEfter årsmødet giver vores arbejdsgruppe for grøn trepart et lidt længere oplæg om den lokale grønne trepart og vores forslag til et større signaturprojekt.\nVi serverer te og kaffe og lækre cookies med bælgfrugter fra Navigationsskolens køkken. Sodavand kan købes.\nDeltagelse er gratis og tilmelding er ikke nødvendig.",
       "organizerId": "dn-aeroe",
       "categoryIds": [
         "natur"
       ],
       "location": {
-        "name": "Mødested er ovennævnte adresse.",
+        "name": "P.E. Pålssons Vej 1",
         "address": "P.E. Pålssons Vej 1",
         "postalCode": "5960",
         "city": "Marstal"
@@ -111,6 +111,12 @@
       },
       "status": "scheduled",
       "publication": "published",
+      "price": "Gratis",
+      "booking": {
+        "required": false,
+        "soldOut": false,
+        "details": "61277837"
+      },
       "schedule": {
         "kind": "explicit",
         "dates": [
@@ -127,8 +133,8 @@
         "sourceId": "dn-aeroe",
         "externalId": "7495",
         "url": "https://arrangementer.dn.dk/arrangementer/7495",
-        "verifiedAt": "2026-09-26T04:17:02.934Z",
-        "modifiedAt": "2026-06-23T19:47:09.705Z"
+        "verifiedAt": "2026-09-26T16:17:02.554Z",
+        "modifiedAt": "2026-09-26T09:59:19.880Z"
       }
     }
   ]
