@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-27T04:17:03.112Z",
+  "verifiedAt": "2026-09-27T16:17:02.424Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1047,6 +1047,39 @@
         "externalId": "post-pfbid037af6EQxpmMvYnoujZ32sMZe2gkKMr3W6AHL1vc3QghHCiNPhgx6sHU6WrJjyaeS8l",
         "url": "https://www.facebook.com/arrebib/posts/har-du-lyst-til-at-m%C3%B8des-med-andre-nybagte-for%C3%A6ldre-og-deres-b%C3%B8rn-s%C3%A5-er-babycafe/1567218698766434/",
         "verifiedAt": "2026-09-27T04:17:03.112Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0flpj6fnansc9bowfxuy6q1d6ilgnam68hvdg5q78ppuxas8xb92-50699aa6",
+      "title": "Vi indfører LILLE",
+      "description": "Vi indfører LILLE LØRDAG!\nNu kommer de mørke aftener, og derfor skruer vi lidt ekstra op for hyggen i Ungdomsklubben i Viften.\nPå onsdag holder vi Lille Lørdag – en lille pause midt i ugen, hvor du bare kan komme, hænge ud og hygge dig sammen med os og de andre i klubben.\nDenne gang laver vi hjemmelavet pizza Der kommer musik på anlægget, levende lys på bordene og masser af god stemning.\nIngen stress. Ingen planer. Bare pizza, musik og klubhygge.\nOnsdag 30/9\nKl. 17–20\nFor alle fra 6. klasse og opefter\nDet er gratis\nKom som du er – tag gerne en ven med. Vi sørger for pizzaen og hyggen!\nVi ses til Lille Lørdag i Viften!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-2vnwtp-1",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "20:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0FLpj6FnANSC9boWfxUY6q1d6iLgNam68hvdG5Q78ppuXas8xB92ewNH6yDXbsxbPl",
+        "url": "https://www.facebook.com/ViftenAeroe/posts/-vi-indf%C3%B8rer-lille-l%C3%B8rdag-%EF%B8%8Fnu-kommer-de-m%C3%B8rke-aftener-og-derfor-skruer-vi-lidt-e/1095528903302177/",
+        "verifiedAt": "2026-09-27T16:17:02.424Z"
       }
     }
   ]
