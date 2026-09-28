@@ -1,6 +1,6 @@
 {
   "sourceId": "ommel-samvirke",
-  "verifiedAt": "2026-09-27T16:17:02.424Z",
+  "verifiedAt": "2026-09-28T04:17:03.700Z",
   "events": [
     {
       "id": "ommel-samvirke-activity-2516431221fb91896417",
@@ -962,7 +962,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30308c2d5b0827696f99",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -985,7 +985,7 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "date": "2026-09-27",
+          "date": "2026-10-11",
           "kind": "timed",
           "startTime": "11:00"
         },
@@ -999,7 +999,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-496ff0a823833c4a8412",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -1273,7 +1273,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-67cdddcd989e08df5bcc",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -1309,7 +1309,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6be363e470685db32b1c",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -1346,7 +1346,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-836eca1737f817254932",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -1459,7 +1459,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-854abf248a0f8c8fc1de",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -1565,7 +1565,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9ec112d0956cd8982970",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -1601,7 +1601,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9f7394883888a0233afa",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -1721,7 +1721,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a59186c3c2663f88eb65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -2009,6 +2009,13 @@
             "kind": "timed",
             "startTime": "19:00",
             "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-09-28-1900",
+            "date": "2027-09-28",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
           }
         ]
       },
@@ -2016,7 +2023,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-b0e925ea79720a9acd65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -2087,7 +2094,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-beff946b8065a3c9b786",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -2158,7 +2165,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-bf23c6d47faddee5e6b7",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -2236,7 +2243,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-c5cf94bfe0ce56b7b1e9",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -2279,7 +2286,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ca911d32328bdabc0823",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -2316,7 +2323,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-d0a8ed3087ff43c20a82",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     },
     {
@@ -2352,7 +2359,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-e40d8cb77872e5d44236",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     }
   ]

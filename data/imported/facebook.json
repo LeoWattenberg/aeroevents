@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-27T16:17:02.424Z",
+  "verifiedAt": "2026-09-28T04:17:03.700Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1080,6 +1080,38 @@
         "externalId": "post-pfbid0FLpj6FnANSC9boWfxUY6q1d6iLgNam68hvdG5Q78ppuXas8xB92ewNH6yDXbsxbPl",
         "url": "https://www.facebook.com/ViftenAeroe/posts/-vi-indf%C3%B8rer-lille-l%C3%B8rdag-%EF%B8%8Fnu-kommer-de-m%C3%B8rke-aftener-og-derfor-skruer-vi-lidt-e/1095528903302177/",
         "verifiedAt": "2026-09-27T16:17:02.424Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02431ukfltverxxrzvjx1zhftqezcjbpgpqdo3xh83zcntaoh38c-a726a36c",
+      "title": "Har du lyst til at mødes med andre nybagte forældre og deres børn, så er Babycafeen helt sikkert noget for dig",
+      "description": "Har du lyst til at mødes med andre nybagte forældre og deres børn, så er Babycafeen helt sikkert noget for dig.\nMødrehjælpen afholder Babycafe hver anden torsdag på Ærøskøbing bibliotek for forældre og deres børn mellem 0-3 år.\nVi mødes næste gang torsdag 8. oktober kl. 10 på Ærøskøbing bibliotek. Du skal ikke tilmelde dig, bare møde op.\nDe frivillige sørger for, at der er legetøj til de små og kaffe på kanden.\nBabycafeen drives af Mødrehjælpen i samarbejde med\nSundhedsplejen på Ærø og Ærø Folkebibliotek. Du kan kontakte os på\nsvendborg@mhj-lokal.dk",
+      "organizerId": "aeroe-folkebibliotek",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1bywyzx-1",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02431uKFLTvErXXRzvjX1zHFTQeZCjBpGPqdo3xH83ZcntaoH38CbVdrzLetHCmwZal",
+        "url": "https://www.facebook.com/arrebib/posts/har-du-lyst-til-at-m%C3%B8des-med-andre-nybagte-for%C3%A6ldre-og-deres-b%C3%B8rn-s%C3%A5-er-babycafe/1567218698766434/",
+        "verifiedAt": "2026-09-28T04:17:03.700Z"
       }
     }
   ]
