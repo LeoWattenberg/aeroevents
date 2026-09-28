@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-28T04:17:03.700Z",
+  "verifiedAt": "2026-09-28T16:17:03.707Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1112,6 +1112,110 @@
         "externalId": "post-pfbid02431uKFLTvErXXRzvjX1zHFTQeZCjBpGPqdo3xH83ZcntaoH38CbVdrzLetHCmwZal",
         "url": "https://www.facebook.com/arrebib/posts/har-du-lyst-til-at-m%C3%B8des-med-andre-nybagte-for%C3%A6ldre-og-deres-b%C3%B8rn-s%C3%A5-er-babycafe/1567218698766434/",
         "verifiedAt": "2026-09-28T04:17:03.700Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02jijuih8npvbcfy2gdwc7ndaodgsrpl5cqrchvgvc2bxogr2ppd-6c853422",
+      "title": "Vi indfører LILLE",
+      "description": "Vi indfører LILLE LØRDAG!\nNu kommer de mørke aftener, og derfor skruer vi lidt ekstra op for hyggen i Ungdomsklubben i Viften.\nPå onsdag holder vi Lille Lørdag – en lille pause midt i ugen, hvor du bare kan komme, hænge ud og hygge dig sammen med os og de andre i klubben.\nDenne gang laver vi hjemmelavet pizza Der kommer musik på anlægget, levende lys på bordene og masser af god stemning.\nIngen stress. Ingen planer. Bare pizza, musik og klubhygge.\nOnsdag 30/9\nKl. 17–20\nFor alle fra 6. klasse og opefter\nDet er gratis\nKom som du er – tag gerne en ven med. Vi sørger for pizzaen og hyggen!\nVi ses til Lille Lørdag i Viften!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-19ng9um-1",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "20:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02JiJuiH8nPvBcfy2gdwC7NDaodGsRPL5cqrchvGVC2bxoGR2pPdCH8K18QUmYKYHal",
+        "url": "https://www.facebook.com/ViftenAeroe/posts/-vi-indf%C3%B8rer-lille-l%C3%B8rdag-%EF%B8%8Fnu-kommer-de-m%C3%B8rke-aftener-og-derfor-skruer-vi-lidt-e/1095528903302177/",
+        "verifiedAt": "2026-09-28T16:17:03.707Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0geahcm1qfeb8chswzmxkrhcwmxde4yoxvagboh8yia7mjhdyxq6-bc967d6e",
+      "title": "Vi har modtaget en besked fra Lyngby Radio: Marstal Søfartsmuseum holder LUKKET i morgen",
+      "description": "Vi har modtaget en besked fra Lyngby Radio: Marstal Søfartsmuseum holder LUKKET i morgen tirsdag den 29. september 2026 grundet museets årlige udflugt for personale og frivillige.\nVi holder åbent igen onsdag den 30. september.\nVi ses!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-vhpute-1",
+            "date": "2026-09-29",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-vhpute-2",
+            "date": "2026-09-30",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gEahCm1qFeb8cHSWzmXkrHCWMxdE4YoXvAGBoH8YiA7MJhDYXq6YQudew3VP4m1Fl",
+        "url": "https://www.facebook.com/MarstalMuseum/posts/vi-har-modtaget-en-besked-fra-lyngby-radio-marstal-s%C3%B8fartsmuseum-holder-lukket-i/1858655739138367/",
+        "verifiedAt": "2026-09-28T16:17:03.707Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0zsse6zpjccf1kexxcycqul1hby8bqmpy2ut8pg42hvsmegldg78-716057b7",
+      "title": "SPILLERE TIL HERRE- OG DAMEHOLDET",
+      "description": "SPILLERE TIL HERRE- OG DAMEHOLDET?\nVI MANGLER DIG I MH89!\nKom til Håndbold & Biksemad Aften i Ærø Hallen, Marstal!\nVi søger spillere til herre- og dameholdet – så uanset om du er helt ny eller har spillet før, er du mere end velkommen. Vi træner sammen på tværs, får sved på panden og slutter af med hygge og mad.\nOnsdag d. 30. september\nKl. 18.00: Fællestræning for herrer og damer (nye & gamle spillere)\nBagefter: Biksemad og socialt samvær i kantinen\nSted: Ærø Hallen, Marstal\nIngen tilmelding – bare mød op i træningstøj! Klubben giver biksemaden helt gratis. Tag gerne en ven, kollega eller nabo under armen – sørg bare for, at sulten er størst efter spillet!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Ærø Hallen, Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1jvqpur-1",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0ZSSe6ZpJcCf1kExXcYCQuL1hbY8BqMpy2uT8PG42hvSMegLdg78yWLatG6cqijgvl",
+        "url": "https://www.facebook.com/Aeroehallen/posts/1626327879192732/",
+        "verifiedAt": "2026-09-28T16:17:03.707Z"
       }
     }
   ]
