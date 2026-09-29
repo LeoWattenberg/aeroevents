@@ -1,6 +1,6 @@
 {
   "sourceId": "motorfabrikken",
-  "verifiedAt": "2026-09-29T04:17:03.121Z",
+  "verifiedAt": "2026-09-29T16:17:03.419Z",
   "events": [
     {
       "id": "motorfabrikken-111001",
@@ -43,7 +43,7 @@
         "sourceId": "motorfabrikken",
         "externalId": "111001",
         "url": "https://motorfabrikkenmarstal.ticketbutler.io/da/e/sys-bjerre-intimkoncert/",
-        "verifiedAt": "2026-09-29T04:17:03.121Z"
+        "verifiedAt": "2026-09-29T16:17:03.419Z"
       }
     }
   ]
