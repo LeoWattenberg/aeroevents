@@ -1,7 +1,52 @@
 {
   "sourceId": "kunsthoejskolen-aeroe",
-  "verifiedAt": "2026-09-28T16:17:03.707Z",
+  "verifiedAt": "2026-09-29T04:17:03.121Z",
   "events": [
+    {
+      "id": "kunsthoejskolen-aeroe-a4068240821",
+      "title": "MALERI: At male sig frem v. Peter Neuchs",
+      "description": "MALERIAt male sig frem Uge 17 (25.04.–01.05.2027)Peter Neuchs UDSOLGT Maleri kan handle om alt mellem verden og det, der findes inden i dig. Et søgende maleri handler først og fremmest om at turde blive i processen og gå dybere. Om at være undersøgende og nysgerrig over for farven, strøget og det uplanlagte. Det handler om glæden ved at skabe billeder, arbejde med den plane flade, og blive bedre til det. Velkommen til et kursus, hvor dit maleri er omdrejningspunktet. Vi går i dybden med det, du ønsker at udtrykke, så du kan komme tættere på det, du søger i din kunst. Kort sagt er det et kursus om at undersøge og afprøve – og om de beslutninger og udfordringer, der kan åbne nye veje ind i maleriet. Dit maleri. Den daglige undervisning foregår på værkstederne og suppleres med fælles samtaler, individuel vejledning og foredrag. Der kan arbejdes med både akryl- og oliemaling. Alle er velkomne, både begyndere og øvede. Peter Neuchs (f. 1958) uddannet på Det Kongelige Danske Kunstakademi 1985-92. Modtog i 1997 Statens Kunstfonds 3-årige arbejdslegat. Har gennem årene udstillet både her i landet, men i særdeleshed i Madrid, Paris og Brasilien. Reprænsenteret i mange offentlige samlinger, blandt andre: Statens Museum for Kunst, AROS, Horsens Kunstmuseum, Arken, Herning Kunstmuseum, Esbjerg Kunstmuseum. Er tilknyttet Maria Lund Galleri i Paris. SE MERE https://marialund.com/wp-content/uploads/peter_neuchs_cv_en.pdf https://denstoredanske.lex.dk/.search?query=peter+neuchs https://collection.smk.dk/#q=peter%20neuchs Pris kr. 5.703,- Prisen omfatter undervisning, foredrag, kost & logi. Tillæg for eneværelse kr. 638,- Materialeudgifter er ikke inkluderet i prisen.",
+      "organizerId": "kunsthoejskolen-aeroe",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Kunsthøjskolen på Ærø",
+        "address": "Vester Møllebakke 4",
+        "postalCode": "5985",
+        "city": "Søby Ærø",
+        "url": "https://www.kunstaeroe.dk/"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Kurset er markeret som udsolgt."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "price": "Pris kr. 5.703,-",
+      "booking": {
+        "required": true,
+        "soldOut": true,
+        "details": "Udsolgt; se kursussiden for eventuel ændring eller venteliste."
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "course-a4068240821",
+            "date": "2027-04-25",
+            "kind": "all-day",
+            "endDate": "2027-05-01"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "kunsthoejskolen-aeroe",
+        "externalId": "A4068240821",
+        "url": "https://www.kunstaeroe.dk/maleri-at-male-sig-frem-v-peter-neuchs",
+        "verifiedAt": "2026-09-28T16:17:03.707Z"
+      }
+    },
     {
       "id": "kunsthoejskolen-aeroe-z3446798542",
       "title": "MALERI: Hop ind i maleriet v. Tanja Nis-Hansen",
@@ -44,7 +89,7 @@
         "sourceId": "kunsthoejskolen-aeroe",
         "externalId": "Z3446798542",
         "url": "https://www.kunstaeroe.dk/maleri-hop-ind-i-maleriet-v-tanja-nis-hansen",
-        "verifiedAt": "2026-09-28T16:17:03.707Z"
+        "verifiedAt": "2026-09-29T04:17:03.121Z"
       }
     },
     {
@@ -89,7 +134,7 @@
         "sourceId": "kunsthoejskolen-aeroe",
         "externalId": "D1470158248",
         "url": "https://www.kunstaeroe.dk/maleri-al-magt-til-farven-v-pia-fonnesbech",
-        "verifiedAt": "2026-09-28T16:17:03.707Z"
+        "verifiedAt": "2026-09-29T04:17:03.121Z"
       }
     },
     {
@@ -134,7 +179,7 @@
         "sourceId": "kunsthoejskolen-aeroe",
         "externalId": "E0439443917",
         "url": "https://www.kunstaeroe.dk/maleri-ind-i-maleriet-%E2%80%93-grib-dit-eget-udtryk-v-mia-nelle-dr%C3%B8schler",
-        "verifiedAt": "2026-09-28T16:17:03.707Z"
+        "verifiedAt": "2026-09-29T04:17:03.121Z"
       }
     },
     {
@@ -179,52 +224,7 @@
         "sourceId": "kunsthoejskolen-aeroe",
         "externalId": "Q0829709650",
         "url": "https://www.kunstaeroe.dk/maleri-et-s%C3%B8gende-maleri-v-peter-neuchs-1",
-        "verifiedAt": "2026-09-28T16:17:03.707Z"
-      }
-    },
-    {
-      "id": "kunsthoejskolen-aeroe-a4068240821",
-      "title": "MALERI: At male sig frem v. Peter Neuchs",
-      "description": "MALERIAt male sig frem Uge 17 (25.04.–01.05.2027)Peter Neuchs UDSOLGT Maleri kan handle om alt mellem verden og det, der findes inden i dig. Et søgende maleri handler først og fremmest om at turde blive i processen og gå dybere. Om at være undersøgende og nysgerrig over for farven, strøget og det uplanlagte. Det handler om glæden ved at skabe billeder, arbejde med den plane flade, og blive bedre til det. Velkommen til et kursus, hvor dit maleri er omdrejningspunktet. Vi går i dybden med det, du ønsker at udtrykke, så du kan komme tættere på det, du søger i din kunst. Kort sagt er det et kursus om at undersøge og afprøve – og om de beslutninger og udfordringer, der kan åbne nye veje ind i maleriet. Dit maleri. Den daglige undervisning foregår på værkstederne og suppleres med fælles samtaler, individuel vejledning og foredrag. Der kan arbejdes med både akryl- og oliemaling. Alle er velkomne, både begyndere og øvede. Peter Neuchs (f. 1958) uddannet på Det Kongelige Danske Kunstakademi 1985-92. Modtog i 1997 Statens Kunstfonds 3-årige arbejdslegat. Har gennem årene udstillet både her i landet, men i særdeleshed i Madrid, Paris og Brasilien. Reprænsenteret i mange offentlige samlinger, blandt andre: Statens Museum for Kunst, AROS, Horsens Kunstmuseum, Arken, Herning Kunstmuseum, Esbjerg Kunstmuseum. Er tilknyttet Maria Lund Galleri i Paris. SE MERE https://marialund.com/wp-content/uploads/peter_neuchs_cv_en.pdf https://denstoredanske.lex.dk/.search?query=peter+neuchs https://collection.smk.dk/#q=peter%20neuchs Pris kr. 5.703,- Prisen omfatter undervisning, foredrag, kost & logi. Tillæg for eneværelse kr. 638,- Materialeudgifter er ikke inkluderet i prisen.",
-      "organizerId": "kunsthoejskolen-aeroe",
-      "categoryIds": [
-        "musik-kultur"
-      ],
-      "location": {
-        "name": "Kunsthøjskolen på Ærø",
-        "address": "Vester Møllebakke 4",
-        "postalCode": "5985",
-        "city": "Søby Ærø",
-        "url": "https://www.kunstaeroe.dk/"
-      },
-      "attendance": {
-        "kind": "registration",
-        "details": "Kurset er markeret som udsolgt."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "price": "Pris kr. 5.703,-",
-      "booking": {
-        "required": true,
-        "soldOut": true,
-        "details": "Udsolgt; se kursussiden for eventuel ændring eller venteliste."
-      },
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "course-a4068240821",
-            "date": "2027-04-25",
-            "kind": "all-day",
-            "endDate": "2027-05-01"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "kunsthoejskolen-aeroe",
-        "externalId": "A4068240821",
-        "url": "https://www.kunstaeroe.dk/maleri-at-male-sig-frem-v-peter-neuchs",
-        "verifiedAt": "2026-09-28T16:17:03.707Z"
+        "verifiedAt": "2026-09-29T04:17:03.121Z"
       }
     }
   ]

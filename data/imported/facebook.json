@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-28T16:17:03.707Z",
+  "verifiedAt": "2026-09-29T04:17:03.121Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1216,6 +1216,42 @@
         "externalId": "post-pfbid0ZSSe6ZpJcCf1kExXcYCQuL1hbY8BqMpy2uT8PG42hvSMegLdg78yWLatG6cqijgvl",
         "url": "https://www.facebook.com/Aeroehallen/posts/1626327879192732/",
         "verifiedAt": "2026-09-28T16:17:03.707Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02k62qprwf784j2br3c4cjb1pcmgrmogtt9vnjeqp4vnsb2jcsse-df732a8d",
+      "title": "Vi har modtaget en besked fra Lyngby Radio: Marstal Søfartsmuseum holder LUKKET i morgen",
+      "description": "Vi har modtaget en besked fra Lyngby Radio: Marstal Søfartsmuseum holder LUKKET i morgen tirsdag den 29. september 2026 grundet museets årlige udflugt for personale og frivillige.\nVi holder åbent igen onsdag den 30. september.\nVi ses!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1m2nf9o-1",
+            "date": "2026-09-29",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1m2nf9o-2",
+            "date": "2026-09-30",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02k62QPRwf784j2Br3c4Cjb1PcmGrMogtt9VNjEqp4vNsb2jCsSeCp6g7apMybhEWql",
+        "url": "https://www.facebook.com/MarstalMuseum/posts/vi-har-modtaget-en-besked-fra-lyngby-radio-marstal-s%C3%B8fartsmuseum-holder-lukket-i/1858655739138367/",
+        "verifiedAt": "2026-09-29T04:17:03.121Z"
       }
     }
   ]
