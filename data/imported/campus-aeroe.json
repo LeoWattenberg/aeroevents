@@ -1,6 +1,6 @@
 {
   "sourceId": "campus-aeroe",
-  "verifiedAt": "2026-09-29T16:17:03.419Z",
+  "verifiedAt": "2026-09-30T16:17:02.544Z",
   "events": [
     {
       "id": "campus-aeroe-7956",
@@ -509,7 +509,7 @@
       ],
       "location": {
         "name": "Reberbanen, Marstal",
-        "url": "https://campusaeroe.dk/sted/reberbanen-marstal/"
+        "url": "https://campusaeroe.dk/venue/reberbanen-marstal/"
       },
       "attendance": {
         "kind": "public"
@@ -539,7 +539,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-aabent-metalvaerksted",
         "url": "https://campusaeroe.dk/event/aabent-metalvaerksted/",
-        "verifiedAt": "2026-09-29T16:17:03.419Z",
+        "verifiedAt": "2026-09-30T16:17:02.544Z",
         "modifiedAt": "2026-07-06T07:26:55.000Z"
       }
     },
@@ -557,7 +557,7 @@
         "address": "Halvejen 22",
         "postalCode": "5965",
         "city": "Marstal",
-        "url": "https://campusaeroe.dk/sted/aeroehallen/"
+        "url": "https://campusaeroe.dk/venue/aeroehallen/"
       },
       "attendance": {
         "kind": "public"
@@ -586,7 +586,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet",
         "url": "https://campusaeroe.dk/event/campus-idraet/",
-        "verifiedAt": "2026-09-29T16:17:03.419Z",
+        "verifiedAt": "2026-09-30T16:17:02.544Z",
         "modifiedAt": "2026-08-17T08:13:49.000Z"
       }
     },
@@ -604,7 +604,7 @@
         "address": "Halvejen 22",
         "postalCode": "5965",
         "city": "Marstal",
-        "url": "https://campusaeroe.dk/sted/aeroehallen/"
+        "url": "https://campusaeroe.dk/venue/aeroehallen/"
       },
       "attendance": {
         "kind": "public"
@@ -632,7 +632,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet-2",
         "url": "https://campusaeroe.dk/event/campus-idraet-2/",
-        "verifiedAt": "2026-09-29T16:17:03.419Z",
+        "verifiedAt": "2026-09-30T16:17:02.544Z",
         "modifiedAt": "2026-08-17T08:22:05.000Z"
       }
     },
@@ -650,7 +650,7 @@
         "address": "P.E. Pålssonsvej 1",
         "postalCode": "5965",
         "city": "Marstal",
-        "url": "https://campusaeroe.dk/sted/hfvuc-fyn-aeroe/"
+        "url": "https://campusaeroe.dk/venue/hfvuc-fyn-aeroe/"
       },
       "attendance": {
         "kind": "public"
@@ -679,7 +679,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-musik",
         "url": "https://campusaeroe.dk/event/campus-musik/",
-        "verifiedAt": "2026-09-29T16:17:03.419Z",
+        "verifiedAt": "2026-09-30T16:17:02.544Z",
         "modifiedAt": "2026-08-17T08:02:57.000Z"
       }
     },
@@ -696,7 +696,7 @@
         "address": "Ellenet 10",
         "postalCode": "5960",
         "city": "Marstal",
-        "url": "https://campusaeroe.dk/sted/marstal-navigationsskole/"
+        "url": "https://campusaeroe.dk/venue/marstal-navigationsskole/"
       },
       "attendance": {
         "kind": "public"
@@ -719,7 +719,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "7963",
         "url": "https://campusaeroe.dk/event/fejring-af-faellesskaber-og-uddannelse-paa-aeroe/",
-        "verifiedAt": "2026-09-29T16:17:03.419Z",
+        "verifiedAt": "2026-09-30T16:17:02.544Z",
         "modifiedAt": "2026-08-04T08:50:50.000Z"
       }
     }

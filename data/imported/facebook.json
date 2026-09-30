@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-29T16:17:03.419Z",
+  "verifiedAt": "2026-09-30T16:17:02.544Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1351,6 +1351,134 @@
         "externalId": "post-pfbid0FAfio7WRYpFK2zZvF3YZBmKRunGuR4Xqa8X3cenH2mkvzEcAb3FEXnRTp6eY8HKVl",
         "url": "https://www.facebook.com/ViftenAeroe/posts/-vi-indf%C3%B8rer-lille-l%C3%B8rdag-%EF%B8%8Fnu-kommer-de-m%C3%B8rke-aftener-og-derfor-skruer-vi-lidt-e/1095528903302177/",
         "verifiedAt": "2026-09-29T16:17:03.419Z"
+      }
+    },
+    {
+      "id": "facebook-post-28483128651297050",
+      "title": "Jazz og Mad på Sognegården i Bregninge",
+      "description": "Jazz og Mad på Sognegården i Bregninge 16. oktober 2026\nKom til fantastisk jazzkoncert med internationale jazznavne, Henrik Gunde (klaver) og Thomas Fonnesbech (bas)\nMiddag kl. 18.30: Vildragout med rosmarinkartofler, årstidens grøntsager og salat. Æblekage, kaffe/te\nKoncert kl. 20\nPris for middag og koncert: 300kr. (medlemmer af Sognegården), 325 kr. (ikke medlemmer).\nPris kun koncert 200 kr.\nTilmelding senest 14. oktober til Marianne 26140003",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-no82hh-1",
+            "date": "2026-10-16",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28483128651297050",
+        "url": "https://www.facebook.com/groups/oplevmitaeroe/posts/28483128651297050/",
+        "verifiedAt": "2026-09-30T16:17:02.544Z"
+      }
+    },
+    {
+      "id": "facebook-post-28768681166103145",
+      "title": "Jazz og Mad på Sognegården i Bregninge",
+      "description": "Jazz og Mad på Sognegården i Bregninge 16. oktober 2026\nKom til fantastisk jazzkoncert med internationale jazznavne, Henrik Gunde (klaver) og Thomas Fonnesbech (bas)\nMiddag kl. 18.30: Vildragout med rosmarinkartofler, årstidens grøntsager og salat. Æblekage, kaffe/te\nKoncert kl. 20\nPris for middag og koncert: 300kr. (medlemmer af Sognegården), 325 kr. (ikke medlemmer).\nPris kun koncert 200 kr.\nTilmelding senest 14. oktober til Marianne 26140003",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-o3pxmx-1",
+            "date": "2026-10-16",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28768681166103145",
+        "url": "https://www.facebook.com/groups/144664695598174/posts/28768681166103145/",
+        "verifiedAt": "2026-09-30T16:17:02.544Z"
+      }
+    },
+    {
+      "id": "facebook-post-2908124006225736",
+      "title": "Jazz og Mad på Sognegården i Bregninge",
+      "description": "Jazz og Mad på Sognegården i Bregninge 16. oktober 2026\nKom til fantastisk jazzkoncert med internationale jazznavne, Henrik Gunde (klaver) og Thomas Fonnesbech (bas)\nMiddag kl. 18.30: Vildragout med rosmarinkartofler, årstidens grøntsager og salat. Æblekage, kaffe/te\nKoncert kl. 20\nPris for middag og koncert: 300kr. (medlemmer af Sognegården), 325 kr. (ikke medlemmer).\nPris kun koncert 200 kr.\nTilmelding senest 14. oktober til Marianne 26140003",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-rloku3-1",
+            "date": "2026-10-16",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-2908124006225736",
+        "url": "https://www.facebook.com/groups/1853077681730379/posts/2908124006225736/",
+        "verifiedAt": "2026-09-30T16:17:02.544Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0zkfan57mcvryfntjpzvwgsry5q2ddgutkr1z9ba816yhyphxpq8-af9a504b",
+      "title": "SPILLERE TIL HERRE- OG DAMEHOLDET",
+      "description": "SPILLERE TIL HERRE- OG DAMEHOLDET?\nVI MANGLER DIG I MH89!\nKom til Håndbold & Biksemad Aften i Ærø Hallen, Marstal!\nVi søger spillere til herre- og dameholdet – så uanset om du er helt ny eller har spillet før, er du mere end velkommen. Vi træner sammen på tværs, får sved på panden og slutter af med hygge og mad.\nOnsdag d. 30. september\nKl. 18.00: Fællestræning for herrer og damer (nye & gamle spillere)\nBagefter: Biksemad og socialt samvær i kantinen\nSted: Ærø Hallen, Marstal\nIngen tilmelding – bare mød op i træningstøj! Klubben giver biksemaden helt gratis. Tag gerne en ven, kollega eller nabo under armen – sørg bare for, at sulten er størst efter spillet!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Ærø Hallen, Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1uxyz9m-1",
+            "date": "2026-09-30",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0ZkFAN57mcVryFnTJpZvwGsRY5q2ddgUtkR1Z9bA816YhYPhxpQ8Z8BRjgatewqi6l",
+        "url": "https://www.facebook.com/Aeroehallen/posts/1626327879192732/",
+        "verifiedAt": "2026-09-30T16:17:02.544Z"
       }
     }
   ]
