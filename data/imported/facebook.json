@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-09-30T16:17:02.544Z",
+  "verifiedAt": "2026-10-01T04:17:02.815Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1479,6 +1479,44 @@
         "externalId": "post-pfbid0ZkFAN57mcVryFnTJpZvwGsRY5q2ddgUtkR1Z9bA816YhYPhxpQ8Z8BRjgatewqi6l",
         "url": "https://www.facebook.com/Aeroehallen/posts/1626327879192732/",
         "verifiedAt": "2026-09-30T16:17:02.544Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02awggnzav9ojfjc65cfshly9d73jgdhkratrx3jmqusvrv7jmjd-f4237de6",
+      "title": "Mød Lille Søbygård og @rod.vaerk på Søbygaards Høstmarked",
+      "description": "Mød Lille Søbygård og @rod.vaerk på Søbygaards Høstmarked d. 11/10!\nLILLE SØBYGÅRD\nLille Søbygård er Søbygaards bedste nabo! De har genoplivet dyrkningen af gamle kornsorter som purpur nøgenbyg, petkus vårrug og mariagertoba hvede uden brug af sprøjtemidler og kunstgødning - kun ved hjælp af efterafgrøder. Til Høstmarkeder kan man købe deres forskellige kornprodukter og gå på opdagelse i forskellige smagsprøver. Som noget nyt har de Kaplan-ærter med; en meget spændende sort med et særdeles højt proteinindhold, den kan bruges i stedet for kikærter.\nRODVÆRK\nRodværk er en af Ærøs seje, lokale grøntsagsproducenter. De dyrker grøntsager efter regenerative principper, med passion og begejstring, uden sprøjtemidler og kunstgødning. På Høstmarkedet kan du bl.a finde flere forskellige tomater og græskar, krydderurter, spiselige blomster, syltede og friske bladbeder og frø, så du kan dyrke dine egne grøntsager og blomster.\nKom til Høstmarked på Søbygaard søndag d. 11. oktober kl. 10-16. Det bliver den fineste efterårsdag!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-19uc0d9-1",
+            "date": "2026-10-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-19uc0d9-2",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02AWGGNZAV9oJfJC65cfshLy9d73jGDhkRAtrX3jMQuSvrv7JMjdYMqBdb32Tx6eA1l",
+        "url": "https://www.facebook.com/soebygaardaeroe/posts/m%C3%B8d-lille-s%C3%B8byg%C3%A5rd-og-rodvaerk-p%C3%A5-s%C3%B8bygaards-h%C3%B8stmarked-d-1110-lille-s%C3%B8byg%C3%A5rdlil/1046900511655417/",
+        "verifiedAt": "2026-10-01T04:17:02.815Z"
       }
     }
   ]
