@@ -1,6 +1,6 @@
 {
   "sourceId": "campus-aeroe",
-  "verifiedAt": "2026-10-01T04:17:02.815Z",
+  "verifiedAt": "2026-10-01T16:17:03.451Z",
   "events": [
     {
       "id": "campus-aeroe-7956",
@@ -539,7 +539,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-aabent-metalvaerksted",
         "url": "https://campusaeroe.dk/event/aabent-metalvaerksted/",
-        "verifiedAt": "2026-10-01T04:17:02.815Z",
+        "verifiedAt": "2026-10-01T16:17:03.451Z",
         "modifiedAt": "2026-07-06T07:26:55.000Z"
       }
     },
@@ -586,7 +586,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet",
         "url": "https://campusaeroe.dk/event/campus-idraet/",
-        "verifiedAt": "2026-10-01T04:17:02.815Z",
+        "verifiedAt": "2026-10-01T16:17:03.451Z",
         "modifiedAt": "2026-08-17T08:13:49.000Z"
       }
     },
@@ -632,7 +632,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet-2",
         "url": "https://campusaeroe.dk/event/campus-idraet-2/",
-        "verifiedAt": "2026-10-01T04:17:02.815Z",
+        "verifiedAt": "2026-10-01T16:17:03.451Z",
         "modifiedAt": "2026-08-17T08:22:05.000Z"
       }
     },
@@ -679,24 +679,25 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-musik",
         "url": "https://campusaeroe.dk/event/campus-musik/",
-        "verifiedAt": "2026-10-01T04:17:02.815Z",
+        "verifiedAt": "2026-10-01T16:17:03.451Z",
         "modifiedAt": "2026-08-17T08:02:57.000Z"
       }
     },
     {
       "id": "campus-aeroe-7963",
-      "title": "Fejring af fællesskaber og uddannelse på Ærø",
-      "description": "Campus Ærø inviterer til fejring af fællesskaber og uddannelse på Ærø.\nVi hylder de gode samarbejder der er opstået på Ærø omkring fællesskaber og uddannelse.\nVi arbejder på programmet og har inviteret en spændende forsker til Ærø.\nHold øje her for mere.",
+      "title": "Reception: Fremtidens Læring og Karrierevejledning",
+      "description": "Vi inviterer hermed til reception på Campus Ærø Studiecenter, hvor vi fejrer samarbejdet om Unge og Uddannelse\nForedrag/Oplæg af forsker Dr. Rosie Alexander: Karriere og vejledning i små samfund\nReception for udgivelserne:\nTool-kit for Karrierevejledning i Små Samfund &\nErfarings-Hvidbog for Campus Ærø\nMad og taler. Alle er velkomne!\nAf hensyn til forplejning beder vi om tilmelding til Anneline Köhler Juul på aju@aeroekommune.dk , men man er også velkommen til bare at møde op.",
       "organizerId": "campus-aeroe",
       "categoryIds": [
-        "musik-kultur"
+        "musik-kultur",
+        "boern-familie"
       ],
       "location": {
-        "name": "Marstal Navigationsskole",
-        "address": "Ellenet 10",
-        "postalCode": "5960",
+        "name": "Campus Ærø Studiecenter",
+        "address": "Ellenet 10 (Indgang gennem Navigationsskolens hovedindgang)",
+        "postalCode": "5965",
         "city": "Marstal",
-        "url": "https://campusaeroe.dk/venue/marstal-navigationsskole/"
+        "url": "https://campusaeroe.dk/venue/campus-aeroe-studiecenter/"
       },
       "attendance": {
         "kind": "public"
@@ -710,8 +711,8 @@
             "id": "campus-7963",
             "date": "2026-11-16",
             "kind": "timed",
-            "startTime": "16:00",
-            "endTime": "19:00"
+            "startTime": "15:00",
+            "endTime": "18:00"
           }
         ]
       },
@@ -719,8 +720,88 @@
         "sourceId": "campus-aeroe",
         "externalId": "7963",
         "url": "https://campusaeroe.dk/event/fejring-af-faellesskaber-og-uddannelse-paa-aeroe/",
-        "verifiedAt": "2026-10-01T04:17:02.815Z",
-        "modifiedAt": "2026-08-04T08:50:50.000Z"
+        "verifiedAt": "2026-10-01T16:17:03.451Z",
+        "modifiedAt": "2026-10-01T07:42:08.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-8077",
+      "title": "Babycafé: Sansemotorik, i teori og praksis.",
+      "description": "”Tag dig selv og din baby med og få tips og tricks til at stimulere dit barn sansemotorisk. Medbring gerne en dyne, eller underlag din baby kan ligge på.”",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Campus Ærø Studiecenter",
+        "address": "Ellenet 10 (Indgang gennem Navigationsskolens hovedindgang)",
+        "postalCode": "5965",
+        "city": "Marstal",
+        "url": "https://campusaeroe.dk/venue/campus-aeroe-studiecenter/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "campus-8077",
+            "date": "2027-02-01",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "8077",
+        "url": "https://campusaeroe.dk/event/babycafe-sansemotorik-i-teori-og-praksis/",
+        "verifiedAt": "2026-10-01T16:17:03.451Z",
+        "modifiedAt": "2026-10-01T09:53:24.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-8079",
+      "title": "Babycafé: Tryghed og Tilknytning",
+      "description": "Lær om at skabe trygge rammer til dit barn, gennem en snak om trygheds og tilknytning.\nved\nCæcilie Siø Holm Pedersen\nSundhedsplejerske\nSundhedsplejen Ærø Kommune\ncsp@aeroekommune.dk",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Campus Ærø Studiecenter",
+        "address": "Ellenet 10 (Indgang gennem Navigationsskolens hovedindgang)",
+        "postalCode": "5965",
+        "city": "Marstal",
+        "url": "https://campusaeroe.dk/venue/campus-aeroe-studiecenter/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "campus-8079",
+            "date": "2027-04-12",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "8079",
+        "url": "https://campusaeroe.dk/event/babycafe-tryghed-og-tilknytning/",
+        "verifiedAt": "2026-10-01T16:17:03.451Z",
+        "modifiedAt": "2026-10-01T09:56:18.000Z"
       }
     }
   ]

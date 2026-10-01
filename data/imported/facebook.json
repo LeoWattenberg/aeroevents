@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-01T04:17:02.815Z",
+  "verifiedAt": "2026-10-01T16:17:03.451Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1517,6 +1517,112 @@
         "externalId": "post-pfbid02AWGGNZAV9oJfJC65cfshLy9d73jGDhkRAtrX3jMQuSvrv7JMjdYMqBdb32Tx6eA1l",
         "url": "https://www.facebook.com/soebygaardaeroe/posts/m%C3%B8d-lille-s%C3%B8byg%C3%A5rd-og-rodvaerk-p%C3%A5-s%C3%B8bygaards-h%C3%B8stmarked-d-1110-lille-s%C3%B8byg%C3%A5rdlil/1046900511655417/",
         "verifiedAt": "2026-10-01T04:17:02.815Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid06xd5tpy8jguazskmykkxtyochzvvsheth7uqqgvam7gdaequw89-89f4e62e",
+      "title": "Mød Lille Søbygård og @rod.vaerk på Søbygaards Høstmarked",
+      "description": "Mød Lille Søbygård og @rod.vaerk på Søbygaards Høstmarked d. 11/10!\nLILLE SØBYGÅRD\nLille Søbygård er Søbygaards bedste nabo! De har genoplivet dyrkningen af gamle kornsorter som purpur nøgenbyg, petkus vårrug og mariagertoba hvede uden brug af sprøjtemidler og kunstgødning - kun ved hjælp af efterafgrøder. Til Høstmarkeder kan man købe deres forskellige kornprodukter og gå på opdagelse i forskellige smagsprøver. Som noget nyt har de Kaplan-ærter med; en meget spændende sort med et særdeles højt proteinindhold, den kan bruges i stedet for kikærter.\nRODVÆRK\nRodværk er en af Ærøs seje, lokale grøntsagsproducenter. De dyrker grøntsager efter regenerative principper, med passion og begejstring, uden sprøjtemidler og kunstgødning. På Høstmarkedet kan du bl.a finde flere forskellige tomater og græskar, krydderurter, spiselige blomster, syltede og friske bladbeder og frø, så du kan dyrke dine egne grøntsager og blomster.\nKom til Høstmarked på Søbygaard søndag d. 11. oktober kl. 10-16. Det bliver den fineste efterårsdag!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1ftu0ay-1",
+            "date": "2026-10-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1ftu0ay-2",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid06xd5TPY8JguazSkmykKXtyoCHzvVSHETH7uqQgVaM7gdAEquW89rcEsEadQhni8ul",
+        "url": "https://www.facebook.com/soebygaardaeroe/posts/m%C3%B8d-lille-s%C3%B8byg%C3%A5rd-og-rodvaerk-p%C3%A5-s%C3%B8bygaards-h%C3%B8stmarked-d-1110-lille-s%C3%B8byg%C3%A5rdlil/1046900511655417/",
+        "verifiedAt": "2026-10-01T16:17:03.451Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0jffw5koepvhadsqcnxys2yujkc7o9pkw6tw6nfteew5wtfpvv4g-92f93e79",
+      "title": "Vidste du, at du som ung studerende med forældre boende i Marstal eller trængende borger kan søge legater i Ærø Kommune",
+      "description": "Vidste du, at du som ung studerende med forældre boende i Marstal eller trængende borger kan søge legater i Ærø Kommune?\nDer er lige nu åbent for ansøgninger til tre af Ærø Kommunes legater:\nI.O. Christensen og hustru Caroline Christensens mindelegat (til unge, hvis forældre bor i gl. Marstal Kommune, til videregående uddannelse)\nH. C. Christensen og hustrus mindelegat (til trængende beboere i Marstal)\nFælleslegat - Julelegat (til værdigt trængende i det tidligere Ærøskøbing Kommune)\nI. O. Christensen og hustru Caroline Christensens mindelegat har ansøgningsfrist søndag den 18. oktober 2026, mens de to andre legater har frist søndag den 1. november 2026.",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-egrqi6-1",
+            "date": "2026-10-18",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-egrqi6-2",
+            "date": "2026-11-01",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0JFfW5koEpvhAdsQCNXYS2YuJKc7o9Pkw6TW6NfTeew5WTFpVv4g4rhFqGxxW2hTgl",
+        "url": "https://www.facebook.com/aeroekommune/posts/vidste-du-at-du-som-ung-studerende-med-for%C3%A6ldre-boende-i-marstal-eller-tr%C3%A6ngende/1102152755510428/",
+        "verifiedAt": "2026-10-01T16:17:03.451Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0v6h6wyh6mwdgwwe2wey57sdpnt4ahwr8xsr3wljzczzghqlqhje-8123cc80",
+      "title": "Du kan nå det endnu",
+      "description": "Du kan nå det endnu!\nI aften den 1. oktober kl. 19.00 er der Aftensang i Søby Kirke\nSammen går vi efteråret i møde med skøn solosang ved Linda Skjønnemand, inspirerende ord ved Brian Dan Christensen og smuk musik ved Paul Nedergaard.\nAlle er velkomne og vi glæder os til at se jer\nFoto: Søby Kirke - Anna Thilde Carstensen Møller",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-mxz34g-1",
+            "date": "2026-10-01",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0V6H6wYh6MwDgwWE2wEy57sDpnT4aHwr8XSR3wLJZCZzghQLQhjeQbAcdX59FuF7vl",
+        "url": "https://www.facebook.com/aeroepastorat/posts/du-kan-n%C3%A5-det-endnu-i-aften-den-1-oktober-kl-1900-er-der-aftensang-i-s%C3%B8by-kirke-/1098971062881637/",
+        "verifiedAt": "2026-10-01T16:17:03.451Z"
       }
     }
   ]
