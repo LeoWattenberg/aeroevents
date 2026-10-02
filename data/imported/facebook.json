@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-01T16:17:03.451Z",
+  "verifiedAt": "2026-10-02T04:17:02.963Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1623,6 +1623,44 @@
         "externalId": "post-pfbid0V6H6wYh6MwDgwWE2wEy57sDpnT4aHwr8XSR3wLJZCZzghQLQhjeQbAcdX59FuF7vl",
         "url": "https://www.facebook.com/aeroepastorat/posts/du-kan-n%C3%A5-det-endnu-i-aften-den-1-oktober-kl-1900-er-der-aftensang-i-s%C3%B8by-kirke-/1098971062881637/",
         "verifiedAt": "2026-10-01T16:17:03.451Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02czdbfgmwtpdayyheohhgyykf8luxh9ydk24jvbweuns9nvrd48-8db305d7",
+      "title": "Mød Tree & Earth Skincare, Stenagregård Gedefarm og Grønnemose Garn til Søbygaards Høstmarked",
+      "description": "Mød Tree & Earth Skincare, Stenagregård Gedefarm og Grønnemose Garn til Søbygaards Høstmarked d. 11/10!\nTREE & EARTH SKINCARE\nTree & Earth skincares produkter er håndlavet på Ærø siden 2017, og du finder både ansigtsolier og balms, kropsolier, naturlige cremedeodoranter og andre plejende produkter i sortimentet. Alt er fremstillet i små portioner af økologiske botaniske olier med et naturligt højt indhold af bioaktive plantestoffer.\nSTENAGREGÅRD GEDEFARM\nStenagregård Gedefarm kommer og griller gedepølser af 100% gedekød fra Boergeder opdrættet på Ærø med fokus på dyrevelfærd. Derudover sælger de lækre gedespegepølser, delikat marmelade, sprøde knækbrød og hjemmebagt kage.\nGRØNNEMOSE GARN\nGrønnemose Garn laver håndspundet, plantefarvet garn af ærøske får og planter - måske garnet til dit efterårsprojekt?\nKom til Høstmarked på Søbygaard søndag d. 11. oktober kl. 10-16. Det bliver den fineste efterårsdag!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-m7p6h3-1",
+            "date": "2026-10-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-m7p6h3-2",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02czdbfgmwTPDaYyHeohHgyYkf8Luxh9Ydk24JvbweUNS9NvrD48XRhEkjGvD4QKk8l",
+        "url": "https://www.facebook.com/soebygaardaeroe/posts/m%C3%B8d-tree-earth-skincare-stenagreg%C3%A5rd-gedefarm-og-gr%C3%B8nnemose-garn-til-s%C3%B8bygaards-/1047856521559816/",
+        "verifiedAt": "2026-10-02T04:17:02.963Z"
       }
     }
   ]
