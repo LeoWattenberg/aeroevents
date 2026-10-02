@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-02T04:17:02.963Z",
+  "verifiedAt": "2026-10-02T16:17:03.843Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1661,6 +1661,70 @@
         "externalId": "post-pfbid02czdbfgmwTPDaYyHeohHgyYkf8Luxh9Ydk24JvbweUNS9NvrD48XRhEkjGvD4QKk8l",
         "url": "https://www.facebook.com/soebygaardaeroe/posts/m%C3%B8d-tree-earth-skincare-stenagreg%C3%A5rd-gedefarm-og-gr%C3%B8nnemose-garn-til-s%C3%B8bygaards-/1047856521559816/",
         "verifiedAt": "2026-10-02T04:17:02.963Z"
+      }
+    },
+    {
+      "id": "facebook-post-2910242962680507",
+      "title": "GRATIS NATURKONCERT PÅ SØBYGAARD",
+      "description": "GRATIS NATURKONCERT PÅ SØBYGAARD\nTorsdag d. 15. oktober kl. 17 inviterer Søbygaard & Spillestedet Harders til en helt særlig eftermiddag under valnøddetræet, når @ og @anberose.wav giver en gratis naturkoncert.\n@harders.nu har i en årrække brugt naturen som bagtæppe for musikalske oplevelser. Når musikken flytter udenfor, er det ro og nærvær, der fylder. Det handler om at mærke det, der er lige foran dig, uanset om det er et dyr, et træ eller en musiker, der folder sig ud.\nKoncerten foregår udendørs og er gratis - men tilmeld jer gerne (følg link).\nNB: ved dårligt vejr flyttes koncerten ind i Søbygaards sal.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-af1t5x-1",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-2910242962680507",
+        "url": "https://www.facebook.com/groups/1853077681730379/posts/2910242962680507/",
+        "verifiedAt": "2026-10-02T16:17:03.843Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0kztljvlf4ivtvbdnwxbzipkxhrq3shtwxd7fwakyk7cw2l3rbcv-98a21592",
+      "title": "GRATIS NATURKONCERT PÅ SØBYGAARD",
+      "description": "GRATIS NATURKONCERT PÅ SØBYGAARD\nTorsdag d. 15. oktober kl. 17 inviterer Søbygaard & Spillestedet Harders til en helt særlig eftermiddag under valnøddetræet, når @Lydmor og Anberose giver en gratis naturkoncert.\n@harders.nu har i en årrække brugt naturen som bagtæppe for musikalske oplevelser. Når musikken flytter udenfor, er det ro og nærvær, der fylder. Det handler om at mærke det, der er lige foran dig, uanset om det er et dyr, et træ eller en musiker, der folder sig ud.\nKoncerten foregår udendørs og er gratis - men tilmeld jer gerne (følg link).\nNB: ved dårligt vejr flyttes koncerten ind i Søbygaards sal.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-16q9nu7-1",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0kztLJvLF4ivtvbDNwXBziPkxHrq3sHtWxd7fWaKyK7CW2L3rBCVSVTiC815zoL2dl",
+        "url": "https://www.facebook.com/soebygaardaeroe/posts/gratis-naturkoncert-p%C3%A5-s%C3%B8bygaardtorsdag-d-15-oktober-kl-17-inviterer-s%C3%B8bygaard-s/1048688611476607/",
+        "verifiedAt": "2026-10-02T16:17:03.843Z"
       }
     }
   ]
