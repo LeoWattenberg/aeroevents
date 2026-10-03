@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-bridgeklub",
-  "verifiedAt": "2026-10-03T04:17:02.259Z",
+  "verifiedAt": "2026-10-03T16:17:02.946Z",
   "events": [
     {
       "id": "aeroe-bridgeklub-season-2026-27-monday-efterarsturnering",
@@ -368,46 +368,6 @@
       "source": {
         "sourceId": "aeroe-bridgeklub",
         "externalId": "season-2026-27-wednesday",
-        "url": "https://www.bridge.dk/4596/Turneringsoversigt.html",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-09-13T16:58:43.000Z"
-      }
-    },
-    {
-      "id": "aeroe-bridgeklub-season-2026-27-weekend-weekendbridge-1",
-      "title": "Weekendbridge",
-      "description": "Lørdag d. 3. oktober",
-      "organizerId": "aeroe-bridgeklub",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Ærø Bridgeklub",
-        "address": "Vestergade 32B, 1. sal",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Sæsonplanen oplyser ikke gæsteadgang eller tilmelding for weekendaktiviteten."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "season-2026-27-weekend-weekendbridge-1-occurrence-1",
-            "date": "2026-10-03",
-            "status": "scheduled",
-            "kind": "timed",
-            "startTime": "11:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-bridgeklub",
-        "externalId": "season-2026-27-weekend-weekendbridge-1",
         "url": "https://www.bridge.dk/4596/Turneringsoversigt.html",
         "verifiedAt": "2026-09-15T16:17:03.394Z",
         "modifiedAt": "2026-09-13T16:58:43.000Z"

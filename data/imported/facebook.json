@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-03T04:17:02.259Z",
+  "verifiedAt": "2026-10-03T16:17:02.946Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1725,6 +1725,101 @@
         "externalId": "post-pfbid0kztLJvLF4ivtvbDNwXBziPkxHrq3sHtWxd7fWaKyK7CW2L3rBCVSVTiC815zoL2dl",
         "url": "https://www.facebook.com/soebygaardaeroe/posts/gratis-naturkoncert-p%C3%A5-s%C3%B8bygaardtorsdag-d-15-oktober-kl-17-inviterer-s%C3%B8bygaard-s/1048688611476607/",
         "verifiedAt": "2026-10-02T16:17:03.843Z"
+      }
+    },
+    {
+      "id": "facebook-post-28805949812376280",
+      "title": "Jazz og Mad på Sognegården i Bregninge",
+      "description": "Jazz og Mad på Sognegården i Bregninge 16. oktober 2026\nKom til fantastisk jazzkoncert med internationale jazznavne, Henrik Gunde (klaver) og Thomas Fonnesbech (bas)\nMiddag kl. 18.30: Vildragout med rosmarinkartofler, årstidens grøntsager og salat. Æblekage, kaffe/te\nKoncert kl. 20\nPris for middag og koncert: 300kr. (medlemmer af Sognegården), 325 kr. (ikke medlemmer).\nPris kun koncert 200 kr.\nTilmelding senest 14. oktober til Marianne 26140003",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-gcnmxu-1",
+            "date": "2026-10-16",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28805949812376280",
+        "url": "https://www.facebook.com/groups/144664695598174/posts/28805949812376280/",
+        "verifiedAt": "2026-10-03T16:17:02.946Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02zez8kext6hucg33fza5x7o41c2ezsmqwddu9f96qm6fpmj8trs-b877f8c1",
+      "title": "MH89 skulle have spillet hjemme kamp i morgen søndag d",
+      "description": "MH89 skulle have spillet hjemme kamp i morgen søndag d 4/10, kampen er udsat til d 24/10kl 13.30",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1dhvxrj-1",
+            "date": "2026-10-04",
+            "kind": "timed",
+            "startTime": "13:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02zez8KeXT6hUCG33FzA5X7o41c2EzsmqWdDU9f96QM6fPMj8Trsu7psT8oCN8t7HZl",
+        "url": "https://www.facebook.com/Aeroehallen/posts/pfbid02zez8KeXT6hUCG33FzA5X7o41c2EzsmqWdDU9f96QM6fPMj8Trsu7psT8oCN8t7HZl",
+        "verifiedAt": "2026-10-03T16:17:02.946Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0rd7c7wpxpkwckem2j1cagampqzgfjzwmddud3wzjx9h9tdyextr-18d7be7c",
+      "title": "MUSIKFGUDSTJENESTE OG 25-ÅRS JUBILÆUM",
+      "description": "MUSIKFGUDSTJENESTE OG 25-ÅRS JUBILÆUM\nHusk det er i morgen søndag den 4. oktober, vi byder indenfor til en skøn musikgudstjeneste med Østersøkoret i Ærøskøbing Kirke kl. 16.00.\nTemaet er Vintræet og dets grene - om hvordan vi mennesker er forbundet med hinanden og med Gud. Musik og tekster vil smelte sammen gennem smuk korsang.\nEfter gudstjenesten er alle velkommen til reception i våbenhuset, hvor vi sammen markerer organist Paul Nedergaards 25-års jubilæum. Kom og vær med til at fejre ham\nVi ses i Ærøskøbing!",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-qchggo-1",
+            "date": "2026-10-04",
+            "kind": "timed",
+            "startTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0Rd7c7wPXpkWckem2j1CAgAmpqZGFjzwMDDUD3wZJx9H9TdyExtRN1TPEzkne3Xvol",
+        "url": "https://www.facebook.com/aeroepastorat/posts/-musikfgudstjeneste-og-25-%C3%A5rs-jubil%C3%A6um-husk-det-er-i-morgen-s%C3%B8ndag-den-4-oktober/1100990742679669/",
+        "verifiedAt": "2026-10-03T16:17:02.946Z"
       }
     }
   ]
