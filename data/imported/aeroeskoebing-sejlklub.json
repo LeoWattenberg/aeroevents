@@ -1,40 +1,7 @@
 {
   "sourceId": "aeroeskoebing-sejlklub",
-  "verifiedAt": "2026-10-02T16:17:03.843Z",
+  "verifiedAt": "2026-10-03T04:17:02.259Z",
   "events": [
-    {
-      "id": "aeroeskoebing-sejlklub-03dvcbvvq6r2tavtiln6dnbn5g-google-com",
-      "title": "1. bådoptagning",
-      "description": "",
-      "organizerId": "aeroeskoebing-sejlklub",
-      "categoryIds": [
-        "sport-motion",
-        "forening-faellesskab"
-      ],
-      "attendance": {
-        "kind": "public",
-        "details": "Kalenderen oplyser ikke entydigt, om aktiviteten er offentlig eller kun for medlemmer."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "sejlklub-21fd0aac32557e878119",
-            "date": "2026-10-02",
-            "kind": "all-day"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroeskoebing-sejlklub",
-        "externalId": "03dvcbvvq6r2tavtiln6dnbn5g@google.com",
-        "url": "https://calendar.google.com/calendar/ical/9db3eee6cb77ad0a86cb2c024117df053701c9e5e4898f548914f560650e3df9%40group.calendar.google.com/public/basic.ics",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-08-05T13:37:27.000Z"
-      }
-    },
     {
       "id": "aeroeskoebing-sejlklub-1m3i9k5rr9pmol47pt8ms2p2c3-google-com",
       "title": "2. bådoptagning",
