@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-03T16:17:02.946Z",
+  "verifiedAt": "2026-10-04T04:17:02.739Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1820,6 +1820,38 @@
         "externalId": "post-pfbid0Rd7c7wPXpkWckem2j1CAgAmpqZGFjzwMDDUD3wZJx9H9TdyExtRN1TPEzkne3Xvol",
         "url": "https://www.facebook.com/aeroepastorat/posts/-musikfgudstjeneste-og-25-%C3%A5rs-jubil%C3%A6um-husk-det-er-i-morgen-s%C3%B8ndag-den-4-oktober/1100990742679669/",
         "verifiedAt": "2026-10-03T16:17:02.946Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0vdpqqqktrfmx7emxk1yh51pgcka4xwfdlpwdbh9nvinhawsjerv-c8cc4be9",
+      "title": "MH89 skulle have spillet hjemme kamp i morgen søndag d",
+      "description": "MH89 skulle have spillet hjemme kamp i morgen søndag d 4/10, kampen er udsat til d 24/10kl 13.30",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-gmfxnt-1",
+            "date": "2026-10-04",
+            "kind": "timed",
+            "startTime": "13:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0vdPQqqKtRfmx7eMXk1yH51pGcka4xwfdLPwDbH9NviNhawsJeRVH2m1rVU8VKp9vl",
+        "url": "https://www.facebook.com/Aeroehallen/posts/pfbid0vdPQqqKtRfmx7eMXk1yH51pGcka4xwfdLPwDbH9NviNhawsJeRVH2m1rVU8VKp9vl",
+        "verifiedAt": "2026-10-04T04:17:02.739Z"
       }
     }
   ]
