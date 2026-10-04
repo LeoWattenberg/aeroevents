@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-rideklub",
-  "verifiedAt": "2026-10-04T04:17:02.739Z",
+  "verifiedAt": "2026-10-04T16:17:03.135Z",
   "events": [
     {
       "id": "aeroe-rideklub-nisseoptog",
@@ -68,40 +68,6 @@
         "externalId": "halloween-springning",
         "url": "https://www.aeroerideklub.dk/events-1/halloween-springning",
         "verifiedAt": "2026-09-16T16:17:02.588Z"
-      }
-    },
-    {
-      "id": "aeroe-rideklub-arbejdsdag",
-      "title": "ArbejdsDag",
-      "description": "Vi knokler og hygger",
-      "organizerId": "aeroe-rideklub",
-      "categoryIds": [
-        "sport-motion",
-        "forening-faellesskab"
-      ],
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold er ikke bekræftet."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "rideklub-arbejdsdag",
-            "date": "2026-10-04",
-            "kind": "timed",
-            "startTime": "09:00",
-            "endTime": "13:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-rideklub",
-        "externalId": "arbejdsdag",
-        "url": "https://www.aeroerideklub.dk/events-1/arbejdsdag",
-        "verifiedAt": "2026-09-27T16:17:02.424Z"
       }
     }
   ]

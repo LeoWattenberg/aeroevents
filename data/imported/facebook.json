@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-04T04:17:02.739Z",
+  "verifiedAt": "2026-10-04T16:17:03.135Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1852,6 +1852,85 @@
         "externalId": "post-pfbid0vdPQqqKtRfmx7eMXk1yH51pGcka4xwfdLPwDbH9NviNhawsJeRVH2m1rVU8VKp9vl",
         "url": "https://www.facebook.com/Aeroehallen/posts/pfbid0vdPQqqKtRfmx7eMXk1yH51pGcka4xwfdLPwDbH9NviNhawsJeRVH2m1rVU8VKp9vl",
         "verifiedAt": "2026-10-04T04:17:02.739Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02vuzkjckmg8e84jb5fsm5m3l1bj8xs26vi4tmgrz77kk2xhcnwy-8369d803",
+      "title": "MUSIKGUDSTJENESTE OG 25-ÅRS JUBILÆUM",
+      "description": "MUSIKGUDSTJENESTE OG 25-ÅRS JUBILÆUM\nHusk det er i morgen søndag den 4. oktober, vi byder indenfor til en skøn musikgudstjeneste med Østersøkoret i Ærøskøbing Kirke kl. 16.00.\nTemaet er Vintræet og dets grene - om hvordan vi mennesker er forbundet med hinanden og med Gud. Musik og tekster vil smelte sammen gennem smuk korsang.\nEfter gudstjenesten er alle velkommen til reception i våbenhuset, hvor vi sammen markerer organist Paul Nedergaards 25-års jubilæum. Kom og vær med til at fejre ham\nVi ses i Ærøskøbing!",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-2s284-1",
+            "date": "2026-10-04",
+            "kind": "timed",
+            "startTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02VUZKJcKMg8E84jb5Fsm5m3L1bJ8XS26Vi4TmGRZ77kk2xhcnWyZc3w6vE93i3EPMl",
+        "url": "https://www.facebook.com/aeroepastorat/posts/-musikgudstjeneste-og-25-%C3%A5rs-jubil%C3%A6um-husk-det-er-i-morgen-s%C3%B8ndag-den-4-oktober-/1100990742679669/",
+        "verifiedAt": "2026-10-04T16:17:03.135Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0ow8skb3okl313gf7tweidbjbhhxmf2vntqe43qzk3biks3uptyu-6db9efb9",
+      "title": "Smørrebrødsbuffet i efterårsferien",
+      "description": "Smørrebrødsbuffet i efterårsferien\nVores populære smørrebrødsbuffet er tilbage i efterårsferien!\nVi dækker op med masser af klassisk dansk smørrebrød og inviterer til hyggelige frokoster midt i Ærøskøbing.\nLørdag 10. oktober – snart fyldt op!\nTirsdag 13. oktober\nFredag 16. oktober\nAlle dage kl. 11.30–14.30\n199 kr. inkl. 1 snaps\n189 kr. uden snaps\n99 kr. for børn til og med 12 år\nDer er stadig ledige pladser på alle tre datoer. Tag familie eller venner med, og nyd en hyggelig frokost hos os.\nDer serveres ikke anden frokost i caféen på buffetdagene.\nBestil bord på 30 34 46 50 (tryk 2), når caféen er åben.\ncafe@paatorvet.dk",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1o58ks-1",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-1o58ks-2",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-1o58ks-3",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0oW8skB3oKL313gf7TWEiDbjBHhxmF2VntqE43QZK3bikS3upTyukdTU2be7iwYgdl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-sm%C3%B8rrebr%C3%B8dsbuffet-i-efter%C3%A5rsferien-vores-popul%C3%A6re-sm%C3%B8rrebr%C3%B8dsbuffet-er-tilbage-/1776334787833514/",
+        "verifiedAt": "2026-10-04T16:17:03.135Z"
       }
     }
   ]
