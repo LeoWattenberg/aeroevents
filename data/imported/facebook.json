@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-05T04:17:02.846Z",
+  "verifiedAt": "2026-10-05T16:17:02.822Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -2012,6 +2012,85 @@
         "externalId": "post-2912801879091282",
         "url": "https://www.facebook.com/groups/1853077681730379/posts/2912801879091282/",
         "verifiedAt": "2026-10-05T04:17:02.846Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02rfpwb5ffeyhhl7jtudhbmzvnafawnvmtknv8zjmvq63c8kxpk1-73cb54d0",
+      "title": "Sæt kryds i kalenderen",
+      "description": "Sæt kryds i kalenderen!\nFredag den 16. oktober kl. 15.00 inviterer Marstal Erhvervsforening igen til Halloween i Marstal med den traditionsrige græskarudskæringskonkurrence for børn.\n85 græskar\nPræmier i flere kategorier\nSnacks til børnene\nMasser af Halloween-hygge\nTilmeld dig begivenheden her https://fb.me/e/4TURMbicS\nVi glæder os til at se, hvilke uhyggelige, sjove og flotte græskar der dukker op i år!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-v2e8ng-1",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "15:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02rfpwb5FfEyHhL7JtUDhBMzvnAfAWNVmTknV8zjMvq63C8KXpk1f2St12Wvw4JyWzl",
+        "url": "https://www.facebook.com/MarstalHandelsforening/posts/-s%C3%A6t-kryds-i-kalenderenfredag-den-16-oktober-kl-1500-inviterer-marstal-erhvervsf/1573551394575316/",
+        "verifiedAt": "2026-10-05T16:17:02.822Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02smaavqydaqgfipf5yh21cm8zruce2pzuezwusxsztctxqbtjbp-5c999859",
+      "title": "Smørrebrødsbuffet i efterårsferien",
+      "description": "Smørrebrødsbuffet i efterårsferien\nVores populære smørrebrødsbuffet er tilbage i efterårsferien!\nVi dækker op med masser af klassisk dansk smørrebrød og inviterer til hyggelige frokoster midt i Ærøskøbing.\nLørdag 10. oktober – snart fyldt op!\nTirsdag 13. oktober\nFredag 16. oktober\nAlle dage kl. 11.30–14.30\n199 kr. inkl. 1 snaps\n189 kr. uden snaps\n99 kr. for børn til og med 12 år\nDer er stadig ledige pladser på alle tre datoer. Tag familie eller venner med, og nyd en hyggelig frokost hos os.\nDer serveres ikke anden frokost i caféen på buffetdagene.\nBestil bord på 30 34 46 50 (tryk 2), når caféen er åben.\ncafe@paatorvet.dk",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1iggc0y-1",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-1iggc0y-2",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-1iggc0y-3",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02sMaavqydAqGFiPF5yH21cm8ZrUce2pZuezwUsXsztCtxQbtjBp9arQJi7sBAQDPsl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-sm%C3%B8rrebr%C3%B8dsbuffet-i-efter%C3%A5rsferien-vores-popul%C3%A6re-sm%C3%B8rrebr%C3%B8dsbuffet-er-tilbage-/1776334787833514/",
+        "verifiedAt": "2026-10-05T16:17:02.822Z"
       }
     }
   ]
