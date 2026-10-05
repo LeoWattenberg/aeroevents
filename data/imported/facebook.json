@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-04T16:17:03.135Z",
+  "verifiedAt": "2026-10-05T04:17:02.846Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -1931,6 +1931,87 @@
         "externalId": "post-pfbid0oW8skB3oKL313gf7TWEiDbjBHhxmF2VntqE43QZK3bikS3upTyukdTU2be7iwYgdl",
         "url": "https://www.facebook.com/PaaTorvet/posts/-sm%C3%B8rrebr%C3%B8dsbuffet-i-efter%C3%A5rsferien-vores-popul%C3%A6re-sm%C3%B8rrebr%C3%B8dsbuffet-er-tilbage-/1776334787833514/",
         "verifiedAt": "2026-10-04T16:17:03.135Z"
+      }
+    },
+    {
+      "id": "facebook-post-2912801879091282",
+      "title": "DET SKER PÅ ÆRØ",
+      "description": "DET SKER PÅ ÆRØ | 5.–9. OKTOBER 2026\nDenne uges kalender kommer lidt senere end normalt – her er arrangementerne fra mandag til fredag.\nMANDAG 5. OKTOBER\nKl. 18.15–19.45: Lone Theils: Tjenerindens fortælling – Marstal Bibliotek. Gratis.\nKl. 19.30: Pusher – Bio Andelen, Ærøskøbing.\nTIRSDAG 6. OKTOBER\nKl. 19.00: Banko – MIF’s klubhus, Marstal. Kortsalg fra kl. 18.15.\nKl. 19.00–21.00: Med havets kæmper på jagt – livestream med Peter Teglberg Madsen – Marstal Bibliotek. Gratis.\nKl. 19.30: Pressure – Bio Andelen, Ærøskøbing.\nONSDAG 7. OKTOBER\nKl. 19.30: Pressure – Bio Andelen, Ærøskøbing.\nTORSDAG 8. OKTOBER\nKl. 19.00–21.00: Foredrag med Andelsgaarde – Kristine Møller Gårdhus fortæller om regenerativt landbrug og grønt generationsskifte – Krogkildegård Café og Mosteri.\nKl. 19.30: Practical Magic 2 – Bio Andelen, Ærøskøbing.\nFREDAG 9. OKTOBER\nKl. 18.30: Jazz & Mad – Bregninge Sognegård. Pris: 325 kr.\nKl. 19.30: Practical Magic 2 – Bio Andelen, Ærøskøbing.\nHar vi overset et arrangement? Skriv i kommentarfeltet eller send Det Blå Nexus en besked.\nDel gerne kalenderen, så flere kan se, hvad der sker på Ærø.\nUdgivet af Det Blå Nexus.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1h1mj27-1",
+            "date": "2026-10-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1h1mj27-2",
+            "date": "2026-10-06",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1h1mj27-3",
+            "date": "2026-10-07",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1h1mj27-4",
+            "date": "2026-10-08",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1h1mj27-5",
+            "date": "2026-10-09",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1h1mj27-6",
+            "date": "2026-10-05",
+            "kind": "timed",
+            "startTime": "18:15",
+            "endTime": "19:45"
+          },
+          {
+            "id": "facebook-1h1mj27-7",
+            "date": "2026-10-06",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1h1mj27-8",
+            "date": "2026-10-07",
+            "kind": "timed",
+            "startTime": "19:30"
+          },
+          {
+            "id": "facebook-1h1mj27-9",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "facebook-1h1mj27-10",
+            "date": "2026-10-09",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-2912801879091282",
+        "url": "https://www.facebook.com/groups/1853077681730379/posts/2912801879091282/",
+        "verifiedAt": "2026-10-05T04:17:02.846Z"
       }
     }
   ]
