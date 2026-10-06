@@ -1,53 +1,7 @@
 {
   "sourceId": "aeroe-bridgeklub",
-  "verifiedAt": "2026-10-05T16:17:02.822Z",
+  "verifiedAt": "2026-10-06T16:17:07.908Z",
   "events": [
-    {
-      "id": "aeroe-bridgeklub-season-2026-27-monday-efterarsturnering",
-      "title": "Efterårsturnering",
-      "description": "Turneringsblok i Ærø Bridgeklubs sæson 2026/27: 7. september – 5. oktober, efterårsturnering",
-      "organizerId": "aeroe-bridgeklub",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Ærø Bridgeklub",
-        "address": "Vestergade 32B, 1. sal",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "registration",
-        "details": "Klubben oplyser, at gæster kan deltage."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "price": "Medlemmer gratis; gæster 30 kr.",
-      "booking": {
-        "required": true,
-        "soldOut": false,
-        "details": "Tilmelding på spilledagen senest kl. 12:00. Se kildesiden for den aktuelle kontaktperson."
-      },
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-09-07",
-          "kind": "timed",
-          "startTime": "18:30"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20261005T183000",
-        "rdates": [],
-        "exdates": [],
-        "overrides": []
-      },
-      "source": {
-        "sourceId": "aeroe-bridgeklub",
-        "externalId": "season-2026-27-monday-efterarsturnering",
-        "url": "https://www.bridge.dk/4596/Turneringsoversigt.html",
-        "verifiedAt": "2026-09-15T16:17:03.394Z",
-        "modifiedAt": "2026-09-13T16:58:43.000Z"
-      }
-    },
     {
       "id": "aeroe-bridgeklub-season-2026-27-monday-enkeltaftensturnering-traek-en-makker",
       "title": "Enkeltaftensturnering - træk en makker",

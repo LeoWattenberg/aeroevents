@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-05T16:17:02.822Z",
+  "verifiedAt": "2026-10-06T16:17:07.908Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -2091,6 +2091,186 @@
         "externalId": "post-pfbid02sMaavqydAqGFiPF5yH21cm8ZrUce2pZuezwUsXsztCtxQbtjBp9arQJi7sBAQDPsl",
         "url": "https://www.facebook.com/PaaTorvet/posts/-sm%C3%B8rrebr%C3%B8dsbuffet-i-efter%C3%A5rsferien-vores-popul%C3%A6re-sm%C3%B8rrebr%C3%B8dsbuffet-er-tilbage-/1776334787833514/",
         "verifiedAt": "2026-10-05T16:17:02.822Z"
+      }
+    },
+    {
+      "id": "facebook-post-28840007718970489",
+      "title": "Repair café er med til at mindske vores co2 aftryk, ved at reparere det gamle, fremfor at smide ud og købe nyt",
+      "description": "Repair café er med til at mindske vores co2 aftryk, ved at reparere det gamle, fremfor at smide ud og købe nyt.\nOnsdag den 14. oktober er der Repair café på biblioteket i Ærøskøbing kl. 15.30 - 17.30 og alle er velkommen.\nSå har du en køkkenmaskine, et stykke værktøj eller lignende der er gået i stykker, kan vi hjælpe dig med at få det fixet. Vi hjælper også med mindre sy opgaver.\nDet er gratis at få vores hjælp, men en mønt i kaffekassen bliver vi altid glade for.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1wpmnlk-1",
+            "date": "2026-10-14",
+            "kind": "timed",
+            "startTime": "15:30",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28840007718970489",
+        "url": "https://www.facebook.com/groups/144664695598174/posts/28840007718970489/",
+        "verifiedAt": "2026-10-06T16:17:07.908Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02hy4punf3a7kvs2awatgpabtw8ezng9gnigccfrxv1hkj87pebw-3c542623",
+      "title": "Har du lyst til at mødes med andre nybagte forældre og deres børn, så er Babycafeen helt sikkert noget for dig",
+      "description": "Har du lyst til at mødes med andre nybagte forældre og deres børn, så er Babycafeen helt sikkert noget for dig.\nMødrehjælpen afholder Babycafe hver anden torsdag på Ærøskøbing bibliotek for forældre og deres børn mellem 0-3 år.\nVi mødes næste gang torsdag 8. oktober kl. 10 på Ærøskøbing bibliotek. Du skal ikke tilmelde dig, bare møde op.\nDe frivillige sørger for, at der er legetøj til de små og kaffe på kanden.\nBabycafeen drives af Mødrehjælpen i samarbejde med\nSundhedsplejen på Ærø og Ærø Folkebibliotek. Du kan kontakte os på\nsvendborg@mhj-lokal.dk",
+      "organizerId": "aeroe-folkebibliotek",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-gskmwf-1",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02Hy4pUNf3A7Kvs2aWaTgPabtW8EznG9gnigCcfRXv1hKj87PebwjyVPyDk2jC4K7jl",
+        "url": "https://www.facebook.com/arrebib/posts/har-du-lyst-til-at-m%C3%B8des-med-andre-nybagte-for%C3%A6ldre-og-deres-b%C3%B8rn-s%C3%A5-er-babycafe/1578434854311485/",
+        "verifiedAt": "2026-10-06T16:17:07.908Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0okyst2n4vmfzyfdsxtpezvbejpcqgf2q6i6wxfvzvki25uyxwts-b06e094b",
+      "title": "Smørrebrødsbuffet i efterårsferien",
+      "description": "Smørrebrødsbuffet i efterårsferien\nVores populære smørrebrødsbuffet er tilbage i efterårsferien!\nVi dækker op med masser af klassisk dansk smørrebrød og inviterer til hyggelige frokoster midt i Ærøskøbing.\nLørdag 10. oktober – snart fyldt op!\nTirsdag 13. oktober\nFredag 16. oktober\nAlle dage kl. 11.30–14.30\n199 kr. inkl. 1 snaps\n189 kr. uden snaps\n99 kr. for børn til og med 12 år\nDer er stadig ledige pladser på alle tre datoer. Tag familie eller venner med, og nyd en hyggelig frokost hos os.\nDer serveres ikke anden frokost i caféen på buffetdagene.\nBestil bord på 30 34 46 50 (tryk 2), når caféen er åben.\ncafe@paatorvet.dk",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-khnf3d-1",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-khnf3d-2",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-khnf3d-3",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0oKysT2n4VmfZyFdSXTpezvbEjPCQgf2Q6i6wXFvZvKi25UYXwtsquUqoDVXNc5jEl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-sm%C3%B8rrebr%C3%B8dsbuffet-i-efter%C3%A5rsferien-vores-popul%C3%A6re-sm%C3%B8rrebr%C3%B8dsbuffet-er-tilbage-/1776334787833514/",
+        "verifiedAt": "2026-10-06T16:17:07.908Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0r9hpn1wwajfbvahztta4qyxgd3pvlgzrsujujgoxn6g6eesa9fh-980035a4",
+      "title": "Igen i år indtager Anna Bob Øhavet Festival som konferencier på Eriksens Plads",
+      "description": "Igen i år indtager Anna Bob Øhavet Festival som konferencier på Eriksens Plads!\nHun glæder sig til at tage godt imod jer og vores artister!\nVi ses på Øhavet Festival ‘26\n17. - 18. Juli på Eriksens Plads, Ærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-18uww4-1",
+            "date": "2027-07-17",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-18uww4-2",
+            "date": "2027-07-18",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0R9hpn1WWAJFBvAhztTA4qYxGd3pvLGZRsUJUjGoXn6G6EesA9FhJpXRBGoMmY5QYl",
+        "url": "https://www.facebook.com/oehavetfestival/posts/igen-i-%C3%A5r-indtager-anna-bob-%C3%B8havet-festival-som-konferencier-p%C3%A5-eriksens-plads-h/1323369039959234/",
+        "verifiedAt": "2026-10-06T16:17:07.908Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0vsaqfuxw354thmhkoyytxfmylxbzhzjm8wwxq274ndamk2f1rfj-cfebd94c",
+      "title": "Generalforsamling i Ærø Jazz Festival",
+      "description": "Generalforsamling i Ærø Jazz Festival\nMandag den 2. november kl. 17.00 på Friskolen, Vestergade 52A, 5970 Ærøskøbing.\nKom og hør om året der gik, og vær med til at sætte tonen for næste års festival. Vi glæder os til at se jer!\n# #ÆJF2027",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-17ujyo4-1",
+            "date": "2026-11-02",
+            "kind": "timed",
+            "startTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0vSaQFUXW354THmhKoyYtXFMyLXBZhZjm8WWxq274NdAMK2F1rFJ6WZD4UCKMGAa6l",
+        "url": "https://www.facebook.com/aerojazz/posts/generalforsamling-i-%C3%A6r%C3%B8-jazz-festivalmandag-den-2-november-kl-1700-p%C3%A5-friskolen-/1727630096033246/",
+        "verifiedAt": "2026-10-06T16:17:07.908Z"
       }
     }
   ]

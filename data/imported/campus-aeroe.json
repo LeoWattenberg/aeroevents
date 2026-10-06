@@ -1,6 +1,6 @@
 {
   "sourceId": "campus-aeroe",
-  "verifiedAt": "2026-10-05T16:17:02.822Z",
+  "verifiedAt": "2026-10-06T16:17:07.908Z",
   "events": [
     {
       "id": "campus-aeroe-7956",
@@ -500,6 +500,47 @@
       }
     },
     {
+      "id": "campus-aeroe-8084",
+      "title": "Naturkoncert på Søbygaard med Lydmor + Anberose",
+      "description": "Gratis naturkoncert på Søbygaard\nTorsdag d. 15. oktober kl. 17.00-19.00 kan du opleve Lydmor og Anberose på gårdspladsen ved Søbygaard med udsigt til voldgraven.\nSpillestedet Harders har i en årrække brugt naturen som bagtæppe for musikalske oplevelser. Når musikken flytter udenfor, er det ro og nærvær, der fylder. Det handler om at mærke det, der er lige foran dig, uanset om det er et dyr, et træ eller en musiker, der folder sig ud. Koncerterne er nedbarberede eller helt akustiske, og i år er klaveret det eneste instrument.\nLæs mere og bestil billet her: Naturkoncert med Lydmor + Anberose på Søbygaard\nArrangører: Søbygaard og spillestedet Harders.\nFoto: Spillestedet Harders",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Søbygaard",
+        "address": "Søbygårdsvej 2",
+        "postalCode": "5985",
+        "city": "Søby",
+        "url": "https://campusaeroe.dk/venue/soebygaard/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "campus-8084",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "8084",
+        "url": "https://campusaeroe.dk/event/naturkoncert-pa-sobygaard-med-lydmor-anberose/",
+        "verifiedAt": "2026-10-06T16:17:07.908Z",
+        "modifiedAt": "2026-10-06T11:20:43.000Z"
+      }
+    },
+    {
       "id": "campus-aeroe-series-aabent-metalvaerksted",
       "title": "Åbent (Metal)værksted",
       "description": "Åbent Værksted på Navigationsskolen med Rasmus – hver mandag\nHer kan du arbejde med reparation af knallerter og cykler samt udføre mindre jernprojekter. For at deltage skal du have gennemført §17-kurset online, som giver adgang til værkstedets maskiner og processer\n• Her kan du:\n• Reparere din knallert eller cykel\n• Lave små projekter i jern\n• Prøve at svejse, bukke og forme\n• Være en del af et hyggeligt fællesskab med god stemning\nCampus-holdet er åbent for alle under uddannelse fra 15 + år. Ingen tilmelding – bare mød op.",
@@ -539,7 +580,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-aabent-metalvaerksted",
         "url": "https://campusaeroe.dk/event/aabent-metalvaerksted/",
-        "verifiedAt": "2026-10-05T16:17:02.822Z",
+        "verifiedAt": "2026-10-06T16:17:07.908Z",
         "modifiedAt": "2026-07-06T07:26:55.000Z"
       }
     },
@@ -586,7 +627,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet",
         "url": "https://campusaeroe.dk/event/campus-idraet/",
-        "verifiedAt": "2026-10-05T16:17:02.822Z",
+        "verifiedAt": "2026-10-06T16:17:07.908Z",
         "modifiedAt": "2026-08-17T08:13:49.000Z"
       }
     },
@@ -632,7 +673,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet-2",
         "url": "https://campusaeroe.dk/event/campus-idraet-2/",
-        "verifiedAt": "2026-10-05T16:17:02.822Z",
+        "verifiedAt": "2026-10-06T16:17:07.908Z",
         "modifiedAt": "2026-08-17T08:22:05.000Z"
       }
     },
@@ -679,7 +720,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-musik",
         "url": "https://campusaeroe.dk/event/campus-musik/",
-        "verifiedAt": "2026-10-05T16:17:02.822Z",
+        "verifiedAt": "2026-10-06T16:17:07.908Z",
         "modifiedAt": "2026-08-17T08:02:57.000Z"
       }
     },
@@ -719,7 +760,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8081",
         "url": "https://campusaeroe.dk/event/babycafe-barnets-sproglige-udvikling/",
-        "verifiedAt": "2026-10-05T16:17:02.822Z",
+        "verifiedAt": "2026-10-06T16:17:07.908Z",
         "modifiedAt": "2026-10-05T06:53:15.000Z"
       }
     },
@@ -760,7 +801,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "7963",
         "url": "https://campusaeroe.dk/event/fejring-af-faellesskaber-og-uddannelse-paa-aeroe/",
-        "verifiedAt": "2026-10-05T16:17:02.822Z",
+        "verifiedAt": "2026-10-06T16:17:07.908Z",
         "modifiedAt": "2026-10-01T07:42:08.000Z"
       }
     },
@@ -800,7 +841,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8077",
         "url": "https://campusaeroe.dk/event/babycafe-sansemotorik-i-teori-og-praksis/",
-        "verifiedAt": "2026-10-05T16:17:02.822Z",
+        "verifiedAt": "2026-10-06T16:17:07.908Z",
         "modifiedAt": "2026-10-01T09:53:24.000Z"
       }
     },
@@ -840,7 +881,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8079",
         "url": "https://campusaeroe.dk/event/babycafe-tryghed-og-tilknytning/",
-        "verifiedAt": "2026-10-05T16:17:02.822Z",
+        "verifiedAt": "2026-10-06T16:17:07.908Z",
         "modifiedAt": "2026-10-01T09:56:18.000Z"
       }
     }
