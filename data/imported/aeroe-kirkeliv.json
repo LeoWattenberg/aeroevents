@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-kirkeliv",
-  "verifiedAt": "2026-10-06T16:17:07.908Z",
+  "verifiedAt": "2026-10-07T16:17:02.572Z",
   "events": [
     {
       "id": "aeroe-kirkeliv-53896617",
@@ -686,45 +686,6 @@
       }
     },
     {
-      "id": "aeroe-kirkeliv-series-babysalmesang-i-tranderup",
-      "title": "Babysalmesang i Tranderup",
-      "description": "",
-      "organizerId": "linda-skjoennemand",
-      "organizerName": "Linda Skjønnemand",
-      "categoryIds": [
-        "kirke"
-      ],
-      "location": {
-        "name": "Tranderup sognehus",
-        "address": "Tranderupgade",
-        "postalCode": "5970",
-        "city": "Ærøskøbing"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-10-07",
-          "kind": "timed",
-          "startTime": "10:00"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20261007T100000",
-        "rdates": [],
-        "exdates": [],
-        "overrides": []
-      },
-      "source": {
-        "sourceId": "aeroe-kirkeliv",
-        "externalId": "series-babysalmesang-i-tranderup",
-        "url": "https://widget.churchdesk.com/da/w/1709/event/7HsDjgjjLaLL/1/1350954",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
-      }
-    },
-    {
       "id": "aeroe-kirkeliv-53896726",
       "title": "Opstartsgudstjeneste for konfirmander i Ærøskøbing Kirke",
       "description": "Onsdag den 7. oktober kl. 19.00 i Ærøskøbing Kirke\nOPSTARTSGUDSTJENESTE FOR KONFIRMANDER\nKonfirm...",
@@ -759,7 +720,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896726",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/opstartsgudstjeneste-for-konfirmander-i-aeroskobing-kirke-53896726",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -798,7 +759,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "series-tumlingemusik-i-tranderup",
         "url": "https://widget.churchdesk.com/da/w/1709/event/7HsDjgjjLaLL/1/1350954",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -836,7 +797,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896467",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/bibelstudiekreds-i-johannesevangeliet-marstal-menigehedshus-53896467",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -874,7 +835,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53655730",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53655730",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -912,7 +873,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53655755",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-bregninge-53655755",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -950,7 +911,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53655741",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53655741",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -988,7 +949,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53655767",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-ommel-m-kirkekaffe-53655767",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1027,7 +988,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "46076794",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/efterarskoncert-sylvester-larsten-46076794",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1065,7 +1026,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53656368",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53656368",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1103,7 +1064,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53656383",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53656383",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1141,7 +1102,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53656415",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-soby-53656415",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1179,7 +1140,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53656433",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-tranderup-m-altergang-53656433",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1218,7 +1179,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "series-bibelstudiekreds-marstal",
         "url": "https://widget.churchdesk.com/da/w/1709/event/7HsDjgjjLaLL/1/1350954",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1256,7 +1217,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53656478",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-rise-53656478",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1294,7 +1255,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53895919",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-bregninge-53895919",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1332,7 +1293,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53656468",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-m-kirkekaffe-53656468",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1370,7 +1331,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53656456",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53656456",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1408,7 +1369,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896740",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/formiddagsforedrag-jorgen-otto-jorgensen-i-marstal-menigehedshus-53896740",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1445,7 +1406,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "45094863",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/menighedsradsmode-rise-45094863",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1483,7 +1444,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896019",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-bregninge-53896019",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1521,7 +1482,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896025",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-tranderup-53896025",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1559,7 +1520,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896018",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-soby-53896018",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1599,7 +1560,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "44621476",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/alle-helgen-44621476",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1637,7 +1598,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53895984",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-aeroskobing-53895984",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1675,7 +1636,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53895996",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-rise-53895996",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1713,7 +1674,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896021",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/allehelgengudstjeneste-ommel-53896021",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1751,7 +1712,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "60656332",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/babysamlesang-tranderup-kirke-og-sognehus-60656332",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1789,7 +1750,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896742",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/aftenandagt-tid-til-ro-et-pusterum-i-din-hverdag-rise-kirke-53896742",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1827,7 +1788,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896103",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53896103",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1865,7 +1826,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896106",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53896106",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1903,7 +1864,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896109",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-rise-53896109",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1941,7 +1902,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896116",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-tranderup-53896116",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -1979,7 +1940,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "60656334",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/babysamlesang-tranderup-kirke-og-sognehus-60656334",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2017,7 +1978,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896121",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-marstal-53896121",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2055,7 +2016,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896132",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53896132",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2093,7 +2054,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896134",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-soby-53896134",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2131,7 +2092,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896141",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/sognesondag-i-soby-aktivitetshus-53896141",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2169,7 +2130,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896136",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-bregninge-53896136",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2207,7 +2168,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "60656335",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/babysamlesang-tranderup-kirke-og-sognehus-60656335",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2245,7 +2206,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "56044462",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/aftenandagt-tid-til-til-et-pusterum-i-din-hverdag-rise-56044462",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2283,7 +2244,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53873823",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/sangaften-bregninge-konfirmandstue-53873823",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2321,7 +2282,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896781",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/julematine-v-paul-nedergaard-i-aeroskobing-kirke-53896781",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2359,7 +2320,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896158",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-rise-53896158",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2397,7 +2358,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896162",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-bregninge-53896162",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2435,7 +2396,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896145",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-aeroskobing-53896145",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2473,7 +2434,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "48395697",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/roelygteoptog-og-familiegudstjeneste-i-ommel-48395697",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2511,7 +2472,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "60656337",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/babysamlesang-tranderup-kirke-og-sognehus-60656337",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2548,7 +2509,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "45094714",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/menighedsradsmode-aeroskobing-45094714",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2586,7 +2547,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896813",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/tusmorkefredag-i-aeroskobing-kirke-53896813",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2624,7 +2585,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896816",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/krybbespilsweekend-i-rise-kirke-53896816",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2662,7 +2623,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896182",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/adventsgudstjeneste-marstal-53896182",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2700,7 +2661,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896192",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/adventsgudstjeneste-aeroskobing-53896192",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2738,7 +2699,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896195",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/gudstjeneste-med-krybbespil-i-rise-53896195",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2776,7 +2737,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "53896198",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/adventsgudstjeneste-tranderup-53896198",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2814,7 +2775,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "60656339",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/babysamlesang-tranderup-kirke-og-sognehus-60656339",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     },
     {
@@ -2852,7 +2813,7 @@
         "sourceId": "aeroe-kirkeliv",
         "externalId": "60656405",
         "url": "https://www.xn--rkirkeliv-f3a3r.dk/b/babysamlesang-tranderup-kirke-og-sognehus-60656405",
-        "verifiedAt": "2026-10-06T16:17:07.908Z"
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     }
   ]

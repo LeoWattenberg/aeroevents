@@ -1,6 +1,6 @@
 {
   "sourceId": "viften",
-  "verifiedAt": "2026-09-29T16:17:03.419Z",
+  "verifiedAt": "2026-10-07T16:17:02.572Z",
   "events": [
     {
       "id": "viften-29c4da51dbc547608099eb011d23c72e",
@@ -84,6 +84,44 @@
         "externalId": "44529c680154462ca130ff14235f51aa",
         "url": "https://www.viften.net/subjectclass/44529c680154462ca130ff14235f51aa",
         "verifiedAt": "2026-09-29T16:17:03.419Z"
+      }
+    },
+    {
+      "id": "viften-d9809664226f4ac091da0f6f82221a19",
+      "title": "SPISE og FILMAFTEN",
+      "description": "Vi mødes kl 17.00 i klubben og spiser Burgers, Pommes frites og Nuggets.\nBagefter ser vi film sammen på storskærm!\nVi afslutter, så man kan nå bussen kl 20 - ellers så kan man hentes af dine forældre.\nVi glæder os til en forrygende aften sammen med jer!\nKh Viften",
+      "organizerId": "viften",
+      "categoryIds": [
+        "boern-familie"
+      ],
+      "attendance": {
+        "kind": "registration",
+        "details": "Du skal gå på et af følgende klassetrin: 4. 5."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "booking": {
+        "required": true,
+        "soldOut": false,
+        "url": "https://www.viften.net/subjectclass/d9809664226f4ac091da0f6f82221a19#enrollment",
+        "details": "Tilmeldingsfrist 19. oktober 2026 kl. 23.59"
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "viften-d9809664226f4ac091da0f6f82221a19",
+            "date": "2026-10-23",
+            "kind": "timed",
+            "startTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "viften",
+        "externalId": "d9809664226f4ac091da0f6f82221a19",
+        "url": "https://www.viften.net/subjectclass/d9809664226f4ac091da0f6f82221a19",
+        "verifiedAt": "2026-10-07T16:17:02.572Z"
       }
     }
   ]
