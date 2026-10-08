@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-08T04:17:08.857Z",
+  "verifiedAt": "2026-10-08T16:17:02.717Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -2429,6 +2429,231 @@
         "externalId": "post-pfbid0arnuxCZag6weCjeqgN7wwdvHDbSJWLUUrPkmFk3AndYkYwpqeHut13HgPRGHUntKl",
         "url": "https://www.facebook.com/PaaTorvet/posts/-efter%C3%A5ret-hos-caf%C3%A9-p%C3%A5-torvetefter%C3%A5rsferien-n%C3%A6rmer-sig-og-vi-holder-%C3%A5bent-flere-/1779691927497800/",
         "verifiedAt": "2026-10-07T16:17:02.572Z"
+      }
+    },
+    {
+      "id": "facebook-post-28872651359039458",
+      "title": "Bregninge Sognegård inviterer til fællesspisning",
+      "description": "Bregninge Sognegård inviterer til fællesspisning torsdag den 29. oktober - nu med Nina og Esben som gæstekokke.\nVi skal smage mexikansk festsuppe med tilbehør. Det bliver en spændende oplevelse. Tilmelding til spisningen senest den 26. oktober til Mathilde på telefon 61265970. Håber vi ses.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-yrl5g7-1",
+            "date": "2026-10-29",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28872651359039458",
+        "url": "https://www.facebook.com/groups/144664695598174/posts/28872651359039458/",
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02eied8svqxs4ufjklymtndqf8hyski9ewxjckc3ce3gtcmjref5-e5e3564e",
+      "title": "Efteråret hos Café På Torvet",
+      "description": "Efteråret hos Café På Torvet\nEfterårsferien nærmer sig, og vi holder åbent flere dage i den kommende uge.\nKig forbi Café På Torvet til en hyggelig frokost, en kop kaffe eller noget koldt at drikke midt i Ærøskøbing.\nHer er vores åbningstider i efterårsferien:\nTorsdag 8. oktober kl. 11.30–16.00\nFredag 9. oktober kl. 11.30–16.00\nLørdag 10. oktober – smørrebrødsbuffet\nSøndag 11. oktober kl. 11.30–16.00\nMandag 12. oktober kl. 11.30–16.00\nTirsdag 13. oktober – smørrebrødsbuffet\nOnsdag 14. oktober kl. 11.30–16.00\nTorsdag 15. oktober kl. 11.30–16.00\nFredag 16. oktober – smørrebrødsbuffet\nKøkkenet er åbent kl. 12.00–15.00 på de almindelige åbningsdage.\nEfter fredag den 16. oktober holder vi lukket frem til julemarkederne.\nVi glæder os til at se jer!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-5ra7c-1",
+            "date": "2026-10-08",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-5ra7c-2",
+            "date": "2026-10-09",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-5ra7c-3",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-5ra7c-4",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-5ra7c-5",
+            "date": "2026-10-12",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-5ra7c-6",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-5ra7c-7",
+            "date": "2026-10-14",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-5ra7c-8",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-5ra7c-9",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "12:00",
+            "endTime": "15:00"
+          },
+          {
+            "id": "facebook-5ra7c-10",
+            "date": "2026-10-16",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02eiEd8sVQXS4ufJkLYMTNdqF8hyski9ewXjcKC3CE3GTCmJreF5sTGyKSmcHMLAeYl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-efter%C3%A5ret-hos-caf%C3%A9-p%C3%A5-torvetefter%C3%A5rsferien-n%C3%A6rmer-sig-og-vi-holder-%C3%A5bent-flere-/1779691927497800/",
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0nx2knmmzagh4xagc5cn4t88bcjcqshryc1w9rnjmsnyw1h84as4-63ceea0e",
+      "title": "Sæt kryds i kalenderen",
+      "description": "Sæt kryds i kalenderen!\nFredag den 16. oktober kl. 15.00 inviterer Marstal Erhvervsforening igen til Halloween i Marstal med den traditionsrige græskarudskæringskonkurrence for børn.\n85 græskar\nPræmier i flere kategorier\nSnacks til børnene\nMasser af Halloween-hygge\nTilmeld dig begivenheden her https://fb.me/e/4TURMbicS\nVi glæder os til at se, hvilke uhyggelige, sjove og flotte græskar der dukker op i år!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-12a96k5-1",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "15:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0nx2kNmMZaGh4XAgC5cN4t88BCJcQshryC1w9rNJmsNyW1H84as4jEDF9DzdzMnjGl",
+        "url": "https://www.facebook.com/MarstalHandelsforening/posts/-s%C3%A6t-kryds-i-kalenderenfredag-den-16-oktober-kl-1500-inviterer-marstal-erhvervsf/1573551394575316/",
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0rtwm3woyay8mhjzesl9bd2jn8jztjcexckfztaf5ob69xvqww8j-3f56977e",
+      "title": "Igen i år indtager Anna Bob Øhavet Festival som konferencier på Eriksens Plads",
+      "description": "Igen i år indtager Anna Bob Øhavet Festival som konferencier på Eriksens Plads!\nHun glæder sig til at tage godt imod jer og vores artister!\nVi ses på Øhavet Festival ‘26\n17. - 18. Juli på Eriksens Plads, Ærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-5kus2z-1",
+            "date": "2027-07-17",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-5kus2z-2",
+            "date": "2027-07-18",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0RTWM3WoyAY8mhJZesL9BD2jn8JZTJceXcKFztAf5ob69XvqWW8JwKvGmiCCYBz47l",
+        "url": "https://www.facebook.com/oehavetfestival/posts/igen-i-%C3%A5r-indtager-anna-bob-%C3%B8havet-festival-som-konferencier-p%C3%A5-eriksens-plads-h/1323369039959234/",
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0vgrpxlfmda7yufkod6ntikk1l8melobw4ebuga3twpajxyor1u2-d3109dda",
+      "title": "Generalforsamling i Ærø Jazz Festival",
+      "description": "Generalforsamling i Ærø Jazz Festival\nMandag den 2. november kl. 17.00 på Friskolen, Vestergade 52A, 5970 Ærøskøbing.\nKom og hør om året der gik, og vær med til at sætte tonen for næste års festival. Vi glæder os til at se jer!\n# #ÆJF2027\nNiels Solholm og Henrik Hollender",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1283idw-1",
+            "date": "2026-11-02",
+            "kind": "timed",
+            "startTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0vGRPxLFmDa7yUfkod6nTiKK1L8MELoBw4eBuga3twPAjXYoR1U2jPhThNPzxYsjTl",
+        "url": "https://www.facebook.com/aerojazz/posts/generalforsamling-i-%C3%A6r%C3%B8-jazz-festivalmandag-den-2-november-kl-1700-p%C3%A5-friskolen-/1727630096033246/",
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     }
   ]

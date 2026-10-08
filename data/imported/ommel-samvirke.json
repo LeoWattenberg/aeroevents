@@ -1,6 +1,6 @@
 {
   "sourceId": "ommel-samvirke",
-  "verifiedAt": "2026-10-08T04:17:08.857Z",
+  "verifiedAt": "2026-10-08T16:17:02.717Z",
   "events": [
     {
       "id": "ommel-samvirke-activity-2516431221fb91896417",
@@ -1085,6 +1085,81 @@
       }
     },
     {
+      "id": "ommel-samvirke-declared-series-stolegymnastik",
+      "title": "Stolegymnastik",
+      "description": "Stolegymnastik – Bevægelse, styrke og fællesskab Hold kroppen i gang – hele livet. Kom og vær med til stolegymnastik, hvor vi træner på en tryg, sjov og skånsom måde. Øvelserne styrker musklerne, forbedrer balancen og holder kroppen smidig, så du lettere kan klare hverdagens gøremål. Du behøver hverken at være i topform eller have erfaring – alle kan være med, og øvelserne tilpasses den enkelte. Du får blandt andet: 💪 Stærkere muskler ⚖️ Bedre balance og stabilitet 🤸 Øget smidighed ❤️ Mere energi og velvære 😊 Et hyggeligt fællesskab med plads til smil og gode grin Vi slutter hver gang af med en kop kaffe eller te, hvor der er tid til en god snak og samvær.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-10-12",
+          "kind": "timed",
+          "startTime": "10:00"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20271004T100000",
+        "rdates": [],
+        "exdates": [
+          "2026-12-28T10:00"
+        ],
+        "overrides": [],
+        "durationMinutes": 120
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "declared-series-stolegymnastik",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-10-08T04:17:08.857Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-f5471dded912698f062b",
+      "title": "Roelygteoptog",
+      "description": "Vi mødes i Ommel Kirke til en kort børnegudstjeneste. Bagefter er der boller og varmt kakao til alle Herefter går turen rundt i Ommel hvor vi besøger de steder som har tilmeldt sig.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Ommel Kirke"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-f5471dded912698f062b-2026-11-22-1600",
+            "date": "2026-11-22",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-f5471dded912698f062b",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-10-08T04:17:08.857Z"
+      }
+    },
+    {
       "id": "ommel-samvirke-activity-055e12ca2a8928536eb3",
       "title": "Dart på kroen",
       "description": "Vi spiller dart på Ommel Kro. Alle er velkomne og har du spørgsmål så kan du kontakte Hanne.",
@@ -1180,7 +1255,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-055e12ca2a8928536eb3",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -1265,7 +1340,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30308c2d5b0827696f99",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -1302,7 +1377,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-496ff0a823833c4a8412",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -1338,7 +1413,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-585bff86e14e8257b185",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -1598,7 +1673,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-67cdddcd989e08df5bcc",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -1634,46 +1709,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6e0eff53f2d4e3298081",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-declared-series-stolegymnastik",
-      "title": "Stolegymnastik",
-      "description": "Stolegymnastik – Bevægelse, styrke og fællesskab Hold kroppen i gang – hele livet. Kom og vær med til stolegymnastik, hvor vi træner på en tryg, sjov og skånsom måde. Øvelserne styrker musklerne, forbedrer balancen og holder kroppen smidig, så du lettere kan klare hverdagens gøremål. Du behøver hverken at være i topform eller have erfaring – alle kan være med, og øvelserne tilpasses den enkelte. Du får blandt andet: 💪 Stærkere muskler ⚖️ Bedre balance og stabilitet 🤸 Øget smidighed ❤️ Mere energi og velvære 😊 Et hyggeligt fællesskab med plads til smil og gode grin Vi slutter hver gang af med en kop kaffe eller te, hvor der er tid til en god snak og samvær.",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Beboerhuset"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-10-12",
-          "kind": "timed",
-          "startTime": "10:00"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20271004T100000",
-        "rdates": [],
-        "exdates": [
-          "2026-12-28T10:00"
-        ],
-        "overrides": [],
-        "durationMinutes": 120
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "declared-series-stolegymnastik",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -1710,7 +1746,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-836eca1737f817254932",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -1746,7 +1782,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9def748678c088c8d2c4",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -1922,7 +1958,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9ec112d0956cd8982970",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -1958,7 +1994,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9f7394883888a0233afa",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -2008,7 +2044,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a59186c3c2663f88eb65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -2317,7 +2353,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-b0e925ea79720a9acd65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -2381,7 +2417,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-beff946b8065a3c9b786",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -2452,7 +2488,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-bf23c6d47faddee5e6b7",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -2530,7 +2566,120 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-c5cf94bfe0ce56b7b1e9",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-c8a3d024d6ea99ea3a90",
+      "title": "Fællesspisning 50+",
+      "description": "Pris: 60 kr. pr. person. Kun kontanter 😊 Drikkevarer: Kan købes men man må også gerne medbringe selv. Vi spiser kl. 17.30 men du er meget velkommen til at komme tidligere. Tilmelding gerne sms til: Ragna Friborg Tlf. nr Senest mandagen før af hensyn til indkøb Menuplanen er vedhæftet som pdf-fil",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2026-10-21-1730",
+            "date": "2026-10-21",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2026-11-04-1730",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2026-11-18-1730",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2026-12-02-1730",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2027-01-06-1730",
+            "date": "2027-01-06",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2027-01-20-1730",
+            "date": "2027-01-20",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2027-02-03-1730",
+            "date": "2027-02-03",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2027-02-17-1730",
+            "date": "2027-02-17",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2027-03-03-1730",
+            "date": "2027-03-03",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2027-03-17-1730",
+            "date": "2027-03-17",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2027-03-31-1730",
+            "date": "2027-03-31",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          },
+          {
+            "id": "activity-c8a3d024d6ea99ea3a90-2027-04-14-1730",
+            "date": "2027-04-14",
+            "kind": "timed",
+            "startTime": "17:30",
+            "endTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-c8a3d024d6ea99ea3a90",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -2573,7 +2722,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ca911d32328bdabc0823",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -2610,7 +2759,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-d0a8ed3087ff43c20a82",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -2646,43 +2795,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-eb8e63e5faecadda2bcd",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-f5471dded912698f062b",
-      "title": "Roelygteoptog",
-      "description": "Vi mødes i Ommel Kirke til en kort børnegudstjeneste. Bagefter er der boller og varmt kakao til alle Herefter går turen rundt i Ommel hvor vi besøger de steder som har tilmeldt sig.",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Ommel Kirke"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "activity-f5471dded912698f062b-2026-11-22-1600",
-            "date": "2026-11-22",
-            "kind": "timed",
-            "startTime": "16:00",
-            "endTime": "18:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-f5471dded912698f062b",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     },
     {
@@ -2718,7 +2831,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ff18bae6052e17e80401",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-08T04:17:08.857Z"
+        "verifiedAt": "2026-10-08T16:17:02.717Z"
       }
     }
   ]
