@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-08T16:17:02.717Z",
+  "verifiedAt": "2026-10-09T04:17:03.256Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -2654,6 +2654,67 @@
         "externalId": "post-pfbid0vGRPxLFmDa7yUfkod6nTiKK1L8MELoBw4eBuga3twPAjXYoR1U2jPhThNPzxYsjTl",
         "url": "https://www.facebook.com/aerojazz/posts/generalforsamling-i-%C3%A6r%C3%B8-jazz-festivalmandag-den-2-november-kl-1700-p%C3%A5-friskolen-/1727630096033246/",
         "verifiedAt": "2026-10-08T16:17:02.717Z"
+      }
+    },
+    {
+      "id": "facebook-post-28583728144570433",
+      "title": "John og jeg har købt en rejse til Paris med Historiske Rejser frs",
+      "description": "John og jeg har købt en rejse til Paris med Historiske Rejser frs 25. til 31 oktober med afgang fra Sydfyn, men der er desværre sket det at jeg er faldet og har brækket min hofte, så vi kommer desværre ikke afsted. Det er en busrejse og har booket en rigtig god plads i bussen. Hvis et par venner kunne være interesseret i at overtage vores rejse til en god pris, ville det være dejligt. Vi har betalt ialt 16000kr for turen og vil sælge den for 12000kr. for to. Ved interesse kan jeg sende oversigt til rejsen. De bedste hilsner fra Inger",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-njqxii-1",
+            "date": "2026-10-25",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-njqxii-2",
+            "date": "2026-10-26",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-njqxii-3",
+            "date": "2026-10-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-njqxii-4",
+            "date": "2026-10-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-njqxii-5",
+            "date": "2026-10-29",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-njqxii-6",
+            "date": "2026-10-30",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-njqxii-7",
+            "date": "2026-10-31",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28583728144570433",
+        "url": "https://www.facebook.com/groups/oplevmitaeroe/posts/28583728144570433/",
+        "verifiedAt": "2026-10-09T04:17:03.256Z"
       }
     }
   ]
