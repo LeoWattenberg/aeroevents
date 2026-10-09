@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-09T04:17:03.256Z",
+  "verifiedAt": "2026-10-09T16:17:03.285Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -2715,6 +2715,257 @@
         "externalId": "post-28583728144570433",
         "url": "https://www.facebook.com/groups/oplevmitaeroe/posts/28583728144570433/",
         "verifiedAt": "2026-10-09T04:17:03.256Z"
+      }
+    },
+    {
+      "id": "facebook-post-28883538771284050",
+      "title": "I anledning af begyndende kulde, hyggetrang og efterårsferie for mange, sætter vi flag ud og åbner garnpopup på Nørrevejen 4 i Søby",
+      "description": "I anledning af begyndende kulde, hyggetrang og efterårsferie for mange, sætter vi flag ud og åbner garnpopup på Nørrevejen 4 i Søby\nVi holder åbent\nLørdag 10.10 kl 10 - 16\nSøndag 11.10 kl 10 - 16\nKom og kram lidt garn og få en nørklesnak",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-kc4eeb-1",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-kc4eeb-2",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-28883538771284050",
+        "url": "https://www.facebook.com/groups/144664695598174/posts/28883538771284050/",
+        "verifiedAt": "2026-10-09T16:17:03.285Z"
+      }
+    },
+    {
+      "id": "facebook-post-2917644255273711",
+      "title": "I anledning af begyndende kulde, hyggetrang og efterårsferie for mange, sætter vi flag ud og åbner garnpopup på Nørrevejen 4 i Søby",
+      "description": "I anledning af begyndende kulde, hyggetrang og efterårsferie for mange, sætter vi flag ud og åbner garnpopup på Nørrevejen 4 i Søby\nVi holder åbent\nLørdag 10.10 kl 10 - 16\nSøndag 11.10 kl 10 - 16\nKom og kram lidt garn og få en nørklesnak",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1839dmu-1",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-1839dmu-2",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-2917644255273711",
+        "url": "https://www.facebook.com/groups/1853077681730379/posts/2917644255273711/",
+        "verifiedAt": "2026-10-09T16:17:03.285Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid024bnxgamn2b3pn2eyrhxx3ygqbzfmt7n5gkl43rq1hvdy7ez577-0448a5bb",
+      "title": "SØNDAGSÅBENT I MARSTAL",
+      "description": "SØNDAGSÅBENT I MARSTAL\nPå søndag d. 11. oktober holder butikkerne i Marstal åbent fra kl. 10.00 – 14.00.\nKom og gå på opdagelse i byens spændende butikker og støt det lokale handelsliv.\nSøndag d. 11. oktober\nKl. 10.00 – 14.00\nMarstal By\nBemærk at enkelte butikker kan have andre åbningstider\nVi glæder os til at se jer til en hyggelig søndag i Marstal\n#Marstal #Søndagsåbent #VisitÆrø #EfterårPåÆrø #MarstalErhvervsforening",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Marstal By"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-90iko5-1",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "14:00"
+          },
+          {
+            "id": "facebook-90iko5-2",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid024bnXgaMN2B3pN2eyrhxx3YgQBzfmT7n5GkL43rQ1hVdY7EZ577wJMUs9aXgFEgXMl",
+        "url": "https://www.facebook.com/MarstalHandelsforening/posts/s%C3%B8ndags%C3%A5bent-i-marstal-%EF%B8%8Fp%C3%A5-s%C3%B8ndag-d-11-oktober-holder-butikkerne-i-marstal-%C3%A5bent/1577024554228000/",
+        "verifiedAt": "2026-10-09T16:17:03.285Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02xvbnfhpzaxsdxaup98fbfx1racq8av4fbt3z8a8pinh7hg4gxt-6830b8a6",
+      "title": "Smørrebrødsbuffet i efterårsferien",
+      "description": "Smørrebrødsbuffet i efterårsferien\nSmørrebrødsbuffeten lørdag den 10. oktober er udsolgt – tak for den store interesse!\nMen du kan stadig nå med til vores to næste buffeter:\nTirsdag 13. oktober\nFredag 16. oktober\nBegge dage kl. 11.30–14.30\n199 kr. inkl. 1 snaps\n189 kr. uden snaps\n99 kr. for børn til og med 12 år\nDer er stadig ledige pladser begge dage.\nCafé På Torvet holder åbent frem til og med fredag den 16. oktober. På de øvrige åbningsdage kan du stadig komme forbi til frokost, kaffe eller noget koldt at drikke – og det er sidste chance for at opleve caféen og vores menu, inden vi lukker ned og gør klar til jul.\nSe menuen:\npaatorvet.dk/menu/\nBestil bord på 30 34 46 50 (tryk 2)\ncafe@paatorvet.dk",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "booking": {
+        "required": false,
+        "soldOut": true
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1osum1q-1",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-1osum1q-2",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-1osum1q-3",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-1osum1q-4",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02xVBNFHpzAxSdXAup98fbfx1RaCQ8Av4FBT3z8a8piNH7Hg4gXtPt3Gt6pkC58TDFl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-sm%C3%B8rrebr%C3%B8dsbuffet-i-efter%C3%A5rsferien-sm%C3%B8rrebr%C3%B8dsbuffeten-l%C3%B8rdag-den-10-oktober-er/1781935190606807/",
+        "verifiedAt": "2026-10-09T16:17:03.285Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02z7s791bb4xxnfokapovjtpvxuvrmhkjhz3mhqq9ekmxbwvteym-3a159e94",
+      "title": "Generalforsamling i Ærø Jazz Festival",
+      "description": "Generalforsamling i Ærø Jazz Festival\nMandag den 2. november kl. 17.00 på Friskolen, Vestergade 52A, 5970 Ærøskøbing.\nKom og hør om året der gik, og vær med til at sætte tonen for næste års festival. Vi glæder os til at se jer!\n# #ÆJF2027\nNiels Solholm og Henrik Hollender",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-13ioc8l-1",
+            "date": "2026-11-02",
+            "kind": "timed",
+            "startTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02z7s791Bb4xxnfoKaPovJTpVXuVrmhkJhZ3MHqQ9eKMxbWVTEyMoHj8VduHrRyTYxl",
+        "url": "https://www.facebook.com/aerojazz/posts/generalforsamling-i-%C3%A6r%C3%B8-jazz-festivalmandag-den-2-november-kl-1700-p%C3%A5-friskolen-/1727630096033246/",
+        "verifiedAt": "2026-10-09T16:17:03.285Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0h7ntjxzyybflcda5je44jsv2sbjdlvcwhm4mvmbpntqeqm9jjwz-b9869b23",
+      "title": "Efterårsferien på Landbogaarden",
+      "description": "Efterårsferien på Landbogaarden!\nVi holder åbent i hele efterårsferien - fra fredag d. 9. oktober til lørdag d. 17 oktober, hver aften kl. 18:00 - 21:00 i køkkenet, og i baren så længe der er nogen der hygger sig!\nVi serverer hver aften:\nBlød og rund rød linse suppe med kokosmælk og frisk citron\n- 122 kr\nVildt Krondyr Spare Ribs fra de jyske Klosterhedens skove, med stor bagt kartoffel og frisk salat\n- 344 kr\nBoeuf Bourguignon - fransk klassisk gryde med oksekød, røget bacon, champignon, perleløg og gulerødder - over kartoffelmos med Ærø kartofler\n- 322 kr\nVegetarisk Dahl med ris\n- 188 kr\nChokolade Mousse med hindbær sauce og flødeskum\n- 122 kr\n- Der er altid hjemmelavet Aioli og varmt brød til alle retter på huset.\nRing gerne til Gertrud og bestil bord på: 29712348",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-rfxnqy-1",
+            "date": "2026-10-09",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-rfxnqy-2",
+            "date": "2026-10-17",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0h7NTjXZYYBFLCda5JE44JSv2SBjDLvCWhM4MvMBpNtQeQm9JjWzHxK54XzWPu4cJl",
+        "url": "https://www.facebook.com/Landbogaarden/posts/efter%C3%A5rsferien-p%C3%A5-landbogaardenvi-holder-%C3%A5bent-i-hele-efter%C3%A5rsferien-fra-fredag-/1722853536507370/",
+        "verifiedAt": "2026-10-09T16:17:03.285Z"
       }
     }
   ]
