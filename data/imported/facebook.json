@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-10T04:17:03.768Z",
+  "verifiedAt": "2026-10-10T16:17:03.109Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -2997,6 +2997,171 @@
         "externalId": "post-pfbid0K5W9Y7QdghWTk7mrkQez6HUSi9AKJang7FBBgq9psd3V5QjUkt5ymGRy4uho29S7l",
         "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
         "verifiedAt": "2026-10-10T04:17:03.768Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02kxpavcvnpkmcueaypyspjaiozhxdmyz6c1e8yj7rwytasghhcv-5af2e3ab",
+      "title": "Efterårsferien på Landbogaarden",
+      "description": "Efterårsferien på Landbogaarden!\nVi holder åbent i hele efterårsferien - fra fredag d. 9. oktober til lørdag d. 17 oktober, hver aften kl. 18:00 - 21:00 i køkkenet, og i baren så længe der er nogen der hygger sig!\nVi serverer hver aften:\nBlød og rund rød linse suppe med kokosmælk og frisk citron\n- 122 kr\nVildt Krondyr Spare Ribs fra de jyske Klosterhedens skove, med stor bagt kartoffel og frisk salat\n- 344 kr\nBoeuf Bourguignon - fransk klassisk gryde med oksekød, røget bacon, champignon, perleløg og gulerødder - over kartoffelmos med Ærø kartofler\n- 322 kr\nVegetarisk Dahl med ris\n- 188 kr\nChokolade Mousse med hindbær sauce og flødeskum\n- 122 kr\n- Der er altid hjemmelavet Aioli og varmt brød til alle retter på huset.\nRing gerne til Gertrud og bestil bord på: 29712348",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1vq5d9i-2",
+            "date": "2026-10-17",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02kxpAvCVNPkMcueaYPySpJAiozhXdMyz6C1E8YJ7rwYtasGhHCVTea9ja5jhA5GsDl",
+        "url": "https://www.facebook.com/Landbogaarden/posts/efter%C3%A5rsferien-p%C3%A5-landbogaardenvi-holder-%C3%A5bent-i-hele-efter%C3%A5rsferien-fra-fredag-/1722853536507370/",
+        "verifiedAt": "2026-10-10T16:17:03.109Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02nvwrinltyctb8kuyndjq4xwx2mach8xxugb8a6vvydmpulfahw-14f7ca72",
+      "title": "3 dage på Ærø fra kun 795 kr",
+      "description": "3 dage på Ærø fra kun 795 kr.!\nEn lille pause fra hverdagen behøver ikke koste en formue. I november kan du nyde 2 nætter på Ærø Hotel med god mad, ro og tid til hinanden – til en ekstra god pris.\nDit ophold inkluderer:\n✓ 2 overnatninger i standard dobbeltværelse\n✓ 2 x 2-retters aftenmenu\n✓ 2 x stor morgenbuffet inkl. bobler\n✓ Fri adgang til indendørs swimmingpool og fitnessrum\nTag en tur langs havnen i Marstal, mærk den friske havluft, og kom tilbage til en hyggelig aften, hvor vi sørger for maden.\nAnkomst den 2., 4., 6., 9., 11. eller 13. november 2026.\nLink til booking i kommentarfeltet.\nÆrø Hotel er et voksenhotel for gæster fra 18 år.\nHvem skal med dig på en lille novemberpause?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1pubank-1",
+            "date": "2026-11-13",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02NvwrinLTYCtb8kuYNDjQ4xwX2Mach8XxUGB8a6vvYdmPuLFaHWHUUfWQ576CLbd2l",
+        "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
+        "verifiedAt": "2026-10-10T16:17:03.109Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid037ygijbhz3nhh4pdqqzg4guznfc71fcg8zcshkbi3sfqps96t8c-045a6501",
+      "title": "SØNDAGSÅBENT I MARSTAL",
+      "description": "SØNDAGSÅBENT I MARSTAL\nPå søndag d. 11. oktober holder butikkerne i Marstal åbent fra kl. 10.00 – 14.00.\nKom og gå på opdagelse i byens spændende butikker og støt det lokale handelsliv.\nSøndag d. 11. oktober\nKl. 10.00 – 14.00\nMarstal By\nBemærk at enkelte butikker kan have andre åbningstider\nVi glæder os til at se jer til en hyggelig søndag i Marstal\n#Marstal #Søndagsåbent #VisitÆrø #EfterårPåÆrø #MarstalErhvervsforening",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Marstal By"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1cwg6g8-1",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "14:00"
+          },
+          {
+            "id": "facebook-1cwg6g8-2",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid037yGiJbhz3nHh4pDqqzg4gUZnFc71FCG8zCsHKBi3sfqps96T8cFhrxzccsrYyuojl",
+        "url": "https://www.facebook.com/MarstalHandelsforening/posts/s%C3%B8ndags%C3%A5bent-i-marstal-%EF%B8%8Fp%C3%A5-s%C3%B8ndag-d-11-oktober-holder-butikkerne-i-marstal-%C3%A5bent/1577024554228000/",
+        "verifiedAt": "2026-10-10T16:17:03.109Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0twybl8cdknzzkwdvpsyemqrzjljyyrhuvxayusw47b2jz3yyaan-3b40c617",
+      "title": "Smørrebrødsbuffet i efterårsferien",
+      "description": "Smørrebrødsbuffet i efterårsferien\nSmørrebrødsbuffeten lørdag den 10. oktober er udsolgt – tak for den store interesse!\nMen du kan stadig nå med til vores to næste buffeter:\nTirsdag 13. oktober\nFredag 16. oktober\nBegge dage kl. 11.30–14.30\n199 kr. inkl. 1 snaps\n189 kr. uden snaps\n99 kr. for børn til og med 12 år\nDer er stadig ledige pladser begge dage.\nCafé På Torvet holder åbent frem til og med fredag den 16. oktober. På de øvrige åbningsdage kan du stadig komme forbi til frokost, kaffe eller noget koldt at drikke – og det er sidste chance for at opleve caféen og vores menu, inden vi lukker ned og gør klar til jul.\nSe menuen:\npaatorvet.dk/menu/\nBestil bord på 30 34 46 50 (tryk 2)\ncafe@paatorvet.dk",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "booking": {
+        "required": false,
+        "soldOut": true
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1pbc0ox-1",
+            "date": "2026-10-10",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-1pbc0ox-2",
+            "date": "2026-10-13",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-1pbc0ox-3",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          },
+          {
+            "id": "facebook-1pbc0ox-4",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "14:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0twYBL8CdKnzZKWDVpsYemQrZJLJyYRHUvXAYUsW47b2JZ3YyAaNot5Ko6yF7ZSuYl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-sm%C3%B8rrebr%C3%B8dsbuffet-i-efter%C3%A5rsferien-sm%C3%B8rrebr%C3%B8dsbuffeten-l%C3%B8rdag-den-10-oktober-er/1781935190606807/",
+        "verifiedAt": "2026-10-10T16:17:03.109Z"
       }
     }
   ]
