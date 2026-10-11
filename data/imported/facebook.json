@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-11T04:17:02.346Z",
+  "verifiedAt": "2026-10-11T16:17:02.973Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -3261,6 +3261,147 @@
         "externalId": "post-pfbid0hRAz12s1YWkR2d8gkrcAnL7wRMrTvc4nfRuaeqG2sAztJXuAF6tWzjnV4mdXXDYyl",
         "url": "https://www.facebook.com/Landbogaarden/posts/efter%C3%A5rsferien-p%C3%A5-landbogaardenvi-holder-%C3%A5bent-i-hele-efter%C3%A5rsferien-fra-fredag-/1722853536507370/",
         "verifiedAt": "2026-10-11T04:17:02.346Z"
+      }
+    },
+    {
+      "id": "facebook-post-1072254982099314",
+      "title": "Obs obs obs Vedr. petanque",
+      "description": "Obs obs obs Vedr. petanque\nJeg var lige hurtig nok med at beslutte at vi spiller indendørs petanque torsdage kl 16.\nVi mødes torsdag 15 oktober kl 15 og spiller udendørs.\nOg diskuterer her den plan Karin har sendt !\nMarianne giver kaffe og småkager.\nHvis du er interesseret sender jeg planen til dig.\nDen ligger foreløbig på Messenger\nKh Kirsten",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1col6dk-1",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "15:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-1072254982099314",
+        "url": "https://www.facebook.com/groups/871725845485563/posts/1072254982099314/",
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid024rdxps5dchvk1jzes9caspczosqf6dzhcgwlj4ny6bv2matqtc-7ea509a7",
+      "title": "SØNDAGSÅBENT I MARSTAL",
+      "description": "SØNDAGSÅBENT I MARSTAL\nPå søndag d. 11. oktober holder butikkerne i Marstal åbent fra kl. 10.00 – 14.00.\nKom og gå på opdagelse i byens spændende butikker og støt det lokale handelsliv.\nSøndag d. 11. oktober\nKl. 10.00 – 14.00\nMarstal By\nBemærk at enkelte butikker kan have andre åbningstider\nVi glæder os til at se jer til en hyggelig søndag i Marstal\n#Marstal #Søndagsåbent #VisitÆrø #EfterårPåÆrø #MarstalErhvervsforening",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Marstal By"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-55rol9-1",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "14:00"
+          },
+          {
+            "id": "facebook-55rol9-2",
+            "date": "2026-10-11",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "14:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid024RdXPS5dChvK1jZES9CaspcZoSQf6dzhcGwLJ4Ny6bv2mATqTC5CJ8zXLsgFVrcLl",
+        "url": "https://www.facebook.com/MarstalHandelsforening/posts/s%C3%B8ndags%C3%A5bent-i-marstal-%EF%B8%8Fp%C3%A5-s%C3%B8ndag-d-11-oktober-holder-butikkerne-i-marstal-%C3%A5bent/1577024554228000/",
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02gvzpfwrzickwkrhw2vbwc5kfhbniwdb9ux7awttyculehrzjrf-5ffc83f6",
+      "title": "Julekoncert med Mads Mathias & Zier Romme",
+      "description": "Julekoncert med Mads Mathias & Zier Romme\nTraditionen tro inviterer Ærø Jazz Festival til julekoncert med fri entré , som en tak til byen og hele øen for en veloverstået jazzfestival. Vi glæder os til at se så mange som muligt!\nI år får vi besøg af sangeren, saxofonisten og sangskriveren Mads Mathias , som inden sin store juleturné med DR Big Band lægger vejen forbi Ærøskøbing Kirke sammen med stjernepianisten Zier Romme.\nDe to musikalske venner er vokset op med julens store soundtrack: Louis Armstrong, Ella Fitzgerald, Frank Sinatra og alle de andre. Med Mads’ varme fløjlsstemme og Ziers ekvilibristiske klaverspil fortolker de crooner-klassikerne og de udødelige danske julesange. Der bliver også plads til jule-soul og pop af blandt andre Donny Hathaway og John Legend, og til julesange fra Mads Mathias’ egen prisvindende hånd.\n“Danmarks førende mandlige jazzvokalist.” – Michael Bo, Politiken\nForvent en intim og vedkommende koncert, der spreder julestemning og godt humør.\nEn stor og varm tak til Ærøskøbing Kirke, som lægger deres smukke rum til og tager imod os med åbne arme.\nTid: Lørdag den 28. november kl. 15.00\nSted: Ærøskøbing Kirke\nPris: Fri entré, men du skal booke din plads på www.aeroejazzfestival.dk\nKærlig hilsen\nÆrø Jazz Festival",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1jufy5g-1",
+            "date": "2026-11-28",
+            "kind": "timed",
+            "startTime": "15:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02gvZPfwrzickwkRhw2vbWc5kfHBniWdB9uX7aWTTYcULEhrZjRfYSgJfE1gWriTeCl",
+        "url": "https://www.facebook.com/aerojazz/posts/-julekoncert-med-mads-mathias-zier-romme-traditionen-tro-inviterer-%C3%A6r%C3%B8-jazz-fest/1732069835589272/",
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0jum9ey8tsc8rjbibfejyrvcupmod2745jdfl6jsvunlivtylkzv-fd1ed894",
+      "title": "3 dage på Ærø fra kun 795 kr",
+      "description": "3 dage på Ærø fra kun 795 kr.!\nEn lille pause fra hverdagen behøver ikke koste en formue. I november kan du nyde 2 nætter på Ærø Hotel med god mad, ro og tid til hinanden – til en ekstra god pris.\nDit ophold inkluderer:\n✓ 2 overnatninger i standard dobbeltværelse\n✓ 2 x 2-retters aftenmenu\n✓ 2 x stor morgenbuffet inkl. bobler\n✓ Fri adgang til indendørs swimmingpool og fitnessrum\nTag en tur langs havnen i Marstal, mærk den friske havluft, og kom tilbage til en hyggelig aften, hvor vi sørger for maden.\nAnkomst den 2., 4., 6., 9., 11. eller 13. november 2026.\nLink til booking i kommentarfeltet.\nÆrø Hotel er et voksenhotel for gæster fra 18 år.\nHvem skal med dig på en lille novemberpause?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-qb3rfr-1",
+            "date": "2026-11-13",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0JuM9Ey8tsC8rJBiBfEJYrVCupmod2745jdFL6JsVuNLivTYLkzvKQekXfCyCdEarl",
+        "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     }
   ]

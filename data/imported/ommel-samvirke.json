@@ -1,6 +1,6 @@
 {
   "sourceId": "ommel-samvirke",
-  "verifiedAt": "2026-10-11T04:17:02.346Z",
+  "verifiedAt": "2026-10-11T16:17:02.973Z",
   "events": [
     {
       "id": "ommel-samvirke-activity-2516431221fb91896417",
@@ -1273,6 +1273,78 @@
       }
     },
     {
+      "id": "ommel-samvirke-activity-9def748678c088c8d2c4",
+      "title": "Spil dansk",
+      "description": "Traditionerne står i kø i november og december måned. Det første tilbagevende arrangement er Spil Dansk med Karsten Hermansen",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-9def748678c088c8d2c4-2026-10-26-1900",
+            "date": "2026-10-26",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-9def748678c088c8d2c4",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-eb8e63e5faecadda2bcd",
+      "title": "Prøv Linedans",
+      "description": "Hanne og Heide har fundet en dag hvor der er hul i beboerhusets kalender og de inviterer til at man kan afprøve Linedans :-) Alle er velkomne",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-eb8e63e5faecadda2bcd-2026-10-12-1900",
+            "date": "2026-10-12",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-eb8e63e5faecadda2bcd",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
+      }
+    },
+    {
       "id": "ommel-samvirke-activity-055e12ca2a8928536eb3",
       "title": "Dart på kroen",
       "description": "Vi spiller dart på Ommel Kro. Alle er velkomne og har du spørgsmål så kan du kontakte Hanne.",
@@ -1368,7 +1440,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-055e12ca2a8928536eb3",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -1446,7 +1518,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30308c2d5b0827696f99",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -1483,7 +1555,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-496ff0a823833c4a8412",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -1519,7 +1591,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-585bff86e14e8257b185",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -1779,7 +1851,43 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-67cdddcd989e08df5bcc",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-6dd34cb702a968f423f7",
+      "title": "Spil Dansk Ugen",
+      "description": "Traditionerne står i kø i november og december måned. Det første tilbagevende arrangement er Spil Dansk med Karsten Hermansen",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-6dd34cb702a968f423f7-2026-10-26-1930",
+            "date": "2026-10-26",
+            "kind": "timed",
+            "startTime": "19:30",
+            "endTime": "21:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-6dd34cb702a968f423f7",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -1815,7 +1923,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6e0eff53f2d4e3298081",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -1852,43 +1960,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-836eca1737f817254932",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-9def748678c088c8d2c4",
-      "title": "Spil dansk",
-      "description": "Traditionerne står i kø i november og december måned. Det første tilbagevende arrangement er Spil Dansk med Karsten Hermansen",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Beboerhuset"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "activity-9def748678c088c8d2c4-2026-10-26-1900",
-            "date": "2026-10-26",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "21:30"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-9def748678c088c8d2c4",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -2057,7 +2129,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9ec112d0956cd8982970",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -2093,7 +2165,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9f7394883888a0233afa",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -2143,7 +2215,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a59186c3c2663f88eb65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -2452,7 +2524,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-b0e925ea79720a9acd65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -2516,7 +2588,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-beff946b8065a3c9b786",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -2587,7 +2659,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-bf23c6d47faddee5e6b7",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -2665,7 +2737,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-c5cf94bfe0ce56b7b1e9",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -2708,7 +2780,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ca911d32328bdabc0823",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -2745,13 +2817,13 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-d0a8ed3087ff43c20a82",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
-      "id": "ommel-samvirke-activity-eb8e63e5faecadda2bcd",
+      "id": "ommel-samvirke-activity-f9928be4337e789b2ee6",
       "title": "Prøv Linedans",
-      "description": "Hanne og Heide har fundet en dag hvor der er hul i beboerhusets kalender og de inviterer til at man kan afprøve Linedans :-) Alle er velkomne",
+      "description": "Hanne og Heidi har fundet en dag hvor der er hul i beboerhusets kalender og de inviterer til at man kan afprøve Linedans :-) Alle er velkomne",
       "organizerId": "ommel-samvirke",
       "categoryIds": [
         "forening-faellesskab"
@@ -2769,7 +2841,7 @@
         "kind": "explicit",
         "dates": [
           {
-            "id": "activity-eb8e63e5faecadda2bcd-2026-10-12-1900",
+            "id": "activity-f9928be4337e789b2ee6-2026-10-12-1900",
             "date": "2026-10-12",
             "kind": "timed",
             "startTime": "19:00",
@@ -2779,9 +2851,9 @@
       },
       "source": {
         "sourceId": "ommel-samvirke",
-        "externalId": "activity-eb8e63e5faecadda2bcd",
+        "externalId": "activity-f9928be4337e789b2ee6",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     },
     {
@@ -2817,7 +2889,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ff18bae6052e17e80401",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T04:17:02.346Z"
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
       }
     }
   ]
