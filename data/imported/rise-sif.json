@@ -1,6 +1,6 @@
 {
   "sourceId": "rise-sif",
-  "verifiedAt": "2026-10-10T16:17:03.109Z",
+  "verifiedAt": "2026-10-11T04:17:02.346Z",
   "events": [
     {
       "id": "rise-sif-booking-22133794",
@@ -36,80 +36,6 @@
         "externalId": "booking-22133794",
         "url": "https://www.rise-sif.dk/",
         "verifiedAt": "2026-10-02T04:17:02.963Z"
-      }
-    },
-    {
-      "id": "rise-sif-booking-22133835",
-      "title": "Natminton Mesterskab",
-      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
-      "organizerId": "rise-sif",
-      "categoryIds": [
-        "sport-motion"
-      ],
-      "location": {
-        "name": "Rise Skytte- & Idrætsforening – Hal"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "booking-22133835",
-            "date": "2026-11-20",
-            "kind": "timed",
-            "startTime": "17:00",
-            "endDate": "2026-11-21",
-            "endTime": "17:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "rise-sif",
-        "externalId": "booking-22133835",
-        "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
-      }
-    },
-    {
-      "id": "rise-sif-booking-22133845",
-      "title": "Rise Mesterskab",
-      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
-      "organizerId": "rise-sif",
-      "categoryIds": [
-        "sport-motion"
-      ],
-      "location": {
-        "name": "Rise Skytte- & Idrætsforening – Hal"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "booking-22133845",
-            "date": "2027-04-03",
-            "kind": "timed",
-            "startTime": "08:00",
-            "endDate": "2027-04-04",
-            "endTime": "18:30"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "rise-sif",
-        "externalId": "booking-22133845",
-        "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
       }
     },
     {
@@ -149,6 +75,80 @@
       }
     },
     {
+      "id": "rise-sif-booking-22133835",
+      "title": "Natminton Mesterskab",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22133835",
+            "date": "2026-11-20",
+            "kind": "timed",
+            "startTime": "17:00",
+            "endDate": "2026-11-21",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "booking-22133835",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
+      }
+    },
+    {
+      "id": "rise-sif-booking-22133845",
+      "title": "Rise Mesterskab",
+      "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
+      "organizerId": "rise-sif",
+      "categoryIds": [
+        "sport-motion"
+      ],
+      "location": {
+        "name": "Rise Skytte- & Idrætsforening – Hal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "booking-22133845",
+            "date": "2027-04-03",
+            "kind": "timed",
+            "startTime": "08:00",
+            "endDate": "2027-04-04",
+            "endTime": "18:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "rise-sif",
+        "externalId": "booking-22133845",
+        "url": "https://www.rise-sif.dk/",
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
+      }
+    },
+    {
       "id": "rise-sif-series-734689",
       "title": "Yoga med Maria",
       "description": "Aktivitet i Rise Skytte- & Idrætsforenings offentlige aktivitetsplan.",
@@ -182,7 +182,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-734689",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -219,7 +219,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-734690",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -256,7 +256,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738768",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -293,7 +293,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738773",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -330,7 +330,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738775",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -367,7 +367,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738778",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -404,7 +404,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738782",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -441,7 +441,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738783",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -478,7 +478,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738785",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -515,7 +515,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-738786",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -552,7 +552,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-739505",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -589,7 +589,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741067",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -630,7 +630,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741416",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -667,7 +667,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741831",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -704,7 +704,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741832",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -741,7 +741,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741833",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -778,7 +778,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741834",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -815,7 +815,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741836",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -852,7 +852,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741837",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -889,7 +889,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741838",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -926,7 +926,7 @@
         "sourceId": "rise-sif",
         "externalId": "series-741839",
         "url": "https://www.rise-sif.dk/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     }
   ]

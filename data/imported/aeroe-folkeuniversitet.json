@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-folkeuniversitet",
-  "verifiedAt": "2026-10-10T16:17:03.109Z",
+  "verifiedAt": "2026-10-11T04:17:02.346Z",
   "events": [
     {
       "id": "aeroe-folkeuniversitet-robotter-i-hjemmet-kan-de-erstatte-mennesker",
@@ -185,7 +185,7 @@
         "sourceId": "aeroe-folkeuniversitet",
         "externalId": "hoejskolevaevning-og-kvindeliv-og-om-en-slags-laengsel-efter-identifikation-og-resonans",
         "url": "https://fuko.dk/kurser/hoejskolevaevning-og-kvindeliv-og-om-en-slags-laengsel-efter-identifikation-og-resonans/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     },
     {
@@ -222,7 +222,8 @@
         "sourceId": "aeroe-folkeuniversitet",
         "externalId": "haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider",
         "url": "https://fuko.dk/kurser/haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider/",
-        "verifiedAt": "2026-10-10T16:17:03.109Z"
+        "verifiedAt": "2026-10-11T04:17:02.346Z",
+        "modifiedAt": "2026-10-11T04:01:12.000Z"
       }
     }
   ]

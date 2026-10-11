@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-10T16:17:03.109Z",
+  "verifiedAt": "2026-10-11T04:17:02.346Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -3162,6 +3162,105 @@
         "externalId": "post-pfbid0twYBL8CdKnzZKWDVpsYemQrZJLJyYRHUvXAYUsW47b2JZ3YyAaNot5Ko6yF7ZSuYl",
         "url": "https://www.facebook.com/PaaTorvet/posts/-sm%C3%B8rrebr%C3%B8dsbuffet-i-efter%C3%A5rsferien-sm%C3%B8rrebr%C3%B8dsbuffeten-l%C3%B8rdag-den-10-oktober-er/1781935190606807/",
         "verifiedAt": "2026-10-10T16:17:03.109Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02zqtxchbxrprr569bqldsbipurguk3fogvmprfmpdtx2y6pbjjy-21c06c1e",
+      "title": "Vi holder efterårsferie og åbner igen mandag d",
+      "description": "Vi holder efterårsferie og åbner igen mandag d 19/10",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-w2voh5-1",
+            "date": "2026-10-19",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02zQTxCHBXrprR569BqLDSBiPUrGUK3FoGvMPRfMPDtx2y6PbJjYh1JkWpa4VcYZLDl",
+        "url": "https://www.facebook.com/Aeroehallen/posts/pfbid02zQTxCHBXrprR569BqLDSBiPUrGUK3FoGvMPRfMPDtx2y6PbJjYh1JkWpa4VcYZLDl",
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0dz5d3vwngquuuyhm7abdrpfxgdxc3sjpvgmx4czwypzjlhnn7jq-14f70b10",
+      "title": "Julekoncert med Mads Mathias & Zier Romme",
+      "description": "Julekoncert med Mads Mathias & Zier Romme\nTraditionen tro inviterer Ærø Jazz Festival til julekoncert med fri entré , som en tak til byen og hele øen for en veloverstået jazzfestival. Vi glæder os til at se så mange som muligt!\nI år får vi besøg af sangeren, saxofonisten og sangskriveren Mads Mathias , som inden sin store juleturné med DR Big Band lægger vejen forbi Ærøskøbing Kirke sammen med stjernepianisten Zier Romme.\nDe to musikalske venner er vokset op med julens store soundtrack: Louis Armstrong, Ella Fitzgerald, Frank Sinatra og alle de andre. Med Mads’ varme fløjlsstemme og Ziers ekvilibristiske klaverspil fortolker de crooner-klassikerne og de udødelige danske julesange. Der bliver også plads til jule-soul og pop af blandt andre Donny Hathaway og John Legend, og til julesange fra Mads Mathias’ egen prisvindende hånd.\n“Danmarks førende mandlige jazzvokalist.” – Michael Bo, Politiken\nForvent en intim og vedkommende koncert, der spreder julestemning og godt humør.\nEn stor og varm tak til Ærøskøbing Kirke, som lægger deres smukke rum til og tager imod os med åbne arme.\nTid: Lørdag den 28. november kl. 15.00\nSted: Ærøskøbing Kirke\nPris: Fri entré, men du skal booke din plads på www.aeroejazzfestival.dk\nKærlig hilsen\nÆrø Jazz Festival",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Ærøskøbing Kirke"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1tle7bq-1",
+            "date": "2026-11-28",
+            "kind": "timed",
+            "startTime": "15:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0dZ5D3vWNgqUuuYHM7ABdRpFXGDXc3sjpVGMx4CzWypZjLhNn7JQHCoxeJiXQNexXl",
+        "url": "https://www.facebook.com/aerojazz/posts/-julekoncert-med-mads-mathias-zier-romme-traditionen-tro-inviterer-%C3%A6r%C3%B8-jazz-fest/1732069835589272/",
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0hraz12s1ywkr2d8gkrcanl7wrmrtvc4nfruaeqg2saztjxuaf6t-d94f251e",
+      "title": "Efterårsferien på Landbogaarden",
+      "description": "Efterårsferien på Landbogaarden!\nVi holder åbent i hele efterårsferien - fra fredag d. 9. oktober til lørdag d. 17 oktober, hver aften kl. 18:00 - 21:00 i køkkenet, og i baren så længe der er nogen der hygger sig!\nVi serverer hver aften:\nBlød og rund rød linse suppe med kokosmælk og frisk citron\n- 122 kr\nVildt Krondyr Spare Ribs fra de jyske Klosterhedens skove, med stor bagt kartoffel og frisk salat\n- 344 kr\nBoeuf Bourguignon - fransk klassisk gryde med oksekød, røget bacon, champignon, perleløg og gulerødder - over kartoffelmos med Ærø kartofler\n- 322 kr\nVegetarisk Dahl med ris\n- 188 kr\nChokolade Mousse med hindbær sauce og flødeskum\n- 122 kr\n- Der er altid hjemmelavet Aioli og varmt brød til alle retter på huset.\nRing gerne til Gertrud og bestil bord på: 29712348",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-11kvmor-2",
+            "date": "2026-10-17",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0hRAz12s1YWkR2d8gkrcAnL7wRMrTvc4nfRuaeqG2sAztJXuAF6tWzjnV4mdXXDYyl",
+        "url": "https://www.facebook.com/Landbogaarden/posts/efter%C3%A5rsferien-p%C3%A5-landbogaardenvi-holder-%C3%A5bent-i-hele-efter%C3%A5rsferien-fra-fredag-/1722853536507370/",
+        "verifiedAt": "2026-10-11T04:17:02.346Z"
       }
     }
   ]
