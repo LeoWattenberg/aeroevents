@@ -1,6 +1,6 @@
 {
   "sourceId": "ommel-samvirke",
-  "verifiedAt": "2026-10-11T16:17:02.973Z",
+  "verifiedAt": "2026-10-12T04:17:02.594Z",
   "events": [
     {
       "id": "ommel-samvirke-activity-2516431221fb91896417",
@@ -1345,6 +1345,78 @@
       }
     },
     {
+      "id": "ommel-samvirke-activity-f9928be4337e789b2ee6",
+      "title": "Prøv Linedans",
+      "description": "Hanne og Heidi har fundet en dag hvor der er hul i beboerhusets kalender og de inviterer til at man kan afprøve Linedans :-) Alle er velkomne",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-f9928be4337e789b2ee6-2026-10-12-1900",
+            "date": "2026-10-12",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-f9928be4337e789b2ee6",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
+      }
+    },
+    {
+      "id": "ommel-samvirke-activity-ff18bae6052e17e80401",
+      "title": "Førstehjælpskursus",
+      "description": "Kursus i førstehjælp hvor du får vejledning i Livreddende førstehjælp og brug af hjerterstarter.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-ff18bae6052e17e80401-2026-10-22-1500",
+            "date": "2026-10-22",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "22:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-ff18bae6052e17e80401",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-10-11T16:17:02.973Z"
+      }
+    },
+    {
       "id": "ommel-samvirke-activity-055e12ca2a8928536eb3",
       "title": "Dart på kroen",
       "description": "Vi spiller dart på Ommel Kro. Alle er velkomne og har du spørgsmål så kan du kontakte Hanne.",
@@ -1364,20 +1436,6 @@
       "schedule": {
         "kind": "explicit",
         "dates": [
-          {
-            "id": "activity-055e12ca2a8928536eb3-2026-10-13-1900",
-            "date": "2026-10-13",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "21:00"
-          },
-          {
-            "id": "activity-055e12ca2a8928536eb3-2026-10-20-1900",
-            "date": "2026-10-20",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "21:00"
-          },
           {
             "id": "activity-055e12ca2a8928536eb3-2026-10-27-1900",
             "date": "2026-10-27",
@@ -1440,7 +1498,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-055e12ca2a8928536eb3",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -1463,20 +1521,6 @@
       "schedule": {
         "kind": "explicit",
         "dates": [
-          {
-            "id": "activity-30308c2d5b0827696f99-2026-10-16-0945",
-            "date": "2026-10-16",
-            "kind": "timed",
-            "startTime": "09:45",
-            "endTime": "11:45"
-          },
-          {
-            "id": "activity-30308c2d5b0827696f99-2026-10-23-0945",
-            "date": "2026-10-23",
-            "kind": "timed",
-            "startTime": "09:45",
-            "endTime": "11:45"
-          },
           {
             "id": "activity-30308c2d5b0827696f99-2026-10-30-0945",
             "date": "2026-10-30",
@@ -1518,7 +1562,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30308c2d5b0827696f99",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -1541,7 +1585,7 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "date": "2026-10-11",
+          "date": "2026-11-08",
           "kind": "timed",
           "startTime": "11:00"
         },
@@ -1555,7 +1599,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-496ff0a823833c4a8412",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -1591,7 +1635,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-585bff86e14e8257b185",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -1614,20 +1658,6 @@
       "schedule": {
         "kind": "explicit",
         "dates": [
-          {
-            "id": "activity-67cdddcd989e08df5bcc-2026-10-14-1000",
-            "date": "2026-10-14",
-            "kind": "timed",
-            "startTime": "10:00",
-            "endTime": "11:30"
-          },
-          {
-            "id": "activity-67cdddcd989e08df5bcc-2026-10-21-1000",
-            "date": "2026-10-21",
-            "kind": "timed",
-            "startTime": "10:00",
-            "endTime": "11:30"
-          },
           {
             "id": "activity-67cdddcd989e08df5bcc-2026-10-28-1000",
             "date": "2026-10-28",
@@ -1851,7 +1881,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-67cdddcd989e08df5bcc",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -1887,7 +1917,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6dd34cb702a968f423f7",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -1923,7 +1953,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-6e0eff53f2d4e3298081",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -1944,23 +1974,22 @@
       "status": "scheduled",
       "publication": "published",
       "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-10-15",
-          "kind": "timed",
-          "startTime": "15:00"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=TH;UNTIL=20261029T150000",
-        "rdates": [],
-        "exdates": [],
-        "overrides": [],
-        "durationMinutes": 120
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-836eca1737f817254932-2026-10-29-1500",
+            "date": "2026-10-29",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "17:00"
+          }
+        ]
       },
       "source": {
         "sourceId": "ommel-samvirke",
         "externalId": "activity-836eca1737f817254932",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -1983,13 +2012,6 @@
       "schedule": {
         "kind": "explicit",
         "dates": [
-          {
-            "id": "activity-9ec112d0956cd8982970-2026-10-22-1300",
-            "date": "2026-10-22",
-            "kind": "timed",
-            "startTime": "13:00",
-            "endTime": "15:00"
-          },
           {
             "id": "activity-9ec112d0956cd8982970-2026-11-05-1330",
             "date": "2026-11-05",
@@ -2129,7 +2151,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9ec112d0956cd8982970",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -2165,7 +2187,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9f7394883888a0233afa",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -2189,13 +2211,6 @@
         "kind": "explicit",
         "dates": [
           {
-            "id": "activity-a59186c3c2663f88eb65-2026-10-15-1900",
-            "date": "2026-10-15",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "21:30"
-          },
-          {
             "id": "activity-a59186c3c2663f88eb65-2026-10-29-1900",
             "date": "2026-10-29",
             "kind": "timed",
@@ -2215,7 +2230,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-a59186c3c2663f88eb65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -2517,6 +2532,13 @@
             "kind": "timed",
             "startTime": "19:00",
             "endTime": "21:00"
+          },
+          {
+            "id": "activity-b0e925ea79720a9acd65-2027-10-12-1900",
+            "date": "2027-10-12",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
           }
         ]
       },
@@ -2524,7 +2546,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-b0e925ea79720a9acd65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -2547,13 +2569,6 @@
       "schedule": {
         "kind": "explicit",
         "dates": [
-          {
-            "id": "activity-beff946b8065a3c9b786-2026-10-16-1330",
-            "date": "2026-10-16",
-            "kind": "timed",
-            "startTime": "13:30",
-            "endTime": "15:30"
-          },
           {
             "id": "activity-beff946b8065a3c9b786-2026-10-30-1330",
             "date": "2026-10-30",
@@ -2588,7 +2603,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-beff946b8065a3c9b786",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -2659,7 +2674,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-bf23c6d47faddee5e6b7",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -2737,7 +2752,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-c5cf94bfe0ce56b7b1e9",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -2780,7 +2795,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ca911d32328bdabc0823",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     },
     {
@@ -2803,7 +2818,7 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "date": "2026-10-14",
+          "date": "2026-10-28",
           "kind": "timed",
           "startTime": "16:30"
         },
@@ -2817,79 +2832,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-d0a8ed3087ff43c20a82",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-f9928be4337e789b2ee6",
-      "title": "Prøv Linedans",
-      "description": "Hanne og Heidi har fundet en dag hvor der er hul i beboerhusets kalender og de inviterer til at man kan afprøve Linedans :-) Alle er velkomne",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Beboerhuset"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "activity-f9928be4337e789b2ee6-2026-10-12-1900",
-            "date": "2026-10-12",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "21:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-f9928be4337e789b2ee6",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-ff18bae6052e17e80401",
-      "title": "Førstehjælpskursus",
-      "description": "Kursus i førstehjælp hvor du får vejledning i Livreddende førstehjælp og brug af hjerterstarter.",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Beboerhuset"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "activity-ff18bae6052e17e80401-2026-10-22-1500",
-            "date": "2026-10-22",
-            "kind": "timed",
-            "startTime": "15:00",
-            "endTime": "22:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-ff18bae6052e17e80401",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-10-11T16:17:02.973Z"
+        "verifiedAt": "2026-10-12T04:17:02.594Z"
       }
     }
   ]
