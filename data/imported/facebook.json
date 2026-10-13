@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-13T04:17:02.323Z",
+  "verifiedAt": "2026-10-13T16:17:03.088Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -3563,6 +3563,181 @@
         "externalId": "post-pfbid02zEJwu8uo3RvXm4Vx1mFg4SyKRqHKGrDh3NuUGKUARdGHyvCFJhaU7MYHDEvBRvE5l",
         "url": "https://www.facebook.com/Aeroehallen/posts/pfbid02zEJwu8uo3RvXm4Vx1mFg4SyKRqHKGrDh3NuUGKUARdGHyvCFJhaU7MYHDEvBRvE5l",
         "verifiedAt": "2026-10-13T04:17:02.323Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02qbtd7ak8rmzbhvpemgmn6kzhmqadddd2agwilt3b1zszkqkshe-f65fe7f5",
+      "title": "Husk vi holder Åbent Hus",
+      "description": "Husk vi holder Åbent Hus lørdag den 23. januar og lørdag den 6. februar 2027.\nHer i efteråret kører vi også rundt til landets efterskoler og fortæller om de mange muligheder en HF-Søfart giver.\nHF-Søfart i Marstal er en ungdomsuddannelse, hvor du både får praktisk og teoretisk undervisning. Du bliver en del af et trygt fællesskab, og du får også mulighed for et aktivt fritidsliv på Ærø.\nHF-Søfart giver dig 3-i-1 uddannelse\nHF eksamen\nUddannelse som skibsassistent\nFørste modul af uddannelsen til Skibsofficer\nLæs mere her: https://www.marnav.dk/hf-soefart/det-kan-hf-soefart\nTilmeld dig Åbent Hus her:\nhttps://www.marnav.dk/hf-soefart/aabent-hus\n#hfsøfart\n#hfsøfartmarstal\n#marnav\n#ungdomsuddannelse\n#altervandvedsidenafærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1nvrqra-1",
+            "date": "2027-01-23",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1nvrqra-2",
+            "date": "2027-02-06",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02qBtD7AK8rMZBhvpEMgmn6KzhMQaDddD2AgWiLT3b1zsZKQksHEZb4i37AKEeqEyRl",
+        "url": "https://www.facebook.com/marnav.dk/posts/husk-vi-holder-%C3%A5bent-hus-l%C3%B8rdag-den-23-januar-og-l%C3%B8rdag-den-6-februar-2027her-i-/1972983213752374/",
+        "verifiedAt": "2026-10-13T16:17:03.088Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid09he3nefbsmf5ptd4gcqmax5rdrpwudo62ag8tqxe9wff7qisvqt-dde70f75",
+      "title": "VI TÆLLER NED",
+      "description": "* VI TÆLLER NED *\nSå er der ikke mange dage til, at Sylvester Larsen kommer og giver en fantastisk koncert.\nDet er på lørdag den 17. oktober kl. 16.00 i Marstal Kirke\nSylvester Larsen er søn af Kim Larsen og har derfor fået musikken ind med modermælken. Sangen ”De smukke unge mennesker” blev skrevet til Sylvester Larsen på det tidspunkt, da hans kammerater blev konfirmeret. Senere fik Sylvester Larsen sin egen karriere som pop/rockmusiker. Han indledte karrieren i 2002 med udgivelsen ”Mandagsramasjang” og siden da har han udgivet en stribe albums. Ved koncerten synger han både sine egne og sin fars sange, som de fleste kender og kan synge med på.\nHUSK at sikre dig billetter!\nEntré voksne: 175 kr. Entre børn til og med 16 år: 50 kr.\nDer er billetsalg i Marstal Menighedshus fredag den 16. oktober kl. 15.00-17.00. Resterende billetter sælges i døren, som åbnes klokken 15.00.\nVi ses!\nFoto: Pressefoto",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-9in94b-1",
+            "date": "2026-10-17",
+            "kind": "timed",
+            "startTime": "16:00"
+          },
+          {
+            "id": "facebook-9in94b-2",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid09he3nEfbSmF5ptd4gCqmAx5RdrpWUdo62Ag8TqxE9WFF7QisVQtmCQs1npbDTRYyl",
+        "url": "https://www.facebook.com/aeroepastorat/posts/-vi-t%C3%A6ller-ned-s%C3%A5-er-der-ikke-mange-dage-til-at-sylvester-larsen-kommer-og-giver/1109851881793555/",
+        "verifiedAt": "2026-10-13T16:17:03.088Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid09tfn1ufjnvgyug6kl6urdwrtakr91z1tp2zh82u2boask2cg5mw-74715981",
+      "title": "Tusmørkeaften – levende lys, god mad og helstegt kalkun",
+      "description": "Tusmørkeaften – levende lys, god mad og helstegt kalkun\nFredag den 27. november inviterer vi til Tusmørkeaften hos På Torvet.\nNår mørket falder på, slukkes det elektriske lys, og i stedet tændes levende lys. De gamle gader og huse fyldes med en helt særlig stemning, og byen bliver rammen om en hyggelig aften med god mad og samvær.\nHos På Torvet har vi sammensat en særlig middag med inspiration fra Thanksgiving. En stor, hyggelig middag med helstegt kalkun og masser af klassisk tilbehør. Hovedretten serveres family style, med fade på bordet, som deles rundt.\nHelstegt kalkun med sauce på stegesky\nCremet kartoffelmos\nBønnekasserolle\nSmørstegte majs\nSøde kartofler med ristede pekannødder\nTranebærsauce\nLun æbletærte med vaniljeis\nDer er et begrænset antal pladser, og bordbestilling er nødvendig.\nFredag 27. november\nTusmørkeaften hos På Torvet\n525 kr. pr. person\nSe hele menuen og bestil bord:\npaatorvet.dk/tusmorkeaften/",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-pw7878-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pw7878-2",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid09tfn1UFjNVgYug6KL6URdwrtaKr91Z1tP2ZH82u2boaSK2cG5MwGgvQ7uokgqwN8l",
+        "url": "https://www.facebook.com/PaaTorvet/posts/%EF%B8%8F-tusm%C3%B8rkeaften-levende-lys-god-mad-og-helstegt-kalkunfredag-den-27-november-inv/1786495013484158/",
+        "verifiedAt": "2026-10-13T16:17:03.088Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0hf1yhtbgitfps4eyderu1bvcknkthoxgwasojq83dctntthceki-736b5dfb",
+      "title": "Efterårsferien på Landbogaarden",
+      "description": "Efterårsferien på Landbogaarden!\nVi holder åbent i hele efterårsferien - fra fredag d. 9. oktober til lørdag d. 17 oktober, hver aften kl. 18:00 - 21:00 i køkkenet, og i baren så længe der er nogen der hygger sig!\nVi serverer hver aften:\nBlød og rund rød linse suppe med kokosmælk og frisk citron\n- 122 kr\nVildt Krondyr Spare Ribs fra de jyske Klosterhedens skove, med stor bagt kartoffel og frisk salat\n- 344 kr\nBoeuf Bourguignon - fransk klassisk gryde med oksekød, røget bacon, champignon, perleløg og gulerødder - over kartoffelmos med Ærø kartofler\n- 322 kr\nVegetarisk Dahl med ris\n- 188 kr\nChokolade Mousse med hindbær sauce og flødeskum\n- 122 kr\n- Der er altid hjemmelavet Aioli og varmt brød til alle retter på huset.\nRing gerne til Gertrud og bestil bord på: 29712348",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-10pqq38-2",
+            "date": "2026-10-17",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0hF1yhtbGitFPS4eYdERu1BVCKnKthoXGwAsojQ83DctNtThcEkiLu2DirUiudiJMl",
+        "url": "https://www.facebook.com/Landbogaarden/posts/efter%C3%A5rsferien-p%C3%A5-landbogaardenvi-holder-%C3%A5bent-i-hele-efter%C3%A5rsferien-fra-fredag-/1722853536507370/",
+        "verifiedAt": "2026-10-13T16:17:03.088Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0kd9fwusmswv3bjekqayjnrd4sfwdrgaqoxvgku6h1kd8kp9jvjr-3cc6e42b",
+      "title": "3 dage på Ærø fra kun 795 kr",
+      "description": "3 dage på Ærø fra kun 795 kr.!\nEn lille pause fra hverdagen behøver ikke koste en formue. I november kan du nyde 2 nætter på Ærø Hotel med god mad, ro og tid til hinanden – til en ekstra god pris.\nDit ophold inkluderer:\n✓ 2 overnatninger i standard dobbeltværelse\n✓ 2 x 2-retters aftenmenu\n✓ 2 x stor morgenbuffet inkl. bobler\n✓ Fri adgang til indendørs swimmingpool og fitnessrum\nTag en tur langs havnen i Marstal, mærk den friske havluft, og kom tilbage til en hyggelig aften, hvor vi sørger for maden.\nAnkomst den 2., 4., 6., 9., 11. eller 13. november 2026.\nLink til booking i kommentarfeltet.\nÆrø Hotel er et voksenhotel for gæster fra 18 år.\nHvem skal med dig på en lille novemberpause?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-wikyh5-1",
+            "date": "2026-11-13",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0KD9fWUSMsWV3bjeKQayjnrD4sfWDRGAQoXVgku6H1kd8kP9JvJRisPV3wfDdrAx6l",
+        "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
+        "verifiedAt": "2026-10-13T16:17:03.088Z"
       }
     }
   ]
