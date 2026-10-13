@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-12T16:17:02.329Z",
+  "verifiedAt": "2026-10-13T04:17:02.323Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -3501,6 +3501,68 @@
         "externalId": "post-pfbid0dNvCknEdsG5G2EQXz65T5WcCVJHi41jPrqwhzwNftfXchqVC8ZPK5z2HQAdyCTMTl",
         "url": "https://www.facebook.com/aerojazz/posts/-julekoncert-med-mads-mathias-zier-romme-traditionen-tro-inviterer-%C3%A6r%C3%B8-jazz-fest/1732069835589272/",
         "verifiedAt": "2026-10-12T16:17:02.329Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02nknrre4iimoxprp6zsgfmwjyfc8u5hsm5td6cbdbgsdpl8fmkf-688740f0",
+      "title": "3 dage på Ærø fra kun 795 kr",
+      "description": "3 dage på Ærø fra kun 795 kr.!\nEn lille pause fra hverdagen behøver ikke koste en formue. I november kan du nyde 2 nætter på Ærø Hotel med god mad, ro og tid til hinanden – til en ekstra god pris.\nDit ophold inkluderer:\n✓ 2 overnatninger i standard dobbeltværelse\n✓ 2 x 2-retters aftenmenu\n✓ 2 x stor morgenbuffet inkl. bobler\n✓ Fri adgang til indendørs swimmingpool og fitnessrum\nTag en tur langs havnen i Marstal, mærk den friske havluft, og kom tilbage til en hyggelig aften, hvor vi sørger for maden.\nAnkomst den 2., 4., 6., 9., 11. eller 13. november 2026.\nLink til booking i kommentarfeltet.\nÆrø Hotel er et voksenhotel for gæster fra 18 år.\nHvem skal med dig på en lille novemberpause?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-dd5ofu-1",
+            "date": "2026-11-13",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02NknrRe4iimoXpRp6ZSGFmWjyFc8U5hsm5tD6cbdbgsdPL8fMKFpsxQgQXmNnbQR3l",
+        "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
+        "verifiedAt": "2026-10-13T04:17:02.323Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02zejwu8uo3rvxm4vx1mfg4sykrqhkgrdh3nuugkuardghyvcfjh-82ae4529",
+      "title": "Vi holder efterårsferie og åbner igen mandag d",
+      "description": "Vi holder efterårsferie og åbner igen mandag d 19/10",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1fm4pwd-1",
+            "date": "2026-10-19",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02zEJwu8uo3RvXm4Vx1mFg4SyKRqHKGrDh3NuUGKUARdGHyvCFJhaU7MYHDEvBRvE5l",
+        "url": "https://www.facebook.com/Aeroehallen/posts/pfbid02zEJwu8uo3RvXm4Vx1mFg4SyKRqHKGrDh3NuUGKUARdGHyvCFJhaU7MYHDEvBRvE5l",
+        "verifiedAt": "2026-10-13T04:17:02.323Z"
       }
     }
   ]
