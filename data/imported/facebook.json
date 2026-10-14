@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-13T16:17:03.088Z",
+  "verifiedAt": "2026-10-14T04:17:01.582Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -3738,6 +3738,172 @@
         "externalId": "post-pfbid0KD9fWUSMsWV3bjeKQayjnrD4sfWDRGAQoXVgku6H1kd8kP9JvJRisPV3wfDdrAx6l",
         "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
         "verifiedAt": "2026-10-13T16:17:03.088Z"
+      }
+    },
+    {
+      "id": "facebook-post-2922472454790891",
+      "title": "Laadenbjerg skovplantage",
+      "description": "Laadenbjerg skovplantage\nSøby Erhvervsforening\nSøby Camping\nKunstskolen Ærø\nInviterer til Halloween i Søby 15/10 kl 19.00\nVi ses i Søby",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Vi ses i Søby"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-7n5sxj-1",
+            "date": "2026-10-15",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-2922472454790891",
+        "url": "https://www.facebook.com/groups/1853077681730379/posts/2922472454790891/",
+        "verifiedAt": "2026-10-14T04:17:01.582Z"
+      }
+    },
+    {
+      "id": "facebook-post-39706614282257030",
+      "title": "Pudse udstyr dag",
+      "description": "Pudse udstyr dag\nfredag den 13. november 2026\n16.00 18.00\nVråvejenÆrøskøbing, 5970Denmark (kort)\nVi mødes og pudser elvehestenes udstyr. Klubben sørger for de ting vi skal bruge. Vi sørger også for lækkerier og lidt at drikke. Vi glæder os til at se jer.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1aocngt-1",
+            "date": "2026-11-13",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-39706614282257030",
+        "url": "https://www.facebook.com/groups/aeroerideklub.dk/posts/39706614282257030/",
+        "verifiedAt": "2026-10-14T04:17:01.582Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02dk7vc9bzdsvtl2k3a1f4e6ujygepzgfpcrlvwrquk6jqwzdp82-2096162e",
+      "title": "Tusmørkeaften – levende lys, god mad og helstegt kalkun",
+      "description": "Tusmørkeaften – levende lys, god mad og helstegt kalkun\nFredag den 27. november inviterer vi til Tusmørkeaften hos På Torvet.\nNår mørket falder på, slukkes det elektriske lys, og i stedet tændes levende lys. De gamle gader og huse fyldes med en helt særlig stemning, og byen bliver rammen om en hyggelig aften med god mad og samvær.\nHos På Torvet har vi sammensat en særlig middag med inspiration fra Thanksgiving. En stor, hyggelig middag med helstegt kalkun og masser af klassisk tilbehør. Hovedretten serveres family style, med fade på bordet, som deles rundt.\nHelstegt kalkun med sauce på stegesky\nCremet kartoffelmos\nBønnekasserolle\nSmørstegte majs\nSøde kartofler med ristede pekannødder\nTranebærsauce\nLun æbletærte med vaniljeis\nDer er et begrænset antal pladser, og bordbestilling er nødvendig.\nFredag 27. november\nTusmørkeaften hos På Torvet\n525 kr. pr. person\nSe hele menuen og bestil bord:\npaatorvet.dk/tusmorkeaften/",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-p4pahm-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-p4pahm-2",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02Dk7VC9BZDsVTL2K3A1f4E6UJYgePZgfpcrLvwrQuk6jQwzdp82QtxDYLbBcWF1j2l",
+        "url": "https://www.facebook.com/PaaTorvet/posts/%EF%B8%8F-tusm%C3%B8rkeaften-levende-lys-god-mad-og-helstegt-kalkunfredag-den-27-november-inv/1786495013484158/",
+        "verifiedAt": "2026-10-14T04:17:01.582Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02m6tgtzx6aek7qahwkotdhmltuqwzbv434fenhvd2czo85puvr5-03da0e5c",
+      "title": "Efterårsferien på Landbogaarden",
+      "description": "Efterårsferien på Landbogaarden!\nVi holder åbent i hele efterårsferien - fra fredag d. 9. oktober til lørdag d. 17 oktober, hver aften kl. 18:00 - 21:00 i køkkenet, og i baren så længe der er nogen der hygger sig!\nVi serverer hver aften:\nBlød og rund rød linse suppe med kokosmælk og frisk citron\n- 122 kr\nVildt Krondyr Spare Ribs fra de jyske Klosterhedens skove, med stor bagt kartoffel og frisk salat\n- 344 kr\nBoeuf Bourguignon - fransk klassisk gryde med oksekød, røget bacon, champignon, perleløg og gulerødder - over kartoffelmos med Ærø kartofler\n- 322 kr\nVegetarisk Dahl med ris\n- 188 kr\nChokolade Mousse med hindbær sauce og flødeskum\n- 122 kr\n- Der er altid hjemmelavet Aioli og varmt brød til alle retter på huset.\nRing gerne til Gertrud og bestil bord på: 29712348",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1dq1l6f-2",
+            "date": "2026-10-17",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02m6TgtZX6aEK7QaHwkotdHmLTUQwzBv434FEnhVD2CZo85pUVR5JtZFWNLFXo2Q67l",
+        "url": "https://www.facebook.com/Landbogaarden/posts/efter%C3%A5rsferien-p%C3%A5-landbogaardenvi-holder-%C3%A5bent-i-hele-efter%C3%A5rsferien-fra-fredag-/1722853536507370/",
+        "verifiedAt": "2026-10-14T04:17:01.582Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0vgfkyyhsc5wsigzhn4txipz3qa3uf3c48stv8rddgqxx6u7ns16-73449577",
+      "title": "Vi holder efterårsferie og åbner igen mandag d",
+      "description": "Vi holder efterårsferie og åbner igen mandag d 19/10",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-3yyrxr-1",
+            "date": "2026-10-19",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0vgfkyyHSC5wSigzHN4txipz3Qa3UF3C48stV8rddGQxX6u7ns16YKXx6DZBhLr3gl",
+        "url": "https://www.facebook.com/Aeroehallen/posts/pfbid0vgfkyyHSC5wSigzHN4txipz3Qa3UF3C48stV8rddGQxX6u7ns16YKXx6DZBhLr3gl",
+        "verifiedAt": "2026-10-14T04:17:01.582Z"
       }
     }
   ]

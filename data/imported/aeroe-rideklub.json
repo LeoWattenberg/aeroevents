@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-rideklub",
-  "verifiedAt": "2026-10-13T16:17:03.088Z",
+  "verifiedAt": "2026-10-14T04:17:01.582Z",
   "events": [
     {
       "id": "aeroe-rideklub-nisseoptog",
@@ -68,6 +68,114 @@
         "externalId": "halloween-springning",
         "url": "https://www.aeroerideklub.dk/events-1/halloween-springning",
         "verifiedAt": "2026-09-16T16:17:02.588Z"
+      }
+    },
+    {
+      "id": "aeroe-rideklub-pudse-udstyr-dag",
+      "title": "Pudse udstyr dag",
+      "description": "Vi mødes og pudser elvehestenes udstyr. Klubben sørger for de ting vi skal bruge. Vi sørger også for lækkerier og lidt at drikke. Vi glæder os til at se jer.",
+      "organizerId": "aeroe-rideklub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Ærø Rideklub",
+        "address": "Vråvejen",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "rideklub-pudse-udstyr-dag",
+            "date": "2026-11-13",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-rideklub",
+        "externalId": "pudse-udstyr-dag",
+        "url": "https://www.aeroerideklub.dk/events-1/pudse-udstyr-dag",
+        "verifiedAt": "2026-10-14T04:17:01.582Z"
+      }
+    },
+    {
+      "id": "aeroe-rideklub-pony-trk-julemarked",
+      "title": "Pony Træk Julemarked",
+      "description": "Pony træk på Torvet I den hyggelige jule pyntet by Ærøskøbing",
+      "organizerId": "aeroe-rideklub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "rideklub-pony-trk-julemarked",
+            "date": "2026-11-21",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-rideklub",
+        "externalId": "pony-trk-julemarked",
+        "url": "https://www.aeroerideklub.dk/events-1/pony-trk-julemarked",
+        "verifiedAt": "2026-10-14T04:17:01.582Z"
+      }
+    },
+    {
+      "id": "aeroe-rideklub-pony-trk-julemarked-1",
+      "title": "Pony træk julemarked",
+      "description": "Pony træk på Torvet I den hyggelige jule pyntet by Ærøskøbing",
+      "organizerId": "aeroe-rideklub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "rideklub-pony-trk-julemarked-1",
+            "date": "2026-12-05",
+            "kind": "timed",
+            "startTime": "12:00",
+            "endTime": "15:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-rideklub",
+        "externalId": "pony-trk-julemarked-1",
+        "url": "https://www.aeroerideklub.dk/events-1/pony-trk-julemarked-1",
+        "verifiedAt": "2026-10-14T04:17:01.582Z"
       }
     }
   ]
