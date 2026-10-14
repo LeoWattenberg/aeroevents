@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-14T04:17:01.582Z",
+  "verifiedAt": "2026-10-14T16:17:02.480Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -3904,6 +3904,112 @@
         "externalId": "post-pfbid0vgfkyyHSC5wSigzHN4txipz3Qa3UF3C48stV8rddGQxX6u7ns16YKXx6DZBhLr3gl",
         "url": "https://www.facebook.com/Aeroehallen/posts/pfbid0vgfkyyHSC5wSigzHN4txipz3Qa3UF3C48stV8rddGQxX6u7ns16YKXx6DZBhLr3gl",
         "verifiedAt": "2026-10-14T04:17:01.582Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02dz5kxubrj6zxu9f6pkbmtkytzqtfr7g1jt9opd7iebwbqb8mtv-d7ac5feb",
+      "title": "VI TÆLLER NED",
+      "description": "* VI TÆLLER NED *\nSå er der ikke mange dage til, at Sylvester Larsen kommer og giver en fantastisk koncert.\nDet er på lørdag den 17. oktober kl. 16.00 i Marstal Kirke\nSylvester Larsen er søn af Kim Larsen og har derfor fået musikken ind med modermælken. Sangen ”De smukke unge mennesker” blev skrevet til Sylvester Larsen på det tidspunkt, da hans kammerater blev konfirmeret. Senere fik Sylvester Larsen sin egen karriere som pop/rockmusiker. Han indledte karrieren i 2002 med udgivelsen ”Mandagsramasjang” og siden da har han udgivet en stribe albums. Ved koncerten synger han både sine egne og sin fars sange, som de fleste kender og kan synge med på.\nHUSK at sikre dig billetter!\nEntré voksne: 175 kr. Entre børn til og med 16 år: 50 kr.\nDer er billetsalg i Marstal Menighedshus fredag den 16. oktober kl. 15.00-17.00. Resterende billetter sælges i døren, som åbnes klokken 15.00.\nVi ses!\nFoto: Pressefoto",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-15v59r5-1",
+            "date": "2026-10-17",
+            "kind": "timed",
+            "startTime": "16:00"
+          },
+          {
+            "id": "facebook-15v59r5-2",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02DZ5kxubRJ6zXU9F6pKbmTkytzqtFr7G1Jt9opD7iebWbqB8MtVJ2iqPZvrJBPTMtl",
+        "url": "https://www.facebook.com/aeroepastorat/posts/-vi-t%C3%A6ller-ned-s%C3%A5-er-der-ikke-mange-dage-til-at-sylvester-larsen-kommer-og-giver/1109851881793555/",
+        "verifiedAt": "2026-10-14T16:17:02.480Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02nadr8vnyucsab4kbg17nhbsaz5exenbcbpyhdunequesqc4uog-d435e744",
+      "title": "3 dage på Ærø fra kun 795 kr",
+      "description": "3 dage på Ærø fra kun 795 kr.!\nEn lille pause fra hverdagen behøver ikke koste en formue. I november kan du nyde 2 nætter på Ærø Hotel med god mad, ro og tid til hinanden – til en ekstra god pris.\nDit ophold inkluderer:\n✓ 2 overnatninger i standard dobbeltværelse\n✓ 2 x 2-retters aftenmenu\n✓ 2 x stor morgenbuffet inkl. bobler\n✓ Fri adgang til indendørs swimmingpool og fitnessrum\nTag en tur langs havnen i Marstal, mærk den friske havluft, og kom tilbage til en hyggelig aften, hvor vi sørger for maden.\nAnkomst den 2., 4., 6., 9., 11. eller 13. november 2026.\nLink til booking i kommentarfeltet.\nÆrø Hotel er et voksenhotel for gæster fra 18 år.\nHvem skal med dig på en lille novemberpause?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-14glben-1",
+            "date": "2026-11-13",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02Nadr8VnyuCsab4KBG17nhBSaZ5eXENBcBpYhDUnEQUEsQC4UogHhW5gC4M4U3jJEl",
+        "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
+        "verifiedAt": "2026-10-14T16:17:02.480Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid08cxe3usxzny7qsjyfdo4pwdmtsrmxq3winvlpuo1nzgswgmsgww-3b227c75",
+      "title": "Husk vi serverer store tarteletter denne uge",
+      "description": "Husk vi serverer store tarteletter denne uge\nÅbningstider onsdag 14.10 - lørdag 17.10\nKøkkenet er åbent 12-15\nCafeen er åbent 11.30-16\nBestil gerne bord på tlf 30125615 eller mail cafe@aeroebryggeri.dk",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-sklkgt-1",
+            "date": "2026-10-14",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-sklkgt-2",
+            "date": "2026-10-17",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid08cxE3uSxZNY7QsjYFdo4pwdMTsrmXq3winvLPUo1nZGsWgmsgwWb3PqE4B5UxQyNl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/husk-vi-serverer-store-tarteletter-denne-uge-%C3%A5bningstider-onsdag-1410-l%C3%B8rdag-171/1730498175753651/",
+        "verifiedAt": "2026-10-14T16:17:02.480Z"
       }
     }
   ]
