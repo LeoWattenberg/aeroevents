@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-14T16:17:02.480Z",
+  "verifiedAt": "2026-10-15T16:17:08.249Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -4010,6 +4010,264 @@
         "externalId": "post-pfbid08cxE3uSxZNY7QsjYFdo4pwdMTsrmXq3winvLPUo1nZGsWgmsgwWb3PqE4B5UxQyNl",
         "url": "https://www.facebook.com/AeroeBryggeri/posts/husk-vi-serverer-store-tarteletter-denne-uge-%C3%A5bningstider-onsdag-1410-l%C3%B8rdag-171/1730498175753651/",
         "verifiedAt": "2026-10-14T16:17:02.480Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02bzsqfvoabcgnq1f2zwpjpujo5zd9rn1nc1y5brwj7cpddj13f9-1cccd1be",
+      "title": "Husk vi serverer store tarteletter denne uge",
+      "description": "Husk vi serverer store tarteletter denne uge\nÅbningstider onsdag 14.10 - lørdag 17.10\nKøkkenet er åbent 12-15\nCafeen er åbent 11.30-16\nBestil gerne bord på tlf 30125615 eller mail cafe@aeroebryggeri.dk",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-v8y8st-2",
+            "date": "2026-10-17",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02BzSQfvoabCGNq1f2ZwPjpUJo5zd9rn1nC1y5BrwJ7cpDdJ13f9hSTEvgxdWNC6bKl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/husk-vi-serverer-store-tarteletter-denne-uge-%C3%A5bningstider-onsdag-1410-l%C3%B8rdag-171/1730498175753651/",
+        "verifiedAt": "2026-10-15T16:17:08.249Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02qvgjnfcbrzxqfsyxm5khjqietwmdraikv6hbkokvo75dfuzr88-716dbe8d",
+      "title": "Husk vi holder Åbent Hus",
+      "description": "Husk vi holder Åbent Hus lørdag den 23. januar og lørdag den 6. februar 2027.\nHer i efteråret kører vi også rundt til landets efterskoler og fortæller om de mange muligheder en HF-Søfart giver.\nHF-Søfart i Marstal er en ungdomsuddannelse, hvor du både får praktisk og teoretisk undervisning. Du bliver en del af et trygt fællesskab, og du får også mulighed for et aktivt fritidsliv på Ærø.\nHF-Søfart giver dig 3-i-1 uddannelse\nHF eksamen\nUddannelse som skibsassistent\nFørste modul af uddannelsen til Skibsofficer\nLæs mere her: https://www.marnav.dk/hf-soefart/det-kan-hf-soefart\nTilmeld dig Åbent Hus her:\nhttps://www.marnav.dk/hf-soefart/aabent-hus\n#hfsøfart\n#hfsøfartmarstal\n#marnav\n#ungdomsuddannelse\n#altervandvedsidenafærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-6l56ku-1",
+            "date": "2027-01-23",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-6l56ku-2",
+            "date": "2027-02-06",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02qVgjNfcbrZxQfSYXM5khjqieTwMdRAiKV6hbKoKVo75dFUZr888RskDN2z8iPDPdl",
+        "url": "https://www.facebook.com/marnav.dk/posts/husk-vi-holder-%C3%A5bent-hus-l%C3%B8rdag-den-23-januar-og-l%C3%B8rdag-den-6-februar-2027her-i-/1972983213752374/",
+        "verifiedAt": "2026-10-15T16:17:08.249Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02zy7uaedg3acxsbtodh2gpwwrzasekyhngcumfyf7iv6s9dtugx-eea92c40",
+      "title": "Vi holder efterårsferie og åbner igen mandag d",
+      "description": "Vi holder efterårsferie og åbner igen mandag d 19/10",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1foltiv-1",
+            "date": "2026-10-19",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02zY7UAeDG3aCXSbTodH2GpWWRZAsEkYHngCUmfYF7iV6s9dTuGXZDdYBxHkCc1UJzl",
+        "url": "https://www.facebook.com/Aeroehallen/posts/pfbid02zY7UAeDG3aCXSbTodH2GpWWRZAsEkYHngCUmfYF7iV6s9dTuGXZDdYBxHkCc1UJzl",
+        "verifiedAt": "2026-10-15T16:17:08.249Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid038mshd9kqyfc4mz4hyzrfy8jjmdetfa2t9drqakdu8h8toetycd-502b7b04",
+      "title": "Julebuffet – og julefrokost hos På Torvet",
+      "description": "Julebuffet – og julefrokost hos På Torvet\nNår julemarkederne igen fylder Ærøskøbing med julelys, boder og hyggelig stemning, fylder vi også buffeten med klassiske danske julefavoritter.\nPå de fire julemarkedsdage kan du komme indenfor hos På Torvet til en hyggelig julebuffet – perfekt som en del af en dejlig dag i julebyen.\nLørdag 21. november\nLørdag 28. november\nLørdag 5. december\nLørdag 12. december\nKl. 11.30–16.00\nPå buffeten finder du blandt andet sild, fiskefileter, flæskesteg, frikadeller, and, medister, sylte, æbleflæsk og risalamande.\nOg fredag den 4. december bliver julebuffeten til en rigtig dansk julefrokost.\nHer serverer vi den klassiske julebuffet fra kl. 18.00, og så er der god tid til at sætte sig til rette, spise, skåle og hygge sig sammen. Caféen holder åbent helt til midnat.\nJulebuffet: 235 kr. pr. person\nBørn til og med 12 år: 110 kr.\nDer er begrænset antal pladser, så bestil gerne bord i god tid.\nSe menu og alle datoerne på:\npaatorvet.dk/julefrokoster/\nBestil bord på 30 34 46 50 (tryk 2)\ncafe@paatorvet.dk",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-19d21ba-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-19d21ba-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-19d21ba-3",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-19d21ba-4",
+            "date": "2026-12-12",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-19d21ba-5",
+            "date": "2026-12-04",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid038MShd9kqYfc4MZ4HYzRfY8jjmdETfA2T9DrQaKdu8H8ToETycDnjtUEVR9CNPZ66l",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julebuffet-og-julefrokost-hos-p%C3%A5-torvetn%C3%A5r-julemarkederne-igen-fylder-%C3%A6r%C3%B8sk%C3%B8bin/1788778129922513/",
+        "verifiedAt": "2026-10-15T16:17:08.249Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0a1sa3jy4swa1fdw3gtpz5kw8tbgypmpywfbyr4e8q7z5r993bj8-ae52c8dc",
+      "title": "VI TÆLLER NED",
+      "description": "* VI TÆLLER NED *\nSå er der ikke mange dage til, at Sylvester Larsen kommer og giver en fantastisk koncert.\nDet er på lørdag den 17. oktober kl. 16.00 i Marstal Kirke\nSylvester Larsen er søn af Kim Larsen og har derfor fået musikken ind med modermælken. Sangen ”De smukke unge mennesker” blev skrevet til Sylvester Larsen på det tidspunkt, da hans kammerater blev konfirmeret. Senere fik Sylvester Larsen sin egen karriere som pop/rockmusiker. Han indledte karrieren i 2002 med udgivelsen ”Mandagsramasjang” og siden da har han udgivet en stribe albums. Ved koncerten synger han både sine egne og sin fars sange, som de fleste kender og kan synge med på.\nHUSK at sikre dig billetter!\nEntré voksne: 175 kr. Entre børn til og med 16 år: 50 kr.\nDer er billetsalg i Marstal Menighedshus fredag den 16. oktober kl. 15.00-17.00. Resterende billetter sælges i døren, som åbnes klokken 15.00.\nVi ses!\nFoto: Pressefoto",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-vpd6gm-1",
+            "date": "2026-10-17",
+            "kind": "timed",
+            "startTime": "16:00"
+          },
+          {
+            "id": "facebook-vpd6gm-2",
+            "date": "2026-10-16",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0A1Sa3jy4SwA1FdW3gtPz5kW8TBgyPmpYWfbYr4e8Q7Z5r993Bj8xKm7FX8Efsi6zl",
+        "url": "https://www.facebook.com/aeroepastorat/posts/-vi-t%C3%A6ller-ned-s%C3%A5-er-der-ikke-mange-dage-til-at-sylvester-larsen-kommer-og-giver/1109851881793555/",
+        "verifiedAt": "2026-10-15T16:17:08.249Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0bjughpjcqqycxbtlmpffcmyapzxvhcqxny1zvsfcuby7manpnir-f69cb23b",
+      "title": "Er du ny på Ærø",
+      "description": "Er du ny på Ærø?\nPå tirsdag åbner vi Motorfabrikken i Marstal for alle jer, der lige er flyttet til øen. Vi har god (lokalristet!) kaffe på kanden, så du skal faktisk bare møde op med alle dine spørgsmål til det at have en Ærø-hverdag, og så gør vi vores bedste for at sende dig hjem med en masse svar, et bekendtskab eller 12 og en hel masse viden om, hvad øen byder på.\nHVORNÅR: TIRSDAG 20. OKT. KL. 16-17.30\nHVOR: MOTORFABRIKKEN, MARSTAL.\nOG HVAD SÅ NU? Del gerne opslaget, så vi kan få spredt budskabet om vores nye tilflyttercafé, som vi afholder én gang i måneden",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "MOTORFABRIKKEN, MARSTAL."
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-rvxxqb-1",
+            "date": "2026-10-20",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0BjUghPJcqQYcXbtLmpfFCMYAPzXvhCqXny1zvsfCuBY7ManPniRx7gnVmETWAG3dl",
+        "url": "https://www.facebook.com/motorfabrikkenmarstal/posts/1552772240220161/",
+        "verifiedAt": "2026-10-15T16:17:08.249Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0k2zfdlad41tfi1kpqzucy52hdix9q4ectsrbnl3bvryo4hyxecc-f74a2a03",
+      "title": "3 dage på Ærø fra kun 795 kr",
+      "description": "3 dage på Ærø fra kun 795 kr.!\nEn lille pause fra hverdagen behøver ikke koste en formue. I november kan du nyde 2 nætter på Ærø Hotel med god mad, ro og tid til hinanden – til en ekstra god pris.\nDit ophold inkluderer:\n✓ 2 overnatninger i standard dobbeltværelse\n✓ 2 x 2-retters aftenmenu\n✓ 2 x stor morgenbuffet inkl. bobler\n✓ Fri adgang til indendørs swimmingpool og fitnessrum\nTag en tur langs havnen i Marstal, mærk den friske havluft, og kom tilbage til en hyggelig aften, hvor vi sørger for maden.\nAnkomst den 2., 4., 6., 9., 11. eller 13. november 2026.\nLink til booking i kommentarfeltet.\nÆrø Hotel er et voksenhotel for gæster fra 18 år.\nHvem skal med dig på en lille novemberpause?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1seqznj-1",
+            "date": "2026-11-13",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0K2zfDLAd41TFi1KpQZuCY52HdiX9q4eCTSRBNL3bvRYo4hYXecCiV5TsyeotNefyl",
+        "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
+        "verifiedAt": "2026-10-15T16:17:08.249Z"
       }
     }
   ]
