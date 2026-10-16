@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-16T04:17:02.555Z",
+  "verifiedAt": "2026-10-16T16:17:02.962Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -4399,6 +4399,153 @@
         "externalId": "post-pfbid0vWWkgq1hNcLwXwDxPBSYyHraZQB6vdKQvNes8RpCLMMUj9H7n3z7aBK8JMf6vTj5l",
         "url": "https://www.facebook.com/Aeroehallen/posts/pfbid0vWWkgq1hNcLwXwDxPBSYyHraZQB6vdKQvNes8RpCLMMUj9H7n3z7aBK8JMf6vTj5l",
         "verifiedAt": "2026-10-16T04:17:02.555Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid024kqz9lzgsnzcjghib21jcmnjbftqctgqatkkx64xgvpykchyxw-8cab6338",
+      "title": "Julebuffet – og julefrokost hos På Torvet",
+      "description": "Julebuffet – og julefrokost hos På Torvet\nNår julemarkederne igen fylder Ærøskøbing med julelys, boder og hyggelig stemning, fylder vi også buffeten med klassiske danske julefavoritter.\nPå de fire julemarkedsdage kan du komme indenfor hos På Torvet til en hyggelig julebuffet – perfekt som en del af en dejlig dag i julebyen.\nLørdag 21. november\nLørdag 28. november\nLørdag 5. december\nLørdag 12. december\nKl. 11.30–16.00\nPå buffeten finder du blandt andet sild, fiskefileter, flæskesteg, frikadeller, and, medister, sylte, æbleflæsk og risalamande.\nOg fredag den 4. december bliver julebuffeten til en rigtig dansk julefrokost.\nHer serverer vi den klassiske julebuffet fra kl. 18.00, og så er der god tid til at sætte sig til rette, spise, skåle og hygge sig sammen. Caféen holder åbent helt til midnat.\nJulebuffet: 235 kr. pr. person\nBørn til og med 12 år: 110 kr.\nDer er begrænset antal pladser, så bestil gerne bord i god tid.\nSe menu og alle datoerne på:\npaatorvet.dk/julefrokoster/\nBestil bord på 30 34 46 50 (tryk 2)\ncafe@paatorvet.dk",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-192ogw0-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-192ogw0-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-192ogw0-3",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-192ogw0-4",
+            "date": "2026-12-12",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "16:00"
+          },
+          {
+            "id": "facebook-192ogw0-5",
+            "date": "2026-12-04",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid024Kqz9LZGsnZCJghiB21jCmnjbFtQCtGQaTKKX64XGVpyKchyxWKXsTDYLvFt4Xacl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julebuffet-og-julefrokost-hos-p%C3%A5-torvetn%C3%A5r-julemarkederne-igen-fylder-%C3%A6r%C3%B8sk%C3%B8bin/1788778129922513/",
+        "verifiedAt": "2026-10-16T16:17:02.962Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02ntsnq16sum3bfl1alonzcew4rke4vbtx1bqsqeymhnehn3tke3-4541023b",
+      "title": "3 dage på Ærø fra kun 795 kr",
+      "description": "3 dage på Ærø fra kun 795 kr.!\nEn lille pause fra hverdagen behøver ikke koste en formue. I november kan du nyde 2 nætter på Ærø Hotel med god mad, ro og tid til hinanden – til en ekstra god pris.\nDit ophold inkluderer:\n✓ 2 overnatninger i standard dobbeltværelse\n✓ 2 x 2-retters aftenmenu\n✓ 2 x stor morgenbuffet inkl. bobler\n✓ Fri adgang til indendørs swimmingpool og fitnessrum\nTag en tur langs havnen i Marstal, mærk den friske havluft, og kom tilbage til en hyggelig aften, hvor vi sørger for maden.\nAnkomst den 2., 4., 6., 9., 11. eller 13. november 2026.\nLink til booking i kommentarfeltet.\nÆrø Hotel er et voksenhotel for gæster fra 18 år.\nHvem skal med dig på en lille novemberpause?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-yhf3lu-1",
+            "date": "2026-11-13",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02NtSNQ16SuM3bfL1aLonZceW4rkE4VbTX1bqsqeYMHnehN3TkE3yEBrBnVrvuFHAdl",
+        "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
+        "verifiedAt": "2026-10-16T16:17:02.962Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid095pazf1ik228blmd9vkuy8te7xkpnmjahadk5xhzrqykqmbfyfb-6f04a62a",
+      "title": "Der er både tid til godt arbejde i klasserne, fællesskab på",
+      "description": "Der er både tid til godt arbejde i klasserne, fællesskab på 4. Maj Kollegiet,\nekstra aktiviteter med Campus Ærø, og hygge i pauserne.\nEr HF-Søfart Marstal noget for dig?\nDet kan du måske få opklaret i den her video, som vi har lavet til dig.\nSe den - og mærk efter - måske er HF-Søfart her i Marstal på Ærø lige noget for dig.\nDet er det i hvert fald for Mie, Morten, Famke og Sigurd.\nhttps://www.youtube.com/watch?v=WD-BSdltiC0\nMeld dig til vores \"Åbent Hus\"\nTilmeld dig Åbent Hus her:\nhttps://www.marnav.dk/hf-soefart/aabent-hus",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1yvrgmk-1",
+            "date": "2027-05-04",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid095PAzf1ik228BLMD9vkUY8Te7XkPnmjaHadK5xHzrQyKqMbFYFbmqxD8SnrmbdMwl",
+        "url": "https://www.facebook.com/marnav.dk/posts/der-er-b%C3%A5de-tid-til-godt-arbejde-i-klasserne-f%C3%A6llesskab-p%C3%A5-4-maj-kollegiet-ekstr/1976038793446816/",
+        "verifiedAt": "2026-10-16T16:17:02.962Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0xwjsa4gznsfdawhrsvnb1cpqpbi3ywssdsvmb7scuzlgzj7ad1o-4074c9e9",
+      "title": "Søg støtte til frivilligt socialt arbejde på Ærø",
+      "description": "Søg støtte til frivilligt socialt arbejde på Ærø\nEr jeres forening med til at skabe fællesskaber og støtte for andre? Så kan I søge støtte gennem §18-puljen til frivilligt socialt arbejde.\nDet kan eksempelvis være foreninger, der organiserer selvhjælpsgrupper, afholder sociale arrangementer og fællesspisninger eller tilbyder støtte- og kontaktpersonordninger på frivillig basis.\nAnsøgningsfristen er søndag den 1. november 2026.\nLæs mere om ansøgning og kriterier på kommunens hjemmeside.",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1sg6j7u-1",
+            "date": "2026-11-01",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0XwjsA4GZnsFdawhrSVNb1cPQPBi3yWsSdSVmb7ScuZLGzJ7ad1ozDCusHNxsi3p9l",
+        "url": "https://www.facebook.com/aeroekommune/posts/s%C3%B8g-st%C3%B8tte-til-frivilligt-socialt-arbejde-p%C3%A5-%C3%A6r%C3%B8-er-jeres-forening-med-til-at-sk/1115775564148147/",
+        "verifiedAt": "2026-10-16T16:17:02.962Z"
       }
     }
   ]
