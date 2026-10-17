@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-16T16:17:02.962Z",
+  "verifiedAt": "2026-10-17T04:17:02.430Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -4546,6 +4546,99 @@
         "externalId": "post-pfbid0XwjsA4GZnsFdawhrSVNb1cPQPBi3yWsSdSVmb7ScuZLGzJ7ad1ozDCusHNxsi3p9l",
         "url": "https://www.facebook.com/aeroekommune/posts/s%C3%B8g-st%C3%B8tte-til-frivilligt-socialt-arbejde-p%C3%A5-%C3%A6r%C3%B8-er-jeres-forening-med-til-at-sk/1115775564148147/",
         "verifiedAt": "2026-10-16T16:17:02.962Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02bobaljcpennexjhccnhecusgtavfdgyygysfmrkgjrwpswc5jc-2c5d3654",
+      "title": "Søg støtte til frivilligt socialt arbejde på Ærø",
+      "description": "Søg støtte til frivilligt socialt arbejde på Ærø\nEr jeres forening med til at skabe fællesskaber og støtte for andre? Så kan I søge støtte gennem §18-puljen til frivilligt socialt arbejde.\nDet kan eksempelvis være foreninger, der organiserer selvhjælpsgrupper, afholder sociale arrangementer og fællesspisninger eller tilbyder støtte- og kontaktpersonordninger på frivillig basis.\nAnsøgningsfristen er søndag den 1. november 2026.\nLæs mere om ansøgning og kriterier på kommunens hjemmeside.",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-15bei02-1",
+            "date": "2026-11-01",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02boBaLjCPeNNexJhccNheCUSgTAVfdgyYGySfmrKGjRwPSWC5jCEJfEvBRyVx2g9Hl",
+        "url": "https://www.facebook.com/aeroekommune/posts/s%C3%B8g-st%C3%B8tte-til-frivilligt-socialt-arbejde-p%C3%A5-%C3%A6r%C3%B8-er-jeres-forening-med-til-at-sk/1115775564148147/",
+        "verifiedAt": "2026-10-17T04:17:02.430Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02cjevws73bdqae8uyg9zxjrm6s3kk1d7dvgzwdympzgl1pmjx2z-46f98fbe",
+      "title": "Husk vi serverer store tarteletter denne uge",
+      "description": "Husk vi serverer store tarteletter denne uge\nÅbningstider onsdag 14.10 - lørdag 17.10\nKøkkenet er åbent 12-15\nCafeen er åbent 11.30-16\nBestil gerne bord på tlf 30125615 eller mail cafe@aeroebryggeri.dk",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1vdrc0a-2",
+            "date": "2026-10-17",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02CJEvwS73bDqAe8UYG9ZXjrm6s3kk1d7dvgZWDymPZGL1pmJX2zDeXZVXW8TLjfial",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/husk-vi-serverer-store-tarteletter-denne-uge-%C3%A5bningstider-onsdag-1410-l%C3%B8rdag-171/1730498175753651/",
+        "verifiedAt": "2026-10-17T04:17:02.430Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02zmxtsvwxdzzjchxksn34oh5rukood4ctqrzttjq1hnivwgyomz-12e36e45",
+      "title": "Vi holder efterårsferie og åbner igen mandag d",
+      "description": "Vi holder efterårsferie og åbner igen mandag d 19/10",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-6m92uh-1",
+            "date": "2026-10-19",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02zMxTsVwXDzzjCHxksn34oH5rUkood4CtqRZTtjq1hniVwgyoMzWjYGCcebPb1y4Ml",
+        "url": "https://www.facebook.com/Aeroehallen/posts/pfbid02zMxTsVwXDzzjCHxksn34oH5rUkood4CtqRZTtjq1hniVwgyoMzWjYGCcebPb1y4Ml",
+        "verifiedAt": "2026-10-17T04:17:02.430Z"
       }
     }
   ]
