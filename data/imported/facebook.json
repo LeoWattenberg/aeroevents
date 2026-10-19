@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-18T16:17:06.927Z",
+  "verifiedAt": "2026-10-19T04:17:02.866Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -4951,6 +4951,140 @@
         "externalId": "post-pfbid0YFYPRZa2o97GattQpGhM8fiRWg82HatbZ4FzkyZrp7e8rWqe9L2Qtdts5zTB8rKol",
         "url": "https://www.facebook.com/aeroekommune/posts/s%C3%B8g-st%C3%B8tte-til-frivilligt-socialt-arbejde-p%C3%A5-%C3%A6r%C3%B8-er-jeres-forening-med-til-at-sk/1115775564148147/",
         "verifiedAt": "2026-10-18T16:17:06.927Z"
+      }
+    },
+    {
+      "id": "facebook-post-2927822707589199",
+      "title": "Fra",
+      "description": "Fra torsdag den 22. oktober til onsdag den 28. oktober, hver aften kl. 19.30 (ikke mandag) samt søndag kl. 15.00 viser vi:\nDOBBELTFEJL\nIntenst spændingsdrama med Sidse Babett Knudsen, Sofie Gråbøl og Asta Kamma August.\nEt lille lokalmiljø rystes efter et påstået seksuelt overgreb på en teenagedreng, begået af to skolekammerater. Da den succesfulde ejendomsmægler Anne Sofie opdager, at hendes søn er dybere involveret, end hun først troede, må hun beskytte ham - koste hvad det vil. Det bringer hende på direkte kollisionskurs med hendes mangeårige veninde Sara og en tredje mor, Ulrikke, i en kamp, hvor alle tre kvinder kæmper for at redde dem selv og deres sønner.\nDOBBELTFEJL sætter fokus på, hvor langt forældre vil gå for deres børn og de umulige valg, der opstår, når loyaliteten over for ens børn bliver sat på den ultimative prøve.\nPremiere: 24.09.2026\nSkuespillere: Sofie Gråbøl, Sidse Babett Knudsen, Asta Kamma August, Thomas Hwan, Kurt Ravn, Sara Fanta Traore, Daniel Ørum\nGenre: Dansk / Drama\nInstruktion: Amalie Næsby Fick\nManus: Sara Isabella Jønsson, Nikolaj Arcel\nCensur : 11 år\nTrailer: https://www.youtube.com/watch?v=YIu0ArEMJGA&t=11s",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1t8qgk5-1",
+            "date": "2026-10-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1t8qgk5-2",
+            "date": "2026-10-28",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-2927822707589199",
+        "url": "https://www.facebook.com/groups/1853077681730379/posts/2927822707589199/",
+        "verifiedAt": "2026-10-19T04:17:02.866Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02bd2a3avepgyqv8vwxqbhexmozxk632wcqbimxd2ujfczzjyt6h-10e6644e",
+      "title": "Søg støtte til frivilligt socialt arbejde på Ærø",
+      "description": "Søg støtte til frivilligt socialt arbejde på Ærø\nEr jeres forening med til at skabe fællesskaber og støtte for andre? Så kan I søge støtte gennem §18-puljen til frivilligt socialt arbejde.\nDet kan eksempelvis være foreninger, der organiserer selvhjælpsgrupper, afholder sociale arrangementer og fællesspisninger eller tilbyder støtte- og kontaktpersonordninger på frivillig basis.\nAnsøgningsfristen er søndag den 1. november 2026.\nLæs mere om ansøgning og kriterier på kommunens hjemmeside.",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-nmy2ef-1",
+            "date": "2026-11-01",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02bd2a3avepgYqv8VwxqbHExmoZxK632WCQbiMXD2UjfCZzJyT6HLNjzfZmJbhg8Uil",
+        "url": "https://www.facebook.com/aeroekommune/posts/s%C3%B8g-st%C3%B8tte-til-frivilligt-socialt-arbejde-p%C3%A5-%C3%A6r%C3%B8-er-jeres-forening-med-til-at-sk/1115775564148147/",
+        "verifiedAt": "2026-10-19T04:17:02.866Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02zfkz91ezeavbnadxczugtpuzh51udfjdznxz6y8vwdgppbhtox-1f4bb17f",
+      "title": "Vi holder efterårsferie og åbner igen mandag d",
+      "description": "Vi holder efterårsferie og åbner igen mandag d 19/10",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1wve2pu-1",
+            "date": "2026-10-19",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02zfkz91EzEAVbNadxCzUGtPUZH51udfJdznxZ6Y8VwdgpPbhtoXPspxMWVdd2g6Jsl",
+        "url": "https://www.facebook.com/Aeroehallen/posts/pfbid02zfkz91EzEAVbNadxCzUGtPUZH51udfJdznxZ6Y8VwdgpPbhtoXPspxMWVdd2g6Jsl",
+        "verifiedAt": "2026-10-19T04:17:02.866Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0bs8cfklm22p4zngzxyvtfgmgwt5deojfh1dvvfupejdn8fqcwz2-349d9be2",
+      "title": "Er du ny på Ærø",
+      "description": "Er du ny på Ærø?\nPå tirsdag åbner vi Motorfabrikken i Marstal for alle jer, der lige er flyttet til øen. Vi har god (lokalristet!) kaffe på kanden, så du skal faktisk bare møde op med alle dine spørgsmål til det at have en Ærø-hverdag, og så gør vi vores bedste for at sende dig hjem med en masse svar, et bekendtskab eller 12 og en hel masse viden om, hvad øen byder på.\nHVORNÅR: TIRSDAG 20. OKT. KL. 16-17.30\nHVOR: MOTORFABRIKKEN, MARSTAL.\nOG HVAD SÅ NU? Del gerne opslaget, så vi kan få spredt budskabet om vores nye tilflyttercafé, som vi afholder én gang i måneden",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "MOTORFABRIKKEN, MARSTAL."
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-j3e6vf-1",
+            "date": "2026-10-20",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0Bs8CfkLM22P4ZNGzxYvTfgmgWT5DEoJfH1DvvfUPEJdn8FQCwz2vJq4Npud7aCthl",
+        "url": "https://www.facebook.com/motorfabrikkenmarstal/posts/1552772240220161/",
+        "verifiedAt": "2026-10-19T04:17:02.866Z"
       }
     }
   ]
