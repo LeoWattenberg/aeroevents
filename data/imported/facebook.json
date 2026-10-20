@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-19T16:17:02.467Z",
+  "verifiedAt": "2026-10-20T04:17:03.063Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -5214,6 +5214,73 @@
         "externalId": "post-pfbid0KAeBBhCMEUKZcrsH1GWKxox6hTDibCVUqQzgMvZvXu5JdZEYe1ZUjrc6rBZWmH48l",
         "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
         "verifiedAt": "2026-10-19T16:17:02.467Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02fizurrgaspzdbuq9avzuob3wser3qzdgpyf7vmsjrbsqd7mlbn-ea649348",
+      "title": "Er du ny på Ærø",
+      "description": "Er du ny på Ærø?\nPå tirsdag åbner vi Motorfabrikken i Marstal for alle jer, der lige er flyttet til øen. Vi har god (lokalristet!) kaffe på kanden, så du skal faktisk bare møde op med alle dine spørgsmål til det at have en Ærø-hverdag, og så gør vi vores bedste for at sende dig hjem med en masse svar, et bekendtskab eller 12 og en hel masse viden om, hvad øen byder på.\nHVORNÅR: TIRSDAG 20. OKT. KL. 16-17.30\nHVOR: MOTORFABRIKKEN, MARSTAL.\nOG HVAD SÅ NU? Del gerne opslaget, så vi kan få spredt budskabet om vores nye tilflyttercafé, som vi afholder én gang i måneden",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "MOTORFABRIKKEN, MARSTAL."
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-vd0pi0-1",
+            "date": "2026-10-20",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02FiZurRGAsPZDbuq9avzUob3wseR3QZDGpYF7vMSjrbsQD7mLBnM5QZLLcRwbXBjrl",
+        "url": "https://www.facebook.com/motorfabrikkenmarstal/posts/1552772240220161/",
+        "verifiedAt": "2026-10-20T04:17:03.063Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02k7emnf9zprmsh9emckjtrg8j95zfx5sjmx1oc62yrqzn5yxada-e6588077",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-11el6ub-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02k7EmnF9zprmSH9emcKJTRg8J95ZfX5sjmx1oc62yRqZn5YXadAAaac3RiaHKbkFnl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-10-20T04:17:03.063Z"
       }
     }
   ]
