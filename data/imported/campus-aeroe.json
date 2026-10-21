@@ -1,6 +1,6 @@
 {
   "sourceId": "campus-aeroe",
-  "verifiedAt": "2026-10-20T16:17:05.977Z",
+  "verifiedAt": "2026-10-21T04:17:02.262Z",
   "events": [
     {
       "id": "campus-aeroe-7956",
@@ -541,99 +541,6 @@
       }
     },
     {
-      "id": "campus-aeroe-series-campus-idraet",
-      "title": "CAMPUS-IDRÆT",
-      "description": "Kom og vær aktiv med andre unge fra 15+, der er ingen tilmelding, bare mød op.\nLeder: Klaus Fynsk Norup, underviser på HF",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "sport-motion",
-        "boern-familie"
-      ],
-      "location": {
-        "name": "Ærøhallen",
-        "address": "Halvejen 22",
-        "postalCode": "5965",
-        "city": "Marstal",
-        "url": "https://campusaeroe.dk/venue/aeroehallen/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-10-20",
-          "kind": "timed",
-          "startTime": "08:00"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270413T080000",
-        "rdates": [],
-        "exdates": [
-          "2026-12-22T08:00",
-          "2026-12-29T08:00",
-          "2027-02-16T08:00",
-          "2027-03-23T08:00"
-        ],
-        "overrides": [],
-        "durationMinutes": 540
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "series-campus-idraet",
-        "url": "https://campusaeroe.dk/event/campus-idraet/",
-        "verifiedAt": "2026-10-20T16:17:05.977Z",
-        "modifiedAt": "2026-08-17T08:13:49.000Z"
-      }
-    },
-    {
-      "id": "campus-aeroe-series-campus-idraet-2",
-      "title": "CAMPUS-IDRÆT",
-      "description": "Kom og vær aktiv med andre unge fra 15+, der er ingen tilmelding, bare mød op.\nLeder: Klaus Fynsk Norup, underviser på HF",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "sport-motion",
-        "boern-familie"
-      ],
-      "location": {
-        "name": "Ærøhallen",
-        "address": "Halvejen 22",
-        "postalCode": "5965",
-        "city": "Marstal",
-        "url": "https://campusaeroe.dk/venue/aeroehallen/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-10-20",
-          "kind": "timed",
-          "startTime": "19:00"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270608T190000",
-        "rdates": [],
-        "exdates": [
-          "2026-12-22T19:00",
-          "2026-12-29T19:00",
-          "2027-03-23T19:00"
-        ],
-        "overrides": [],
-        "durationMinutes": 120
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "series-campus-idraet-2",
-        "url": "https://campusaeroe.dk/event/campus-idraet-2/",
-        "verifiedAt": "2026-10-20T16:17:05.977Z",
-        "modifiedAt": "2026-08-17T08:22:05.000Z"
-      }
-    },
-    {
       "id": "campus-aeroe-series-campus-musik",
       "title": "CAMPUS-MUSIK",
       "description": "Er du klar til samspil? HF’s musiklærer Claus Svane leder dette hold, der en gang om ugen fra oktober til april samler unge fra hele øen til musik.\nCampus-holdet er åbent for alle fra 15 + år.",
@@ -676,7 +583,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-musik",
         "url": "https://campusaeroe.dk/event/campus-musik/",
-        "verifiedAt": "2026-10-20T16:17:05.977Z",
+        "verifiedAt": "2026-10-21T04:17:02.262Z",
         "modifiedAt": "2026-08-17T08:02:57.000Z"
       }
     },
@@ -720,8 +627,101 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-aabent-metalvaerksted",
         "url": "https://campusaeroe.dk/event/aabent-metalvaerksted/",
-        "verifiedAt": "2026-10-20T16:17:05.977Z",
+        "verifiedAt": "2026-10-21T04:17:02.262Z",
         "modifiedAt": "2026-07-06T07:26:55.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-series-campus-idraet",
+      "title": "CAMPUS-IDRÆT",
+      "description": "Kom og vær aktiv med andre unge fra 15+, der er ingen tilmelding, bare mød op.\nLeder: Klaus Fynsk Norup, underviser på HF",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "sport-motion",
+        "boern-familie"
+      ],
+      "location": {
+        "name": "Ærøhallen",
+        "address": "Halvejen 22",
+        "postalCode": "5965",
+        "city": "Marstal",
+        "url": "https://campusaeroe.dk/venue/aeroehallen/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-10-27",
+          "kind": "timed",
+          "startTime": "08:00"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270413T080000",
+        "rdates": [],
+        "exdates": [
+          "2026-12-22T08:00",
+          "2026-12-29T08:00",
+          "2027-02-16T08:00",
+          "2027-03-23T08:00"
+        ],
+        "overrides": [],
+        "durationMinutes": 540
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "series-campus-idraet",
+        "url": "https://campusaeroe.dk/event/campus-idraet/",
+        "verifiedAt": "2026-10-21T04:17:02.262Z",
+        "modifiedAt": "2026-08-17T08:13:49.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-series-campus-idraet-2",
+      "title": "CAMPUS-IDRÆT",
+      "description": "Kom og vær aktiv med andre unge fra 15+, der er ingen tilmelding, bare mød op.\nLeder: Klaus Fynsk Norup, underviser på HF",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "sport-motion",
+        "boern-familie"
+      ],
+      "location": {
+        "name": "Ærøhallen",
+        "address": "Halvejen 22",
+        "postalCode": "5965",
+        "city": "Marstal",
+        "url": "https://campusaeroe.dk/venue/aeroehallen/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-10-27",
+          "kind": "timed",
+          "startTime": "19:00"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270608T190000",
+        "rdates": [],
+        "exdates": [
+          "2026-12-22T19:00",
+          "2026-12-29T19:00",
+          "2027-03-23T19:00"
+        ],
+        "overrides": [],
+        "durationMinutes": 120
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "series-campus-idraet-2",
+        "url": "https://campusaeroe.dk/event/campus-idraet-2/",
+        "verifiedAt": "2026-10-21T04:17:02.262Z",
+        "modifiedAt": "2026-08-17T08:22:05.000Z"
       }
     },
     {
@@ -760,7 +760,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8081",
         "url": "https://campusaeroe.dk/event/babycafe-barnets-sproglige-udvikling/",
-        "verifiedAt": "2026-10-20T16:17:05.977Z",
+        "verifiedAt": "2026-10-21T04:17:02.262Z",
         "modifiedAt": "2026-10-05T06:53:15.000Z"
       }
     },
@@ -801,7 +801,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "7963",
         "url": "https://campusaeroe.dk/event/fejring-af-faellesskaber-og-uddannelse-paa-aeroe/",
-        "verifiedAt": "2026-10-20T16:17:05.977Z",
+        "verifiedAt": "2026-10-21T04:17:02.262Z",
         "modifiedAt": "2026-10-01T07:42:08.000Z"
       }
     },
@@ -841,7 +841,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8077",
         "url": "https://campusaeroe.dk/event/babycafe-sansemotorik-i-teori-og-praksis/",
-        "verifiedAt": "2026-10-20T16:17:05.977Z",
+        "verifiedAt": "2026-10-21T04:17:02.262Z",
         "modifiedAt": "2026-10-01T09:53:24.000Z"
       }
     },
@@ -881,7 +881,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8079",
         "url": "https://campusaeroe.dk/event/babycafe-tryghed-og-tilknytning/",
-        "verifiedAt": "2026-10-20T16:17:05.977Z",
+        "verifiedAt": "2026-10-21T04:17:02.262Z",
         "modifiedAt": "2026-10-01T09:56:18.000Z"
       }
     }
