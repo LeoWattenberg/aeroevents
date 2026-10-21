@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-21T04:17:02.262Z",
+  "verifiedAt": "2026-10-21T16:17:02.481Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -5343,6 +5343,83 @@
         "externalId": "post-pfbid0g5e4JRxS9pUz9wiQN8ztNDLJv1EioWmqx6dZRWKZJM71YcqV4KAymtgH8zEeWqm5l",
         "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
         "verifiedAt": "2026-10-21T04:17:02.262Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02kaegjmexgnz2w2cforsuvm3iwpcq5chchhn7adrtjfuexjxjhp-edfc6f91",
+      "title": "Gør julemarkedet i Ærøskøbing til en hel weekend",
+      "description": "Gør julemarkedet i Ærøskøbing til en hel weekend\nDrømmer du om en weekend med julelys, hyggelige boder og stemningsfulde gader? Så tag til julemarked i Ærøskøbing – og bliv lidt længere.\nHos På Torvet bor du på selve torvet i den gamle købstad, lige dér hvor julebyen folder sig ud. Gå på opdagelse blandt juleboderne, nyd den hyggelige atmosfære, og overnat midt i byen. Næste morgen står morgenmaden klar, inden turen går hjemad igen.\nJulemarkederne i 2026\nLørdag 21. november\nLørdag 28. november\nLørdag 5. december\nLørdag 12. december\nVil du besøge Ærøskøbing uden for selve markedsdagene, er der også mulighed for et roligere juleophold. Her kan du nyde byen og øen i dit eget tempo med overnatning og morgenmad hos På Torvet – og selv planlægge dagens oplevelser og måltider.\nVil du bo midt i julebyen?\nSe mulighederne for juleophold, og tjek ledighed og priser på vores hjemmeside.\nVi anbefaler at booke i god tid, hvis du har en bestemt dato i tankerne.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1c2lf8u-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1c2lf8u-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1c2lf8u-3",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1c2lf8u-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02kaegJMEXgnZ2w2cforSuvm3iWPCQ5CHCHHn7adrTJfuexjxJHPts7t1zF3NhBgdGl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-g%C3%B8r-julemarkedet-i-%C3%A6r%C3%B8sk%C3%B8bing-til-en-hel-weekend-%EF%B8%8Fdr%C3%B8mmer-du-om-en-weekend-med-/1795534882580171/",
+        "verifiedAt": "2026-10-21T16:17:02.481Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0jzvatyvcqw6srduzv9sjpg8r2mxlaoxd6fljsnxngfo9c14mrgh-009047ca",
+      "title": "3 dage på Ærø fra kun 795 kr",
+      "description": "3 dage på Ærø fra kun 795 kr.!\nEn lille pause fra hverdagen behøver ikke koste en formue. I november kan du nyde 2 nætter på Ærø Hotel med god mad, ro og tid til hinanden – til en ekstra god pris.\nDit ophold inkluderer:\n✓ 2 overnatninger i standard dobbeltværelse\n✓ 2 x 2-retters aftenmenu\n✓ 2 x stor morgenbuffet inkl. bobler\n✓ Fri adgang til indendørs swimmingpool og fitnessrum\nTag en tur langs havnen i Marstal, mærk den friske havluft, og kom tilbage til en hyggelig aften, hvor vi sørger for maden.\nAnkomst den 2., 4., 6., 9., 11. eller 13. november 2026.\nLink til booking i kommentarfeltet.\nÆrø Hotel er et voksenhotel for gæster fra 18 år.\nHvem skal med dig på en lille novemberpause?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-4rn2b-1",
+            "date": "2026-11-13",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0JzVAtYvcQw6srduZV9SjpG8r2mXLAoxD6FLjsnxNGfo9C14mrGhGuxmTb6xnvhKMl",
+        "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
+        "verifiedAt": "2026-10-21T16:17:02.481Z"
       }
     }
   ]
