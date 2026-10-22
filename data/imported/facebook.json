@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-21T16:17:02.481Z",
+  "verifiedAt": "2026-10-22T04:17:03.083Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -5420,6 +5420,83 @@
         "externalId": "post-pfbid0JzVAtYvcQw6srduZV9SjpG8r2mXLAoxD6FLjsnxNGfo9C14mrGhGuxmTb6xnvhKMl",
         "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
         "verifiedAt": "2026-10-21T16:17:02.481Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02jw5mv6tg1r4wx1hebhtmtn6viznvoceqfgkmgcwjcsjf2cdarg-af7ab331",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-12zayi8-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02jw5mV6tG1R4Wx1HEbhTmtn6viznVoCeQFGkMgCWjCSjf2cDARGXY7SQKGb6NhwNWl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-10-22T04:17:03.083Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gz3xpy2y1jwh3x5f9mmb8sbalqbq9eczj3xng1hhdxsvkrumbmp-bbb014ab",
+      "title": "Gør julemarkedet i Ærøskøbing til en hel weekend",
+      "description": "Gør julemarkedet i Ærøskøbing til en hel weekend\nDrømmer du om en weekend med julelys, hyggelige boder og stemningsfulde gader? Så tag til julemarked i Ærøskøbing – og bliv lidt længere.\nHos På Torvet bor du på selve torvet i den gamle købstad, lige dér hvor julebyen folder sig ud. Gå på opdagelse blandt juleboderne, nyd den hyggelige atmosfære, og overnat midt i byen. Næste morgen står morgenmaden klar, inden turen går hjemad igen.\nJulemarkederne i 2026\nLørdag 21. november\nLørdag 28. november\nLørdag 5. december\nLørdag 12. december\nVil du besøge Ærøskøbing uden for selve markedsdagene, er der også mulighed for et roligere juleophold. Her kan du nyde byen og øen i dit eget tempo med overnatning og morgenmad hos På Torvet – og selv planlægge dagens oplevelser og måltider.\nVil du bo midt i julebyen?\nSe mulighederne for juleophold, og tjek ledighed og priser på vores hjemmeside.\nVi anbefaler at booke i god tid, hvis du har en bestemt dato i tankerne.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-19l1rex-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-19l1rex-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-19l1rex-3",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-19l1rex-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gZ3xpY2y1jWH3x5f9MMB8sBALqBq9EczJ3xNG1HHDxsVkRUMBmp6JA9DFWRon4EKl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-g%C3%B8r-julemarkedet-i-%C3%A6r%C3%B8sk%C3%B8bing-til-en-hel-weekend-%EF%B8%8Fdr%C3%B8mmer-du-om-en-weekend-med-/1795534882580171/",
+        "verifiedAt": "2026-10-22T04:17:03.083Z"
       }
     }
   ]
