@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-22T04:17:03.083Z",
+  "verifiedAt": "2026-10-22T16:17:02.928Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -5497,6 +5497,192 @@
         "externalId": "post-pfbid0gZ3xpY2y1jWH3x5f9MMB8sBALqBq9EczJ3xNG1HHDxsVkRUMBmp6JA9DFWRon4EKl",
         "url": "https://www.facebook.com/PaaTorvet/posts/-g%C3%B8r-julemarkedet-i-%C3%A6r%C3%B8sk%C3%B8bing-til-en-hel-weekend-%EF%B8%8Fdr%C3%B8mmer-du-om-en-weekend-med-/1795534882580171/",
         "verifiedAt": "2026-10-22T04:17:03.083Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02a8ynucufdp2feamydo8ytwv24s5h2cuxu6uvhqfczn6uaa92ue-71ff5e57",
+      "title": "KOM TIL KAMP-WEEKEND I ÆRØHALLEN",
+      "description": "KOM TIL KAMP-WEEKEND I ÆRØHALLEN!\nMH89 klar til en vild håndbold-weekend på hjemmebane, og vi har brug for alt den opbakning, vi kan få fra tribunerne! Sæt kryds i kalenderen og kom op og hep på holdet til sejr:\nLørdag d. 24. oktober 2026 kl. 12:30\nKamp: MH 89 vs. Haarby IF 3\nDommer: Thomas Johannes Rasmussen\nSøndag d. 25. oktober 2026 kl. 11:45\nKamp: MH 89 vs. Østfyns HK 2\nDommer: Peter Hansen\nHusk kantinen:\nKantinen er åben med gode priser på mad og drikke hele weekenden, så kig forbi til hygge og en god refreshment før, under eller efter kampene!\nVi glæder os til at se jer i Ærøhallen!\n#MH89 #Håndbold #Hjemmebane #Ærøhallen #KampWeekend #StøtHoldet— her: Ærøhallen.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-20032-1",
+            "date": "2026-10-24",
+            "kind": "timed",
+            "startTime": "12:30"
+          },
+          {
+            "id": "facebook-20032-2",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "11:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02A8ynucuFdP2FEAMyDo8YTwV24s5H2cuXu6uVhQFczn6uAA92ueungPrM9LcdzmbWl",
+        "url": "https://www.facebook.com/Aeroehallen/posts/1649221283570058/",
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02nqvt5drsgkwwkxgf74bhnl68bmnpujovzfixp85paljtpueebw-22eba9e4",
+      "title": "3 dage på Ærø fra kun 795 kr",
+      "description": "3 dage på Ærø fra kun 795 kr.!\nEn lille pause fra hverdagen behøver ikke koste en formue. I november kan du nyde 2 nætter på Ærø Hotel med god mad, ro og tid til hinanden – til en ekstra god pris.\nDit ophold inkluderer:\n✓ 2 overnatninger i standard dobbeltværelse\n✓ 2 x 2-retters aftenmenu\n✓ 2 x stor morgenbuffet inkl. bobler\n✓ Fri adgang til indendørs swimmingpool og fitnessrum\nTag en tur langs havnen i Marstal, mærk den friske havluft, og kom tilbage til en hyggelig aften, hvor vi sørger for maden.\nAnkomst den 2., 4., 6., 9., 11. eller 13. november 2026.\nLink til booking i kommentarfeltet.\nÆrø Hotel er et voksenhotel for gæster fra 18 år.\nHvem skal med dig på en lille novemberpause?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1l9pb4k-1",
+            "date": "2026-11-13",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02Nqvt5DrSGKwWkXgF74bHNL68BMnPuJoVzfixp85paLjtPuEEBW2GkwThcVnycoddl",
+        "url": "https://www.facebook.com/aeroehotel/posts/-3-dage-p%C3%A5-%C3%A6r%C3%B8-fra-kun-795-kren-lille-pause-fra-hverdagen-beh%C3%B8ver-ikke-koste-en-/1536530971852948/",
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02x5wccjkyjvlnyupazdqi2dsbwwfzuhjshyztmxulxzauuqvcnu-8f05c89f",
+      "title": "To uger med fuld fokus på tankskibe",
+      "description": "To uger med fuld fokus på tankskibe\nI oktober har studerende på 4. semester af uddannelsen til skibsfører og to eksterne deltagere gennemført vores to-ugers avanceret kursus i olie- og kemikalietankskibe.\nDet var to intense og lærerige uger.\nKurset er for officerer med ansvar for lastning, losning, lasthåndtering og tankrensning, samt for tilsynsførende og tankskibsoperatører.\nNæste kursus: 5.-16. april 2027\nIngen undervisning i weekenden, så der er tid til at nyde VisitÆrø\nSe programmet og tilmeld dig her: https://marnav.nemtilmeld.dk/670/\n.\n.\n.\n.\n#MARNAV #Ærø #DetBlåDanmark #Skibsfører #visitærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-12lptfi-1",
+            "date": "2027-04-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-2",
+            "date": "2027-04-06",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-3",
+            "date": "2027-04-07",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-4",
+            "date": "2027-04-08",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-5",
+            "date": "2027-04-09",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-6",
+            "date": "2027-04-10",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-7",
+            "date": "2027-04-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-8",
+            "date": "2027-04-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-9",
+            "date": "2027-04-13",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-10",
+            "date": "2027-04-14",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-11",
+            "date": "2027-04-15",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-12lptfi-12",
+            "date": "2027-04-16",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02X5wccJKyjvLNyUPaZDQi2dSBwWfzuHJShYzTmxuLXzAUUqvcnURUredKapUnbp8Ul",
+        "url": "https://www.facebook.com/marnav.dk/posts/to-uger-med-fuld-fokus-p%C3%A5-tankskibe-i-oktober-har-studerende-p%C3%A5-4-semester-af-ud/1982765016107527/",
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0f1cj5m49gp1xcvzhbccfv4n1poq6dxnc8wv5fkd58mp4zbnpako-e402c573",
+      "title": "OK alle sammen Se lige her Juhuuuu",
+      "description": "OK alle sammen Se lige her Juhuuuu\nVi er simpelthen blevet nomineret til Årets Scene ved Danish Music Awards 2026, arrangeret af Jazz Danmark\nKæmpe tak til alle jer, der støtter op om festivalen og besøger os år efter år, som frivillige , publikummer , musikere og sponsorer\nOg kæmpe anerkendelse for alt det arbejde, der ligger bag nu, og har været på øen i mange, mange år . Tak for at Ærø Jazzfestival som scene bliver fremhævet ved så stort og landsdækkende et arrangement\nVi er simpelthen så stolte og glade\nTak til Jazz Danmark og kæmpe krammer fra bestyrelsen:\nKarin Nielsen, Louise Harder Fischer, , Anne Mette Holstein , , Christian Stadager, Henrik Hollender og og\nVi håber, vi ses til generalforsamlingen d. 2. November, hvor vi giver et glas bobler og fejrer nomineringen sammen!\nBillede: Niels Solholm",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1t2pesp-1",
+            "date": "2026-11-02",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0F1cj5M49gP1xcVZHBCCFv4N1Poq6DXNc8WV5Fkd58Mp4ZbnPakoFdB8bBGymDDWDl",
+        "url": "https://www.facebook.com/aerojazz/posts/ok-alle-sammen-se-lige-her-juhuuuu-vi-er-simpelthen-blevet-nomineret-til-%C3%A5rets-s/1744899160973006/",
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     }
   ]

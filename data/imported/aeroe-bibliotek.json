@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-bibliotek",
-  "verifiedAt": "2026-10-22T04:17:03.083Z",
+  "verifiedAt": "2026-10-22T16:17:02.928Z",
   "events": [
     {
       "id": "aeroe-bibliotek-10266",
@@ -265,7 +265,7 @@
         "sourceId": "aeroe-bibliotek",
         "externalId": "10263",
         "url": "https://www.arrebib.dk/marstal-bibliotek/arrangementer/livestream-kaffe-ved-aske-bosselmann-anders-barfod-og-kjeld-0",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
@@ -310,13 +310,13 @@
         "sourceId": "aeroe-bibliotek",
         "externalId": "10269",
         "url": "https://www.arrebib.dk/aeroskobing-bibliotek/arrangementer/nanna-holm-om-rode-port",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
       "id": "aeroe-bibliotek-10270",
       "title": "Skumringstime",
-      "description": "I samarbejde med Foreningen Norden inviterer Ærø folkebibliotek til Skumringstime på Ærøskøbing bibliotek\n\nUddrag fra www.nordisklitteratur.org \"Temaet for Nordisk Litteraturuge 2026 er Demokrati i Norden. Med et nyhedsbillede og en verdenssituation præget af krig, politisk uro, polarisering og censur, har vi valgt et tema, som fremmer frihed, lighed og retfærdighed.Norden er verdens mest demokratiske region. Vi beskyttes af loven, og har tillid til hinanden, og dem, som bestemmer. Vi kan vælge at tro, eller lade være; om vi vil gå i kirke, i synagoge, moske eller tempel. Vi kan sige højt, hvad vi mener, og vi kan læse de bøger, vi har lyst til.Det må vi aldrig tage for givet.\"Program: Velkomst med en fællessang & højtlæsning af årets roman-uddrag: Johannes Anyuru: De vil drukne i deres mødres tårer (2018), oversat af Birgitte Steffen Nielsen.Derefter oplæg af (Hemmeligt - lidt endnu. Afsløres snart) I pausen serveres kaffe & the og lidt sødt. Vi slutter aftenen med fællessang.",
+      "description": "I samarbejde med Foreningen Norden inviterer Ærø folkebibliotek til Skumringstime på Ærøskøbing bibliotek\n\nUddrag fra www.nordisklitteratur.org \"Temaet for Nordisk Litteraturuge 2026 er Demokrati i Norden. Med et nyhedsbillede og en verdenssituation præget af krig, politisk uro, polarisering og censur, har vi valgt et tema, som fremmer frihed, lighed og retfærdighed.Norden er verdens mest demokratiske region. Vi beskyttes af loven, og har tillid til hinanden, og dem, som bestemmer. Vi kan vælge at tro, eller lade være; om vi vil gå i kirke, i synagoge, moske eller tempel. Vi kan sige højt, hvad vi mener, og vi kan læse de bøger, vi har lyst til.Det må vi aldrig tage for givet.\"Program: KL. 19: Velkomst med fællessang & højtlæsning af årets roman-uddrag: Johannes Anyuru: De vil drukne i deres mødres tårer (2018), oversat af Birgitte Steffen Nielsen ved bibliotekar, Anne Marie Kl. 19.30: Første oplæg af (kommer snart!) Kl. 20: Pause med kaffe og sødt Kl. 20.15: Oplæg ved Claus Grube, Kammerherre & ambassadør blandt meget andetKl. 20.45: Tid til spørgsmål og fælles snak Kl. 21: Tak for i aften - fællessang",
       "organizerId": "aeroe-folkebibliotek",
       "categoryIds": [
         "musik-kultur"
@@ -355,7 +355,7 @@
         "sourceId": "aeroe-bibliotek",
         "externalId": "10270",
         "url": "https://www.arrebib.dk/aeroskobing-bibliotek/arrangementer/skumringstime",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
@@ -399,7 +399,7 @@
         "sourceId": "aeroe-bibliotek",
         "externalId": "10264",
         "url": "https://www.arrebib.dk/marstal-bibliotek/arrangementer/livestream-tang-ved-marinbiolog-annette-bruhn-0",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     }
   ]

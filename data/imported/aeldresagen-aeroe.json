@@ -1,6 +1,6 @@
 {
   "sourceId": "aeldresagen-aeroe",
-  "verifiedAt": "2026-10-22T04:17:03.083Z",
+  "verifiedAt": "2026-10-22T16:17:02.928Z",
   "events": [
     {
       "id": "aeldresagen-aeroe-443367982",
@@ -98,10 +98,10 @@
         "dates": [
           {
             "id": "aeldresagen-443477909",
-            "date": "2026-10-22",
+            "date": "2026-10-29",
             "kind": "timed",
             "startTime": "10:00",
-            "endDate": "2026-10-22",
+            "endDate": "2026-10-29",
             "endTime": "11:00"
           }
         ]
@@ -110,7 +110,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443477909",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443477909-naturen-som-traeningsrum",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
@@ -137,10 +137,10 @@
         "dates": [
           {
             "id": "aeldresagen-443446336",
-            "date": "2026-10-22",
+            "date": "2026-10-29",
             "kind": "timed",
             "startTime": "10:00",
-            "endDate": "2026-10-22",
+            "endDate": "2026-10-29",
             "endTime": "12:00"
           }
         ]
@@ -149,7 +149,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443446336",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443446336-aeroe-mandeklub",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
@@ -187,7 +187,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443478288",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443478288-gaature-og-stavgang",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
@@ -224,7 +224,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443368026",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443368026-petanque",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
@@ -264,7 +264,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443497864",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443497864-foredrag-med-finn-noerbygaard",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
@@ -302,7 +302,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443367804",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443367804-krolf",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
@@ -345,7 +345,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443511176",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443511176-soendagscafe",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
@@ -384,7 +384,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443480337",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443480337-soendagscafe-i-marstal",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     },
     {
@@ -427,7 +427,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443468911",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443468911-spisevenner",
-        "verifiedAt": "2026-10-22T04:17:03.083Z"
+        "verifiedAt": "2026-10-22T16:17:02.928Z"
       }
     }
   ]
