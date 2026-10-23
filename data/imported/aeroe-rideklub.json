@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-rideklub",
-  "verifiedAt": "2026-10-23T04:17:03.096Z",
+  "verifiedAt": "2026-10-23T16:17:04.393Z",
   "events": [
     {
       "id": "aeroe-rideklub-nisseoptog",
@@ -176,6 +176,40 @@
         "externalId": "pony-trk-julemarked-1",
         "url": "https://www.aeroerideklub.dk/events-1/pony-trk-julemarked-1",
         "verifiedAt": "2026-10-14T04:17:01.582Z"
+      }
+    },
+    {
+      "id": "aeroe-rideklub-programtrning",
+      "title": "Programtræning",
+      "description": "",
+      "organizerId": "aeroe-rideklub",
+      "categoryIds": [
+        "sport-motion",
+        "forening-faellesskab"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "rideklub-programtrning",
+            "date": "2026-11-07",
+            "kind": "timed",
+            "startTime": "09:30",
+            "endTime": "14:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-rideklub",
+        "externalId": "programtrning",
+        "url": "https://www.aeroerideklub.dk/events-1/programtrning",
+        "verifiedAt": "2026-10-23T16:17:04.393Z"
       }
     }
   ]
