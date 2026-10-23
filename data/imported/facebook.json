@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-22T16:17:02.928Z",
+  "verifiedAt": "2026-10-23T04:17:03.096Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -5683,6 +5683,152 @@
         "externalId": "post-pfbid0F1cj5M49gP1xcVZHBCCFv4N1Poq6DXNc8WV5Fkd58Mp4ZbnPakoFdB8bBGymDDWDl",
         "url": "https://www.facebook.com/aerojazz/posts/ok-alle-sammen-se-lige-her-juhuuuu-vi-er-simpelthen-blevet-nomineret-til-%C3%A5rets-s/1744899160973006/",
         "verifiedAt": "2026-10-22T16:17:02.928Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02js4sg1yyxngg7pbz7es58mmgf2dhhmssxuzmhqpryfpwe1lmjv-2daf8e3b",
+      "title": "OK alle sammen Se lige her Juhuuuu",
+      "description": "OK alle sammen Se lige her Juhuuuu\nVi er simpelthen blevet nomineret til Årets Scene ved Danish Music Awards 2026, arrangeret af Jazz Danmark\nKæmpe tak til alle jer, der støtter op om festivalen og besøger os år efter år, som frivillige , publikummer , musikere og sponsorer\nOg kæmpe anerkendelse for alt det arbejde, der ligger bag nu, og har været på øen i mange, mange år . Tak for at Ærø Jazzfestival som scene bliver fremhævet ved så stort og landsdækkende et arrangement\nVi er simpelthen så stolte og glade\nTak til Jazz Danmark og kæmpe krammer fra bestyrelsen:\nKarin Nielsen, Louise Harder Fischer, , Anne Mette Holstein , , Christian Stadager, Henrik Hollender og og\nVi håber, vi ses til generalforsamlingen d. 2. November, hvor vi giver et glas bobler og fejrer nomineringen sammen!\nBillede: Niels Solholm",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-vpvnx4-1",
+            "date": "2026-11-02",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02Js4SG1yyXnGG7PbZ7eS58MMGf2DHhMssXUZMHqPRyFpwe1LmJvUggRDrGVgw2rJZl",
+        "url": "https://www.facebook.com/aerojazz/posts/ok-alle-sammen-se-lige-her-juhuuuu-vi-er-simpelthen-blevet-nomineret-til-%C3%A5rets-s/1744899160973006/",
+        "verifiedAt": "2026-10-23T04:17:03.096Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02kqvg1cxnsauxd9zzvqxl6cxewqajwczzjdrudznqua5dd9mp6z-8eaa69fa",
+      "title": "Gør julemarkedet i Ærøskøbing til en hel weekend",
+      "description": "Gør julemarkedet i Ærøskøbing til en hel weekend\nDrømmer du om en weekend med julelys, hyggelige boder og stemningsfulde gader? Så tag til julemarked i Ærøskøbing – og bliv lidt længere.\nHos På Torvet bor du på selve torvet i den gamle købstad, lige dér hvor julebyen folder sig ud. Gå på opdagelse blandt juleboderne, nyd den hyggelige atmosfære, og overnat midt i byen. Næste morgen står morgenmaden klar, inden turen går hjemad igen.\nJulemarkederne i 2026\nLørdag 21. november\nLørdag 28. november\nLørdag 5. december\nLørdag 12. december\nVil du besøge Ærøskøbing uden for selve markedsdagene, er der også mulighed for et roligere juleophold. Her kan du nyde byen og øen i dit eget tempo med overnatning og morgenmad hos På Torvet – og selv planlægge dagens oplevelser og måltider.\nVil du bo midt i julebyen?\nSe mulighederne for juleophold, og tjek ledighed og priser på vores hjemmeside.\nVi anbefaler at booke i god tid, hvis du har en bestemt dato i tankerne.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1lwutkk-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lwutkk-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lwutkk-3",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lwutkk-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02kQVg1CxnsAuxD9zzvqXL6CxEwQajWCZZJDRuDZNqUa5dD9MP6ZiDBqkWnc8kbw6zl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-g%C3%B8r-julemarkedet-i-%C3%A6r%C3%B8sk%C3%B8bing-til-en-hel-weekend-%EF%B8%8Fdr%C3%B8mmer-du-om-en-weekend-med-/1795534882580171/",
+        "verifiedAt": "2026-10-23T04:17:03.096Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid06blbztgtneonppacyd1ukxgt6wkf3a8bzm893sozqsn3lzdgd1r-3543f4d3",
+      "title": "KOM TIL KAMP-WEEKEND I ÆRØHALLEN",
+      "description": "KOM TIL KAMP-WEEKEND I ÆRØHALLEN!\nMH89 klar til en vild håndbold-weekend på hjemmebane, og vi har brug for alt den opbakning, vi kan få fra tribunerne! Sæt kryds i kalenderen og kom op og hep på holdet til sejr:\nLørdag d. 24. oktober 2026 kl. 12:30\nKamp: MH 89 vs. Haarby IF 3\nDommer: Thomas Johannes Rasmussen\nSøndag d. 25. oktober 2026 kl. 11:45\nKamp: MH 89 vs. Østfyns HK 2\nDommer: Peter Hansen\nHusk kantinen:\nKantinen er åben med gode priser på mad og drikke hele weekenden, så kig forbi til hygge og en god refreshment før, under eller efter kampene!\nVi glæder os til at se jer i Ærøhallen!\n#MH89 #Håndbold #Hjemmebane #Ærøhallen #KampWeekend #StøtHoldet— her: Ærøhallen.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1bv1ijy-1",
+            "date": "2026-10-24",
+            "kind": "timed",
+            "startTime": "12:30"
+          },
+          {
+            "id": "facebook-1bv1ijy-2",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "11:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid06bLbzTGtnEonpPacYd1uKXGT6WKF3a8bZm893SozqSN3LzDgD1RZfrxpbWbcSFJvl",
+        "url": "https://www.facebook.com/Aeroehallen/posts/1649221283570058/",
+        "verifiedAt": "2026-10-23T04:17:03.096Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gpsazwfuacu8mgyprlnenvj6ruhfrcdqrcwf7j1pt5tffnkzh4e-2c061d82",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-uboey-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gPSaZwFuACu8MgyprLnEnVJ6RUHFRCdQRcwf7J1PT5TFfnKZh4eYEz7BAqgDe321l",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-10-23T04:17:03.096Z"
       }
     }
   ]

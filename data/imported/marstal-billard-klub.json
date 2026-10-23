@@ -1,45 +1,7 @@
 {
   "sourceId": "marstal-billard-klub",
-  "verifiedAt": "2026-10-22T16:17:02.928Z",
+  "verifiedAt": "2026-10-23T04:17:03.096Z",
   "events": [
-    {
-      "id": "marstal-billard-klub-231356",
-      "title": "Marstal BK – Assens BK",
-      "description": "Keglebillard - Serie 3 Vest",
-      "organizerId": "marstal-billard-klub",
-      "categoryIds": [
-        "sport-motion",
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Marstal Billard Klub",
-        "address": "Tordenskjoldsgade 20, 1.",
-        "postalCode": "5960",
-        "city": "Marstal"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "DDBU's kampprogram oplyser ikke, om kampen har offentlig tilskueradgang."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "ddbu-231356",
-            "date": "2026-10-22",
-            "kind": "time-unknown"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "marstal-billard-klub",
-        "externalId": "231356",
-        "url": "https://www.ddbu-admin.dk/external/hold_kamp_res.php?kampid=231356",
-        "verifiedAt": "2026-09-15T16:17:03.394Z"
-      }
-    },
     {
       "id": "marstal-billard-klub-231359",
       "title": "Marstal BK – Faaborg",
