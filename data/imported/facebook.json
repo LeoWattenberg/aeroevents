@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-24T04:17:02.870Z",
+  "verifiedAt": "2026-10-24T16:17:06.493Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -6092,6 +6092,92 @@
         "externalId": "post-pfbid0grrV63LS26JxsPXKpBSArpP9RZLc27hW6GJ6U4arkvdrstjCoZyiKVoE72ZRm691l",
         "url": "https://www.facebook.com/PaaTorvet/posts/-g%C3%B8r-julemarkedet-i-%C3%A6r%C3%B8sk%C3%B8bing-til-en-hel-weekend-%EF%B8%8Fdr%C3%B8mmer-du-om-en-weekend-med-/1795534882580171/",
         "verifiedAt": "2026-10-24T04:17:02.870Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02wuncka4evsp2nlninuilmavcrsuxohrncvtkk9hj5mtivxefdm-6738addd",
+      "title": "To uger med fuld fokus på tankskibe",
+      "description": "To uger med fuld fokus på tankskibe\nI oktober har studerende på 4. semester af uddannelsen til skibsfører og to eksterne deltagere gennemført vores to-ugers avanceret kursus i olie- og kemikalietankskibe.\nDet var to intense og lærerige uger.\nKurset er for officerer med ansvar for lastning, losning, lasthåndtering og tankrensning, samt for tilsynsførende og tankskibsoperatører.\nNæste kursus: 5.-16. april 2027\nIngen undervisning i weekenden, så der er tid til at nyde VisitÆrø\nSe programmet og tilmeld dig her: https://marnav.nemtilmeld.dk/670/\n.\n.\n.\n.\n#MARNAV #Ærø #DetBlåDanmark #Skibsfører #visitærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-o69xl5-1",
+            "date": "2027-04-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-2",
+            "date": "2027-04-06",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-3",
+            "date": "2027-04-07",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-4",
+            "date": "2027-04-08",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-5",
+            "date": "2027-04-09",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-6",
+            "date": "2027-04-10",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-7",
+            "date": "2027-04-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-8",
+            "date": "2027-04-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-9",
+            "date": "2027-04-13",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-10",
+            "date": "2027-04-14",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-11",
+            "date": "2027-04-15",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-o69xl5-12",
+            "date": "2027-04-16",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02WuncKA4EvSP2nLniNuiLMaVCRSuxoHRnCvtkk9hJ5MTivxefdM99mkiY8mKytSXml",
+        "url": "https://www.facebook.com/marnav.dk/posts/to-uger-med-fuld-fokus-p%C3%A5-tankskibe-i-oktober-har-studerende-p%C3%A5-4-semester-af-ud/1982765016107527/",
+        "verifiedAt": "2026-10-24T16:17:06.493Z"
       }
     }
   ]
