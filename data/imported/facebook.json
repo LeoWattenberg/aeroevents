@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-25T05:17:03.428Z",
+  "verifiedAt": "2026-10-25T17:17:02.822Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -6224,6 +6224,223 @@
         "externalId": "post-pfbid02kELfi4h43gBCQnNU5gfmhdaoz7gfdvVD5akTuUGK8Jq4F8D7vGTNQo9p4Strq6U9l",
         "url": "https://www.facebook.com/PaaTorvet/posts/-g%C3%B8r-julemarkedet-i-%C3%A6r%C3%B8sk%C3%B8bing-til-en-hel-weekend-%EF%B8%8Fdr%C3%B8mmer-du-om-en-weekend-med-/1795534882580171/",
         "verifiedAt": "2026-10-25T05:17:03.428Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02jgurxsieihj2pcpzttp1rm4ljngbqgkpbhgp2aa44wk8xbbtmb-16f30b01",
+      "title": "OK alle sammen Se lige her Juhuuuu",
+      "description": "OK alle sammen Se lige her Juhuuuu\nVi er simpelthen blevet nomineret til Årets Scene ved Danish Music Awards 2026, arrangeret af Jazz Danmark\nKæmpe tak til alle jer, der støtter op om festivalen og besøger os år efter år, som frivillige , publikummer , musikere og sponsorer\nOg kæmpe anerkendelse for alt det arbejde, der ligger bag nu, og har været på øen i mange, mange år . Tak for at Ærø Jazzfestival som scene bliver fremhævet ved så stort og landsdækkende et arrangement\nVi er simpelthen så stolte og glade\nTak til Jazz Danmark og kæmpe krammer fra bestyrelsen:\nKarin Nielsen, Louise Harder Fischer, , Anne Mette Holstein , , Christian Stadager, Henrik Hollender og og\nVi håber, vi ses til generalforsamlingen d. 2. November, hvor vi giver et glas bobler og fejrer nomineringen sammen!\nBillede: Niels Solholm",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1bk172j-1",
+            "date": "2026-11-02",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02JguRxsiEiHj2PcpZttP1rM4LJnGBqGKpbHgp2Aa44Wk8XBBtmBV3aMTz9s5NNkQml",
+        "url": "https://www.facebook.com/aerojazz/posts/ok-alle-sammen-se-lige-her-juhuuuu-vi-er-simpelthen-blevet-nomineret-til-%C3%A5rets-s/1744899160973006/",
+        "verifiedAt": "2026-10-25T17:17:02.822Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02tkjfyvuawe7ecwcunjwpv2p4aoktblbyvfvisnqo3cedwupzs4-308740d9",
+      "title": "Tusmørkeaften – Thanksgiving-inspireret middag i levende lys",
+      "description": "Tusmørkeaften – Thanksgiving-inspireret middag i levende lys\nHelstegt kalkun, søde kartofler med ristede pekannødder, tranebærsauce og lun æbletærte med vaniljeis.\nFredag den 27. november inviterer vi til Tusmørkeaften hos På Torvet – en middag inspireret af Thanksgiving med smage og retter, som mange danskere ikke kender så godt.\nHovedretten serveres family style med fade og skåle på bordet, som deles rundt. En hyggelig måde at samles om maden på.\nOg rammerne bliver noget ganske særligt: Tusmørkeaften er en del af Ærøs Lokal Fredag, hvor det elektriske lys slukkes, og levende lys tændes i Ærøskøbings gader og huse. Det giver byen en helt særlig stemning, når mørket falder på.\nFredag den 27. november kl. 18.00\n525 kr. pr. person\nDer er et begrænset antal pladser, og bordbestilling er nødvendig.\nLæs mere om Tusmørkeaften og menuen på vores hjemmeside. Vi anbefaler at bestille bord i god tid.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1aw8m9e-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1aw8m9e-2",
+            "date": "2026-11-27",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02TKJfyVuaWE7ecwcunJWPv2P4aoKTbLBYvFViSNQo3cedWUpzs4yGn8i8kdetfaW9l",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-tusm%C3%B8rkeaften-thanksgiving-inspireret-middag-i-levende-lys-%EF%B8%8Fhelstegt-kalkun-s%C3%B8d/1799954695471523/",
+        "verifiedAt": "2026-10-25T17:17:02.822Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid06rbbhk19xhe4pzamy1m5vtt5fyec71hznqqm6k8pnlj5kuotpqc-77b1bfbb",
+      "title": "KOM TIL KAMP-WEEKEND I ÆRØHALLEN",
+      "description": "KOM TIL KAMP-WEEKEND I ÆRØHALLEN!\nMH89 klar til en vild håndbold-weekend på hjemmebane, og vi har brug for alt den opbakning, vi kan få fra tribunerne! Sæt kryds i kalenderen og kom op og hep på holdet til sejr:\nLørdag d. 24. oktober 2026 kl. 12:30\nKamp: MH 89 vs. Haarby IF 3\nDommer: Thomas Johannes Rasmussen\nSøndag d. 25. oktober 2026 kl. 11:45\nKamp: MH 89 vs. Østfyns HK 2\nDommer: Peter Hansen\nHusk kantinen:\nKantinen er åben med gode priser på mad og drikke hele weekenden, så kig forbi til hygge og en god refreshment før, under eller efter kampene!\nVi glæder os til at se jer i Ærøhallen!\n#MH89 #Håndbold #Hjemmebane #Ærøhallen #KampWeekend #StøtHoldet— her: Ærøhallen.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1bphnyz-2",
+            "date": "2026-10-25",
+            "kind": "timed",
+            "startTime": "11:45"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid06RBbhK19xhe4pZAMy1m5vtt5FYeC71hznqQm6k8pnLJ5kuoTpqC4LcRkH17U3Jg5l",
+        "url": "https://www.facebook.com/Aeroehallen/posts/1649221283570058/",
+        "verifiedAt": "2026-10-25T17:17:02.822Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gdhagnzalvj4n543cbkhc23qavnfmgqzx6xo7jzt4x4wfbbi4bj-49ec2448",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-12z11rk-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gDHaGnzALVJ4n543CbKHC23QavnfMgqzX6xo7JzT4X4wFBBi4bjH38Arqb32PDVNl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-10-25T17:17:02.822Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0tn9rpzrt57q7fi5wsrwzv6rlb8sjehoh3xtvw5umwzdxf1wkcrb-d7a5c382",
+      "title": "To uger med fuld fokus på tankskibe",
+      "description": "To uger med fuld fokus på tankskibe\nI oktober har studerende på 4. semester af uddannelsen til skibsfører og to eksterne deltagere gennemført vores to-ugers avanceret kursus i olie- og kemikalietankskibe.\nDet var to intense og lærerige uger.\nKurset er for officerer med ansvar for lastning, losning, lasthåndtering og tankrensning, samt for tilsynsførende og tankskibsoperatører.\nNæste kursus: 5.-16. april 2027\nIngen undervisning i weekenden, så der er tid til at nyde VisitÆrø\nSe programmet og tilmeld dig her: https://marnav.nemtilmeld.dk/670/\n.\n.\n.\n.\n#MARNAV #Ærø #DetBlåDanmark #Skibsfører #visitærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1lbjl8j-1",
+            "date": "2027-04-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-2",
+            "date": "2027-04-06",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-3",
+            "date": "2027-04-07",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-4",
+            "date": "2027-04-08",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-5",
+            "date": "2027-04-09",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-6",
+            "date": "2027-04-10",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-7",
+            "date": "2027-04-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-8",
+            "date": "2027-04-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-9",
+            "date": "2027-04-13",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-10",
+            "date": "2027-04-14",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-11",
+            "date": "2027-04-15",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1lbjl8j-12",
+            "date": "2027-04-16",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0TN9RPzRt57q7fi5wSRWZv6rLB8sJEhoH3XTVW5umWZDxf1wKcrbA7VUCdxe5CHLBl",
+        "url": "https://www.facebook.com/marnav.dk/posts/to-uger-med-fuld-fokus-p%C3%A5-tankskibe-i-oktober-har-studerende-p%C3%A5-4-semester-af-ud/1982765016107527/",
+        "verifiedAt": "2026-10-25T17:17:02.822Z"
       }
     }
   ]
