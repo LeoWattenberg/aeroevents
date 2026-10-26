@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-26T05:17:02.917Z",
+  "verifiedAt": "2026-10-26T17:17:02.612Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -6539,6 +6539,129 @@
         "externalId": "post-pfbid0F9GF3i5ss27uxD45nC1NcHxyqGwrUpoXiRGzMQitqym4V8YvMaZnxKkzoJthR5vfl",
         "url": "https://www.facebook.com/aerojazz/posts/ok-alle-sammen-se-lige-her-juhuuuu-vi-er-simpelthen-blevet-nomineret-til-%C3%A5rets-s/1744899160973006/",
         "verifiedAt": "2026-10-26T05:17:02.917Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02wjdc21nw6twjgpna6t1bvpwhgk3zjqjm5bsjeezzrepaorztes-2db8d77e",
+      "title": "To uger med fuld fokus på tankskibe",
+      "description": "To uger med fuld fokus på tankskibe\nI oktober har studerende på 4. semester af uddannelsen til skibsfører og to eksterne deltagere gennemført vores to-ugers avanceret kursus i olie- og kemikalietankskibe.\nDet var to intense og lærerige uger.\nKurset er for officerer med ansvar for lastning, losning, lasthåndtering og tankrensning, samt for tilsynsførende og tankskibsoperatører.\nNæste kursus: 5.-16. april 2027\nIngen undervisning i weekenden, så der er tid til at nyde VisitÆrø\nSe programmet og tilmeld dig her: https://marnav.nemtilmeld.dk/670/\n.\n.\n.\n.\n#MARNAV #Ærø #DetBlåDanmark #Skibsfører #visitærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-pm1kdc-1",
+            "date": "2027-04-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-2",
+            "date": "2027-04-06",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-3",
+            "date": "2027-04-07",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-4",
+            "date": "2027-04-08",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-5",
+            "date": "2027-04-09",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-6",
+            "date": "2027-04-10",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-7",
+            "date": "2027-04-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-8",
+            "date": "2027-04-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-9",
+            "date": "2027-04-13",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-10",
+            "date": "2027-04-14",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-11",
+            "date": "2027-04-15",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-pm1kdc-12",
+            "date": "2027-04-16",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02Wjdc21nW6twJGPNA6t1BvpwHgk3zJqJM5BSJEezzREPAorzTEsaJPgbzmL8K3texl",
+        "url": "https://www.facebook.com/marnav.dk/posts/to-uger-med-fuld-fokus-p%C3%A5-tankskibe-i-oktober-har-studerende-p%C3%A5-4-semester-af-ud/1982765016107527/",
+        "verifiedAt": "2026-10-26T17:17:02.612Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0phhxvgi1qdumruhbw9tsi6vh1dzygeheq2qbhngdnbh9mfqgawc-a5edf057",
+      "title": "Tusmørkeaften – Thanksgiving-inspireret middag i levende lys",
+      "description": "Tusmørkeaften – Thanksgiving-inspireret middag i levende lys\nHelstegt kalkun, søde kartofler med ristede pekannødder, tranebærsauce og lun æbletærte med vaniljeis.\nFredag den 27. november inviterer vi til Tusmørkeaften hos På Torvet – en middag inspireret af Thanksgiving med smage og retter, som mange danskere ikke kender så godt.\nHovedretten serveres family style med fade og skåle på bordet, som deles rundt. En hyggelig måde at samles om maden på.\nOg rammerne bliver noget ganske særligt: Tusmørkeaften er en del af Ærøs Lokal Fredag, hvor det elektriske lys slukkes, og levende lys tændes i Ærøskøbings gader og huse. Det giver byen en helt særlig stemning, når mørket falder på.\nFredag den 27. november kl. 18.00\n525 kr. pr. person\nDer er et begrænset antal pladser, og bordbestilling er nødvendig.\nLæs mere om Tusmørkeaften og menuen på vores hjemmeside. Vi anbefaler at bestille bord i god tid.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1i8buj-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1i8buj-2",
+            "date": "2026-11-27",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0PHhxVgi1qDuMRuHbW9Tsi6VH1DzyGEheq2QBhnGdNBh9MfqgAWcx65S4UMpGxtbel",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-tusm%C3%B8rkeaften-thanksgiving-inspireret-middag-i-levende-lys-%EF%B8%8Fhelstegt-kalkun-s%C3%B8d/1799954695471523/",
+        "verifiedAt": "2026-10-26T17:17:02.612Z"
       }
     }
   ]
