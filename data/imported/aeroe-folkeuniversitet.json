@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-folkeuniversitet",
-  "verifiedAt": "2026-10-25T17:17:02.822Z",
+  "verifiedAt": "2026-10-26T05:17:02.917Z",
   "events": [
     {
       "id": "aeroe-folkeuniversitet-robotter-i-hjemmet-kan-de-erstatte-mennesker",
@@ -222,7 +222,8 @@
         "sourceId": "aeroe-folkeuniversitet",
         "externalId": "haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider",
         "url": "https://fuko.dk/kurser/haandtering-af-landbrugets-udfordringer-med-kvaelstof-og-pesticider/",
-        "verifiedAt": "2026-10-25T17:17:02.822Z"
+        "verifiedAt": "2026-10-26T05:17:02.917Z",
+        "modifiedAt": "2026-10-26T05:01:32.000Z"
       }
     }
   ]

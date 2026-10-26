@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-25T17:17:02.822Z",
+  "verifiedAt": "2026-10-26T05:17:02.917Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -6441,6 +6441,104 @@
         "externalId": "post-pfbid0TN9RPzRt57q7fi5wSRWZv6rLB8sJEhoH3XTVW5umWZDxf1wKcrbA7VUCdxe5CHLBl",
         "url": "https://www.facebook.com/marnav.dk/posts/to-uger-med-fuld-fokus-p%C3%A5-tankskibe-i-oktober-har-studerende-p%C3%A5-4-semester-af-ud/1982765016107527/",
         "verifiedAt": "2026-10-25T17:17:02.822Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02k4jhttuzc4nv43wuz7vd9skhnhmvnp2a6t8reft8lctvibtp2m-f0446915",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-ftzm38-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02k4jHTTuzC4Nv43wuz7Vd9SkhNhMVnP2A6T8ReFt8LCTvibTP2MHVTSg72ZBBq2Atl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-10-26T05:17:02.917Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02usd4zlij71guqd2pi6xhzupnu8yzyqtaynx68iqxt8ms2pvzch-a8dd9086",
+      "title": "Igen i år indtager Anna Bob Øhavet Festival som konferencier på Eriksens Plads",
+      "description": "Igen i år indtager Anna Bob Øhavet Festival som konferencier på Eriksens Plads!\nHun glæder sig til at tage godt imod jer og vores artister!\nVi ses på Øhavet Festival ‘26\n17. - 18. Juli på Eriksens Plads, Ærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1wbxw2q-1",
+            "date": "2027-07-17",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1wbxw2q-2",
+            "date": "2027-07-18",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02Usd4zLiJ71gUqD2pi6XHZupnU8YzyqTaYNx68iQXt8ms2PvzcHtNeWj5adfFuLQbl",
+        "url": "https://www.facebook.com/oehavetfestival/posts/igen-i-%C3%A5r-indtager-anna-bob-%C3%B8havet-festival-som-konferencier-p%C3%A5-eriksens-plads-h/1323369039959234/",
+        "verifiedAt": "2026-10-26T05:17:02.917Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0f9gf3i5ss27uxd45nc1nchxyqgwrupoxirgzmqitqym4v8yvmaz-b3d4a1b8",
+      "title": "OK alle sammen Se lige her Juhuuuu",
+      "description": "OK alle sammen Se lige her Juhuuuu\nVi er simpelthen blevet nomineret til Årets Scene ved Danish Music Awards 2026, arrangeret af Jazz Danmark\nKæmpe tak til alle jer, der støtter op om festivalen og besøger os år efter år, som frivillige , publikummer , musikere og sponsorer\nOg kæmpe anerkendelse for alt det arbejde, der ligger bag nu, og har været på øen i mange, mange år . Tak for at Ærø Jazzfestival som scene bliver fremhævet ved så stort og landsdækkende et arrangement\nVi er simpelthen så stolte og glade\nTak til Jazz Danmark og kæmpe krammer fra bestyrelsen:\nKarin Nielsen, Louise Harder Fischer, , Anne Mette Holstein , , Christian Stadager, Henrik Hollender og og\nVi håber, vi ses til generalforsamlingen d. 2. November, hvor vi giver et glas bobler og fejrer nomineringen sammen!\nBillede: Niels Solholm",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1e95bd3-1",
+            "date": "2026-11-02",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0F9GF3i5ss27uxD45nC1NcHxyqGwrUpoXiRGzMQitqym4V8YvMaZnxKkzoJthR5vfl",
+        "url": "https://www.facebook.com/aerojazz/posts/ok-alle-sammen-se-lige-her-juhuuuu-vi-er-simpelthen-blevet-nomineret-til-%C3%A5rets-s/1744899160973006/",
+        "verifiedAt": "2026-10-26T05:17:02.917Z"
       }
     }
   ]
