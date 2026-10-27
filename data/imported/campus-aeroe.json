@@ -1,6 +1,6 @@
 {
   "sourceId": "campus-aeroe",
-  "verifiedAt": "2026-10-26T17:17:02.612Z",
+  "verifiedAt": "2026-10-27T17:17:03.081Z",
   "events": [
     {
       "id": "campus-aeroe-7956",
@@ -541,50 +541,6 @@
       }
     },
     {
-      "id": "campus-aeroe-series-aabent-metalvaerksted",
-      "title": "Åbent (Metal)værksted",
-      "description": "Åbent Værksted på Navigationsskolen med Rasmus – hver mandag\nHer kan du arbejde med reparation af knallerter og cykler samt udføre mindre jernprojekter. For at deltage skal du have gennemført §17-kurset online, som giver adgang til værkstedets maskiner og processer\n• Her kan du:\n• Reparere din knallert eller cykel\n• Lave små projekter i jern\n• Prøve at svejse, bukke og forme\n• Være en del af et hyggeligt fællesskab med god stemning\nCampus-holdet er åbent for alle under uddannelse fra 15 + år. Ingen tilmelding – bare mød op.",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Reberbanen, Marstal",
-        "url": "https://campusaeroe.dk/venue/reberbanen-marstal/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-10-26",
-          "kind": "timed",
-          "startTime": "18:30"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270607T183000",
-        "rdates": [],
-        "exdates": [
-          "2026-12-28T18:30",
-          "2027-02-22T18:30",
-          "2027-03-22T18:30",
-          "2027-03-29T18:30",
-          "2027-05-17T18:30"
-        ],
-        "overrides": [],
-        "durationMinutes": 120
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "series-aabent-metalvaerksted",
-        "url": "https://campusaeroe.dk/event/aabent-metalvaerksted/",
-        "verifiedAt": "2026-10-26T17:17:02.612Z",
-        "modifiedAt": "2026-07-06T07:26:55.000Z"
-      }
-    },
-    {
       "id": "campus-aeroe-series-campus-idraet",
       "title": "CAMPUS-IDRÆT",
       "description": "Kom og vær aktiv med andre unge fra 15+, der er ingen tilmelding, bare mød op.\nLeder: Klaus Fynsk Norup, underviser på HF",
@@ -627,7 +583,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet",
         "url": "https://campusaeroe.dk/event/campus-idraet/",
-        "verifiedAt": "2026-10-26T17:17:02.612Z",
+        "verifiedAt": "2026-10-27T17:17:03.081Z",
         "modifiedAt": "2026-08-17T08:13:49.000Z"
       }
     },
@@ -673,7 +629,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet-2",
         "url": "https://campusaeroe.dk/event/campus-idraet-2/",
-        "verifiedAt": "2026-10-26T17:17:02.612Z",
+        "verifiedAt": "2026-10-27T17:17:03.081Z",
         "modifiedAt": "2026-08-17T08:22:05.000Z"
       }
     },
@@ -720,8 +676,52 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-musik",
         "url": "https://campusaeroe.dk/event/campus-musik/",
-        "verifiedAt": "2026-10-26T17:17:02.612Z",
+        "verifiedAt": "2026-10-27T17:17:03.081Z",
         "modifiedAt": "2026-08-17T08:02:57.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-series-aabent-metalvaerksted",
+      "title": "Åbent (Metal)værksted",
+      "description": "Åbent Værksted på Navigationsskolen med Rasmus – hver mandag\nHer kan du arbejde med reparation af knallerter og cykler samt udføre mindre jernprojekter. For at deltage skal du have gennemført §17-kurset online, som giver adgang til værkstedets maskiner og processer\n• Her kan du:\n• Reparere din knallert eller cykel\n• Lave små projekter i jern\n• Prøve at svejse, bukke og forme\n• Være en del af et hyggeligt fællesskab med god stemning\nCampus-holdet er åbent for alle under uddannelse fra 15 + år. Ingen tilmelding – bare mød op.",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Reberbanen, Marstal",
+        "url": "https://campusaeroe.dk/venue/reberbanen-marstal/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-11-02",
+          "kind": "timed",
+          "startTime": "18:30"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=MO;UNTIL=20270607T183000",
+        "rdates": [],
+        "exdates": [
+          "2026-12-28T18:30",
+          "2027-02-22T18:30",
+          "2027-03-22T18:30",
+          "2027-03-29T18:30",
+          "2027-05-17T18:30"
+        ],
+        "overrides": [],
+        "durationMinutes": 120
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "series-aabent-metalvaerksted",
+        "url": "https://campusaeroe.dk/event/aabent-metalvaerksted/",
+        "verifiedAt": "2026-10-27T17:17:03.081Z",
+        "modifiedAt": "2026-07-06T07:26:55.000Z"
       }
     },
     {
@@ -760,7 +760,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8081",
         "url": "https://campusaeroe.dk/event/babycafe-barnets-sproglige-udvikling/",
-        "verifiedAt": "2026-10-26T17:17:02.612Z",
+        "verifiedAt": "2026-10-27T17:17:03.081Z",
         "modifiedAt": "2026-10-05T06:53:15.000Z"
       }
     },
@@ -801,7 +801,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "7963",
         "url": "https://campusaeroe.dk/event/fejring-af-faellesskaber-og-uddannelse-paa-aeroe/",
-        "verifiedAt": "2026-10-26T17:17:02.612Z",
+        "verifiedAt": "2026-10-27T17:17:03.081Z",
         "modifiedAt": "2026-10-01T07:42:08.000Z"
       }
     },
@@ -841,7 +841,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8077",
         "url": "https://campusaeroe.dk/event/babycafe-sansemotorik-i-teori-og-praksis/",
-        "verifiedAt": "2026-10-26T17:17:02.612Z",
+        "verifiedAt": "2026-10-27T17:17:03.081Z",
         "modifiedAt": "2026-10-01T09:53:24.000Z"
       }
     },
@@ -881,7 +881,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8079",
         "url": "https://campusaeroe.dk/event/babycafe-tryghed-og-tilknytning/",
-        "verifiedAt": "2026-10-26T17:17:02.612Z",
+        "verifiedAt": "2026-10-27T17:17:03.081Z",
         "modifiedAt": "2026-10-01T09:56:18.000Z"
       }
     }

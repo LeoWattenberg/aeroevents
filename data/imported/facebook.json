@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-26T17:17:02.612Z",
+  "verifiedAt": "2026-10-27T17:17:03.081Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -6662,6 +6662,227 @@
         "externalId": "post-pfbid0PHhxVgi1qDuMRuHbW9Tsi6VH1DzyGEheq2QBhnGdNBh9MfqgAWcx65S4UMpGxtbel",
         "url": "https://www.facebook.com/PaaTorvet/posts/-tusm%C3%B8rkeaften-thanksgiving-inspireret-middag-i-levende-lys-%EF%B8%8Fhelstegt-kalkun-s%C3%B8d/1799954695471523/",
         "verifiedAt": "2026-10-26T17:17:02.612Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02t99fgmdqgaazoqahrygdazdkjbe3zpvsj74wnmtmdtijjkydun-c46a5a58",
+      "title": "Tusmørkeaften – Thanksgiving-inspireret middag i levende lys",
+      "description": "Tusmørkeaften – Thanksgiving-inspireret middag i levende lys\nHelstegt kalkun, søde kartofler med ristede pekannødder, tranebærsauce og lun æbletærte med vaniljeis.\nFredag den 27. november inviterer vi til Tusmørkeaften hos På Torvet – en middag inspireret af Thanksgiving med smage og retter, som mange danskere ikke kender så godt.\nHovedretten serveres family style med fade og skåle på bordet, som deles rundt. En hyggelig måde at samles om maden på.\nOg rammerne bliver noget ganske særligt: Tusmørkeaften er en del af Ærøs Lokal Fredag, hvor det elektriske lys slukkes, og levende lys tændes i Ærøskøbings gader og huse. Det giver byen en helt særlig stemning, når mørket falder på.\nFredag den 27. november kl. 18.00\n525 kr. pr. person\nDer er et begrænset antal pladser, og bordbestilling er nødvendig.\nLæs mere om Tusmørkeaften og menuen på vores hjemmeside. Vi anbefaler at bestille bord i god tid.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1spe91r-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1spe91r-2",
+            "date": "2026-11-27",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02T99fgMdqgaaZoQaHryGdazdKJbE3ZPVsj74WnMTMDtijjkYdUNVThcXakW1ggJ94l",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-tusm%C3%B8rkeaften-thanksgiving-inspireret-middag-i-levende-lys-%EF%B8%8Fhelstegt-kalkun-s%C3%B8d/1799954695471523/",
+        "verifiedAt": "2026-10-27T17:17:03.081Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid031vaj4yqhnjnhn81k87wgj467kohlephbrg21q5qcqj1e5azgs9-9e1ff5df",
+      "title": "OBS",
+      "description": "OBS!\nForedraget \"Fra Øresund til Arktis\" er UDSOLGT!\nVi beklager (på den gode måde).\nFor jer som har sikret billet, vil der være indgang i Strandstræde. Bemærk, at foredraget er i morgen onsdag den 28. oktober klokken 19.00!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "booking": {
+        "required": false,
+        "soldOut": true
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-pw09mn-1",
+            "date": "2026-10-28",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid031VAJ4YqHNjnhn81k87WgJ467koHLEpHbRg21q5qCQJ1e5AZGS9pNGexxpt65YckZl",
+        "url": "https://www.facebook.com/MarstalMuseum/posts/obsforedraget-fra-%C3%B8resund-til-arktis-er-udsolgt-vi-beklager-p%C3%A5-den-gode-m%C3%A5defor-/1892237329113541/",
+        "verifiedAt": "2026-10-27T17:17:03.081Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid08xjaapzyhzt9dfwudonrwvpmn2lnotpnazscdkelw4fllfeclpx-69bf95fc",
+      "title": "På",
+      "description": "På søndag den 1. november er det Allehelgen\nAllehelgen er en dag, hvor vi sammen mødes, og mindes dem vi har mistet. Der skabes et helt særligt rum gennem bøn, salmer, musik og lystænding, når præsterne læser navnene op på dem, der er gået bort i løbet af året.\nVi står sammen i sorgen\nFoto: Folkekirken.dk",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-18x0c7x-1",
+            "date": "2026-11-01",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid08xjAApZyhzt9DFWUDonRWvPMN2LnotpNAzSCdKeLw4fLLFeCLPxCmRYhT4TX49xrl",
+        "url": "https://www.facebook.com/aeroepastorat/posts/p%C3%A5-s%C3%B8ndag-den-1-november-er-det-allehelgen-%EF%B8%8Fallehelgen-er-en-dag-hvor-vi-sammen-/1123164673795609/",
+        "verifiedAt": "2026-10-27T17:17:03.081Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gx66yjhdlqaj8utyiswspmawjflkqory4enxeamkmgxuu4hb7xt-317ee18d",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1dynif7-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gX66YJHdLqaJ8UTYisWSpmawJFLKqoRY4eNXeamkMgXUU4HB7xtycLjLFPtwDY5fl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-10-27T17:17:03.081Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0tbzr6ra9fy6wtknv2fgjwzxbwwvybb5pxsb6zedgcnp5fgbkxbv-580423c9",
+      "title": "To uger med fuld fokus på tankskibe",
+      "description": "To uger med fuld fokus på tankskibe\nI oktober har studerende på 4. semester af uddannelsen til skibsfører og to eksterne deltagere gennemført vores to-ugers avanceret kursus i olie- og kemikalietankskibe.\nDet var to intense og lærerige uger.\nKurset er for officerer med ansvar for lastning, losning, lasthåndtering og tankrensning, samt for tilsynsførende og tankskibsoperatører.\nNæste kursus: 5.-16. april 2027\nIngen undervisning i weekenden, så der er tid til at nyde VisitÆrø\nSe programmet og tilmeld dig her: https://marnav.nemtilmeld.dk/670/\n.\n.\n.\n.\n#MARNAV #Ærø #DetBlåDanmark #Skibsfører #visitærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1vt0dhb-1",
+            "date": "2027-04-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-2",
+            "date": "2027-04-06",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-3",
+            "date": "2027-04-07",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-4",
+            "date": "2027-04-08",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-5",
+            "date": "2027-04-09",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-6",
+            "date": "2027-04-10",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-7",
+            "date": "2027-04-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-8",
+            "date": "2027-04-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-9",
+            "date": "2027-04-13",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-10",
+            "date": "2027-04-14",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-11",
+            "date": "2027-04-15",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vt0dhb-12",
+            "date": "2027-04-16",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0TBzR6rA9FY6WTKnv2fgJWzXbwwVYbB5pXsB6zeDGcnp5FGbKxBVxATEWdt6DJmPvl",
+        "url": "https://www.facebook.com/marnav.dk/posts/to-uger-med-fuld-fokus-p%C3%A5-tankskibe-i-oktober-har-studerende-p%C3%A5-4-semester-af-ud/1982765016107527/",
+        "verifiedAt": "2026-10-27T17:17:03.081Z"
       }
     }
   ]

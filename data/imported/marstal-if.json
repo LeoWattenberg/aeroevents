@@ -1,6 +1,6 @@
 {
   "sourceId": "marstal-if",
-  "verifiedAt": "2026-10-26T17:17:02.612Z",
+  "verifiedAt": "2026-10-27T17:17:03.081Z",
   "events": [
     {
       "id": "marstal-if-667422",
@@ -33,7 +33,7 @@
         "sourceId": "marstal-if",
         "externalId": "667422",
         "url": "https://www.marstalif.dk/kampvisning?poolrowid=508116&matchid=667422",
-        "verifiedAt": "2026-10-26T17:17:02.612Z"
+        "verifiedAt": "2026-10-27T17:17:03.081Z"
       }
     },
     {
@@ -67,7 +67,7 @@
         "sourceId": "marstal-if",
         "externalId": "642775",
         "url": "https://www.marstalif.dk/kampvisning?poolrowid=501685&matchid=642775",
-        "verifiedAt": "2026-10-26T17:17:02.612Z"
+        "verifiedAt": "2026-10-27T17:17:03.081Z"
       }
     },
     {
@@ -101,7 +101,7 @@
         "sourceId": "marstal-if",
         "externalId": "659729",
         "url": "https://www.marstalif.dk/kampvisning?poolrowid=503447&matchid=659729",
-        "verifiedAt": "2026-10-26T17:17:02.612Z"
+        "verifiedAt": "2026-10-27T17:17:03.081Z"
       }
     }
   ]
