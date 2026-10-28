@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-28T05:17:03.017Z",
+  "verifiedAt": "2026-10-28T17:17:02.380Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -6950,6 +6950,84 @@
         "externalId": "post-pfbid0wwX79PCvXTzGCfNQ7qgbNBUbjf7Lm9sX79vqoA9Hg2tqeTqnJgwDVs9FZrhT7gcQl",
         "url": "https://www.facebook.com/MarstalMuseum/posts/obsforedraget-fra-%C3%B8resund-til-arktis-er-udsolgt-vi-beklager-p%C3%A5-den-gode-m%C3%A5defor-/1892237329113541/",
         "verifiedAt": "2026-10-28T05:17:03.017Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02xtzytjtagncutcuhvqkpmwefjktrgvrcetpsu4biaupngnjsoz-d51e1935",
+      "title": "Julefrokost i Ærøskøbing –",
+      "description": "Julefrokost i Ærøskøbing – fredag den 4. december\nSild, fiskefileter, flæskesteg, frikadeller, and, medister og risalamande – alt det, der hører sig til en klassisk dansk julefrokost.\nFredag den 4. december inviterer vi til julefrokost hos På Torvet midt i Ærøskøbing. Vi dækker op til en aften med julebuffet ad libitum, hvor du kan gå flere gange og smage dig gennem de klassiske julefavoritter.\nHer er der god tid til at sætte sig til rette, spise, skåle og hygge sig sammen. Julebuffeten serveres fra kl. 18.00 til 21.00, og caféen holder åbent helt til midnat. Så der er ingen grund til at skynde sig videre.\nFredag den 4. december 2026\nJulebuffet kl. 18.00–21.00 · Caféen åben til midnat\nVoksne: 235 kr. pr. person\nBørn til og med 12 år: 110 kr. pr. person\nDer er et begrænset antal pladser, så vi anbefaler at bestille bord i god tid.\nDu finder mere information om julefrokosten på vores hjemmeside.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1oiv1hr-1",
+            "date": "2026-12-04",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1oiv1hr-2",
+            "date": "2026-12-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "facebook-1oiv1hr-3",
+            "date": "2026-12-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02XTZytJtAGnCUTcuhVqkPmweFJKtRGVrcEtpSu4BiAupngnjsozgKFqEWfTZxoCSVl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julefrokost-i-%C3%A6r%C3%B8sk%C3%B8bing-fredag-den-4-december-sild-fiskefileter-fl%C3%A6skesteg-fri/1803629778437348/",
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0r8cadpvjm6pivybvqogbqkcbsrmslleoechxhyvdgibrazk28nh-6357f300",
+      "title": "Kom på Søbygaard",
+      "description": "Kom på Søbygaard lørdag den 7. november og deltag på en skrækkelig (u) hyggelig familieworkshop, hvor vi sammen bygger en stor lysskulptur, som en del af festivalen Lys I Mørket på Ærø.\nVi laver også lanterner, drikker varm kakao ved bålet og besøger Jagtslottet i mørke - for dem som tør!\nDet er fra kl. 15 - 18 og tilmelding er ikke nødvendig. Det er gratis at deltage.\nWorkshoppen er et samarbejde mellem Søbygaard Ærø, KunstVærkStedet Ærø/ Viften - Ærø samt Ærø Turist & Erhverv\n#visitaero #soebygaardaeroe #aeroekommune #lysimørket #Ærø Se mindre",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1hangvl-1",
+            "date": "2026-11-07",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0r8cAdPVJM6pivYbVqogbqkCBsrMsLLeoEchxhyVdgibRAzK28NH9pknNuFLaQs2gl",
+        "url": "https://www.facebook.com/ViftenAeroe/posts/kom-p%C3%A5-s%C3%B8bygaard-l%C3%B8rdag-den-7-november-og-deltag-p%C3%A5-en-skr%C3%A6kkelig-u-hyggelig-fam/1128319373356463/",
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     }
   ]

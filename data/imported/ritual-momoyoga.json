@@ -1,6 +1,6 @@
 {
   "sourceId": "ritual-momoyoga",
-  "verifiedAt": "2026-10-28T05:17:03.017Z",
+  "verifiedAt": "2026-10-28T17:17:02.380Z",
   "events": [
     {
       "id": "ritual-momoyoga-30437714",
@@ -577,13 +577,13 @@
         "kind": "registration",
         "details": "Plads bestilles via Momoyoga."
       },
-      "status": "scheduled",
+      "status": "cancelled",
       "publication": "published",
       "booking": {
         "required": true,
         "soldOut": false,
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146824/Flow-Yoga",
-        "details": "9 af 10 pladser er ledige."
+        "details": "10 af 10 pladser er ledige."
       },
       "schedule": {
         "kind": "explicit",
@@ -601,7 +601,8 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146824",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146824/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z",
+        "modifiedAt": "2026-10-28T08:31:33.000Z"
       }
     },
     {
@@ -644,7 +645,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146825",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146825/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -687,7 +688,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146826",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146826/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -730,7 +731,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146827",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146827/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -773,7 +774,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146828",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146828/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -816,7 +817,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146829",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146829/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -859,7 +860,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146830",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146830/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -902,7 +903,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146831",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146831/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -945,7 +946,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146832",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146832/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -988,7 +989,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146833",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146833/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1031,7 +1032,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146834",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146834/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1074,7 +1075,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146835",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146835/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1117,7 +1118,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146836",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146836/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1160,7 +1161,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146837",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146837/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1203,7 +1204,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146838",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146838/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1246,7 +1247,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146839",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146839/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1289,7 +1290,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146840",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146840/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1332,7 +1333,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146841",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146841/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1375,7 +1376,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146842",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146842/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1418,7 +1419,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146843",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146843/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1461,7 +1462,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146844",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146844/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1504,7 +1505,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146845",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146845/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1547,7 +1548,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146846",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146846/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1590,7 +1591,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146847",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146847/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1633,7 +1634,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146848",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146848/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1676,7 +1677,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146849",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146849/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1719,7 +1720,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146850",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146850/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1762,7 +1763,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146851",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146851/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1805,7 +1806,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146852",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146852/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1848,7 +1849,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146853",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146853/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1891,7 +1892,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146854",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146854/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1934,7 +1935,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146855",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146855/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -1977,7 +1978,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146856",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146856/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2020,7 +2021,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146857",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146857/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2063,7 +2064,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146858",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146858/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2106,7 +2107,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146859",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146859/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2149,7 +2150,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146860",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146860/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2192,7 +2193,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146861",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146861/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2235,7 +2236,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146862",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146862/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2278,7 +2279,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146863",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146863/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2321,7 +2322,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146864",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146864/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2364,7 +2365,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146865",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146865/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2407,7 +2408,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146866",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146866/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2450,7 +2451,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146867",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146867/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2493,7 +2494,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146868",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146868/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2536,7 +2537,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146869",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146869/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2579,7 +2580,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146870",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146870/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2622,7 +2623,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146871",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146871/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2665,7 +2666,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146872",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146872/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2708,7 +2709,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146873",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146873/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2751,7 +2752,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146874",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146874/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2794,7 +2795,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146875",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146875/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2837,7 +2838,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30146876",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30146876/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2880,7 +2881,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437721",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437721/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2923,7 +2924,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437722",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437722/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -2966,7 +2967,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437723",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437723/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3009,7 +3010,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437724",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437724/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3052,7 +3053,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437725",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437725/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3095,7 +3096,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437726",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437726/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3138,7 +3139,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437727",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437727/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3181,7 +3182,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437728",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437728/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3224,7 +3225,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437729",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437729/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3267,7 +3268,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437730",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437730/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3310,7 +3311,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437731",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437731/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3353,7 +3354,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437732",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437732/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3396,7 +3397,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437733",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437733/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3439,7 +3440,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437734",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437734/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3482,7 +3483,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437735",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437735/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3525,7 +3526,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437736",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437736/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3568,7 +3569,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437737",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437737/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3611,7 +3612,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437738",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437738/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3654,7 +3655,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437739",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437739/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3697,7 +3698,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437740",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437740/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3740,7 +3741,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437741",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437741/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3783,7 +3784,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437742",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437742/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3826,7 +3827,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437743",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437743/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3869,7 +3870,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437744",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437744/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3912,7 +3913,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437745",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437745/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3955,7 +3956,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437746",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437746/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -3998,7 +3999,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437747",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437747/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4041,7 +4042,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437748",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437748/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4084,7 +4085,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437749",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437749/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4127,7 +4128,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437750",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437750/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4170,7 +4171,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437751",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437751/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4213,7 +4214,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437752",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437752/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4256,7 +4257,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437753",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437753/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4299,7 +4300,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437754",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437754/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4342,7 +4343,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437755",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437755/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4385,7 +4386,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437756",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437756/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4428,7 +4429,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437757",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437757/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4471,7 +4472,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437758",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437758/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4514,7 +4515,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437759",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437759/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4557,7 +4558,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437760",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437760/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4600,7 +4601,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437761",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437761/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4643,7 +4644,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437762",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437762/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4686,7 +4687,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437763",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437763/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4729,7 +4730,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437764",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437764/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4772,7 +4773,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437765",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437765/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4815,7 +4816,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437766",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437766/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4858,7 +4859,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437767",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437767/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4901,7 +4902,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437768",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437768/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4944,7 +4945,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437769",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437769/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -4987,7 +4988,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437770",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437770/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -5030,7 +5031,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437771",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437771/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     },
     {
@@ -5073,7 +5074,7 @@
         "sourceId": "ritual-momoyoga",
         "externalId": "30437772",
         "url": "https://www.momoyoga.com/nurtureaeroe/lesson/30437772/Flow-Yoga",
-        "verifiedAt": "2026-10-28T05:17:03.017Z"
+        "verifiedAt": "2026-10-28T17:17:02.380Z"
       }
     }
   ]
