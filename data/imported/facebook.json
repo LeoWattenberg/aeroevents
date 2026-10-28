@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-27T17:17:03.081Z",
+  "verifiedAt": "2026-10-28T05:17:03.017Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -6883,6 +6883,73 @@
         "externalId": "post-pfbid0TBzR6rA9FY6WTKnv2fgJWzXbwwVYbB5pXsB6zeDGcnp5FGbKxBVxATEWdt6DJmPvl",
         "url": "https://www.facebook.com/marnav.dk/posts/to-uger-med-fuld-fokus-p%C3%A5-tankskibe-i-oktober-har-studerende-p%C3%A5-4-semester-af-ud/1982765016107527/",
         "verifiedAt": "2026-10-27T17:17:03.081Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02jtahakefnvbrjgga12tam1ecprcafrsbvxbmwjwztjdvozghvv-68334f93",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-zvhe7t-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02jtaHAKeFNVBRjGga12TAM1EcpRcAfRSbVxBMWjwztjDVozGHvv4Dc1kbzsstefhal",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-10-28T05:17:03.017Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0wwx79pcvxtzgcfnq7qgbnbubjf7lm9sx79vqoa9hg2tqetqnjgw-4c011265",
+      "title": "OBS",
+      "description": "OBS!\nForedraget \"Fra Øresund til Arktis\" er UDSOLGT!\nVi beklager (på den gode måde).\nFor jer som har sikret billet, vil der være indgang i Strandstræde. Bemærk, at foredraget er i morgen onsdag den 28. oktober klokken 19.00!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "booking": {
+        "required": false,
+        "soldOut": true
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-unubll-1",
+            "date": "2026-10-28",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0wwX79PCvXTzGCfNQ7qgbNBUbjf7Lm9sX79vqoA9Hg2tqeTqnJgwDVs9FZrhT7gcQl",
+        "url": "https://www.facebook.com/MarstalMuseum/posts/obsforedraget-fra-%C3%B8resund-til-arktis-er-udsolgt-vi-beklager-p%C3%A5-den-gode-m%C3%A5defor-/1892237329113541/",
+        "verifiedAt": "2026-10-28T05:17:03.017Z"
       }
     }
   ]
