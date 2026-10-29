@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-28T17:17:02.380Z",
+  "verifiedAt": "2026-10-29T05:17:02.305Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -7028,6 +7028,113 @@
         "externalId": "post-pfbid0r8cAdPVJM6pivYbVqogbqkCBsrMsLLeoEchxhyVdgibRAzK28NH9pknNuFLaQs2gl",
         "url": "https://www.facebook.com/ViftenAeroe/posts/kom-p%C3%A5-s%C3%B8bygaard-l%C3%B8rdag-den-7-november-og-deltag-p%C3%A5-en-skr%C3%A6kkelig-u-hyggelig-fam/1128319373356463/",
         "verifiedAt": "2026-10-28T17:17:02.380Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02cpasmvvozqzgskkxajxssteltzil2pwqjttgxp2sxlhovpw1qx-871668dc",
+      "title": "På",
+      "description": "På søndag den 1. november er det Allehelgen\nAllehelgen er en dag, hvor vi sammen mødes, og mindes dem vi har mistet. Der skabes et helt særligt rum gennem bøn, salmer, musik og lystænding, når præsterne læser navnene op på dem, der er gået bort i løbet af året.\nVi står sammen i sorgen\nFoto: Folkekirken.dk",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1p37aez-1",
+            "date": "2026-11-01",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02CpAsMVVoZQZGskKXajXssTeLtZiL2PwqjtTgXp2SxLHovPw1qXVFnzPZL9Ek9DLyl",
+        "url": "https://www.facebook.com/aeroepastorat/posts/p%C3%A5-s%C3%B8ndag-den-1-november-er-det-allehelgen-%EF%B8%8Fallehelgen-er-en-dag-hvor-vi-sammen-/1123164673795609/",
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0glw6fa1tx8z3elyw6jbfaofe6kreysd2qewrycbbvhos75rnal8-d003025e",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-14chyj7-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gLw6FA1tX8z3eLYW6jBFAofE6KReYSd2qewrycBBvHos75rnAL8dvxhhbSRHEitZl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0tuvny9forh16c3yn9a9ocqka1qaxkq8tsiv8otzwy61gn8nkiof-239a1e9b",
+      "title": "Julefrokost i Ærøskøbing –",
+      "description": "Julefrokost i Ærøskøbing – fredag den 4. december\nSild, fiskefileter, flæskesteg, frikadeller, and, medister og risalamande – alt det, der hører sig til en klassisk dansk julefrokost.\nFredag den 4. december inviterer vi til julefrokost hos På Torvet midt i Ærøskøbing. Vi dækker op til en aften med julebuffet ad libitum, hvor du kan gå flere gange og smage dig gennem de klassiske julefavoritter.\nHer er der god tid til at sætte sig til rette, spise, skåle og hygge sig sammen. Julebuffeten serveres fra kl. 18.00 til 21.00, og caféen holder åbent helt til midnat. Så der er ingen grund til at skynde sig videre.\nFredag den 4. december 2026\nJulebuffet kl. 18.00–21.00 · Caféen åben til midnat\nVoksne: 235 kr. pr. person\nBørn til og med 12 år: 110 kr. pr. person\nDer er et begrænset antal pladser, så vi anbefaler at bestille bord i god tid.\nDu finder mere information om julefrokosten på vores hjemmeside.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-bn8wc4-1",
+            "date": "2026-12-04",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-bn8wc4-2",
+            "date": "2026-12-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "facebook-bn8wc4-3",
+            "date": "2026-12-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0Tuvny9FoRh16C3yN9a9ocQKa1qAXkq8tsiV8otZwy61gN8nkiof31SWY4T69Kzv5l",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julefrokost-i-%C3%A6r%C3%B8sk%C3%B8bing-fredag-den-4-december-sild-fiskefileter-fl%C3%A6skesteg-fri/1803629778437348/",
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
       }
     }
   ]

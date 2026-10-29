@@ -1,6 +1,6 @@
 {
   "sourceId": "aeldresagen-aeroe",
-  "verifiedAt": "2026-10-28T17:17:02.380Z",
+  "verifiedAt": "2026-10-29T05:17:02.305Z",
   "events": [
     {
       "id": "aeldresagen-aeroe-443367982",
@@ -116,44 +116,6 @@
       }
     },
     {
-      "id": "aeldresagen-aeroe-443367804",
-      "title": "Krolf",
-      "description": "Kom og få et spil krolf på banerne i Marstal Idrætsforening.\nVi mødes hver onsdag kl. 10-12.\nKr. 275 årligt.\nKontakt Lise og Flemming Johansen på 21 65 20 35",
-      "organizerId": "aeldresagen-aeroe",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "MIF`s baner",
-        "address": "Marstal"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "For alle"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "aeldresagen-443367804",
-            "date": "2026-11-04",
-            "kind": "timed",
-            "startTime": "10:00",
-            "endDate": "2026-11-04",
-            "endTime": "12:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeldresagen-aeroe",
-        "externalId": "443367804",
-        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443367804-krolf",
-        "verifiedAt": "2026-10-28T17:17:02.380Z"
-      }
-    },
-    {
       "id": "aeldresagen-aeroe-443446336",
       "title": "Ærø Mandeklub",
       "description": "I Ærø Mandeklub får du inspirerende samtaler og samvær med andre mænd.\nVi mødes til en kop kaffe, og vi arrangerer også foredrag og udflugter.\nHenvendelse til Gert Olsen, 42 19 91 67 eller Torben Bergmos, 51 34 07 66",
@@ -189,7 +151,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443446336",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443446336-aeroe-mandeklub",
-        "verifiedAt": "2026-10-28T17:17:02.380Z"
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
       }
     },
     {
@@ -227,7 +189,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443477909",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443477909-naturen-som-traeningsrum",
-        "verifiedAt": "2026-10-28T17:17:02.380Z"
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
       }
     },
     {
@@ -270,7 +232,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443511176",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443511176-soendagscafe",
-        "verifiedAt": "2026-10-28T17:17:02.380Z"
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
       }
     },
     {
@@ -309,7 +271,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443480337",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443480337-soendagscafe-i-marstal",
-        "verifiedAt": "2026-10-28T17:17:02.380Z"
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
       }
     },
     {
@@ -346,7 +308,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443368026",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443368026-petanque",
-        "verifiedAt": "2026-10-28T17:17:02.380Z"
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
       }
     },
     {
@@ -384,7 +346,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443478288",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443478288-gaature-og-stavgang",
-        "verifiedAt": "2026-10-28T17:17:02.380Z"
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
       }
     },
     {
@@ -427,7 +389,45 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443468911",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443468911-spisevenner",
-        "verifiedAt": "2026-10-28T17:17:02.380Z"
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
+      }
+    },
+    {
+      "id": "aeldresagen-aeroe-443367804",
+      "title": "Krolf",
+      "description": "Kom og få et spil krolf på banerne i Marstal Idrætsforening.\nVi mødes hver onsdag kl. 10-12.\nKr. 275 årligt.\nKontakt Lise og Flemming Johansen på 21 65 20 35",
+      "organizerId": "aeldresagen-aeroe",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "MIF`s baner",
+        "address": "Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "For alle"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "aeldresagen-443367804",
+            "date": "2026-11-04",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endDate": "2026-11-04",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeldresagen-aeroe",
+        "externalId": "443367804",
+        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443367804-krolf",
+        "verifiedAt": "2026-10-29T05:17:02.305Z"
       }
     }
   ]
