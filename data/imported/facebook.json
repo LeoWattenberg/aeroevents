@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-29T05:17:02.305Z",
+  "verifiedAt": "2026-10-29T17:17:03.754Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -7135,6 +7135,70 @@
         "externalId": "post-pfbid0Tuvny9FoRh16C3yN9a9ocQKa1qAXkq8tsiV8otZwy61gN8nkiof31SWY4T69Kzv5l",
         "url": "https://www.facebook.com/PaaTorvet/posts/-julefrokost-i-%C3%A6r%C3%B8sk%C3%B8bing-fredag-den-4-december-sild-fiskefileter-fl%C3%A6skesteg-fri/1803629778437348/",
         "verifiedAt": "2026-10-29T05:17:02.305Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02uw6mfqqvnkjcs68scwghaesndvu3jsca7mwvl3gesm5cx9sup6-cc915091",
+      "title": "Kom på Søbygaard",
+      "description": "Kom på Søbygaard lørdag den 7. november og deltag på en skrækkelig (u) hyggelig familieworkshop, hvor vi sammen bygger en stor lysskulptur, som en del af festivalen Lys I Mørket på Ærø.\nVi laver også lanterner, drikker varm kakao ved bålet og besøger Jagtslottet i mørke - for dem som tør!\nDet er fra kl. 15 - 18 og tilmelding er ikke nødvendig. Det er gratis at deltage.\nWorkshoppen er et samarbejde mellem Søbygaard Ærø, KunstVærkStedet Ærø/ Viften - Ærø samt Ærø Turist & Erhverv\n#visitaero #soebygaardaeroe #aeroekommune #lysimørket #Ærø Se mindre",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-11owdr2-1",
+            "date": "2026-11-07",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02uW6MFQqvNkjcS68scwgHAesnDVU3jSCa7mwvL3geSM5cx9SUP6WCj1BZi6nsZPHEl",
+        "url": "https://www.facebook.com/ViftenAeroe/posts/kom-p%C3%A5-s%C3%B8bygaard-l%C3%B8rdag-den-7-november-og-deltag-p%C3%A5-en-skr%C3%A6kkelig-u-hyggelig-fam/1128319373356463/",
+        "verifiedAt": "2026-10-29T17:17:03.754Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid08na9sgjetljukwslemvs3inv9aajryhjtfax9nxpdph6nas7csz-4bbd056d",
+      "title": "På",
+      "description": "På søndag den 1. november er det Allehelgen\nAllehelgen er en dag, hvor vi sammen mødes, og mindes dem vi har mistet. Der skabes et helt særligt rum gennem bøn, salmer, musik og lystænding, når præsterne læser navnene op på dem, der er gået bort i løbet af året.\nVi står sammen i sorgen\nFoto: Folkekirken.dk",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1k92iwq-1",
+            "date": "2026-11-01",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid08na9sgJEtLJUKwSLEmvS3inV9AajRYHjtFaX9nxPDpH6naS7Cszao16cc7SJhdCfl",
+        "url": "https://www.facebook.com/aeroepastorat/posts/p%C3%A5-s%C3%B8ndag-den-1-november-er-det-allehelgen-%EF%B8%8Fallehelgen-er-en-dag-hvor-vi-sammen-/1123164673795609/",
+        "verifiedAt": "2026-10-29T17:17:03.754Z"
       }
     }
   ]
