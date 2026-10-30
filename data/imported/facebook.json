@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-30T05:17:02.841Z",
+  "verifiedAt": "2026-10-30T17:17:03.240Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -7275,6 +7275,71 @@
         "externalId": "post-pfbid02XHQybAcRTFwUSwVSGK8Ts7Wrm2FvWPf7JCphAuZdwa72L7QdXVBC4M4GSpvMaF1Jl",
         "url": "https://www.facebook.com/PaaTorvet/posts/-julefrokost-i-%C3%A6r%C3%B8sk%C3%B8bing-fredag-den-4-december-sild-fiskefileter-fl%C3%A6skesteg-fri/1803629778437348/",
         "verifiedAt": "2026-10-30T05:17:02.841Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02jjjrmzxbrdkfp8pfwcygb32mxuxge8egiz5bnxvexsztysvc3n-0f34846a",
+      "title": "Oppyntning af Ærøskøbing",
+      "description": "Oppyntning af Ærøskøbing\nTraditonen tro pynter vi i fællesskab byen op til jul, ugen op til det første julemarked og dermed mødes vi i år søndag den 15/11\nHvis du har tid og lyst, er du mere end velkommen til at komme og hjælpe til! Vi mødes på torvet kl. 10.00!\nHvis du kommer, så giv gerne besked, så vi kan sikre at der er nok kaffe/kage til alle!\nKH Ærøskøbing Erhvervsforening",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1870kit-1",
+            "date": "2026-11-15",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02JJJRmZxbRDkFP8pfwCYGb32MxUXGE8EgiZ5bNxvExSzTYSVC3Ngm5uPwUkJvF1Wnl",
+        "url": "https://www.facebook.com/julehyggeiaeroskobing/posts/-oppyntning-af-%C3%A6r%C3%B8sk%C3%B8bingtraditonen-tro-pynter-vi-i-f%C3%A6llesskab-byen-op-til-jul-u/1753702333347405/",
+        "verifiedAt": "2026-10-30T17:17:03.240Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0qxtalfdzxu2gx2thge9qdyh51uszsw1m2lztjyhxyhcjhgxnju7-45d3fffc",
+      "title": "Kom på Søbygaard",
+      "description": "Kom på Søbygaard lørdag den 7. november og deltag på en skrækkelig (u) hyggelig familieworkshop, hvor vi sammen bygger en stor lysskulptur, som en del af festivalen Lys I Mørket på Ærø.\nVi laver også lanterner, drikker varm kakao ved bålet og besøger Jagtslottet i mørke - for dem som tør!\nDet er fra kl. 15 - 18 og tilmelding er ikke nødvendig. Det er gratis at deltage.\nWorkshoppen er et samarbejde mellem Søbygaard Ærø, KunstVærkStedet Ærø/ Viften - Ærø samt Ærø Turist & Erhverv\n#visitaero #soebygaardaeroe #aeroekommune #lysimørket #Ærø Se mindre",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-19xuwpk-1",
+            "date": "2026-11-07",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0qxTALFDZXU2GX2THGE9QdYh51USzSW1m2LZtjYHXyhCJHGxNjU7h7omgZRGsRibyl",
+        "url": "https://www.facebook.com/ViftenAeroe/posts/kom-p%C3%A5-s%C3%B8bygaard-l%C3%B8rdag-den-7-november-og-deltag-p%C3%A5-en-skr%C3%A6kkelig-u-hyggelig-fam/1128319373356463/",
+        "verifiedAt": "2026-10-30T17:17:03.240Z"
       }
     }
   ]
