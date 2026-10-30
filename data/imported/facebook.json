@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-29T17:17:03.754Z",
+  "verifiedAt": "2026-10-30T05:17:02.841Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -7199,6 +7199,82 @@
         "externalId": "post-pfbid08na9sgJEtLJUKwSLEmvS3inV9AajRYHjtFaX9nxPDpH6naS7Cszao16cc7SJhdCfl",
         "url": "https://www.facebook.com/aeroepastorat/posts/p%C3%A5-s%C3%B8ndag-den-1-november-er-det-allehelgen-%EF%B8%8Fallehelgen-er-en-dag-hvor-vi-sammen-/1123164673795609/",
         "verifiedAt": "2026-10-29T17:17:03.754Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02kcnorpwinhgk5zpmm4oygjtgzpxbtz5yae6wfuj5exjdj4mggq-416d88ad",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1re624-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02kCNoRpwiNhgk5ZpMM4oyGjtGzpxbTZ5yae6WFUj5exJDj4MgGqMJ4oTyKR82x7Lhl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-10-30T05:17:02.841Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02xhqybacrtfwuswvsgk8ts7wrm2fvwpf7jcphauzdwa72l7qdxv-641cd163",
+      "title": "Julefrokost i Ærøskøbing –",
+      "description": "Julefrokost i Ærøskøbing – fredag den 4. december\nSild, fiskefileter, flæskesteg, frikadeller, and, medister og risalamande – alt det, der hører sig til en klassisk dansk julefrokost.\nFredag den 4. december inviterer vi til julefrokost hos På Torvet midt i Ærøskøbing. Vi dækker op til en aften med julebuffet ad libitum, hvor du kan gå flere gange og smage dig gennem de klassiske julefavoritter.\nHer er der god tid til at sætte sig til rette, spise, skåle og hygge sig sammen. Julebuffeten serveres fra kl. 18.00 til 21.00, og caféen holder åbent helt til midnat. Så der er ingen grund til at skynde sig videre.\nFredag den 4. december 2026\nJulebuffet kl. 18.00–21.00 · Caféen åben til midnat\nVoksne: 235 kr. pr. person\nBørn til og med 12 år: 110 kr. pr. person\nDer er et begrænset antal pladser, så vi anbefaler at bestille bord i god tid.\nDu finder mere information om julefrokosten på vores hjemmeside.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1gg5s7z-1",
+            "date": "2026-12-04",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1gg5s7z-2",
+            "date": "2026-12-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "facebook-1gg5s7z-3",
+            "date": "2026-12-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02XHQybAcRTFwUSwVSGK8Ts7Wrm2FvWPf7JCphAuZdwa72L7QdXVBC4M4GSpvMaF1Jl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julefrokost-i-%C3%A6r%C3%B8sk%C3%B8bing-fredag-den-4-december-sild-fiskefileter-fl%C3%A6skesteg-fri/1803629778437348/",
+        "verifiedAt": "2026-10-30T05:17:02.841Z"
       }
     }
   ]
