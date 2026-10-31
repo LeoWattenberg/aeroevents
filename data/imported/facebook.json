@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-31T05:17:02.388Z",
+  "verifiedAt": "2026-10-31T17:17:03.037Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -7385,6 +7385,134 @@
         "externalId": "post-pfbid0Tjmnfzz4c9mycNAHhajv4HS3uT8aV1sezoYeaQsmV5pLUtxfuZNGXsgbXpbaP3RRl",
         "url": "https://www.facebook.com/PaaTorvet/posts/-julefrokost-i-%C3%A6r%C3%B8sk%C3%B8bing-fredag-den-4-december-sild-fiskefileter-fl%C3%A6skesteg-fri/1803629778437348/",
         "verifiedAt": "2026-10-31T05:17:02.388Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02m5afjyb7k8cbvqcq2wjenhuyjzo5dbqwfzrhp1krnoqme1cp85-cb0737e8",
+      "title": "Kom til årets Skumringstime sammen med Foreningen Norden og Ærø Folkebibliotek. I år er temaet \"Demokrati i Norden\" med oplæg fra Frederik Wulle, ung i politik og Claus Grube,…",
+      "description": "Kom til årets Skumringstime sammen med Foreningen Norden og Ærø Folkebibliotek. I år er temaet \"Demokrati i Norden\" med oplæg fra Frederik Wulle, ung i politik og Claus Grube, Kammerherre & ambassadør.\nBibliotekar Marie starter arrangementet med højtlæsning af årets tekst \"De vil drukne i deres mødres tårer\" af Johannes Anyuru.\nVi glæder os til at se jer\nDet sker på mandag 9/11\npå Ærøskøbing bibliotek kl. 19\nHent gratis billetter her:",
+      "organizerId": "aeroe-folkebibliotek",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-16u25xg-1",
+            "date": "2026-11-09",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02m5AFJYB7k8CbvQCQ2WjENHUYjZo5dBQwFZrhP1KRNoqmE1cP85TNFjk2DKPfqJV5l",
+        "url": "https://www.facebook.com/arrebib/posts/kom-til-%C3%A5rets-skumringstime-sammen-med-foreningen-norden-og-%C3%A6r%C3%B8-folkebibliotek-i/1604439858377651/",
+        "verifiedAt": "2026-10-31T17:17:03.037Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02uotswv9pnwzuicd7viaeuby7md6ncjfy5gu6a4kfp7axbyqgye-c6ea7279",
+      "title": "Kom på Søbygaard",
+      "description": "Kom på Søbygaard lørdag den 7. november og deltag på en skrækkelig (u) hyggelig familieworkshop, hvor vi sammen bygger en stor lysskulptur, som en del af festivalen Lys I Mørket på Ærø.\nVi laver også lanterner, drikker varm kakao ved bålet og besøger Jagtslottet i mørke - for dem som tør!\nDet er fra kl. 15 - 18 og tilmelding er ikke nødvendig. Det er gratis at deltage.\nWorkshoppen er et samarbejde mellem Søbygaard Ærø, KunstVærkStedet Ærø/ Viften - Ærø samt Ærø Turist & Erhverv\n#visitaero #soebygaardaeroe #aeroekommune #lysimørket #Ærø Se mindre",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-k30esy-1",
+            "date": "2026-11-07",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02uotsWv9PNwZuiCD7viAeubY7MD6ncJfY5Gu6A4kFP7AXBYQgyerpMejsLw9CUBhCl",
+        "url": "https://www.facebook.com/ViftenAeroe/posts/kom-p%C3%A5-s%C3%B8bygaard-l%C3%B8rdag-den-7-november-og-deltag-p%C3%A5-en-skr%C3%A6kkelig-u-hyggelig-fam/1128319373356463/",
+        "verifiedAt": "2026-10-31T17:17:03.037Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0ekferqlea5hg363pb3muiatdt91jtmwb7adwfyekymeuhqdj2tt-5bbd8feb",
+      "title": "Oppyntning af Ærøskøbing",
+      "description": "Oppyntning af Ærøskøbing\nTraditonen tro pynter vi i fællesskab byen op til jul, ugen op til det første julemarked og dermed mødes vi i år søndag den 15/11\nHvis du har tid og lyst, er du mere end velkommen til at komme og hjælpe til! Vi mødes på torvet kl. 10.00!\nHvis du kommer, så giv gerne besked, så vi kan sikre at der er nok kaffe/kage til alle!\nKH Ærøskøbing Erhvervsforening",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-3t56qq-1",
+            "date": "2026-11-15",
+            "kind": "timed",
+            "startTime": "10:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0EkfErQLEa5HG363pb3mUiATDt91JTMWb7adwFyeKyMEUhqdJ2TT1b7v4eYptMD4Vl",
+        "url": "https://www.facebook.com/julehyggeiaeroskobing/posts/-oppyntning-af-%C3%A6r%C3%B8sk%C3%B8bingtraditonen-tro-pynter-vi-i-f%C3%A6llesskab-byen-op-til-jul-u/1753702333347405/",
+        "verifiedAt": "2026-10-31T17:17:03.037Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gan5x1k9hgjtveigfkesyfb3aq5fstcu4w7xhagew1qfavdkhft-d4c6aacf",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1ju3qjy-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gAn5x1k9hgjtveigFKESYfB3Aq5fSTcU4w7xHaGEW1qFavdkHFTNw41nZ1ZYzLx4l",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-10-31T17:17:03.037Z"
       }
     }
   ]
