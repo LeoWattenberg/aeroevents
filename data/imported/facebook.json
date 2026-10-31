@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-10-30T17:17:03.240Z",
+  "verifiedAt": "2026-10-31T05:17:02.388Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -7340,6 +7340,51 @@
         "externalId": "post-pfbid0qxTALFDZXU2GX2THGE9QdYh51USzSW1m2LZtjYHXyhCJHGxNjU7h7omgZRGsRibyl",
         "url": "https://www.facebook.com/ViftenAeroe/posts/kom-p%C3%A5-s%C3%B8bygaard-l%C3%B8rdag-den-7-november-og-deltag-p%C3%A5-en-skr%C3%A6kkelig-u-hyggelig-fam/1128319373356463/",
         "verifiedAt": "2026-10-30T17:17:03.240Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0tjmnfzz4c9mycnahhajv4hs3ut8av1sezoyeaqsmv5plutxfuzn-bf225c40",
+      "title": "Julefrokost i Ærøskøbing –",
+      "description": "Julefrokost i Ærøskøbing – fredag den 4. december\nSild, fiskefileter, flæskesteg, frikadeller, and, medister og risalamande – alt det, der hører sig til en klassisk dansk julefrokost.\nFredag den 4. december inviterer vi til julefrokost hos På Torvet midt i Ærøskøbing. Vi dækker op til en aften med julebuffet ad libitum, hvor du kan gå flere gange og smage dig gennem de klassiske julefavoritter.\nHer er der god tid til at sætte sig til rette, spise, skåle og hygge sig sammen. Julebuffeten serveres fra kl. 18.00 til 21.00, og caféen holder åbent helt til midnat. Så der er ingen grund til at skynde sig videre.\nFredag den 4. december 2026\nJulebuffet kl. 18.00–21.00 · Caféen åben til midnat\nVoksne: 235 kr. pr. person\nBørn til og med 12 år: 110 kr. pr. person\nDer er et begrænset antal pladser, så vi anbefaler at bestille bord i god tid.\nDu finder mere information om julefrokosten på vores hjemmeside.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-iq4gxl-1",
+            "date": "2026-12-04",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-iq4gxl-2",
+            "date": "2026-12-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          },
+          {
+            "id": "facebook-iq4gxl-3",
+            "date": "2026-12-04",
+            "kind": "timed",
+            "startTime": "18:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0Tjmnfzz4c9mycNAHhajv4HS3uT8aV1sezoYeaQsmV5pLUtxfuZNGXsgbXpbaP3RRl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julefrokost-i-%C3%A6r%C3%B8sk%C3%B8bing-fredag-den-4-december-sild-fiskefileter-fl%C3%A6skesteg-fri/1803629778437348/",
+        "verifiedAt": "2026-10-31T05:17:02.388Z"
       }
     }
   ]
