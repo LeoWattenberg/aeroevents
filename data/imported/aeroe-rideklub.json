@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-rideklub",
-  "verifiedAt": "2026-10-31T17:17:03.037Z",
+  "verifiedAt": "2026-11-01T17:17:03.522Z",
   "events": [
     {
       "id": "aeroe-rideklub-nisseoptog",
@@ -34,40 +34,6 @@
         "externalId": "nisseoptog",
         "url": "https://www.aeroerideklub.dk/events-1/nisseoptog",
         "verifiedAt": "2026-09-15T16:17:03.394Z"
-      }
-    },
-    {
-      "id": "aeroe-rideklub-halloween-springning",
-      "title": "halloween springning",
-      "description": "Kom gerne udklædt eller kom som du er. Det skal være hyggeligt og for alle.",
-      "organizerId": "aeroe-rideklub",
-      "categoryIds": [
-        "sport-motion",
-        "forening-faellesskab"
-      ],
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold er ikke bekræftet."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "rideklub-halloween-springning",
-            "date": "2026-10-31",
-            "kind": "timed",
-            "startTime": "12:00",
-            "endTime": "18:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-rideklub",
-        "externalId": "halloween-springning",
-        "url": "https://www.aeroerideklub.dk/events-1/halloween-springning",
-        "verifiedAt": "2026-09-16T16:17:02.588Z"
       }
     },
     {
