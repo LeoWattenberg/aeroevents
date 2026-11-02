@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-02T05:17:08.016Z",
+  "verifiedAt": "2026-11-02T17:17:03.384Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -7703,6 +7703,89 @@
         "externalId": "post-pfbid0gUacDX3chqybEYWTmbnovM9Tfw7oFbC2nkJPaCncBLVaEicENEawiZaCpHA8NXcMl",
         "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
         "verifiedAt": "2026-11-02T05:17:08.016Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02ku1f1punvf1obwoc6usmxbr9h4tvtzjzud5cfwcjsvzjcy7ftb-8b96c723",
+      "title": "Kom til årets Skumringstime sammen med Foreningen Norden og Ærø Folkebibliotek. I år er temaet \"Demokrati i Norden\" med oplæg fra Frederik Wulle, ung i politik og Claus Grube,…",
+      "description": "Kom til årets Skumringstime sammen med Foreningen Norden og Ærø Folkebibliotek. I år er temaet \"Demokrati i Norden\" med oplæg fra Frederik Wulle, ung i politik og Claus Grube, Kammerherre & ambassadør.\nBibliotekar Marie starter arrangementet med højtlæsning af årets tekst \"De vil drukne i deres mødres tårer\" af Johannes Anyuru.\nVi glæder os til at se jer\nDet sker på mandag 9/11\npå Ærøskøbing bibliotek kl. 19\nHent gratis billetter her:",
+      "organizerId": "aeroe-folkebibliotek",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1gz3fel-1",
+            "date": "2026-11-09",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02ku1F1PuNvf1obwoC6USmxBr9h4TvtzjZuD5cFwCJSvzJcY7ftbEPwWrEEyQxecqKl",
+        "url": "https://www.facebook.com/arrebib/posts/kom-til-%C3%A5rets-skumringstime-sammen-med-foreningen-norden-og-%C3%A6r%C3%B8-folkebibliotek-i/1604439858377651/",
+        "verifiedAt": "2026-11-02T17:17:03.384Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02mkodzp4cgcrrggkrftzhpthf6wy77nurdqia8wmyny6h8uwzrv-a82a1449",
+      "title": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com",
+      "description": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com\nVi har dog åbent i forbindelse med Ærøskøbings Julemarkeds dage, fredag og lørdag: d. 20 & 21. og 27. & 28. november + d. 4. & 5. og 11. & 12. december.\nLæs mere om det på: https://www.visitaeroe.dk/.../julemarked-i-aeroeskoebing...\nPS: Tak for alle hilsner og lykkeønskninger til Ziggy Emils dåb og vores bryllupsdag d. 24. oktober!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1oekvos-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1oekvos-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1oekvos-3",
+            "date": "2026-12-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1oekvos-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1oekvos-5",
+            "date": "2027-10-24",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02mkodZp4cGCRrGGKrFTzHpThF6wy77nuRdQia8wmYNy6H8UWzrVK1p2sH1HXhMNjGl",
+        "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-ferie-de-to-f%C3%B8rste-uger-i-november-og-har-siden-kun-%C3%A5bent-f/1751024967023560/",
+        "verifiedAt": "2026-11-02T17:17:03.384Z"
       }
     }
   ]
