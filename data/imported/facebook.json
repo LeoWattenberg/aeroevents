@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-01T17:17:03.522Z",
+  "verifiedAt": "2026-11-02T05:17:08.016Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -7672,6 +7672,37 @@
         "externalId": "post-pfbid0qnJA36wpi4CKYES7B8go4hXHEAZa6BT1SbGZJBDacrxQRVnUbQMy4c516sKus69fl",
         "url": "https://www.facebook.com/ViftenAeroe/posts/kom-p%C3%A5-s%C3%B8bygaard-l%C3%B8rdag-den-7-november-og-deltag-p%C3%A5-en-skr%C3%A6kkelig-u-hyggelig-fam/1128319373356463/",
         "verifiedAt": "2026-11-01T17:17:03.522Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0guacdx3chqybeywtmbnovm9tfw7ofbc2nkjpacncblvaeicenea-98e9bd4a",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-12npud4-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gUacDX3chqybEYWTmbnovM9Tfw7oFbC2nkJPaCncBLVaEicENEawiZaCpHA8NXcMl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-11-02T05:17:08.016Z"
       }
     }
   ]
