@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-03T17:17:03.257Z",
+  "verifiedAt": "2026-11-04T05:17:02.756Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -7989,6 +7989,91 @@
         "externalId": "post-pfbid0R7KPTFaBoFzT5NRJ4hvH6rVEykv4Wddm76NovQ4jhT1VTJdZ3TJ7CKtpxriSHb8Pl",
         "url": "https://www.facebook.com/oehavetfestival/posts/igen-i-%C3%A5r-indtager-anna-bob-%C3%B8havet-festival-som-konferencier-p%C3%A5-eriksens-plads-h/1323369039959234/",
         "verifiedAt": "2026-11-03T17:17:03.257Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid01h3bj5tjravtebwmafkz771agfsaqen31ubj7qgdc9i2anthpkn-867d6fab",
+      "title": "Har du lyst til at deltage med en bod til årets julemarked i Ærøskøbings smukke rammer",
+      "description": "Har du lyst til at deltage med en bod til årets julemarked i Ærøskøbings smukke rammer?\nLæs mere nedenfor\nVi ønsker at præsentere alt det bedste fra vores smukke ø samt fra andre kreative udstillere, som ønsker at komme til Ærø. Vi stræber efter indretning og præsentation, som er tilpasset de smukke rammer i Ærøskøbing.\nHVORNÅR\nJulemarkederne afholdes i år over fire lørdage.\nHenholdsvis lørdag d. 21/11, lørdag d. 28/11, lørdag d. 5/12 samt lørdag d. 12/12.\nVi holder åbent fra kl. 9.30-17 alle dage.\nBODER\nMan kan vælge at leje en bod for en, to, tre eller alle lørdage.\nVi stræber efter indretning og præsentation, som er tilpasset de smukke rammer i Ærøskøbing. Derfor er der nogle retningslinjer til interiør omkring boderne, etc. som vil blive udspecificeret ved tilmelding.\nPris for leje af boder er:\nStore boder på torvet med adgang til strøm: 600 kr. pr. lørdag\n(disse boder er forbeholdt mad og drikke)\nSmå boder på torvet med adgang til strøm 450 kr pr lørdag\nSmå boder i Søndergade 350 kr. pr. lørdag\nDe store boder på torvet er som skrevet ovenfor forbeholdt mad, men skulle der være plads til andre, vil vi tage en vurdering af, hvilke produkter der egner sig bedste til torvet og trække lod mellem disse.\nNår vi har modtaget din ansøgning, vil din tilmelding først være gældende og bindende når leje indtægten er indbetalt. Ved senere aflysning refunderes pengene ikke.\nBoderne tildeles efter først-til-mølle princippet. Såfremt der er flere tilmeldte, end der er boder, oprettes en venteliste.\nInden første julemarked laves en oversigt over, hvem der har hvilke boder de enkelte weekender.\nTILMELDING:\nI kan tilmelde jer på følgende måde:\n1. Skriv en kommentar om at I ønsker at modtage tilmeldingsblanketten\n2. Send en e-mail med den udfyldte tilmeldingsblanket til info@cafe-aroma.dk\nVi glæder os til at høre fra jer og ikke mindst til endnu et smukt julemarked i Ærøskøbings hyggelige kulisse\nDe bedste hilsner\nÆrøskøbings Erhvervsforening",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-11knf39-1",
+            "date": "2026-11-21",
+            "kind": "timed",
+            "startTime": "09:30",
+            "endTime": "17:00"
+          },
+          {
+            "id": "facebook-11knf39-2",
+            "date": "2026-11-28",
+            "kind": "timed",
+            "startTime": "09:30",
+            "endTime": "17:00"
+          },
+          {
+            "id": "facebook-11knf39-3",
+            "date": "2026-12-05",
+            "kind": "timed",
+            "startTime": "09:30",
+            "endTime": "17:00"
+          },
+          {
+            "id": "facebook-11knf39-4",
+            "date": "2026-12-12",
+            "kind": "timed",
+            "startTime": "09:30",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid01H3bJ5tjRaVteBWMAFKz771agFsaqEN31Ubj7qGDC9i2anTHpkNTaSQG2TfXpxUpl",
+        "url": "https://www.facebook.com/julehyggeiaeroskobing/posts/har-du-lyst-til-at-deltage-med-en-bod-til-%C3%A5rets-julemarked-i-%C3%A6r%C3%B8sk%C3%B8bings-smukke-/1758346146216357/",
+        "verifiedAt": "2026-11-04T05:17:02.756Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gjrbvnmstpkvafrenmvhafnhzvq5ofdlsb5xlkbreaaw5gjbunu-f5b4324d",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-stoddp-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gJRbvNmstPkvafRenmvHAfNhZvQ5oFdLSb5XLKbrEAaw5gjbunuSzXx1oYGmDgUXl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-11-04T05:17:02.756Z"
       }
     }
   ]
