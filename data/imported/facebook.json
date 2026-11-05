@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-04T17:17:03.210Z",
+  "verifiedAt": "2026-11-05T05:17:07.210Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -8173,6 +8173,68 @@
         "externalId": "post-pfbid0STQLAAD3aq4zzashDmSTRtM1trAtK6WeDTkwBqjyQzeGpidaqaSLHX6hGgpMcjXMl",
         "url": "https://www.facebook.com/PaaTorvet/posts/-kig-indenfor-i-p%C3%A5-torvets-lille-julestue-%EF%B8%8Fn%C3%A5r-julemarkedet-fylder-%C3%A6r%C3%B8sk%C3%B8bing-me/1812347310898928/",
         "verifiedAt": "2026-11-04T17:17:03.210Z"
+      }
+    },
+    {
+      "id": "facebook-post-2947537548951048",
+      "title": "Vi er Stine og Lasse, og lige nu er vi i fuld gang med at gøre Ærøs nye lokalmedie, Ærønyt, klar",
+      "description": "Vi er Stine og Lasse, og lige nu er vi i fuld gang med at gøre Ærøs nye lokalmedie, Ærønyt, klar. Den 1. december er vores hjemmeside klar med journalistik til jer. Men inden da vil vi gerne ud og møde jer.\nTil disse tre samtaleaftener vil selvfølgelig fortælle lidt om, hvad vi drømmer om med Ærønyt, og hvordan vi gerne vil lave journalistik på øen. Men vi vil mindst lige så gerne høre fra jer: Hvad synes I, vi skal holde øje med? Hvilke historier fortjener at blive fortalt? Hvad rører sig rundt omkring på Ærø?\nVi håber, I har lyst til at komme forbi til en uformel snak. For vi tror på, at et godt lokalt medie bliver til i dialog med dem, det handler om. Og det er jo jer.\nDer er ingen tilmelding, så du skal blot tage naboen under armen og møde op. Og så sørger vi for en stol at sidde på, kaffe og kage.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-mjw42h-1",
+            "date": "2026-12-01",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-2947537548951048",
+        "url": "https://www.facebook.com/groups/1853077681730379/posts/2947537548951048/",
+        "verifiedAt": "2026-11-05T05:17:07.210Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02k9sk73hhjq8fav2emywrs9ale5a7ne6yomv5fgsptzkhnbhblw-39a01f8a",
+      "title": "FÆLLESSPISNING",
+      "description": "FÆLLESSPISNING D. 12/11 KL. 18.00\nculottesteg med hasselbach kartofler, sovs og sprød salat med bagte rødløg, balsamico og feta.\n240kr for mad inkl. 1 øl/vand\nBørn indtil 12 år er halv pris.\nYes!!! Det kræver tilmelding og i ringer bare eller sender sms på 30125615 eller mail på cafe@aeroebryggeri.dk. skriv navn, antal og tlf.nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-7eiq4e-1",
+            "date": "2026-11-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02k9sK73hhjq8FAv2Emywrs9ALe5A7ne6yomV5FgSPtZkHnbHBLWzwub5zjuTB4cMsl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-d-1211-kl-1800culottesteg-med-hasselbach-kartofler-sovs-og-spr%C3%B8d-/1735692778567524/",
+        "verifiedAt": "2026-11-05T05:17:07.210Z"
       }
     }
   ]
