@@ -1,6 +1,6 @@
 {
   "sourceId": "viften",
-  "verifiedAt": "2026-10-21T16:17:02.481Z",
+  "verifiedAt": "2026-11-05T17:17:02.530Z",
   "events": [
     {
       "id": "viften-29c4da51dbc547608099eb011d23c72e",
@@ -122,6 +122,49 @@
         "externalId": "d9809664226f4ac091da0f6f82221a19",
         "url": "https://www.viften.net/subjectclass/d9809664226f4ac091da0f6f82221a19",
         "verifiedAt": "2026-10-07T16:17:02.572Z"
+      }
+    },
+    {
+      "id": "viften-b42e55d0d2bb427b89062f58d2ca80dd",
+      "title": "Juletur til Svendborg 2026",
+      "description": "Velkommen med på vores årlige Juletur til Svendborg!\nVi shopper julegaver og ser Walt Disneys “Hexe” i Scala Bio kl 1330!\nVi mødes kl 08.10 ved havnen i Ærøskøbing og er tilbage kl. 17.15.\nPrisen for turen er 100 kr. (færge og biograf)\nTilmelding senest tirsdag 20/11-2026.\nHusk tøj efter vejret, madpakke eller penge til mad\nog dit aller bedste Julehumør.\nJulehilsner fra Mette, Josephine og Signe.",
+      "organizerId": "viften",
+      "categoryIds": [
+        "boern-familie"
+      ],
+      "location": {
+        "name": "færgen",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Du skal gå på et af følgende klassetrin: 4. 5. 6. 7. 8. 9. 10."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "price": "100,-",
+      "booking": {
+        "required": true,
+        "soldOut": false,
+        "url": "https://www.viften.net/subjectclass/b42e55d0d2bb427b89062f58d2ca80dd#enrollment",
+        "details": "Tilmeldingsfrist 20. november 2026 kl. 00.00"
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "viften-b42e55d0d2bb427b89062f58d2ca80dd",
+            "date": "2026-11-28",
+            "kind": "timed",
+            "startTime": "08:10"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "viften",
+        "externalId": "b42e55d0d2bb427b89062f58d2ca80dd",
+        "url": "https://www.viften.net/subjectclass/b42e55d0d2bb427b89062f58d2ca80dd",
+        "verifiedAt": "2026-11-05T17:17:02.530Z"
       }
     }
   ]
