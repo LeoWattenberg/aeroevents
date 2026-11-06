@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-05T17:17:02.530Z",
+  "verifiedAt": "2026-11-06T05:17:02.967Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -8271,6 +8271,54 @@
         "externalId": "post-pfbid0cEy9Ttqz13Ynn2aVWSkTenvv3QCvmoyY9iPTpewzeMd1RfRJgCzYo7X9uM3EVVwzl",
         "url": "https://www.facebook.com/aeroehotel/posts/-julekoncert-med-johnny-hansen-s%C3%B8ren-riis-kom-til-en-hyggelig-aften-den-18-novem/1563463392493039/",
         "verifiedAt": "2026-11-05T17:17:02.530Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02vptwnbzfczeozk7dfzdynfpkvqh6fb7jyvsazcsdhgvr5ca59w-b9d14200",
+      "title": "Kig indenfor i På Torvets lille julestue",
+      "description": "Kig indenfor i På Torvets lille julestue\nNår julemarkedet fylder Ærøskøbing med lys, liv og julestemning, åbner vi døren til vores egen lille julestue hos På Torvet.\nHer kan du gå på opdagelse blandt julepynt, nisser, juledekorationer, håndlavet julepynt og små julelækkerier.\nMåske finder du lige den lille ting, der mangler derhjemme – eller en hyggelig gave til én, du holder af.\nOg når kulden bider, kan du tage gløgg eller en varm kakao med videre ud i julemarkedet.\nJulestuen er en lille pop-up, hvor sortimentet varierer, og hvor der er plads til at kigge sig omkring og komme i julestemning.\nVi holder åbent på de fire julemarkedsdage:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nKl. 11.30–17.00\nJulestuen finder du i receptionen hos På Torvet.\nVi glæder os til at byde dig indenfor!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-ade2oz-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-ade2oz-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-ade2oz-3",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-ade2oz-4",
+            "date": "2026-12-12",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02VptWnBZfcZeoZK7dFzDYnfpkvQh6FB7JyVsaZcsDhGVR5ca59w8uRTvbgs3LB9rol",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-kig-indenfor-i-p%C3%A5-torvets-lille-julestue-%EF%B8%8Fn%C3%A5r-julemarkedet-fylder-%C3%A6r%C3%B8sk%C3%B8bing-me/1812347310898928/",
+        "verifiedAt": "2026-11-06T05:17:02.967Z"
       }
     }
   ]
