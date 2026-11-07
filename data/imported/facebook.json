@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-07T05:17:03.477Z",
+  "verifiedAt": "2026-11-07T17:17:03.098Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -8454,6 +8454,93 @@
         "externalId": "post-pfbid0SHFKs1wJmBxWrQjWabSGVShK7wiL7GxZVbAfhkN1UpYSWfxPH4YroLPhqn6F4cAml",
         "url": "https://www.facebook.com/PaaTorvet/posts/-kig-indenfor-i-p%C3%A5-torvets-lille-julestue-%EF%B8%8Fn%C3%A5r-julemarkedet-fylder-%C3%A6r%C3%B8sk%C3%B8bing-me/1812347310898928/",
         "verifiedAt": "2026-11-07T05:17:03.477Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0cymfjq9t18mgb395gj6uzftpdxuqiq2w1y9dhnemqumwmjgskpi-de1e809c",
+      "title": "JULEKONCERT MED JOHNNY HANSEN & SØREN RIIS",
+      "description": "JULEKONCERT MED JOHNNY HANSEN & SØREN RIIS\nKom til en hyggelig aften den 18. november, når Johnny Hansen og Søren Riis spiller julen ind!\nVi starter med en dejlig middag, inden vi læner os tilbage og nyder aftenens julekoncert i godt selskab.\nSpisning og efterfølgende koncert\nKun 389 kr. pr. person\nÆrø Hotel\n18. november\nTag din nabo, vennerne eller familien med til en aften med musik, nærvær og julestemning\nVi glæder os til at se jer!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1c1e86r-1",
+            "date": "2026-11-18",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1c1e86r-2",
+            "date": "2026-11-18",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0cYmfjQ9T18mgb395GJ6UZfTpdxuQiQ2W1y9DHNeMQumwMJgSkPi3ADehkeGNHuzUl",
+        "url": "https://www.facebook.com/aeroehotel/posts/-julekoncert-med-johnny-hansen-s%C3%B8ren-riis-kom-til-en-hyggelig-aften-den-18-novem/1563463392493039/",
+        "verifiedAt": "2026-11-07T17:17:03.098Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0iloxd1tybepbmdqixpxc2al8fn4npysebyswg4nt66znphguama-32284c1a",
+      "title": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com",
+      "description": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com\nVi har dog åbent i forbindelse med Ærøskøbings Julemarkeds dage, fredag og lørdag: d. 20 & 21. og 27. & 28. november + d. 4. & 5. og 11. & 12. december.\nLæs mere om det på: https://www.visitaeroe.dk/.../julemarked-i-aeroeskoebing...\nPS: Tak for alle hilsner og lykkeønskninger til Ziggy Emils dåb og vores bryllupsdag d. 24. oktober!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-xokrpw-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xokrpw-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xokrpw-3",
+            "date": "2026-12-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xokrpw-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xokrpw-5",
+            "date": "2027-10-24",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0iLoxd1TybepbMdqiXPxc2aL8fn4NPysEBYSwG4nT66ZNphgUaMazo2MHHF4GdyPsl",
+        "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-ferie-de-to-f%C3%B8rste-uger-i-november-og-har-siden-kun-%C3%A5bent-f/1751024967023560/",
+        "verifiedAt": "2026-11-07T17:17:03.098Z"
       }
     }
   ]
