@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-06T05:17:02.967Z",
+  "verifiedAt": "2026-11-07T05:17:03.477Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -8319,6 +8319,141 @@
         "externalId": "post-pfbid02VptWnBZfcZeoZK7dFzDYnfpkvQh6FB7JyVsaZcsDhGVR5ca59w8uRTvbgs3LB9rol",
         "url": "https://www.facebook.com/PaaTorvet/posts/-kig-indenfor-i-p%C3%A5-torvets-lille-julestue-%EF%B8%8Fn%C3%A5r-julemarkedet-fylder-%C3%A6r%C3%B8sk%C3%B8bing-me/1812347310898928/",
         "verifiedAt": "2026-11-06T05:17:02.967Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02g6qrezmorktz7jjdyiwdddzyneigrdjaha971njfhkhafue5eb-7dfb0514",
+      "title": "JULEKONCERT MED JOHNNY HANSEN & SØREN RIIS",
+      "description": "JULEKONCERT MED JOHNNY HANSEN & SØREN RIIS\nKom til en hyggelig aften den 18. november, når Johnny Hansen og Søren Riis spiller julen ind!\nVi starter med en dejlig middag, inden vi læner os tilbage og nyder aftenens julekoncert i godt selskab.\nSpisning og efterfølgende koncert\nKun 389 kr. pr. person\nÆrø Hotel\n18. november\nTag din nabo, vennerne eller familien med til en aften med musik, nærvær og julestemning\nVi glæder os til at se jer!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-gp8n81-1",
+            "date": "2026-11-18",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-gp8n81-2",
+            "date": "2026-11-18",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02g6QreZmorKtZ7jjdYiWddDzynEigRDJaHA971NjfhkHAFue5ebU7vk7S9y2HDW2yl",
+        "url": "https://www.facebook.com/aeroehotel/posts/-julekoncert-med-johnny-hansen-s%C3%B8ren-riis-kom-til-en-hyggelig-aften-den-18-novem/1563463392493039/",
+        "verifiedAt": "2026-11-07T05:17:03.477Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02mtt9yb6lsr48zmugjzujegjtkal6y2bcs7mkur9hgvtvbb3efz-0e36ce6f",
+      "title": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com",
+      "description": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com\nVi har dog åbent i forbindelse med Ærøskøbings Julemarkeds dage, fredag og lørdag: d. 20 & 21. og 27. & 28. november + d. 4. & 5. og 11. & 12. december.\nLæs mere om det på: https://www.visitaeroe.dk/.../julemarked-i-aeroeskoebing...\nPS: Tak for alle hilsner og lykkeønskninger til Ziggy Emils dåb og vores bryllupsdag d. 24. oktober!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-ocb7b7-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-ocb7b7-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-ocb7b7-3",
+            "date": "2026-12-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-ocb7b7-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-ocb7b7-5",
+            "date": "2027-10-24",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02mtT9YB6LSr48ZmUGjZujEgJTkaL6Y2bcs7MkuR9HgVTVBB3eFzksJE9R7yDMWJB1l",
+        "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-ferie-de-to-f%C3%B8rste-uger-i-november-og-har-siden-kun-%C3%A5bent-f/1751024967023560/",
+        "verifiedAt": "2026-11-07T05:17:03.477Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0shfks1wjmbxwrqjwabsgvshk7wil7gxzvbafhkn1upyswfxph4y-5063c81f",
+      "title": "Kig indenfor i På Torvets lille julestue",
+      "description": "Kig indenfor i På Torvets lille julestue\nNår julemarkedet fylder Ærøskøbing med lys, liv og julestemning, åbner vi døren til vores egen lille julestue hos På Torvet.\nHer kan du gå på opdagelse blandt julepynt, nisser, juledekorationer, håndlavet julepynt og små julelækkerier.\nMåske finder du lige den lille ting, der mangler derhjemme – eller en hyggelig gave til én, du holder af.\nOg når kulden bider, kan du tage gløgg eller en varm kakao med videre ud i julemarkedet.\nJulestuen er en lille pop-up, hvor sortimentet varierer, og hvor der er plads til at kigge sig omkring og komme i julestemning.\nVi holder åbent på de fire julemarkedsdage:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nKl. 11.30–17.00\nJulestuen finder du i receptionen hos På Torvet.\nVi glæder os til at byde dig indenfor!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-xhak8d-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xhak8d-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xhak8d-3",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xhak8d-4",
+            "date": "2026-12-12",
+            "kind": "timed",
+            "startTime": "11:30",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0SHFKs1wJmBxWrQjWabSGVShK7wiL7GxZVbAfhkN1UpYSWfxPH4YroLPhqn6F4cAml",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-kig-indenfor-i-p%C3%A5-torvets-lille-julestue-%EF%B8%8Fn%C3%A5r-julemarkedet-fylder-%C3%A6r%C3%B8sk%C3%B8bing-me/1812347310898928/",
+        "verifiedAt": "2026-11-07T05:17:03.477Z"
       }
     }
   ]
