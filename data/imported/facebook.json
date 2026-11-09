@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-08T17:17:01.827Z",
+  "verifiedAt": "2026-11-09T17:17:04.231Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -8628,6 +8628,139 @@
         "externalId": "post-pfbid02miJ9F2pbdFBCJ2U51YhDycu1quGgDDgdHGTZYpNEV7woxwbVuvJd6NTU6sjMvWW9l",
         "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-ferie-de-to-f%C3%B8rste-uger-i-november-og-har-siden-kun-%C3%A5bent-f/1751024967023560/",
         "verifiedAt": "2026-11-08T17:17:01.827Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02kudc2wlsjqqnknzfp2jkse4t6wnjwkxxjzw53aqvgfj2p9blwk-fa5570a9",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1vzw496-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vzw496-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vzw496-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1vzw496-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02kUDc2WLSjqQnKnzFP2JksE4t6WNjWkxxjZW53aQVGFJ2P9bLWkNzqco8sanUCqeGl",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-09T17:17:04.231Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0cncfsfsibxvgnn3gfygyvw5npn5ssjxyfexgpaullvmjw8bmxjn-5286e706",
+      "title": "JULEKONCERT MED JOHNNY HANSEN & SØREN RIIS",
+      "description": "JULEKONCERT MED JOHNNY HANSEN & SØREN RIIS\nKom til en hyggelig aften den 18. november, når Johnny Hansen og Søren Riis spiller julen ind!\nVi starter med en dejlig middag, inden vi læner os tilbage og nyder aftenens julekoncert i godt selskab.\nSpisning og efterfølgende koncert\nKun 389 kr. pr. person\nÆrø Hotel\n18. november\nTag din nabo, vennerne eller familien med til en aften med musik, nærvær og julestemning\nVi glæder os til at se jer!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-j4200s-1",
+            "date": "2026-11-18",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-j4200s-2",
+            "date": "2026-11-18",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0cNcfSFsiBXvGNN3GFyGYVW5NpN5SsjXYFexGPauLLVmjW8BMxjnmkdTtiaPLdVJol",
+        "url": "https://www.facebook.com/aeroehotel/posts/-julekoncert-med-johnny-hansen-s%C3%B8ren-riis-kom-til-en-hyggelig-aften-den-18-novem/1563463392493039/",
+        "verifiedAt": "2026-11-09T17:17:04.231Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0iaexkscen367thskbqciujztnm8yqvtl9ckjw7msolg8nvefomq-425cdc28",
+      "title": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com",
+      "description": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com\nVi har dog åbent i forbindelse med Ærøskøbings Julemarkeds dage, fredag og lørdag: d. 20 & 21. og 27. & 28. november + d. 4. & 5. og 11. & 12. december.\nLæs mere om det på: https://www.visitaeroe.dk/.../julemarked-i-aeroeskoebing...\nPS: Tak for alle hilsner og lykkeønskninger til Ziggy Emils dåb og vores bryllupsdag d. 24. oktober!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-juh8pu-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-juh8pu-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-juh8pu-3",
+            "date": "2026-12-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-juh8pu-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-juh8pu-5",
+            "date": "2027-10-24",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0iAexKsCEn367thskbqCiUJZtnM8YQvtL9ckjW7msoLg8NveFomQLuosTSdrDqNd3l",
+        "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-ferie-de-to-f%C3%B8rste-uger-i-november-og-har-siden-kun-%C3%A5bent-f/1751024967023560/",
+        "verifiedAt": "2026-11-09T17:17:04.231Z"
       }
     }
   ]
