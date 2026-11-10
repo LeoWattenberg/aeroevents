@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-09T17:17:04.231Z",
+  "verifiedAt": "2026-11-10T05:17:01.906Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -8761,6 +8761,42 @@
         "externalId": "post-pfbid0iAexKsCEn367thskbqCiUJZtnM8YQvtL9ckjW7msoLg8NveFomQLuosTSdrDqNd3l",
         "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-ferie-de-to-f%C3%B8rste-uger-i-november-og-har-siden-kun-%C3%A5bent-f/1751024967023560/",
         "verifiedAt": "2026-11-09T17:17:04.231Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0rymrh7unz9swd7swda3k9bsj1pfvtm67awh6pkxp489i5qn3mwh-6e5c6788",
+      "title": "Igen i år indtager Anna Bob Øhavet Festival som konferencier på Eriksens Plads",
+      "description": "Igen i år indtager Anna Bob Øhavet Festival som konferencier på Eriksens Plads!\nHun glæder sig til at tage godt imod jer og vores artister!\nVi ses på Øhavet Festival ‘26\n17. - 18. Juli på Eriksens Plads, Ærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-3gq7e9-1",
+            "date": "2027-07-17",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-3gq7e9-2",
+            "date": "2027-07-18",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0RYmRh7uNz9swD7SWDa3K9BsJ1pFVtM67AWh6pKxp489i5QN3mwHZP7wyvqXiB7WCl",
+        "url": "https://www.facebook.com/oehavetfestival/posts/igen-i-%C3%A5r-indtager-anna-bob-%C3%B8havet-festival-som-konferencier-p%C3%A5-eriksens-plads-h/1323369039959234/",
+        "verifiedAt": "2026-11-10T05:17:01.906Z"
       }
     }
   ]
