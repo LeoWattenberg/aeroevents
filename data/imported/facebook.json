@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-10T05:17:01.906Z",
+  "verifiedAt": "2026-11-10T17:17:03.188Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -8797,6 +8797,166 @@
         "externalId": "post-pfbid0RYmRh7uNz9swD7SWDa3K9BsJ1pFVtM67AWh6pKxp489i5QN3mwHZP7wyvqXiB7WCl",
         "url": "https://www.facebook.com/oehavetfestival/posts/igen-i-%C3%A5r-indtager-anna-bob-%C3%B8havet-festival-som-konferencier-p%C3%A5-eriksens-plads-h/1323369039959234/",
         "verifiedAt": "2026-11-10T05:17:01.906Z"
+      }
+    },
+    {
+      "id": "facebook-post-1100263319298480",
+      "title": "Yoga Nidra hos",
+      "description": "Yoga Nidra hos\nPrøv yoga hos Anna, Kærvej 17 i Ommel.\nLørdag 21. november. Varighed 1 time.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1y5vluh-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-1100263319298480",
+        "url": "https://www.facebook.com/groups/871725845485563/posts/1100263319298480/",
+        "verifiedAt": "2026-11-10T17:17:03.188Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid01hvtqb3ja6hukwi6beu6ylb5dc71wqmtwcxa76v87rwag4rt5ib-84811c69",
+      "title": "HUSK FÆLLESSPISNING",
+      "description": "HUSK FÆLLESSPISNING D.12. NOVEMBER kl.18!\nThyra laver culottesteg med lækkert tilbehør og du kan stadig nå at få en plads ved bordet. Skriv eller ring på 30125615 eller send en mail på cafe@aeroebryggeri.dk\nDet var bare det vi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-f0wf3l-1",
+            "date": "2026-11-12",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid01HvTqb3ja6HukWi6BeU6yLb5dc71wqMtwCxa76v87RwaG4RT5ib5YuxTyVPSnpFSl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/husk-f%C3%A6llesspisning-d12-november-kl18-thyra-laver-culottesteg-med-l%C3%A6kkert-tilbeh/1760775846059217/",
+        "verifiedAt": "2026-11-10T17:17:03.188Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02n26fwy84dnl8eai8jyguasx8enpzwvqctkfsqxchkrngfpcrds-6cc5d77b",
+      "title": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com",
+      "description": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com\nVi har dog åbent i forbindelse med Ærøskøbings Julemarkeds dage, fredag og lørdag: d. 20 & 21. og 27. & 28. november + d. 4. & 5. og 11. & 12. december.\nLæs mere om det på: https://www.visitaeroe.dk/.../julemarked-i-aeroeskoebing...\nPS: Tak for alle hilsner og lykkeønskninger til Ziggy Emils dåb og vores bryllupsdag d. 24. oktober!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-xj2pev-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xj2pev-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xj2pev-3",
+            "date": "2026-12-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xj2pev-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-xj2pev-5",
+            "date": "2027-10-24",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02n26fWY84dNL8eAi8jYGuAsx8eNpZwvqCTKfsqxChkRNgfpCrdszAhWmzLWrc4vBWl",
+        "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-ferie-de-to-f%C3%B8rste-uger-i-november-og-har-siden-kun-%C3%A5bent-f/1751024967023560/",
+        "verifiedAt": "2026-11-10T17:17:03.188Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gvar7li5thdod4ea84ps9bhptpbhts1zuodxiypnhxkjgexfl8q-e57541d7",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-ao0i24-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-ao0i24-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-ao0i24-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-ao0i24-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gvaR7Li5thDod4eA84Ps9bhpTPBhTs1ZUoDxiypnHXkJgeXFL8QAcX1vYRft9gjol",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-10T17:17:03.188Z"
       }
     }
   ]
