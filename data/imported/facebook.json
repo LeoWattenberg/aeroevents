@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-10T17:17:03.188Z",
+  "verifiedAt": "2026-11-11T17:17:02.375Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -8957,6 +8957,207 @@
         "externalId": "post-pfbid0gvaR7Li5thDod4eA84Ps9bhpTPBhTs1ZUoDxiypnHXkJgeXFL8QAcX1vYRft9gjol",
         "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
         "verifiedAt": "2026-11-10T17:17:03.188Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0259nb2fyzrn9xfwp9etgiplnfixvhebusztqjv1r5w5fcwsmzdp-775b9850",
+      "title": "HUSK FÆLLESSPISNING",
+      "description": "HUSK FÆLLESSPISNING D.12. NOVEMBER kl.18!\nThyra laver culottesteg med lækkert tilbehør og du kan stadig nå at få en plads ved bordet. Skriv eller ring på 30125615 eller send en mail på cafe@aeroebryggeri.dk\nDet var bare det vi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1y2rfaa-1",
+            "date": "2026-11-12",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0259NB2FyZRN9xfwp9etGiPLNfixvHebUSZtQjV1r5W5fCWSmZdpSCP5d59zrwiavel",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/husk-f%C3%A6llesspisning-d12-november-kl18-thyra-laver-culottesteg-med-l%C3%A6kkert-tilbeh/1760775846059217/",
+        "verifiedAt": "2026-11-11T17:17:02.375Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid028nmpbp892mjgufy3pi4ed5cblrua2evr819otjz6dhzwbppchv-35eeec63",
+      "title": "Er du klar til at sætte kursen mod din fremtid",
+      "description": "Er du klar til at sætte kursen mod din fremtid?\nKom til Åbent Hus på HF-Søfart i Marstal, og mød lærere, elever og fællesskabet på Ærø.\nLørdag den 23. januar og lørdag den 6. februar 2027\nDu får en 3-i-1 uddannelse:\nHF eksamen ved HF & VUC Ærø\nUddannelse som skibsassistent\nFørste modul af uddannelsen til Skibsofficer\nLæs mere: https://www.marnav.dk/hf-soefart/det-kan-hf-soefart\nTilmeld dig: https://www.marnav.dk/hf-soefart/aabent-hus\nEt liv på en ø. Hvordan lyder det?\nPå Ærø er der havn, strand og cykelstier, og du er aldrig langt fra vandet. Her bor du tæt på dine venner, og her er plads til et aktivt fritidsliv.\nOplev øen: https://www.visitaeroe.dk/\n#marnav\n#hfsøfart\n#hfsøfartmarstal\n#uddannelse\n#maritimeuddannelser\n#ungdomsuddannelse\n#altervandvedsidenafærø\n#visitærø\n#hfvucærø\n#campusærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1wslwc9-1",
+            "date": "2027-01-23",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1wslwc9-2",
+            "date": "2027-02-06",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid028nMpbp892mJguFY3Pi4eD5cbLRUa2EVr819oTjZ6DHZwBpPCHVkdYvF46och7E3dl",
+        "url": "https://www.facebook.com/marnav.dk/posts/er-du-klar-til-at-s%C3%A6tte-kursen-mod-din-fremtid-kom-til-%C3%A5bent-hus-p%C3%A5-hf-s%C3%B8fart-i-/2006499363734092/",
+        "verifiedAt": "2026-11-11T17:17:02.375Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02kj4bjn4hvnhl3njow2b6jrl7bw8qhhhspsjufwqrqov1qhbucm-aa9fabae",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1muaagd-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1muaagd-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1muaagd-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1muaagd-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02kJ4bjN4hvNhL3NJoW2B6jRL7BW8QHhHspsJUfwQrQov1QHBUcmoWLpxSbskrGWJjl",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-11T17:17:02.375Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0hzvx2ivvxnceik5ugw3cgjejn4eoalkzc765aru6vkcdud7dydl-0d9e5f43",
+      "title": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com",
+      "description": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com\nVi har dog åbent i forbindelse med Ærøskøbings Julemarkeds dage, fredag og lørdag: d. 20 & 21. og 27. & 28. november + d. 4. & 5. og 11. & 12. december.\nLæs mere om det på: https://www.visitaeroe.dk/.../julemarked-i-aeroeskoebing...\nPS: Tak for alle hilsner og lykkeønskninger til Ziggy Emils dåb og vores bryllupsdag d. 24. oktober!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1sysc03-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1sysc03-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1sysc03-3",
+            "date": "2026-12-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1sysc03-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1sysc03-5",
+            "date": "2027-10-24",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0hzVx2ivVxNceik5ugW3cGjejN4EoaLkzC765aru6VKcDuD7DYDLQHV8VNBntQxB1l",
+        "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-ferie-de-to-f%C3%B8rste-uger-i-november-og-har-siden-kun-%C3%A5bent-f/1751024967023560/",
+        "verifiedAt": "2026-11-11T17:17:02.375Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0rncrpydeakcqjpitvhglfmqowcfe15httyhenxdlvpg9gw8crar-7319dd38",
+      "title": "Igen i år indtager Anna Bob Øhavet Festival som konferencier på Eriksens Plads",
+      "description": "Igen i år indtager Anna Bob Øhavet Festival som konferencier på Eriksens Plads!\nHun glæder sig til at tage godt imod jer og vores artister!\nVi ses på Øhavet Festival ‘26\n17. - 18. Juli på Eriksens Plads, Ærø",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-j3kv80-1",
+            "date": "2027-07-17",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-j3kv80-2",
+            "date": "2027-07-18",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0RNcRPydeAkCQJPiTvHgLfmqowcFE15HtTyHeNXDLVpg9Gw8CraRgHumgWThoJ2iyl",
+        "url": "https://www.facebook.com/oehavetfestival/posts/igen-i-%C3%A5r-indtager-anna-bob-%C3%B8havet-festival-som-konferencier-p%C3%A5-eriksens-plads-h/1323369039959234/",
+        "verifiedAt": "2026-11-11T17:17:02.375Z"
       }
     }
   ]
