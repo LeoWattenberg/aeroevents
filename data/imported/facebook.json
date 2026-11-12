@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-11T17:17:02.375Z",
+  "verifiedAt": "2026-11-12T17:17:03.285Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -9158,6 +9158,199 @@
         "externalId": "post-pfbid0RNcRPydeAkCQJPiTvHgLfmqowcFE15HtTyHeNXDLVpg9Gw8CraRgHumgWThoJ2iyl",
         "url": "https://www.facebook.com/oehavetfestival/posts/igen-i-%C3%A5r-indtager-anna-bob-%C3%B8havet-festival-som-konferencier-p%C3%A5-eriksens-plads-h/1323369039959234/",
         "verifiedAt": "2026-11-11T17:17:02.375Z"
+      }
+    },
+    {
+      "id": "facebook-post-29369961002641822",
+      "title": "Fællesspisning på Sognegården",
+      "description": "Fællesspisning på Sognegården.\nFællesspisning på Sognegården.\nNu er det tid til den sidste fællesspisning på Bregninge Sognegård inden jul.\nTorsdag den 26. november kl.17.30 slår vi dørene op.\nDenne gang kan man vælge mellem flæskesteg eller nøddesteg. Prisen er den samme. Der kan max være 100 gæster, så det er med at få meldt sig.\nVi glæder os til at se jer.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1mapqvu-1",
+            "date": "2026-11-26",
+            "kind": "timed",
+            "startTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-29369961002641822",
+        "url": "https://www.facebook.com/groups/144664695598174/posts/29369961002641822/",
+        "verifiedAt": "2026-11-12T17:17:03.285Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid017mtysmzkyj3llsq7jhe362nav8jwzhbgrrep2zjmknyxhq8pxd-e100dff2",
+      "title": "HUSK FÆLLESSPISNING",
+      "description": "HUSK FÆLLESSPISNING D.12. NOVEMBER kl.18!\nThyra laver culottesteg med lækkert tilbehør og du kan stadig nå at få en plads ved bordet. Skriv eller ring på 30125615 eller send en mail på cafe@aeroebryggeri.dk\nDet var bare det vi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-6bg9gz-1",
+            "date": "2026-11-12",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid017mTYSmzkYj3LLSq7Jhe362nAV8JWzhBgRRep2zJMKnyXHQ8pXd6JkykSxv1mj1al",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/husk-f%C3%A6llesspisning-d12-november-kl18-thyra-laver-culottesteg-med-l%C3%A6kkert-tilbeh/1760775846059217/",
+        "verifiedAt": "2026-11-12T17:17:03.285Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02mqwfdprkoo5yoigsq1da5up4g1xcvubyepy4rrz8bqdgmeknpu-8f84c4ac",
+      "title": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com",
+      "description": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com\nVi har dog åbent i forbindelse med Ærøskøbings Julemarkeds dage, fredag og lørdag: d. 20 & 21. og 27. & 28. november + d. 4. & 5. og 11. & 12. december.\nLæs mere om det på: https://www.visitaeroe.dk/.../julemarked-i-aeroeskoebing...\nPS: Tak for alle hilsner og lykkeønskninger til Ziggy Emils dåb og vores bryllupsdag d. 24. oktober!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-e567c2-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-e567c2-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-e567c2-3",
+            "date": "2026-12-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-e567c2-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-e567c2-5",
+            "date": "2027-10-24",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02mqwfDPrKoo5Yoigsq1dA5uP4g1xCvUBYEpY4Rrz8BqDGMEKNPuwWxW4Zs6TC2fNNl",
+        "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-ferie-de-to-f%C3%B8rste-uger-i-november-og-har-siden-kun-%C3%A5bent-f/1751024967023560/",
+        "verifiedAt": "2026-11-12T17:17:03.285Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gkrqpcsm5c4tnxay4vysknwtd1tuyfv4ub7ik3v9brfdjb3gsyt-904eff16",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-18rs4ew-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-18rs4ew-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-18rs4ew-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-18rs4ew-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gkRQpCSM5C4tNxay4vYsKnwTD1TUyFv4UB7ik3v9bRFdJB3GsYTTM3NPRkZWdo3jl",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-12T17:17:03.285Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0hde9mfqeue9skgatdxtnctjtzlntviplcphjhcgeycwaspnmc9b-1456a9fd",
+      "title": "𝐎𝐫𝐝𝐢𝐧æ𝐫𝐭 𝐦ø𝐝𝐞 𝐢 𝐊𝐨𝐦𝐦𝐮𝐧𝐚𝐥𝐛𝐞𝐬𝐭𝐲𝐫𝐞𝐥𝐬𝐞𝐧",
+      "description": "𝐎𝐫𝐝𝐢𝐧æ𝐫𝐭 𝐦ø𝐝𝐞 𝐢 𝐊𝐨𝐦𝐦𝐮𝐧𝐚𝐥𝐛𝐞𝐬𝐭𝐲𝐫𝐞𝐥𝐬𝐞𝐧\nKommunalbestyrelsen afholder ordinært møde onsdag den 18. november 2026 kl. 19.00.\nMødet finder sted i byrådssalen og er åbent for alle interesserede.\nSe med live eller find dagsorden her https://www.aeroekommune.dk/poli.../dagsordener-og-referater",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-sqqhtk-1",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0hde9MFQeUe9SkGaTDxTncTjTzLNTviPLcphjHCgEYCWAsPnMc9Bwih2yfzyXkjAWl",
+        "url": "https://www.facebook.com/aeroekommune/posts/-%F0%9D%90%8E%F0%9D%90%AB%F0%9D%90%9D%F0%9D%90%A2%F0%9D%90%A7%C3%A6%F0%9D%90%AB%F0%9D%90%AD-%F0%9D%90%A6%C3%B8%F0%9D%90%9D%F0%9D%90%9E-%F0%9D%90%A2-%F0%9D%90%8A%F0%9D%90%A8%F0%9D%90%A6%F0%9D%90%A6%F0%9D%90%AE%F0%9D%90%A7%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%9B%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%B2%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%A7kommunalbestyrelsen-afholder-ordin%C3%A6rt-m%C3%B8de-o/1141716314887405/",
+        "verifiedAt": "2026-11-12T17:17:03.285Z"
       }
     }
   ]

@@ -1,6 +1,6 @@
 {
   "sourceId": "campus-aeroe",
-  "verifiedAt": "2026-11-11T17:17:02.375Z",
+  "verifiedAt": "2026-11-12T17:17:03.285Z",
   "events": [
     {
       "id": "campus-aeroe-7956",
@@ -628,53 +628,6 @@
       }
     },
     {
-      "id": "campus-aeroe-series-campus-musik",
-      "title": "CAMPUS-MUSIK",
-      "description": "Er du klar til samspil? HF’s musiklærer Claus Svane leder dette hold, der en gang om ugen fra oktober til april samler unge fra hele øen til musik.\nCampus-holdet er åbent for alle fra 15 + år.",
-      "organizerId": "campus-aeroe",
-      "categoryIds": [
-        "musik-kultur",
-        "boern-familie"
-      ],
-      "location": {
-        "name": "HF&VUC Fyn, Ærø",
-        "address": "P.E. Pålssonsvej 1",
-        "postalCode": "5965",
-        "city": "Marstal",
-        "url": "https://campusaeroe.dk/venue/hfvuc-fyn-aeroe/"
-      },
-      "attendance": {
-        "kind": "public"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "recurring",
-        "dtstart": {
-          "date": "2026-11-11",
-          "kind": "timed",
-          "startTime": "19:30"
-        },
-        "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270414T193000",
-        "rdates": [],
-        "exdates": [
-          "2026-12-23T19:30",
-          "2026-12-30T19:30",
-          "2027-02-17T19:30",
-          "2027-03-24T19:30"
-        ],
-        "overrides": [],
-        "durationMinutes": 120
-      },
-      "source": {
-        "sourceId": "campus-aeroe",
-        "externalId": "series-campus-musik",
-        "url": "https://campusaeroe.dk/event/campus-musik/",
-        "verifiedAt": "2026-11-11T17:17:02.375Z",
-        "modifiedAt": "2026-08-17T08:02:57.000Z"
-      }
-    },
-    {
       "id": "campus-aeroe-7963",
       "title": "Reception: Fremtidens Læring og Karrierevejledning",
       "description": "Vi inviterer hermed til reception på Campus Ærø Studiecenter, hvor vi fejrer samarbejdet om Unge og Uddannelse\nForedrag/Oplæg af forsker Dr. Rosie Alexander: Karriere og vejledning i små samfund\nReception for udgivelserne:\nTool-kit for Karrierevejledning i Små Samfund &\nErfarings-Hvidbog for Campus Ærø\nMad og taler. Alle er velkomne!\nAf hensyn til forplejning beder vi om tilmelding til Anneline Köhler Juul på aju@aeroekommune.dk , men man er også velkommen til bare at møde op.",
@@ -711,7 +664,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "7963",
         "url": "https://campusaeroe.dk/event/fejring-af-faellesskaber-og-uddannelse-paa-aeroe/",
-        "verifiedAt": "2026-11-11T17:17:02.375Z",
+        "verifiedAt": "2026-11-12T17:17:03.285Z",
         "modifiedAt": "2026-10-01T07:42:08.000Z"
       }
     },
@@ -755,7 +708,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-aabent-metalvaerksted",
         "url": "https://campusaeroe.dk/event/aabent-metalvaerksted/",
-        "verifiedAt": "2026-11-11T17:17:02.375Z",
+        "verifiedAt": "2026-11-12T17:17:03.285Z",
         "modifiedAt": "2026-07-06T07:26:55.000Z"
       }
     },
@@ -801,8 +754,55 @@
         "sourceId": "campus-aeroe",
         "externalId": "series-campus-idraet-2",
         "url": "https://campusaeroe.dk/event/campus-idraet-2/",
-        "verifiedAt": "2026-11-11T17:17:02.375Z",
+        "verifiedAt": "2026-11-12T17:17:03.285Z",
         "modifiedAt": "2026-08-17T08:22:05.000Z"
+      }
+    },
+    {
+      "id": "campus-aeroe-series-campus-musik",
+      "title": "CAMPUS-MUSIK",
+      "description": "Er du klar til samspil? HF’s musiklærer Claus Svane leder dette hold, der en gang om ugen fra oktober til april samler unge fra hele øen til musik.\nCampus-holdet er åbent for alle fra 15 + år.",
+      "organizerId": "campus-aeroe",
+      "categoryIds": [
+        "musik-kultur",
+        "boern-familie"
+      ],
+      "location": {
+        "name": "HF&VUC Fyn, Ærø",
+        "address": "P.E. Pålssonsvej 1",
+        "postalCode": "5965",
+        "city": "Marstal",
+        "url": "https://campusaeroe.dk/venue/hfvuc-fyn-aeroe/"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "recurring",
+        "dtstart": {
+          "date": "2026-11-18",
+          "kind": "timed",
+          "startTime": "19:30"
+        },
+        "rrule": "FREQ=WEEKLY;BYDAY=WE;UNTIL=20270414T193000",
+        "rdates": [],
+        "exdates": [
+          "2026-12-23T19:30",
+          "2026-12-30T19:30",
+          "2027-02-17T19:30",
+          "2027-03-24T19:30"
+        ],
+        "overrides": [],
+        "durationMinutes": 120
+      },
+      "source": {
+        "sourceId": "campus-aeroe",
+        "externalId": "series-campus-musik",
+        "url": "https://campusaeroe.dk/event/campus-musik/",
+        "verifiedAt": "2026-11-12T17:17:03.285Z",
+        "modifiedAt": "2026-08-17T08:02:57.000Z"
       }
     },
     {
@@ -841,7 +841,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8077",
         "url": "https://campusaeroe.dk/event/babycafe-sansemotorik-i-teori-og-praksis/",
-        "verifiedAt": "2026-11-11T17:17:02.375Z",
+        "verifiedAt": "2026-11-12T17:17:03.285Z",
         "modifiedAt": "2026-10-01T09:53:24.000Z"
       }
     },
@@ -881,7 +881,7 @@
         "sourceId": "campus-aeroe",
         "externalId": "8079",
         "url": "https://campusaeroe.dk/event/babycafe-tryghed-og-tilknytning/",
-        "verifiedAt": "2026-11-11T17:17:02.375Z",
+        "verifiedAt": "2026-11-12T17:17:03.285Z",
         "modifiedAt": "2026-10-01T09:56:18.000Z"
       }
     }
