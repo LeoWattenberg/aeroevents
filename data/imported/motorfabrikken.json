@@ -1,6 +1,6 @@
 {
   "sourceId": "motorfabrikken",
-  "verifiedAt": "2026-11-06T05:17:02.967Z",
+  "verifiedAt": "2026-11-13T17:17:03.489Z",
   "events": [
     {
       "id": "motorfabrikken-111001",
@@ -44,6 +44,50 @@
         "externalId": "111001",
         "url": "https://motorfabrikkenmarstal.ticketbutler.io/da/e/sys-bjerre-intimkoncert/",
         "verifiedAt": "2026-11-06T05:17:02.967Z"
+      }
+    },
+    {
+      "id": "motorfabrikken-112952",
+      "title": "Startpatronernes Julestue 2026",
+      "description": "",
+      "organizerId": "motorfabrikken",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Motorfabrikken Marstal",
+        "address": "Havnegade 11",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "Billet eller tilmelding kræves."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "booking": {
+        "required": true,
+        "soldOut": false,
+        "url": "https://motorfabrikkenmarstal.ticketbutler.io/da/e/startpatronernes-julestue-2026/"
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "ticketbutler-bdc60d2158b5454fa22c1fe7c7135810",
+            "date": "2026-12-06",
+            "kind": "timed",
+            "startTime": "15:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "motorfabrikken",
+        "externalId": "112952",
+        "url": "https://motorfabrikkenmarstal.ticketbutler.io/da/e/startpatronernes-julestue-2026/",
+        "verifiedAt": "2026-11-13T17:17:03.489Z"
       }
     }
   ]

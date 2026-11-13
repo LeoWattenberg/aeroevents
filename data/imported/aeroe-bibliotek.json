@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-bibliotek",
-  "verifiedAt": "2026-11-13T05:17:03.179Z",
+  "verifiedAt": "2026-11-13T17:17:03.489Z",
   "events": [
     {
       "id": "aeroe-bibliotek-10266",
@@ -361,7 +361,7 @@
     {
       "id": "aeroe-bibliotek-10264",
       "title": "Livestream: Tang ved marinbiolog Annette Bruhn",
-      "description": "Offentlige foredrag i Naturvidenskab - GRATIS BILLETTER KAN BESTILLES EN MÅNED FØR.\nMedbring gerne egen kaffekop - så passer vi sammen på miljøet.\n\nUnder havets overflade danner tang spektakulære undersøiske skove som er vigtige for livet i havet og klimaet på kloden. Ny forskning viser at tang også kan bidrage til at løse fremtidens udfordringer inden for sundhed, fødevarer, klima og miljø.",
+      "description": "Offentlige foredrag i Naturvidenskab\nMed smagsprøver undervejs\nMedbring gerne egen kaffekop - så passer vi sammen på miljøet.\n\nUnder havets overflade danner tang spektakulære undersøiske skove som er vigtige for livet i havet og klimaet på kloden. Ny forskning viser at tang også kan bidrage til at løse fremtidens udfordringer inden for sundhed, fødevarer, klima og miljø.",
       "organizerId": "aeroe-folkebibliotek",
       "categoryIds": [
         "musik-kultur"
@@ -399,7 +399,7 @@
         "sourceId": "aeroe-bibliotek",
         "externalId": "10264",
         "url": "https://www.arrebib.dk/marstal-bibliotek/arrangementer/livestream-tang-ved-marinbiolog-annette-bruhn-0",
-        "verifiedAt": "2026-11-13T05:17:03.179Z"
+        "verifiedAt": "2026-11-13T17:17:03.489Z"
       }
     }
   ]
