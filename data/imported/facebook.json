@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-12T17:17:03.285Z",
+  "verifiedAt": "2026-11-13T05:17:03.179Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -9351,6 +9351,92 @@
         "externalId": "post-pfbid0hde9MFQeUe9SkGaTDxTncTjTzLNTviPLcphjHCgEYCWAsPnMc9Bwih2yfzyXkjAWl",
         "url": "https://www.facebook.com/aeroekommune/posts/-%F0%9D%90%8E%F0%9D%90%AB%F0%9D%90%9D%F0%9D%90%A2%F0%9D%90%A7%C3%A6%F0%9D%90%AB%F0%9D%90%AD-%F0%9D%90%A6%C3%B8%F0%9D%90%9D%F0%9D%90%9E-%F0%9D%90%A2-%F0%9D%90%8A%F0%9D%90%A8%F0%9D%90%A6%F0%9D%90%A6%F0%9D%90%AE%F0%9D%90%A7%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%9B%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%B2%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%A7kommunalbestyrelsen-afholder-ordin%C3%A6rt-m%C3%B8de-o/1141716314887405/",
         "verifiedAt": "2026-11-12T17:17:03.285Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02mv5rxvlul2rr3mblzcxubmy3613duzv2wrb1h2farpkb5pbwr1-b0990e15",
+      "title": "𝐎𝐫𝐝𝐢𝐧æ𝐫𝐭 𝐦ø𝐝𝐞 𝐢 𝐊𝐨𝐦𝐦𝐮𝐧𝐚𝐥𝐛𝐞𝐬𝐭𝐲𝐫𝐞𝐥𝐬𝐞𝐧",
+      "description": "𝐎𝐫𝐝𝐢𝐧æ𝐫𝐭 𝐦ø𝐝𝐞 𝐢 𝐊𝐨𝐦𝐦𝐮𝐧𝐚𝐥𝐛𝐞𝐬𝐭𝐲𝐫𝐞𝐥𝐬𝐞𝐧\nKommunalbestyrelsen afholder ordinært møde onsdag den 18. november 2026 kl. 19.00.\nMødet finder sted i byrådssalen og er åbent for alle interesserede.\nSe med live eller find dagsorden her https://www.aeroekommune.dk/poli.../dagsordener-og-referater",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1enpw6c-1",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02mV5rXvLUL2Rr3MBLzcXUBmY3613duzv2wrb1h2fArpKB5PBWR1sv91FcYP4oSXvJl",
+        "url": "https://www.facebook.com/aeroekommune/posts/-%F0%9D%90%8E%F0%9D%90%AB%F0%9D%90%9D%F0%9D%90%A2%F0%9D%90%A7%C3%A6%F0%9D%90%AB%F0%9D%90%AD-%F0%9D%90%A6%C3%B8%F0%9D%90%9D%F0%9D%90%9E-%F0%9D%90%A2-%F0%9D%90%8A%F0%9D%90%A8%F0%9D%90%A6%F0%9D%90%A6%F0%9D%90%AE%F0%9D%90%A7%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%9B%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%B2%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%A7kommunalbestyrelsen-afholder-ordin%C3%A6rt-m%C3%B8de-o/1141716314887405/",
+        "verifiedAt": "2026-11-13T05:17:03.179Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0t5sdjfwbrk7mnjroena6zrrn8cpdaryezbe8bobcsbj8fz9anyw-90517d8b",
+      "title": "Har du lyst til at deltage med en bod til årets julemarked i Ærøskøbings smukke rammer",
+      "description": "Har du lyst til at deltage med en bod til årets julemarked i Ærøskøbings smukke rammer?\nLæs mere nedenfor\nVi ønsker at præsentere alt det bedste fra vores smukke ø samt fra andre kreative udstillere, som ønsker at komme til Ærø. Vi stræber efter indretning og præsentation, som er tilpasset de smukke rammer i Ærøskøbing.\nHVORNÅR\nJulemarkederne afholdes i år over fire lørdage.\nHenholdsvis lørdag d. 21/11, lørdag d. 28/11, lørdag d. 5/12 samt lørdag d. 12/12.\nVi holder åbent fra kl. 9.30-17 alle dage.\nBODER\nMan kan vælge at leje en bod for en, to, tre eller alle lørdage.\nVi stræber efter indretning og præsentation, som er tilpasset de smukke rammer i Ærøskøbing. Derfor er der nogle retningslinjer til interiør omkring boderne, etc. som vil blive udspecificeret ved tilmelding.\nPris for leje af boder er:\nStore boder på torvet med adgang til strøm: 600 kr. pr. lørdag\n(disse boder er forbeholdt mad og drikke)\nSmå boder på torvet med adgang til strøm 450 kr pr lørdag\nSmå boder i Søndergade 350 kr. pr. lørdag\nDe store boder på torvet er som skrevet ovenfor forbeholdt mad, men skulle der være plads til andre, vil vi tage en vurdering af, hvilke produkter der egner sig bedste til torvet og trække lod mellem disse.\nNår vi har modtaget din ansøgning, vil din tilmelding først være gældende og bindende når leje indtægten er indbetalt. Ved senere aflysning refunderes pengene ikke.\nBoderne tildeles efter først-til-mølle princippet. Såfremt der er flere tilmeldte, end der er boder, oprettes en venteliste.\nInden første julemarked laves en oversigt over, hvem der har hvilke boder de enkelte weekender.\nTILMELDING:\nI kan tilmelde jer på følgende måde:\n1. Skriv en kommentar om at I ønsker at modtage tilmeldingsblanketten\n2. Send en e-mail med den udfyldte tilmeldingsblanket til info@cafe-aroma.dk\nVi glæder os til at høre fra jer og ikke mindst til endnu et smukt julemarked i Ærøskøbings hyggelige kulisse\nDe bedste hilsner\nÆrøskøbings Erhvervsforening",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1rlqy0q-1",
+            "date": "2026-11-21",
+            "kind": "timed",
+            "startTime": "09:30",
+            "endTime": "17:00"
+          },
+          {
+            "id": "facebook-1rlqy0q-2",
+            "date": "2026-11-28",
+            "kind": "timed",
+            "startTime": "09:30",
+            "endTime": "17:00"
+          },
+          {
+            "id": "facebook-1rlqy0q-3",
+            "date": "2026-12-05",
+            "kind": "timed",
+            "startTime": "09:30",
+            "endTime": "17:00"
+          },
+          {
+            "id": "facebook-1rlqy0q-4",
+            "date": "2026-12-12",
+            "kind": "timed",
+            "startTime": "09:30",
+            "endTime": "17:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0t5sDJFwbrk7mnJroENA6zRRn8cPDarYezBE8bobcSBj8fz9AnYW36noA6Ei1y8uzl",
+        "url": "https://www.facebook.com/julehyggeiaeroskobing/posts/har-du-lyst-til-at-deltage-med-en-bod-til-%C3%A5rets-julemarked-i-%C3%A6r%C3%B8sk%C3%B8bings-smukke-/1769892978395007/",
+        "verifiedAt": "2026-11-13T05:17:03.179Z"
       }
     }
   ]
