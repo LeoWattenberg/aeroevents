@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-rideklub",
-  "verifiedAt": "2026-11-13T17:17:03.489Z",
+  "verifiedAt": "2026-11-14T17:17:02.773Z",
   "events": [
     {
       "id": "aeroe-rideklub-nisseoptog",
@@ -34,46 +34,6 @@
         "externalId": "nisseoptog",
         "url": "https://www.aeroerideklub.dk/events-1/nisseoptog",
         "verifiedAt": "2026-09-15T16:17:03.394Z"
-      }
-    },
-    {
-      "id": "aeroe-rideklub-pudse-udstyr-dag",
-      "title": "Pudse udstyr dag",
-      "description": "Vi mødes og pudser elvehestenes udstyr. Klubben sørger for de ting vi skal bruge. Vi sørger også for lækkerier og lidt at drikke. Vi glæder os til at se jer.",
-      "organizerId": "aeroe-rideklub",
-      "categoryIds": [
-        "sport-motion",
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Ærø Rideklub",
-        "address": "Vråvejen",
-        "postalCode": "5970",
-        "city": "Ærøskøbing"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold er ikke bekræftet."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "rideklub-pudse-udstyr-dag",
-            "date": "2026-11-13",
-            "kind": "timed",
-            "startTime": "16:00",
-            "endTime": "18:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-rideklub",
-        "externalId": "pudse-udstyr-dag",
-        "url": "https://www.aeroerideklub.dk/events-1/pudse-udstyr-dag",
-        "verifiedAt": "2026-10-14T04:17:01.582Z"
       }
     },
     {
