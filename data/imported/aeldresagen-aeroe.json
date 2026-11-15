@@ -1,6 +1,6 @@
 {
   "sourceId": "aeldresagen-aeroe",
-  "verifiedAt": "2026-11-14T17:17:02.773Z",
+  "verifiedAt": "2026-11-15T17:17:02.933Z",
   "events": [
     {
       "id": "aeldresagen-aeroe-443367982",
@@ -192,7 +192,44 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443480337",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443480337-soendagscafe-i-marstal",
-        "verifiedAt": "2026-11-14T17:17:02.773Z"
+        "verifiedAt": "2026-11-15T17:17:02.933Z"
+      }
+    },
+    {
+      "id": "aeldresagen-aeroe-443368026",
+      "title": "Petanque",
+      "description": "Har du lyst til at mødes med andre til et slag petanque?\nHer er socialt samvær og fællesskab i centrum, så mød endelig op!\nKontakt Ina Vestergaard på 42 18 75 78",
+      "organizerId": "aeldresagen-aeroe",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Sejlklubben i Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "For alle"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "aeldresagen-443368026",
+            "date": "2026-11-16",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endDate": "2026-11-16",
+            "endTime": "15:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeldresagen-aeroe",
+        "externalId": "443368026",
+        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443368026-petanque",
+        "verifiedAt": "2026-11-15T17:17:02.933Z"
       }
     },
     {
@@ -230,44 +267,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443478288",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443478288-gaature-og-stavgang",
-        "verifiedAt": "2026-11-14T17:17:02.773Z"
-      }
-    },
-    {
-      "id": "aeldresagen-aeroe-443368026",
-      "title": "Petanque",
-      "description": "Har du lyst til at mødes med andre til et slag petanque?\nHer er socialt samvær og fællesskab i centrum, så mød endelig op!\nKontakt Ina Vestergaard på 42 18 75 78",
-      "organizerId": "aeldresagen-aeroe",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Sejlklubben i Marstal"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "For alle"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "aeldresagen-443368026",
-            "date": "2026-11-16",
-            "kind": "timed",
-            "startTime": "13:30",
-            "endDate": "2026-11-16",
-            "endTime": "15:30"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeldresagen-aeroe",
-        "externalId": "443368026",
-        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443368026-petanque",
-        "verifiedAt": "2026-11-14T17:17:02.773Z"
+        "verifiedAt": "2026-11-15T17:17:02.933Z"
       }
     },
     {
@@ -310,7 +310,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443468911",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443468911-spisevenner",
-        "verifiedAt": "2026-11-14T17:17:02.773Z"
+        "verifiedAt": "2026-11-15T17:17:02.933Z"
       }
     },
     {
@@ -348,7 +348,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443367804",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443367804-krolf",
-        "verifiedAt": "2026-11-14T17:17:02.773Z"
+        "verifiedAt": "2026-11-15T17:17:02.933Z"
       }
     },
     {
@@ -386,7 +386,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443477909",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443477909-naturen-som-traeningsrum",
-        "verifiedAt": "2026-11-14T17:17:02.773Z"
+        "verifiedAt": "2026-11-15T17:17:02.933Z"
       }
     },
     {
@@ -425,7 +425,51 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443446336",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443446336-aeroe-mandeklub",
-        "verifiedAt": "2026-11-14T17:17:02.773Z"
+        "verifiedAt": "2026-11-15T17:17:02.933Z"
+      }
+    },
+    {
+      "id": "aeldresagen-aeroe-443541879",
+      "title": "Foredrag med Peter Mygind",
+      "description": "\"Peter Myginds møde med sundhedsvæsenet\".\nMandag d. 4 januar kl. 14-16 på Rådhuset.\nNår vi mennesker bliver syge, har vi brug for enorm styrke. I et sygdomsforløb er det derfor afgørende, at du finder din indre kriger frem, for at både du og dine nærmeste får al den omsorg og behandling, der er brug for, så angst, sorg og følelsen af afmagt ikke tager kontrollen og styringen over dit liv.\nI dette foredrag fortæller Peter om sit møde med sundhedsvæsenet, som han har været tæt på flere gange i sit liv. Foredraget er både humoristisk, rørende og følsomt og motiverer til at håndtere et sygdomsforløb, - både som pårørende og patient.\nVi starter kl. 14 med info om Ærø Seniorråd v. Charlotte Aabye. Derefter er der kaffepause før selve foredraget.\nPris incl. kaffe og kage: Medlemmer kr. 75. Ikke-medlemmer kr. 125.\nBindende tilmelding og betaling senest d. 1/1-27 på\nReg.nr. 3001. Kontonr. 13686548 eller mobilepay 90 5007",
+      "organizerId": "aeldresagen-aeroe",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Rådhuset",
+        "address": "Ærøskøbing Statene 2"
+      },
+      "attendance": {
+        "kind": "registration",
+        "details": "For alle"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Pris incl. kaffe og kage: Medlemmer kr. 75. Ikke-medlemmer kr. 125.",
+      "booking": {
+        "required": true,
+        "soldOut": false,
+        "details": "Bindende tilmelding og betaling senest d. 1/1-27 på"
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "aeldresagen-443541879",
+            "date": "2027-01-04",
+            "kind": "timed",
+            "startTime": "14:00",
+            "endDate": "2027-01-04",
+            "endTime": "16:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeldresagen-aeroe",
+        "externalId": "443541879",
+        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443541879-foredrag-med-peter-mygind",
+        "verifiedAt": "2026-11-15T17:17:02.933Z"
       }
     }
   ]
