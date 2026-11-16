@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-bibliotek",
-  "verifiedAt": "2026-11-15T17:17:02.933Z",
+  "verifiedAt": "2026-11-16T17:17:02.658Z",
   "events": [
     {
       "id": "aeroe-bibliotek-10266",
@@ -399,7 +399,52 @@
         "sourceId": "aeroe-bibliotek",
         "externalId": "10264",
         "url": "https://www.arrebib.dk/marstal-bibliotek/arrangementer/livestream-tang-ved-marinbiolog-annette-bruhn-0",
-        "verifiedAt": "2026-11-15T17:17:02.933Z"
+        "verifiedAt": "2026-11-16T17:17:02.658Z"
+      }
+    },
+    {
+      "id": "aeroe-bibliotek-10271",
+      "title": "Foredrag med Rune Skyum-Nielsen om ”Amdi forsvinder”",
+      "description": "AOF Ærø, Marstal Søfartsmuseum og Ærø Folkebibliotek præsenterer... OBS! Billetter frigives tirsdag den 16.11 kl. 12\n\nDet store og utrolige Amdi-puslespilOplev journalist og forfatter Rune Skyum-Nielsen fortælle om den højdramatiske arbejdsproces bag de prisvindende og anmelderroste biografier ‘Amdi bliver til’ og ‘Amdi forsvinder’. ’Amdi forsvinder’, der er en selvstændig del 2 i Skyum-Nielsens kæmpeportræt om Tvind stifteren Mogens Amdi Petersen, som udkom i marts 2026 på Politikens Forlag. Bogen undersøger, hvordan Amdi gik fra at være ungdomsoprører og idealist til at forskanse sig i luksus i et lovløst hjørne af Mexico.Bogen, som flere anmeldere kaldte for 'stærkt medrivende', veksler mellem et historisk spor om Tvindskolernes og Lærergruppens verdenserobring og et nutidsspor om forfatterens ni år lange arbejde med at samle brikkerne om den mytiske skikkelse.Gør klar til en hæsblæsende rutsjebanetur gennem stifter Mogens Amdi Petersens og Tvindimperiets berygtede informationslabyrint. Rune Skyum-Nielsen har bl.a. tidligere gjort sig bemærket med journalistiske bestseller-fortællinger om dansk hiphops historie, popsangeren Medina, forfatteren Jakob Ejersbo og fodboldspilleren Nicklas Bendtner. De to biografier om Mogens Amdi Petersen (udgivet i august 2022 og marts 2026) modtog for nylig og som de første bogudgivelser hidtil, Den Danske Publicistklubs dokumentarpris.Kom og hør Rune Skyum-Nielsen dele erfaringer fra et lille årti med research og kildepleje og om de rejser, han har været på undervejs – indre som ydre.Bøgerne om Amdi danner forlæg for både teater-, dokumentar- og filmprojekter. Som flere lokale muligvis kan erindre, havde Mogens Amdi Petersen i sine unge år job ved Marstal Skole, hvorfor der også er et lille lokalhistorisk islæt. Mogens, Marstal og Mexico.Arrangementet er blevet til i et samarbejde mellem AOF Ærø, Marstal Søfartsmuseum og Ærø Folkebibliotek. Gratis billetter skal bestilles her på siden eller på et af bibliotekerne når der er personlig betjening. Selve arrangementet foregår på Marstal Søfartsmuseum torsdag den 3. december fra kl.19-21, hvor der vil være indgang via Strandstræde.",
+      "organizerId": "aeroe-folkebibliotek",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "location": {
+        "name": "Marstal Søfartsmuseum - indgang fra Strandstræde",
+        "address": "Prinsensgade 21",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "booking": {
+        "required": false,
+        "soldOut": false,
+        "url": "https://place2book.com/da/sw2/sales/g9yp445xes"
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "bibliotek-10271",
+            "date": "2026-12-03",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endDate": "2026-12-03",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-bibliotek",
+        "externalId": "10271",
+        "url": "https://www.arrebib.dk/marstal-bibliotek/arrangementer/foredrag-med-rune-skyum-nielsen-om-amdi-forsvinder",
+        "verifiedAt": "2026-11-16T17:17:02.658Z"
       }
     }
   ]
