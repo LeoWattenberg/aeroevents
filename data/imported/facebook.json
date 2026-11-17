@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-13T05:17:03.179Z",
+  "verifiedAt": "2026-11-17T05:17:02.450Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -9437,6 +9437,222 @@
         "externalId": "post-pfbid0t5sDJFwbrk7mnJroENA6zRRn8cPDarYezBE8bobcSBj8fz9AnYW36noA6Ei1y8uzl",
         "url": "https://www.facebook.com/julehyggeiaeroskobing/posts/har-du-lyst-til-at-deltage-med-en-bod-til-%C3%A5rets-julemarked-i-%C3%A6r%C3%B8sk%C3%B8bings-smukke-/1769892978395007/",
         "verifiedAt": "2026-11-13T05:17:03.179Z"
+      }
+    },
+    {
+      "id": "facebook-post-29141922058751036",
+      "title": "Er du ny på Ærø",
+      "description": "Er du ny på Ærø?\nPå torsdag har vi endnu en gang varm Dynamo Kaffe på kanden, når vi inviterer til tilflyttercafé og er klar til at besvare alle de spørgsmål, du måtte have, om livet på Ærø:\nHVORNÅR: 19. November kl. 16-17.30\nHVOR: Landbogaarden, Vestergade 54, Ærøskøbing\nIngen tilmelding. Fuldkommen gratis. Mød blot op - og vend hjem med kendskabet til endnu flere folk, du kan hilse på i hverdagen.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "location": {
+        "name": "Landbogaarden, Vestergade 54, Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1ww9f1l-1",
+            "date": "2026-11-19",
+            "kind": "timed",
+            "startTime": "16:00",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-29141922058751036",
+        "url": "https://www.facebook.com/groups/oplevmitaeroe/posts/29141922058751036/",
+        "verifiedAt": "2026-11-17T05:17:02.450Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02mcjnwhncwqdqbeabqassjk67quzsj8re4t4wkpdj4lt4eqwv6a-d3922673",
+      "title": "𝐎𝐫𝐝𝐢𝐧æ𝐫𝐭 𝐦ø𝐝𝐞 𝐢 𝐊𝐨𝐦𝐦𝐮𝐧𝐚𝐥𝐛𝐞𝐬𝐭𝐲𝐫𝐞𝐥𝐬𝐞𝐧",
+      "description": "𝐎𝐫𝐝𝐢𝐧æ𝐫𝐭 𝐦ø𝐝𝐞 𝐢 𝐊𝐨𝐦𝐦𝐮𝐧𝐚𝐥𝐛𝐞𝐬𝐭𝐲𝐫𝐞𝐥𝐬𝐞𝐧\nKommunalbestyrelsen afholder ordinært møde onsdag den 18. november 2026 kl. 19.00.\nMødet finder sted i byrådssalen og er åbent for alle interesserede.\nSe med live eller find dagsorden her https://www.aeroekommune.dk/poli.../dagsordener-og-referater",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1xp3mw-1",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02mcjNWHNCWqDqBeabQASsjK67qUzsj8RE4T4wKPDJ4Lt4EQwV6AxrndaZQqCacmhKl",
+        "url": "https://www.facebook.com/aeroekommune/posts/-%F0%9D%90%8E%F0%9D%90%AB%F0%9D%90%9D%F0%9D%90%A2%F0%9D%90%A7%C3%A6%F0%9D%90%AB%F0%9D%90%AD-%F0%9D%90%A6%C3%B8%F0%9D%90%9D%F0%9D%90%9E-%F0%9D%90%A2-%F0%9D%90%8A%F0%9D%90%A8%F0%9D%90%A6%F0%9D%90%A6%F0%9D%90%AE%F0%9D%90%A7%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%9B%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%B2%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%A7kommunalbestyrelsen-afholder-ordin%C3%A6rt-m%C3%B8de-o/1141716314887405/",
+        "verifiedAt": "2026-11-17T05:17:02.450Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02mybbbkt3zbrhrxm1jjg6fedv1e5pu9vox2kxesdmypmbdm1gxg-47ea8c7b",
+      "title": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com",
+      "description": "Landbogaarden holder ferie de to første uger i november, og har siden kun åbent for selskaber på 10 personer eller mere, per aftale via mail på: jacob.fuglsang@gmail.com\nVi har dog åbent i forbindelse med Ærøskøbings Julemarkeds dage, fredag og lørdag: d. 20 & 21. og 27. & 28. november + d. 4. & 5. og 11. & 12. december.\nLæs mere om det på: https://www.visitaeroe.dk/.../julemarked-i-aeroeskoebing...\nPS: Tak for alle hilsner og lykkeønskninger til Ziggy Emils dåb og vores bryllupsdag d. 24. oktober!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1t5qfwm-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1t5qfwm-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1t5qfwm-3",
+            "date": "2026-12-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1t5qfwm-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1t5qfwm-5",
+            "date": "2027-10-24",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02mybBBkt3zbrHrXm1jJG6fEdV1E5Pu9Vox2KXEsDMypmbDM1gXgGu5uEqAR5wy1a9l",
+        "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-ferie-de-to-f%C3%B8rste-uger-i-november-og-har-siden-kun-%C3%A5bent-f/1751024967023560/",
+        "verifiedAt": "2026-11-17T05:17:02.450Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0cfyggncgdtndefxcg7u1bjrexzzrlqunanigesnj52gdbu1efpd-2c3e5e23",
+      "title": "Julen er på vej til Ærøskøbing",
+      "description": "Julen er på vej til Ærøskøbing!\nDer er allerede godt gang i juleforberedelserne rundt omkring i de hyggelige brostensbelagte gader. På torvet bliver juleboderne gjort klar, gran og julepynt finder vej til byen, og der bliver arbejdet på højtryk for at skabe den helt særlige julestemning.\nPå lørdag den 21. november går det løs med årets første julemarked i Ærøskøbing! Og det er kun begyndelsen – der er nemlig hele fire julemarkeder at glæde sig til:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nVi glæder os til endnu en julesæson med masser af hygge, juleoplevelser og liv i de gamle gader.\nMåske ses vi i Ærøskøbing?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-3fllmr-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-3fllmr-2",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-3fllmr-3",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-3fllmr-4",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-3fllmr-5",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0cfYggncgdtNdEFXCg7u1BJrexZZRLqunaNigESNJ52gDBu1efpD88WViBFydJKRml",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julen-er-p%C3%A5-vej-til-%C3%A6r%C3%B8sk%C3%B8bing-%EF%B8%8Fder-er-allerede-godt-gang-i-juleforberedelserne/1827275092739483/",
+        "verifiedAt": "2026-11-17T05:17:02.450Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gt4vnzu5fmgfrderkhw371xp3rhnyuvvuhyrefqm8fvx58aeqmr-2750fa34",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1d9ccfi-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1d9ccfi-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1d9ccfi-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1d9ccfi-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gt4vnZU5FmGFrderkHW371XP3rHNYUVvuHYREFqM8fvX58aEqMrC1XVuUEkuAwtFl",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-17T05:17:02.450Z"
       }
     }
   ]
