@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-17T17:17:03.127Z",
+  "verifiedAt": "2026-11-18T05:17:03.260Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -9818,6 +9818,89 @@
         "externalId": "post-pfbid0RL6w5CPdXiAziBSSvMLpthKosorAqv7cfjw3TFPsbo29uZvYbvXbknXxkd8rBB6El",
         "url": "https://www.facebook.com/oehavetfestival/posts/igen-i-%C3%A5r-indtager-anna-bob-%C3%B8havet-festival-som-konferencier-p%C3%A5-eriksens-plads-h/1323369039959234/",
         "verifiedAt": "2026-11-17T17:17:03.127Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02g32sjoyjfeusxvypiecgcdxbet5qwdnh8ecxdv27ltcm6s4ra8-c0ef2a46",
+      "title": "Julen er på vej til Ærøskøbing",
+      "description": "Julen er på vej til Ærøskøbing!\nDer er allerede godt gang i juleforberedelserne rundt omkring i de hyggelige brostensbelagte gader. På torvet bliver juleboderne gjort klar, gran og julepynt finder vej til byen, og der bliver arbejdet på højtryk for at skabe den helt særlige julestemning.\nPå lørdag den 21. november går det løs med årets første julemarked i Ærøskøbing! Og det er kun begyndelsen – der er nemlig hele fire julemarkeder at glæde sig til:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nVi glæder os til endnu en julesæson med masser af hygge, juleoplevelser og liv i de gamle gader.\nMåske ses vi i Ærøskøbing?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-11hec77-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-11hec77-2",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-11hec77-3",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-11hec77-4",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-11hec77-5",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02g32sJoyJfeUsxVypiECGcDxBEt5QwDNh8eCXDv27LTCM6S4ra8PzegxDG4gycAGMl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julen-er-p%C3%A5-vej-til-%C3%A6r%C3%B8sk%C3%B8bing-%EF%B8%8Fder-er-allerede-godt-gang-i-juleforberedelserne/1827275092739483/",
+        "verifiedAt": "2026-11-18T05:17:03.260Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0hb8f2uadquqtphuc6mgateqvcnm3lusfgbn3ddva8bpzyya9xpg-68fecca0",
+      "title": "𝐎𝐫𝐝𝐢𝐧æ𝐫𝐭 𝐦ø𝐝𝐞 𝐢 𝐊𝐨𝐦𝐦𝐮𝐧𝐚𝐥𝐛𝐞𝐬𝐭𝐲𝐫𝐞𝐥𝐬𝐞𝐧",
+      "description": "𝐎𝐫𝐝𝐢𝐧æ𝐫𝐭 𝐦ø𝐝𝐞 𝐢 𝐊𝐨𝐦𝐦𝐮𝐧𝐚𝐥𝐛𝐞𝐬𝐭𝐲𝐫𝐞𝐥𝐬𝐞𝐧\nKommunalbestyrelsen afholder ordinært møde onsdag den 18. november 2026 kl. 19.00.\nMødet finder sted i byrådssalen og er åbent for alle interesserede.\nSe med live eller find dagsorden her https://www.aeroekommune.dk/poli.../dagsordener-og-referater",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1ku1ali-1",
+            "date": "2026-11-18",
+            "kind": "timed",
+            "startTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0hb8f2UAdquQtphUC6mgaTeQvCNm3LUSfGBN3ddVa8bpzyyA9xPGVy1NWxpFpHmmkl",
+        "url": "https://www.facebook.com/aeroekommune/posts/-%F0%9D%90%8E%F0%9D%90%AB%F0%9D%90%9D%F0%9D%90%A2%F0%9D%90%A7%C3%A6%F0%9D%90%AB%F0%9D%90%AD-%F0%9D%90%A6%C3%B8%F0%9D%90%9D%F0%9D%90%9E-%F0%9D%90%A2-%F0%9D%90%8A%F0%9D%90%A8%F0%9D%90%A6%F0%9D%90%A6%F0%9D%90%AE%F0%9D%90%A7%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%9B%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%B2%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%A7kommunalbestyrelsen-afholder-ordin%C3%A6rt-m%C3%B8de-o/1141716314887405/",
+        "verifiedAt": "2026-11-18T05:17:03.260Z"
       }
     }
   ]
