@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-18T05:17:03.260Z",
+  "verifiedAt": "2026-11-18T17:17:04.003Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -9901,6 +9901,214 @@
         "externalId": "post-pfbid0hb8f2UAdquQtphUC6mgaTeQvCNm3LUSfGBN3ddVa8bpzyyA9xPGVy1NWxpFpHmmkl",
         "url": "https://www.facebook.com/aeroekommune/posts/-%F0%9D%90%8E%F0%9D%90%AB%F0%9D%90%9D%F0%9D%90%A2%F0%9D%90%A7%C3%A6%F0%9D%90%AB%F0%9D%90%AD-%F0%9D%90%A6%C3%B8%F0%9D%90%9D%F0%9D%90%9E-%F0%9D%90%A2-%F0%9D%90%8A%F0%9D%90%A8%F0%9D%90%A6%F0%9D%90%A6%F0%9D%90%AE%F0%9D%90%A7%F0%9D%90%9A%F0%9D%90%A5%F0%9D%90%9B%F0%9D%90%9E%F0%9D%90%AC%F0%9D%90%AD%F0%9D%90%B2%F0%9D%90%AB%F0%9D%90%9E%F0%9D%90%A5%F0%9D%90%AC%F0%9D%90%9E%F0%9D%90%A7kommunalbestyrelsen-afholder-ordin%C3%A6rt-m%C3%B8de-o/1141716314887405/",
         "verifiedAt": "2026-11-18T05:17:03.260Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02gwedivnggjmaqwxotpdxd39std1hdrq5zuyynxcfq8byhqqvyt-48b9b539",
+      "title": "Landbogaarden holder åben i forbindelse med Ærøskøbing Julemarked dagene",
+      "description": "Landbogaarden holder åben i forbindelse med Ærøskøbing Julemarked dagene:\nFredag og lørdag: d. 20 & 21. og 27. & 28. november + d. 4. & 5. og 11. & 12. december.\nOm fredagene fra kl. 18:00 – 21:00 og om lørdagene holder vi åbent fra kl. 12 – 15 og siden igen fra kl. 18:00 – 21:00\nVi kommer til at servere julemad af forskellige slags, med alt fra røget ribbensteg, frikadeller og and til sild og ris ala mande!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1w2ircj-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1w2ircj-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1w2ircj-3",
+            "date": "2026-12-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1w2ircj-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02gwEdivNgGJmAQwxotpDXd39std1hdrQ5ZUYyNxCfq8byhQQVYtcJzBNFC6LEbwMWl",
+        "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-%C3%A5ben-i-forbindelse-med-%C3%A6r%C3%B8sk%C3%B8bing-julemarked-dagenefredag-o/1771856758273714/",
+        "verifiedAt": "2026-11-18T17:17:04.003Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0cvpgpelwppuinx7wep5buskqua2mfy5n2bmmxo5eceegacuhuue-257d11ab",
+      "title": "Julen er på vej til Ærøskøbing",
+      "description": "Julen er på vej til Ærøskøbing!\nDer er allerede godt gang i juleforberedelserne rundt omkring i de hyggelige brostensbelagte gader. På torvet bliver juleboderne gjort klar, gran og julepynt finder vej til byen, og der bliver arbejdet på højtryk for at skabe den helt særlige julestemning.\nPå lørdag den 21. november går det løs med årets første julemarked i Ærøskøbing! Og det er kun begyndelsen – der er nemlig hele fire julemarkeder at glæde sig til:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nVi glæder os til endnu en julesæson med masser af hygge, juleoplevelser og liv i de gamle gader.\nMåske ses vi i Ærøskøbing?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-d3ltmy-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-d3ltmy-2",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-d3ltmy-3",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-d3ltmy-4",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-d3ltmy-5",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0cVPgPeLwpPuinx7WeP5buSkQUA2MfY5n2bmmXo5EceEGaCuhUuEWn9kfGHCwXrMLl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julen-er-p%C3%A5-vej-til-%C3%A6r%C3%B8sk%C3%B8bing-%EF%B8%8Fder-er-allerede-godt-gang-i-juleforberedelserne/1827275092739483/",
+        "verifiedAt": "2026-11-18T17:17:04.003Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0dmz463xxbs9ne8gev8wdfqo975ktfd61krzcfger61o3fdnbcxb-45b686ad",
+      "title": "Stikke-eftermiddag i Kjøbinghus",
+      "description": "Stikke-eftermiddag i Kjøbinghus\nOBS: Tilmelding nødvendig via link nederst\nI forbindelse med julemarkedet den 21/11 inviterer Kjøbinghus - Ærøskøbings ældste hus fra 1645til en hyggelige strikke-eftermiddag.\nKom indenfor i de gamle, skæve stuer, find strikketøjet frem og nyd et par hyggelige timer i helt særlige historiske rammer.\nBirgitte fra GARNA vil være med og vi får desuden besøg af\nCamilla fra @drfabricius.\nDer skal strikkes, snakkes og julestemningen skal nydes – og undervejs fortælles der også lidt om Kjøbinghus og husets historie.\nDer vil være varme drikke og lidt sødt til hyggen\nPris: 150 kr inkl forplejning.\nBilletkøb via Ticketbutler:\nhttps://kjoebinghus.ticketbutler.io/events/kjoebinghus/",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "price": "150 kr inkl forplejning.",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-4fqdrw-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0DmZ463xXBS9ne8GEv8wdFQo975KtfD61KRZCFgEr61o3fdNbcXBepPgKitPdFHRHl",
+        "url": "https://www.facebook.com/julehyggeiaeroskobing/posts/stikke-eftermiddag-i-kj%C3%B8binghusobs-tilmelding-n%C3%B8dvendig-via-link-nederst%EF%B8%8Fi-forbi/1777333804317591/",
+        "verifiedAt": "2026-11-18T17:17:04.003Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0e342eolpannva3s5gw7rwlbpufnwzzq7uughnqwmzrjuyvdktex-3e36bde7",
+      "title": "Husk der er Babycafe på Ærøskøbing bibliotek i morgen",
+      "description": "Husk der er Babycafe på Ærøskøbing bibliotek i morgen torsdag 19. november kl. 10-12.\nVi glæder os til at se jer\nBabycafe for forældre og deres børn mellem 0-3 år med Mødrehjælpen på Ærøskøbing Bibliotek\nDu skal ikke tilmelde dig, bare møde op.\nDe frivillige sørger for, at der er legetøj til de små og kaffe på kanden.\nBabycafeen drives af Mødrehjælpen i samarbejde med\nSundhedsplejen på Ærø og Ærø Folkebibliotek. Du kan kontakte os på\nsvendborg@mhj-lokal.dk",
+      "organizerId": "aeroe-folkebibliotek",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1y7kzkz-1",
+            "date": "2026-11-19",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0e342EoLpAnnVA3S5gW7rwLBpuFnWZzq7UUGhNqwMzrjUyvDktex4TFrRQEsukhZNl",
+        "url": "https://www.facebook.com/arrebib/posts/husk-der-er-babycafe-p%C3%A5-%C3%A6r%C3%B8sk%C3%B8bing-bibliotek-i-morgen-torsdag-19-november-kl-10-/1625939802894323/",
+        "verifiedAt": "2026-11-18T17:17:04.003Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0ghuvvrclse7txik2hknar96oejkpa7ldsx3guju315wet7ob48t-0e730ba6",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1qfaca2-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1qfaca2-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1qfaca2-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1qfaca2-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0ghuvVRCLSE7txik2Hknar96oeJkPA7LdSx3GUjU315wEt7oB48t5Cj3zyzArbo5Zl",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-18T17:17:04.003Z"
       }
     }
   ]
