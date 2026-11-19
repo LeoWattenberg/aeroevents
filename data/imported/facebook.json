@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-18T17:17:04.003Z",
+  "verifiedAt": "2026-11-19T05:17:02.244Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -10109,6 +10109,85 @@
         "externalId": "post-pfbid0ghuvVRCLSE7txik2Hknar96oeJkPA7LdSx3GUjU315wEt7oB48t5Cj3zyzArbo5Zl",
         "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
         "verifiedAt": "2026-11-18T17:17:04.003Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02hqycrphscvzdkhnzfjvaqt5azjgy41j3zhv59gvpwtfuy2t2ya-9738aaca",
+      "title": "Husk der er Babycafe på Ærøskøbing bibliotek i morgen",
+      "description": "Husk der er Babycafe på Ærøskøbing bibliotek i morgen torsdag 19. november kl. 10-12.\nVi glæder os til at se jer\nBabycafe for forældre og deres børn mellem 0-3 år med Mødrehjælpen på Ærøskøbing Bibliotek\nDu skal ikke tilmelde dig, bare møde op.\nDe frivillige sørger for, at der er legetøj til de små og kaffe på kanden.\nBabycafeen drives af Mødrehjælpen i samarbejde med\nSundhedsplejen på Ærø og Ærø Folkebibliotek. Du kan kontakte os på\nsvendborg@mhj-lokal.dk",
+      "organizerId": "aeroe-folkebibliotek",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-q4khdr-1",
+            "date": "2026-11-19",
+            "kind": "timed",
+            "startTime": "10:00",
+            "endTime": "12:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02hQYCrphSCVzdkHnZfJVAQT5azjgy41j3zhV59Gvpwtfuy2t2yApMhD42SztDXwghl",
+        "url": "https://www.facebook.com/arrebib/posts/husk-der-er-babycafe-p%C3%A5-%C3%A6r%C3%B8sk%C3%B8bing-bibliotek-i-morgen-torsdag-19-november-kl-10-/1625939802894323/",
+        "verifiedAt": "2026-11-19T05:17:02.244Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0dpbsokkkr7tppykonexr3xubpqvr5a964adje1fdwcjdfemyncs-020edf27",
+      "title": "Landbogaarden holder åben i forbindelse med Ærøskøbing Julemarked dagene",
+      "description": "Landbogaarden holder åben i forbindelse med Ærøskøbing Julemarked dagene:\nFredag og lørdag: d. 20 & 21. og 27. & 28. november + d. 4. & 5. og 11. & 12. december.\nOm fredagene fra kl. 18:00 – 21:00 og om lørdagene holder vi åbent fra kl. 12 – 15 og siden igen fra kl. 18:00 – 21:00\nVi kommer til at servere julemad af forskellige slags, med alt fra røget ribbensteg, frikadeller og and til sild og ris ala mande!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-18cm572-1",
+            "date": "2026-11-27",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-18cm572-2",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-18cm572-3",
+            "date": "2026-12-11",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-18cm572-4",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0dPbSokkKR7TPpykoNeXr3XUBPqVR5a964ADJe1fDwcjdfEmynCS7b5UwDnc7gbeol",
+        "url": "https://www.facebook.com/Landbogaarden/posts/landbogaarden-holder-%C3%A5ben-i-forbindelse-med-%C3%A6r%C3%B8sk%C3%B8bing-julemarked-dagenefredag-o/1771856758273714/",
+        "verifiedAt": "2026-11-19T05:17:02.244Z"
       }
     }
   ]
