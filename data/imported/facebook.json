@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-19T17:17:05.852Z",
+  "verifiedAt": "2026-11-20T17:17:03.160Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -10439,6 +10439,135 @@
         "externalId": "post-pfbid0R9wvn47tiHEXrsB4m6g73TvytGoYa6abeypPwty8L999YqiR7hcUFTV3n8zGZYiJl",
         "url": "https://www.facebook.com/oehavetfestival/posts/igen-i-%C3%A5r-indtager-anna-bob-%C3%B8havet-festival-som-konferencier-p%C3%A5-eriksens-plads-h/1323369039959234/",
         "verifiedAt": "2026-11-19T17:17:05.852Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid01p4vvaqt7mv3qgjnzakckputymqrdnrtz8pu3z8wddnqv2xezhu-61a5fdc6",
+      "title": "HUSK FÆLLESSPISNING",
+      "description": "HUSK FÆLLESSPISNING D.12. NOVEMBER kl.18!\nThyra laver culottesteg med lækkert tilbehør og du kan stadig nå at få en plads ved bordet. Skriv eller ring på 30125615 eller send en mail på cafe@aeroebryggeri.dk\nDet var bare det vi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-17gt5ng-1",
+            "date": "2027-11-12",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid01P4VVAqT7mV3QGJNZaKCKpuTymqrDNRtZ8Pu3Z8WddNqv2xeZhUYyJBWNcrj93Twl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/husk-f%C3%A6llesspisning-d12-november-kl18-thyra-laver-culottesteg-med-l%C3%A6kkert-tilbeh/1760775846059217/",
+        "verifiedAt": "2026-11-20T17:17:03.160Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0ck8lidbcgcmvv83bsrc7nuywrtvdnuljeeiknawdtyf7bbscxu9-acfe8a0a",
+      "title": "Julen er på vej til Ærøskøbing",
+      "description": "Julen er på vej til Ærøskøbing!\nDer er allerede godt gang i juleforberedelserne rundt omkring i de hyggelige brostensbelagte gader. På torvet bliver juleboderne gjort klar, gran og julepynt finder vej til byen, og der bliver arbejdet på højtryk for at skabe den helt særlige julestemning.\nPå lørdag den 21. november går det løs med årets første julemarked i Ærøskøbing! Og det er kun begyndelsen – der er nemlig hele fire julemarkeder at glæde sig til:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nVi glæder os til endnu en julesæson med masser af hygge, juleoplevelser og liv i de gamle gader.\nMåske ses vi i Ærøskøbing?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1ozsrat-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1ozsrat-2",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1ozsrat-3",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1ozsrat-4",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1ozsrat-5",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0cK8LidBCGcmVv83BSrc7NuywRtVDnuLjEEikNAWDTyf7bBscxU9GRuD1xjJ7B8bMl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julen-er-p%C3%A5-vej-til-%C3%A6r%C3%B8sk%C3%B8bing-%EF%B8%8Fder-er-allerede-godt-gang-i-juleforberedelserne/1827275092739483/",
+        "verifiedAt": "2026-11-20T17:17:03.160Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gxeapq2atjwlckkujb68d265zwrewvhgqhynnzq2dyek7kydr5r-dcd18a28",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1pdhrvt-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1pdhrvt-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1pdhrvt-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1pdhrvt-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gXeapQ2atjwLCKKuJB68D265ZWrewvHGqhyNnzQ2dYEK7KydR5rFM7HJHnTvGNG7l",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-20T17:17:03.160Z"
       }
     }
   ]
