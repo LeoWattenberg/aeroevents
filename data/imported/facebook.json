@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-21T05:17:03.122Z",
+  "verifiedAt": "2026-11-21T17:17:03.547Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -10632,6 +10632,134 @@
         "externalId": "post-pfbid02XYiTNT3T8muecdSuS6VvTB7mjB5LBGe1dCWX3nmfoqm3YqbapS3cxWFa46Bu2491l",
         "url": "https://www.facebook.com/aeroepastorat/posts/l%C3%B8rdag-den-21-november-kl-1300-i-%C3%A6r%C3%B8sk%C3%B8bing-kirke-julematin%C3%A9-vi-starter-tidligt-/1146676208111122/",
         "verifiedAt": "2026-11-21T05:17:03.122Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02gaa3uj728945fc1pdoh5m8ftkestmdq5kpamv8b6dcfhcky1ld-f4238d48",
+      "title": "Julen er på vej til Ærøskøbing",
+      "description": "Julen er på vej til Ærøskøbing!\nDer er allerede godt gang i juleforberedelserne rundt omkring i de hyggelige brostensbelagte gader. På torvet bliver juleboderne gjort klar, gran og julepynt finder vej til byen, og der bliver arbejdet på højtryk for at skabe den helt særlige julestemning.\nPå lørdag den 21. november går det løs med årets første julemarked i Ærøskøbing! Og det er kun begyndelsen – der er nemlig hele fire julemarkeder at glæde sig til:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nVi glæder os til endnu en julesæson med masser af hygge, juleoplevelser og liv i de gamle gader.\nMåske ses vi i Ærøskøbing?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1p6te8x-1",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1p6te8x-2",
+            "date": "2026-11-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1p6te8x-3",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1p6te8x-4",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1p6te8x-5",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02gAa3uJ728945fc1pDoH5m8ftkestMdq5KPamv8B6dCFhCkY1LDS4tBAZMkZUH6Q1l",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julen-er-p%C3%A5-vej-til-%C3%A6r%C3%B8sk%C3%B8bing-%EF%B8%8Fder-er-allerede-godt-gang-i-juleforberedelserne/1827275092739483/",
+        "verifiedAt": "2026-11-21T17:17:03.547Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02kp6j14xqk1bpzh5e71uah4xjthawoemfxukcgpg2bdqpgt8ava-cca61b56",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-8majyq-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-8majyq-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-8majyq-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-8majyq-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02kP6J14xQk1bpZh5E71uAH4XjthawoemFxuKCGPg2BdqPGt8avAsWERkYJ4ebKv5jl",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-21T17:17:03.547Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0iyhx65izemtphcszzaqk5euvs3vvwcuwwtnt8gcwk3wm2blar5w-2830cb74",
+      "title": "FORMIDDAGSFOREDRAG I MARSTAL MENIGHEDSHUS",
+      "description": "FORMIDDAGSFOREDRAG I MARSTAL MENIGHEDSHUS\nStrandstræde 20, torsdage kl. 10.00-12.00\nEndnu en gang er det lykkedes at samle en lille buket af foredrag. Der er ikke noget gennem gående tema. Til gengæld er der garanti for stor variation. Der er gratis adgang, men kaffe og brød koster 25 kr.\nTorsdag den 26. november\nJØRN SKOVSGAARD: DANSK UNDERVISNING I ET INTERNATIONALT PERSPEKTIV\nJørn Skovsgaard har haft en lang karriere inden for Undervisningsministeriet og har blandt andet arbejdet med undervisning i et internationalt perspektiv igennem mange år. Jørn Skovsgaard er gift ind i en Marstal familie og har længe haft sommerhus i byen, hvor han og hans kone nu bor. Siden foråret 2026 har han været formand for Marstal Søfartsmuseum.\nFoto: Folkekirken.dk",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-xzq0sr-1",
+            "date": "2026-11-26",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0iYHX65izEMtPHCSzZaqK5EuvS3VVwcUwWTnt8gcWk3wM2BLaR5woXBWDtAwtP99Wl",
+        "url": "https://www.facebook.com/aeroepastorat/posts/formiddagsforedrag-i-marstal-menighedshusstrandstr%C3%A6de-20-torsdage-kl-1000-1200-e/1148839881228088/",
+        "verifiedAt": "2026-11-21T17:17:03.547Z"
       }
     }
   ]

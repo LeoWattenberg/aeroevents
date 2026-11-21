@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-rideklub",
-  "verifiedAt": "2026-11-21T05:17:03.122Z",
+  "verifiedAt": "2026-11-21T17:17:03.547Z",
   "events": [
     {
       "id": "aeroe-rideklub-nisseoptog",
@@ -34,40 +34,6 @@
         "externalId": "nisseoptog",
         "url": "https://www.aeroerideklub.dk/events-1/nisseoptog",
         "verifiedAt": "2026-09-15T16:17:03.394Z"
-      }
-    },
-    {
-      "id": "aeroe-rideklub-pony-trk-julemarked",
-      "title": "Pony Træk Julemarked",
-      "description": "Pony træk på Torvet I den hyggelige jule pyntet by Ærøskøbing",
-      "organizerId": "aeroe-rideklub",
-      "categoryIds": [
-        "sport-motion",
-        "forening-faellesskab"
-      ],
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold er ikke bekræftet."
-      },
-      "status": "scheduled",
-      "publication": "draft",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "rideklub-pony-trk-julemarked",
-            "date": "2026-11-21",
-            "kind": "timed",
-            "startTime": "10:00",
-            "endTime": "13:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeroe-rideklub",
-        "externalId": "pony-trk-julemarked",
-        "url": "https://www.aeroerideklub.dk/events-1/pony-trk-julemarked",
-        "verifiedAt": "2026-10-14T04:17:01.582Z"
       }
     },
     {
