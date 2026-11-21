@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-20T17:17:03.160Z",
+  "verifiedAt": "2026-11-21T05:17:03.122Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -10568,6 +10568,70 @@
         "externalId": "post-pfbid0gXeapQ2atjwLCKKuJB68D265ZWrewvHGqhyNnzQ2dYEK7KydR5rFM7HJHnTvGNG7l",
         "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
         "verifiedAt": "2026-11-20T17:17:03.160Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid024ksljkj4rnzxw5yk8zncidgqk1iehwe6srbqqcnme7nrnawgjk-a4eeed30",
+      "title": "HUSK FÆLLESSPISNING",
+      "description": "HUSK FÆLLESSPISNING D.12. NOVEMBER kl.18!\nThyra laver culottesteg med lækkert tilbehør og du kan stadig nå at få en plads ved bordet. Skriv eller ring på 30125615 eller send en mail på cafe@aeroebryggeri.dk\nDet var bare det vi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1wxlzhw-1",
+            "date": "2027-11-12",
+            "kind": "timed",
+            "startTime": "18:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid024kSLjKJ4RNzXW5Yk8znCidGqK1iehWe6SrBQqCNMe7NrnAwGjkxQfQdjrpUXzqZol",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/husk-f%C3%A6llesspisning-d12-november-kl18-thyra-laver-culottesteg-med-l%C3%A6kkert-tilbeh/1760775846059217/",
+        "verifiedAt": "2026-11-21T05:17:03.122Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02xyitnt3t8muecdsus6vvtb7mjb5lbge1dcwx3nmfoqm3yqbaps-2b696a42",
+      "title": "Lørdag",
+      "description": "Lørdag den 21. november kl. 13.00 i Ærøskøbing Kirke\nJULEMATINÉ\nVi starter tidligt med at pynte op til jul, derhjemme og i byens gader. I forbindelse med det første af de fire julemarkeder vil organist Paul Nedergaard afholde en minikoncert, en såkaldt julematinè, af ca. 30 minutters varighed.\nLigesom tidligere år spiller han et værk af Jørgen Erichsen \"Eine kleine Weihnachtsmusik\" (En lille julemusik) – et stykke, der er en række variationer over melodien til \"Et barn er født i Betlehem\". Derudover er der engelske Christmas Carols og advents samt julesalmer på programmet.\nKom ind fra kulden og kom i tidlig julestemning\nFoto: Anna Thilde Carstensen Møller",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "musik-kultur"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-23isgw-1",
+            "date": "2026-11-21",
+            "kind": "timed",
+            "startTime": "13:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02XYiTNT3T8muecdSuS6VvTB7mjB5LBGe1dCWX3nmfoqm3YqbapS3cxWFa46Bu2491l",
+        "url": "https://www.facebook.com/aeroepastorat/posts/l%C3%B8rdag-den-21-november-kl-1300-i-%C3%A6r%C3%B8sk%C3%B8bing-kirke-julematin%C3%A9-vi-starter-tidligt-/1146676208111122/",
+        "verifiedAt": "2026-11-21T05:17:03.122Z"
       }
     }
   ]
