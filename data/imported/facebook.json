@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-21T17:17:03.547Z",
+  "verifiedAt": "2026-11-22T17:17:02.626Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -10760,6 +10760,119 @@
         "externalId": "post-pfbid0iYHX65izEMtPHCSzZaqK5EuvS3VVwcUwWTnt8gcWk3wM2BLaR5woXBWDtAwtP99Wl",
         "url": "https://www.facebook.com/aeroepastorat/posts/formiddagsforedrag-i-marstal-menighedshusstrandstr%C3%A6de-20-torsdage-kl-1000-1200-e/1148839881228088/",
         "verifiedAt": "2026-11-21T17:17:03.547Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02npjegkep5jqbr4v4uyyscx5ejfujtsgugzhyrjfve88jhxafru-02455d8d",
+      "title": "FORMIDDAGSFOREDRAG I MARSTAL MENIGHEDSHUS",
+      "description": "FORMIDDAGSFOREDRAG I MARSTAL MENIGHEDSHUS\nStrandstræde 20, torsdage kl. 10.00-12.00\nEndnu en gang er det lykkedes at samle en lille buket af foredrag. Der er ikke noget gennem gående tema. Til gengæld er der garanti for stor variation. Der er gratis adgang, men kaffe og brød koster 25 kr.\nTorsdag den 26. november\nJØRN SKOVSGAARD: DANSK UNDERVISNING I ET INTERNATIONALT PERSPEKTIV\nJørn Skovsgaard har haft en lang karriere inden for Undervisningsministeriet og har blandt andet arbejdet med undervisning i et internationalt perspektiv igennem mange år. Jørn Skovsgaard er gift ind i en Marstal familie og har længe haft sommerhus i byen, hvor han og hans kone nu bor. Siden foråret 2026 har han været formand for Marstal Søfartsmuseum.\nFoto: Folkekirken.dk",
+      "organizerId": "aeroe-kirkeliv",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-wxjhz1-1",
+            "date": "2026-11-26",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02nPjEGkep5jqBR4v4uYyScx5eJfUjTSGuGZhyRJFVE88jHxafrUaLSNCrGb4e6bkxl",
+        "url": "https://www.facebook.com/aeroepastorat/posts/formiddagsforedrag-i-marstal-menighedshusstrandstr%C3%A6de-20-torsdage-kl-1000-1200-e/1148839881228088/",
+        "verifiedAt": "2026-11-22T17:17:02.626Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0dvb7jmvnvluqamgpehuxdmfz7q8fnzwb3h3af4rrlaq87faf7lu-5653ab50",
+      "title": "En helt almindelig uge på Navi",
+      "description": "En helt almindelig uge på Navi?\nDer sker meget på Marstal Navigationsskole, selv i en helt almindelig undervisningsuge.\nGlobal udveksling: delegerede fra Kina, Indien, Indonesien, Kenya og Filippinerne besøgte os tirsdag\nKystskipper Online: fra hjem og hav til Navi! Klassen er her på skolen, hvor de navigerer med radar, papirsøkort og ECDIS og slutter af med Full Mission i vores simulator\nMaskinteknisk linje: i Fremtidens værksted forvandler vores elever metal til grillstartere, værktøjskasser, hammere og donkrafte og træner præcision, kvalitet og sikkerhed undervejs\n1. årgang: i deres kombinerede HF-Søfart-ungdomsuddannelse lærer de praktisk sømandskab, når det er tiltrængt med en pause fra det boglige\nEr du klar til at sætte kursen mod din fremtid?\nKom til Åbent Hus på HF-Søfart i Marstal, og mød lærere, elever og fællesskabet på Ærø.\nLørdag den 23. januar og lørdag den 6. februar 2027\nDu får en 3-i-1 uddannelse:\nHF-eksamen ved @HF & VUC Ærø\nUddannelse som skibsassistent\nFørste modul af uddannelsen til Skibsofficer\nLæs mere: https://www.marnav.dk/hf-soefart/det-kan-hf-soefart\nTilmeld dig: https://www.marnav.dk/hf-soefart/aabent-hus\nGod weekend, og fair vind!",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-10ez53c-1",
+            "date": "2027-01-23",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-10ez53c-2",
+            "date": "2027-02-06",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0dvB7jmVNvLUqaMGPEHuxDMFZ7q8fNZWB3H3AF4rrLaQ87FAf7LUMbVovU6keHBrjl",
+        "url": "https://www.facebook.com/marnav.dk/posts/-en-helt-almindelig-uge-p%C3%A5-navi-der-sker-meget-p%C3%A5-marstal-navigationsskole-selv-/2019219379128757/",
+        "verifiedAt": "2026-11-22T17:17:02.626Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0gqt75ul3tws5gaxdv6kxn64tfwsz4a8ime2gsn6kmshumeth2jm-af0b6b1b",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-8kj5ye-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-8kj5ye-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-8kj5ye-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-8kj5ye-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0gqT75uL3twS5GAxdV6kXn64TFWsZ4a8iME2gSn6kmshUmetH2JmXRGH6HB5fTXmEl",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-22T17:17:02.626Z"
       }
     }
   ]
