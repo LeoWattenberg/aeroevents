@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-kommune-events",
-  "verifiedAt": "2026-09-30T16:17:02.544Z",
+  "verifiedAt": "2026-11-23T17:17:02.524Z",
   "events": [
     {
       "id": "aeroe-kommune-events-3e08a557-3498-49c3-a4f0-c79c0b4d8bb4",
@@ -274,6 +274,92 @@
         "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/faa-info-om-alkohol-og-misbrug-3",
         "verifiedAt": "2026-09-30T16:17:02.544Z",
         "modifiedAt": "2026-09-24T02:35:00.000Z"
+      }
+    },
+    {
+      "id": "aeroe-kommune-events-1764fa31-c3f0-4b3e-a734-0b3f1daaa968",
+      "title": "Fernisering af fotoudstillingen \"Døve hører ikke luftalarmer\"",
+      "description": "I udstilling ”Døve hører ikke luftalarmer” skildrer fotograf Olaufur Gestsson og journalist Frederik Tillitz livet og dagligdagen for mennesker med handicap i et Ukraine, der har vært i krig i mere end fire år. Serien sætter fokus på en overset virkelighed i krig: At mennesker med handicap alt for ofte bliver glemt, når katastrofer rammer. Nogle kan ikke høre sirenerne. Andre kan ikke komme med, når mennesker flygter. Kåret som Årets Portrætserie ved Årets Pressefoto 2025.Mennesker med handicap er blandt de mest sårbare under krigen i Ukraine. Mange kan ikke høre advarsler, bruge flugtveje eller reagere på ændrede rutiner, hvilket gør evakuering vanskelig og efterlader nogle fanget i deres hjem. Trods de farer engagerer flere sig i den ukrainske handicapbevægelse og arbejder for bedre vilkår og et mere inkluderende Ukraine. Krigen har forværret livet for de 2,7 millioner ukrainere, der allerede levede med handicap før 2022. Samtidig har det givet hundredtusinder af nye krigsrelaterede handicap. Alligevel finder mange strukturer, fællesskab og håb midt i kaosset. Dansk og ukrainsk samarbejde skal sikre, at genopbygningen efter krigen gør landet mere tilgængeligt for alle. Fotoserien Døve hører ikke luftalarmer formidler 22 personlige fortællinger om tab, modgang, styrke og handling.”Døve hører ikke luftalarmer” har fernisering den 30. november 2026 kl. 15.00 på Marstal Bibliotek, hvor alle er velkomne.",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "location": {
+        "name": "Marstal Bibliotek",
+        "address": "Prinsensgade 21",
+        "postalCode": "5960",
+        "city": "Marstal"
+      },
+      "attendance": {
+        "kind": "public"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommune-event-1764fa31-c3f0-4b3e-a734-0b3f1daaa968",
+            "date": "2026-11-30",
+            "kind": "timed",
+            "startTime": "15:00",
+            "endDate": "2026-11-30",
+            "endTime": "17:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune-events",
+        "externalId": "1764fa31-c3f0-4b3e-a734-0b3f1daaa968",
+        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/fernisering-af-fotoudstillingen-doeve-hoerer-ikke-luftalarmer",
+        "verifiedAt": "2026-11-23T17:17:02.524Z",
+        "modifiedAt": "2026-10-21T12:13:00.000Z"
+      }
+    },
+    {
+      "id": "aeroe-kommune-events-af8b47b2-4460-4504-8bd2-4c96f2dc1f22",
+      "title": "Oplæg med Rikke Nielsen: \"Sådan blev jeg en vinder\"",
+      "description": "Rikke Nielsen fortæller i dette livsbekræftende og inspirerende foredrag om sit livs store udfordringer – blandt andet at blive mor til Magda, der er født med Downs syndrom – og om, hvordan udfordringer kan blive til nye muligheder.Rikkes ønske om at skabe et fællesskab, hvor børn med udviklingshandicap kunne dyrke håndbold på lige fod med andre, blev til Kidz – et håndboldhold, som Magda også kunne være en del af. Kidz voksede siden til LykkeLiga, et landsdækkende håndboldfællesskab for børn med udviklingshandicap og i dag Rikkes fuldtidsjob.I foredraget fortæller Rikke om at gøre drømme til virkelighed, skabe fællesskaber og inspirere andre til at føre idéer ud i livet. Et motiverende foredrag for klubber, foreninger, forældre og frivillige ildsjæle.Foredraget afholdes den 2. december kl. 16.30 på Rådhuset.Tilmelding sker ved at sende en mail til handicapraadet@aeroekommune.dk senest torsdag den 26. november kl. 12.00.",
+      "organizerId": "aeroe-kommune",
+      "categoryIds": [
+        "politik-kommune"
+      ],
+      "location": {
+        "name": "Ærø Rådhus",
+        "address": "Statene 2",
+        "postalCode": "5970",
+        "city": "Ærøskøbing"
+      },
+      "attendance": {
+        "kind": "registration"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "price": "Gratis",
+      "booking": {
+        "required": true,
+        "soldOut": false
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "kommune-event-af8b47b2-4460-4504-8bd2-4c96f2dc1f22",
+            "date": "2026-12-02",
+            "kind": "timed",
+            "startTime": "16:30",
+            "endDate": "2026-12-02",
+            "endTime": "19:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeroe-kommune-events",
+        "externalId": "af8b47b2-4460-4504-8bd2-4c96f2dc1f22",
+        "url": "https://www.aeroekommune.dk/om-kommunen/kommunikation-og-presse/det-sker/oplaeg-med-rikke-nielsen-saadan-blev-jeg-en-vinder",
+        "verifiedAt": "2026-11-23T17:17:02.524Z",
+        "modifiedAt": "2026-10-26T11:00:00.000Z"
       }
     }
   ]
