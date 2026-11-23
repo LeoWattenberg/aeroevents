@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-22T17:17:02.626Z",
+  "verifiedAt": "2026-11-23T05:17:02.834Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -10873,6 +10873,47 @@
         "externalId": "post-pfbid0gqT75uL3twS5GAxdV6kXn64TFWsZ4a8iME2gSn6kmshUmetH2JmXRGH6HB5fTXmEl",
         "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
         "verifiedAt": "2026-11-22T17:17:02.626Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0ccvrz8ufgxedxxkfean2b3b3lktgx8nihds4hhomj6twzk6hgns-807ceaf8",
+      "title": "Julen er på vej til Ærøskøbing",
+      "description": "Julen er på vej til Ærøskøbing!\nDer er allerede godt gang i juleforberedelserne rundt omkring i de hyggelige brostensbelagte gader. På torvet bliver juleboderne gjort klar, gran og julepynt finder vej til byen, og der bliver arbejdet på højtryk for at skabe den helt særlige julestemning.\nPå lørdag den 21. november går det løs med årets første julemarked i Ærøskøbing! Og det er kun begyndelsen – der er nemlig hele fire julemarkeder at glæde sig til:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nVi glæder os til endnu en julesæson med masser af hygge, juleoplevelser og liv i de gamle gader.\nMåske ses vi i Ærøskøbing?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1c5pp17-3",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1c5pp17-4",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1c5pp17-5",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0ccvrz8UfGxeDXxkFeaN2B3B3LkTgX8nihDs4Hhomj6twZk6hGnSWfG11n9qwkA7xl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julen-er-p%C3%A5-vej-til-%C3%A6r%C3%B8sk%C3%B8bing-%EF%B8%8Fder-er-allerede-godt-gang-i-juleforberedelserne/1827275092739483/",
+        "verifiedAt": "2026-11-23T05:17:02.834Z"
       }
     }
   ]
