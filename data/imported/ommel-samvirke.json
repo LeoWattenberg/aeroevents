@@ -1,6 +1,6 @@
 {
   "sourceId": "ommel-samvirke",
-  "verifiedAt": "2026-11-23T17:17:02.524Z",
+  "verifiedAt": "2026-11-24T17:17:02.823Z",
   "events": [
     {
       "id": "ommel-samvirke-activity-2516431221fb91896417",
@@ -2246,6 +2246,42 @@
       }
     },
     {
+      "id": "ommel-samvirke-activity-bfd3e97ae9af8ae987a9",
+      "title": "Samvirke bestyrelsesmøde",
+      "description": "Foreningen månedlige bestyrelsesmøde.",
+      "organizerId": "ommel-samvirke",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Beboerhuset"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "activity-bfd3e97ae9af8ae987a9-2026-11-23-1900",
+            "date": "2026-11-23",
+            "kind": "timed",
+            "startTime": "19:00",
+            "endTime": "21:00"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "ommel-samvirke",
+        "externalId": "activity-bfd3e97ae9af8ae987a9",
+        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
+        "verifiedAt": "2026-11-23T17:17:02.524Z"
+      }
+    },
+    {
       "id": "ommel-samvirke-activity-04a0afc056922494f168",
       "title": "Strik aften",
       "description": "🧶 Strik & Kreative Sysler – Fællesskab med garn, idéer og hygge Har du lyst til et par hyggelige timer i godt selskab? Tag dit strikketøj, hækletøj, broderi eller et andet kreativt projekt under armen, og kom og vær med. Her er der plads til både erfarne og nybegyndere – vi inspirerer hinanden, hjælper, hvis der er brug for det, og nyder nogle hyggelige timer sammen. Det handler ikke kun om masker og mønstre – men også om fællesskab, gode snakke og masser af smil. 🧶 Medbring dit eget kreative projekt. ☕ Medbring gerne kaffe, te eller andre drikkevarer samt din egen kop. Alle er hjerteligt velkomne! Kom, som du er – der er altid plads til en ekstra ved bordet.",
@@ -2320,7 +2356,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-04a0afc056922494f168",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -2377,7 +2413,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-055e12ca2a8928536eb3",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -2413,7 +2449,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30308c2d5b0827696f99",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -2449,7 +2485,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-30a3ab0a32c2d6b7d35e",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -2485,7 +2521,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-49ab849096dad3fc6d45",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -2521,7 +2557,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-585bff86e14e8257b185",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -2739,7 +2775,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-67cdddcd989e08df5bcc",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -2831,7 +2867,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9ec112d0956cd8982970",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -2868,7 +2904,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9ec29df913b0c2f612ce",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -2904,7 +2940,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-9f7394883888a0233afa",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -3262,7 +3298,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-b0e925ea79720a9acd65",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -3305,7 +3341,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-beff946b8065a3c9b786",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -3376,43 +3412,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-bf23c6d47faddee5e6b7",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
-      }
-    },
-    {
-      "id": "ommel-samvirke-activity-bfd3e97ae9af8ae987a9",
-      "title": "Samvirke bestyrelsesmøde",
-      "description": "Foreningen månedlige bestyrelsesmøde.",
-      "organizerId": "ommel-samvirke",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Beboerhuset"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "Adgangsforhold fremgår ikke struktureret af kalenderen og skal bekræftes."
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "activity-bfd3e97ae9af8ae987a9-2026-11-23-1900",
-            "date": "2026-11-23",
-            "kind": "timed",
-            "startTime": "19:00",
-            "endTime": "21:00"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "ommel-samvirke",
-        "externalId": "activity-bfd3e97ae9af8ae987a9",
-        "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -3490,7 +3490,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-c5cf94bfe0ce56b7b1e9",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -3526,7 +3526,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-ca911d32328bdabc0823",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     },
     {
@@ -3563,7 +3563,7 @@
         "sourceId": "ommel-samvirke",
         "externalId": "activity-d0a8ed3087ff43c20a82",
         "url": "https://www.ommelsamvirke.dk/aktivitetskalender",
-        "verifiedAt": "2026-11-23T17:17:02.524Z"
+        "verifiedAt": "2026-11-24T17:17:02.823Z"
       }
     }
   ]
