@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-24T17:17:02.823Z",
+  "verifiedAt": "2026-11-25T17:17:04.742Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -11249,6 +11249,124 @@
         "externalId": "post-pfbid0gfJ6nm4K5K4FfwhCrGSHcWtbyHdbUu2LA1n7zsQk9L2ZyWBNiaefGyft2JomCpy4l",
         "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
         "verifiedAt": "2026-11-24T17:17:02.823Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02gjdzsf8kjtmgkbj6xbxrteezvgsr9hjmznb8syq3nd6i1jntxj-49ad4acc",
+      "title": "Julen er på vej til Ærøskøbing",
+      "description": "Julen er på vej til Ærøskøbing!\nDer er allerede godt gang i juleforberedelserne rundt omkring i de hyggelige brostensbelagte gader. På torvet bliver juleboderne gjort klar, gran og julepynt finder vej til byen, og der bliver arbejdet på højtryk for at skabe den helt særlige julestemning.\nPå lørdag den 21. november går det løs med årets første julemarked i Ærøskøbing! Og det er kun begyndelsen – der er nemlig hele fire julemarkeder at glæde sig til:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nVi glæder os til endnu en julesæson med masser af hygge, juleoplevelser og liv i de gamle gader.\nMåske ses vi i Ærøskøbing?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-24v4ub-3",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-24v4ub-4",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-24v4ub-5",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02gJDZsf8kJtMGkBj6xBXrteeZVgSr9HjmZnb8SyQ3nd6i1JNtXjePxq8srDn911Nxl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julen-er-p%C3%A5-vej-til-%C3%A6r%C3%B8sk%C3%B8bing-%EF%B8%8Fder-er-allerede-godt-gang-i-juleforberedelserne/1827275092739483/",
+        "verifiedAt": "2026-11-25T17:17:04.742Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02kwjoyrz8vhqwwctee9xbdwnyclw4kd6adoknsncyw9vtrftb27-c4f29ee0",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1hpv01a-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1hpv01a-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1hpv01a-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1hpv01a-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02kWjoyRz8vhQWWcTee9XbDWnycLw4kd6adokNSNCyW9VtrFtb27sAfKiG5YWhWGpxl",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-25T17:17:04.742Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0huv2fxasznwbjwbgngmxxn8kdfitqcy5puec74qdwb3xlaycz2l-17a61c4f",
+      "title": "FÆLLESSPISNING I JULEUDGAVE",
+      "description": "FÆLLESSPISNING I JULEUDGAVE D. 3. DEC. KL. 18.00.\nMenuen står på flæskesteg med det klassiske tilbehør, rødkål, hvide-og brune kartofler, surt, lidt salat og masser af sovs.\n260kr for mad inkl. 1 øl/vand og det kræver tilmelding på enten mail cafe@aeroebryggeri.dk eller på sms 30125615. Noter venligst navn, antal og tlf nummer.\nVi ses",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-10y6hbz-1",
+            "date": "2026-12-03",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0huV2FxaSZnwBJwBGNgmXxN8KdFitQCY5PueC74QdWb3xLaycz2LMK44bnGSCWRdzl",
+        "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-i-juleudgave-d-3-dec-kl-1800menuen-st%C3%A5r-p%C3%A5-fl%C3%A6skesteg-med-det-kla/1777293761074092/",
+        "verifiedAt": "2026-11-25T17:17:04.742Z"
       }
     }
   ]

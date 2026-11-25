@@ -1,6 +1,6 @@
 {
   "sourceId": "aeroe-folkedans",
-  "verifiedAt": "2026-11-24T17:17:02.823Z",
+  "verifiedAt": "2026-11-25T17:17:04.742Z",
   "events": [
     {
       "id": "aeroe-folkedans-6a93f435e375d",
@@ -173,18 +173,13 @@
       "schedule": {
         "kind": "recurring",
         "dtstart": {
-          "date": "2026-11-24",
+          "date": "2027-01-05",
           "kind": "timed",
           "startTime": "18:30"
         },
         "rrule": "FREQ=WEEKLY;BYDAY=TU;UNTIL=20270316T183000",
         "rdates": [],
         "exdates": [
-          "2026-12-01T18:30",
-          "2026-12-08T18:30",
-          "2026-12-15T18:30",
-          "2026-12-22T18:30",
-          "2026-12-29T18:30",
           "2027-02-16T18:30"
         ],
         "overrides": [],
@@ -194,7 +189,7 @@
         "sourceId": "aeroe-folkedans",
         "externalId": "adult-series-2026-27",
         "url": "https://6165826142842.site123.me/begivenheder/folkedans-for-alle-unge-og-voksne",
-        "verifiedAt": "2026-11-24T17:17:02.823Z"
+        "verifiedAt": "2026-11-25T17:17:04.742Z"
       }
     }
   ]
