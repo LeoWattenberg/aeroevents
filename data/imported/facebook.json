@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-25T17:17:04.742Z",
+  "verifiedAt": "2026-11-27T17:17:03.385Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -11367,6 +11367,129 @@
         "externalId": "post-pfbid0huV2FxaSZnwBJwBGNgmXxN8KdFitQCY5PueC74QdWb3xLaycz2LMK44bnGSCWRdzl",
         "url": "https://www.facebook.com/AeroeBryggeri/posts/f%C3%A6llesspisning-i-juleudgave-d-3-dec-kl-1800menuen-st%C3%A5r-p%C3%A5-fl%C3%A6skesteg-med-det-kla/1777293761074092/",
         "verifiedAt": "2026-11-25T17:17:04.742Z"
+      }
+    },
+    {
+      "id": "facebook-post-29565783073059613",
+      "title": "Tusinde tak til de mange der mødte op til fællesspisningen på Bregninge Sognegård i går aftes. Tusinde tak til vores gæstekok Mette, som endnu engang lavede den bedste og…",
+      "description": "Tusinde tak til de mange der mødte op til fællesspisningen på Bregninge Sognegård i går aftes. Tusinde tak til vores gæstekok Mette, som endnu engang lavede den bedste og sprødeste flæskesteg. Som noget nyt var der nøddesteg til dem, der ikke spiser gris. De var godt tilfredse.\nPå grund af renovering af toiletter og gang, holder vi Sognegården lukket fra den 10. januar til 30. April. Vi glæder os til at se jer gæster igen i det nye år.\nMed venlig hilsen Sognegårdens Bestyrelse",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-vidlrl-1",
+            "date": "2027-01-10",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-vidlrl-2",
+            "date": "2027-04-30",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-29565783073059613",
+        "url": "https://www.facebook.com/groups/144664695598174/posts/29565783073059613/",
+        "verifiedAt": "2026-11-27T17:17:03.385Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02g84zaws1vlluw1sgbwgtpzanrmdrqs3dyv63fyqb1jzmanb7xt-35791202",
+      "title": "Julen er på vej til Ærøskøbing",
+      "description": "Julen er på vej til Ærøskøbing!\nDer er allerede godt gang i juleforberedelserne rundt omkring i de hyggelige brostensbelagte gader. På torvet bliver juleboderne gjort klar, gran og julepynt finder vej til byen, og der bliver arbejdet på højtryk for at skabe den helt særlige julestemning.\nPå lørdag den 21. november går det løs med årets første julemarked i Ærøskøbing! Og det er kun begyndelsen – der er nemlig hele fire julemarkeder at glæde sig til:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nVi glæder os til endnu en julesæson med masser af hygge, juleoplevelser og liv i de gamle gader.\nMåske ses vi i Ærøskøbing?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-sgnn64-3",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-sgnn64-4",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-sgnn64-5",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02g84ZaWs1VLLUw1sGBwgTPzaNrMDRQs3dyV63Fyqb1jZmAnB7xTf3CsfYxfm84wysl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julen-er-p%C3%A5-vej-til-%C3%A6r%C3%B8sk%C3%B8bing-%EF%B8%8Fder-er-allerede-godt-gang-i-juleforberedelserne/1827275092739483/",
+        "verifiedAt": "2026-11-27T17:17:03.385Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid02klaoghiq7aywq37x8ut5ugrwg2qokykzcevxxwmvqargqw2gn2-e2b7ccae",
+      "title": "Ærø Harmonikafestival 2027",
+      "description": "Ærø Harmonikafestival 2027\nBestyrelsen har holdt møde og besluttet at videreføre Ærø Harmonikafestival.\nVi glæder os til at byde jer velkommen til vores skønne festival i Marstal den 20. til 23. maj 2027.\nMere information følger i december 2026.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-1kms9hf-1",
+            "date": "2027-05-20",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1kms9hf-2",
+            "date": "2027-05-21",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1kms9hf-3",
+            "date": "2027-05-22",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-1kms9hf-4",
+            "date": "2027-05-23",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid02kLaogHiQ7AYWq37X8Ut5uGrwG2qokYkZCeVxXwmvqaRgqW2gN2gSv9TnUPhTohafl",
+        "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
+        "verifiedAt": "2026-11-27T17:17:03.385Z"
       }
     }
   ]
