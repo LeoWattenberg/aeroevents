@@ -1,6 +1,6 @@
 {
   "sourceId": "facebook",
-  "verifiedAt": "2026-11-28T05:17:09.400Z",
+  "verifiedAt": "2026-11-28T17:17:02.282Z",
   "events": [
     {
       "id": "facebook-post-28266211109655473",
@@ -11490,6 +11490,82 @@
         "externalId": "post-pfbid02kLaogHiQ7AYWq37X8Ut5uGrwG2qokYkZCeVxXwmvqaRgqW2gN2gSv9TnUPhTohafl",
         "url": "https://www.facebook.com/harmonikafestival/posts/%C3%A6r%C3%B8-harmonikafestival-2027bestyrelsen-har-holdt-m%C3%B8de-og-besluttet-at-videref%C3%B8re-/1997321085044340/",
         "verifiedAt": "2026-11-27T17:17:03.385Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid037mhmmutflt1vubzhysxamsob7xihdhqmbpska1vikm9bkxuxbv-a66c2ea0",
+      "title": "Pens. skibsfører Heine Hestoy holdt torsdag aften foredrag i Trollesalen på Marstal Søfartsmuseum, om sit lange liv til søs",
+      "description": "Pens. skibsfører Heine Hestoy holdt torsdag aften foredrag i Trollesalen på Marstal Søfartsmuseum, om sit lange liv til søs.\nEn ramsaltet og humoristisk beretning fra de unge år på fiskeskibe og Skoleskibet Danmark til et langt og varieret liv til søs som styrmand, skipper og selvejer.\nVi siger tak til Heine for, på bedste vis, at skyde Søfartsmuseets foredragsrække 2026/2027 i gang! Se vores øvrige foredrag på vores hjemmeside https://marmus.dk idet vi dog bemærker at foredraget den 3/12 er udsolgt.",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "booking": {
+        "required": false,
+        "soldOut": true
+      },
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-zats8l-1",
+            "date": "2026-12-03",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid037MhMMuTfLT1vUBZHySXamsob7XihdhQmbPskA1vikm9BkxuxBV27orMzce4GeF34l",
+        "url": "https://www.facebook.com/MarstalMuseum/posts/pens-skibsf%C3%B8rer-heine-hestoy-holdt-torsdag-aften-foredrag-i-trollesalen-p%C3%A5-marst/1934573994879874/",
+        "verifiedAt": "2026-11-28T17:17:02.282Z"
+      }
+    },
+    {
+      "id": "facebook-post-pfbid0carnfmeee7cs1whnaewtxtcjvgvhkeyhzvcqkka4z7x37busj36-492735a6",
+      "title": "Julen er på vej til Ærøskøbing",
+      "description": "Julen er på vej til Ærøskøbing!\nDer er allerede godt gang i juleforberedelserne rundt omkring i de hyggelige brostensbelagte gader. På torvet bliver juleboderne gjort klar, gran og julepynt finder vej til byen, og der bliver arbejdet på højtryk for at skabe den helt særlige julestemning.\nPå lørdag den 21. november går det løs med årets første julemarked i Ærøskøbing! Og det er kun begyndelsen – der er nemlig hele fire julemarkeder at glæde sig til:\nLørdag den 21. november\nLørdag den 28. november\nLørdag den 5. december\nLørdag den 12. december\nVi glæder os til endnu en julesæson med masser af hygge, juleoplevelser og liv i de gamle gader.\nMåske ses vi i Ærøskøbing?",
+      "organizerId": "aeroe-kalenderen",
+      "categoryIds": [
+        "andet"
+      ],
+      "attendance": {
+        "kind": "public",
+        "details": "Adgangsforhold er ikke bekræftet."
+      },
+      "status": "scheduled",
+      "publication": "draft",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "facebook-egdfdp-3",
+            "date": "2026-11-28",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-egdfdp-4",
+            "date": "2026-12-05",
+            "kind": "time-unknown"
+          },
+          {
+            "id": "facebook-egdfdp-5",
+            "date": "2026-12-12",
+            "kind": "time-unknown"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "facebook",
+        "externalId": "post-pfbid0caRNfMEee7Cs1WHnaewTXtCjVGvHkeYhzvcqKKa4Z7x37bUSJ36gvVhnaDDXnEeFl",
+        "url": "https://www.facebook.com/PaaTorvet/posts/-julen-er-p%C3%A5-vej-til-%C3%A6r%C3%B8sk%C3%B8bing-%EF%B8%8Fder-er-allerede-godt-gang-i-juleforberedelserne/1827275092739483/",
+        "verifiedAt": "2026-11-28T17:17:02.282Z"
       }
     }
   ]
