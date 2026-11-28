@@ -1,6 +1,6 @@
 {
   "sourceId": "aeldresagen-aeroe",
-  "verifiedAt": "2026-11-27T17:17:03.385Z",
+  "verifiedAt": "2026-11-28T05:17:09.400Z",
   "events": [
     {
       "id": "aeldresagen-aeroe-443367982",
@@ -192,7 +192,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443480337",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443480337-soendagscafe-i-marstal",
-        "verifiedAt": "2026-11-27T17:17:03.385Z"
+        "verifiedAt": "2026-11-28T05:17:09.400Z"
       }
     },
     {
@@ -229,7 +229,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443368026",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443368026-petanque",
-        "verifiedAt": "2026-11-27T17:17:03.385Z"
+        "verifiedAt": "2026-11-28T05:17:09.400Z"
       }
     },
     {
@@ -267,7 +267,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443478288",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443478288-gaature-og-stavgang",
-        "verifiedAt": "2026-11-27T17:17:03.385Z"
+        "verifiedAt": "2026-11-28T05:17:09.400Z"
       }
     },
     {
@@ -305,7 +305,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443367804",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443367804-krolf",
-        "verifiedAt": "2026-11-27T17:17:03.385Z"
+        "verifiedAt": "2026-11-28T05:17:09.400Z"
       }
     },
     {
@@ -348,7 +348,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443468911",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443468911-spisevenner",
-        "verifiedAt": "2026-11-27T17:17:03.385Z"
+        "verifiedAt": "2026-11-28T05:17:09.400Z"
       }
     },
     {
@@ -386,7 +386,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443477909",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443477909-naturen-som-traeningsrum",
-        "verifiedAt": "2026-11-27T17:17:03.385Z"
+        "verifiedAt": "2026-11-28T05:17:09.400Z"
       }
     },
     {
@@ -425,44 +425,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443446336",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443446336-aeroe-mandeklub",
-        "verifiedAt": "2026-11-27T17:17:03.385Z"
-      }
-    },
-    {
-      "id": "aeldresagen-aeroe-443558971",
-      "title": "Petanque",
-      "description": "Har du lyst til at mødes med andre til et slag petanque? Her er socialt samvær og fællesskab i centrum, så mød endelig op! Ina Vestergaard, 42 18 75 78.",
-      "organizerId": "aeldresagen-aeroe",
-      "categoryIds": [
-        "forening-faellesskab"
-      ],
-      "location": {
-        "name": "Banerne ved sejlklubben i Marstal"
-      },
-      "attendance": {
-        "kind": "public",
-        "details": "For alle"
-      },
-      "status": "scheduled",
-      "publication": "published",
-      "schedule": {
-        "kind": "explicit",
-        "dates": [
-          {
-            "id": "aeldresagen-443558971",
-            "date": "2027-01-04",
-            "kind": "timed",
-            "startTime": "13:30",
-            "endDate": "2027-01-04",
-            "endTime": "15:30"
-          }
-        ]
-      },
-      "source": {
-        "sourceId": "aeldresagen-aeroe",
-        "externalId": "443558971",
-        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443558971-petanque",
-        "verifiedAt": "2026-11-27T17:17:03.385Z"
+        "verifiedAt": "2026-11-28T05:17:09.400Z"
       }
     },
     {
@@ -506,7 +469,44 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443541879",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443541879-foredrag-med-peter-mygind",
-        "verifiedAt": "2026-11-27T17:17:03.385Z"
+        "verifiedAt": "2026-11-28T05:17:09.400Z"
+      }
+    },
+    {
+      "id": "aeldresagen-aeroe-443558971",
+      "title": "Petanque",
+      "description": "Har du lyst til at mødes med andre til et slag petanque? Her er socialt samvær og fællesskab i centrum, så mød endelig op! Ina Vestergaard, 42 18 75 78.",
+      "organizerId": "aeldresagen-aeroe",
+      "categoryIds": [
+        "forening-faellesskab"
+      ],
+      "location": {
+        "name": "Banerne ved sejlklubben i Marstal"
+      },
+      "attendance": {
+        "kind": "public",
+        "details": "For alle"
+      },
+      "status": "scheduled",
+      "publication": "published",
+      "schedule": {
+        "kind": "explicit",
+        "dates": [
+          {
+            "id": "aeldresagen-443558971",
+            "date": "2027-01-04",
+            "kind": "timed",
+            "startTime": "13:30",
+            "endDate": "2027-01-04",
+            "endTime": "15:30"
+          }
+        ]
+      },
+      "source": {
+        "sourceId": "aeldresagen-aeroe",
+        "externalId": "443558971",
+        "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443558971-petanque",
+        "verifiedAt": "2026-11-28T05:17:09.400Z"
       }
     },
     {
@@ -543,7 +543,7 @@
         "sourceId": "aeldresagen-aeroe",
         "externalId": "443559074",
         "url": "https://www.aeldresagen.dk/aktiviteter-og-kurser/kommune/aeroe/aeroe/443559074-krolf",
-        "verifiedAt": "2026-11-27T17:17:03.385Z"
+        "verifiedAt": "2026-11-28T05:17:09.400Z"
       }
     }
   ]
